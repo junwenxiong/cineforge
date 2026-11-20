@@ -29,7 +29,12 @@ def main():
     ap.add_argument("--name", default="rough_latest")
     ap.add_argument("--lufs", type=float, default=-16.0)
     ap.add_argument("--hd", action="store_true")
+    ap.add_argument('--continuity', action='store_true', help='Require continuity production audio and preserve exact video duration')
     args = ap.parse_args()
+    if args.continuity:
+        config=FilmConfig(args.film)
+        if args.name in ('final','draft'): ap.error('Continuity requires a distinct output name')
+        if not (config.videos/f'{args.name}_continuity.json').exists(): ap.error('Run rough_cut --continuity first')
     global MUSIC, CUES, VID
     film = FilmConfig(args.film)
     MUSIC, CUES, VID = film.music, film.workflow / "music_cues.json", film.videos
@@ -70,9 +75,9 @@ def main():
     parts.append("".join(f"[m{i}]" for i in range(1, n + 1)) + f"amix=inputs={n}:normalize=0:duration=longest,apad,atrim=duration={total:.3f}[bed]")
     parts.append("[0:a]aresample=48000,asplit=2[dlg][key]")
     parts.append("[bed][key]sidechaincompress=threshold=0.035:ratio=5:attack=15:release=400:makeup=1[duck]")
-    parts.append(f"[dlg][duck]amix=inputs=2:normalize=0:duration=first,loudnorm=I={args.lufs}:TP=-1.5:LRA=11,aresample=48000[mix]")
+    parts.append(f"[dlg][duck]amix=inputs=2:normalize=0:duration=first,loudnorm=I={args.lufs}:TP=-1.5:LRA=11,aresample=48000,alimiter=limit=0.79:attack=1:release=50:level=disabled[mix]")
     hd_limit = []
-    if args.hd:
+    if args.hd or args.continuity:
         from rough_cut import video_dur
         hd_limit = ["-t", f"{video_dur(video):.6f}"]
     out = VID / f"{args.name}_scored.mp4"

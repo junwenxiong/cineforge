@@ -147,7 +147,12 @@ def main():
     add_film_args(ap)
     ap.add_argument("--name", default="rough_latest")
     ap.add_argument("--hd", action="store_true")
+    ap.add_argument('--continuity', action='store_true', help='Require continuity production audio and preserve exact video duration')
     args = ap.parse_args()
+    if args.continuity:
+        config=FilmConfig(args.film)
+        if args.name in ('final','draft'): ap.error('Continuity requires a distinct output name')
+        if not (config.videos/f'{args.name}_continuity.json').exists(): ap.error('Run rough_cut --continuity first')
     global MUSIC, VID, CREDITS, CREDITS_SEC, FILM
     FILM = FilmConfig(args.film)
     MUSIC, VID = FILM.music, FILM.videos
@@ -165,17 +170,17 @@ def main():
     ass.write_text(HEADER + "\n".join(title_events(tl) + dialogue_events(tl)) + "\n", encoding="utf-8")
     body = VID / f"_{args.name}_subbed.mp4"
     ff("-i", str(src.resolve()), "-vf", f"ass={ass.name}", *VENC, *COMMON, "-c:a", "copy", str(body.resolve()))
-    cass = VID / ("_credits_hd.ass" if args.hd else "_credits.ass")
+    cass = VID / (f"_{args.name}_credits.ass" if args.continuity else ("_credits_hd.ass" if args.hd else "_credits.ass"))
     credits_ass(cass)
-    cred = VID / ("_credits_hd.mp4" if args.hd else "_credits.mp4")
+    cred = VID / (f"_{args.name}_credits.mp4" if args.continuity else ("_credits_hd.mp4" if args.hd else "_credits.mp4"))
     ff("-f", "lavfi", "-i", f"color=c=black:s={W}x{H}:r={FPS}:d={CREDITS_SEC}",
        "-i", str(MUSIC / FILM.credits_music),
        "-filter_complex", f"[0:v]ass={cass.name}[v];[1:a]atrim=duration={CREDITS_SEC},afade=t=in:d=2,"
                           f"afade=t=out:st={CREDITS_SEC - 5}:d=5,volume=-14dB,aresample=48000,aformat=channel_layouts=stereo[a]",
        "-map", "[v]", "-map", "[a]", *VENC, *COMMON, str(cred.resolve()))
-    lst = VID / ("_master_list_hd.txt" if args.hd else "_master_list.txt")
+    lst = VID / (f"_{args.name}_master_list.txt" if args.continuity else ("_master_list_hd.txt" if args.hd else "_master_list.txt"))
     lst.write_text(f"file '{body.resolve()}'\nfile '{cred.resolve()}'\n", encoding="utf-8")
-    if args.hd:
+    if args.hd or args.continuity:
         from rough_cut import video_dur
         lst.write_text(f"file '{body.resolve()}'\nduration {round(video_dur(body) * FPS) / FPS:.6f}\n"
                        f"file '{cred.resolve()}'\nduration {round(video_dur(cred) * FPS) / FPS:.6f}\n", encoding="utf-8")

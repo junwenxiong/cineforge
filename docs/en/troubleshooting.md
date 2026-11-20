@@ -105,3 +105,12 @@ Drain slower GPUs first near completion; source A100 shots were ~100 s versus G4
 ## Sudden close-ups
 
 If a face suddenly fills the screen after a cut, compare the neighboring shots' planned sizes. Use the [shot-size ladder](glossary.md#shot-size-how-much-you-see) to decide how much of the person and surroundings should stay visible. The current LTX picture instructions favor MS/MCU unless shot_size explicitly requests CU/ECU. The LTX video instructions also remove unwanted push-ins and ask for a steady camera. These instructions help, but do not automatically match framing between clips: inspect the starting pictures and watch the cut before accepting it.
+
+**The face grows during the shot.** Most "slams" are not camera moves: in LTX close-ups the person walks or leans toward the lens, and a CU often ends as an extreme close-up. This happens most when the prompt describes a tighter shot than the starting picture shows, or says things like "the shot ends holding on her eyes". What fixed it for us (echo, 2026-11-20):
+
+1. Rewrite the prompt with `tools/film/static_cam.py`: camera lock and "everyone stays the same distance from the camera" go first, push-in phrases are removed, and the size words match the starting picture. Shots converted from H3 first go through `tools/film/h3_to_ltx.py`.
+2. Measure every take with `tools/film/zoom_check.py` (face growth, background zoom, hidden cuts inside the clip).
+3. Render a second seed for shots that still grow, then let `tools/film/pick_takes.py` keep the best take per shot.
+4. In the edit, `tools/film/push_trim.py` cuts away before the face starts growing, but never before a line of dialogue has finished.
+
+Result on echo: shots whose face grew more than 2x went from 20 to 2. Do not anchor the last frame to the same keyframe: the model jumps to a close-up mid-shot and back.
