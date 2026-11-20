@@ -1,0 +1,256 @@
+[
+ {
+  "id": "collar",
+  "prompt": "Product reference: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge. The collar is shown closed in a circle, three-quarter view, pendant facing camera, its light ring glowing warm amber. The single object alone, entire object visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp material detail, no bokeh, no blur. No text, no letters, no logo, no watermark. Exactly ONE object in the image, shown once; no second view, no inset, no turnaround. The collar lies alone on the studio floor: no cat, no animal, no person, no fur anywhere in the image.",
+  "size": "1280x720"
+ },
+ {
+  "id": "collar_dark",
+  "prompt": "Product reference: this is the exact collar of Reference 1, now dead: its light ring completely dark, a faint scorch mark at one edge of the pendant grille, no glow at all. Same three-quarter view. The single object alone, entire object visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp material detail, no bokeh, no blur. No text, no letters, no logo, no watermark. Exactly ONE object in the image, shown once; no second view, no inset, no turnaround. The collar lies alone on the studio floor: no cat, no animal, no person, no fur anywhere in the image.",
+  "size": "1280x720",
+  "refs": [
+   "assets/catfilm/refs/collar.png"
+  ]
+ },
+ {
+  "id": "collar_demo",
+  "prompt": "Product reference: a plain white mass-market version of the translator collar with a small round white pendant and a thin glowing ring, the cheaper white sibling of the graphite collar in Reference 1, ring glowing soft white. The single object alone, entire object visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp material detail, no bokeh, no blur. No text, no letters, no logo, no watermark. Exactly ONE object in the image, shown once; no second view, no inset, no turnaround. The collar lies alone on the studio floor: no cat, no animal, no person, no fur anywhere in the image.",
+  "size": "1280x720",
+  "refs": [
+   "assets/catfilm/refs/collar.png"
+  ]
+ },
+ {
+  "id": "carrier",
+  "prompt": "Product reference: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door, empty, three-quarter front view, door closed. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "duoduo_bare",
+  "prompt": "References 1-5 are real photos of the same real cat, Duoduo. Reproduce exactly this individual cat, not a generic calico: copy the exact shape, size and position of every patch from the photos - white body; black + orange patch on the crown; orange spot beside the nose; pinkish ears; green-amber eyes; orange-brown back patch, dark grey-brown tabby flank patch, dark tabby tail. Keep her round, slightly plump real body shape and natural cat anatomy. Character reference sheet: single full-body side three-quarter view of an adult female calico domestic short-hair cat, the user's real cat: white body; black + orange patch on the crown; orange spot beside the nose; pinkish ears; green-amber eyes. Mostly pure white face, chest, belly, legs and paws; the crown patch is a dark black band across the top of the head between the ears, edged with orange-brown that runs down beside one ear; a small orange-tan patch on the side of the muzzle next to a pinkish-tan nose; on the back a large orange-brown patch behind the shoulders and a large dark grey-brown tabby-striped patch on the flank and hip; a dark grey-brown tabby tail with orange-brown banding; one orange-brown patch on the back of a hind thigh; round, slightly plump body, natural four-legged cat posture, mouth closed, standing on all four legs, head turned slightly toward camera, tail relaxed, no collar. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/duoduo_real/face.jpg",
+   "assets/duoduo_real/markings.jpg",
+   "assets/duoduo_real/back.jpg",
+   "assets/duoduo_real/lap_wide.jpg",
+   "assets/duoduo_real/black_lap.jpg"
+  ]
+ },
+ {
+  "id": "duoduo",
+  "prompt": "References 1-5 are real photos of the same real cat, Duoduo. Reproduce exactly this individual cat, not a generic calico: copy the exact shape, size and position of every patch from the photos - white body; black + orange patch on the crown; orange spot beside the nose; pinkish ears; green-amber eyes; orange-brown back patch, dark grey-brown tabby flank patch, dark tabby tail. Keep her round, slightly plump real body shape and natural cat anatomy. Reference 6 is her collar. Character reference sheet: single full-body side three-quarter view of an adult female calico domestic short-hair cat, the user's real cat: white body; black + orange patch on the crown; orange spot beside the nose; pinkish ears; green-amber eyes. Mostly pure white face, chest, belly, legs and paws; the crown patch is a dark black band across the top of the head between the ears, edged with orange-brown that runs down beside one ear; a small orange-tan patch on the side of the muzzle next to a pinkish-tan nose; on the back a large orange-brown patch behind the shoulders and a large dark grey-brown tabby-striped patch on the flank and hip; a dark grey-brown tabby tail with orange-brown banding; one orange-brown patch on the back of a hind thigh; round, slightly plump body, natural four-legged cat posture, mouth closed, standing on all four legs, head turned slightly toward camera, wearing the collar of Reference 6 (a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge) with the ring glowing warm amber at her throat. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/duoduo_real/face.jpg",
+   "assets/duoduo_real/markings.jpg",
+   "assets/duoduo_real/back.jpg",
+   "assets/duoduo_real/lap_wide.jpg",
+   "assets/duoduo_real/black_lap.jpg",
+   "assets/catfilm/refs/collar.png"
+  ]
+ },
+ {
+  "id": "duoduo_face",
+  "prompt": "References 1-5 are real photos of the same real cat, Duoduo. Reproduce exactly this individual cat, not a generic calico: copy the exact shape, size and position of every patch from the photos - white body; black + orange patch on the crown; orange spot beside the nose; pinkish ears; green-amber eyes; orange-brown back patch, dark grey-brown tabby flank patch, dark tabby tail. Keep her round, slightly plump real body shape and natural cat anatomy. Reference 6 is her collar. Close-up portrait, head and chest, front three-quarter view, of an adult female calico domestic short-hair cat, the user's real cat: white body; black + orange patch on the crown; orange spot beside the nose; pinkish ears; green-amber eyes. Mostly pure white face, chest, belly, legs and paws; the crown patch is a dark black band across the top of the head between the ears, edged with orange-brown that runs down beside one ear; a small orange-tan patch on the side of the muzzle next to a pinkish-tan nose; on the back a large orange-brown patch behind the shoulders and a large dark grey-brown tabby-striped patch on the flank and hip; a dark grey-brown tabby tail with orange-brown banding; one orange-brown patch on the back of a hind thigh; round, slightly plump body, natural four-legged cat posture, mouth closed; the crown patch, the orange spot beside the nose, pinkish ears and green-amber eyes are clearly visible; the collar of Reference 6 sits at her throat with the pendant ring glowing warm amber. Eyes sharp with crisp catchlights, every whisker visible. Neutral dark grey background. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/duoduo_real/face.jpg",
+   "assets/duoduo_real/markings.jpg",
+   "assets/duoduo_real/back.jpg",
+   "assets/duoduo_real/lap_wide.jpg",
+   "assets/duoduo_real/black_lap.jpg",
+   "assets/catfilm/refs/collar.png"
+  ]
+ },
+ {
+  "id": "duoduo_back",
+  "prompt": "References 1-5 are real photos of the same real cat, Duoduo. Reproduce exactly this individual cat, not a generic calico: copy the exact shape, size and position of every patch from the photos - white body; black + orange patch on the crown; orange spot beside the nose; pinkish ears; green-amber eyes; orange-brown back patch, dark grey-brown tabby flank patch, dark tabby tail. Keep her round, slightly plump real body shape and natural cat anatomy. Reference 6 is her collar. Character reference from behind and slightly above: the same cat sitting upright on all fours seen from the back, showing the black-and-orange crown band between the ears, the orange-brown back patch, the dark grey-brown tabby flank patch and the dark tabby tail curled beside her, the collar of Reference 6 visible as a graphite band at the nape. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/duoduo_real/back.jpg",
+   "assets/duoduo_real/markings.jpg",
+   "assets/duoduo_real/lap_wide.jpg",
+   "assets/duoduo_real/black_lap.jpg",
+   "assets/duoduo_real/face.jpg",
+   "assets/catfilm/refs/collar.png"
+  ]
+ },
+ {
+  "id": "momo",
+  "prompt": "References 1 and 2 show the established black cat Momo next to the calico Duoduo. Character reference sheet: single full-body side three-quarter view of a slightly smaller young solid black short-haired cat, glossy pure black coat with absolutely no white markings, round amber-gold eyes, slender build, natural four-legged cat posture, no collar, mouth closed, standing on all four legs, alert. He is visibly smaller and slimmer than the calico in the references. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/two_cats/pass.jpg",
+   "assets/two_cats/tc_c3.jpg"
+  ]
+ },
+ {
+  "id": "momo_face",
+  "prompt": "Close-up portrait, head and chest, front three-quarter view, of the black cat in Reference 1: a slightly smaller young solid black short-haired cat, glossy pure black coat with absolutely no white markings, round amber-gold eyes, slender build, natural four-legged cat posture, no collar, mouth closed. Glossy black fur with visible strand texture and subtle blue-grey sheen, round amber-gold eyes sharp with crisp catchlights, white whiskers. Neutral mid-grey background so the black fur reads clearly. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/catfilm/refs/momo.png",
+   "assets/two_cats/pass.jpg"
+  ]
+ },
+ {
+  "id": "pair_scale",
+  "prompt": "Scale reference: the calico Duoduo of Reference 1 (wearing her graphite collar with an amber ring) and the smaller black cat Momo of Reference 2 standing side by side on all fours, both in side three-quarter view, Momo about one size smaller. Real photos of Duoduo in References 3 and 4 for her exact markings. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/momo.png",
+   "assets/duoduo_real/markings.jpg",
+   "assets/duoduo_real/back.jpg"
+  ]
+ },
+ {
+  "id": "xu",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a 31-year-old East Asian woman neural-interface engineer, calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers, white sneakers, a small silver ring on her right index finger. Entire body visible from head to feet. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "xu_face",
+  "prompt": "Cinematic close-up portrait, head and shoulders, front three-quarter view, of the person in Reference 1: a 31-year-old East Asian woman neural-interface engineer, calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers, white sneakers, a small silver ring on her right index finger. Crisp skin pores, individual hair strands and fabric weave, sharp eyes with catchlights, natural skin texture without smoothing. Soft daylight key, neutral grey background. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/catfilm/refs/xu.png"
+  ]
+ },
+ {
+  "id": "ke",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a 26-year-old East Asian man drone courier, cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear, a small canvas cross-body bag. Entire body visible from head to feet. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "ke_face",
+  "prompt": "Cinematic close-up portrait, head and shoulders, front three-quarter view, of the person in Reference 1: a 26-year-old East Asian man drone courier, cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear, a small canvas cross-body bag. Crisp skin pores, individual hair strands and fabric weave, sharp eyes with catchlights, natural skin texture without smoothing. Soft daylight key, neutral grey background. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/catfilm/refs/ke.png"
+  ]
+ },
+ {
+  "id": "lu",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a 48-year-old East Asian man tech CEO, lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, composed faint smile. Entire body visible from head to feet. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "lu_face",
+  "prompt": "Cinematic close-up portrait, head and shoulders, front three-quarter view, of the person in Reference 1: a 48-year-old East Asian man tech CEO, lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, composed faint smile. Crisp skin pores, individual hair strands and fabric weave, sharp eyes with catchlights, natural skin texture without smoothing. Soft daylight key, neutral grey background. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/catfilm/refs/lu.png"
+  ]
+ },
+ {
+  "id": "zheng",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a 40-year-old East Asian man security chief, broad-shouldered, black buzz cut, square jaw with a faint small scar on the chin, a black tactical security jacket with plain grey shoulder panels and no logos, a slim earpiece, holding a rugged tracking tablet. Entire body visible from head to feet. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "zheng_face",
+  "prompt": "Cinematic close-up portrait, head and shoulders, front three-quarter view, of the person in Reference 1: a 40-year-old East Asian man security chief, broad-shouldered, black buzz cut, square jaw with a faint small scar on the chin, a black tactical security jacket with plain grey shoulder panels and no logos, a slim earpiece, holding a rugged tracking tablet. Crisp skin pores, individual hair strands and fabric weave, sharp eyes with catchlights, natural skin texture without smoothing. Soft daylight key, neutral grey background. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/catfilm/refs/zheng.png"
+  ]
+ },
+ {
+  "id": "hound",
+  "prompt": "Robot reference sheet: single full-body view, three-quarter front angle, of a sleek quadruped security robot dog the size of a large German shepherd, matte white shell panels with dark graphite joints, a smooth head with a single horizontal glowing red sensor strip and no mouth or eyes, a short antenna on its back, no logos, standing on four legs, the red sensor strip glowing. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "fang",
+  "prompt": "Robot reference sheet: single full-body view, three-quarter front angle, of a squat cube-shaped sidewalk delivery robot about knee-high, white body with bright orange side panels, six small black rubber wheels, a round front display face showing two simple glowing white dot eyes, a hinged top lid that opens onto a padded grey cargo bay big enough for two cats, a small orange flag antenna, no text, lid closed, the two white dot eyes glowing on its round face. The single object alone, entire object visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp material detail, no bokeh, no blur. No text, no letters, no logo, no watermark. Exactly ONE object in the image, shown once; no second view, no inset, no turnaround.",
+  "size": "1280x720"
+ },
+ {
+  "id": "drone_courier",
+  "prompt": "Vehicle reference: an orange-and-white quadcopter delivery drone with four ducted rotors and a small parcel clamp underneath, no text, hovering, three-quarter view. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "drone_hy",
+  "prompt": "Vehicle reference: a sleek white surveillance quadcopter drone with a single glowing red camera eye underneath, no text, hovering, three-quarter view, red eye glowing. Entire body visible, centered, on a neutral medium-grey seamless studio background with soft even key light and subtle rim light. Photoreal live-action photograph, natural clear light, deep focus, crisp individual fur strands and material detail, no bokeh, no blur. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_city",
+  "prompt": "Location reference: an aerial view of Linchuan, a near-future Chinese coastal city in clear morning sunlight, slender glass towers with green planted terraces, glass sky bridges between towers, a white monorail line, small drones flying in neat lanes, a calm blue bay, crisp clear air, no haze. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_apt",
+  "prompt": "Location reference: a bright modern apartment on the 32nd floor of a near-future residential tower, floor-to-ceiling windows with clear sunlight and a city view, light oak floor, white walls, green potted plants, a tall beige cat tree by the window, a grey fabric sofa, a corner engineering workbench with a soldering station, circuit boards and a small monitor, a wall-mounted display panel, a front door with a smart lock, a balcony glass door with a small cat flap. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_ledge",
+  "prompt": "Location reference: the outside wall of a glass residential tower 32 floors up, a narrow concrete ledge, white air-conditioner units on metal brackets and a drain pipe, a glass balcony railing, clear blue sky, the sunny city with sky bridges and green rooftops far below. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_roof",
+  "prompt": "Location reference: a sunny rooftop garden on a residential tower, wooden planters with vegetables, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges, a crisp clear blue sky. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_hub",
+  "prompt": "Location reference: a rooftop drone delivery station on a commercial building, rows of orange-and-white parcel racks, four circular landing pads with plain white rings, parked quadcopter delivery drones, a small sheltered booth with a kettle and two cat bowls, a narrow maintenance catwalk to the next roof, clear sunlight and city skyline. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_street",
+  "prompt": "Location reference: a lively elevated pedestrian street in a near-future Chinese city at midday, clean pale stone paving, shop fronts with abstract glowing signs and no readable text, fruit stalls with crates of oranges, green planters, a white monorail overhead, a glass sky bridge ahead, bright clear sunlight. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_tower",
+  "prompt": "Location reference: the Hengyuan Tower: a gleaming 80-storey twisting glass skyscraper with a giant luminous white ring around its crown, a wide stone plaza with shallow pools, a side loading dock with roller doors and a white service corridor, clear afternoon sun. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_vent",
+  "prompt": "Location reference: the inside of a clean square brushed-steel ventilation duct, bright slats of light falling through a grille ahead. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_lab",
+  "prompt": "Location reference: a white high-tech laboratory high inside a skyscraper, a sealed glass observation cell with one chair and a small desk, rows of slim server columns with tiny cyan indicator lights, workbenches with animal collars and test pads, floor-to-ceiling windows with clear daylight and a city view, a sliding glass door. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_elevator",
+  "prompt": "Location reference: a glass panoramic elevator rising along the outside of a skyscraper, brushed steel frame, the sunny city and blue bay spread out below. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_stage",
+  "prompt": "Location reference: a vast futuristic launch-event atrium, a curved white stage with a huge abstract light-wave display wall and no text, hundreds of audience seats, press cameras on tripods, skylights pouring warm clear late-afternoon sunlight. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_core",
+  "prompt": "Location reference: a circular control chamber at the top of a skyscraper, a tall glass pillar filled with flowing golden light filaments in the center, a round glass pressure plate one meter across set into the floor at its base, etched with fine circuit lines, curved panoramic windows with the city in warm late-afternoon sun, polished dark grey floor. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_bay",
+  "prompt": "Location reference: the inside of a delivery robot's padded grey cargo bay, soft foam walls, thin bright stripes of sunlight coming through vent slits in the lid; this is the cargo bay inside the delivery robot of Reference 1, seen from inside at cat eye level. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/catfilm/refs/fang.png"
+  ]
+ },
+ {
+  "id": "loc_dock",
+  "prompt": "Location reference: the side loading dock and white service corridor of the skyscraper in Reference 1, roller doors, stacked parcel crates, a ventilation grille high on the wall, clear afternoon light. Wide establishing shot, eye level, no people and no animals. Photoreal live-action cinematography, natural clear light, deep focus from foreground to horizon, crisp detail, no haze, no fog, no bokeh. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/catfilm/refs/loc_tower.png"
+  ]
+ }
+]

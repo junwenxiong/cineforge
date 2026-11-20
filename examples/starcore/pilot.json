@@ -1,0 +1,64 @@
+[
+ {
+  "id": "sc_pilot_01",
+  "scene": "PILOT",
+  "act": 0,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "试拍：磐石在雨夜堆场转头望向远处火光，说『它醒了。』（测机器人无口型配音与参考一致性）",
+  "dialogue": [
+   {
+    "who": "PANSHI",
+    "text": "它醒了。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, with weathered industrial yellow and dark graphite armor plates with stone-like textures, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core, and huge haul-truck wheels folded on its shoulders and lower legs.\n\nsummary:\n[reference generation] <Subject 1> stands in a rainy container harbor yard at night, turns its head toward a distant explosion glow and speaks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite armor, stone-like textures, amber optic band, hexagonal chest core and shoulder wheels stay identical to <Picture 1>.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting and volumetric haze. Keep the main action in the vertical center of the frame; no on-screen text. Night rain, sodium-orange harbor lights against cold blue skyline, wet asphalt reflections.\n[Shot 1] Low-angle wide shot from ground level, slow push-in. <Subject 1> towers over stacked shipping containers and two tiny parked cars in the rain, water streaming off its shoulder wheels, the amber chest core glowing. Its head slowly turns to the right toward a distant orange explosion glow over an elevated highway on the horizon. <Subject 1> has no mouth; its amber optic band brightens and dims in sync with each syllable as it (S1) says in a very deep, slow, resonant voice, <d>[Chinese] 它醒了。</d> The shot ends with <Subject 1> still facing the distant fire, rain hissing on its armor.\n\noverall_soundscape:\nHeavy rain on steel containers and asphalt, deep servo groans as the head turns, a distant muffled explosion rumble, wind across the harbor.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_pilot_02",
+  "scene": "PILOT",
+  "act": 0,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "试拍：林骁穿 Mk-I 在工坊说『这次一定行。点火。』推进器点火离地（测人物口型、装甲参考与场景参考）",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "这次一定行。点火。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with one silver streak on the left side, a scar through her right eyebrow, and sharp determined eyes.\n<Subject 2> is the crude steel prototype exosuit in <Picture 2>, with raw brushed steel plates, orange hazard stripes, exposed cables, a bulky backpack thruster, a small round teal chest light and an open-face helmet frame.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop inside an old harbor warehouse at night.\n\nsummary:\n[reference generation] <Subject 1>, wearing <Subject 2>, speaks and fires the backpack thruster for a test flight inside the workshop, wobbling half a meter off the floor.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, black bob with silver streak and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - steel plates, hazard stripes, cables, thruster and teal chest light stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials, scrap piles and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting and volumetric haze. Keep the main action in the vertical center of the frame; no on-screen text. Warm tungsten work lights against cool blue moonlight from high windows.\n[Shot 1] Medium shot, eye level, slow push-in. <Subject 1> stands on the scuffed concrete floor wearing <Subject 2>, her face visible inside the open helmet frame. She clenches her jaw, lips moving clearly as <Subject 1> (S1) says firmly in a clear young female voice, <d>[Chinese] 这次一定行。点火。</d> The backpack thruster coughs uneven blue flame, the suit lifts unsteadily half a meter off the floor, swaying left and right as sparks drop onto the concrete, ending with her arms spread wide for balance in mid-air.\n\noverall_soundscape:\nSputtering thruster roar with uneven pops, hydraulic hiss, metal creaks, rain drumming on the high windows, the low hum of workshop lights.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_pilot_03",
+  "scene": "PILOT",
+  "act": 0,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng_jet.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "试拍：裂锋战机在雨夜高架上空变形成机器人落地（测变形镜头）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the transforming war machine whose jet form is shown in <Picture 1> and whose robot form is shown in <Picture 2>: a black delta-wing stealth bomber with faceted panels and a crimson underglow that unfolds into a 15-meter angular gunmetal-black war robot with thin crimson optic slits, swept-back wing blades on its back and a crimson energy cannon on its right forearm.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in the rain.\n\nsummary:\n[reference generation] <Subject 1> swoops over the highway in jet form, transforms in mid-air into its robot form and slams down onto the road.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - jet silhouette and crimson underglow match <Picture 1>; robot armor, crimson optic slits, wing blades and arm cannon match <Picture 2>.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy elevated highway, towers and glowing signs without readable text; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting and volumetric haze. Keep the main action in the vertical center of the frame; no on-screen text. Rainy night, cold cyan city light, crimson glow from the machine.\n[Shot 1] Wide low-angle shot from the highway deck looking up, the camera tilting up and then down. <Subject 1> in jet form dives from the right between rain-lashed towers toward the highway. In mid-air its wings fold back, panels slide and rotate, the fuselage splits into a torso, two arms swing out and legs extend downward, forming the robot form of <Picture 2>. It slams down onto the highway in a three-point landing, the asphalt cracking in a ring, cars bouncing, sparks and rainwater exploding outward, ending with the robot slowly rising to full height, crimson optic slits glowing.\n\noverall_soundscape:\nA tearing jet scream, rapid mechanical clacks and servo whines of transformation, a massive concrete impact boom, car alarms, rain and debris clatter.\n\nnon_diegetic_music: N/A"
+ }
+]

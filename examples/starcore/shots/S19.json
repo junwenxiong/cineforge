@@ -1,0 +1,203 @@
+[
+ {
+  "id": "sc_s19_01",
+  "scene": "S19",
+  "act": 4,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "指挥中心外的停机坪大全景，雨渐停，林骁背对镜头望海，左背推进器已换成临时零件（慢节奏建立镜 8 秒）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her faceplate is retracted, and her crushed left back thruster pod is replaced by a crude makeshift thruster of raw brushed steel with orange hazard stripes and exposed cables.\n<Picture 2> is the location reference for [Shot 1], the coastal defense command center; its dark steel architecture and cool blue military lighting carry over to the open rooftop helipad outside it, before dawn as the rain stops.\n\nsummary:\n[reference generation] On the rooftop helipad outside the command center, as the rain fades before dawn, <Subject 1> stands in her field-repaired armor looking out to sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and helmet design stay identical; only the makeshift thruster is new.\n<Picture 2> ([Shot 1] location): partially_preserved - same dark steel architecture and blue military lighting; the outdoor helipad, sky and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, soft pre-dawn blue-grey light, a thinning drizzle, wet reflective steel, warm landing lights and the teal glow of the armor. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Wide shot, slow dolly forward across the helipad, calm and deliberate. Puddles cover the dark steel deck; the last thin drizzle drifts through blue floodlights; VTOL fighters and helicopters with no readable markings stand in rows, ground crews moving between them. The coastal city glows on the left, the grey sea on the right. <Subject 1> stands near the right edge of the pad with her back to camera, facing the sea, the makeshift raw-steel thruster with orange hazard stripes bolted onto the left side of her back, cables taped along it. The drizzle thins and stops as the camera arrives. The shot ends with her standing still, a few last drops falling from her armor.\n\noverall_soundscape:\nFading drizzle, dripping water, idling turbines, distant radio chatter, ground crew footsteps, wind off the sea.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s19_02",
+  "scene": "S19",
+  "act": 4,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "特写：临时拼装的推进器试点火，喷出不稳定的火焰后熄灭",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her faceplate is retracted, and her crushed left back thruster pod is replaced by a crude makeshift thruster of raw brushed steel with orange hazard stripes and exposed cables.\n<Picture 2> is the location reference for [Shot 1], the coastal defense command center; its dark steel architecture and cool blue military lighting carry over to the open rooftop helipad outside it, before dawn as the rain stops.\n\nsummary:\n[reference generation] Insert of the crude makeshift thruster on <Subject 1>'s back as it fires a short, uneven test burst.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and helmet design stay identical; only the makeshift thruster is new.\n<Picture 2> ([Shot 1] location): partially_preserved - same dark steel architecture and blue military lighting; the outdoor helipad, sky and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, soft pre-dawn blue-grey light, a thinning drizzle, wet reflective steel, warm landing lights and the teal glow of the armor. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Insert close-up on the left side of <Subject 1>'s back, static, shallow focus. The sleek pearl-white plates end at a crude patch: a salvaged thruster of raw brushed steel with orange hazard stripes, bolted on with mismatched brackets, bundled cables wrapped in tape, water beading on it. Beside it, the original compact pod on the right side glows with a steady teal ring. The makeshift thruster rattles, coughs, then fires a short, uneven burst of teal-blue flame that shakes its brackets, steadies into a low flicker and cuts off. The shot ends on a thin curl of steam rising from the salvaged nozzle.\n\noverall_soundscape:\nA sputtering ignition, uneven pops, rattling brackets, a hiss of steam, wind across the pad.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s19_03",
+  "scene": "S19",
+  "act": 4,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "秦岳从画左的指挥中心门口走来，停在林骁身旁，两人一起望海",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer whose face comes from <Picture 1> and whose powered armor comes from <Picture 2>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a sleek pearl-white and graphite suit with teal energy seams and a glowing hexagonal teal chest core. Her faceplate is retracted, a thin scrape on one cheek, and her crushed left back thruster pod is replaced by a crude makeshift part of raw steel with orange hazard stripes.\n<Subject 2> is the general in <Picture 3>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, in a dark navy military dress uniform with plain silver collar insignia and no flags or emblems.\n<Picture 4> is the location reference for [Shot 1], the coastal defense command center; its dark steel architecture and cool blue military lighting carry over to the open rooftop helipad outside it, before dawn as the rain stops.\n\nsummary:\n[reference generation] <Subject 2> walks out across the wet helipad and stops beside <Subject 1>, who keeps looking out to sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, pearl-white and graphite plates, teal seams and chest core stay identical; only the makeshift thruster is new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face, deep-set eyes and plain navy uniform with silver collar insignia stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same dark steel architecture and blue military lighting; the outdoor helipad, sky and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, soft pre-dawn blue-grey light, a thinning drizzle, wet reflective steel, warm landing lights and the teal glow of the armor. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium-wide two-shot, eye level, static, the lit doorway of the command center behind on the left. <Subject 2> walks in from the left with slow, heavy steps and stops a pace from <Subject 1>. She stands on the right in profile, eyes on the grey sea. Neither speaks. <Subject 2> follows her gaze to the water, hands clasped behind his back. The shot ends with the two of them side by side, <Subject 2> on the left and <Subject 1> on the right, a first pale light at the horizon.\n\noverall_soundscape:\nFootsteps on wet steel, dripping water, idling turbines behind them, wind, distant gulls.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s19_04",
+  "scene": "S19",
+  "act": 4,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "林骁手按胸口的碎片，转头对秦岳说出决定",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "我要把碎片还给它。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer whose face comes from <Picture 1> and whose powered armor comes from <Picture 2>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a sleek pearl-white and graphite suit with teal energy seams and a glowing hexagonal teal chest core. Her faceplate is retracted, a thin scrape on one cheek, and her crushed left back thruster pod is replaced by a crude makeshift part of raw steel with orange hazard stripes.\n<Picture 3> is the location reference for [Shot 1], the coastal defense command center; its dark steel architecture and cool blue military lighting carry over to the open rooftop helipad outside it, before dawn as the rain stops.\n\nsummary:\n[reference generation] <Subject 1> rests her hand on her glowing chest core and tells the general what she has decided.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, pearl-white and graphite plates, teal seams and chest core stay identical; only the makeshift thruster is new.\n<Picture 3> ([Shot 1] location): partially_preserved - same dark steel architecture and blue military lighting; the outdoor helipad, sky and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, soft pre-dawn blue-grey light, a thinning drizzle, wet reflective steel, warm landing lights and the teal glow of the armor. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium close-up on <Subject 1>, eye level, slow push-in, the sea soft behind her on the right. Her faceplate is retracted, rain drying on her face, the hexagonal teal core glowing steadily on her chest. She lays her gloved armored hand flat over the core and feels its pulse, then turns her head toward the general off-screen left. Calm and certain, <Subject 1> (S1) says in a clear, steady voice, <d>[Chinese] 我要把碎片还给它。</d> The shot ends with her holding his gaze, her hand still over the teal light.\n\noverall_soundscape:\nWind, a soft resonant hum from the core, distant turbines, water dripping from the pad edge.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s19_05",
+  "scene": "S19",
+  "act": 4,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin_face.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "反打秦岳：他皱眉提醒她，没有碎片装甲就飞不起来",
+  "dialogue": [
+   {
+    "who": "QIN",
+    "text": "没有碎片，你的装甲就飞不起来了。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, in a dark navy military dress uniform with plain silver collar insignia and no flags or emblems.\n<Picture 2> is the location reference for [Shot 1], the coastal defense command center; its dark steel architecture and cool blue military lighting carry over to the open rooftop helipad outside it, before dawn as the rain stops.\n\nsummary:\n[reference generation] <Subject 1> frowns and warns her that without the shard her armor will never fly again.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face, deep-set eyes and plain navy uniform with silver collar insignia stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same dark steel architecture and blue military lighting; the outdoor helipad, sky and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, soft pre-dawn blue-grey light, a thinning drizzle, wet reflective steel, warm landing lights and the teal glow of the armor. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium close-up on <Subject 1>, reverse angle, eye level, static, the blue windows of the command center behind him on the left. Rainwater beads on his grey crew cut and plain silver collar insignia. He looks right toward her, his brows drawing together into a deep frown, deep-set eyes searching her face. He shakes his head once, slowly, and <Subject 1> (S1) says in a low, restrained voice, <d>[Chinese] 没有碎片，你的装甲就飞不起来了。</d> The shot ends with him waiting for her answer, jaw tight.\n\noverall_soundscape:\nWind across the pad, idling turbines, distant radio chatter, a gull.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s19_06",
+  "scene": "S19",
+  "act": 4,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "林骁平静地回答：那就让它替我飞",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "那就让它替我飞。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer whose face comes from <Picture 1> and whose powered armor comes from <Picture 2>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a sleek pearl-white and graphite suit with teal energy seams and a glowing hexagonal teal chest core. Her faceplate is retracted, a thin scrape on one cheek, and her crushed left back thruster pod is replaced by a crude makeshift part of raw steel with orange hazard stripes.\n<Picture 3> is the location reference for [Shot 1], the coastal defense command center; its dark steel architecture and cool blue military lighting carry over to the open rooftop helipad outside it, before dawn as the rain stops.\n\nsummary:\n[reference generation] <Subject 1> answers the general calmly, almost smiling.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, pearl-white and graphite plates, teal seams and chest core stay identical; only the makeshift thruster is new.\n<Picture 3> ([Shot 1] location): partially_preserved - same dark steel architecture and blue military lighting; the outdoor helipad, sky and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, soft pre-dawn blue-grey light, a thinning drizzle, wet reflective steel, warm landing lights and the teal glow of the armor. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium close-up on <Subject 1>, matching the previous angle, static, the brightening sea behind her on the right. She holds his gaze without blinking; the tension leaves her face and a small, calm smile appears. She glances once toward the sea, then back to him off-screen left, and <Subject 1> (S1) says gently and simply, <d>[Chinese] 那就让它替我飞。</d> A breeze stirs the silver streak in her hair. The shot ends with her standing perfectly still, at peace with the choice.\n\noverall_soundscape:\nSoft wind, the gentle hum of the core, a distant wave, faraway turbines.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s19_07",
+  "scene": "S19",
+  "act": 4,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "秦岳沉默良久，然后立正敬礼",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, in a dark navy military dress uniform with plain silver collar insignia and no flags or emblems.\n<Picture 2> is the location reference for [Shot 1], the coastal defense command center; its dark steel architecture and cool blue military lighting carry over to the open rooftop helipad outside it, before dawn as the rain stops.\n\nsummary:\n[reference generation] <Subject 1> stays silent for a long moment, then snaps to attention and salutes.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face, deep-set eyes and plain navy uniform with silver collar insignia stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same dark steel architecture and blue military lighting; the outdoor helipad, sky and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, soft pre-dawn blue-grey light, a thinning drizzle, wet reflective steel, warm landing lights and the teal glow of the armor. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium shot on <Subject 1>, eye level, static, ground crews pausing by the parked aircraft behind him. He looks at her for a long silent moment, his weathered face unreadable, a muscle working in his jaw. Then he draws himself up, heels coming together with a crisp click on the wet steel, and raises his right hand in a sharp military salute, his eyes never leaving her. Behind him, two officers in the doorway straighten and salute too. The shot ends with <Subject 1> holding the salute, motionless, the first pale light catching his face.\n\noverall_soundscape:\nNear silence except the wind, a crisp heel click, the rustle of uniform fabric, turbines idling far behind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s19_08",
+  "scene": "S19",
+  "act": 4,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "越过林骁肩头，秦岳保持敬礼：这次，我们跟着你",
+  "dialogue": [
+   {
+    "who": "QIN",
+    "text": "这次，我们跟着你。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, in a dark navy military dress uniform with plain silver collar insignia and no flags or emblems.\n<Subject 2> is the armored woman in <Picture 2>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her faceplate is retracted, and her crushed left back thruster pod is replaced by a crude makeshift thruster of raw brushed steel with orange hazard stripes and exposed cables.\n<Picture 3> is the location reference for [Shot 1], the coastal defense command center; its dark steel architecture and cool blue military lighting carry over to the open rooftop helipad outside it, before dawn as the rain stops.\n\nsummary:\n[reference generation] Still saluting, <Subject 1> tells <Subject 2> that this time they will follow her.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face, deep-set eyes and plain navy uniform with silver collar insignia stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and helmet design stay identical; only the makeshift thruster is new.\n<Picture 3> ([Shot 1] location): partially_preserved - same dark steel architecture and blue military lighting; the outdoor helipad, sky and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, soft pre-dawn blue-grey light, a thinning drizzle, wet reflective steel, warm landing lights and the teal glow of the armor. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium close-up on <Subject 1> over <Subject 2>'s armored right shoulder, which sits soft in the right foreground, static. <Subject 1> holds his salute, his stern face softening for the first time, eyes steady on hers. <Subject 1> (S1) says in a low, deliberate voice, <d>[Chinese] 这次，我们跟着你。</d> He holds the salute a beat longer, then lowers his hand slowly to his side. The shot ends with him giving her one small, firm nod.\n\noverall_soundscape:\nWind, distant turbines beginning to spool up, a faint radio crackle.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s19_09",
+  "scene": "S19",
+  "act": 4,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "秦岳转身按住领口通讯器下令，停机坪随之动起来",
+  "dialogue": [
+   {
+    "who": "QIN",
+    "text": "所有单位，掩护她入海。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, in a dark navy military dress uniform with plain silver collar insignia and no flags or emblems.\n<Picture 2> is the location reference for [Shot 1], the coastal defense command center; its dark steel architecture and cool blue military lighting carry over to the open rooftop helipad outside it, before dawn as the rain stops.\n\nsummary:\n[reference generation] <Subject 1> turns to the helipad and orders every unit to cover her dive into the sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face, deep-set eyes and plain navy uniform with silver collar insignia stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same dark steel architecture and blue military lighting; the outdoor helipad, sky and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, soft pre-dawn blue-grey light, a thinning drizzle, wet reflective steel, warm landing lights and the teal glow of the armor. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium shot, slightly low angle, static. <Subject 1> turns away from her toward the rows of aircraft, presses two fingers to the small radio at his collar, and <Subject 1> (S1) commands in a low, firm voice that carries across the pad, <d>[Chinese] 所有单位，掩护她入海。</d> Behind him the ground crews break into motion: pilots run to cockpits, canopies swing shut and rotor blades begin to turn. The shot ends with <Subject 1> standing square in the center of the frame as the whole helipad comes alive around him.\n\noverall_soundscape:\nHis order echoing over radio speakers, running footsteps, canopies thudding shut, turbines and rotors spooling up, wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s19_10",
+  "scene": "S19",
+  "act": 4,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "战斗机和直升机群从停机坪依次起飞，飞向画右的大海，林骁与秦岳在前景目送（8 秒）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her faceplate is retracted, and her crushed left back thruster pod is replaced by a crude makeshift thruster of raw brushed steel with orange hazard stripes and exposed cables.\n<Subject 2> is the general in <Picture 2>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, in a dark navy military dress uniform with plain silver collar insignia and no flags or emblems.\n<Picture 3> is the location reference for [Shot 1], the coastal defense command center; its dark steel architecture and cool blue military lighting carry over to the open rooftop helipad outside it, before dawn as the rain stops.\n\nsummary:\n[reference generation] VTOL fighters and helicopters lift off from the helipad one after another and head out to sea as <Subject 2> and <Subject 1> watch.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and helmet design stay identical; only the makeshift thruster is new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face, deep-set eyes and plain navy uniform with silver collar insignia stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same dark steel architecture and blue military lighting; the outdoor helipad, sky and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, soft pre-dawn blue-grey light, a thinning drizzle, wet reflective steel, warm landing lights and the teal glow of the armor. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Wide shot, low angle from the deck behind <Subject 2> on the left and <Subject 1> on the right, slow tilt up. Rotor wash blows the last rain mist and puddle spray across the steel pad. One after another, helicopters rise, then VTOL fighters with no readable markings lift vertically on blue-white engine glow, tip their noses toward the sea and accelerate away to the right in a line of lights. <Subject 1>'s makeshift thruster glints as she turns her head to follow them. The shot ends with the formation streaking out over the grey sea toward the dawn horizon, the two figures small beneath them.\n\noverall_soundscape:\nRising rotor thump, jet turbines roaring one after another, wind blast, spray hissing across the deck, engines fading out to sea.\n\nnon_diegetic_music: N/A"
+ }
+]

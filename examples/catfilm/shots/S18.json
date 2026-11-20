@@ -1,0 +1,319 @@
+[
+  {
+    "id": "cf_s18_01",
+    "scene": "S18",
+    "act": 3,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 8,
+    "resolution": "720p",
+    "shot_size": "EWS",
+    "summary_zh": "大全景：发布会中庭座无虚席，记者摄像机林立，天窗洒下温暖斜阳，巨大的抽象光波屏。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a vast launch-event atrium with a curved white stage, a huge abstract light-wave display wall with no text, hundreds of seats, press cameras on tripods and skylights.\n\nsummary:\n[reference generation] A packed launch-event atrium waits under warm skylights.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same curved stage, light-wave wall, seats and skylights; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Extreme wide shot from the back of the atrium, high angle, slow push-in, deep focus from the back rows to the stage. Hundreds of seated guests fill the rows, many holding cats and dogs that wear small white collars, and press cameras on tripods line the aisle. The huge abstract light-wave wall behind the curved white stage ripples slowly in white and gold. The shot ends centered on the empty stage.\n\noverall_soundscape:\nA large hall murmur, camera shutter clicks, a low ambient tone from the display wall.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s18_02",
+    "scene": "S18",
+    "act": 3,
+    "beat": 2,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/lu.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "陆承宇在掌声中走上舞台中央。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the tech CEO in <Picture 1>: a 48-year-old East Asian man tech CEO, lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, composed faint smile.\n<Picture 2> is the location reference for [Shot 1], a vast launch-event atrium with a curved white stage, a huge abstract light-wave display wall with no text, hundreds of seats, press cameras on tripods and skylights.\n\nsummary:\n[reference generation] <Subject 1> walks onto the stage to applause.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - lean face, swept-back greying hair, rimless glasses, charcoal mandarin-collar jacket and graphite smartwatch stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same curved stage, light-wave wall, seats and skylights; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Wide shot from the audience side, eye level, static, deep focus. <Subject 1> walks in from the right wing across the curved white stage toward the center, one hand raised in a small greeting, while the audience in the foreground rises into applause. The shot ends with him stopping at center stage under the light-wave wall.\n\noverall_soundscape:\nSwelling applause, his measured footsteps on the stage, camera shutters.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s18_03",
+    "scene": "S18",
+    "act": 3,
+    "beat": 2,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/lu_face.png",
+      "assets/catfilm/refs/lu.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "陆承宇舞台中央中景：今天，你将听懂你爱的每个生命。",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "今天，你将听懂你爱的每个生命。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the tech CEO in <Picture 1> and <Picture 2>: a 48-year-old East Asian man tech CEO, lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, composed faint smile.\n<Picture 3> is the location reference for [Shot 1], a vast launch-event atrium with a curved white stage, a huge abstract light-wave display wall with no text, hundreds of seats, press cameras on tripods and skylights.\n\nsummary:\n[reference generation] <Subject 1> opens the launch with a promise to the audience.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - lean face, swept-back greying hair, rimless glasses, charcoal mandarin-collar jacket and graphite smartwatch stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same curved stage, light-wave wall, seats and skylights; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Medium shot of <Subject 1> at center stage, slightly low angle from the front rows, static, the light-wave wall sharp behind him. Within the first second <Subject 1> (S1) says into a slim headset microphone in a smooth, measured baritone that never rises, his lips moving clearly, <d>[Chinese] 今天，你将听懂你爱的每个生命。</d> After the line he lets a calm pause hang and smiles faintly at the audience. The shot ends on his composed face.\n\noverall_soundscape:\nHis voice through a large hall PA, the audience falling quiet.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s18_04",
+    "scene": "S18",
+    "act": 3,
+    "beat": 3,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/collar_demo_v2.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "前排：主人抱着戴白色演示项圈的柯基，项圈亮起，用甜腻的童声说：我爱你！我爱你！主人惊喜地抱紧它。",
+    "dialogue": [
+      {
+        "who": "PET",
+        "text": "我爱你！我爱你！"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the white demo collars in <Picture 1>, each one a plain white mass-market version of the translator collar with a small round white pendant and a thin glowing ring.\n<Picture 2> is the location reference for [Shot 1], a vast launch-event atrium with a curved white stage, a huge abstract light-wave display wall with no text, hundreds of seats, press cameras on tripods and skylights.\n\nsummary:\n[reference generation] In the front row a corgi's white demo collar declares its love in a sugary voice.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - plain white band, small round white pendant and thin ring stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same curved stage, light-wave wall, seats and skylights; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. The corgi is a real dog with natural canine behaviour; its mouth never moves to speak.\n[Shot 1] Medium shot of the front row at eye level, static, all sharp: a woman in a beige blouse holds a corgi on her lap beside owners holding a ginger cat and a grey tabby, all wearing <Subject 1>. Within the first second the ring on the corgi's collar glows white and the collar (S1) speaks in a high, sugary child-like synthetic voice from its small pendant, <d>[Chinese] 我爱你！我爱你！</d> The corgi's mouth stays closed; it only pants and wags. After the line the owner gasps and hugs the dog to her chest. The shot ends on her delighted face beside the glowing white ring.\n\noverall_soundscape:\nThe sugary synthetic voice from a small speaker, a ripple of surprised laughter, the corgi's panting.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s18_05",
+    "scene": "S18",
+    "act": 3,
+    "beat": 3,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/collar_demo_v2.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "柯基近景：歪着头，白色光环规律地一闪一闪，眼神茫然（好笑又发毛）。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the white demo collars in <Picture 1>, each one a plain white mass-market version of the translator collar with a small round white pendant and a thin glowing ring.\n<Picture 2> is the location reference for [Shot 1], a vast launch-event atrium with a curved white stage, a huge abstract light-wave display wall with no text, hundreds of seats, press cameras on tripods and skylights.\n\nsummary:\n[reference generation] The corgi tilts its head blankly while its white ring blinks too regularly.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - plain white band, small round white pendant and thin ring stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same curved stage, light-wave wall, seats and skylights; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. The corgi is a real dog with natural canine behaviour.\n[Shot 1] Close-up of the corgi's face in its owner's arms, eye level, static, every hair sharp. The small white pendant of <Subject 1> glows at its throat. The corgi tilts its head to one side, ears up, eyes blank and puzzled, while the owner's hand strokes its chest. The shot ends with the ring blinking white in a slightly too regular rhythm.\n\noverall_soundscape:\nAudience laughter, a faint electronic tick from the collar.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s18_06",
+    "scene": "S18",
+    "act": 3,
+    "beat": 4,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/lu.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "从陆承宇身后拍观众：全场哄笑鼓掌，他一动不动地等着。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the tech CEO in <Picture 1>: a 48-year-old East Asian man tech CEO, lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, composed faint smile.\n<Picture 2> is the location reference for [Shot 1], a vast launch-event atrium with a curved white stage, a huge abstract light-wave display wall with no text, hundreds of seats, press cameras on tripods and skylights.\n\nsummary:\n[reference generation] From behind <Subject 1> on stage, the audience laughs and applauds.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 2> ([Shot 1] location): partially_preserved - same curved stage, light-wave wall, seats and skylights; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Wide shot from behind <Subject 1> on stage, his back and shoulders in the lower foreground, static, the full audience sharp beyond him. The rows of guests laugh and break into applause, many lifting their pets toward the stage, while <Subject 1> stands perfectly still, waiting. The shot ends as the applause begins to fade.\n<Subject 1> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 1> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nLaughter and applause filling the atrium, then subsiding.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s18_07",
+    "scene": "S18",
+    "act": 3,
+    "beat": 4,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/lu_face.png",
+      "assets/catfilm/refs/lu.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆承宇近景，等笑声落下：而且，不止听懂。",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "而且，不止听懂。"
+      }
+    ],
+    "keyframe": "assets/catfilm/kf/cf_s18_07.png",
+    "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, charcoal mandarin-collar suit jacket over a black high-neck shirt, slim graphite smartwatch on his left wrist). He stands at center stage with a slim headset microphone, waiting for the laughter to die down, a composed faint smile on his face. Behind him, the launch-event atrium of Reference 3: the curved white stage and the huge abstract light-wave display wall with no text; warm clear late-afternoon sunlight pouring through skylights. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine wool weave of the jacket; no bokeh, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+    "ltx_prompt": "A photoreal live-action film shot, warm clear late-afternoon sunlight pouring through skylights, medium close-up at eye level, locked-off camera with a very slow push-in. Within the first second he says calmly, letting each word land, in Mandarin Chinese, \"而且，不止听懂。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing at the center of a curved white stage before a huge abstract light-wave display wall. After the line his smile thins and he looks out across the audience without blinking. Deep focus with crisp skin pores, hair strands and wool detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, applause fading in a large hall, a soft PA reverb. No music, no on-screen text."
+  },
+  {
+    "id": "cf_s18_08",
+    "scene": "S18",
+    "act": 3,
+    "beat": 5,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/lu_face.png",
+      "assets/catfilm/refs/lu.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆承宇近景，说完张开双手：四点整，全城三百万个项圈上线。",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "四点整，全城三百万个项圈上线。"
+      }
+    ],
+    "keyframe": "assets/catfilm/kf/cf_s18_08.png",
+    "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, charcoal mandarin-collar suit jacket over a black high-neck shirt, slim graphite smartwatch on his left wrist). He stands at center stage with a slim headset microphone, hands loosely together at his waist, chin slightly raised. Behind him, the launch-event atrium of Reference 3: the curved white stage and the huge abstract light-wave display wall with no text; warm clear late-afternoon sunlight pouring through skylights. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine wool weave of the jacket; no bokeh, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+    "ltx_prompt": "A photoreal live-action film shot, warm clear late-afternoon sunlight pouring through skylights, medium close-up at eye level, locked-off camera with a very slow push-in. Within the first second he says with quiet grandeur, in Mandarin Chinese, \"四点整，全城三百万个项圈上线。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing at the center of a curved white stage before a huge abstract light-wave display wall. After the line he opens both hands outward toward the audience, palms up. Deep focus with crisp skin pores, hair strands and wool detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, a hushed hall, a low swell from the display wall. No music, no on-screen text."
+  },
+  {
+    "id": "cf_s18_09",
+    "scene": "S18",
+    "act": 3,
+    "beat": 5,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/collar_demo_v2.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "观众席反应：一只戴白色演示项圈的灰色虎斑猫在主人怀里压平耳朵，瞳孔收紧（无台词）。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the white demo collars in <Picture 1>, each one a plain white mass-market version of the translator collar with a small round white pendant and a thin glowing ring.\n<Picture 2> is the location reference for [Shot 1], a vast launch-event atrium with a curved white stage, a huge abstract light-wave display wall with no text, hundreds of seats, press cameras on tripods and skylights.\n\nsummary:\n[reference generation] A grey tabby in the audience flattens its ears at the announcement.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - plain white band, small round white pendant and thin ring stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same curved stage, light-wave wall, seats and skylights; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. The tabby is a real four-legged cat with natural feline behaviour; its mouth stays closed.\n[Shot 1] Close-up of a grey tabby cat in its owner's arms in the audience, eye level, static, every whisker sharp. The small white pendant of <Subject 1> glows at its throat. The cat flattens its ears back and its pupils narrow toward the stage. The shot ends on its uneasy stare.\n\noverall_soundscape:\nApplause swelling around it, a low uneasy growl from the cat.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s18_10",
+    "scene": "S18",
+    "act": 3,
+    "beat": 6,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/lu_face.png",
+      "assets/catfilm/refs/lu.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "陆承宇走下舞台进入后台通道，抬起手腕对手表低语：核心室准备好了吗？",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "核心室准备好了吗？"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the tech CEO in <Picture 1> and <Picture 2>: a 48-year-old East Asian man tech CEO, lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, composed faint smile.\n<Picture 3> is the location reference for [Shot 1], a vast launch-event atrium with a curved white stage, a huge abstract light-wave display wall with no text, hundreds of seats, press cameras on tripods and skylights.\n\nsummary:\n[reference generation] Walking off stage, <Subject 1> murmurs into his smartwatch.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - lean face, swept-back greying hair, rimless glasses, charcoal mandarin-collar jacket and graphite smartwatch stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same curved stage, light-wave wall, seats and skylights; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Medium shot tracking backward in front of <Subject 1> as he walks off the side of the stage into a white backstage passage, eye level, everything sharp. Within the first second <Subject 1> (S1) raises his left wrist and murmurs into the smartwatch in a smooth, measured baritone that never rises, his lips moving clearly, <d>[Chinese] 核心室准备好了吗？</d> After the line he keeps walking at the same unhurried pace, wrist still raised. The shot ends with the bright stage receding behind him.\n\noverall_soundscape:\nApplause muffled behind him, his footsteps, the low murmur.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s18_11",
+    "scene": "S18",
+    "act": 3,
+    "beat": 7,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/lu.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "INSERT",
+    "summary_zh": "手表特写：表盘只有抽象波形；郑锋的声音从表里传出（画外）：猫和许工都在。",
+    "dialogue": [
+      {
+        "who": "ZHENG",
+        "text": "猫和许工都在。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the tech CEO in <Picture 1>: a 48-year-old East Asian man tech CEO, lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, composed faint smile.\n<Picture 2> is the location reference for [Shot 1], a vast launch-event atrium with a curved white stage, a huge abstract light-wave display wall with no text, hundreds of seats, press cameras on tripods and skylights.\n\nsummary:\n[reference generation] On the smartwatch of <Subject 1>, the security chief's voice reports in.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - lean face, swept-back greying hair, rimless glasses, charcoal mandarin-collar jacket and graphite smartwatch stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same curved stage, light-wave wall, seats and skylights; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Insert close-up of the slim graphite smartwatch on the left wrist of <Subject 1>, static, the cuff of his charcoal jacket sharp and the watch face showing only an abstract pulsing waveform with no text. Within the first second an off-screen man (S1) answers from the watch speaker in a gruff, clipped low voice, <d>[Chinese] 猫和许工都在。</d> No person is visible speaking. After the line the waveform flattens and his wrist lowers out of frame. The shot ends on the empty backstage floor.\n\noverall_soundscape:\nA small tinny voice from the watch speaker, distant hall applause.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s18_12",
+    "scene": "S18",
+    "act": 3,
+    "beat": 7,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/lu_face.png",
+      "assets/catfilm/refs/lu.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "陆承宇近景反应：放下手腕，嘴角慢慢浮起一丝满意的笑（无台词）。",
+    "dialogue": [],
+    "keyframe": "assets/catfilm/kf/cf_s18_12.png",
+    "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Close-up, eye level: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, charcoal mandarin-collar suit jacket over a black high-neck shirt, slim graphite smartwatch on his left wrist). He stands in a white backstage passage, lowering his left wrist, eyes cool. Behind him, the launch-event atrium of Reference 3: the curved white stage and the huge abstract light-wave display wall with no text; warm clear late-afternoon sunlight pouring through skylights. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine wool weave of the jacket; no bokeh, no blur, no haze. Lips closed. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+    "ltx_prompt": "A photoreal live-action film shot, warm clear late-afternoon sunlight pouring through skylights, close-up at eye level, locked-off camera with a very slow push-in. Within the first second a faint satisfied smile spreads slowly across his face. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a white backstage passage at the edge of a launch-event atrium. Then he straightens his jacket cuff and looks ahead. Deep focus with crisp skin pores, hair strands and wool detail; no haze, no bokeh. Audio: no dialogue, distant muffled applause, a quiet corridor tone. No music, no on-screen text."
+  },
+  {
+    "id": "cf_s18_13",
+    "scene": "S18",
+    "act": 3,
+    "beat": 8,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/drone_courier.png",
+      "assets/catfilm/refs/loc_city.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "后台窗外：海湾上空远远一串小光点在闪——窗前没有人，没人注意。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the delivery drones in <Picture 1>, each one an orange-and-white quadcopter delivery drone with four ducted rotors and a small parcel clamp underneath, no text.\n<Picture 2> is the reference for the view through the window in [Shot 1], an aerial view of a near-future Chinese coastal city with slender glass towers, green terraces, sky bridges, a white monorail and a calm blue bay.\n\nsummary:\n[reference generation] Through a backstage window, a far-off line of glints crosses the bay unnoticed.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - orange-and-white body, four ducted rotors and parcel clamp stay identical.\n<Picture 2> (the view through the window): partially_preserved - same towers, sky bridges, monorail and bay; the viewpoint is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Wide shot through a tall backstage window, static, the window frame sharp in the foreground and the sunlit bay sharp in the distance; no one stands at the window. Far over the water a long line of tiny glinting points, the swarm of <Subject 1>, crosses the sky toward the tower. The shot ends with the glints growing slightly larger.\nExactly the characters listed in subject_definitions appear, each exactly once; no twins, no look-alike extras, no second copy of any robot or animal.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nMuffled hall sound through the walls, a faint distant buzz.\n\nnon_diegetic_music: N/A",
+    "keyframe": "assets/catfilm/kf/cf_s18_13.png",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the delivery drones in <Picture 1>, each one an orange-and-white quadcopter delivery drone with four ducted rotors and a small parcel clamp underneath, no text.\n<Picture 2> is the reference for the view through the window in [Shot 1], an aerial view of a near-future Chinese coastal city with slender glass towers, green terraces, sky bridges, a white monorail and a calm blue bay.\n\nsummary:\n[reference generation] Through a backstage window, a far-off line of glints crosses the bay unnoticed.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - orange-and-white body, four ducted rotors and parcel clamp stay identical.\n<Picture 2> (the view through the window): partially_preserved - same towers, sky bridges, monorail and bay; the viewpoint is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Wide shot through a tall backstage window, static, the window frame sharp in the foreground and the sunlit bay sharp in the distance; no one stands at the window. Far over the water a long line of tiny glinting points, the swarm of <Subject 1>, crosses the sky toward the tower. The shot ends with the glints growing slightly larger.\nExactly the characters listed in subject_definitions appear, each exactly once; no twins, no look-alike extras, no second copy of any robot or animal.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nMuffled hall sound through the walls, a faint distant buzz.\n\nnon_diegetic_music: N/A\n\nMandatory shot-specific cast and anatomy constraints (override generic cast wording): Anatomical continuity throughout: each person appears exactly once; each robot appears exactly once. No twins, extra characters, reflected duplicates, extra limbs or detached body parts. EMPTY backstage foreground and window: ZERO people, ZERO cats, ZERO dogs, ZERO ground robots, including reflections. Only the distant drone swarm over the bay; the drones are multiple distant tiny points as required by this scene.\nPreserve the opening keyframe composition and full visible single-tail anatomy; do not change camera angle or introduce any new characters.",
+    "keyframe_prompt": "Draw a single opening keyframe for this scene. Preserve the identities in the reference images. Photoreal live-action, 16:9, no text or subtitles. Depict the INITIAL pose, not a montage. All important anatomy must fit in the middle 75% of the image height for a later 1344x768 center crop.\nsubject_definitions:\n<Subject 1> is the delivery drones in <Picture 1>, each one an orange-and-white quadcopter delivery drone with four ducted rotors and a small parcel clamp underneath, no text.\n<Picture 2> is the reference for the view through the window in [Shot 1], an aerial view of a near-future Chinese coastal city with slender glass towers, green terraces, sky bridges, a white monorail and a calm blue bay.\n\nsummary:\n[reference generation] Through a backstage window, a far-off line of glints crosses the bay unnoticed.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - orange-and-white body, four ducted rotors and parcel clamp stay identical.\n<Picture 2> (the view through the window): partially_preserved - same towers, sky bridges, monorail and bay; the viewpoint is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Wide shot through a tall backstage window, static, the window frame sharp in the foreground and the sunlit bay sharp in the distance; no one stands at the window. Far over the water a long line of tiny glinting points, the swarm of <Subject 1>, crosses the sky toward the tower. The shot ends with the glints growing slightly larger.\nExactly the characters listed in subject_definitions appear, each exactly once; no twins, no look-alike extras, no second copy of any robot or animal.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nMuffled hall sound through the walls, a faint distant buzz.\n\nnon_diegetic_music: N/A\n\nMandatory keyframe composition and cast (override earlier tight framing and generic cast wording): Anatomical continuity throughout: each person appears exactly once; each robot appears exactly once. No twins, extra characters, reflected duplicates, extra limbs or detached body parts. EMPTY backstage foreground and window: ZERO people, ZERO cats, ZERO dogs, ZERO ground robots, including reflections. Only the distant drone swarm over the bay; the drones are multiple distant tiny points as required by this scene."
+  },
+  {
+    "id": "cf_s18_14",
+    "scene": "S18",
+    "act": 3,
+    "beat": 9,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "主持人背对镜头站在大屏前，对话筒播报（画外音）：距离听懂计划上线，还有五分钟。",
+    "dialogue": [
+      {
+        "who": "ANCHOR",
+        "text": "距离听懂计划上线，还有五分钟。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a vast launch-event atrium with a curved white stage, a huge abstract light-wave display wall with no text, hundreds of seats, press cameras on tripods and skylights.\n\nsummary:\n[reference generation] A host seen from behind announces five minutes to launch.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same curved stage, light-wave wall, seats and skylights; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Medium wide shot from behind a female host in a white suit standing before the huge light-wave wall, static, her face not visible. Within the first second her voice (S1) rings through the hall PA in a crisp professional female news anchor voice, <d>[Chinese] 距离听懂计划上线，还有五分钟。</d> No face is visible speaking. After the line the light-wave wall pulses brighter in a slow countdown rhythm of abstract rings. The shot ends on the pulsing wall.\n\noverall_soundscape:\nThe amplified voice echoing, a deep rhythmic pulse from the display, audience murmur.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s18_15",
+    "scene": "S18",
+    "act": 3,
+    "beat": 9,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/collar_demo_v2.png",
+      "assets/catfilm/refs/loc_stage.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "观众席全景：数百个白色演示项圈同时亮起，整齐划一地闪烁。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the white demo collars in <Picture 1>, each one a plain white mass-market version of the translator collar with a small round white pendant and a thin glowing ring.\n<Picture 2> is the location reference for [Shot 1], a vast launch-event atrium with a curved white stage, a huge abstract light-wave display wall with no text, hundreds of seats, press cameras on tripods and skylights.\n\nsummary:\n[reference generation] Hundreds of white demo collars in the audience start blinking in unison.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - plain white band, small round white pendant and thin ring stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same curved stage, light-wave wall, seats and skylights; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sunlight pouring through skylights, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. All the pets are real animals with natural behaviour.\n[Shot 1] Wide shot over the audience from the side of the stage, high angle, static, deep focus across every row. Hundreds of pets in their owners' arms wear <Subject 1>. All the small white rings light up together and begin to blink in perfect unison. The shot ends on the sea of synchronized white lights.\n\noverall_soundscape:\nA soft synchronized electronic tick from hundreds of collars, uneasy murmuring.\n\nnon_diegetic_music: N/A"
+  }
+]

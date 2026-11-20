@@ -1,0 +1,705 @@
+[
+  {
+    "id": "ec_s12_01",
+    "scene": "S12",
+    "act": 3,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "顾言之的实验室：沈砚被束带固定在黑色皮质读取椅上，头戴金色光环头箍，顾言之站在控制台前",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the older man in <Picture 3> and <Picture 4>, with silver-white hair swept back, thin rimless rectangular glasses, a cream-white linen mandarin-collar suit, and a black lacquered cane with a polished silver handle in his right hand.\n<Picture 5> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] <Subject 1> lies bound in a black leather readout chair under a gold headset while <Subject 2> limps along his console.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, swept-back silver hair, rimless glasses, cream linen suit and black cane stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Wide shot, eye level, very slow push-in. <Subject 1> lies back in the black leather readout chair on the left, her wrists bound to the chair arms with black plastic restraints and a gold halo-ring headset on her head, facing frame right. On the right, <Subject 2> stands at the glass desk display leaning on his cane; he takes two slow limping steps along the desk: step, step, a pause, then the hard tap of a cane tip. The shot ends with him stopping at the console, the lab sharp from chair to skyline.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis gait on wood: step, step, a pause, then the hard tap of a cane tip; the gold headset humming; the restraints creaking.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_02",
+    "scene": "S12",
+    "act": 3,
+    "beat": 2,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_02.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚盯着他。SHEN: 是你推：「是你推了他。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "是你推了他。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"是你推了他。\" Her lips move in sync with each syllable, her voice low, flat and certain. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, a gold halo-ring headset on her head, reclining in a black leather readout chair with her wrists bound to the chair arms by black plastic restraints. After the line she pulls once against the restraints, her eyes never leaving him. The shot ends with her glare fixed toward frame right. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_03",
+    "scene": "S12",
+    "act": 3,
+    "beat": 3,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_03.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "顾言之没有抬头。GU: 我拉了他二十：「我拉了他二十年。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "我拉了他二十年。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Medium close-up at eye level, static camera, he stands at a glass desk display slightly right of center, looking down at it, his face angled toward frame left. Within the first second he says in Mandarin Chinese, \"我拉了他二十年。\" His lips move in sync with each syllable, his voice soft and warm, without looking up. He is a 62-year-old East Asian man with silver-white hair swept back neatly, thin rimless rectangular glasses and a clean-shaven face, wearing a cream-white linen mandarin-collar suit. After the line he keeps his eyes on the display and touches it lightly with one finger. The shot ends with his eyes lowered to the glowing display. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His warm, low older male voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_04",
+    "scene": "S12",
+    "act": 3,
+    "beat": 4,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "OTS",
+    "summary_zh": "过沈砚的肩拍顾言之，他转过身。GU: 程牧想让全：「程牧想让全城怀疑自己的记忆。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "程牧想让全城怀疑自己的记忆。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>, with silver-white hair swept back, thin rimless rectangular glasses, a cream-white linen mandarin-collar suit, and a black lacquered cane with a polished silver handle in his right hand.\n<Subject 2> is the woman in <Picture 3>, seen from behind: the back of her head with the gold halo-ring headset and the shoulder of her charcoal-grey trench coat.\n<Picture 4> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> turns from his console and explains that Cheng Mu wanted the city to doubt its own memories.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, swept-back silver hair, rimless glasses, cream linen suit and black cane stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a warm, low, unhurried voice, <d>[Chinese] 程牧想让全城怀疑自己的记忆。</d> <Subject 2>'s shoulder and the gold headset on her head fill the left foreground, sharp and in focus. <Subject 1> stands at the console on the right; after the line he turns around to face her, pivoting on his cane. The shot ends with him facing her fully, both hands on the silver handle.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis calm voice, then the turn on his cane: step, step, a pause, then the hard tap of a cane tip; the soft hum of the headset; the city silent beyond the glass.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_05",
+    "scene": "S12",
+    "act": 3,
+    "beat": 5,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_05.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "顾言之。GU: 法庭、婚姻、：「法庭、婚姻、遗嘱，全靠回放。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "法庭、婚姻、遗嘱，全靠回放。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"法庭、婚姻、遗嘱，全靠回放。\" His lips move in sync with each syllable, his voice warm, low and unhurried. He is a 62-year-old East Asian man with silver-white hair swept back neatly, thin rimless rectangular glasses and a clean-shaven face, wearing a cream-white linen mandarin-collar suit. After the line he opens his free hand slightly, palm up, perfectly reasonable. The shot ends with his hand open and his face patient. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His warm, low older male voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_06",
+    "scene": "S12",
+    "act": 3,
+    "beat": 6,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_06.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "顾言之。GU: 他一开口，这：「他一开口，这座城就塌了。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "他一开口，这座城就塌了。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"他一开口，这座城就塌了。\" His lips move in sync with each syllable, his voice soft and grave, never raised. He is a 62-year-old East Asian man with silver-white hair swept back neatly, thin rimless rectangular glasses and a clean-shaven face, wearing a cream-white linen mandarin-collar suit. After the line he lets his hand fall and his smile fades a little. The shot ends with his smile gone and his eyes grave. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His warm, low older male voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_07",
+    "scene": "S12",
+    "act": 3,
+    "beat": 7,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_07.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 所以你：「所以你改了韩铮的，也改了我的。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "所以你改了韩铮的，也改了我的。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"所以你改了韩铮的，也改了我的。\" Her lips move in sync with each syllable, her voice low and cold. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, a gold halo-ring headset on her head, reclining in a black leather readout chair with her wrists bound to the chair arms by black plastic restraints. After the line her jaw tightens and she holds his gaze. The shot ends with her eyes cold and steady. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_08",
+    "scene": "S12",
+    "act": 3,
+    "beat": 8,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_08.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "顾言之。GU: 我只是让真相：「我只是让真相，更整齐一点。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "我只是让真相，更整齐一点。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"我只是让真相，更整齐一点。\" His lips move in sync with each syllable, his voice gentle and warm, almost kind. He is a 62-year-old East Asian man with silver-white hair swept back neatly, thin rimless rectangular glasses and a clean-shaven face, wearing a cream-white linen mandarin-collar suit. After the line he adjusts his rimless glasses with one finger. The shot ends with him smiling faintly toward frame left. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His warm, low older male voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_09",
+    "scene": "S12",
+    "act": 3,
+    "beat": 9,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_09.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 那不是：「那不是真相。是你要的结果。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "那不是真相。是你要的结果。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"那不是真相。是你要的结果。\" Her lips move in sync with each syllable, her voice low and clear, each word cut short. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, a gold halo-ring headset on her head, reclining in a black leather readout chair with her wrists bound to the chair arms by black plastic restraints. After the line her jaw locks and she stares him down. The shot ends with her stare hard and unblinking. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_10",
+    "scene": "S12",
+    "act": 3,
+    "beat": 10,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "顾言之俯身靠近她，手杖靠在一旁。GU: 小砚，忘：「小砚，忘了今晚。你还是最好的取证师。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "小砚，忘了今晚。你还是最好的取证师。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>, with silver-white hair swept back, thin rimless rectangular glasses, a cream-white linen mandarin-collar suit, and a black lacquered cane with a polished silver handle in his right hand.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 5> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] <Subject 1> leans his cane against the chair and bends close to <Subject 2>, asking her to forget tonight.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, swept-back silver hair, rimless glasses, cream linen suit and black cane stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a soft, fatherly voice, <d>[Chinese] 小砚，忘了今晚。你还是最好的取证师。</d> He has just reached the readout chair: he leans his black cane against the arm of the chair and bends down close to <Subject 2>, who lies bound on the left under the gold headset and turns her face away from him. The shot ends with him bent over her, one hand resting gently on the headset.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis soft voice close to her ear; the last of his gait, step, step, a pause, then the hard tap of a cane tip, as the cane settles against the leather chair; her tight breathing; the headset hum.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_11",
+    "scene": "S12",
+    "act": 3,
+    "beat": 11,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_11.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 我宁可：「我宁可记得，也不要被你修好。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "我宁可记得，也不要被你修好。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"我宁可记得，也不要被你修好。\" Her lips move in sync with each syllable, her voice very quiet, each word distinct. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, a gold halo-ring headset on her head, reclining in a black leather readout chair with her wrists bound to the chair arms by black plastic restraints. After the line she turns her face back toward him and holds his eyes. The shot ends with her eyes locked on his, unafraid. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_12",
+    "scene": "S12",
+    "act": 3,
+    "beat": 12,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "INSERT",
+    "summary_zh": "顾言之的手指按下控制台的启动键，光环头箍亮起金光",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1>, seen only as his hand and the cuff of his cream-white linen sleeve.\n<Picture 2> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] <Subject 1>'s finger presses the start key and the gold headset lights up.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Insert close-up of the glass console, static. <Subject 1>'s finger in the cream linen cuff presses a round start key on the console. Instantly the gold halo-ring headset on the chair beyond lights up bright gold, its ring of small lights chasing around. The shot ends with the finger lifting away and the headset fully lit, every brass edge sharp.\n\noverall_soundscape:\nA soft click of the key, a rising electronic whine, the headset humming louder.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_13",
+    "scene": "S12",
+    "act": 3,
+    "beat": 13,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_13.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚身体绷紧，咬牙闭眼。无台词",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, a gold halo-ring headset on her head, reclining in a black leather readout chair with her wrists bound to the chair arms by black plastic restraints. Her body goes rigid against the chair; she squeezes her eyes shut and clenches her teeth, the gold headset lights flickering across her forehead. The shot ends with her eyes shut tight and the tendons standing out in her neck. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: A rising electronic whine, her strained breath through gritted teeth, the leather creaking. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_14",
+    "scene": "S12",
+    "act": 3,
+    "beat": 14,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/cheng_face.png",
+      "assets/echo/refs/cheng.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_skybridge.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "残响碎片：夜里的玻璃天桥，程牧和沈砚面对面站着（沈砚在画左）。CHENG(MEM):：「沈砚，我们只有十分钟。」",
+    "dialogue": [
+      {
+        "who": "CHENG",
+        "text": "沈砚，我们只有十分钟。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>, with a thin lined face, short cropped white hair, round black-framed glasses, a thin silver implant ring behind his left ear, and a dark-navy turtleneck under a long camel-colored wool overcoat.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 5> is the location reference for [Shot 1]: an enclosed glass sky-bridge forty floors up between two modern glass towers at night, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, clean white LED strip lights along the base of both walls, crystal-clear night air, a sharp glittering city grid far below.\n\nsummary:\n[reference generation] In an echo fragment, <Subject 1> and <Subject 2> stand face to face on the night sky-bridge and he says they only have ten minutes.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, white hair, round black glasses, silver implant ring, turtleneck and camel overcoat stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Echo fragment look: the memory replay look made slightly warmer, with brief clean white flicker breaks between moments; the image stays sharp and fully in focus, never blurred. Clean white LED strips light them from below; the night city beyond the intact glass is crisp to the horizon.\n[Shot 1] Wide shot, eye level, static. Within the first second, <Subject 1> (S1) says in a tired, gentle, urgent voice, <d>[Chinese] 沈砚，我们只有十分钟。</d> The two stand face to face in the middle of the sky-bridge, <Subject 2> on the left facing frame right and <Subject 1> on the right facing her, the glass panels intact on both sides. After the line he glances once over his shoulder down the empty bridge. The shot ends with him turning back to her, the city sharp below.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis low urgent voice, the hum of the LED strips, wind pressing on the glass, a brief clean electronic flicker.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_15",
+    "scene": "S12",
+    "act": 3,
+    "beat": 15,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/cheng_face.png",
+      "assets/echo/refs/cheng.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_skybridge.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "程牧握住沈砚的手，两人耳后的植入环同时亮起青光。CHENG(MEM):：「握紧。残响区会替你记住。」",
+    "dialogue": [
+      {
+        "who": "CHENG",
+        "text": "握紧。残响区会替你记住。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>: a 61-year-old East Asian man engineer, thin lined face, short cropped white hair, round black-framed glasses, a thin silver implant ring behind his left ear, a dark-navy turtleneck under a long camel-colored wool overcoat.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 5> is the location reference for [Shot 1]: an enclosed glass sky-bridge forty floors up between two modern glass towers at night, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, clean white LED strip lights along the base of both walls, crystal-clear night air, a sharp glittering city grid far below.\n\nsummary:\n[reference generation] In the echo, <Subject 1> clasps <Subject 2>'s hand and both implant rings light up cyan.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, white hair, round black glasses, silver implant ring, turtleneck and camel overcoat stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Echo fragment look: the memory replay look made slightly warmer, with brief clean white flicker breaks between moments; the image stays sharp and fully in focus, never blurred. Clean white LED strips light them from below; the night city beyond the intact glass is crisp to the horizon.\n[Shot 1] Medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a tired, gentle voice, <d>[Chinese] 握紧。残响区会替你记住。</d> He takes <Subject 2>'s right hand in both of his and holds it firmly between them. As their hands clasp, the thin silver implant rings behind their left ears light up cyan at the same moment. The shot ends with their hands held tight and both rings glowing cyan.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis gentle voice, a soft rising electronic chime as the rings connect, wind against the glass, the LED hum.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_16",
+    "scene": "S12",
+    "act": 3,
+    "beat": 16,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/cheng.png",
+      "assets/echo/refs/loc_skybridge.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "碎片开始闪烁断裂，回忆里的沈砚伸出手。SHEN(MEM):：「别走——我还没看清！」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "别走——我还没看清！"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the older man in <Picture 3>, with a thin lined face, short cropped white hair, round black-framed glasses, a thin silver implant ring behind his left ear, and a dark-navy turtleneck under a long camel-colored wool overcoat.\n<Picture 4> is the location reference for [Shot 1]: an enclosed glass sky-bridge forty floors up between two modern glass towers at night, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, clean white LED strip lights along the base of both walls, crystal-clear night air, a sharp glittering city grid far below.\n\nsummary:\n[reference generation] The echo begins to break apart; <Subject 1> reaches out after <Subject 2> and cries for him not to go.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, white hair, round black glasses, silver implant ring, turtleneck and camel overcoat stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Echo fragment look: the memory replay look made slightly warmer, with brief clean white flicker breaks between moments; the image stays sharp and fully in focus, never blurred. Clean white LED strips light them from below; the night city beyond the intact glass is crisp to the horizon.\n[Shot 1] Close-up, eye level, static. Within the first second, <Subject 1> (S1) cries out in a low, breaking voice, <d>[Chinese] 别走——我还没看清！</d> The memory starts to break apart in clean white flicker breaks; behind her on the right, <Subject 2> recedes, flickering in and out between frames. She reaches one hand out toward him past the camera. The shot ends with a white flicker break swallowing him while her face stays sharp, her hand outstretched.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer breaking voice, sharp electronic stutters at each flicker break, the wind cutting in and out, then a thin high tone.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_17",
+    "scene": "S12",
+    "act": 3,
+    "beat": 17,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "实验室：玻璃屏上的抽象进度环转过一大半，顾言之轻声说。GU: 百分之四：「百分之四十。快结束了。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "百分之四十。快结束了。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>: a 62-year-old East Asian man, silver-white hair swept back neatly, thin rimless rectangular glasses, a gentle composed smile, clean-shaven, a cream-white linen mandarin-collar suit, holding a black lacquered walking cane with a polished plain silver handle in his right hand, a slight limp on his left leg.\n<Picture 3> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] <Subject 1> watches the progress ring on his display and softly says it is forty percent done.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, swept-back silver hair, rimless glasses, cream linen suit and black cane stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Medium shot, eye level, static. Within the first second, <Subject 1> (S1) says softly, almost tenderly, <d>[Chinese] 百分之四十。快结束了。</d> He stands beside the glass desk display on the right, where an abstract amber progress ring has turned nearly halfway, no numbers or text. After the line he shifts his weight on his cane and watches the ring creep forward. The shot ends with him still, the amber ring reflected in his glasses.\n\noverall_soundscape:\nHis soft voice, the shift of his weight: step, step, a pause, then the hard tap of a cane tip; the rising hum of the headset off-screen; her strained breathing.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_18",
+    "scene": "S12",
+    "act": 3,
+    "beat": 18,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "FS",
+    "summary_zh": "玻璃门被撞开，陆时野冲进来，许棠紧跟在后。LU: 顾言之，：「顾言之，停下！」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "顾言之，停下！"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] The lab's glass door bursts open and <Subject 1> charges in with <Subject 2> behind him, shouting at Gu to stop.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Full shot of the lab's glass door, eye level, static. Within the first second, <Subject 1> (S1) shouts in a hoarse, commanding voice, <d>[Chinese] 顾言之，停下！</d> The glass door has just been shoved open; <Subject 1> charges in from the corridor with <Subject 2> right behind him, her headphones around her neck. He strides several steps into the warm lamplight. The shot ends with both of them inside the lab, eyes fixed on the console.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe glass door banging against its stop, his shout echoing off walnut panels, running boots and sneakers on wood, the headset hum.\n\nnon_diegetic_music: N/A",
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s12_18.png",
+    "keyframe_prompt": "Draw a single photoreal opening keyframe. Preserve the identities and costumes in the supplied reference images. Depict initial pose before action; no montage.\nOriginal scene context:\nsubject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] The lab's glass door bursts open and <Subject 1> charges in with <Subject 2> behind him, shouting at Gu to stop.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Full shot of the lab's glass door, eye level, static. Within the first second, <Subject 1> (S1) shouts in a hoarse, commanding voice, <d>[Chinese] 顾言之，停下！</d> The glass door has just been shoved open; <Subject 1> charges in from the corridor with <Subject 2> right behind him, her headphones around her neck. He strides several steps into the warm lamplight. The shot ends with both of them inside the lab, eyes fixed on the console.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe glass door banging against its stop, his shout echoing off walnut panels, running boots and sneakers on wood, the headset hum.\n\nnon_diegetic_music: N/A\nAuthoritative composition and head-count (overrides conflicting background crowd or end-state instructions):\nExactly 2 people: Lu left and Xu right just behind, distinct silhouettes at doorway as it starts opening. Gu remains entirely off-screen; his spoken name must not introduce another person.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage.",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] The lab's glass door bursts open and <Subject 1> charges in with <Subject 2> behind him, shouting at Gu to stop.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Full shot of the lab's glass door, eye level, static. Within the first second, <Subject 1> (S1) shouts in a hoarse, commanding voice, <d>[Chinese] 顾言之，停下！</d> The glass door has just been shoved open; <Subject 1> charges in from the corridor with <Subject 2> right behind him, her headphones around her neck. He strides several steps into the warm lamplight. The shot ends with both of them inside the lab, eyes fixed on the console.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe glass door banging against its stop, his shout echoing off walnut panels, running boots and sneakers on wood, the headset hum.\n\nnon_diegetic_music: N/A\n\nMandatory continuous shot constraints:\nExactly 2 people: Lu left and Xu right just behind, distinct silhouettes at doorway as it starts opening. Gu remains entirely off-screen; his spoken name must not introduce another person.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage."
+  },
+  {
+    "id": "ec_s12_19",
+    "scene": "S12",
+    "act": 3,
+    "beat": 19,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_19.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "顾言之平静地转身。GU: 陆队长，你在：「陆队长，你在妨碍公证。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "陆队长，你在妨碍公证。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"陆队长，你在妨碍公证。\" His lips move in sync with each syllable, his voice calm, warm and unhurried. He is a 62-year-old East Asian man with silver-white hair swept back neatly, thin rimless rectangular glasses and a clean-shaven face, wearing a cream-white linen mandarin-collar suit. After the line he straightens to his full height, utterly calm. The shot ends with him standing composed, eyes on frame left. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His warm, low older male voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_20",
+    "scene": "S12",
+    "act": 3,
+    "beat": 20,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "OTS",
+    "summary_zh": "过顾言之的肩拍陆时野逼近。LU: 韩铮案的回：「韩铮案的回放，也是你公证的？」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "韩铮案的回放，也是你公证的？"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the older man in <Picture 3>, seen from behind: his swept-back silver-white hair and the shoulder of his cream-white linen suit.\n<Picture 4> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> advances and asks if he certified the Han Zheng replay too.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a low, hard voice, <d>[Chinese] 韩铮案的回放，也是你公证的？</d> <Subject 2>'s cream linen shoulder and silver hair fill the left foreground, sharp and in focus. <Subject 1> advances from the right, closing the distance step by step, his eyes locked on him. The shot ends with him stopping an arm's length away.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis hard voice, his heavy steps on wood, the headset hum, a tense silence.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_21",
+    "scene": "S12",
+    "act": 3,
+    "beat": 21,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_21.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "顾言之的表情裂开了一瞬。反应镜",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Close-up at eye level, static camera, he is slightly right of center looking toward frame left. He is a 62-year-old East Asian man with silver-white hair swept back neatly, thin rimless rectangular glasses and a clean-shaven face, wearing a cream-white linen mandarin-collar suit. His composed face cracks for an instant: his eyes flicker, the corner of his mouth twitches and the smile falls away, then he forces it back. The shot ends with his smile forced back into place. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: The headset hum, his single sharp intake of breath, a creak of the floor. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_22",
+    "scene": "S12",
+    "act": 3,
+    "beat": 22,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "许棠扑到读取椅前，一把扯下光环头箍，金光熄灭",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 5> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] <Subject 1> lunges to the chair and rips the glowing gold headset off <Subject 2>'s head.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Medium shot, eye level, static. <Subject 1> lunges to the black leather readout chair where <Subject 2> lies rigid on the left, eyes shut, and with both hands rips the glowing gold halo-ring headset off her head. The gold light dies instantly. The shot ends with <Subject 1> holding the dark headset and <Subject 2> going slack in the chair.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nRunning sneakers, a plastic crack as the headset tears free, the electronic whine cutting to silence, a sharp gasp.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_23",
+    "scene": "S12",
+    "act": 3,
+    "beat": 23,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "双人：许棠捧住沈砚的脸。XU: 沈砚！看着：「沈砚！看着我！知道我是谁吗？」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "沈砚！看着我！知道我是谁吗？"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 5> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] <Subject 1> cups the dazed <Subject 2>'s face and asks if she knows who she is.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Two-shot medium close-up, eye level, static. Within the first second, <Subject 1> (S1) says fast and frightened, <d>[Chinese] 沈砚！看着我！知道我是谁吗？</d> She kneels on the right beside the chair, both hands cupping the face of <Subject 2>, who lies on the left, dazed, eyes half open, a faint pressure mark on her left temple. After the line <Subject 1> searches her eyes, holding her face steady. The shot ends with <Subject 2>'s eyes slowly finding <Subject 1>'s face.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer frightened voice, unsteady breathing from both of them, the faint tick of the cooling headset, raised voices off-screen.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_24",
+    "scene": "S12",
+    "act": 3,
+    "beat": 24,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_24.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚神情恍惚。SHEN: ……许：「……许棠。脚步声。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "……许棠。脚步声。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"……许棠。脚步声。\" Her lips move in sync with each syllable, her voice a faint, dazed whisper. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, reclining in a black leather readout chair, the headset gone, a faint pressure mark on her left temple. After the words her unfocused eyes sharpen slightly toward frame right. The shot ends with her eyes beginning to focus. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_25",
+    "scene": "S12",
+    "act": 3,
+    "beat": 25,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "FS",
+    "summary_zh": "趁乱，顾言之拄杖从侧门退出去，手杖声：两步、一停、一敲。GU: 七点见：「七点见。全城都会看到她的脸。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "七点见。全城都会看到她的脸。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>: a 62-year-old East Asian man, silver-white hair swept back neatly, thin rimless rectangular glasses, a gentle composed smile, clean-shaven, a cream-white linen mandarin-collar suit, holding a black lacquered walking cane with a polished plain silver handle in his right hand, a slight limp on his left leg.\n<Picture 3> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] Amid the commotion, <Subject 1> limps out through a side door on his cane, promising to see them at seven.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, swept-back silver hair, rimless glasses, cream linen suit and black cane stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Full shot of a side door in the walnut-paneled wall, eye level, static. Within the first second, <Subject 1> (S1) says over his shoulder in a calm, low voice, <d>[Chinese] 七点见。全城都会看到她的脸。</d> Amid the commotion he limps toward the side door on his black cane, the slight limp on his left leg plain to see. He pulls the door open and slips out without hurrying. The shot ends with the side door swinging shut behind him.\n\noverall_soundscape:\nHis calm voice, then his gait on the wooden floor: step, step, a pause, then the hard tap of a cane tip, twice; the side door clicking shut; raised voices off-screen.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_26",
+    "scene": "S12",
+    "act": 3,
+    "beat": 26,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "陆时野转身要追，沈砚抓住他的袖子。SHEN: 别追：「别追。去公证厅。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "别追。去公证厅。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the man in <Picture 3> and <Picture 4>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Picture 5> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] As <Subject 2> turns to give chase, the bound <Subject 1> catches his sleeve and tells him to go to the hall instead.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a weak but steady voice, <d>[Chinese] 别追。去公证厅。</d> <Subject 2> has turned toward the side door on the right to give chase; from the readout chair on the left, the fingers of <Subject 1>'s hand, still bound at the wrist to the chair arm, catch the cuff of his leather sleeve as he passes. He stops and looks back down at her. The shot ends with her fingers gripping his sleeve and their eyes meeting.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer weak voice, his boots stopping short on wood, leather creaking, the restraint straining against the chair.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s12_27",
+    "scene": "S12",
+    "act": 3,
+    "beat": 27,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_27.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "陆时野看着她。LU: ……对不起：「……对不起。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "……对不起。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Close-up at eye level, static camera, he stands slightly right of center looking down toward frame left. Within the first second he says in Mandarin Chinese, \"……对不起。\" His lips move in sync with each syllable, his voice a low, rough murmur. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the word he looks down at her, ashamed, and swallows. The shot ends with his eyes on her, full of shame. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_28",
+    "scene": "S12",
+    "act": 3,
+    "beat": 28,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s12_28.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 道歉留：「道歉留着。先帮我解开。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "道歉留着。先帮我解开。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a private top-floor research lab at night, warm practical lamps on walnut panels and brushed brass, floor-to-ceiling windows over a sharp city skyline behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"道歉留着。先帮我解开。\" Her lips move in sync with each syllable, her voice dry and tired, with the ghost of a smile. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, reclining in a black leather readout chair, one wrist still bound to the chair arm with a black plastic restraint, a faint pressure mark on her left temple. After the line she lifts her bound wrist a few centimeters off the chair arm. The shot ends with her bound wrist raised toward him. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the soft electronic hum of the readout headset. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s12_29",
+    "scene": "S12",
+    "act": 3,
+    "beat": 29,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_gulab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "陆时野和许棠解开束带，扶沈砚站起来，她脚下一软",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the man in <Picture 3>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 3> is the woman in <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps.\n\nsummary:\n[reference generation] <Subject 2> and <Subject 3> free <Subject 1> from the chair and lift her up; her legs give way.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm practical lamps and brushed brass catch the light; the gold halo-ring headset glows above her; the city skyline through the floor-to-ceiling windows is pin-sharp.\n[Shot 1] Medium shot, eye level, static. <Subject 2> on the right cuts the black restraint on one wrist with a small folding knife while <Subject 3> frees the other; together they lift <Subject 1> up out of the readout chair by the arms. Her knees buckle and they catch her weight between them. The shot ends with the three standing together, <Subject 1> leaning on both of them.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nPlastic restraints snapping, leather creaking, her unsteady breath, boots and sneakers shuffling on wood.\n\nnon_diegetic_music: N/A"
+  }
+]

@@ -1,0 +1,436 @@
+[
+  {
+    "id": "ec_s09_01",
+    "scene": "S09",
+    "act": 2,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "公寓门打开，沈砚和许棠进来，沈砚径直走向落地窗",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: a minimalist high-rise apartment at night, pale concrete walls, a long oak table, a coat rack by the door, a warm brass floor lamp, a floor-to-ceiling window with a clear sharp view of city towers under a dry starry sky.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> enter a high-rise apartment at night and <Subject 1> walks straight to the floor-to-ceiling window.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm light from the brass floor lamp; through the floor-to-ceiling window the city towers stand sharp under a dry, starry sky.\n[Shot 1] Wide shot from the far side of the apartment, eye level, static. The front door at frame right swings open and <Subject 1> steps in, <Subject 2> right behind her with the headphones around her neck. Without pausing, <Subject 1> crosses the room past the long oak table toward the floor-to-ceiling window at frame left, her trench coat swinging, while <Subject 2> stops by the coat rack and watches her go. The shot ends with <Subject 1> standing at the window, her back half-turned to the room, the city towers sharp beyond the glass.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe door latch clicking open, quick boot heels on concrete, sneakers squeaking once on the floor, the faint hum of the city far below.\n\nnon_diegetic_music: N/A",
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s09_01.png",
+    "keyframe_prompt": "Draw ONE opening keyframe, photoreal cinema, landscape. Identity reference definitions:\n\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: a minimalist high-rise apartment at night, pale concrete walls, a long oak table, a coat rack by the door, a warm brass floor lamp, a floor-to-ceiling window with a clear sharp view of city towers under a dry starry sky.\n\n\nMandatory composition (overrides conflicting background crowd or end-state instructions):\nExactly 2 people: Shen and Xu. Start of entry, Shen just inside left of open doorway, Xu at threshold to right; clearly separate bodies. Windows show city only.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage.\nDepict the START of the action ONLY. Both people are standing still poised to take their FIRST step. Both at doorway RIGHT of frame, standing side by side with a clear gap. Shen has NOT crossed the room. Empty window area at LEFT. Shen is one pace inside doorway, Xu at threshold. Do not put Shen near window yet.",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: a minimalist high-rise apartment at night, pale concrete walls, a long oak table, a coat rack by the door, a warm brass floor lamp, a floor-to-ceiling window with a clear sharp view of city towers under a dry starry sky.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> enter a high-rise apartment at night and <Subject 1> walks straight to the floor-to-ceiling window.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm light from the brass floor lamp; through the floor-to-ceiling window the city towers stand sharp under a dry, starry sky.\n[Shot 1] Wide shot from the far side of the apartment, eye level, static. The front door at frame right swings open and <Subject 1> steps in, <Subject 2> right behind her with the headphones around her neck. Without pausing, <Subject 1> crosses the room past the long oak table toward the floor-to-ceiling window at frame left, her trench coat swinging, while <Subject 2> stops by the coat rack and watches her go. The shot ends with <Subject 1> standing at the window, her back half-turned to the room, the city towers sharp beyond the glass.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe door latch clicking open, quick boot heels on concrete, sneakers squeaking once on the floor, the faint hum of the city far below.\n\nnon_diegetic_music: N/A\n\nMandatory continuous shot constraints:\nExactly 2 people: Shen and Xu. Start of entry, Shen just inside left of open doorway, Xu at threshold to right; clearly separate bodies. Windows show city only.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage."
+  },
+  {
+    "id": "ec_s09_02",
+    "scene": "S09",
+    "act": 2,
+    "beat": 2,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_apartment.png",
+      "assets/echo/refs/loc_city_night.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "窗外天空晴朗，街道干燥，楼下路面没有一点积水。沈砚的背影在画左",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1>, seen from behind: her low black ponytail, the thin silver ring behind her left ear and the back of her charcoal-grey trench coat.\n<Picture 2> is the location reference for [Shot 1]: a minimalist high-rise apartment at night, pale concrete walls, a long oak table, a coat rack by the door, a warm brass floor lamp, a floor-to-ceiling window with a clear sharp view of city towers under a dry starry sky.\n<Picture 3> is the reference for the street far below the window: a clean modern coastal city at night seen from street level, wide dry streets, crisp white streetlights, an elevated highway, glass towers with lit windows, a clear starry sky.\n\nsummary:\n[reference generation] From behind <Subject 1>, the apartment window shows a clear starry sky and bone-dry streets below.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm light from the brass floor lamp; through the floor-to-ceiling window the city towers stand sharp under a dry, starry sky.\n[Shot 1] Medium shot from behind <Subject 1>, eye level, static. She stands at the left of the frame with her back to the camera and lifts one hand to rest flat on the window glass. Beyond the glass the night sky is completely clear, every star sharp; far below, the wide streets are bone-dry, with no puddles and no wet shine on the asphalt, the white streetlights reflecting only off dry pavement. The glass itself is clean and dry, with not a single raindrop on it. The shot ends with her palm pressed flat on the glass, utterly still.\n<Subject 1> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 1> in the frame.\n\noverall_soundscape:\nNear silence, her slow breath, the faint creak of the glass under her palm, a distant dry traffic hum forty floors down.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s09_03",
+    "scene": "S09",
+    "act": 2,
+    "beat": 3,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s09_03.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚盯着窗外。SHEN: 许棠，：「许棠，昨晚下雨了吗？」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "许棠，昨晚下雨了吗？"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a minimalist high-rise apartment at night, warm light from a brass floor lamp, a floor-to-ceiling window behind with sharp city towers under a dry starry sky. Close-up at eye level, static camera, she stands at the window slightly left of center, facing frame right. Within the first second she says in Mandarin Chinese, \"许棠，昨晚下雨了吗？\" Her lips move in sync with each syllable, her voice low and very quiet. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line her eyes stay on the dry city beyond the glass, not blinking. The shot ends with her jaw set, waiting for the answer. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint hum of the city beyond the window. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s09_04",
+    "scene": "S09",
+    "act": 2,
+    "beat": 4,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s09_04.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠。XU: 没有。一整晚：「没有。一整晚都是晴的。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "没有。一整晚都是晴的。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a minimalist high-rise apartment at night, warm light from a brass floor lamp, a floor-to-ceiling window behind with sharp city towers under a dry starry sky. Medium close-up at eye level, static camera, she is slightly right of center looking toward frame left. Within the first second she says in Mandarin Chinese, \"没有。一整晚都是晴的。\" Her lips move in sync with each syllable, her voice quick and certain. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she pulls her hands out of the hoodie pocket and spreads them slightly, as if it were obvious. The shot ends with her watching toward frame left with a wary frown. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, the rustle of her hoodie, the faint city hum. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s09_05",
+    "scene": "S09",
+    "act": 2,
+    "beat": 5,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s09_05.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 可我的：「可我的记忆里，窗外一直在下雨。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "可我的记忆里，窗外一直在下雨。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a minimalist high-rise apartment at night, warm light from a brass floor lamp, a floor-to-ceiling window behind with sharp city towers under a dry starry sky. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"可我的记忆里，窗外一直在下雨。\" Her lips move in sync with each syllable, her voice almost a whisper. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line her gaze drops and a small crease forms between her brows. The shot ends with her eyes fixed on nothing, lips pressed together. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint hum of the city beyond the window. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s09_06",
+    "scene": "S09",
+    "act": 2,
+    "beat": 6,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "OTS",
+    "summary_zh": "过沈砚的肩拍许棠。XU: 那段记忆…：「那段记忆……是假的？」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "那段记忆……是假的？"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Subject 2> is the woman in <Picture 3>, seen from behind: the back of her low black ponytail and the shoulder of her charcoal-grey trench coat.\n<Picture 4> is the location reference for [Shot 1]: a minimalist high-rise apartment at night, pale concrete walls, a long oak table, a coat rack by the door, a warm brass floor lamp, a floor-to-ceiling window with a clear sharp view of city towers under a dry starry sky.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> asks whether that memory was fake.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm light from the brass floor lamp; through the floor-to-ceiling window the city towers stand sharp under a dry, starry sky.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a quick, hushed young voice, <d>[Chinese] 那段记忆……是假的？</d> <Subject 2>'s shoulder and the back of her ponytail fill the left foreground, sharp and in focus. <Subject 1> stands by the oak table on the right, her headphones around her neck; after the line she takes one slow step closer, searching <Subject 2>'s face. The shot ends with her standing still, eyes wide, waiting.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer hushed voice, one sneaker step on concrete, the soft buzz of the floor lamp, the distant city.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s09_07",
+    "scene": "S09",
+    "act": 2,
+    "beat": 7,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s09_07.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 有人改：「有人改了我的记忆。整整三个小时。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "有人改了我的记忆。整整三个小时。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a minimalist high-rise apartment at night, warm light from a brass floor lamp, a floor-to-ceiling window behind with sharp city towers under a dry starry sky. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"有人改了我的记忆。整整三个小时。\" Her lips move in sync with each syllable, her voice low and steady, each word deliberate. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she lifts two fingers to the silver ring behind her left ear and presses it lightly. The shot ends with her fingers resting on the implant ring, eyes hard. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint hum of the city beyond the window. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s09_08",
+    "scene": "S09",
+    "act": 2,
+    "beat": 8,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s09_08.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚的脸一点点冷下来。SHEN: 全城会：「全城会刻写的人，只有一个。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "全城会刻写的人，只有一个。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a minimalist high-rise apartment at night, warm light from a brass floor lamp, a floor-to-ceiling window behind with sharp city towers under a dry starry sky. Close-up at eye level, slow push-in, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"全城会刻写的人，只有一个。\" Her lips move in sync with each syllable, her voice flat and cold. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line the last trace of doubt drains from her face and her expression settles into cold certainty. The shot ends with her stare hard and unmoving toward frame right. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint hum of the city beyond the window. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s09_09",
+    "scene": "S09",
+    "act": 2,
+    "beat": 9,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s09_09.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "ECU",
+    "summary_zh": "沈砚的眼睛和嘴。SHEN: 顾言之：「顾言之。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "顾言之。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a minimalist high-rise apartment at night, warm light from a brass floor lamp, a floor-to-ceiling window behind with sharp city towers under a dry starry sky. Extreme close-up of her eyes and mouth at eye level, static camera, her eyes and mouth fill the frame, her gaze toward frame right. Within the first second she says in Mandarin Chinese, \"顾言之。\" Her lips move in sync with each syllable, her voice cold and quiet on the single word. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the name her eyes narrow by a hair and her lips press into a thin line. The shot ends with the frame holding on her unblinking eyes. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint hum of the city beyond the window. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s09_10",
+    "scene": "S09",
+    "act": 2,
+    "beat": 10,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "FS",
+    "summary_zh": "门被推开，陆时野拿着平板走进来，脸色阴沉",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Picture 3> is the location reference for [Shot 1]: a minimalist high-rise apartment at night, pale concrete walls, a long oak table, a coat rack by the door, a warm brass floor lamp, a floor-to-ceiling window with a clear sharp view of city towers under a dry starry sky.\n\nsummary:\n[reference generation] <Subject 1> pushes the apartment door open and walks in with a tablet, his face grim.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm light from the brass floor lamp; through the floor-to-ceiling window the city towers stand sharp under a dry, starry sky.\n[Shot 1] Full shot of the apartment entrance, eye level, static. The front door swings open hard and <Subject 1> walks in, a dark tablet in his hand with its screen not visible, his face grim, the badge glinting at his belt. He stops two steps inside and looks across the room toward frame left. The shot ends with him standing just inside the door, jaw tight, the tablet lowered at his side.\n\noverall_soundscape:\nThe door banging against its stopper, heavy footsteps on concrete, the door swinging back with a soft click, the distant city.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s09_11",
+    "scene": "S09",
+    "act": 2,
+    "beat": 11,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s09_11.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: 十点四十，监：「十点四十，监控拍到你上了天桥。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "十点四十，监控拍到你上了天桥。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a minimalist high-rise apartment at night, warm light from a brass floor lamp, a floor-to-ceiling window behind with sharp city towers under a dry starry sky. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"十点四十，监控拍到你上了天桥。\" His lips move in sync with each syllable, his voice low, rough and cold. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he turns the tablet around and holds it up toward her, its screen an unreadable abstract image. The shot ends with him holding the tablet out, eyes on her. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the faint creak of his leather jacket, the city hum. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s09_12",
+    "scene": "S09",
+    "act": 2,
+    "beat": 12,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "OTS",
+    "summary_zh": "过陆时野的肩拍沈砚。SHEN: 我知道：「我知道。我的记忆被顾言之改了——」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "我知道。我的记忆被顾言之改了——"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the man in <Picture 3>, seen from behind: his greying hair and the shoulder of his worn dark-brown leather jacket.\n<Picture 4> is the location reference for [Shot 1]: a minimalist high-rise apartment at night, pale concrete walls, a long oak table, a coat rack by the door, a warm brass floor lamp, a floor-to-ceiling window with a clear sharp view of city towers under a dry starry sky.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> insists her memory was rewritten by Gu.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm light from the brass floor lamp; through the floor-to-ceiling window the city towers stand sharp under a dry, starry sky.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a low, urgent but steady voice, <d>[Chinese] 我知道。我的记忆被顾言之改了——</d> <Subject 2>'s shoulder in the worn leather jacket fills the right foreground, sharp and in focus. <Subject 1> stands on the left by the window, facing frame right; after the line she steps toward him with one open hand raised, cut off mid-sentence. The shot ends with her frozen mid-step, lips parted.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer urgent voice breaking off, a boot step on concrete, his leather jacket creaking, the floor lamp hum.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s09_13",
+    "scene": "S09",
+    "act": 2,
+    "beat": 13,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s09_13.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: 半小时前，你：「半小时前，你还说你在家睡觉！」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "半小时前，你还说你在家睡觉！"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a minimalist high-rise apartment at night, warm light from a brass floor lamp, a floor-to-ceiling window behind with sharp city towers under a dry starry sky. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"半小时前，你还说你在家睡觉！\" His lips move in sync with each syllable, his voice raised and hoarse, the first time he shouts. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he jabs one finger toward her, then lowers it. The shot ends with him breathing hard through his nose, eyes fixed on her. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the sharp echo of his voice off the concrete walls. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s09_14",
+    "scene": "S09",
+    "act": 2,
+    "beat": 14,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "许棠挡到两人中间。XU: 她没说谎：「她没说谎！脚步声不是她的！」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "她没说谎！脚步声不是她的！"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Subject 2> is the woman in <Picture 3>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 3> is the man in <Picture 4>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Picture 5> is the location reference for [Shot 1]: a minimalist high-rise apartment at night, pale concrete walls, a long oak table, a coat rack by the door, a warm brass floor lamp, a floor-to-ceiling window with a clear sharp view of city towers under a dry starry sky.\n\nsummary:\n[reference generation] <Subject 1> steps between <Subject 2> and <Subject 3> and insists the footsteps are not hers.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm light from the brass floor lamp; through the floor-to-ceiling window the city towers stand sharp under a dry, starry sky.\n[Shot 1] Medium shot, eye level, static. Within the first second, <Subject 1> (S1) says fast and fierce, <d>[Chinese] 她没说谎！脚步声不是她的！</d> She has stepped into the middle of the frame between the other two, arms spread: <Subject 2> on the left, <Subject 3> on the right holding the tablet. After the line she plants her sneakers and stays put, chin raised at <Subject 3>. The shot ends with the three of them still, <Subject 1> blocking his way.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer sharp raised voice ringing off concrete walls, sneakers squeaking, his leather jacket creaking, the city hum outside.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s09_15",
+    "scene": "S09",
+    "act": 2,
+    "beat": 15,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s09_15.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: 一段脚步声，：「一段脚步声，换不回一条人命。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "一段脚步声，换不回一条人命。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a minimalist high-rise apartment at night, warm light from a brass floor lamp, a floor-to-ceiling window behind with sharp city towers under a dry starry sky. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"一段脚步声，换不回一条人命。\" His lips move in sync with each syllable, his voice low and tired, almost gentle. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he looks past the girl toward frame left and slowly reaches behind his back to his belt. The shot ends with his hand at his belt, his eyes sad but decided. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the faint hum of the city beyond the window. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s09_16",
+    "scene": "S09",
+    "act": 2,
+    "beat": 16,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "陆时野给沈砚戴上手铐，金属咔嗒一声。LU: 沈砚，你：「沈砚，你被拘留了。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "沈砚，你被拘留了。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Picture 5> is the location reference for [Shot 1]: a minimalist high-rise apartment at night, pale concrete walls, a long oak table, a coat rack by the door, a warm brass floor lamp, a floor-to-ceiling window with a clear sharp view of city towers under a dry starry sky.\n\nsummary:\n[reference generation] <Subject 1> handcuffs <Subject 2> and tells her she is under arrest.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm light from the brass floor lamp; through the floor-to-ceiling window the city towers stand sharp under a dry, starry sky.\n[Shot 1] Medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a low, rough, formal voice, <d>[Chinese] 沈砚，你被拘留了。</d> He stands on the right facing <Subject 2> on the left, who holds out her wrists without resisting. After the line he closes a pair of steel handcuffs around her wrists with a sharp metal click. The shot ends with the two of them looking at each other, her cuffed hands between them.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis low voice, the sharp double click of the handcuffs ratcheting shut, a held breath, the city hum.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s09_17",
+    "scene": "S09",
+    "act": 2,
+    "beat": 17,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "沈砚被带向门口，回头看许棠。SHEN: 许棠：「许棠，录音别交给任何人。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "许棠，录音别交给任何人。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the man in <Picture 3>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Picture 4> is the location reference for [Shot 1]: a minimalist high-rise apartment at night, pale concrete walls, a long oak table, a coat rack by the door, a warm brass floor lamp, a floor-to-ceiling window with a clear sharp view of city towers under a dry starry sky.\n\nsummary:\n[reference generation] Led toward the door in handcuffs, <Subject 1> looks back and tells Xu not to hand the recording to anyone.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm light from the brass floor lamp; through the floor-to-ceiling window the city towers stand sharp under a dry, starry sky.\n[Shot 1] Medium shot, eye level, slow tracking move. Within the first second, <Subject 1> (S1) says over her shoulder in a low, clear, urgent voice, <d>[Chinese] 许棠，录音别交给任何人。</d> Her wrists are locked in steel handcuffs in front of her; <Subject 2> walks beside her on the right with one hand on her upper arm, leading her toward the open front door. She keeps looking back toward someone off-screen as she walks. The shot ends with the two of them reaching the doorway, her eyes still turned back.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer urgent low voice, two sets of footsteps on concrete, the handcuff chain clinking, the door hinge creaking.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s09_18",
+    "scene": "S09",
+    "act": 2,
+    "beat": 18,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_apartment.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s09_18.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠一个人站在空公寓里，攥紧拳头。反应镜",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot in a minimalist high-rise apartment at night, warm light from a brass floor lamp, a floor-to-ceiling window behind with sharp city towers under a dry starry sky. Close-up at eye level, static camera, she is slightly right of center looking toward frame left. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. She stands alone in the quiet apartment, staring at the door off-screen left; her hands slowly clench into fists at her sides and her jaw tightens, eyes glistening, but she does not cry. The shot ends with her fists tight and her breath held. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Silence in the empty room, the door latch clicking shut off-screen, her single sharp breath, the faint city hum. No music, no on-screen text."
+  }
+]

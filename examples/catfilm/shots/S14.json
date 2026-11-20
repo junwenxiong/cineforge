@@ -1,0 +1,293 @@
+[
+  {
+    "id": "cf_s14_01",
+    "scene": "S14",
+    "act": 2,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/momo.png",
+      "assets/catfilm/refs/loc_tower.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "墨墨从通风口冲上塔楼露台，顺着检修楼梯跑向广场。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the black cat in <Picture 1>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Picture 2> is the location reference for [Shot 1], the Hengyuan Tower, a gleaming 80-storey twisting glass skyscraper with a giant luminous white ring around its crown above a wide stone plaza with shallow pools.\n\nsummary:\n[reference generation] <Subject 1> bursts out of a vent onto a tower terrace and races down a maintenance stair toward the plaza.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same twisting glass tower, luminous crown ring, stone plaza and pools; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear afternoon sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Wide shot at eye level from the plaza side of the tower, static, a steel maintenance stair zigzagging down the glass facade to the stone plaza. <Subject 1> shoots out of a wall vent onto a narrow terrace and races down the stair in long bounds, a small black streak against the glass. The shot ends with him reaching the plaza and sprinting out of frame left.\n\noverall_soundscape:\nPaws drumming on steel stair treads, distant traffic, plaza fountains.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s14_02",
+    "scene": "S14",
+    "act": 2,
+    "beat": 2,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/ke_face.png",
+      "assets/catfilm/refs/ke.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "阿柯按着耳机：铃？多多？说话啊！",
+    "dialogue": [
+      {
+        "who": "KE",
+        "text": "铃？多多？说话啊！"
+      }
+    ],
+    "keyframe": "assets/catfilm/kf/cf_s14_02.png",
+    "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, frontal: the 26-year-old East Asian man drone courier of References 1 and 2 (exact same face: cheerful round face, short spiky ash-brown dyed hair, one wireless earpiece in his right ear, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves). He presses one gloved finger to his earpiece, eyes darting. Behind him, the side loading dock of a glass skyscraper with roller doors and stacked parcel crates (Reference 3), warm clear afternoon sunlight. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the nylon texture and reflective piping of the windbreaker; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+    "ltx_prompt": "A photoreal live-action film shot, warm clear afternoon sunlight, medium close-up eye level, frontal, locked-off camera with a very slow push-in. Within the first second he says urgently, voice rising in Mandarin Chinese, \"铃？多多？说话啊！\" His lips move in sync with each syllable. He is a 26-year-old East Asian man with a cheerful round face and short spiky ash-brown dyed hair, in a bright orange-and-white courier windbreaker with reflective piping and no logos, one wireless earpiece in his right ear, standing at the loading dock of a glass skyscraper, anxiously trying to reach someone over his earpiece. After the line he holds still, listening, his face tight with worry. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his fast, lively, slightly nasal young man's voice speaking the Mandarin line, earpiece static, distant forklift hum. No music, no on-screen text."
+  },
+  {
+    "id": "cf_s14_03",
+    "scene": "S14",
+    "act": 2,
+    "beat": 3,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/momo.png",
+      "assets/catfilm/refs/ke.png",
+      "assets/catfilm/refs/fang_v2.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "墨墨冲到阿柯脚边，急促地叫，扒他的鞋。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the black cat in <Picture 1>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Subject 2> is the courier in <Picture 2>: a 26-year-old East Asian man with a cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Subject 3> is the delivery robot in <Picture 3>: a squat knee-high cube with a white body, bright orange side panels, six small black wheels, a round front display face with two glowing white dot eyes, a hinged top lid and a small orange flag antenna.\n<Picture 4> is the location reference for [Shot 1], the side loading dock and white service corridor of the tower, with roller doors, stacked parcel crates and a ventilation grille high on the wall.\n\nsummary:\n[reference generation] <Subject 1> skids to the feet of <Subject 2> beside <Subject 3>, yowling and pawing at his shoe.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, fingerless gloves, earpiece and canvas bag stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - white cube body, orange side panels, six wheels, white dot eyes, top lid and orange flag stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same roller doors, parcel crates, white corridor and wall grille; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear afternoon sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Medium shot at low angle near the ground, static, the legs and lower body of <Subject 2> on the right with <Subject 3> parked beside him. <Subject 1> skids in from the left, stops at his shoes and yowls urgently with his mouth open in real cat cries, then paws at the toe of his shoe again and again. The shot ends with <Subject 2> starting to crouch down.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nUrgent real cat yowls, claws scratching shoe fabric, a curious beep from the robot.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s14_04",
+    "scene": "S14",
+    "act": 2,
+    "beat": 4,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/ke.png",
+      "assets/catfilm/refs/momo.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "阿柯蹲下看着墨墨：你一个人回来……她被抓了？",
+    "dialogue": [
+      {
+        "who": "KE",
+        "text": "你一个人回来……她被抓了？"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the courier in <Picture 1>: a 26-year-old East Asian man with a cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Subject 2> is the black cat in <Picture 2>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Picture 3> is the location reference for [Shot 1], the side loading dock and white service corridor of the tower, with roller doors, stacked parcel crates and a ventilation grille high on the wall.\n\nsummary:\n[reference generation] <Subject 1> crouches and looks at <Subject 2>, fearing the worst.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, fingerless gloves, earpiece and canvas bag stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same roller doors, parcel crates, white corridor and wall grille; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear afternoon sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Medium shot at crouching height, static, <Subject 1> crouched on the right facing left, <Subject 2> on the left looking up at him, both sharp. Within the first second <Subject 1> (S1) says slowly, dreading in a fast, lively, slightly nasal young man's voice, his lips moving clearly, <d>[Chinese] 你一个人回来……她被抓了？</d> His face falls. <Subject 2> stays rigid, tail lashing. The shot ends with them eye to eye.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe courier's shaky voice, distant dock noise.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s14_05",
+    "scene": "S14",
+    "act": 2,
+    "beat": 5,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/momo.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "墨墨叫了一声，转身朝塔楼走两步，回头看阿柯。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the black cat in <Picture 1>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Picture 2> is the location reference for [Shot 1], the side loading dock and white service corridor of the tower, with roller doors, stacked parcel crates and a ventilation grille high on the wall.\n\nsummary:\n[reference generation] <Subject 1> meows once, walks two steps toward the tower door and looks back.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same roller doors, parcel crates, white corridor and wall grille; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear afternoon sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Medium shot at cat height, static, the white service corridor entrance behind. <Subject 1> gives one sharp real meow, turns, walks two deliberate steps toward the corridor and stops, looking back over his shoulder at the courier off-screen right. The shot ends with him waiting, tail upright.\n\noverall_soundscape:\nOne sharp real meow, two soft paw steps, dock ambience.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s14_06",
+    "scene": "S14",
+    "act": 2,
+    "beat": 6,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/ke_face.png",
+      "assets/catfilm/refs/ke.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "阿柯近景，愣住：没有翻译……可我好像听懂了。",
+    "dialogue": [
+      {
+        "who": "KE",
+        "text": "没有翻译……可我好像听懂了。"
+      }
+    ],
+    "keyframe": "assets/catfilm/kf/cf_s14_06.png",
+    "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, looking down toward frame left: the 26-year-old East Asian man drone courier of References 1 and 2 (exact same face: cheerful round face, short spiky ash-brown dyed hair, one wireless earpiece in his right ear, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves). He is crouched, staring in surprise. Behind him, the side loading dock of a glass skyscraper with roller doors and stacked parcel crates (Reference 3), warm clear afternoon sunlight. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the nylon texture and reflective piping of the windbreaker; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+    "ltx_prompt": "A photoreal live-action film shot, warm clear afternoon sunlight, medium close-up eye level, looking down toward frame left, locked-off camera with a very slow push-in. Within the first second he says slowly, in wonder in Mandarin Chinese, \"没有翻译……可我好像听懂了。\" His lips move in sync with each syllable. He is a 26-year-old East Asian man with a cheerful round face and short spiky ash-brown dyed hair, in a bright orange-and-white courier windbreaker with reflective piping and no logos, one wireless earpiece in his right ear, standing at the loading dock of a glass skyscraper, crouched, watching a black cat just off-frame left. After the line a slow amazed breath escapes him. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his fast, lively, slightly nasal young man's voice speaking the Mandarin line, quiet dock ambience. No music, no on-screen text."
+  },
+  {
+    "id": "cf_s14_07",
+    "scene": "S14",
+    "act": 2,
+    "beat": 7,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/ke.png",
+      "assets/catfilm/refs/momo.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "阿柯和墨墨对视：你要我跟你上去？",
+    "dialogue": [
+      {
+        "who": "KE",
+        "text": "你要我跟你上去？"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the courier in <Picture 1>: a 26-year-old East Asian man with a cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Subject 2> is the black cat in <Picture 2>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Picture 3> is the location reference for [Shot 1], the side loading dock and white service corridor of the tower, with roller doors, stacked parcel crates and a ventilation grille high on the wall.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> hold each other's gaze as he asks the question.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, fingerless gloves, earpiece and canvas bag stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 3> ([Shot 1] location): partially_preserved - same roller doors, parcel crates, white corridor and wall grille; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear afternoon sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Over-the-shoulder medium shot from behind <Subject 2> at low angle, his black back and ears sharp in the lower left foreground, <Subject 1> crouching opposite, facing camera. Within the first second <Subject 1> (S1) asks quietly in a fast, lively, slightly nasal young man's voice, his lips moving clearly, <d>[Chinese] 你要我跟你上去？</d> He leans a little closer to the cat. The shot ends with their gaze locked.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe courier's quiet voice, a distant roller door rattling.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s14_08",
+    "scene": "S14",
+    "act": 2,
+    "beat": 8,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/momo_face.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "墨墨盯着阿柯，慢慢眨了一下眼。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the black cat in <Picture 1>, seen close: a solid glossy black face with no white markings and round amber-gold eyes, no collar.\n<Picture 2> is the location reference for [Shot 1], the side loading dock and white service corridor of the tower, with roller doors, stacked parcel crates and a ventilation grille high on the wall.\n\nsummary:\n[reference generation] <Subject 1> stares at the courier and gives one slow cat blink.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - solid black fur and round amber-gold eyes stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same roller doors, parcel crates, white corridor and wall grille; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear afternoon sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Close-up of the face of <Subject 1> at cat height, static, his glossy black fur and amber-gold eyes sharp. He stares steadily at the courier off-screen right, then slowly closes his eyes and opens them again in a long, deliberate cat blink. The shot ends with his eyes calm and fixed.\n\noverall_soundscape:\nNear silence, a faint dock hum.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s14_09",
+    "scene": "S14",
+    "act": 2,
+    "beat": 9,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/ke_face.png",
+      "assets/catfilm/refs/ke.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "阿柯站起来，神情坚定：好。那就送一单大的。",
+    "dialogue": [
+      {
+        "who": "KE",
+        "text": "好。那就送一单大的。"
+      }
+    ],
+    "keyframe": "assets/catfilm/kf/cf_s14_09.png",
+    "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, frontal: the 26-year-old East Asian man drone courier of References 1 and 2 (exact same face: cheerful round face, short spiky ash-brown dyed hair, one wireless earpiece in his right ear, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves). He stands upright, jaw set, determination replacing fear. Behind him, the side loading dock of a glass skyscraper with roller doors and stacked parcel crates (Reference 3), warm clear afternoon sunlight. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the nylon texture and reflective piping of the windbreaker; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+    "ltx_prompt": "A photoreal live-action film shot, warm clear afternoon sunlight, medium close-up eye level, frontal, locked-off camera with a very slow push-in. Within the first second he says firmly, with a grin in Mandarin Chinese, \"好。那就送一单大的。\" His lips move in sync with each syllable. He is a 26-year-old East Asian man with a cheerful round face and short spiky ash-brown dyed hair, in a bright orange-and-white courier windbreaker with reflective piping and no logos, one wireless earpiece in his right ear, standing at the loading dock of a glass skyscraper, having made a decision. After the line he pulls a phone out of his canvas cross-body bag. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his fast, lively, slightly nasal young man's voice speaking the Mandarin line, dock ambience, the rustle of the canvas bag. No music, no on-screen text."
+  },
+  {
+    "id": "cf_s14_10",
+    "scene": "S14",
+    "act": 2,
+    "beat": 10,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/ke_face.png",
+      "assets/catfilm/refs/ke.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "阿柯打电话：老马，全城的无人机，借我十分钟。",
+    "dialogue": [
+      {
+        "who": "KE",
+        "text": "老马，全城的无人机，借我十分钟。"
+      }
+    ],
+    "keyframe": "assets/catfilm/kf/cf_s14_10.png",
+    "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, three-quarter, a phone held to his left ear: the 26-year-old East Asian man drone courier of References 1 and 2 (exact same face: cheerful round face, short spiky ash-brown dyed hair, one wireless earpiece in his right ear, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves). He holds a phone to his ear, eyes on the tower above. Behind him, the side loading dock of a glass skyscraper with roller doors and stacked parcel crates (Reference 3), warm clear afternoon sunlight. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the nylon texture and reflective piping of the windbreaker; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+    "ltx_prompt": "A photoreal live-action film shot, warm clear afternoon sunlight, medium close-up eye level, three-quarter, a phone held to his left ear, locked-off camera with a very slow push-in. Within the first second he says fast and pleading in Mandarin Chinese, \"老马，全城的无人机，借我十分钟。\" His lips move in sync with each syllable. He is a 26-year-old East Asian man with a cheerful round face and short spiky ash-brown dyed hair, in a bright orange-and-white courier windbreaker with reflective piping and no logos, one wireless earpiece in his right ear, standing at the loading dock of a glass skyscraper, making an urgent phone call. After the line he waits, chewing his lip, eyes on the sky. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his fast, lively, slightly nasal young man's voice speaking the Mandarin line, a faint phone ringback, dock ambience. No music, no on-screen text."
+  },
+  {
+    "id": "cf_s14_11",
+    "scene": "S14",
+    "act": 2,
+    "beat": 11,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/ke_face.png",
+      "assets/catfilm/refs/ke.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "阿柯听电话近景，电话那头老马的声音（画外）。",
+    "dialogue": [
+      {
+        "who": "MA",
+        "text": "你疯了？……行，算我的。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the courier in <Picture 1> and <Picture 2>, seen close: a 26-year-old East Asian man with a cheerful round face, short spiky ash-brown dyed hair, one wireless earpiece in his right ear and the collar of a bright orange-and-white courier windbreaker.\n<Picture 3> is the location reference for [Shot 1], the side loading dock and white service corridor of the tower, with roller doors, stacked parcel crates and a ventilation grille high on the wall.\n\nsummary:\n[reference generation] <Subject 1> listens on the phone as his boss's loud voice answers from the speaker.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, earpiece and windbreaker collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same roller doors, parcel crates, white corridor and wall grille; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear afternoon sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Medium close-up at eye level, static, <Subject 1> holding a phone to his left ear, lips closed, listening. Within the first second a loud, gravelly middle-aged man speaks off-screen from the phone speaker, <d>[Chinese] 你疯了？……行，算我的。</d> No one on screen speaks. His eyes widen, then a huge relieved grin spreads across his face. The shot ends on his grin.\n\noverall_soundscape:\nA loud gravelly voice crackling from the phone speaker, dock ambience.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s14_12",
+    "scene": "S14",
+    "act": 2,
+    "beat": 11,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/fang_v2.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "小方的反应：白点眼眨了眨，橙色小旗竖起来。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the delivery robot in <Picture 1>: a squat knee-high cube with a white body, bright orange side panels, six small black wheels, a round front display face with two glowing white dot eyes, a hinged top lid and a small orange flag antenna.\n<Picture 2> is the location reference for [Shot 1], the side loading dock and white service corridor of the tower, with roller doors, stacked parcel crates and a ventilation grille high on the wall.\n\nsummary:\n[reference generation] <Subject 1> reacts: its dot eyes blink and its orange flag antenna perks up.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white cube body, orange side panels, six wheels, white dot eyes, top lid and orange flag stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same roller doors, parcel crates, white corridor and wall grille; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear afternoon sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Medium close-up at knee height, static, the round display face of <Subject 1> in the center. Its two white dot eyes blink twice and grow brighter, and its small orange flag antenna springs upright. The robot rocks forward on its wheels once. The shot ends with it ready to go.\n\noverall_soundscape:\nTwo bright electronic beeps, a little motor whirr.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s14_13",
+    "scene": "S14",
+    "act": 2,
+    "beat": 11,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/ke.png",
+      "assets/catfilm/refs/momo.png",
+      "assets/catfilm/refs/fang_v2.png",
+      "assets/catfilm/refs/loc_dock.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "阿柯跟着墨墨走向塔楼服务门，小方跟在后面。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the courier in <Picture 1>: a 26-year-old East Asian man with a cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Subject 2> is the black cat in <Picture 2>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Subject 3> is the delivery robot in <Picture 3>: a squat knee-high cube with a white body, bright orange side panels, six small black wheels, a round front display face with two glowing white dot eyes, a hinged top lid and a small orange flag antenna.\n<Picture 4> is the location reference for [Shot 1], the side loading dock and white service corridor of the tower, with roller doors, stacked parcel crates and a ventilation grille high on the wall.\n\nsummary:\n[reference generation] <Subject 1> follows <Subject 2> toward the tower service door with <Subject 3> rolling behind.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, fingerless gloves, earpiece and canvas bag stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - white cube body, orange side panels, six wheels, white dot eyes, top lid and orange flag stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same roller doors, parcel crates, white corridor and wall grille; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear afternoon sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Wide shot at eye level, static, the white service corridor ahead. <Subject 2> trots in front toward the corridor, <Subject 1> follows with his phone in hand, and <Subject 3> rolls after him, flag bobbing. The shot ends with the three of them heading into the corridor.\nEach subject appears exactly once; no duplicated people or animals.\nExactly the characters listed in subject_definitions appear, each exactly once; no twins, no look-alike extras, no second copy of any robot or animal.\n\noverall_soundscape:\nFootsteps, soft paws, six small wheels humming, dock ambience.\n\nnon_diegetic_music: N/A",
+    "keyframe": "assets/catfilm/kf/cf_s14_13.png",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the courier in <Picture 1>: a 26-year-old East Asian man with a cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Subject 2> is the black cat in <Picture 2>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Subject 3> is the delivery robot in <Picture 3>: a squat knee-high cube with a white body, bright orange side panels, six small black wheels, a round front display face with two glowing white dot eyes, a hinged top lid and a small orange flag antenna.\n<Picture 4> is the location reference for [Shot 1], the side loading dock and white service corridor of the tower, with roller doors, stacked parcel crates and a ventilation grille high on the wall.\n\nsummary:\n[reference generation] <Subject 1> follows <Subject 2> toward the tower service door with <Subject 3> rolling behind.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, fingerless gloves, earpiece and canvas bag stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - white cube body, orange side panels, six wheels, white dot eyes, top lid and orange flag stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same roller doors, parcel crates, white corridor and wall grille; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear afternoon sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Wide shot at eye level, static, the white service corridor ahead. <Subject 2> trots in front toward the corridor, <Subject 1> follows with his phone in hand, and <Subject 3> rolls after him, flag bobbing. The shot ends with the three of them heading into the corridor.\nEach subject appears exactly once; no duplicated people or animals.\nExactly the characters listed in subject_definitions appear, each exactly once; no twins, no look-alike extras, no second copy of any robot or animal.\n\noverall_soundscape:\nFootsteps, soft paws, six small wheels humming, dock ambience.\n\nnon_diegetic_music: N/A\n\nMandatory shot-specific cast and anatomy constraints (override generic cast wording): Anatomical continuity throughout: each person appears exactly once; each robot appears exactly once. No twins, extra characters, reflected duplicates, extra limbs or detached body parts. Exactly ONE cat with exactly ONE tail. The tail is a single continuous unbranched appendage attached at the base of the spine, visible from rump to tip once, separated from legs. No extra or split tails; keep the same single tail throughout motion. Exactly ONE courier Ke, ONE black cat Momo and ONE delivery robot Fang, spatially separated. No other people or animals.\nPreserve the opening keyframe composition and full visible single-tail anatomy; do not change camera angle or introduce any new characters.",
+    "keyframe_prompt": "Draw a single opening keyframe for this scene. Preserve the identities in the reference images. Photoreal live-action, 16:9, no text or subtitles. Depict the INITIAL pose, not a montage. All important anatomy must fit in the middle 75% of the image height for a later 1344x768 center crop.\nsubject_definitions:\n<Subject 1> is the courier in <Picture 1>: a 26-year-old East Asian man with a cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Subject 2> is the black cat in <Picture 2>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Subject 3> is the delivery robot in <Picture 3>: a squat knee-high cube with a white body, bright orange side panels, six small black wheels, a round front display face with two glowing white dot eyes, a hinged top lid and a small orange flag antenna.\n<Picture 4> is the location reference for [Shot 1], the side loading dock and white service corridor of the tower, with roller doors, stacked parcel crates and a ventilation grille high on the wall.\n\nsummary:\n[reference generation] <Subject 1> follows <Subject 2> toward the tower service door with <Subject 3> rolling behind.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, fingerless gloves, earpiece and canvas bag stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - white cube body, orange side panels, six wheels, white dot eyes, top lid and orange flag stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same roller doors, parcel crates, white corridor and wall grille; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear afternoon sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Wide shot at eye level, static, the white service corridor ahead. <Subject 2> trots in front toward the corridor, <Subject 1> follows with his phone in hand, and <Subject 3> rolls after him, flag bobbing. The shot ends with the three of them heading into the corridor.\nEach subject appears exactly once; no duplicated people or animals.\nExactly the characters listed in subject_definitions appear, each exactly once; no twins, no look-alike extras, no second copy of any robot or animal.\n\noverall_soundscape:\nFootsteps, soft paws, six small wheels humming, dock ambience.\n\nnon_diegetic_music: N/A\n\nMandatory keyframe composition and cast (override earlier tight framing and generic cast wording): Anatomical continuity throughout: each person appears exactly once; each robot appears exactly once. No twins, extra characters, reflected duplicates, extra limbs or detached body parts. Exactly ONE cat with exactly ONE tail. The tail is a single continuous unbranched appendage attached at the base of the spine, visible from rump to tip once, separated from legs. No extra or split tails; keep the same single tail throughout motion. Exactly ONE courier Ke, ONE black cat Momo and ONE delivery robot Fang, spatially separated. No other people or animals."
+  }
+]

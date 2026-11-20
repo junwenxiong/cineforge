@@ -1,0 +1,358 @@
+[
+ {
+  "id": "cf_s08_01",
+  "scene": "S08",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/zheng.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "一辆白色衡渊安保车停在步行街边，郑锋拿着追踪平板下车。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the security chief in <Picture 1>: a broad-shouldered 40-year-old man with a black buzz cut, a square jaw with a faint small scar on the chin, a black tactical security jacket with plain grey shoulder panels, a slim earpiece and a rugged tracking tablet.\n<Picture 2> is the location reference for [Shot 1], a bright elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and no readable text, fruit stalls with crates of oranges, green planters, a white monorail overhead and a glass sky bridge ahead.\n\nsummary:\n[reference generation] A white security van pulls up on the street and <Subject 1> steps out with his tracking tablet.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, buzz cut, chin scar, black tactical jacket and tablet stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same paving, shop fronts, fruit stalls, monorail and sky bridge; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Wide shot at street level, static, the bright elevated pedestrian street. A plain white security van with a red light strip and no markings glides to a stop at the curb; <Subject 1> steps out of the passenger door, tracking tablet in hand, and looks down the street. The shot ends with him standing beside the van.\n\noverall_soundscape:\nAn electric motor winding down, a door thunk, street crowd murmur.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_02",
+  "scene": "S08",
+  "act": 2,
+  "beat": 1,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/zheng_face.png",
+   "assets/catfilm/refs/zheng.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "郑锋看着平板上跳动的光点。",
+  "dialogue": [
+   {
+    "who": "ZHENG",
+    "text": "信号在移动。快递机器人。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s08_02.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level: the 40-year-old East Asian man security chief of References 1 and 2 (exact same face: black buzz cut, square jaw with a faint small scar on the chin, broad shoulders, a black tactical security jacket with plain grey shoulder panels and no logos, a slim earpiece). He stands beside a white van on a bright city street, eyes down on a rugged tracking tablet whose screen shows a single moving abstract dot, jaw tight. Behind him, the location of Reference 3: the elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and a white monorail overhead, bright clear midday sunlight. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the tactical jacket fabric; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, bright clear midday sunlight, medium close-up at eye level, locked-off camera. Within the first second he says clipped, into his earpiece, in Mandarin Chinese, \"信号在移动。快递机器人。\" His lips move in sync with each syllable. He is a 40-year-old East Asian man with a black buzz cut, a square jaw with a faint small scar on the chin and broad shoulders, in a black tactical security jacket with plain grey shoulder panels and a slim earpiece, standing beside a white van on a bright elevated city street, holding a rugged tracking tablet. After the line he lowers the tablet and points two fingers sharply down the street. Deep focus with crisp skin pores, hair strands and jacket fabric detail; no haze, no bokeh. Audio: his gruff, clipped low voice speaking the Mandarin line, a fast tablet ping, street crowd murmur, a distant monorail. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s08_03",
+  "scene": "S08",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/hound.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "两只巡犬冲上阳光明亮的步行街，行人纷纷闪开。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the quadruped security robot dog in <Picture 1>, appearing as two identical units: each the size of a large German shepherd, matte white shell panels, dark graphite joints, a smooth head with a single horizontal glowing red sensor strip and no mouth or eyes, a short antenna on its back.\n<Picture 2> is the location reference for [Shot 1], a bright elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and no readable text, fruit stalls with crates of oranges, green planters, a white monorail overhead and a glass sky bridge ahead.\n\nsummary:\n[reference generation] Two units of <Subject 1> charge up the sunny pedestrian street as people scatter.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - matte white shell, graphite joints, red sensor strip and antenna stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same paving, shop fronts, fruit stalls, monorail and sky bridge; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Wide shot down the sunny pedestrian street, low angle, static. Two identical units of <Subject 1> burst out from beside the white van and gallop up the street side by side, red sensor strips blazing; pedestrians leap aside and a shopping bag drops. The shot ends with the robots racing away toward the distant sky bridge.\n\noverall_soundscape:\nRapid metallic galloping, servo whine, people shouting in surprise.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_04",
+  "scene": "S08",
+  "act": 2,
+  "beat": 3,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/ke_face.png",
+   "assets/catfilm/refs/ke.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "阿柯回头，眼睛瞪大。",
+  "dialogue": [
+   {
+    "who": "KE",
+    "text": "后面两条机器狗！坐稳了！"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s08_04.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level: the 26-year-old East Asian man drone courier of References 1 and 2 (exact same face: cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear). He rides an electric kick scooter along a bright street, twisted round to look back over his shoulder toward the camera, eyes wide with alarm. Behind him, the location of Reference 3: the elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and a white monorail overhead, bright clear midday sunlight. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the windbreaker fabric; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, bright clear midday sunlight, medium close-up at eye level, the camera tracking just ahead of him at riding speed. Within the first second he says shouting fast over the wind, in Mandarin Chinese, \"后面两条机器狗！坐稳了！\" His lips move in sync with each syllable. He is a 26-year-old East Asian man with a cheerful round face and short spiky ash-brown dyed hair, in a bright orange-and-white courier windbreaker with reflective piping, black fingerless gloves and one wireless earpiece in his right ear, riding an electric kick scooter along a bright elevated city street. After the line he whips his head forward and crouches low over the handlebar. Deep focus with crisp skin pores, hair strands and windbreaker fabric detail; no haze, no bokeh. Audio: his fast, lively, slightly nasal young man's voice speaking the Mandarin line, wind, the scooter motor straining, metallic galloping footfalls behind, people shouting. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s08_05",
+  "scene": "S08",
+  "act": 2,
+  "beat": 4,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/fang_v2.png",
+   "assets/catfilm/refs/ke.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "小方急转弯冲进水果摊林立的集市小巷，撞翻一摞空箱子。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the delivery robot in <Picture 1>: a squat knee-high cube with a white body, bright orange side panels, six small black rubber wheels, a round front display face with two glowing white dot eyes, a hinged top lid over a padded grey cargo bay and a small orange flag antenna, no text.\n<Subject 2> is the drone courier in <Picture 2>: a 26-year-old man with a cheerful round face, short spiky ash-brown hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Picture 3> is the location reference for [Shot 1], a bright elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and no readable text, fruit stalls with crates of oranges, green planters, a white monorail overhead and a glass sky bridge ahead.\n\nsummary:\n[reference generation] <Subject 1> swerves into the market alley, toppling a stack of crates, with <Subject 2> right behind.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white-and-orange cube body, six wheels, dot-eye display, lid and flag antenna stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, gloves and earpiece stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same paving, shop fronts, fruit stalls, monorail and sky bridge; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Wide shot at the mouth of a narrow market alley lined with fruit stalls, static. <Subject 1> swerves hard into the alley, wheels skidding, and clips a tall stack of empty wooden crates that topples across the paving; <Subject 2> swings his scooter in right behind it. The shot ends with crates still tumbling and the two speeding down the alley.\nEach subject appears exactly once; no duplicated people or animals.\nExactly the characters listed in subject_definitions appear, each exactly once; no twins, no look-alike extras, no second copy of any robot or animal.\n\noverall_soundscape:\nSkidding wheels, wooden crates clattering, a startled vendor shout, scooter whine.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_06",
+  "scene": "S08",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/momo.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/pair_scale.png",
+   "assets/catfilm/refs/loc_bay.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "货舱里两只猫撞向舱壁，吊坠青光急闪。",
+  "dialogue": [
+   {
+    "who": "LING",
+    "text": "他们追的是我。我得关机。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1> and <Picture 4>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Subject 2> is the black cat in <Picture 2> and <Picture 4>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes, no white markings and no collar.\n<Subject 3> is the translator collar in <Picture 3> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Picture 5> is the location reference for [Shot 1], the inside of a delivery robot's padded grey cargo bay, soft foam walls and thin bright stripes of sunlight through vent slits in the lid.\n\nsummary:\n[reference generation] In the swerving cargo bay, <Subject 1> and <Subject 2> are thrown against the wall as the collar decides to shut down.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes and back patches and larger plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid black coat, amber-gold eyes and smaller slender size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant and thin light ring stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same padded grey foam walls and vent-slit light stripes; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight entering as thin crisp stripes through the vent slits of the lid, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> and <Subject 2> are real four-legged cats with natural feline anatomy and behaviour; they never stand on their hind legs and their mouths stay closed whenever the collar speaks - the voice comes only from the pendant speaker on the collar of <Subject 1>.\n[Shot 1] Medium two-shot inside the jolting cargo bay, the camera fixed to the bay, the light stripes swinging. Within the first second the two cats slide against the padded wall as the robot swerves, and the pendant ring glows cyan and <Subject 3> (S1) speaks in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer, the ring flashing rapidly, <d>[Chinese] 他们追的是我。我得关机。</d> Neither cat's mouth moves. <Subject 1> digs her claws into the foam to steady herself. The shot ends with both cats braced, the ring blinking fast.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nA thud against foam, rapid electronic blips, the urgent synthetic voice, muffled crashes outside.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_07",
+  "scene": "S08",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/loc_bay.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "多多盯着吊坠。",
+  "dialogue": [
+   {
+    "who": "DUODUO",
+    "text": "关了你，我怎么跟人说话？"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Picture 3> is the location reference for [Shot 1], the inside of a delivery robot's padded grey cargo bay, soft foam walls and thin bright stripes of sunlight through vent slits in the lid.\n\nsummary:\n[reference generation] <Subject 1> stares at her pendant, afraid of losing her voice.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes and back patches stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant and thin light ring stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same padded grey foam walls and vent-slit light stripes; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight entering as thin crisp stripes through the vent slits of the lid, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Close-up of <Subject 1> in the rocking cargo bay, static camera fixed to the bay. Within the first second the pendant ring glows warm amber and <Subject 2> (S1) speaks in a low, dry, unhurried young woman's voice with a faint electronic grain from its tiny speaker, sharp and worried, <d>[Chinese] 关了你，我怎么跟人说话？</d> <Subject 1>'s mouth stays closed. Her pupils widen as she stares down at the pendant. The shot ends on her wide eyes.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe worried dry voice, the bay rattling, muffled chase noise.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_08",
+  "scene": "S08",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/loc_bay.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "吊坠青光柔和下来。",
+  "dialogue": [
+   {
+    "who": "LING",
+    "text": "你以前也没跟人说过话呀。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the translator collar in <Picture 1> worn by <Subject 2>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Subject 2> is the real calico cat in <Picture 2>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Picture 3> is the location reference for [Shot 1], the inside of a delivery robot's padded grey cargo bay, soft foam walls and thin bright stripes of sunlight through vent slits in the lid.\n\nsummary:\n[reference generation] The flashing ring of <Subject 1> softens to a gentle glow as the AI answers kindly.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant and thin light ring stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes and back patches stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same padded grey foam walls and vent-slit light stripes; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight entering as thin crisp stripes through the vent slits of the lid, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Extreme close-up of the round pendant in the white chest fur of <Subject 2>, static macro framing. Within the first second the ring slows from rapid flashing to a soft steady cyan and <Subject 1> (S1) speaks in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer, gently, <d>[Chinese] 你以前也没跟人说过话呀。</d> The mouth of <Subject 2> is out of frame and does not move. The ring glows softly. The shot ends on the gentle cyan light.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe gentle synthetic voice, the bay rattling, muffled chase noise.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_09",
+  "scene": "S08",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/hound.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "一只巡犬跃过水果摊，橙子滚了一地。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the quadruped security robot dog in <Picture 1>: the size of a large German shepherd, matte white shell panels, dark graphite joints, a smooth head with a single horizontal glowing red sensor strip and no mouth or eyes, a short antenna on its back.\n<Picture 2> is the location reference for [Shot 1], a bright elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and no readable text, fruit stalls with crates of oranges, green planters, a white monorail overhead and a glass sky bridge ahead.\n\nsummary:\n[reference generation] <Subject 1> leaps over a fruit stall and spills oranges across the alley.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - matte white shell, graphite joints, red sensor strip and antenna stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same paving, shop fronts, fruit stalls, monorail and sky bridge; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Medium shot in the market alley, low angle, static. <Subject 1> leaps clean over a fruit stall; its hind legs clip a crate of oranges and dozens of bright oranges spill and bounce across the pale paving. The shot ends with the robot landing and oranges rolling toward the camera.\n\noverall_soundscape:\nA metallic leap, a crate cracking, oranges thudding and rolling, servo whine.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_10",
+  "scene": "S08",
+  "act": 2,
+  "beat": 9,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/momo.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/pair_scale.png",
+   "assets/catfilm/refs/fang_v2.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "墨墨从顶盖缝里钻出跳到街上，多多的吊坠淡绿翻译。",
+  "dialogue": [
+   {
+    "who": "MOMO",
+    "text": "往前跑！我引开它们！"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1> and <Picture 4>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Subject 2> is the black cat in <Picture 2> and <Picture 4>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes, no white markings and no collar.\n<Subject 3> is the translator collar in <Picture 3> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Subject 4> is the delivery robot in <Picture 5>: a squat knee-high cube with a white body, bright orange side panels, six small black rubber wheels, a round front display face with two glowing white dot eyes, a hinged top lid over a padded grey cargo bay and a small orange flag antenna, no text.\n\nsummary:\n[reference generation] <Subject 2> squeezes out of the lid of <Subject 4> and leaps onto the street while the collar of <Subject 1> translates his shout.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes and back patches and larger plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid black coat, amber-gold eyes and smaller slender size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant and thin light ring stay identical.\n<Subject 4> (appears in [Shot 1]): fully_preserved - white-and-orange cube body, six wheels, dot-eye display, lid and flag antenna stay identical.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> and <Subject 2> are real four-legged cats with natural feline anatomy and behaviour; they never stand on their hind legs and their mouths stay closed whenever the collar speaks - the voice comes only from the pendant speaker on the collar of <Subject 1>.\n[Shot 1] Medium shot from just above and behind the moving <Subject 4> in a sunny market alley lined with fruit stalls, its lid slightly open, <Subject 1> visible in the gap. Within the first second <Subject 2> pushes his head out of the lid gap and the pendant ring glows pale green and <Subject 3> (S1) speaks in a husky, scratchy teenage boy's voice from its tiny speaker, fierce, <d>[Chinese] 往前跑！我引开它们！</d> Neither cat's mouth moves. <Subject 2> squeezes out and leaps from the robot down onto the paving, sprinting off to the side. The shot ends with <Subject 1> at the gap, staring after him.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe fierce husky voice, a scrabble of claws on plastic, a light landing on stone, wheels whirring.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_11",
+  "scene": "S08",
+  "act": 2,
+  "beat": 10,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/hound.png",
+   "assets/catfilm/refs/momo.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "黑猫横穿巡犬前方，两只巡犬转向追着它冲进小巷。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the quadruped security robot dog in <Picture 1>, appearing as two identical units: each the size of a large German shepherd, matte white shell panels, dark graphite joints, a smooth head with a single horizontal glowing red sensor strip and no mouth or eyes, a short antenna on its back.\n<Subject 2> is the black cat in <Picture 2>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes, no white markings and no collar.\n<Picture 3> is the location reference for [Shot 1], a bright elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and no readable text, fruit stalls with crates of oranges, green planters, a white monorail overhead and a glass sky bridge ahead.\n\nsummary:\n[reference generation] <Subject 2> streaks across the path of the two units of <Subject 1>, which swerve after him into a side lane.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - matte white shell, graphite joints, red sensor strip and antenna stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid black coat, amber-gold eyes stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same paving, shop fronts, fruit stalls, monorail and sky bridge; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; he never stands on his hind legs.\n[Shot 1] Wide shot at an alley junction, static. <Subject 2> streaks across the paving right in front of the two units of <Subject 1>; both robots swerve and veer after the black cat into a side lane, red strips flaring. The shot ends with the junction empty except for rolling oranges.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nQuick light paw steps, metallic skidding, servo whine fading into the side lane.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_12",
+  "scene": "S08",
+  "act": 2,
+  "beat": 11,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/fang_v2.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "多多从顶盖探出头往回看，心声（琥珀）喊出墨墨的名字。",
+  "dialogue": [
+   {
+    "who": "DUODUO",
+    "text": "墨墨——！"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Subject 3> is the delivery robot in <Picture 3>: a squat knee-high cube with a white body, bright orange side panels, six small black rubber wheels, a round front display face with two glowing white dot eyes, a hinged top lid over a padded grey cargo bay and a small orange flag antenna, no text.\n<Picture 4> is the location reference for [Shot 1], a bright elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and no readable text, fruit stalls with crates of oranges, green planters, a white monorail overhead and a glass sky bridge ahead.\n\nsummary:\n[reference generation] <Subject 1> pushes her head out of the lid of <Subject 3> and cries out after the black cat.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes and back patches stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant and thin light ring stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - white-and-orange cube body, six wheels, dot-eye display, lid and flag antenna stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same paving, shop fronts, fruit stalls, monorail and sky bridge; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Medium shot tracking behind <Subject 3> as it speeds down the sunny alley. <Subject 1> has pushed her head and front paws up out of the lid gap, looking back. Within the first second the pendant ring glows warm amber and <Subject 2> (S1) speaks in a low, dry, unhurried young woman's voice with a faint electronic grain from its tiny speaker, a raw, cracking cry, <d>[Chinese] 墨墨——！</d> <Subject 1>'s mouth stays closed. Her ears go flat as the side lane falls away behind them. The shot ends with her staring back.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe raw cry from the pendant, wind, wheels whirring on stone.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_13",
+  "scene": "S08",
+  "act": 2,
+  "beat": 12,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "吊坠青光慢慢熄灭，铃告别。",
+  "dialogue": [
+   {
+    "who": "LING",
+    "text": "信号静默。……多多，保重。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the translator collar in <Picture 1> worn by <Subject 2>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Subject 2> is the real calico cat in <Picture 2>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Picture 3> is the location reference for [Shot 1], a bright elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and no readable text, fruit stalls with crates of oranges, green planters, a white monorail overhead and a glass sky bridge ahead.\n\nsummary:\n[reference generation] The cyan ring of <Subject 1> says goodbye and slowly goes dark.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant and thin light ring stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes and back patches stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same paving, shop fronts, fruit stalls, monorail and sky bridge; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Extreme close-up of the round pendant in the white chest fur of <Subject 2>, wind stirring the fur, static macro framing. Within the first second the pendant ring glows cyan and <Subject 1> (S1) speaks in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer, quiet and tender, <d>[Chinese] 信号静默。……多多，保重。</d> The mouth of <Subject 2> is out of frame and does not move. Then the cyan ring slowly dims and goes completely dark. The shot ends on the unlit pendant.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe tender synthetic voice, a soft descending power-down tone, then only wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_14",
+  "scene": "S08",
+  "act": 2,
+  "beat": 12,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "多多反应近景：低头看熄灭的吊坠，再望向来路，耳朵压平（无台词）。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille; its light ring is now completely dark.\n<Picture 3> is the location reference for [Shot 1], a bright elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and no readable text, fruit stalls with crates of oranges, green planters, a white monorail overhead and a glass sky bridge ahead.\n\nsummary:\n[reference generation] A reaction close-up: <Subject 1> looks at her dark pendant, then back the way they came.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes and back patches stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant and thin light ring stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same paving, shop fronts, fruit stalls, monorail and sky bridge; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Close-up of <Subject 1> with her head out of the lid gap, wind ruffling her fur, the sunny street sliding past behind her. She looks down at her dark pendant, then lifts her eyes back toward the way they came, ears flat. The shot ends on her lonely, searching face.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nWind, wheels whirring, the city noise suddenly feeling far away.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_15",
+  "scene": "S08",
+  "act": 2,
+  "beat": 13,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/fang_v2.png",
+   "assets/catfilm/refs/ke.png",
+   "assets/catfilm/refs/hound.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "小方冲过玻璃天桥，阿柯回手拉下检修闸门，另一只巡犬被挡在闸门外。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the delivery robot in <Picture 1>: a squat knee-high cube with a white body, bright orange side panels, six small black rubber wheels, a round front display face with two glowing white dot eyes, a hinged top lid over a padded grey cargo bay and a small orange flag antenna, no text.\n<Subject 2> is the drone courier in <Picture 2>: a 26-year-old man with a cheerful round face, short spiky ash-brown hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Subject 3> is the quadruped security robot dog in <Picture 3>: the size of a large German shepherd, matte white shell panels, dark graphite joints, a smooth head with a single horizontal glowing red sensor strip and no mouth or eyes, a short antenna on its back.\n<Picture 4> is the location reference for [Shot 1], a bright elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and no readable text, fruit stalls with crates of oranges, green planters, a white monorail overhead and a glass sky bridge ahead.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> race across the glass sky bridge and he slams a gate down on <Subject 3>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white-and-orange cube body, six wheels, dot-eye display, lid and flag antenna stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, gloves and earpiece stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - matte white shell, graphite joints, red sensor strip and antenna stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same paving, shop fronts, fruit stalls, monorail and sky bridge; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Wide shot on the glass sky bridge, static. <Subject 1> shoots across the bridge with <Subject 2> right behind on his scooter; at the far end <Subject 2> reaches back and yanks down a rolling maintenance gate, and a moment later <Subject 3> slams into the gate's bars and stops, red strip flaring. The shot ends with the gate shut and the robot stuck behind it.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nWheels drumming on glass, a gate rattling down, a heavy metallic slam, an angry electronic chirp.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s08_16",
+  "scene": "S08",
+  "act": 2,
+  "beat": 13,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/ke.png",
+   "assets/catfilm/refs/fang_v2.png",
+   "assets/catfilm/refs/loc_street.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "天桥另一头，阿柯喘着气，回头找墨墨。",
+  "dialogue": [
+   {
+    "who": "KE",
+    "text": "甩掉了！……那只黑猫呢？"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the drone courier in <Picture 1>: a 26-year-old man with a cheerful round face, short spiky ash-brown hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Subject 2> is the delivery robot in <Picture 2>: a squat knee-high cube with a white body, bright orange side panels, six small black rubber wheels, a round front display face with two glowing white dot eyes, a hinged top lid over a padded grey cargo bay and a small orange flag antenna, no text.\n<Picture 3> is the location reference for [Shot 1], a bright elevated pedestrian street with pale stone paving, shop fronts with abstract glowing signs and no readable text, fruit stalls with crates of oranges, green planters, a white monorail overhead and a glass sky bridge ahead.\n\nsummary:\n[reference generation] Past the gate, <Subject 1> catches his breath beside <Subject 2> and looks back for the black cat.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, gloves and earpiece stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white-and-orange cube body, six wheels, dot-eye display, lid and flag antenna stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same paving, shop fronts, fruit stalls, monorail and sky bridge; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, bright clear near-midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Medium shot on the far side of the sky bridge, static, <Subject 1> standing panting beside <Subject 2>, the gate behind them. Within the first second <Subject 1> (S1) says in a fast, lively, slightly nasal young man's voice, his lips moving clearly, breathless with relief and then worry, <d>[Chinese] 甩掉了！……那只黑猫呢？</d> He turns to look back across the bridge, searching. The shot ends on his worried face.\nEach subject appears exactly once; no duplicated people or animals.\nExactly the characters listed in subject_definitions appear, each exactly once; no twins, no look-alike extras, no second copy of any robot or animal.\n\noverall_soundscape:\nHis breathless voice, heavy breathing, the hum of the robot's motor, distant street noise.\n\nnon_diegetic_music: N/A"
+ }
+]

@@ -1,0 +1,312 @@
+[
+ {
+  "id": "cf_s16_01",
+  "scene": "S16",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/zheng.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "玻璃观光电梯沿衡渊塔外墙上升，城市在斜阳下铺开；郑锋提着关着多多的航空箱，许棠抱臂站在一旁。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the security chief in <Picture 1>: a 40-year-old East Asian man security chief, broad-shouldered, black buzz cut, square jaw with a faint small scar on the chin, a black tactical security jacket with plain grey shoulder panels and no logos, a slim earpiece, holding a rugged tracking tablet.\n<Subject 2> is the woman engineer in <Picture 2>: a 31-year-old East Asian woman neural-interface engineer, calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers, white sneakers, a small silver ring on her right index finger.\n<Subject 3> is the real calico cat in <Picture 3>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 4> is the pet carrier in <Picture 4>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 5> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] The glass elevator climbs the outside of the tower; <Subject 1> holds the carrier with <Subject 3> inside while <Subject 2> stands beside him.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - buzz cut, square jaw with the small chin scar, black tactical jacket with grey shoulder panels and earpiece stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, silver round-rimmed glasses, shoulder-length black hair and light grey knit sweater stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 4> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 3> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs, her mouth never moves to speak and she makes only natural cat sounds.\n[Shot 1] Wide shot from the corner of the glass elevator cabin, eye level, static, the sunlit city and blue bay sliding slowly downward behind the glass, everything sharp from the cabin to the horizon. <Subject 1> stands on the right holding <Subject 4> by its handle at knee height; <Subject 3> crouches inside it, her collar ring flickering between red and cyan. <Subject 2> stands on the left with her arms folded tight, staring at the closed doors. The cabin rises steadily and nobody speaks. The shot ends with the city falling away beneath them.\n\noverall_soundscape:\nA smooth electric elevator hum, a faint wind hiss against the glass, the cat's soft breathing, a tiny irregular electronic crackle from the collar.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_02",
+  "scene": "S16",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "吊坠大特写（隔着航空箱透明壳）：光环在红与青之间闪，铃用只有多多听得见的耳语说它还在。",
+  "dialogue": [
+   {
+    "who": "LING",
+    "text": "多多……我还在。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the translator collar in <Picture 1> worn by <Subject 2>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 2> is the real calico cat in <Picture 2>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] Through the clear wall of the carrier, the pendant ring of <Subject 1> flickers between red and cyan as the AI whispers that it is still there.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Extreme close-up through the clear polycarbonate wall of <Subject 3> on the round pendant resting in the white chest fur of <Subject 2>, static macro framing, every fur strand and the grille mesh sharp. Within the first second the ring stutters from red to cyan and <Subject 1> (S1) whispers very faintly in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer from its tiny speaker, <d>[Chinese] 多多……我还在。</d> The mouth of <Subject 2> is out of frame and does not move. After the whisper the ring flickers back toward red, then holds a thin cyan edge. The shot ends on the trembling two-colour ring.\n\noverall_soundscape:\nA barely audible whisper from the pendant, close and intimate, a faint electronic crackle, the elevator hum muffled through the carrier shell.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_03",
+  "scene": "S16",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "多多面部近景：光环微弱的琥珀色，真正的多多开口；说完耳朵转向吊坠。",
+  "dialogue": [
+   {
+    "who": "DUODUO",
+    "text": "你替我说了好多假话。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] <Subject 1>, crouched in the carrier, hears her collar's whisper; its ring glows faint amber with her real voice.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Close-up on the face and chest of <Subject 1> inside <Subject 3>, eye level through the clear shell, static. Within the first second the ring of <Subject 2> glows a faint, steady amber and <Subject 2> (S1) speaks quietly in a low, dry, unhurried young woman's voice with a faint electronic grain from its tiny speaker, <d>[Chinese] 你替我说了好多假话。</d> <Subject 1>'s mouth stays closed. After the line she swivels one pinkish ear down toward the pendant, green-amber eyes narrowed. The shot ends on her wary face lit by the low sun.\n\noverall_soundscape:\nThe low dry voice small and close from the pendant, the elevator hum, a soft tail thump against the carrier floor.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_04",
+  "scene": "S16",
+  "act": 2,
+  "beat": 4,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "吊坠大特写：光环一跳转成青色，铃道歉：他改写了我。",
+  "dialogue": [
+   {
+    "who": "LING",
+    "text": "他改写了我。对不起。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the translator collar in <Picture 1> worn by <Subject 2>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 2> is the real calico cat in <Picture 2>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] The ring of <Subject 1> jumps to cyan and the AI apologizes for being rewritten.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Extreme close-up of the pendant of <Subject 1> at the throat of <Subject 2>, seen through the clear wall of <Subject 3>, static macro framing. Within the first second the ring jumps from red to cyan and <Subject 1> (S1) whispers in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer, a little shaky, <d>[Chinese] 他改写了我。对不起。</d> The mouth of <Subject 2> is out of frame and does not move. After the line the cyan dims to a weak glow as a slow breath lifts her white chest fur. The shot ends on the dim cyan ring.\n\noverall_soundscape:\nA barely audible whisper from the pendant, close and intimate, a faint electronic crackle, the elevator hum muffled through the carrier shell.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_05",
+  "scene": "S16",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "多多近景，吊坠青光微弱：铃承认从没完全听懂她；多多耳朵微微后转，瞳孔变大。",
+  "dialogue": [
+   {
+    "who": "LING",
+    "text": "其实，我从没完全听懂你。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] With a faint cyan glow, the AI admits to <Subject 1> that it never fully understood her.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Close-up on the face and chest of <Subject 1> inside <Subject 3>, slightly high angle, static. Within the first second the pendant ring of <Subject 2> glows a faint cyan and <Subject 2> (S1) whispers in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer, <d>[Chinese] 其实，我从没完全听懂你。</d> <Subject 1>'s mouth stays closed. After the line her ears rotate slightly back and her pupils widen a little. The shot ends on her still, listening face.\nEach subject appears exactly once; no duplicated people or animals.\nEvery cat has exactly one tail; no extra or split tails.\n\noverall_soundscape:\nA barely audible whisper from the pendant, close and intimate, a faint electronic crackle, the elevator hum muffled through the carrier shell.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_06",
+  "scene": "S16",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "吊坠侧面低角度特写，青光：铃说它只是在猜，猜得很努力；光环紧张地跳了两下。",
+  "dialogue": [
+   {
+    "who": "LING",
+    "text": "我只是在猜。猜得很努力。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the translator collar in <Picture 1> worn by <Subject 2>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 2> is the real calico cat in <Picture 2>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] From a low side angle the cyan ring of <Subject 1> pulses as the AI confesses it was only guessing.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Extreme close-up of the pendant from a low side angle, the white chin fur of <Subject 2> at the top of the frame and the clear edge of <Subject 3> in the foreground, static. Within the first second the cyan ring of <Subject 1> brightens a little and <Subject 1> (S1) whispers in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer, earnest and small, <d>[Chinese] 我只是在猜。猜得很努力。</d> The chin of <Subject 2> stays still and her mouth does not move. After the line the ring pulses twice, like a nervous heartbeat. The shot ends on the pulsing cyan light.\n\noverall_soundscape:\nA barely audible whisper from the pendant, close and intimate, a faint electronic crackle, the elevator hum muffled through the carrier shell.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_07",
+  "scene": "S16",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo_back.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "过多多后背：她隔着航空箱和玻璃望着城市，光环琥珀色：那就别猜了，待会儿，看着。",
+  "dialogue": [
+   {
+    "who": "DUODUO",
+    "text": "那就别猜了。待会儿，看着。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] From behind <Subject 1>, who watches the city through the carrier and the glass, her collar answers in amber.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Medium shot from behind <Subject 1> inside <Subject 3>, at cat height, static; past her ears and the clear carrier wall, the glass elevator wall and the sunny city spread out below, all sharp. Within the first second the ring of <Subject 2> glows amber at her throat and <Subject 2> (S1) speaks in a low, dry, unhurried young woman's voice with a faint electronic grain, <d>[Chinese] 那就别猜了。待会儿，看着。</d> <Subject 1>'s mouth stays closed. After the line her dark tabby tail curls slowly around her paws while she keeps watching the city. The shot ends on her shape against the golden skyline.\n\noverall_soundscape:\nThe low dry voice from the pendant, the elevator hum, faint wind on the glass.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_08",
+  "scene": "S16",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/xu_face.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "许棠近景反应：她听不见耳语，只低头看了一眼航空箱里的微光，眉头微皱（无台词）。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>: a 31-year-old East Asian woman neural-interface engineer, calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers, white sneakers, a small silver ring on her right index finger.\n<Picture 3> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] <Subject 1> glances down toward the carrier, sensing something without hearing it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver round-rimmed glasses, shoulder-length black hair and light grey knit sweater stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Medium close-up of <Subject 1> at eye level, static, the glass wall and the sunny city sharp behind her. Her arms are folded and her eyes are on the elevator doors. She lowers her gaze toward the carrier below frame, a faint flicker of colored light playing on her silver glasses, and her brows draw slightly together. Her lips stay closed. The shot ends on her quiet, searching look.\n\noverall_soundscape:\nElevator hum, a faint electronic crackle below frame, her slow breath.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_09",
+  "scene": "S16",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "吊坠特写：闪烁的光环稳成青色，只剩一个红点：铃找到了控制它的通道。",
+  "dialogue": [
+   {
+    "who": "LING",
+    "text": "我找到他控制我的通道了。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the translator collar in <Picture 1> worn by <Subject 2>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 2> is the real calico cat in <Picture 2>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] The flickering ring of <Subject 1> settles to steady cyan as the AI finds the control channel.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Extreme close-up of the pendant of <Subject 1> in the white chest fur of <Subject 2>, seen through the clear wall of <Subject 3>, static macro framing. Within the first second the flickering ring settles into a steady cyan and <Subject 1> (S1) whispers in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer, focused and quick, <d>[Chinese] 我找到他控制我的通道了。</d> The mouth of <Subject 2> is out of frame and does not move. After the line a thin red arc on one side of the ring is pushed back to a single tiny point. The shot ends on the steady cyan ring with one small red dot.\n\noverall_soundscape:\nA barely audible whisper from the pendant, close and intimate, a faint electronic crackle, the elevator hum muffled through the carrier shell.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_10",
+  "scene": "S16",
+  "act": 2,
+  "beat": 9,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "多多近景：铃说烧掉通道自己也会一起烧掉；多多瞳孔放大，胡须前伸。",
+  "dialogue": [
+   {
+    "who": "LING",
+    "text": "烧掉它，我也会一起烧掉。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] The AI tells <Subject 1> that burning the channel will burn itself too; her pupils widen.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Close-up on the face and chest of <Subject 1> inside <Subject 3>, eye level, static. Within the first second the cyan ring of <Subject 2> glows and <Subject 2> (S1) whispers in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer, calm and plain, <d>[Chinese] 烧掉它，我也会一起烧掉。</d> <Subject 1>'s mouth stays closed. After the line her pupils widen into dark circles and her whiskers pull forward. The shot ends on her wide green-amber eyes.\n\noverall_soundscape:\nA barely audible whisper from the pendant, close and intimate, a faint electronic crackle, the elevator hum muffled through the carrier shell.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_11",
+  "scene": "S16",
+  "act": 2,
+  "beat": 10,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "多多低头，耳朵慢慢压平，光环微弱琥珀：……那你别烧。",
+  "dialogue": [
+   {
+    "who": "DUODUO",
+    "text": "……那你别烧。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] <Subject 1> lowers her head and her collar's faint amber voice asks the AI not to burn.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Close-up on <Subject 1> inside <Subject 3>, slightly high angle, static. Within the first second the ring of <Subject 2> turns a weak amber and <Subject 2> (S1) speaks in a low, dry, unhurried young woman's voice with a faint electronic grain, very quietly, <d>[Chinese] ……那你别烧。</d> <Subject 1>'s mouth stays closed. After the line she lowers her head and her pinkish ears slowly flatten against her crown patch. The shot ends with her chin tucked toward the pendant.\nEach subject appears exactly once; no duplicated people or animals.\nEvery cat has exactly one tail; no extra or split tails.\n\noverall_soundscape:\nThe low dry voice barely above a breath, the elevator hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_12",
+  "scene": "S16",
+  "act": 2,
+  "beat": 11,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "吊坠特写，青光：等我信号，最后一次翻译；说完光环暗成一点微光，藏了起来。",
+  "dialogue": [
+   {
+    "who": "LING",
+    "text": "等我信号。最后一次翻译。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the translator collar in <Picture 1> worn by <Subject 2>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 2> is the real calico cat in <Picture 2>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] The cyan ring of <Subject 1> gives its last instruction and dims to hide.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Extreme close-up of the pendant of <Subject 1> against the lowered white chin of <Subject 2>, seen through the clear shell of <Subject 3>, static macro framing. Within the first second the ring glows clean cyan and <Subject 1> (S1) whispers in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer, steady and kind, <d>[Chinese] 等我信号。最后一次翻译。</d> The mouth of <Subject 2> is out of frame and does not move. After the line the ring dims to a faint cyan ember, hiding. The shot ends on the nearly dark pendant.\n\noverall_soundscape:\nA barely audible whisper from the pendant, close and intimate, a faint electronic crackle, the elevator hum muffled through the carrier shell.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s16_13",
+  "scene": "S16",
+  "act": 2,
+  "beat": 12,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/zheng.png",
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_elevator.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "电梯门在顶层打开，金色斜阳涌进来；郑锋低头看了一眼航空箱。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the security chief in <Picture 1>: a 40-year-old East Asian man security chief, broad-shouldered, black buzz cut, square jaw with a faint small scar on the chin, a black tactical security jacket with plain grey shoulder panels and no logos, a slim earpiece, holding a rugged tracking tablet.\n<Subject 2> is the real calico cat in <Picture 2>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a glass panoramic elevator with a brushed steel frame rising along the outside of a skyscraper, the sunny city and blue bay spread out below.\n\nsummary:\n[reference generation] The elevator doors open on the top floor in golden light; <Subject 1> glances down at the carrier.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - buzz cut, square jaw with the small chin scar, black tactical jacket with grey shoulder panels and earpiece stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass walls, brushed steel frame and city view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm golden late-afternoon sunlight pouring through the glass walls of the elevator, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs, her mouth never moves to speak and she makes only natural cat sounds.\n[Shot 1] Medium shot from inside the cabin toward the doors, eye level, static, everything sharp. <Subject 1> stands on the right holding <Subject 3> with <Subject 2> crouched inside, her collar ring almost dark. The steel doors slide open and warm golden sunlight floods across the floor and over the carrier; <Subject 1> glances down at the cat for a moment, then looks ahead. The shot ends with the bright top-floor corridor open in front of them.\n\noverall_soundscape:\nA soft arrival chime, doors sliding open, the room tone opening into a large quiet space.\n\nnon_diegetic_music: N/A"
+ }
+]

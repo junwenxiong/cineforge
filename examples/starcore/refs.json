@@ -1,0 +1,164 @@
+[
+ {
+  "id": "panshi",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a 12-meter-tall ancient alien guardian robot, massive heavy-built humanoid frame, weathered industrial yellow and dark graphite armor plates with stone-like textured surfaces and battle scars, a stoic flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal core in the chest, huge rugged haul-truck wheels folded on its shoulders and lower legs, hydraulic pistons at the joints. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Low angle to convey its huge scale. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "panshi_truck",
+  "prompt": "Vehicle reference sheet: this is the vehicle (alternate) form of the robot in Reference 1, sharing its exact yellow-graphite color scheme, stone-like textures and amber lights: single full-body view, three-quarter front angle, of a colossal six-wheeled electric mining haul truck, weathered industrial yellow and dark graphite body panels with stone-like textured surfaces, amber running lights, rust streaks and dust, giant rugged tires. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Three-quarter front view of the vehicle. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/starcore/refs/panshi.png"
+  ]
+ },
+ {
+  "id": "lin",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a 28-year-old East Asian woman engineer, sharp determined eyes, short asymmetrical black bob with a single silver streak on the left side, small scar through her right eyebrow, burnt-orange heavy-duty work jacket with reflective strips over a charcoal tank top, dark cargo pants, black work boots, fingerless gloves. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "lin_face",
+  "prompt": "Cinematic close-up portrait, head and shoulders, of a 28-year-old East Asian woman engineer, sharp determined eyes, short asymmetrical black bob with a single silver streak on the left side, small scar through her right eyebrow, burnt-orange heavy-duty work jacket with reflective strips over a charcoal tank top, dark cargo pants, black work boots, fingerless gloves. Front three-quarter view, soft key light, neutral dark grey background. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/starcore/refs/lin.png"
+  ]
+ },
+ {
+  "id": "mk1",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a crude prototype powered exosuit of raw brushed steel plates worn by a woman, exposed cables and hydraulic lines, orange hazard stripes, bulky backpack thruster, small round teal chest light, open-face helmet frame showing her face, the woman inside is a 28-year-old East Asian woman engineer, sharp determined eyes, short asymmetrical black bob with a single silver streak on the left side, small scar through her right eyebrow. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/starcore/refs/lin.png"
+  ]
+ },
+ {
+  "id": "loc_yard",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people and no robots: a rainy container harbor yard at night, stacked shipping containers, gantry cranes, sodium-orange lights, wet asphalt reflections, a futuristic megacity skyline in the distance, an old warehouse with high windows on the left. Anamorphic lens, volumetric haze, high dynamic range. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_workshop",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people and no robots: a cavernous salvage workshop inside an old harbor warehouse at night, hanging chains, scrap metal piles, cluttered workbenches with tools and monitors, warm tungsten work lights against cool blue moonlight from high windows, an empty armor test rig in the center, large rolling door. Anamorphic lens, volumetric haze, high dynamic range. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "liefeng",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a 15-meter-tall menacing war robot with angular blade-like gunmetal-black armor, thin crimson glowing optic slits, swept-back wing blades on its back, a crimson energy cannon built into its right forearm, predatory stance. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Low angle to convey its huge scale. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "liefeng_jet",
+  "prompt": "Vehicle reference sheet: this is the jet form of the robot in Reference 1, same gunmetal-black armor and crimson glow: single full-body view, three-quarter front angle, of a black delta-wing stealth bomber with sharp faceted panels and a crimson underglow, in flight. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Three-quarter view of the aircraft. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/starcore/refs/liefeng.png"
+  ]
+ },
+ {
+  "id": "loc_highway",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people and no robots: an elevated multi-lane highway through a futuristic coastal megacity at night, rain, glowing signs without readable text, towers on both sides, wet road reflections. Anamorphic lens, volumetric haze, high dynamic range. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "zhou",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a 30-year-old East Asian man with a warm crooked grin, messy short black hair, light stubble, olive-green flight bomber jacket with patches over a grey hoodie, wireless headset around his neck, holding a rugged tablet. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "zhou_face",
+  "prompt": "Cinematic close-up portrait, head and shoulders, of a 30-year-old East Asian man with a warm crooked grin, messy short black hair, light stubble, olive-green flight bomber jacket with patches over a grey hoodie, wireless headset around his neck, holding a rugged tablet. Front three-quarter view, soft key light, neutral dark grey background. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/starcore/refs/zhou.png"
+  ]
+ },
+ {
+  "id": "mk2",
+  "prompt": "Character reference sheet (the upgraded, finished version of the prototype suit in Reference 1, similar silhouette and thruster layout but polished): single full-body view, three-quarter front angle, of a sleek full-body powered armor suit of matte pearl-white and dark graphite plates, glowing teal energy seams along the limbs, a glowing hexagonal teal core in the center of the chest, a smooth closed helmet with a single vertical T-shaped glowing teal visor slit, compact thruster pods on the back and calves, slim athletic female proportions. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/starcore/refs/mk1.png"
+  ]
+ },
+ {
+  "id": "queling",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a 3-meter-tall agile scout robot with a slim frame, pearl-white and electric-cyan panels, two large expressive round cyan optic eyes, motorcycle wheels mounted on its forearms, playful curious posture. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "queling_bike",
+  "prompt": "Vehicle reference sheet: this is the motorcycle form of the robot in Reference 1, same white and cyan scheme: single full-body view, three-quarter front angle, of a futuristic white-and-cyan racing motorcycle with glowing cyan wheel rims and sharp aerodynamic fairings, no rider. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Side three-quarter view. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/starcore/refs/queling.png"
+  ]
+ },
+ {
+  "id": "qin",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a 56-year-old East Asian man, grey crew cut, stern weathered face, deep-set eyes, dark navy military dress uniform with plain silver collar insignia, no flags, no real-world emblems. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_platform",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people and no robots: a huge offshore deep-sea mining platform at night in rough sea, tall drill tower, floodlights, helipad, spray and wind. Anamorphic lens, volumetric haze, high dynamic range. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_command",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people and no robots: a dark military command center with large holographic tactical displays showing abstract maps, blue light, officers' consoles, no readable text. Anamorphic lens, volumetric haze, high dynamic range. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_skyline",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people and no robots: a futuristic coastal megacity skyline at sunrise, glass towers, a wide sea bay, golden light, light haze. Anamorphic lens, volumetric haze, high dynamic range. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_tower",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people and no robots: a colossal black tower of fused alien machinery rising from a stormy sea, built around an offshore drilling platform, lightning, crimson glow from within. Anamorphic lens, volumetric haze, high dynamic range. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_seabed",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people and no robots: the deep ocean floor in near darkness, drifting particles, faint blue bioluminescence, rocky seabed. Anamorphic lens, volumetric haze, high dynamic range. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_ancient",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people and no robots: primordial Earth, a volcanic ocean under an ash-filled sky, lava glow on the horizon, lightning in the clouds. Anamorphic lens, volumetric haze, high dynamic range. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "drone",
+  "prompt": "Character reference sheet: single full-body view, three-quarter front angle, of a dog-sized black six-legged spider drone with a single glowing crimson eye, sharp metal legs. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "core",
+  "prompt": "Prop reference sheet, product shot, close view: a fist-sized faceted crystal sphere with swirling blue-white light inside, bare with no container or capsule, floating slightly above a neutral medium-grey seamless studio background with soft key light and subtle rim light. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "core_capsule",
+  "refs": [
+   "assets/starcore/refs/core.png"
+  ],
+  "size": "1280x720",
+  "prompt": "Prop reference sheet, product shot, close view: the exact crystal sphere from Reference 1 floating inside a transparent cylindrical containment capsule with brushed steel end caps and thin status-light rings, standing upright on a neutral medium-grey seamless studio background with soft key light and subtle rim light. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark."
+ },
+ {
+  "id": "qin_face",
+  "refs": [
+   "assets/starcore/refs/qin.png"
+  ],
+  "size": "1280x720",
+  "prompt": "Cinematic close-up portrait, head and shoulders, of the same man as Reference 1: a 56-year-old East Asian man, grey crew cut, stern weathered face, deep-set eyes, dark navy military dress uniform with plain silver collar insignia, no flags, no real-world emblems. Front three-quarter view, soft key light, neutral dark grey background. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark."
+ },
+ {
+  "id": "loc_space",
+  "size": "1280x720",
+  "prompt": "Cinematic establishing wide shot, empty environment: deep space with a dense starfield, a faint blue-violet nebula and a distant spiral galaxy, no planets, no ships, no people. Anamorphic lens, high dynamic range. Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark."
+ }
+]

@@ -1,0 +1,21 @@
+{
+  "title": "新片名称",
+  "title_en": "NEW FILM",
+  "render_prefix": "REPLACE_ME",
+  "credits_seconds": 62,
+  "credits_music": "credits.mp3",
+  "credits": [
+    [
+      "新片名称",
+      "Title"
+    ],
+    [
+      "制作署名待填写",
+      "Body"
+    ],
+    [
+      "音乐作者与许可证待填写",
+      "Body"
+    ]
+  ]
+}

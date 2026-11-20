@@ -1,0 +1,380 @@
+[
+ {
+  "id": "sc_s07_01",
+  "scene": "S07",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "鸟瞰大远景：磐石重卡在雨夜高架上从画左狂飙而来，冲向远处火光",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the colossal six-wheeled electric mining haul truck in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured panels, amber running lights, rust streaks and giant rugged tires.\n<Picture 2> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1> races at full speed along the rain-soaked elevated highway at night toward a distant fire.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured panels, amber lights, rust streaks and six giant tires stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Extreme wide aerial shot, high angle, the camera tracking alongside and slowly descending. The rain-soaked highway curves between glass towers, empty except for a few stalled cars with hazard lights blinking. <Subject 1> enters from frame left, dwarfing the cars, its amber running lights blazing through the downpour and twin plumes of spray rising from its giant tires. It swerves past a stalled sedan that looks toy-sized beside its wheels and accelerates toward frame right, where an orange fireball flickers beyond the next overpass. The shot ends with <Subject 1> centered in frame, charging toward the distant fire, its red taillights smearing across the wet asphalt.\n\noverall_soundscape:\nDeep diesel-electric growl climbing in pitch, giant tires hissing through standing water, heavy rain on asphalt, distant explosions and car alarms echoing between the towers.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_02",
+  "scene": "S07",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "低机位追拍：重卡撞飞拦路的混凝土路障，碎块与火花四散",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the colossal six-wheeled electric mining haul truck in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured panels, amber running lights, rust streaks and giant rugged tires.\n<Picture 2> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1> smashes straight through a line of concrete road barriers on the highway, sending them flying.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured panels, amber lights, rust streaks and six giant tires stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Medium shot from a low camera almost on the wet asphalt, fast lateral track. A row of heavy concrete-and-steel barriers blocks the lanes, abandoned after the attack, their unmarked warning lamps blinking amber. <Subject 1>'s massive front bumper and first pair of tires surge in from frame left at full speed. It hits the barriers without slowing: concrete blocks burst apart and cartwheel through the air, steel rails fold, and sparks and water explode across the lens. Tires taller than a person roll over the rubble as chunks bounce off its yellow panels. The shot ends with debris still tumbling past the camera while the truck's dark flank thunders on toward frame right.\n\noverall_soundscape:\nThunderous crash of concrete and bending steel, shrieking metal, a wall of splashing water, the engine roaring through the impact, debris clattering on asphalt, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_03",
+  "scene": "S07",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "重卡冲上翘起的断裂路面腾空，半空中变形为机器人，挥拳扑向画右",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, whose vehicle form is the colossal six-wheeled mining haul truck in <Picture 2>; both share weathered yellow and graphite stone-textured armor, giant rugged wheels and amber lights, and the robot has one amber optic band and no mouth.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1> launches off a buckled slab of highway in its truck form and transforms into its robot form in mid-air.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - truck form matches <Picture 2> and robot form matches <Picture 1>; yellow-graphite stone-textured armor, wheels and amber lights stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Wide shot, low angle from the road surface, camera tilting up to follow. Ahead, a section of the highway has been heaved up into a broken concrete ramp by the earlier battle. <Subject 1>, in its six-wheeled truck form, hits the ramp at full speed and launches into the rainy night sky, higher than the streetlights. In mid-air its body panels split and swing open, the giant tires rotate up onto its shoulders and lower legs, the cab folds down into a massive chest, two heavy arms unfold, and the head rises as the amber optic band ignites. The shot ends with <Subject 1> fully in robot form at the top of its arc, one fist drawn back, flying toward frame right above the tiny stalled cars below.\n\noverall_soundscape:\nEngine roar cut off by the launch, a rapid cascade of heavy mechanical clanks, grinding gears and hydraulic hisses, rain whipping past, a deep resonant hum as the optic band ignites.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_04",
+  "scene": "S07",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "磐石从画左上方落下，与画右的裂锋在路中央正面相撞",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1> drops out of the sky and collides head-on with <Subject 2> in the middle of the highway.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - gunmetal-black blade armor, crimson optic slits, wing blades and cannon forearm stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Wide shot, eye level from far down the lanes, locked-off camera with a heavy shake on impact. <Subject 2> stands on frame right beside an overturned military transport truck, its crimson optic slits glowing through the rain, and turns its head toward frame left. <Subject 1> plunges in from the upper left and slams into it shoulder-first at the center of the frame. The two giants, each taller than a four-story building, crash together; a ring of rain and spray blasts outward, nearby cars bounce off the asphalt and streetlights sway. Locked chest to chest, both machines skid several meters, their feet ripping trenches in the road. The shot ends with them grappling at the center of the frame in a cloud of steam and sparks.\n\noverall_soundscape:\nA colossal metallic impact like a bell struck by a train, a concussive boom, car alarms bursting on, glass shattering, feet tearing asphalt, hissing steam, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_05",
+  "scene": "S07",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "低机位：两台机体双手相扣角力，装甲摩擦火花四溅",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> grapple hand to hand, armor grinding and sparks pouring off them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - gunmetal-black blade armor, crimson optic slits, wing blades and cannon forearm stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Medium shot, low angle from the road between the two machines, handheld with a slow orbit to the left. <Subject 1> on frame left and <Subject 2> on frame right have their hands locked together, arms trembling under enormous force. <Subject 2> tries to force its crimson cannon arm down toward <Subject 1>'s chest; <Subject 1> shoves the forearm aside, the hydraulic pistons at its elbow straining. Where their armor grinds, fountains of orange sparks spray out and hiss in the rain, and flakes of stone-textured yellow plating crack loose. The shot ends with neither giving ground, the amber band and the crimson slits glaring at each other across the frame through a shower of sparks.\n\noverall_soundscape:\nScreeching metal-on-metal friction, crackling sparks, groaning hydraulics, deep mechanical strain, rain sizzling on hot armor.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_06",
+  "scene": "S07",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "地面特写：两台机体脚下高架路面龟裂，一辆小车滑进裂缝",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] The highway cracks apart under the feet of <Subject 1> and <Subject 2> as they push against each other.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - gunmetal-black blade armor, crimson optic slits, wing blades and cannon forearm stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Insert shot at ground level, camera low and static, rain bouncing on the asphalt. On frame left, <Subject 1>'s huge lower leg with its folded truck wheel is planted in the road; on frame right, <Subject 2>'s blade-edged black foot digs in. Both feet press forward and the concrete groans. Cracks spider outward from under them, a lane divider snaps in half, and an empty parked car tilts as a fissure opens beneath its wheels. Chunks of concrete break away and drop through the widening gap, revealing city lights far below the elevated road. The shot ends with the car sliding nose-first into the crack while both giant feet stay planted.\n\noverall_soundscape:\nDeep cracking of concrete, rebar snapping, groaning steel, a car alarm sliding away, debris falling and echoing far below, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_07",
+  "scene": "S07",
+  "act": 2,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "（一镜两切）裂锋近景认出磐石出言嘲讽，切磐石近景回答",
+  "dialogue": [
+   {
+    "who": "LIEFENG",
+    "text": "守护者……你还没死透？"
+   },
+   {
+    "who": "PANSHI",
+    "text": "我在等你。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter war robot in <Picture 1>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Subject 2> is the 12-meter ancient guardian robot in <Picture 2>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 3> is the location reference for [Shot 1] and [Shot 2], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] Locked in the grapple, <Subject 1> recognizes <Subject 2> and taunts it, and after a cut <Subject 2> answers.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2]): fully_preserved - gunmetal-black blade armor, crimson optic slits, wing blades and cannon forearm stay identical.\n<Subject 2> (appears in [Shot 1], [Shot 2]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 3> ([Shot 1] and [Shot 2] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Close-up over <Subject 2>'s out-of-focus yellow shoulder on frame left, slow push-in on <Subject 1>'s angular black head on frame right, rain streaming off its blade armor. Its crimson optic slits narrow. It has no mouth; the slits flicker in sync with each syllable as it (S1) says in a distorted metallic whisper, <d>[Chinese] 守护者……你还没死透？</d> [Shot 2] At 00:04.000, the shot cuts to the reverse close-up over <Subject 1>'s dark shoulder on frame right, onto <Subject 2>'s flat stoic faceplate on frame left, sparks drifting between them. <Subject 2>'s amber optic band pulses in sync with each syllable as it (S2) says in a very deep, slow voice, <d>[Chinese] 我在等你。</d> It has no mouth; only the band moves. The shot ends with the amber band holding steady and bright.\n\noverall_soundscape:\nRain hammering on armor, low hydraulic strain, crackling sparks, the distorted whisper echoing off the towers, a deep subsonic hum under the guardian's voice.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_08",
+  "scene": "S07",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "裂锋一记重拳把磐石打退到画左，磐石单膝跪在燃烧的车辆间",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter war robot in <Picture 1>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Subject 2> is the 12-meter ancient guardian robot in <Picture 2>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1> breaks the grapple with a crushing punch that hurls <Subject 2> backward across the highway.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - gunmetal-black blade armor, crimson optic slits, wing blades and cannon forearm stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Wide shot, slightly low angle, the camera whipping left to follow the blow. <Subject 1> on frame right wrenches one arm free and drives its heavy cannon forearm into <Subject 2>'s chest in a brutal hook. The impact flashes crimson. <Subject 2> is knocked backward toward frame left, its heels gouging long trenches in the asphalt, crushing a guardrail and shoving a burning car aside; chunks of yellow stone-textured plating break from the edge of its chest. The shot ends with <Subject 2> dropped to one knee among the burning wrecks on frame left, its amber chest core flickering, while <Subject 1> straightens on frame right.\n\noverall_soundscape:\nA thunderous armored punch with a crimson energy crack, scraping skid of metal on asphalt, a guardrail ripping, a car crumpling, roaring flames, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_09",
+  "scene": "S07",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/core_capsule.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "裂锋转身从侧翻的运输车里扯出星核收容舱",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter war robot in <Picture 1>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Subject 2> is the star core in <Picture 2>, a fist-sized faceted crystal sphere with swirling blue-white light, floating inside a transparent cylindrical containment capsule with steel end caps.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1> turns to the overturned transport truck, tears open its cargo cradle and lifts out <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - gunmetal-black blade armor, crimson optic slits, wing blades and cannon forearm stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - transparent capsule, steel end caps and the swirling blue-white crystal stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Medium shot, low angle beside the wrecked military transport truck lying on its side, camera slowly pushing in. Inside the torn cargo cradle, <Subject 2>, a capsule about the length of a person, glows blue-white through the rain. <Subject 1> turns away from the fight, its crimson slits fixing on the light, and bends down. Its clawed black fingers rip the steel cradle open and close around the capsule, lifting it free as rainwater pours off the glass. The capsule looks small in the giant hand, its blue-white light washing over the gunmetal armor. The shot ends with <Subject 1> straightening up with the capsule clutched against its chest, crimson and blue-white light mixing in the rain.\n\noverall_soundscape:\nSteel tearing, a crystalline resonant hum swelling as the capsule is lifted, heavy servo whine, rain drumming on the overturned truck, distant sirens.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_10",
+  "scene": "S07",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "林骁穿 Mk-I 从画左摇晃着飞上高架，推进器时断时续",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman wearing the crude prototype exosuit in <Picture 1>, with raw brushed-steel plates, orange hazard stripes, a bulky backpack thruster, an open-face helmet frame around her silver-streaked black bob and a small round teal chest light.\n<Picture 2> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1> wobbles up over the edge of the elevated highway on a sputtering thruster and drops toward the lanes.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - raw steel plates, hazard stripes, cables, thruster and helmet frame stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Wide shot from the middle of the highway looking back toward the city side, camera static, then tilting down. Beyond the left guardrail, a small figure rises unsteadily out of the dark: <Subject 1>, her backpack thruster coughing uneven blue flame. She sways left and right in the rain, dips sharply, kicks her legs and catches herself, sparks dribbling from the nozzle. Burning wrecks glow orange across the lanes, and crimson and amber flashes pulse from beyond the smoke on frame right. She clears the guardrail by a hand's width and the thruster cuts out. The shot ends with <Subject 1> dropping heavily toward the asphalt near a burning car, arms flailing for balance.\n\noverall_soundscape:\nA sputtering, popping thruster with uneven roars, rattling steel plates, hydraulic hiss, rain, crackling fires, distant giant impacts.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_11",
+  "scene": "S07",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁重重落在燃烧的车旁，扶车稳住，抬头望向战场",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, and a small scar through her right eyebrow.\n<Subject 2> is the crude prototype exosuit she wears in <Picture 2>, with raw brushed-steel plates, orange hazard stripes, exposed cables, a bulky backpack thruster, an open-face helmet frame and a small round teal chest light.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1>, wearing <Subject 2>, crash-lands beside a burning car and looks up toward the battle.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, black bob with silver streak and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - raw steel plates, hazard stripes, cables, thruster and helmet frame stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Medium shot, eye level, camera low beside a burning car on frame right. <Subject 1> in <Subject 2> thumps down onto the wet asphalt from above, one knee buckling, steel boots skidding through a puddle. She throws out a gloved hand and catches herself against the car's hot frame, flinching from the heat. Rain hisses on the metal; firelight flickers orange over her face inside the open-face helmet frame, the silver streak in her hair plastered wet. Breathing hard, she lifts her head and stares toward frame right, her eyes widening at what she sees. The shot ends with <Subject 1> slowly rising to full height, the small teal chest light glowing on her chest.\n\noverall_soundscape:\nA heavy metallic thud, scraping boots, rain hissing on burning metal, crackling fire, ragged breathing, distant mechanical roars.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_12",
+  "scene": "S07",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/core_capsule.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "磐石冲回来抓住裂锋手腕争夺，收容舱在两者之间出现裂纹",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter guardian robot in <Picture 1>, with weathered yellow stone-textured armor, one amber optic band and no mouth, and an amber hexagonal chest core.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Subject 3> is the star core in <Picture 3>, a fist-sized faceted crystal sphere with swirling blue-white light, floating inside a transparent cylindrical containment capsule with steel end caps.\n<Picture 4> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1> charges back and seizes <Subject 2>'s wrist, and in the struggle <Subject 3> begins to crack.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow stone-textured armor, amber optic band and chest core stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - gunmetal-black blade armor, crimson optic slits, wing blades and cannon forearm stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - transparent capsule, steel end caps and the swirling blue-white crystal stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Medium shot, low angle, camera close to the two giants' raised arms. <Subject 2> on frame right holds <Subject 3> high in its fist. <Subject 1> lunges in from frame left and clamps both hands around <Subject 2>'s wrist, wrenching it sideways. The two machines strain against each other with the glowing capsule caught between them, its steel end caps buckling. Fine cracks race across the transparent glass, and blue-white light spills through each fracture, flickering across the amber faceplate and the crimson slits. The shot ends with the capsule covered in glowing cracks, on the verge of bursting, both giants still pulling.\n\noverall_soundscape:\nGroaning servos, armored fingers grinding, glass crackling under pressure, the crystal hum rising to a piercing whine, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_13",
+  "scene": "S07",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/core_capsule.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "慢动作大特写：收容舱碎裂，星核迸裂，一块碎片拖着蓝白光飞向画左",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the star core in <Picture 1>, a fist-sized faceted crystal sphere with swirling blue-white light, floating inside a transparent cylindrical containment capsule with steel end caps.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1> shatters in <Subject 2>'s grip, the crystal splits, and a thumb-sized shard shoots away.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - transparent capsule, steel end caps and the swirling blue-white crystal stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - gunmetal-black blade armor, crimson optic slits, wing blades and cannon forearm stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Extreme close-up in slow motion, camera static. <Subject 1> fills the center of the frame, clenched in <Subject 2>'s black blade-edged fingers, its glass laced with glowing cracks. The capsule bursts: glass fragments and raindrops hang in the air, the steel end caps fly apart, and the faceted crystal sphere inside splits with a flash of blue-white light. A thumb-sized fragment breaks off and shoots toward frame left, trailing a bright blue-white streak through the falling rain. The shot ends with the rest of the cracked crystal still glowing in the black fingers on frame right, a chip missing from its side.\n\noverall_soundscape:\nA slowed-down crystalline shatter, a deep resonant boom, glass fragments tinkling, the high whistling streak of the flying shard, muffled rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_14",
+  "scene": "S07",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "碎片从画右高速飞来，击中林骁胸口圆形青色核心灯并嵌入",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short black bob with one silver streak on the left and a small scar through her right eyebrow.\n<Subject 2> is the prototype exosuit she wears in <Picture 2>, with raw steel plates, orange hazard stripes, an open helmet frame and a small round teal chest light.\n<Subject 3> is a thumb-sized fragment broken from the faceted crystal in <Picture 3>, glowing with intense swirling blue-white light.\n<Picture 4> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 3> streaks out of the rain and strikes the chest light of <Subject 2> worn by <Subject 1>, embedding itself.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - steel plates, hazard stripes and helmet frame stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - same faceted crystal material and blue-white inner light, at thumb size.\n<Picture 4> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Medium close-up, eye level, static camera. <Subject 1>, wearing <Subject 2>, stands by the burning car looking toward frame right, rain running down her face inside the open helmet frame. A tiny blue-white point of light grows in the background, racing straight at her. She has only a split second to start turning her head. <Subject 3> slams into the small round teal chest light of <Subject 2>; the impact jolts her back a step and cracks the lens. The shot ends with the shard lodged in the chest light, glowing intensely, and <Subject 1> looking down at it, eyes wide, her face lit blue-white from below.\n\noverall_soundscape:\nA rising whistle cut off by a sharp metallic crack, a gasp, a deep humming resonance beginning in the armor, rain, crackling fire.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_15",
+  "scene": "S07",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "胸口特写：碎片在核心灯里脉动，青白光纹沿装甲缝隙和线缆蔓延",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman wearing the crude prototype exosuit in <Picture 1>, with raw brushed-steel plates, orange hazard stripes, a bulky backpack thruster, an open-face helmet frame around her silver-streaked black bob and a thumb-sized blue-white crystal shard embedded in its round chest light, pulsing teal-white.\n<Subject 2> is a thumb-sized fragment broken from the faceted crystal in <Picture 2>, glowing with intense swirling blue-white light.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] In extreme close-up, <Subject 2> fuses into the chest light of <Subject 1> and veins of light spread across the armor.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - raw steel plates, hazard stripes, cables, thruster and helmet frame stay identical; the chest light now holds the glowing shard.\n<Subject 2> (appears in [Shot 1]): fully_preserved - same faceted crystal material and blue-white inner light, at thumb size.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Insert extreme close-up on the chest of <Subject 1>, camera slowly pushing in, raindrops falling through the frame. <Subject 2> sits wedged in the cracked lens of the round chest light. Its blue-white glow begins to pulse like a heartbeat, and thin veins of teal-white light crawl outward from it through the seams of the raw steel plates and along the exposed cables. Raindrops sizzle into steam where they land on the glowing lines, and the orange hazard stripes wash out in the brightening light. The shot ends with the whole chest plate blazing teal-white, the glow growing too bright to look at.\n\noverall_soundscape:\nA deep pulsing hum in the rhythm of a heartbeat, crackling energy along the cables, sizzling raindrops, a rising electrical whine.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_16",
+  "scene": "S07",
+  "act": 2,
+  "beat": 9,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "装甲爆出耀眼青白光，冲击波把林骁掀翻在地",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman wearing the crude prototype exosuit in <Picture 1>, with raw brushed-steel plates, orange hazard stripes, a bulky backpack thruster, an open-face helmet frame around her silver-streaked black bob and a thumb-sized blue-white crystal shard embedded in its round chest light, pulsing teal-white.\n<Picture 2> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1>'s armor erupts in a blinding teal-white burst whose shockwave throws her flat onto the highway.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - raw steel plates, hazard stripes, cables, thruster and helmet frame stay identical; the chest light now holds the glowing shard.\n<Picture 2> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Wide shot, eye level, static camera with a hard shake. <Subject 1> stands beside the burning car, her chest blazing. The light bursts outward in a sphere of teal-white energy; a ring-shaped shockwave blasts the falling rain into a spinning halo of droplets, rocks the burning car and flattens its flames for a moment. <Subject 1> is lifted off her feet and thrown backward toward frame left, landing hard on her back and sliding through a puddle, sparks scraping from her steel shoulder plates. The shot ends with <Subject 1> lying still on the wet asphalt, steam rising from the armor, the chest light still pulsing teal-white.\n\noverall_soundscape:\nA deep concussive whoomp, a ringing high tone, rain spray hissing outward, the car rocking on its springs, steel scraping across asphalt, then a low pulsing hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_17",
+  "scene": "S07",
+  "act": 2,
+  "beat": 10,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "低机位仰拍：裂锋握着残余星核转向林骁，留下威胁",
+  "dialogue": [
+   {
+    "who": "LIEFENG",
+    "text": "碎片……我会回来取。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter war robot in <Picture 1>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Subject 2> is the faceted crystal sphere with swirling blue-white light from <Picture 2>, now out of its capsule, cracked, with a small chip missing from its side.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] Holding the remaining crystal, <Subject 1> turns toward the fallen woman and promises to come back for the shard.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - gunmetal-black blade armor, crimson optic slits, wing blades and cannon forearm stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - same faceted crystal and swirling blue-white light; only the capsule is gone and a chip is missing.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Medium shot, very low angle from the asphalt near the fallen woman's position on frame left, looking up. <Subject 1> towers against the smoky night sky, rain streaming down its blade armor, <Subject 2> glowing in its raised left fist. It turns its head down toward the camera and the crimson slits narrow. It has no mouth; its crimson optic slits flicker in sync with each syllable as it (S1) says in a distorted metallic whisper, <d>[Chinese] 碎片……我会回来取。</d> The shot ends with its black fingers closing slowly around the crystal, dimming its light.\n\noverall_soundscape:\nRain pattering on armor, the low hum of the damaged crystal, servo whine as its head turns, the distorted whisper echoing, distant sirens.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_18",
+  "scene": "S07",
+  "act": 2,
+  "beat": 11,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/liefeng_jet.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "裂锋冲向高架海侧边缘跃起，半空变形为战机飞向画右",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter war robot in <Picture 1>, whose jet form is the black delta-wing stealth bomber in <Picture 2>; it has angular gunmetal-black faceted armor, swept-back wing blades, crimson optic slits with no mouth and a crimson underglow.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 1> leaps off the highway toward the sea and transforms in mid-air into its jet form.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - robot form matches <Picture 1> and jet form matches <Picture 2>; gunmetal-black faceted armor and crimson glow stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Wide shot, low angle from the highway lanes, the camera tilting up as it rises. <Subject 1> takes two heavy strides toward the seaward edge on frame right, flattening an empty car under one foot, and leaps up over the guardrail into the rain. In mid-air its arms fold back into its body, the swept-back wing blades slide outward and lock into delta wings, its legs fold into a faceted tail and its head retracts into the nose. The crimson underglow ignites beneath the hull and the engines flare. The shot ends with <Subject 1> in its stealth-bomber form banking away toward frame right between the towers, trailing crimson light.\n\noverall_soundscape:\nMetal crushed under a giant foot, a rapid sequence of sharp mechanical clacks and sliding plates, a rising turbine shriek, air tearing, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_19",
+  "scene": "S07",
+  "act": 2,
+  "beat": 11,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng_jet.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "大远景：裂锋战机掠过海面远去，磐石站在断裂的高架边缘目送",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Subject 2> is the black delta-wing stealth bomber in <Picture 2>, with sharp faceted gunmetal-black panels and a crimson underglow.\n<Picture 3> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] <Subject 2> streaks away over the dark sea as <Subject 1> watches from the broken edge of the highway.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - faceted black delta-wing shape and crimson underglow stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Extreme wide shot from behind <Subject 1>, which stands at the shattered seaward edge of the highway on frame left, its massive yellow back and shoulder wheels silhouetted against the night. Beyond the last towers, the dark sea stretches to the horizon under low storm clouds. <Subject 2> shoots out from between the towers toward frame right, skimming low over the waves, its crimson underglow lighting a streak of foam across the black water. <Subject 1> slowly turns its head to follow, the amber band glowing. The shot ends with <Subject 2> shrinking to a tiny crimson point that vanishes into the storm clouds over the sea.\n\noverall_soundscape:\nA fading turbine shriek, rolling thunder over the sea, heavy rain, distant surf, a low hydraulic sigh as the guardian turns its head.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s07_20",
+  "scene": "S07",
+  "act": 2,
+  "beat": 12,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "俯拍特写：林骁躺在雨里，胸口碎片青光脉动，映在瞳孔里",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "这是……什么？"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short black bob with one silver streak on the left and a small scar through her right eyebrow.\n<Subject 2> is the prototype exosuit she wears in <Picture 2>, with raw steel plates, orange hazard stripes, an open helmet frame and a crystal shard glowing teal-white in its chest light.\n<Subject 3> is a thumb-sized fragment broken from the faceted crystal in <Picture 3>, glowing with intense swirling blue-white light.\n<Picture 4> is the location reference for [Shot 1], an elevated multi-lane highway through a futuristic coastal megacity at night in heavy rain, with towers on both sides, glowing signs without readable text and wet road reflections.\n\nsummary:\n[reference generation] Lying in the rain, <Subject 1> stares at <Subject 3> pulsing in the chest light of <Subject 2> and asks what it is.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - steel plates, hazard stripes and helmet frame stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - same faceted crystal material and blue-white inner light, at thumb size.\n<Picture 4> ([Shot 1] location): partially_preserved - same rain-soaked lanes, towers and blue-orange night lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy night rain, cool cyan-blue city light against sodium-orange fire glow. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text or readable signs.\n[Shot 1] Close-up, top-down angle, the camera slowly descending toward her face. <Subject 1> lies on her back on the wet asphalt in <Subject 2>, raindrops falling straight onto her face inside the open helmet frame, a light scrape on her cheek. On her chest, <Subject 3> pulses teal-white inside the cracked chest light; each pulse lights the raindrops above her and reflects as tiny points of light in her pupils. She blinks, lifts her head a few centimeters and looks down at her chest. <Subject 1> (S1) says in a breathless, shaken voice, <d>[Chinese] 这是……什么？</d> The shot ends with her staring at the glow, its rhythmic pulse lighting her face.\n\noverall_soundscape:\nSteady rain on armor and asphalt, the soft rhythmic hum of the shard, her shallow breathing, a distant siren, the crackle of a dying fire.\n\nnon_diegetic_music: N/A"
+ }
+]

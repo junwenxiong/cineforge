@@ -1,0 +1,266 @@
+[
+ {
+  "id": "sc_s23_01",
+  "scene": "S23",
+  "act": 4,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "风暴云层撕开、退去，雨停，海平线泛起金光（建立镜）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] Over the open sea, the storm clouds tear apart and roll back as the rain stops before dawn.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Extreme wide shot over the open sea, static camera with a very slow drift right. Heavy storm clouds hang low over the water, the last rain falling in thin grey veils; far off, the dark broken wreckage of the tower juts from the sea, and the city skyline sits small and dim across the bay on the left. The clouds begin to tear apart and roll back, revealing a pale pre-dawn sky; shafts of light break through and slide across the waves. The rain thins to nothing. The shot ends with the cloud bank parted wide over a calm, gleaming sea, the horizon on the right glowing gold.\n\noverall_soundscape:\nWind easing to a soft breeze, gentle waves, the last drips of rain on the water, distant seabirds beginning to call.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_02",
+  "scene": "S23",
+  "act": 4,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "金色朝阳从海平线升起，金光掠过海面照亮远处澜城",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] The golden sun crests the sea horizon and its light sweeps across the water onto the city.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot low over the water, static camera. The sea is calm, gentle swells glittering; across the bay on the left, the city's glass towers stand in cool morning shadow. On the right, the sun crests the sea horizon, a sliver of molten gold that swells into a blazing disc. A path of golden light races across the waves toward camera, then sweeps left onto the city, setting its towers aglow one after another. Thin mist lifts off the water and a flock of seabirds crosses the light. The shot ends with the full sun just above the horizon and the whole skyline burning gold.\n\noverall_soundscape:\nSoft wind, gentle lapping waves, seabirds calling, a faint distant city hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_03",
+  "scene": "S23",
+  "act": 4,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "磐石单膝跪在崩塌平台的残骸上，林骁站在它的手掌上，双手捧着星核（慢节奏）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the woman in the powered armor in <Picture 2>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Subject 3> is the star core in <Picture 3>: a fist-sized faceted crystal sphere with swirling blue-white light, out of its capsule.\n<Picture 4> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] <Subject 1> kneels on one knee on the platform wreckage at sunrise, <Subject 2> standing on its palm with <Subject 3> in her hands.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Subject 3> (appears in [Shot 1]): fully_preserved - faceted crystal and blue-white light stay identical; no capsule.\n<Picture 4> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot, low angle from the waterline, slow push-in. Twisted black wreckage of the collapsed tower juts from the calm sea, steam rising from it; tiny grey navy boats with no markings idle nearby for scale. <Subject 1> kneels on one knee atop the largest slab, its battered armor scorched, seams still glowing softly blue-white and amber, one hand held open at chest height. <Subject 2> stands on the palm in her dark armor, cradling <Subject 3> in both hands, its blue-white glow soft in the morning light. Golden sunlight rises behind them from the right, rimming both in gold. The shot ends with <Subject 1> slowly lowering its head toward her.\n\noverall_soundscape:\nCalm lapping waves, creaking metal cooling, hissing steam, a soft breeze, the core's faint chime.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_04",
+  "scene": "S23",
+  "act": 4,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁站在磐石掌心，捧起星核低头凝视，晨光与蓝白光交融",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in the powered armor in <Picture 1>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Subject 2> is the star core in <Picture 2>: a fist-sized faceted crystal sphere with swirling blue-white light, out of its capsule.\n<Subject 3> is the 12-meter-tall ancient guardian robot in <Picture 3>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Picture 4> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] On <Subject 3>'s palm, <Subject 1> lifts <Subject 2> in both hands and gazes at it in the dawn light.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Subject 2> (appears in [Shot 1]): fully_preserved - faceted crystal and blue-white light stay identical; no capsule.\n<Subject 3> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium shot of <Subject 1> on the palm, eye level, slow arc from her right side to a three-quarter front. Her dark armor is scratched and dented, rainwater drying on the plates. She holds <Subject 2> at chest height in both gauntlets; its swirling blue-white light mingles with the warm gold of the sunrise. The huge yellow and graphite fingers of <Subject 3> rise behind her like a wall. She lifts the core slightly, turning it in the light, and her closed helmet tilts as she studies it. The shot ends with her drawing the core gently against her chest.\n\noverall_soundscape:\nA soft breeze, the core's delicate crystalline hum, distant waves, small ticks of cooling metal.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_05",
+  "scene": "S23",
+  "act": 4,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "林骁头盔面罩向两侧打开，露出她的脸，晨光照在脸上",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: the 28-year-old East Asian engineer of <Picture 2>, a short asymmetrical black bob with a silver streak on the left and a scar through her right eyebrow, in the pearl-white and graphite armor of <Picture 1>, helmet closed at first, seams, chest core and visor dark and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Picture 3> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] <Subject 1>'s helmet faceplate splits open and the morning sun falls across her face.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, helmet and armor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium close-up of <Subject 1>'s head and shoulders, front three-quarter, static camera, the golden sea soft behind her. At first the smooth closed helmet with its dark, unlit T-shaped visor slit reflects the gold of the sunrise. With a soft mechanical click the faceplate splits down the center and slides open to both sides. Her face is revealed: the black bob damp with sweat, the silver streak on the left, the small scar through her right eyebrow, a light graze on her cheek. Warm sunlight falls across her face; she squints against it, blinking, and takes a long breath. The shot ends with her eyes fully open, the gold light catching them.\n\noverall_soundscape:\nA soft mechanical click and slide of the faceplate, her long exhale, gentle breeze, distant waves.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_06",
+  "scene": "S23",
+  "act": 4,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "林骁脸部特写，晨光中她的表情慢慢放松，笑了",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: the 28-year-old East Asian engineer of <Picture 1>, a short asymmetrical black bob with a silver streak on the left and a scar through her right eyebrow, in the pearl-white and graphite armor of <Picture 2>, faceplate split open, seams and chest core dark and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Picture 3> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] Close on <Subject 1>'s face in the golden light as she breaks into a smile.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar and armor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Close-up of <Subject 1>'s face, eye level, very slow push-in, the open faceplate halves framing her cheeks. Golden sunlight lights her face from the right, and the blue-white glow of the core below softly lights her chin. A light graze crosses her cheek; strands of the black bob stick to her forehead. Her tired, serious expression slowly softens; the corners of her mouth lift, and she breaks into a broad, relieved smile, her eyes glistening. The shot ends on that smile, a gentle breeze moving the silver streak in her hair.\n\noverall_soundscape:\nA soft breeze, a quiet breathy laugh, distant waves, seabirds calling.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_07",
+  "scene": "S23",
+  "act": 4,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "周野和雀翎从残骸爬上磐石的手掌，雀翎蹦跳着欢快啾鸣（林骁在画左画外）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1>: a 30-year-old East Asian man with a crooked grin, messy black hair, light stubble, an olive-green patched bomber jacket over a grey hoodie and a headset around his neck.\n<Subject 2> is the 3-meter-tall scout robot in <Picture 2>: a slim pearl-white and electric-cyan frame, two large round cyan optic eyes and motorcycle wheels on its forearms.\n<Subject 3> is the 12-meter-tall ancient guardian robot in <Picture 3>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Picture 4> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> clamber up the wreckage onto <Subject 3>'s open palm, <Subject 2> chirping happily.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, hair, stubble, olive jacket and headset stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white-and-cyan body, round cyan eyes and wheels stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot, slight high angle from above <Subject 3>'s wrist, static camera, the calm golden sea and the tower wreckage below. Over the edge of the wreckage, <Subject 2> climbs up first, springs onto the giant yellow wrist and then onto the open palm, round cyan eyes flashing bright, bouncing on its toes and chirping in quick happy trills. Behind it <Subject 1>, soaked and smudged with grease, hauls himself up over the wrist, panting; <Subject 2> reaches down a slim hand and pulls him the rest of the way. Both turn toward someone off-screen to the left. The shot ends with the two of them on the palm in the gold morning light, <Subject 2> doing a little spin.\n\noverall_soundscape:\nBright, happy electronic chirps and trills, scrabbling metal footsteps, heavy panting, a soft breeze, lapping waves.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_08",
+  "scene": "S23",
+  "act": 4,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "周野瘫坐在掌心边，喘着气咧嘴吐槽",
+  "dialogue": [
+   {
+    "who": "ZHOU",
+    "text": "下次……能不能接个不会掉进海里的活。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 30-year-old East Asian man with a crooked grin, messy black hair, light stubble, an olive-green patched bomber jacket over a grey hoodie and a headset around his neck.\n<Picture 3> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] <Subject 1> flops down on the giant palm, catches his breath and cracks a tired joke.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, hair, stubble, olive jacket and headset stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium close-up of <Subject 1>, eye level, static camera, golden sun behind him. He drops to sit on the edge of the giant yellow palm, soaked through, hair plastered to his forehead, headset hanging crooked around his neck. He wipes seawater from his face with his sleeve, glances off-screen left, and his warm crooked grin spreads. <Subject 1> (S1) says in a warm, breathless, joking voice, <d>[Chinese] 下次……能不能接个不会掉进海里的活。</d> He pauses briefly after the first word, then finishes with a tired laugh. The shot ends with him leaning back on his hands, shaking his head.\n\noverall_soundscape:\nHis breathless voice and a short laugh, water dripping, a gentle breeze, a happy electronic chirp nearby.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_09",
+  "scene": "S23",
+  "act": 4,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "一架军用直升机从残骸边缘升起，悬停在跪着的磐石身旁，旋翼吹起水雾",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Picture 2> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] A military helicopter rises into view and hovers beside the kneeling <Subject 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot from a low angle on the wreckage, static camera. <Subject 1> kneels on the left of frame, the golden sun behind its shoulder, its glowing seams softened by daylight; the city skyline glows across the bay. A grey military helicopter with no markings rises into frame from below the wreckage edge on the right, its rotor wash whipping the sea into a ring of spray, and settles into a steady hover at <Subject 1>'s head height, side door open toward the giant. <Subject 1> turns its head toward it, the amber optic band brightening. The shot ends with the helicopter holding steady, tiny beside the giant, rotor mist glittering gold.\n\noverall_soundscape:\nA rising rotor thump becoming a steady roar, whipping spray, gusting wind, a metal creak as the giant turns.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_10",
+  "scene": "S23",
+  "act": 4,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "秦岳站在直升机舱门口，迎着旋翼风向磐石立正敬礼",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>: a 56-year-old East Asian man with a grey crew cut, stern weathered face and deep-set eyes, in a dark navy dress uniform with plain silver collar insignia, no flags or emblems.\n<Picture 2> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] Standing in the helicopter's open door, <Subject 1> raises a crisp salute toward the guardian.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, grey crew cut and plain navy uniform stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium shot of <Subject 1> framed by the open side door of the hovering helicopter, eye level, static camera, the golden sea far below behind him. Rotor wind tugs at his navy uniform; he holds a grab handle, his stern weathered face lit warm by the sun. He looks off-screen left toward the giant, releases the handle, straightens to attention and raises his right hand to his brow in a slow, precise salute. His deep-set eyes stay steady, and the faintest nod follows. The shot ends with him holding the salute, unmoving in the wind.\n\noverall_soundscape:\nA loud rotor thump and turbine whine, wind buffeting the doorframe, uniform fabric flapping.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_11",
+  "scene": "S23",
+  "act": 4,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "磐石低头望向掌心的林骁，光带明灭，把星核托付给人类",
+  "dialogue": [
+   {
+    "who": "PANSHI",
+    "text": "星核，交给你们守护了。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the woman in the powered armor in <Picture 2>: matte pearl-white and dark graphite plates, the helmet faceplate split open to both sides; the suit is powerless, its seams and chest core dark and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Picture 3> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] <Subject 1> lowers its faceplate toward <Subject 2> on its palm and entrusts the core to humanity.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Picture 3> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium close-up of <Subject 1>'s head and shoulders, low angle from beside its palm, <Subject 2>'s dark armored shoulder soft in the left foreground, static camera. Sunlight rims the stone-textured yellow armor; the seams glow softly. <Subject 1> lowers its head toward her. <Subject 1>'s amber optic band pulses in sync with each syllable as it (S1) says in a very deep, slow voice, <d>[Chinese] 星核，交给你们守护了。</d> It has no mouth, and nothing on its faceplate moves except the light. <Subject 2> listens in silence. The shot ends with the optic band glowing steady and warm.\n\noverall_soundscape:\nA very deep, resonant voice, gentle breeze, distant helicopter rotors, lapping waves.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_12",
+  "scene": "S23",
+  "act": 4,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "林骁仰头看着磐石，轻轻摇头微笑，作出回答",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "不，是我们一起。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: the 28-year-old East Asian engineer of <Picture 1>, a short asymmetrical black bob with a silver streak on the left and a scar through her right eyebrow, in the pearl-white and graphite armor of <Picture 2>, faceplate split open, seams and chest core dark and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Picture 3> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] <Subject 1> looks up at the guardian, shakes her head with a smile and answers softly.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar and armor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Close-up of <Subject 1>'s face, slight high angle from the guardian's point of view, static camera, the open faceplate halves framing her face and the core's blue-white glow lighting her chin. She looks up just past the lens, golden sun on her cheek. She shakes her head gently, a small smile forming. <Subject 1> (S1) says softly in a clear, warm voice, <d>[Chinese] 不，是我们一起。</d> She lifts one gauntlet and rests it on the giant yellow thumb beside her. The shot ends on her steady, smiling eyes.\n\noverall_soundscape:\nHer soft, clear voice, a gentle breeze, distant rotors, the core's faint hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_13",
+  "scene": "S23",
+  "act": 4,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "航拍拉远升高：澜城沐浴晨光，磐石、林骁、雀翎的剪影站在海上平台残骸上（慢节奏）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the woman in the powered armor in <Picture 2>: matte pearl-white and dark graphite plates, the helmet faceplate split open to both sides; the suit is powerless, its seams and chest core dark and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Subject 3> is the 3-meter-tall scout robot in <Picture 3>: a slim pearl-white and electric-cyan frame, two large round cyan optic eyes and motorcycle wheels on its forearms.\n<Picture 4> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise across a wide sea bay, glass towers, golden light and light haze.\n\nsummary:\n[reference generation] An aerial pull-back reveals the city at dawn and the silhouettes of <Subject 1>, <Subject 2> and <Subject 3> standing on the sea platform.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Subject 3> (appears in [Shot 1]): fully_preserved - white-and-cyan body, round cyan eyes and wheels stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same golden sunrise, glass towers and bay, seen from far out at sea; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, soft cinematic contrast, light haze and high dynamic range, a clear dawn palette of golden sunlight, pale blue sky and a calm glittering sea. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Extreme wide aerial shot, starting close behind the group and pulling back and up in one smooth continuous move. <Subject 1> stands at full height on the broken platform wreckage; at its feet stand <Subject 2> and <Subject 3>, small figures beside the giant's boots. All three are dark silhouettes against the blazing golden sun on the sea horizon. As the camera rises and pulls away, the wreckage shrinks into the glittering sea, and the whole coastal city appears across the bay on the left, its glass towers burning gold in the dawn. The shot ends high above the bay, the three silhouettes tiny on the platform, the city and the sunrise filling the frame.\n\noverall_soundscape:\nWind rising softly as the camera climbs, gentle waves, distant seabirds, faint helicopter rotors.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s23_14",
+  "scene": "S23",
+  "act": 4,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_space.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "尾声：深空中缓缓推向遥远的星系，一枚与星核相同的蓝白光点悄然亮起（慢节奏）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the swirling blue-white light of the star core in <Picture 1>, used here only as the color and glow reference for a tiny distant point of light.\n<Picture 2> is the location reference for [Shot 1], deep space with a dense starfield, a faint blue-violet nebula and a distant spiral galaxy.\n\nsummary:\n[reference generation] Epilogue: in silent deep space, far inside a distant galaxy, a tiny point of light the same blue-white as <Subject 1> quietly flickers on.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the same swirling blue-white color and soft pulsing glow.\n<Picture 2> ([Shot 1] location): partially_preserved - same starfield density, nebula colors and depth of space; the composition is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, realistic deep-space cinematography, a deep black void, fine star fields and subtle nebula color, high dynamic range. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Extreme wide shot in silent deep space, a very slow continuous push-in. A vast spiral galaxy turns slowly in the darkness, dust lanes and star clusters glittering, a field of distant stars around it. The camera drifts closer toward one quiet outer arm of the galaxy, where a dim, lonely star system sits in the dark. Within it, a single tiny point of light quietly flickers on, the exact swirling blue-white of <Subject 1>, then pulses gently, slow as a heartbeat, a little brighter each time. The shot ends holding on that small blue-white point glowing alone among the stars.\n\noverall_soundscape:\nNear silence; a faint low cosmic hum and, at the moment the light appears, a single soft crystalline chime that slowly fades.\n\nnon_diegetic_music: N/A"
+ }
+]

@@ -1,0 +1,294 @@
+[
+ {
+  "id": "sc_s09_01",
+  "scene": "S09",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "巨型机库大远景：磐石半跪在画左，林骁、周野、秦岳站在它脚下",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter guardian robot in <Picture 1>, with weathered yellow stone-textured armor, one amber optic band and no mouth, and an amber hexagonal chest core.\n<Subject 2> is the woman in the prototype exosuit in <Picture 2>, with raw steel plates, orange hazard stripes, an open helmet frame and a crystal shard glowing teal-white in its chest light, the suit scorched and dented.\n<Subject 3> is the young man in <Picture 3>, with messy black hair, an olive-green bomber jacket and a headset around his neck.\n<Subject 4> is the general in <Picture 4>, with a grey crew cut, a stern weathered face and a dark navy uniform.\n<Picture 5> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] In a colossal dark military hangar, <Subject 1> half-kneels while <Subject 2>, <Subject 3> and <Subject 4> stand tiny at its feet.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow stone-textured armor, amber optic band and chest core stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - steel plates, hazard stripes and helmet frame stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - hair, olive bomber jacket and headset stay identical.\n<Subject 4> (appears in [Shot 1]): fully_preserved - crew cut, weathered face and navy uniform stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Extreme wide shot, high angle from the roof gantry, slow push-in and descent. The vast concrete floor stretches away under steel ribs, gantry cranes and cold blue work lights. <Subject 1> half-kneels on frame left, so huge that its bowed head nearly reaches the overhead cranes. At its knee, center right, <Subject 2>, <Subject 3> and <Subject 4> stand side by side, no taller than the bolts on its armor. The shot ends with the three small figures tilting their heads up toward the guardian's faceplate, the amber chest core glowing above them.\n\noverall_soundscape:\nCavernous hangar reverb, the hum of ventilation and lights, distant footsteps on catwalks, a crane chain clinking, the guardian's low resonant hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_02",
+  "scene": "S09",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "从三人背后低角度仰拍，磐石低头，胸口核心开始发亮",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter guardian robot in <Picture 1>, with weathered yellow stone-textured armor, one amber optic band and no mouth, and an amber hexagonal chest core.\n<Subject 2> is the woman in the prototype exosuit in <Picture 2>, with raw steel plates, orange hazard stripes, an open helmet frame and a crystal shard glowing teal-white in its chest light, the suit scorched and dented.\n<Subject 3> is the young man in <Picture 3>, with messy black hair, an olive-green bomber jacket and a headset around his neck.\n<Subject 4> is the general in <Picture 4>, with a grey crew cut, a stern weathered face and a dark navy uniform.\n<Picture 5> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] From behind <Subject 2>, <Subject 3> and <Subject 4>, the camera looks up as <Subject 1> bows its head toward them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow stone-textured armor, amber optic band and chest core stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - steel plates, hazard stripes and helmet frame stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - hair, olive bomber jacket and headset stay identical.\n<Subject 4> (appears in [Shot 1]): fully_preserved - crew cut, weathered face and navy uniform stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium shot, very low angle from the floor just behind the three humans, camera slowly craning up past their shoulders. <Subject 2>, <Subject 3> and <Subject 4> stand with their backs to the camera, small dark shapes against <Subject 1>'s enormous knee and chest plates. The guardian's weathered yellow armor rises out of frame, scarred and stone-textured. <Subject 1> slowly bows its head toward them with a long hydraulic sigh, the amber optic band brightening. The shot ends with the camera arriving at its chest, where the hexagonal amber core starts to glow brighter, washing the three of them in warm light.\n\noverall_soundscape:\nA long hydraulic sigh echoing through the hangar, servo creaks, a rising warm hum from the core, ventilation drone.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_03",
+  "scene": "S09",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "磐石胸口核心打开，向上投射出扇形琥珀色光束",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 2> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] The hexagonal chest core of <Subject 1> opens and projects a vast fan of amber light upward.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium shot on <Subject 1>'s chest, low angle, slow push-in. The glowing amber hexagonal core sits in the center of its weathered yellow and graphite chest plates. The surrounding plates slide back with heavy clicks, and the core flares brighter. A wide cone of amber light fans upward from it into the hangar's cold blue haze, catching drifting dust and steam. Inside the cone, points of light begin to swirl and gather like stars. The shot ends with the beam reaching the darkness overhead and beginning to form a vast, translucent shape above the floor.\n\noverall_soundscape:\nHeavy mechanical clicks of sliding plates, a deep swelling hum, a shimmering crystalline tone as the light spreads, hangar reverb.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_04",
+  "scene": "S09",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "全息影像：远古时代成千上万台机体在星空中交战，三人仰望",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter guardian robot in <Picture 1>, with weathered yellow stone-textured armor, one amber optic band and no mouth, and an amber hexagonal chest core.\n<Subject 2> is the woman in the prototype exosuit in <Picture 2>, with raw steel plates, orange hazard stripes, an open helmet frame and a crystal shard glowing teal-white in its chest light, the suit scorched and dented.\n<Subject 3> is the young man in <Picture 3>, with messy black hair, an olive-green bomber jacket and a headset around his neck.\n<Subject 4> is the general in <Picture 4>, with a grey crew cut, a stern weathered face and a dark navy uniform.\n<Picture 5> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] A colossal amber hologram of an ancient star war, projected by <Subject 1>, fills the hangar above <Subject 2>, <Subject 3> and <Subject 4>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow stone-textured armor, amber optic band and chest core stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - steel plates, hazard stripes and helmet frame stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - hair, olive bomber jacket and headset stay identical.\n<Subject 4> (appears in [Shot 1]): fully_preserved - crew cut, weathered face and navy uniform stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Wide shot, low angle from behind the three humans, camera slowly tilting up. Above them hangs a translucent amber hologram the size of the hangar, beamed from the chest of <Subject 1> on frame left. It shows a starfield in which thousands of giant machines clash in vast formations, cannon flashes rippling across the projection. <Subject 2>, <Subject 3> and <Subject 4> stand at the bottom of the frame, heads tilted back, their silhouettes rimmed in amber; The shot ends with the whole ancient battle wheeling slowly overhead, lighting the hangar ribs in warm gold.\n\noverall_soundscape:\nLayered muffled booms inside the hologram, a soft crackle of light, the guardian's steady hum, hangar reverb, a quiet intake of breath.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_05",
+  "scene": "S09",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "全息影像：裂锋带领蚀灭者军团像黑潮一样吞噬一颗星球",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter war robot in <Picture 1>, with angular blade-like armor, thin crimson optic slits, swept-back wing blades and a cannon on its right forearm; here it appears only as a figure inside an amber hologram.\n<Subject 2> is the 12-meter ancient guardian robot in <Picture 2>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 3> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] In the amber hologram projected by <Subject 2>, a black tide of machines led by <Subject 1> swallows a planet.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - silhouette, blade armor, wing blades and cannon arm keep their exact shape, rendered as translucent amber light with crimson slits.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Wide shot, slow push-in toward the hologram, the beam from <Subject 2>'s chest core rising from the lower left corner of the frame. The amber projection shows a planet glowing with points of light like cities. From the right edge of the planet, a dark tide of countless angular war machines spreads across its surface, led by the figure of <Subject 1>, wing blades spread, rendered in translucent amber with only its optic slits burning crimson. Wherever the tide passes, the points of light go out one by one. The shot ends with half the planet swallowed in darkness, the black tide still rolling toward frame left.\n\noverall_soundscape:\nA low rushing roar inside the hologram like a distant storm, the clicking of countless metal limbs, a fading choir-like tone as the lights go out, the guardian's hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_06",
+  "scene": "S09",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "全息影像近景：裂锋站在黑潮最前方，举起能量炮",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter war robot in <Picture 1>, with angular blade-like armor, thin crimson optic slits, swept-back wing blades and a cannon on its right forearm; here it appears only as a figure inside an amber hologram.\n<Picture 2> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] Inside the hologram, the amber image of <Subject 1> raises its cannon at the head of the black tide.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - silhouette, blade armor, wing blades and cannon arm keep their exact shape, rendered as translucent amber light with crimson slits.\n<Picture 2> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium shot inside the hologram, camera pushing slowly toward the projected figure, faint scan lines drifting through it. The image of <Subject 1> stands at the front of the dark tide on frame right, made of translucent amber light, its angular blade armor and swept-back wing blades sharp against the stars. Its thin optic slits are the only crimson in the projection. It raises its right forearm, and the cannon charges with a crimson glow. Behind it, endless ranks of dark machines march forward. The shot ends with <Subject 1> turning its head toward the camera, the crimson slits flaring as the hologram flickers.\n\noverall_soundscape:\nA charging energy whine distorted through the hologram, marching metallic footsteps, static crackle, the hangar's cold hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_07",
+  "scene": "S09",
+  "act": 2,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "磐石面部特写：星核能唤醒沉睡的钢铁",
+  "dialogue": [
+   {
+    "who": "PANSHI",
+    "text": "星核能唤醒沉睡的钢铁。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 2> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] <Subject 1> explains that the star core can awaken sleeping steel.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Close-up of <Subject 1>'s flat stoic faceplate, slightly low angle, static camera. The amber hologram glows on its stone-textured plates from above, and the hangar's cold blue light rims the edges. It has no mouth; only the optic band moves. <Subject 1>'s amber optic band pulses in sync with each syllable as it (S1) says in a very deep, slow voice, <d>[Chinese] 星核能唤醒沉睡的钢铁。</d> Reflections of the ancient battle slide across its battle-scarred surface. The shot ends with the faceplate tilting down toward the people at its feet.\n\noverall_soundscape:\nA deep resonant voice with subsonic weight, the soft crackle of the hologram, hangar ventilation, a faint metallic echo.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_08",
+  "scene": "S09",
+  "act": 2,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "越过三人肩膀仰拍磐石：裂锋要用它唤醒海底的蚀灭者军团",
+  "dialogue": [
+   {
+    "who": "PANSHI",
+    "text": "裂锋要用它唤醒海底的蚀灭者军团。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter guardian robot in <Picture 1>, with weathered yellow stone-textured armor, one amber optic band and no mouth, and an amber hexagonal chest core.\n<Subject 2> is the woman in the prototype exosuit in <Picture 2>, with raw steel plates, orange hazard stripes, an open helmet frame and a crystal shard glowing teal-white in its chest light, the suit scorched and dented.\n<Subject 3> is the young man in <Picture 3>, with messy black hair, an olive-green bomber jacket and a headset around his neck.\n<Subject 4> is the general in <Picture 4>, with a grey crew cut, a stern weathered face and a dark navy uniform.\n<Picture 5> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] Leaning down over <Subject 2>, <Subject 3> and <Subject 4>, <Subject 1> warns that its enemy will use the core to wake an army under the sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow stone-textured armor, amber optic band and chest core stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - steel plates, hazard stripes and helmet frame stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - hair, olive bomber jacket and headset stay identical.\n<Subject 4> (appears in [Shot 1]): fully_preserved - crew cut, weathered face and navy uniform stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium shot, low angle over the shoulders of <Subject 2>, <Subject 3> and <Subject 4>, whose backs fill the bottom of the frame. Above them, <Subject 1> leans down, its faceplate lowered close. Behind it, the amber hologram dissolves into dark, heaving ocean waves. <Subject 1>'s amber optic band pulses in sync with each syllable as it (S1) says in a very deep, slow voice, <d>[Chinese] 裂锋要用它唤醒海底的蚀灭者军团。</d> It has no mouth. The shot ends with the three standing very still beneath the giant, the ocean image darkening above.\n\noverall_soundscape:\nThe deep, slow voice echoing through the hangar, a low churning of waves in the hologram, the core's steady hum, shuffling boots.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_09",
+  "scene": "S09",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_seabed.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "全息影像（空镜）：深海海床上，成千上万双深红眼睛静静排列",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the content reference for the hologram in [Shot 1], the deep ocean floor in near darkness with drifting particles, faint bioluminescence and rocky seabed.\n<Picture 2> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] The amber hologram shows the deep seabed, where thousands of pairs of crimson eyes wait in silent rows in the dark.\n\nretention_analysis:\n<Picture 1> ([Shot 1] hologram content): partially_preserved - same dark rocky seabed and drifting particles, rendered as dim amber hologram light.\n<Picture 2> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Wide shot, slow lateral glide through the hologram, which fills the frame above the hangar floor. The projection now shows the ocean floor of <Picture 1> in near darkness, rendered in dim amber, particles drifting slowly upward. Half-buried in sediment, long rows of dormant angular machines stretch away into the gloom, their shapes only hinted. In each one a pair of crimson eyes glows faintly, perfectly still, row after row, thousands of them in exact lines receding to the horizon. Nothing moves. The cold blue hangar shows faintly through the translucent image. The shot ends with the camera at rest, the field of silent crimson eyes stretching endlessly into the dark.\n\noverall_soundscape:\nA deep muffled underwater drone, slow creaking pressure, a faint electrical hiss from the hologram, the hangar's cold silence.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_10",
+  "scene": "S09",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "林骁按住胸口发光的碎片：那这块碎片……",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "那这块碎片……"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, and a small scar through her right eyebrow.\n<Subject 2> is the crude prototype exosuit she wears in <Picture 2>, with raw brushed-steel plates, orange hazard stripes, exposed cables, a bulky backpack thruster, an open-face helmet frame and a crystal shard glowing teal-white in its round chest light; the suit is now scorched and dented.\n<Picture 3> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] <Subject 1> presses her hand over the glowing shard in her chest and begins to ask about it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, black bob with silver streak and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - raw steel plates, hazard stripes, cables, thruster and helmet frame stay identical; scorch marks and the glowing shard are added.\n<Picture 3> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium close-up, eye level, slow push-in. <Subject 1> stands in <Subject 2>, the open helmet frame around her face, amber and crimson light from the hologram flickering across her soot-streaked cheeks. She lowers her gaze from the projection to her own chest, where the shard pulses teal-white in the round chest light. Slowly she presses her gloved hand over it; the glow leaks between her fingers in the rhythm of a heartbeat. <Subject 1> (S1) says quietly, in a hesitant voice, <d>[Chinese] 那这块碎片……</d> The shot ends with her lifting her eyes toward the guardian above, out of frame on the left.\n\noverall_soundscape:\nThe soft pulsing hum of the shard, her slow breath, the faint crackle of the hologram, hangar reverb.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_11",
+  "scene": "S09",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "磐石低头近景：星核缺了碎片，就无法完全激活",
+  "dialogue": [
+   {
+    "who": "PANSHI",
+    "text": "星核缺了碎片，就无法完全激活。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 2> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] <Subject 1> explains that without the shard the star core cannot fully activate.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Close-up, low angle, the faceplate of <Subject 1> lowered close to the camera, which takes the woman's eye line. The hologram behind it has faded to a soft amber haze, and cold blue hangar light outlines its battle-scarred head. It has no mouth. <Subject 1>'s amber optic band pulses in sync with each syllable as it (S1) says in a very deep, slow voice, <d>[Chinese] 星核缺了碎片，就无法完全激活。</d> A small teal reflection of the shard glimmers on its weathered faceplate. The shot ends with the band holding steady, regarding her.\n\noverall_soundscape:\nThe deep, slow voice, a soft hydraulic exhale, the faint answering hum of the shard, ventilation.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_12",
+  "scene": "S09",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "林骁前景、磐石虚焦背景：它选择了你；碎片青光一亮",
+  "dialogue": [
+   {
+    "who": "PANSHI",
+    "text": "它选择了你。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short black bob with one silver streak on the left and a small scar through her right eyebrow.\n<Subject 2> is the prototype exosuit she wears in <Picture 2>, with raw steel plates, orange hazard stripes, an open helmet frame and a crystal shard glowing teal-white in its chest light, the suit scorched and dented.\n<Subject 3> is the 12-meter guardian robot in <Picture 3>, with weathered yellow stone-textured armor, one amber optic band and no mouth, and an amber hexagonal chest core.\n<Picture 4> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] <Subject 3> tells <Subject 1> that the shard has chosen her, and the shard in her chest flares in response.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - steel plates, hazard stripes and helmet frame stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - yellow stone-textured armor, amber optic band and chest core stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium close-up, eye level, static camera with a rack focus. <Subject 1> stands in the foreground on frame right, facing left, her hand still over the shard in <Subject 2>'s chest. Behind her, out of focus on frame left, the lowered faceplate of <Subject 3> looms. Focus shifts to the guardian as <Subject 3>'s amber optic band pulses in sync with each syllable as it (S1) says in a very deep, slow voice, <d>[Chinese] 它选择了你。</d> It has no mouth. Focus pulls back to <Subject 1>; her eyes widen, and the shard flares brighter beneath her fingers, teal light spilling over her face. The shot ends with her staring at the guardian, lips parted.\n\noverall_soundscape:\nThe deep voice resonating, a sharp rise in the shard's hum, her caught breath, hangar reverb.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_13",
+  "scene": "S09",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin_face.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "秦岳抬头问磐石：它需要多久？",
+  "dialogue": [
+   {
+    "who": "QIN",
+    "text": "它需要多久？"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old man with a grey crew cut, a stern weathered face and a dark navy dress uniform with plain silver collar insignia.\n<Picture 2> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] <Subject 1> raises his head to the guardian and asks how much time they have.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and plain navy uniform stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium close-up, low angle, static camera. <Subject 1> stands a step apart from the others on frame right, hands clasped behind his back, cold blue hangar light hard on his weathered face and amber hologram light glinting on his silver collar insignia. He has been listening in silence. Now he lifts his head, deep-set eyes rising toward the guardian above, out of frame on the upper left. <Subject 1> (S1) says in a low, measured voice, <d>[Chinese] 它需要多久？</d> The shot ends with him holding his gaze upward, jaw set, waiting for the answer.\n\noverall_soundscape:\nHangar ventilation, the faint crackle of the fading hologram, distant metallic echoes, a tense silence.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s09_14",
+  "scene": "S09",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "低机位全景：磐石回答三天，全息影像收缩成一个深红光点后熄灭",
+  "dialogue": [
+   {
+    "who": "PANSHI",
+    "text": "三天。也许更短。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter guardian robot in <Picture 1>, with weathered yellow stone-textured armor, one amber optic band and no mouth, and an amber hexagonal chest core.\n<Subject 2> is the woman in the prototype exosuit in <Picture 2>, with raw steel plates, orange hazard stripes, an open helmet frame and a crystal shard glowing teal-white in its chest light, the suit scorched and dented.\n<Subject 3> is the young man in <Picture 3>, with messy black hair, an olive-green bomber jacket and a headset around his neck.\n<Subject 4> is the general in <Picture 4>, with a grey crew cut, a stern weathered face and a dark navy uniform.\n<Picture 5> is the location reference for [Shot 1], used for its dark military interior and cold blue light, enlarged here into a colossal hangar with steel roof ribs, gantry cranes and a vast concrete floor.\n\nsummary:\n[reference generation] <Subject 1> answers that they have three days or less as the hologram collapses into a single crimson point and fades.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow stone-textured armor, amber optic band and chest core stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - steel plates, hazard stripes and helmet frame stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - hair, olive bomber jacket and headset stay identical.\n<Subject 4> (appears in [Shot 1]): fully_preserved - crew cut, weathered face and navy uniform stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same cold blue light and dark steel; the space becomes a giant hangar and the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film on anamorphic lenses with volumetric haze, in a cold blue military hangar where the guardian's warm amber hologram is the key light. Keep the action in the vertical center with 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Wide shot, low angle from the floor, camera static. <Subject 1> half-kneels on frame left, the hologram still hanging overhead. <Subject 2>, <Subject 3> and <Subject 4> stand small at its knee on frame right. <Subject 1>'s amber optic band pulses in sync with each syllable as it (S1) says in a very deep, slow voice, <d>[Chinese] 三天。也许更短。</d> It has no mouth. The amber hologram shrinks inward, the sea and machines collapsing into a single crimson point that winks out. The shot ends with the four figures in silence, the guardian's chest core dimming.\n\noverall_soundscape:\nThe deep, slow voice, a descending electronic whoosh as the hologram collapses, a final faint ping, then cavernous hangar silence and ventilation hum.\n\nnon_diegetic_music: N/A"
+ }
+]

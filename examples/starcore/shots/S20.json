@@ -1,0 +1,267 @@
+[
+ {
+  "id": "sc_s20_01",
+  "scene": "S20",
+  "act": 4,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "海堤边缘，林骁合上面罩、点亮头灯，低头看向漆黑的海面",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer whose face comes from <Picture 1> and whose powered armor comes from <Picture 2>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a sleek pearl-white and graphite suit with teal energy seams and a glowing hexagonal teal chest core. Her faceplate starts retracted, two small lamps sit at the helmet temples, and her left back thruster is a crude makeshift part of raw steel with orange hazard stripes.\n<Picture 3> is the location reference for [Shot 1], the coastal megacity at night just after the rain: towers and the elevated highway behind a high concrete seawall, with the black open sea to the right.\n\nsummary:\n[reference generation] On the edge of the seawall, <Subject 1> seals her helmet and looks down at the black sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, armor plates, teal seams and chest core stay identical; only the helmet lamps and makeshift thruster are new.\n<Picture 3> ([Shot 1] location): partially_preserved - same night city towers, highway and wet reflections; the seawall edge and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, cinematic night lighting just after rain, wet concrete, city glow on the left and a black sea on the right. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium shot, low angle from the seawall walkway, slow push-in. The rain has stopped; the concrete is wet, the city glows on the left, the black sea heaves on the right, and aircraft lights pass overhead. <Subject 1> steps up onto the edge of the seawall, faceplate retracted, her face calm and set. She takes one deep breath; the two halves of her faceplate slide shut over her face, the vertical T-shaped visor slit lights teal, and two small lamps at her helmet temples click on. The shot ends with her standing at the edge, her sealed helmet tilted down toward the water.\n\noverall_soundscape:\nWaves crashing against the seawall, wind, the whir and clunk of the faceplate sealing, distant jet engines, a soft click of helmet lamps.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_02",
+  "scene": "S20",
+  "act": 4,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "林骁从海堤上纵身跃入大海",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her smooth closed helmet has a single vertical T-shaped teal visor slit and two small lamps at the temples; her left back thruster is a crude makeshift part of raw steel with orange hazard stripes.\n<Picture 2> is the location reference for [Shot 1], the coastal megacity at night just after the rain: towers and the elevated highway behind a high concrete seawall, with the black open sea to the right.\n\nsummary:\n[reference generation] <Subject 1> leaps from the seawall and dives into the dark sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-visor helmet stay identical; only the helmet lamps and makeshift thruster are new.\n<Picture 2> ([Shot 1] location): partially_preserved - same night city towers, highway and wet reflections; the seawall edge and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, cinematic night lighting just after rain, wet concrete, city glow on the left and a black sea on the right. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Wide shot, side angle along the seawall, static: the high wall runs across the frame, city towers glowing behind it on the left and the black sea below on the right. <Subject 1> stands on the edge, a small armored figure against the towers, teal visor and chest core glowing. She bends her knees and launches herself outward, arcing through the air in a clean dive toward the right, the makeshift thruster on her back cold. She pierces the surface with a narrow white splash. The shot ends with ripples spreading where she vanished and a teal glow fading beneath the water.\n\noverall_soundscape:\nWind, the scrape of her push-off, a sharp splash, waves slapping the wall, jets roaring overhead and fading.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_03",
+  "scene": "S20",
+  "act": 4,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "水下：林骁冲入海中，装甲头灯照亮黑暗，气泡上升",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her smooth closed helmet has a single vertical T-shaped teal visor slit and two small lamps at the temples; her left back thruster is a crude makeshift part of raw steel with orange hazard stripes.\n<Picture 2> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] Underwater, <Subject 1> plunges through a burst of bubbles as her helmet lamps cut into the dark sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-visor helmet stay identical; only the helmet lamps and makeshift thruster are new.\n<Picture 2> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Wide shot underwater, camera below looking up, slowly tilting down as she passes. <Subject 1> breaks into the water from above in an explosion of silver bubbles, the surface a faint rippling sheet overhead. She rights herself head-down, the two helmet lamps throwing narrow white beams into the murk, drifting particles glittering in their light, the teal visor and chest core glowing. Columns of bubbles rise past the camera from her armor seams. She kicks once and glides downward past the lens. The shot ends with her lamp beams receding into deep blue-black water below.\n\noverall_soundscape:\nThe muffled roar of her entry, rushing bubbles, her steady breathing inside the sealed helmet, a soft electrical hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_04",
+  "scene": "S20",
+  "act": 4,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "继续下潜，四周越来越暗，只剩胸口碎片的青光（慢节奏 8 秒）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her smooth closed helmet has a single vertical T-shaped teal visor slit and two small lamps at the temples; her left back thruster is a crude makeshift part of raw steel with orange hazard stripes.\n<Picture 2> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] <Subject 1> descends ever deeper until the darkness swallows everything except the teal glow of her chest core.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-visor helmet stay identical; only the helmet lamps and makeshift thruster are new.\n<Picture 2> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Wide shot, the camera descending slowly beside her, unhurried. <Subject 1> sinks head-down through the water column, arms along her sides. The blue of the water fades toward black; her helmet lamp beams grow shorter, swallowed by the darkness a few meters ahead, only drifting particles flickering in them. The last trace of surface light disappears above. Around her, faint blue bioluminescent specks drift past like slow stars. The shot ends with her almost invisible in total darkness, only the hexagonal teal glow of her chest core and the thin visor slit marking where she is, still descending.\n\noverall_soundscape:\nA deep pressure rumble, armor creaking under pressure, her slow controlled breathing, a faint resonant hum from the chest core, near silence.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_05",
+  "scene": "S20",
+  "act": 4,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "大远景俯拍：海床上磐石巨大的身躯侧卧，胸口破损、光带熄灭，林骁的青光从左上方降下（8 秒）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, a massive frame of weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one amber horizontal optic band and no mouth, a hexagonal amber chest core, and huge haul-truck wheels folded on its shoulders and lower legs; it lies dark on the seabed, chest armor broken open, optic band unlit, core barely glimmering.\n<Subject 2> is the armored woman in <Picture 2>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her smooth closed helmet has a single vertical T-shaped teal visor slit and two small lamps at the temples; her left back thruster is a crude makeshift part of raw steel with orange hazard stripes.\n<Picture 3> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] Far below, <Subject 1> lies dark on its side on the seabed as <Subject 2>'s tiny teal light descends toward it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - stone-textured yellow-graphite armor, amber optic band, chest core and folded truck wheels stay identical; only the damage is new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-visor helmet stay identical; only the helmet lamps and makeshift thruster are new.\n<Picture 3> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Extreme wide shot, high angle looking down, static. In near darkness the rocky seabed is just visible by faint blue bioluminescence. Across the lower half of the frame lies the enormous dark form of <Subject 1> on its side, one arm folded beneath it, the wheels on its shoulder half-buried in silt, its chest armor broken open and the optic band unlit. Small at the upper left, the teal point of <Subject 2>'s chest core and her two lamp beams descend toward it, the beams barely reaching the edge of its huge shoulder, showing it is many times her size. The shot ends with her light hovering above the giant, motionless body.\n\noverall_soundscape:\nDeep-sea silence, a low pressure hum, faint creaking of the robot's metal, slow bubbles, a single resonant pulse.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_06",
+  "scene": "S20",
+  "act": 4,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "头灯扫过磐石暗淡的面甲和炸裂的胸口，琥珀核心只剩一点余烬",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, a massive frame of weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one amber horizontal optic band and no mouth, a hexagonal amber chest core, and huge haul-truck wheels folded on its shoulders and lower legs; it lies dark on the seabed, chest armor broken open, optic band unlit, core barely glimmering.\n<Picture 2> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] Lamp beams sweep across <Subject 1>'s dark faceplate and its shattered chest, where the amber core barely glimmers.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - stone-textured yellow-graphite armor, amber optic band, chest core and folded truck wheels stay identical; only the damage is new.\n<Picture 2> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium shot, slow lateral track along the body, close to the seabed. Two narrow white lamp beams from off-screen above sweep across <Subject 1>'s dark flat faceplate, the optic band black and lifeless, silt settled on its scarred stone-textured plates. The beams move down to its chest: jagged, blasted armor peeled outward around the hexagonal core, which is almost dark, only a faint amber ember flickering deep inside. Particles drift slowly through the light. The shot ends framed on the broken chest and the dying ember. It has no mouth and makes no speech.\n\noverall_soundscape:\nDeep-water silence, faint creaks of settling metal, a weak irregular hum from the core, slow bubbles.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_07",
+  "scene": "S20",
+  "act": 4,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁游到磐石胸前，跪在破损胸甲上，手按自己胸口的碎片",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her smooth closed helmet has a single vertical T-shaped teal visor slit and two small lamps at the temples; her left back thruster is a crude makeshift part of raw steel with orange hazard stripes.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>, a massive frame of weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one amber horizontal optic band and no mouth, a hexagonal amber chest core, and huge haul-truck wheels folded on its shoulders and lower legs; it lies dark on the seabed, chest armor broken open, optic band unlit, core barely glimmering.\n<Picture 3> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] <Subject 1> swims to <Subject 2>'s broken chest, kneels beside its dim core and lays her hand on her own glowing chest core.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-visor helmet stay identical; only the helmet lamps and makeshift thruster are new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - stone-textured yellow-graphite armor, amber optic band, chest core and folded truck wheels stay identical; only the damage is new.\n<Picture 3> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium shot, eye level with her, static. <Subject 1> glides in from the upper left and lands softly on the edge of <Subject 2>'s blasted chest armor, silt puffing up around her armored boots; the robot's hexagonal core beside her is wider than she is tall. Her helmet lamps light the dark interior of the wound. She kneels on the plating, looks at the faint amber ember, then lays her gloved armored hand flat over the teal core on her own chest. The shot ends with her still, hand on her chest, the two lights side by side: small teal and dim amber.\n\noverall_soundscape:\nMuffled water, the soft thud of her landing, a hiss of silt, her slow breathing in the helmet, two faint hums at different pitches.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_07_v2",
+  "scene": "S20",
+  "act": 4,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁游到磐石胸前，跪在破损胸甲上，手按自己胸口的碎片（重拍）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her smooth closed helmet has a single vertical T-shaped teal visor slit and two small lamps at the temples; her left back thruster is a crude makeshift steel part with orange hazard stripes.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>, a massive frame of weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one amber horizontal optic band and no mouth, a hexagonal amber chest core, and huge haul-truck wheels folded on its shoulders and lower legs; it lies dark on the seabed, chest armor broken open, optic band unlit, core barely glimmering.\n<Picture 3> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] <Subject 1> settles onto <Subject 2>'s broken chest, kneels beside its dim core and lays her hand on her own glowing chest core.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-visor helmet stay identical; only the helmet lamps and makeshift thruster are new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - stone-textured yellow-graphite armor, amber optic band, chest core and folded truck wheels stay identical; only the damage is new.\n<Picture 3> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium shot, eye level with her, static. Exactly one armored woman is in frame: <Subject 1>, large on the left, hovering just above <Subject 2>'s blasted chest armor. She settles softly onto the plating, silt puffing up around her armored boots; the robot's core beside her is wider than she is tall. She kneels, looks at the faint amber ember, then lays her gloved hand flat over the teal core on her own chest. The shot ends with her still, hand on her chest, the two lights side by side: small teal and dim amber. The water above is empty except drifting particles: no other suits, divers, robots or figures.\n\noverall_soundscape:\nMuffled water, the soft thud of her landing, a hiss of silt, her slow breathing in the helmet, two faint hums at different pitches.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_07_v3",
+  "scene": "S20",
+  "act": 4,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁游到磐石胸前，跪在破损胸甲上，手按自己胸口的碎片（重拍）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her smooth closed helmet has a single vertical T-shaped teal visor slit and two small lamps at the temples; her left back thruster is a crude makeshift steel part with orange hazard stripes.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>, a massive frame of weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one amber horizontal optic band and no mouth, a hexagonal amber chest core, and huge haul-truck wheels folded on its shoulders and lower legs; it lies dark on the seabed, chest armor broken open, optic band unlit, core barely glimmering.\n<Picture 3> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] <Subject 1> settles onto <Subject 2>'s broken chest, kneels beside its dim core and lays her hand on her own glowing chest core.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-visor helmet stay identical; only the helmet lamps and makeshift thruster are new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - stone-textured yellow-graphite armor, amber optic band, chest core and folded truck wheels stay identical; only the damage is new.\n<Picture 3> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Exactly ONE armored woman exists in this shot for its entire duration; the camera frames her alone against the giant chest plate, and the dark water above and behind her stays empty. Medium shot, eye level with her, static. Exactly one armored woman is in frame: <Subject 1>, large on the left, hovering just above <Subject 2>'s blasted chest armor. She settles softly onto the plating, silt puffing up around her armored boots; the robot's core beside her is wider than she is tall. She kneels, looks at the faint amber ember, then lays her gloved hand flat over the teal core on her own chest. The shot ends with her still, hand on her chest, the two lights side by side: small teal and dim amber. The water above is empty except drifting particles: no other suits, divers, robots or figures.\n\noverall_soundscape:\nMuffled water, the soft thud of her landing, a hiss of silt, her slow breathing in the helmet, two faint hums at different pitches.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_08",
+  "scene": "S20",
+  "act": 4,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "特写：林骁从胸口取出碎片，装甲的青光随之全部熄灭",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her smooth closed helmet has a single vertical T-shaped teal visor slit and two small lamps at the temples; her left back thruster is a crude makeshift part of raw steel with orange hazard stripes.\n<Subject 2> is the thumb-sized shard of the faceted crystal in <Picture 2>, the same crystal with swirling blue-white light inside, with no capsule.\n<Picture 3> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] <Subject 1> pulls <Subject 2> out of her chest core, and every teal light on her armor goes dark.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-visor helmet stay identical; only the helmet lamps and makeshift thruster are new.\n<Subject 2> (appears in [Shot 1]): partially_preserved - same faceted crystal and swirling blue-white inner light; it is a small shard and the capsule is absent.\n<Picture 3> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Close-up on her chest and hand, static, shallow focus. Her gloved fingers grip the hexagonal teal core in the center of her chest and twist; it unlocks with a soft click and she draws out <Subject 2>, swirling with blue-white light. As it leaves the socket the teal light drains from her armor: the chest core goes dark, the energy seams along her arms fade one after another, and the glow of her visor slit reflected on the plates disappears. The shot ends with <Subject 2> glowing alone in her open palm, the only light, her armor dark around it.\n\noverall_soundscape:\nA soft mechanical click, a descending electric whine as the power drains, a beat of silence, then the clear crystalline hum of the shard.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_09",
+  "scene": "S20",
+  "act": 4,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "她把碎片按进磐石胸口的琥珀核心",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in the same sleek pearl-white and graphite powered suit with the smooth T-visor helmet, now drained of all power: chest core, energy seams, visor slit and helmet lamps are all dark and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>, a massive frame of weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one amber horizontal optic band and no mouth, a hexagonal amber chest core, and huge haul-truck wheels folded on its shoulders and lower legs; it lies dark on the seabed, chest armor broken open, optic band unlit, core barely glimmering.\n<Subject 3> is the thumb-sized shard of the faceted crystal in <Picture 3>, the same crystal with swirling blue-white light inside, with no capsule.\n<Picture 4> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] <Subject 1>'s hand presses <Subject 3> into the center of <Subject 2>'s dark amber hexagonal core.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - suit shape, pearl-white and graphite plates and helmet design stay identical; only every light on the armor is switched off.\n<Subject 2> (appears in [Shot 1]): fully_preserved - stone-textured yellow-graphite armor, amber optic band, chest core and folded truck wheels stay identical; only the damage is new.\n<Subject 3> (appears in [Shot 1]): partially_preserved - same faceted crystal and swirling blue-white inner light; it is a small shard and the capsule is absent.\n<Picture 4> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Insert close-up, static. The dark, cracked face of <Subject 2>'s hexagonal core fills the background, a faint amber ember deep inside. <Subject 1>'s unlit armored hand enters from the left holding <Subject 3>, its blue-white light reflecting on the faceted core. She pushes the shard into a small fracture at the core's center and presses with her whole palm. A beat later, a thread of blue-white light runs into the core and the amber ember flares. The shot ends with her hand still pressed against the core as light begins to leak between her fingers.\n\noverall_soundscape:\nA crystalline scrape, a held silence, then a deep resonant hum rising from inside the robot.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_10",
+  "scene": "S20",
+  "act": 4,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "青白与琥珀交织的光从磐石胸口爆发，把失去动力的林骁推开",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, a massive frame of weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one amber horizontal optic band and no mouth, a hexagonal amber chest core, and huge haul-truck wheels folded on its shoulders and lower legs; its chest armor is blasted open around the exposed amber core.\n<Subject 2> is the armored woman in <Picture 2>, in the same sleek pearl-white and graphite powered suit with the smooth T-visor helmet, now drained of all power: chest core, energy seams, visor slit and helmet lamps are all dark and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Picture 3> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] Interwoven blue-white and amber light bursts from <Subject 1>'s chest and pushes the powerless <Subject 2> away.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - stone-textured yellow-graphite armor, amber optic band, chest core and folded truck wheels stay identical; only the damage is new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - suit shape, pearl-white and graphite plates and helmet design stay identical; only every light on the armor is switched off.\n<Picture 3> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium-wide shot, slightly low angle, static until the blast shakes it. <Subject 2> floats just above <Subject 1>'s open chest, her armor dark and limp. The core erupts: twisting beams of blue-white and amber light blast out of the wound, revealing every scar on the stone-textured plates. A pressure wave throws <Subject 2> backward and up, tumbling slowly with loose arms, a dark silhouette against the light. Glowing seams of blue-white and amber spread outward across <Subject 1>'s armor. The shot ends with <Subject 2> drifting above the blazing chest, the water around them full of glowing particles.\n\noverall_soundscape:\nA deep detonation-like boom muffled by water, a roaring rush of displaced water, a rich harmonic hum of two tones merging.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_11",
+  "scene": "S20",
+  "act": 4,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "大远景：环形冲击波荡开海底泥沙",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, a massive frame of weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one amber horizontal optic band and no mouth, a hexagonal amber chest core, and huge haul-truck wheels folded on its shoulders and lower legs; its chest armor is blasted open around the exposed amber core.\n<Picture 2> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] A ring-shaped shockwave rolls out from <Subject 1> across the seabed, throwing up huge clouds of silt.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - stone-textured yellow-graphite armor, amber optic band, chest core and folded truck wheels stay identical; only the damage is new.\n<Picture 2> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Extreme wide shot, high angle, static. The giant body of <Subject 1> lies in the center, its chest blazing blue-white and amber, the only light in the abyss. A ring-shaped shockwave races outward from it across the seabed, lifting a wall of silt that billows in a widening circle, loose rocks tumbling, bioluminescent specks scattering. The light reveals the seabed for the first time, the robot's length spanning a rocky trench. The shot ends with the silt cloud rolling out toward the edges of the frame and the glow pulsing at the center.\n\noverall_soundscape:\nA deep rolling underwater boom, the roar of moving silt and water, rocks grinding, a resonant hum pulsing.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_12",
+  "scene": "S20",
+  "act": 4,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "特写：磐石的琥珀光带重新亮起",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, a massive frame of weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one amber horizontal optic band and no mouth, a hexagonal amber chest core, and huge haul-truck wheels folded on its shoulders and lower legs; its chest armor is blasted open around the exposed amber core.\n<Picture 2> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] Close-up as the amber optic band on <Subject 1>'s faceplate flickers and relights.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - stone-textured yellow-graphite armor, amber optic band, chest core and folded truck wheels stay identical; only the damage is new.\n<Picture 2> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Close-up of <Subject 1>'s faceplate, low angle, slow push-in through drifting silt. The flat faceplate is dark, lit only by blue-white and amber light from below. A spark flickers in the center of the optic band; it catches, and amber light spreads outward to both ends segment by segment, then holds steady and bright. Fine blue-white threads of light run along the seams around it. The head turns slowly a few degrees, as if searching for something. The shot ends on the steady amber band glowing in the dark water. It has no mouth and does not speak.\n\noverall_soundscape:\nA rising electrical hum, a deep mechanical exhale of hydraulics, settling silt, a low warm resonant tone.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s20_13",
+  "scene": "S20",
+  "act": 4,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "磐石巨大的手掌从泥沙中升起，轻轻托起失去动力的林骁（慢节奏 8 秒）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, a massive frame of weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one amber horizontal optic band and no mouth, a hexagonal amber chest core, and huge haul-truck wheels folded on its shoulders and lower legs; its chest armor is blasted open around the exposed amber core.\n<Subject 2> is the armored woman in <Picture 2>, in the same sleek pearl-white and graphite powered suit with the smooth T-visor helmet, now drained of all power: chest core, energy seams, visor slit and helmet lamps are all dark and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Picture 3> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] <Subject 1>'s enormous hand rises through the silt and gently cradles the powerless <Subject 2> in its palm.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - stone-textured yellow-graphite armor, amber optic band, chest core and folded truck wheels stay identical; only the damage is new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - suit shape, pearl-white and graphite plates and helmet design stay identical; only every light on the armor is switched off.\n<Picture 3> ([Shot 1] location): partially_preserved - same near-black water, particles, bioluminescence and rocky seabed; the framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, deep-sea low-key lighting, near-black water with drifting particles and faint blue bioluminescence, practical light only from the armor and the robot. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Wide shot, slow push-in, gentle and quiet. <Subject 2> drifts limply in the dark water, her armor completely unlit, sinking slowly. Below her, <Subject 1>'s enormous hand rises from the settling silt, glowing faintly blue-white and amber along its seams, each finger longer than she is tall. The palm comes up beneath her and stops; she settles into it softly, and the fingers curl partway around her like a shelter. <Subject 2> lifts one dark gloved hand and lays it against the huge thumb. The shot ends with her cradled in the palm, the amber optic band glowing above in the background.\n\noverall_soundscape:\nMuffled deep water, a slow hydraulic movement, the soft contact of armor on metal, a warm low hum, her faint breathing.\n\nnon_diegetic_music: N/A"
+ }
+]

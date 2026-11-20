@@ -1,0 +1,141 @@
+[
+ {
+  "id": "shen",
+  "prompt": "Character reference photo: single full-body view, three-quarter front angle, of a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with even soft key light and a subtle rim light. Natural relaxed expression, mouth closed. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "shen_face",
+  "prompt": "Cinematic close-up portrait, head and shoulders, of a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist. Front three-quarter view, eyes looking just off camera, even soft key light, neutral dark grey background. Tack-sharp eyes, eyelashes, skin pores and hair strands; the whole head in focus. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/echo/refs/shen.png"
+  ]
+ },
+ {
+  "id": "lu",
+  "prompt": "Character reference photo: single full-body view, three-quarter front angle, of a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with even soft key light and a subtle rim light. Natural relaxed expression, mouth closed. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "lu_face",
+  "prompt": "Cinematic close-up portrait, head and shoulders, of a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt. Front three-quarter view, eyes looking just off camera, even soft key light, neutral dark grey background. Tack-sharp eyes, eyelashes, skin pores and hair strands; the whole head in focus. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/echo/refs/lu.png"
+  ]
+ },
+ {
+  "id": "gu",
+  "prompt": "Character reference photo: single full-body view, three-quarter front angle, of a 62-year-old East Asian man, silver-white hair swept back neatly, thin rimless rectangular glasses, a gentle composed smile, clean-shaven, a cream-white linen mandarin-collar suit, holding a black lacquered walking cane with a polished plain silver handle in his right hand, a slight limp on his left leg. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with even soft key light and a subtle rim light. Natural relaxed expression, mouth closed. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "gu_face",
+  "prompt": "Cinematic close-up portrait, head and shoulders, of a 62-year-old East Asian man, silver-white hair swept back neatly, thin rimless rectangular glasses, a gentle composed smile, clean-shaven, a cream-white linen mandarin-collar suit, holding a black lacquered walking cane with a polished plain silver handle in his right hand, a slight limp on his left leg. Front three-quarter view, eyes looking just off camera, even soft key light, neutral dark grey background. Tack-sharp eyes, eyelashes, skin pores and hair strands; the whole head in focus. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/echo/refs/gu.png"
+  ]
+ },
+ {
+  "id": "xu",
+  "prompt": "Character reference photo: single full-body view, three-quarter front angle, of a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with even soft key light and a subtle rim light. Natural relaxed expression, mouth closed. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "xu_face",
+  "prompt": "Cinematic close-up portrait, head and shoulders, of a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck. Front three-quarter view, eyes looking just off camera, even soft key light, neutral dark grey background. Tack-sharp eyes, eyelashes, skin pores and hair strands; the whole head in focus. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/echo/refs/xu.png"
+  ]
+ },
+ {
+  "id": "cheng",
+  "prompt": "Character reference photo: single full-body view, three-quarter front angle, of a 61-year-old East Asian man engineer, thin lined face, short cropped white hair, round black-framed glasses, a thin silver implant ring behind his left ear, a dark-navy turtleneck under a long camel-colored wool overcoat. Entire body visible from head to feet, centered, standing on a neutral medium-grey seamless studio background with even soft key light and a subtle rim light. Natural relaxed expression, mouth closed. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "cheng_face",
+  "prompt": "Cinematic close-up portrait, head and shoulders, of a 61-year-old East Asian man engineer, thin lined face, short cropped white hair, round black-framed glasses, a thin silver implant ring behind his left ear, a dark-navy turtleneck under a long camel-colored wool overcoat. Front three-quarter view, eyes looking just off camera, even soft key light, neutral dark grey background. Tack-sharp eyes, eyelashes, skin pores and hair strands; the whole head in focus. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/echo/refs/cheng.png"
+  ]
+ },
+ {
+  "id": "prop_cane",
+  "prompt": "Prop reference photo: a black lacquered walking cane with a polished plain silver crook handle and a steel tip, standing upright, whole cane visible from handle to tip, centered on a neutral medium-grey seamless studio background, even soft light, crisp lacquer reflections. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark. The cane alone, shown once: no person, no hand, no second view.",
+  "size": "1280x720",
+  "refs": [
+   "assets/echo/refs/gu.png"
+  ]
+ },
+ {
+  "id": "prop_chip",
+  "prompt": "Macro product reference photo: a thumbnail-sized matte black memory chip with a tiny pulsing cyan indicator light, lying on an open human palm, the whole chip sharp edge to edge, neutral grey background, even soft light. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_skybridge",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people: an enclosed glass sky-bridge forty floors up between two modern glass towers at night, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, clean white LED strip lights along the base of both walls, crystal-clear night air, a sharp glittering city grid far below. Deep focus, every surface sharp from foreground to background, clean clear air. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_skybridge_dawn",
+  "prompt": "Cinematic establishing wide shot of the same sky-bridge as Reference 1, same glass panels, steel frames and stone floor, now at sunrise, empty environment with no people: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon. Deep focus, every surface sharp from foreground to background, clean clear air. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/echo/refs/loc_skybridge.png"
+  ]
+ },
+ {
+  "id": "loc_lab",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people: a bright clinical memory forensics lab, white walls and a pale grey epoxy floor, even cool-white ceiling panel lighting, a reclining white readout chair with a thin silver halo-ring headset on a swing arm, a large transparent glass display wall showing abstract cyan waveforms, glass partition walls and a sliding glass door. Deep focus, every surface sharp from foreground to background, clean clear air. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_gulab",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people: a private research lab on the top floor of a corporate tower at night, warm walnut wood panels and brushed brass fittings, a black leather reclining readout chair with a gold halo-ring headset, a glass desk display showing abstract amber graphs, a low tea table with a clay teapot, floor-to-ceiling windows over a sharp city skyline, warm clear practical lamps. Deep focus, every surface sharp from foreground to background, clean clear air. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_studio",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people: a small independent sound studio inside an old apartment block at night, walls of wooden acoustic diffuser panels and grey foam, a large mixing console with faders, two monitor speakers on stands, a vinyl record shelf, warm bright desk lamps, coiled cables, a door padded with acoustic foam. Deep focus, every surface sharp from foreground to background, clean clear air. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_car",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside. Deep focus, every surface sharp from foreground to background, clean clear air. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_apartment",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people: a minimalist high-rise apartment at night, pale concrete walls, a long oak table, a coat rack by the door, a warm brass floor lamp, a floor-to-ceiling window with a clear sharp view of city towers under a dry starry sky. Deep focus, every surface sharp from foreground to background, clean clear air. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_bureau",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people: a modern police interrogation room, matte grey walls, a brushed steel table with two chairs, bright even white ceiling light, a large dark one-way mirror on one wall, a steel door. Deep focus, every surface sharp from foreground to background, clean clear air. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_hall",
+  "prompt": "Cinematic establishing wide shot, environment with the benches occupied by anonymous seated observers seen from behind, no one on the dais: a public memory verification hall at dawn, tall white stone walls, rows of pale wooden benches filled with seated observers in everyday clothes, a raised white stone dais with a white readout chair and a slim console, a giant suspended display screen above the dais, crisp morning sunlight through tall narrow windows. Deep focus, every surface sharp from foreground to background, clean clear air. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ },
+ {
+  "id": "loc_hall_ext",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people: the exterior of a white stone public verification hall at dawn, a wide flight of pale stone steps, a clean empty plaza, a clear blue-to-gold dawn sky. Deep focus, every surface sharp from foreground to background, clean clear air. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720",
+  "refs": [
+   "assets/echo/refs/loc_hall.png"
+  ]
+ },
+ {
+  "id": "loc_city_night",
+  "prompt": "Cinematic establishing wide shot, empty environment with no people: a clean modern coastal city at night seen from street level, wide dry streets, crisp white streetlights, an elevated highway, glass towers with lit windows, a clear starry sky. Deep focus, every surface sharp from foreground to background, clean clear air. Photoreal live-action cinema, shot on a large-format digital cinema camera with a spherical prime lens at f/8, deep focus with every plane sharp from foreground to background, crisp skin pores, individual hair strands and fabric weave, clean clear air, motivated practical light. No fog, no haze, no smoke, no bokeh, no soft focus. No text, no letters, no logo, no watermark.",
+  "size": "1280x720"
+ }
+]

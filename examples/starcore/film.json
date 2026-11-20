@@ -1,0 +1,21 @@
+{
+  "title": "星核黎明",
+  "title_en": "STARCORE DAWN",
+  "render_prefix": "sc",
+  "credits_seconds": 62,
+  "credits_music": "credits.mp3",
+  "credits": [
+    [
+      "星核黎明",
+      "Title"
+    ],
+    [
+      "AI-generated film · CineForge",
+      "Body"
+    ],
+    [
+      "Add verified music attribution before publishing",
+      "Body"
+    ]
+  ]
+}

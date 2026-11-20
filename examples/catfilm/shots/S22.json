@@ -1,0 +1,335 @@
+[
+  {
+    "id": "cf_s22_01",
+    "scene": "S22",
+    "act": 3,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/xu.png",
+      "assets/catfilm/refs/duoduo_bare.png",
+      "assets/catfilm/refs/collar_dark_v2.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 8,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "清晨的公寓：多多（不戴项圈）埋头吃罐头，许棠蹲在一旁；熄灭的项圈躺在工作台上；墙上屏幕传来新闻：衡渊董事长陆承宇今晨接受调查。",
+    "dialogue": [
+      {
+        "who": "ANCHOR",
+        "text": "衡渊董事长陆承宇今晨接受调查。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>: a 31-year-old East Asian woman neural-interface engineer, calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers, white sneakers, a small silver ring on her right index finger.\n<Subject 2> is the real calico cat in <Picture 2>, wearing no collar in this shot: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 3> is the dead translator collar in <Picture 3>, lying coiled on the workbench: the same slim matte graphite band and coin-sized round brushed-titanium pendant, its light ring dark, a faint scorch mark at one edge of the grille.\n<Picture 4> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] Next morning <Subject 2> eats from her bowl beside <Subject 1> while the news reports on the investigation.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver round-rimmed glasses, shoulder-length black hair and light grey knit sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and bare neck stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - graphite band, round pendant, faint scorch mark and dark ring stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs, her mouth never moves to speak and she makes only natural cat sounds.\n[Shot 1] Wide shot at eye level, static, deep focus across the whole room: <Subject 2>, with no collar, eats from a small bowl on the oak floor, head down, while <Subject 1> crouches beside her, watching; on the corner workbench in the background lies <Subject 3>, dark. Within the first second an off-screen female news anchor (S1) speaks from the wall display in a crisp professional female news anchor voice, <d>[Chinese] 衡渊董事长陆承宇今晨接受调查。</d> No person is visible speaking and the display shows only abstract graphics. After the line <Subject 1> reaches out and strokes the cat's back once. The shot ends on the quiet sunny room.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nSoft eating sounds, the anchor's voice from the wall display, morning birds outside, a distant monorail.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s22_02",
+    "scene": "S22",
+    "act": 3,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/collar_dark_v2.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "INSERT",
+    "summary_zh": "工作台特写：熄灭的项圈躺在电路板和焊台之间，镜头缓缓推近。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the dead translator collar in <Picture 1>, lying coiled on the workbench: the same slim matte graphite band and coin-sized round brushed-titanium pendant, its light ring dark, a faint scorch mark at one edge of the grille.\n<Picture 2> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] The dead collar lies on the workbench in the morning sun.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - graphite band, round pendant, faint scorch mark and dark ring stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Insert close-up on the workbench, every scratch and solder joint sharp. <Subject 1> lies coiled among circuit boards and a soldering station, its ring dark and a faint scorch at the grille, morning sunlight glinting on the brushed titanium. The camera pushes in very slowly toward the dark pendant. The shot ends with the pendant filling the center of the frame.\n\noverall_soundscape:\nQuiet room tone, birds outside, the cat eating off-screen.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s22_03",
+    "scene": "S22",
+    "act": 3,
+    "beat": 2,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/ke.png",
+      "assets/catfilm/refs/momo.png",
+      "assets/catfilm/refs/carrier.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "门铃响：阿柯提着新航空箱站在门口，里面是墨墨：他现在归我了。或者我归他。",
+    "dialogue": [
+      {
+        "who": "KE",
+        "text": "他现在归我了。或者我归他。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the courier in <Picture 1>: a 26-year-old East Asian man drone courier, cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear, a small canvas cross-body bag.\n<Subject 2> is the black cat in <Picture 2>: a slightly smaller young solid black short-haired cat, glossy pure black coat with absolutely no white markings, round amber-gold eyes, slender build, natural four-legged cat posture, no collar, mouth closed.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] <Subject 1> arrives at the door with <Subject 2> in a new carrier.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, fingerless gloves and earpiece stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid glossy black coat, amber-gold eyes, slender smaller build and bare neck stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; he never stands on his hind legs and his mouth stays closed except for natural cat sounds.\n[Shot 1] Medium shot at the open front door, eye level, static, all sharp: <Subject 1> stands in the doorway holding <Subject 3> up at chest height with <Subject 2> sitting calmly inside. Within the first second <Subject 1> (S1) says in a fast, lively, slightly nasal young man's voice, grinning, his lips moving clearly, <d>[Chinese] 他现在归我了。或者我归他。</d> After the line he lifts the carrier a little higher to show off the cat. The shot ends on his proud grin beside the black cat.\n\noverall_soundscape:\nA doorbell chime fading under his cheerful voice, morning birds.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s22_04",
+    "scene": "S22",
+    "act": 3,
+    "beat": 2,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/xu_face.png",
+      "assets/catfilm/refs/xu.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠近景反应：她忍不住笑出来，摇了摇头（无台词）。",
+    "dialogue": [],
+    "keyframe": "assets/catfilm/kf/cf_s22_04.png",
+    "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level: the 31-year-old East Asian woman engineer of References 1 and 2 (exact same face: calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, light grey knit sweater with sleeves pushed up over a white T-shirt). She stands near the front door looking right with amused, tired eyes. Behind her, the bright apartment of Reference 3: floor-to-ceiling windows with a city view, white walls and green plants; clear early-morning sunlight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the knit texture of the sweater; no bokeh, no blur, no haze. Lips closed. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+    "ltx_prompt": "A photoreal live-action film shot, clear early-morning sunlight through floor-to-ceiling windows, medium close-up at eye level, locked-off camera with a very slow push-in. Within the first second she breaks into a quiet laugh. She is a 31-year-old East Asian woman with shoulder-length straight black hair tucked behind her ears and thin silver round-rimmed glasses, in a light grey knit sweater over a white T-shirt, standing in a bright apartment near the front door. Then she shakes her head fondly and steps aside. Deep focus with crisp skin pores, hair strands and knit detail; no haze, no bokeh. Audio: no dialogue, a soft laugh, morning birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "cf_s22_05",
+    "scene": "S22",
+    "act": 3,
+    "beat": 3,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/momo.png",
+      "assets/catfilm/refs/carrier.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "航空箱放在地板上，门开着；墨墨从里面跳出来。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the black cat in <Picture 1>: a slightly smaller young solid black short-haired cat, glossy pure black coat with absolutely no white markings, round amber-gold eyes, slender build, natural four-legged cat posture, no collar, mouth closed.\n<Subject 2> is the pet carrier in <Picture 2>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 3> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] <Subject 1> hops out of the carrier onto the apartment floor.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - solid glossy black coat, amber-gold eyes, slender smaller build and bare neck stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; he never stands on his hind legs and his mouth stays closed except for natural cat sounds.\n[Shot 1] Medium shot at floor level, static, deep focus. <Subject 2> sits on the oak floor with its grille door open. <Subject 1> steps to the edge and hops out onto the floor in one light bound. The shot ends with him standing on the floor, looking around the bright apartment.\n\noverall_soundscape:\nA soft thump of paws on oak, birds outside.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s22_06",
+    "scene": "S22",
+    "act": 3,
+    "beat": 3,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/duoduo_bare.png",
+      "assets/catfilm/refs/momo.png",
+      "assets/catfilm/refs/pair_scale.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "近景：墨墨和多多碰鼻子（无台词）。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1> and <Picture 3>, wearing no collar in this shot: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 2> is the black cat in <Picture 2> and <Picture 3>: a slightly smaller young solid black short-haired cat, glossy pure black coat with absolutely no white markings, round amber-gold eyes, slender build, natural four-legged cat posture, no collar, mouth closed.\n<Picture 4> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] <Subject 2> and <Subject 1> touch noses in greeting.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and bare neck stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid glossy black coat, amber-gold eyes, slender smaller build and bare neck stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs, her mouth never moves to speak and she makes only natural cat sounds. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; he never stands on his hind legs and his mouth stays closed except for natural cat sounds.\n[Shot 1] Close two-shot at cat height, static, both cats fully sharp. <Subject 1>, with no collar, stands on the left facing right; <Subject 2>, slightly smaller, stands on the right facing left. They stretch their necks forward and touch noses gently, whiskers brushing. The shot ends with both cats calmly sniffing each other.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nSoft sniffing, a tiny chirp from the calico.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s22_07",
+    "scene": "S22",
+    "act": 3,
+    "beat": 4,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/ke_face.png",
+      "assets/catfilm/refs/ke.png",
+      "assets/catfilm/refs/collar_dark_v2.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "阿柯走到工作台边，看着熄灭的项圈：项圈……修不好了？",
+    "dialogue": [
+      {
+        "who": "KE",
+        "text": "项圈……修不好了？"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the courier in <Picture 1> and <Picture 2>: a 26-year-old East Asian man drone courier, cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear, a small canvas cross-body bag.\n<Subject 2> is the dead translator collar in <Picture 3>, lying coiled on the workbench: the same slim matte graphite band and coin-sized round brushed-titanium pendant, its light ring dark, a faint scorch mark at one edge of the grille.\n<Picture 4> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] <Subject 1> looks at the dead collar on the workbench and asks if it can be fixed.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, fingerless gloves and earpiece stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round pendant, faint scorch mark and dark ring stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Medium shot at the workbench, eye level, static, deep focus, <Subject 1> beside the bench looking down at <Subject 2> lying dark among circuit boards. Within the first second <Subject 1> (S1) asks in a fast, lively, slightly nasal young man's voice, gently for once, his lips moving clearly, <d>[Chinese] 项圈……修不好了？</d> After the line he looks up toward the room, off-screen left. The shot ends on his hopeful, careful face.\nEach subject appears exactly once; no duplicated people or animals.\nExactly the characters listed in subject_definitions appear, each exactly once; no twins, no look-alike extras, no second copy of any robot or animal.\n\noverall_soundscape:\nHis quieter voice, room tone, birds outside.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s22_08",
+    "scene": "S22",
+    "act": 3,
+    "beat": 5,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/xu_face.png",
+      "assets/catfilm/refs/xu.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠近景：能修。但铃，回不来了。",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "能修。但铃，回不来了。"
+      }
+    ],
+    "keyframe": "assets/catfilm/kf/cf_s22_08.png",
+    "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Close-up, eye level: the 31-year-old East Asian woman engineer of References 1 and 2 (exact same face: calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, light grey knit sweater with sleeves pushed up over a white T-shirt). She stands by the window looking right toward the workbench, a quiet, sad calm on her face. Behind her, the bright apartment of Reference 3: floor-to-ceiling windows with a city view, white walls and green plants; clear early-morning sunlight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the knit texture of the sweater; no bokeh, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+    "ltx_prompt": "A photoreal live-action film shot, clear early-morning sunlight through floor-to-ceiling windows, close-up at eye level, locked-off camera with a very slow push-in. Within the first second she says softly and plainly, in Mandarin Chinese, \"能修。但铃，回不来了。\" Her lips move in sync with each syllable. She is a 31-year-old East Asian woman with shoulder-length straight black hair tucked behind her ears and thin silver round-rimmed glasses, in a light grey knit sweater over a white T-shirt, standing in a bright apartment by the window. After the line she lowers her eyes and presses her lips together. Deep focus with crisp skin pores, hair strands and knit detail; no haze, no bokeh. Audio: her warm, soft-spoken, steady alto voice speaking the Mandarin line, quiet room tone, birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "cf_s22_09",
+    "scene": "S22",
+    "act": 3,
+    "beat": 6,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/xu.png",
+      "assets/catfilm/refs/duoduo_bare.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "稍后：许棠坐在窗边沙发上，阳光洒进来；多多跳上她的腿。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>: a 31-year-old East Asian woman neural-interface engineer, calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers, white sneakers, a small silver ring on her right index finger.\n<Subject 2> is the real calico cat in <Picture 2>, wearing no collar in this shot: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Picture 3> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] <Subject 2> jumps onto the lap of <Subject 1> on the sunny sofa.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver round-rimmed glasses, shoulder-length black hair and light grey knit sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and bare neck stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs, her mouth never moves to speak and she makes only natural cat sounds.\n[Shot 1] Wide shot at eye level, static, deep focus. <Subject 1> sits on the grey sofa by the sunny window. <Subject 2>, with no collar, springs up from the floor onto her lap in one easy jump and turns around once to settle. The shot ends with the cat lying in her lap in the sunlight.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nA soft landing on the cushion, birds outside, a distant monorail.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s22_10",
+    "scene": "S22",
+    "act": 3,
+    "beat": 6,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/xu_face.png",
+      "assets/catfilm/refs/xu.png",
+      "assets/catfilm/refs/duoduo_bare.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "许棠低头看着腿上的多多：我再也听不见你说话了。",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "我再也听不见你说话了。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>: a 31-year-old East Asian woman neural-interface engineer, calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers, white sneakers, a small silver ring on her right index finger.\n<Subject 2> is the real calico cat in <Picture 3>, wearing no collar in this shot: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Picture 4> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] <Subject 1> tells <Subject 2> on her lap that she will never hear her speak again.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver round-rimmed glasses, shoulder-length black hair and light grey knit sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and bare neck stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs, her mouth never moves to speak and she makes only natural cat sounds.\n[Shot 1] Medium shot of <Subject 1> on the sofa with <Subject 2> in her lap, eye level, static, both sharp. Within the first second <Subject 1> (S1) says softly in a warm, soft-spoken, steady alto, looking down at the cat, her lips moving clearly, <d>[Chinese] 我再也听不见你说话了。</d> After the line she runs one hand slowly along the cat's back. The shot ends on her wistful face.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer soft voice, birds outside.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s22_11",
+    "scene": "S22",
+    "act": 3,
+    "beat": 7,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/duoduo_bare.png",
+      "assets/catfilm/refs/xu.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "多多抬头看着许棠，慢慢眨眼，呼噜起来（无台词）。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>, wearing no collar in this shot: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 2> is the woman engineer in <Picture 2>: a 31-year-old East Asian woman neural-interface engineer, calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers, white sneakers, a small silver ring on her right index finger.\n<Picture 3> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] <Subject 1> looks up at <Subject 2>, gives a slow blink and purrs.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and bare neck stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, silver round-rimmed glasses, shoulder-length black hair and light grey knit sweater stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs, her mouth never moves to speak and she makes only natural cat sounds.\n[Shot 1] Close-up on the face of <Subject 1> in the lap of <Subject 2>, slightly low angle, static, no collar on her neck. She lifts her head toward the woman's face above frame and gives one long, slow blink, and her throat fur trembles as she starts to purr. Her mouth stays closed. The shot ends on her half-closed green-amber eyes.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nA deep, steady purr, birds outside.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s22_12",
+    "scene": "S22",
+    "act": 3,
+    "beat": 8,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/xu_face.png",
+      "assets/catfilm/refs/xu.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠近景，含泪微笑：……不对。我一直听得见。",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "……不对。我一直听得见。"
+      }
+    ],
+    "keyframe": "assets/catfilm/kf/cf_s22_12.png",
+    "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Close-up, eye level: the 31-year-old East Asian woman engineer of References 1 and 2 (exact same face: calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, light grey knit sweater with sleeves pushed up over a white T-shirt). She sits on a sofa by a sunny window, looking down, eyes shining with tears, a small smile starting. Behind her, the bright apartment of Reference 3: floor-to-ceiling windows with a city view, white walls and green plants; clear early-morning sunlight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the knit texture of the sweater; no bokeh, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+    "ltx_prompt": "A photoreal live-action film shot, clear early-morning sunlight through floor-to-ceiling windows, close-up at eye level, locked-off camera with a very slow push-in. Within the first second she says softly, through tears, with a smile, in Mandarin Chinese, \"……不对。我一直听得见。\" Her lips move in sync with each syllable. She is a 31-year-old East Asian woman with shoulder-length straight black hair tucked behind her ears and thin silver round-rimmed glasses, in a light grey knit sweater over a white T-shirt, sitting on a grey sofa by a sunny window. After the line she smiles fully and a tear runs down one cheek. Deep focus with crisp skin pores, hair strands and knit detail; no haze, no bokeh. Audio: her warm, soft-spoken, steady alto voice speaking the Mandarin line, a cat purring softly close by, birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "cf_s22_13",
+    "scene": "S22",
+    "act": 3,
+    "beat": 9,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/collar_dark_v2.png",
+      "assets/catfilm/refs/collar_v2.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "INSERT",
+    "summary_zh": "工作台：熄灭的项圈光环微弱地闪起青光，铃的残片说：……翻译：她说，罐头不够。",
+    "dialogue": [
+      {
+        "who": "LING",
+        "text": "……翻译：她说，罐头不够。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the translator collar in <Picture 1> and <Picture 2>, lying coiled on the workbench: its band and scorched pendant look exactly like the dead collar in the first of these pictures, and the second picture shows how its thin light ring looks when lit.\n<Picture 3> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] The dead collar's ring flickers faint cyan and a last fragment of the AI translates.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - graphite band, round pendant, faint scorch mark and thin light ring stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Insert close-up on <Subject 1> lying on the workbench, static macro framing, every scratch sharp. Within the first second the dark ring flickers a faint cyan and <Subject 1> (S1) speaks in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer, thin and crackly, <d>[Chinese] ……翻译：她说，罐头不够。</d> After the line the ring fades back to dark. The shot ends on the silent pendant.\n\noverall_soundscape:\nA faint crackle, the small broken synthetic voice, room tone.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s22_14",
+    "scene": "S22",
+    "act": 3,
+    "beat": 10,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/catfilm/refs/xu_face.png",
+      "assets/catfilm/refs/xu.png",
+      "assets/catfilm/refs/duoduo_bare.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "许棠笑出声，转头望向工作台，眼角还挂着泪。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>: a 31-year-old East Asian woman neural-interface engineer, calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers, white sneakers, a small silver ring on her right index finger.\n<Subject 2> is the real calico cat in <Picture 3>, wearing no collar in this shot: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Picture 4> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] <Subject 1> bursts out laughing on the sofa with <Subject 2> in her lap.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver round-rimmed glasses, shoulder-length black hair and light grey knit sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and bare neck stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs, her mouth never moves to speak and she makes only natural cat sounds.\n[Shot 1] Medium shot of <Subject 1> on the sofa with <Subject 2> in her lap, eye level, static, both sharp. She bursts out laughing and turns her head toward the workbench, tears still on her cheeks. The shot ends with her laughing and shaking her head.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer warm laugh, the purr, birds outside.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "cf_s22_15",
+    "scene": "S22",
+    "act": 3,
+    "beat": 10,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/catfilm/refs/duoduo_bare.png",
+      "assets/catfilm/refs/loc_apt.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "多多望向镜头，慢慢眨了一下眼（全片最后一镜）。",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>, wearing no collar in this shot: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Picture 2> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] <Subject 1> looks into the lens and slowly blinks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and bare neck stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs, her mouth never moves to speak and she makes only natural cat sounds.\n[Shot 1] Close-up on <Subject 1> in the warm morning sunlight, eye level, static, no collar on her neck. She turns her face toward the lens and gives one long, slow blink. Her mouth stays closed. The shot ends on her calm green-amber eyes looking straight into the camera.\nEvery cat has exactly one tail; no extra or split tails.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nA soft purr, morning birds, then quiet.\n\nnon_diegetic_music: N/A",
+    "keyframe": "assets/catfilm/kf/cf_s22_15.png",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>, wearing no collar in this shot: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Picture 2> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] <Subject 1> looks into the lens and slowly blinks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and bare neck stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs, her mouth never moves to speak and she makes only natural cat sounds.\n[Shot 1] Close-up on <Subject 1> in the warm morning sunlight, eye level, static, no collar on her neck. She turns her face toward the lens and gives one long, slow blink. Her mouth stays closed. The shot ends on her calm green-amber eyes looking straight into the camera.\nEvery cat has exactly one tail; no extra or split tails.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nA soft purr, morning birds, then quiet.\n\nnon_diegetic_music: N/A\n\nMandatory shot-specific cast and anatomy constraints (override generic cast wording): Anatomical continuity throughout: each person appears exactly once; each robot appears exactly once. No twins, extra characters, reflected duplicates, extra limbs or detached body parts. Exactly ONE cat with exactly ONE tail. The tail is a single continuous unbranched appendage attached at the base of the spine, visible from rump to tip once, separated from legs. No extra or split tails; keep the same single tail throughout motion. Duoduo must match her calico reference: plump white body, black+orange crown patch, orange nose spot, orange-brown back patch, dark tabby flank and dark tabby tail. No additional cats or people except the explicitly listed on-screen cast. Only Duoduo is on screen. All conversational partners are off screen. No people or other animals.\nPreserve the opening keyframe composition and full visible single-tail anatomy; do not change camera angle or introduce any new characters.",
+    "keyframe_prompt": "Draw a single opening keyframe for this scene. Preserve the identities in the reference images. Photoreal live-action, 16:9, no text or subtitles. Depict the INITIAL pose, not a montage. All important anatomy must fit in the middle 75% of the image height for a later 1344x768 center crop.\nsubject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>, wearing no collar in this shot: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Picture 2> is the location reference for [Shot 1], a bright 32nd-floor apartment with floor-to-ceiling windows, light oak floor, white walls, plants, a beige cat tree, a grey sofa, a corner workbench and a wall display.\n\nsummary:\n[reference generation] <Subject 1> looks into the lens and slowly blinks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and bare neck stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same oak floor, white walls, windows and furniture; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-morning sunlight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs, her mouth never moves to speak and she makes only natural cat sounds.\n[Shot 1] Close-up on <Subject 1> in the warm morning sunlight, eye level, static, no collar on her neck. She turns her face toward the lens and gives one long, slow blink. Her mouth stays closed. The shot ends on her calm green-amber eyes looking straight into the camera.\nEvery cat has exactly one tail; no extra or split tails.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nA soft purr, morning birds, then quiet.\n\nnon_diegetic_music: N/A\n\nMandatory keyframe composition and cast (override earlier tight framing and generic cast wording): For anatomy clarity, moderately widen the original close-up into a compact three-quarter full-body portrait, keeping face and pendant prominent, all paws, rump and the ONE attached tail inside the central 16:9 safe area. Tail rests in a single simple curve to one side, never behind the head or crossing legs. Anatomical continuity throughout: each person appears exactly once; each robot appears exactly once. No twins, extra characters, reflected duplicates, extra limbs or detached body parts. Exactly ONE cat with exactly ONE tail. The tail is a single continuous unbranched appendage attached at the base of the spine, visible from rump to tip once, separated from legs. No extra or split tails; keep the same single tail throughout motion. Duoduo must match her calico reference: plump white body, black+orange crown patch, orange nose spot, orange-brown back patch, dark tabby flank and dark tabby tail. No additional cats or people except the explicitly listed on-screen cast. Only Duoduo is on screen. All conversational partners are off screen. No people or other animals."
+  }
+]

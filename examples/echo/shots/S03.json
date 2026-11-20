@@ -1,0 +1,446 @@
+[
+ {
+  "id": "ec_s03_01",
+  "scene": "S03",
+  "act": 1,
+  "beat": 1,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/echo/refs/loc_city_night.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "夜间高架上，一辆旧深灰轿车穿过清晰的城市灯光，路面干燥",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a clean modern coastal city at night with wide dry streets, crisp white streetlights, an elevated highway and lit glass towers under a clear starry sky.\n\nsummary:\n[reference generation] An older dark-grey sedan drives along an elevated highway through the clear night city.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Crisp white streetlights and lit tower windows under a clear starry sky; the road surface is dry. Deep focus, crisp detail.\n[Shot 1] Extreme wide shot from a high angle, slow lateral tracking alongside the elevated highway. A single older dark-grey sedan travels along the elevated highway in the center of the frame, its headlights clean white, the road surface dry. Glass towers with lit windows rise on both sides, every window sharp, and the streetlights form crisp lines into the distance under a clear starry sky. The shot ends with the sedan passing beneath an overpass, the whole city sharp to the horizon.\n\noverall_soundscape:\nThe steady whoosh of tires on a dry road, distant traffic, a low wind across the highway.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "ec_s03_02",
+  "scene": "S03",
+  "act": 1,
+  "beat": 2,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/echo/refs/lu.png",
+   "assets/echo/refs/lu_face.png",
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "车内正面双人镜：陆时野开车在画右，沈砚在副驾驶画左，街灯扫过：「程牧有个女儿，叫许棠。」",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "程牧有个女儿，叫许棠。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Picture 5> is the location reference for [Shot 1], the interior of an older dark-grey sedan at night, with worn black leather seats, a soft amber dashboard glow and a clean clear windshield.\n\nsummary:\n[reference generation] <Subject 1> drives and tells <Subject 2> the dead man had a daughter.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow; crisp white streetlights sweep across the cabin at a steady rhythm; the night outside is dry and clear. Deep focus, crisp detail.\n[Shot 1] Medium two-shot from outside the windshield, facing into the car, static on the moving car. Within the first second, <Subject 1> (S1) says in a low, rough, slow male voice, <d>[Chinese] 程牧有个女儿，叫许棠。</d> <Subject 1> drives at frame right, eyes on the road. <Subject 2> sits in the passenger seat at frame left, looking ahead. White streetlights sweep across both faces in turn. After the line she turns her head slightly toward him. The shot ends with her looking at him, his eyes still on the road.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe engine's low drone, tires on dry asphalt, his rough voice in the closed cabin.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "ec_s03_03",
+  "scene": "S03",
+  "act": 1,
+  "beat": 3,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/lu_face.png",
+   "assets/echo/refs/lu.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_03.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆时野看着前方的路：「跟他断绝来往三年了。」",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "跟他断绝来往三年了。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Medium close-up at eye level, static camera, he sits in the driver's seat on the right side of frame, hands on the wheel, eyes on the road ahead. Within the first second he says in Mandarin Chinese, \"跟他断绝来往三年了。\" His lips move in sync with each syllable, his voice low and rough. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line his shoulders shift as he adjusts his grip on the wheel. The shot ends with his eyes back on the road. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: his low, rough male voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_04",
+  "scene": "S03",
+  "act": 1,
+  "beat": 4,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_04.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "沈砚侧过脸：「带我去见她。」",
+  "dialogue": [
+   {
+    "who": "SHEN",
+    "text": "带我去见她。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Medium close-up at eye level, static camera, she sits in the passenger seat on the left side of frame, her face turned toward frame right. Within the first second she says in Mandarin Chinese, \"带我去见她。\" Her lips move in sync with each syllable, her voice low and decided. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she keeps looking at him, waiting. The shot ends with her face turned toward him, unmoving. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, steady female voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_05",
+  "scene": "S03",
+  "act": 1,
+  "beat": 5,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/lu_face.png",
+   "assets/echo/refs/lu.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_05.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆时野：「你现在是嫌疑人，不是取证师。」",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "你现在是嫌疑人，不是取证师。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Medium close-up at eye level, static camera, he sits in the driver's seat on the right side of frame, hands on the wheel, eyes on the road ahead. Within the first second he says in Mandarin Chinese, \"你现在是嫌疑人，不是取证师。\" His lips move in sync with each syllable, his voice flat and firm. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he flicks a glance toward her at frame left, then back to the road. The shot ends with his eyes on the road. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: his low, rough male voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_06",
+  "scene": "S03",
+  "act": 1,
+  "beat": 6,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_06.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "沈砚：「那你为什么还在开车？」",
+  "dialogue": [
+   {
+    "who": "SHEN",
+    "text": "那你为什么还在开车？"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Medium close-up at eye level, static camera, she sits in the passenger seat on the left side of frame, looking toward frame right. Within the first second she says in Mandarin Chinese, \"那你为什么还在开车？\" Her lips move in sync with each syllable, her voice dry and even. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she raises one eyebrow slightly. The shot ends with her eyes on him, one brow raised. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, steady female voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_07",
+  "scene": "S03",
+  "act": 1,
+  "beat": 7,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/lu_face.png",
+   "assets/echo/refs/lu.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_07.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆时野嘴角一动：「因为你连闯红灯都要写报告。」",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "因为你连闯红灯都要写报告。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Medium close-up at eye level, static camera, he sits in the driver's seat on the right side of frame, hands on the wheel, eyes on the road ahead. Within the first second he says in Mandarin Chinese, \"因为你连闯红灯都要写报告。\" His lips move in sync with each syllable, his voice slow, with a dry edge of humor. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line the corner of his mouth twitches into a brief dry smile, eyes on the road. The shot ends with the smile fading, his eyes ahead. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: his low, rough male voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_08",
+  "scene": "S03",
+  "act": 1,
+  "beat": 8,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/lu.png",
+   "assets/echo/refs/lu_face.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "双人：两人沉默，窗外灯光一道道流过（节奏镜，无台词）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the man in <Picture 3> and <Picture 4>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Picture 5> is the location reference for [Shot 1], the interior of an older dark-grey sedan at night, with worn black leather seats, a soft amber dashboard glow and a clean clear windshield.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> ride in silence as streetlight passes over them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow; crisp white streetlights sweep across the cabin at a steady rhythm; the night outside is dry and clear. Deep focus, crisp detail.\n[Shot 1] Medium two-shot from outside the windshield, facing into the car, static on the moving car. <Subject 2> drives at frame right and <Subject 1> sits at frame left; neither speaks and their lips stay closed. Bands of white streetlight slide over their faces and across the dashboard one after another, steady and even. She looks out of the side window; he keeps his eyes on the road. The shot ends with both of them still, the light passing over them.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe engine drone, the rhythmic whoosh of passing streetlights, tires on dry asphalt, the silence between them.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "ec_s03_09",
+  "scene": "S03",
+  "act": 1,
+  "beat": 9,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_09.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "沈砚看着前方：「五年前韩铮的案子，你还恨我？」",
+  "dialogue": [
+   {
+    "who": "SHEN",
+    "text": "五年前韩铮的案子，你还恨我？"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Close-up at eye level, static camera, she sits in the passenger seat on the left side of frame, looking ahead through the windshield. Within the first second she says in Mandarin Chinese, \"五年前韩铮的案子，你还恨我？\" Her lips move in sync with each syllable, her voice quiet and level. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she turns her eyes toward him at frame right. The shot ends with her eyes on him, waiting. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, steady female voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_10",
+  "scene": "S03",
+  "act": 1,
+  "beat": 10,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/echo/refs/lu.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "陆时野握方向盘的手慢慢收紧，指节发白",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1>, seen only as his right hand and the cuff of his worn dark-brown leather jacket.\n<Picture 2> is the location reference for [Shot 1], the interior of an older dark-grey sedan at night, with worn black leather seats, a soft amber dashboard glow and a clean clear windshield.\n\nsummary:\n[reference generation] <Subject 1>'s hand slowly tightens on the steering wheel.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - hand and leather jacket cuff stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow; crisp white streetlights sweep across the cabin at a steady rhythm; the night outside is dry and clear. Deep focus, crisp detail.\n[Shot 1] Insert close-up of the steering wheel, static on the moving car. <Subject 1>'s right hand grips the top of the worn black steering wheel, the cuff of his leather jacket at the edge of frame. His fingers slowly tighten until the knuckles turn white, the stitching of the wheel cover crisp. A band of white streetlight passes over the hand. The shot ends with the hand clenched hard on the wheel.\n\noverall_soundscape:\nLeather creaking under his grip, the engine drone, the whoosh of a passing streetlight.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "ec_s03_11",
+  "scene": "S03",
+  "act": 1,
+  "beat": 11,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/lu_face.png",
+   "assets/echo/refs/lu.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_11.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "陆时野：「他是我搭档。你一个签名，判了他十二年。」",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "他是我搭档。你一个签名，判了他十二年。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Close-up at eye level, static camera, he sits in the driver's seat on the right side of frame, hands on the wheel, eyes on the road ahead. Within the first second he says in Mandarin Chinese, \"他是我搭档。你一个签名，判了他十二年。\" His lips move in sync with each syllable, his voice low and rough, held tight. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he swallows, his eyes fixed on the road. The shot ends with his jaw clenched. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: his low, rough male voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_12",
+  "scene": "S03",
+  "act": 1,
+  "beat": 12,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_12.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "沈砚：「回放里，他亲手开的枪。」",
+  "dialogue": [
+   {
+    "who": "SHEN",
+    "text": "回放里，他亲手开的枪。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Close-up at eye level, static camera, she sits in the passenger seat on the left side of frame, looking toward frame right. Within the first second she says in Mandarin Chinese, \"回放里，他亲手开的枪。\" Her lips move in sync with each syllable, her voice level and firm. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she looks down at her hands for a moment. The shot ends with her eyes lowered. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, steady female voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_13",
+  "scene": "S03",
+  "act": 1,
+  "beat": 13,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/lu_face.png",
+   "assets/echo/refs/lu.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_13.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "陆时野：「他到现在都说，他不记得。」",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "他到现在都说，他不记得。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Close-up at eye level, static camera, he sits in the driver's seat on the right side of frame, hands on the wheel, eyes on the road ahead. Within the first second he says in Mandarin Chinese, \"他到现在都说，他不记得。\" His lips move in sync with each syllable, his voice quiet and heavy. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he lets out a slow breath through his nose. The shot ends with his eyes on the road, tired. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: his low, rough male voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_14",
+  "scene": "S03",
+  "act": 1,
+  "beat": 14,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_14.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "沈砚：「每个犯人都这么说。」",
+  "dialogue": [
+   {
+    "who": "SHEN",
+    "text": "每个犯人都这么说。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Close-up at eye level, static camera, she sits in the passenger seat on the left side of frame, looking toward frame right. Within the first second she says in Mandarin Chinese, \"每个犯人都这么说。\" Her lips move in sync with each syllable, her voice cool and certain. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she turns her face back to the windshield. The shot ends with her profile still, eyes ahead. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, steady female voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_15",
+  "scene": "S03",
+  "act": 1,
+  "beat": 15,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/lu_face.png",
+   "assets/echo/refs/lu.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_15.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "陆时野转头看她一眼：「现在，你也这么说。」",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "现在，你也这么说。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Close-up at eye level, static camera, he sits in the driver's seat on the right side of frame, his head turned toward frame left, looking at her. Within the first second he says in Mandarin Chinese, \"现在，你也这么说。\" His lips move in sync with each syllable, his voice quiet and pointed. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he turns his eyes back to the road. The shot ends with his eyes ahead, his mouth hard. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: his low, rough male voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_16",
+  "scene": "S03",
+  "act": 1,
+  "beat": 16,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_16.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "沈砚像被刺了一下，沉默（反应镜）",
+  "dialogue": [],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Close-up at eye level, static camera, she sits in the passenger seat on the left side of frame. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. She flinches almost imperceptibly; her lips part, her eyes drop and she swallows, saying nothing. The shot ends with her eyes lowered, silent. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: the engine drone and the whoosh of a passing streetlight. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_17",
+  "scene": "S03",
+  "act": 1,
+  "beat": 17,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_17.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "沈砚轻声开口：「……我是真的不记得。」",
+  "dialogue": [
+   {
+    "who": "SHEN",
+    "text": "……我是真的不记得。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Close-up at eye level, slow push-in, she sits in the passenger seat on the left side of frame, eyes lowered. Within the first second she says in Mandarin Chinese, \"……我是真的不记得。\" Her lips move in sync with each syllable, her voice barely above a whisper. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she presses her lips together, eyes lowered. The shot ends with her face still in the passing light. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, steady female voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_18",
+  "scene": "S03",
+  "act": 1,
+  "beat": 18,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/lu_face.png",
+   "assets/echo/refs/lu.png",
+   "assets/echo/refs/loc_car.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_s03_18.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆时野：「那你最好祈祷，有人信你。」",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "那你最好祈祷，有人信你。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving through the city at night, seen from the front through a clean clear windshield, soft amber dashboard glow on the face and crisp white streetlights sweeping across the cabin. Medium close-up at eye level, static camera, he sits in the driver's seat on the right side of frame, hands on the wheel, eyes on the road ahead. Within the first second he says in Mandarin Chinese, \"那你最好祈祷，有人信你。\" His lips move in sync with each syllable, his voice low and rough. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he turns the wheel slightly, his shoulders leaning into the turn. The shot ends with his eyes on the road ahead. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: his low, rough male voice speaking the Mandarin line, the low drone of the engine and tires on dry asphalt. No music, no on-screen text."
+ },
+ {
+  "id": "ec_s03_19",
+  "scene": "S03",
+  "act": 1,
+  "beat": 19,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/echo/refs/loc_city_night.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "轿车停在一栋旧居民楼下，楼上一扇窗亮着暖灯",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a clean modern coastal city at night with wide dry streets, crisp white streetlights, an elevated highway and lit glass towers under a clear starry sky.\n\nsummary:\n[reference generation] The older dark-grey sedan stops in front of an old apartment block where a single window glows warm.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Crisp white streetlights and lit tower windows under a clear starry sky; the road surface is dry. Deep focus, crisp detail.\n[Shot 1] Wide shot from across the street, eye level, static. An older dark-grey sedan rolls to a stop at the curb in front of a weathered six-story apartment block in the lower part of the frame. Every window is dark except one on an upper floor, which glows with warm lamplight. The sidewalk is dry, and a crisp white streetlight stands beside the car. The shot ends with the car's headlights switching off, the single warm window sharp above.\n\noverall_soundscape:\nTires slowing on dry asphalt, the engine cutting off, a distant dog barking, the hum of the streetlight.\n\nnon_diegetic_music: N/A"
+ }
+]

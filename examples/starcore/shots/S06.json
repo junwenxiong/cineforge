@@ -1,0 +1,285 @@
+[
+ {
+  "id": "sc_s06_01",
+  "scene": "S06",
+  "act": 1,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "工坊外空地（慢建立镜）：沉睡的重卡停在卷帘门前，琥珀色示廓灯从车尾到车头依次亮起，大灯全亮",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the colossal six-wheeled mining haul truck in <Picture 1>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 2> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] In the rainy yard outside the workshop, every amber light on the dormant haul truck <Subject 1> suddenly blazes to life.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, eye level, slow push-in toward the truck. The old warehouse stands on the left with warm light leaking from its high windows; <Subject 1> sits dark and silent in front of its rolling door, facing right, rain pouring off its yellow panels, the yard's sodium lights and the distant skyline glowing behind it. Far off to the right, over the city, a faint orange flicker pulses in the clouds. Suddenly the running lights of <Subject 1> snap on one after another, from the rear wheels to the front, and then its massive headlamps blaze amber, flooding the rain and the wet asphalt with warm light. The puddles beneath it begin to tremble. The shot ends with the truck fully lit and humming in the downpour.\n\noverall_soundscape:\nRain on the yard, a sequence of heavy electrical clunks as each light engages, a deep power hum building under the rain, a far-off boom from the city.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_02",
+  "scene": "S06",
+  "act": 1,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "透过雨水斑驳的侧窗：驾驶室空无一人、没有钥匙，仪表亮起抽象琥珀光，引擎自己轰鸣，车身震动",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the colossal six-wheeled mining haul truck in <Picture 1>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 2> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] Through the side window of <Subject 1>, the empty cab glows amber as the engine roars to life by itself, with no driver and no key.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Close-up through the rain-streaked side window of the cab of <Subject 1>, slight low angle, locked camera. The cab is empty: no driver, no key in the ignition, the old seat torn and dusty. The dashboard lights up with soft abstract amber glows and no readable symbols. A deep growl rises from somewhere inside the machine and the whole cab shudders; raindrops on the window jump and scatter with the vibration, the side mirror rattles, and the steering wheel trembles as if something alive is waking beneath it. The growl swells into a roar and amber light pulses through the floor seams. The shot ends with the empty cab vibrating and glowing brighter.\n\noverall_soundscape:\nA deep diesel-electric growl swelling into a roar with no ignition click, rattling glass and mirror, metal vibrating, rain jittering on the window.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_03",
+  "scene": "S06",
+  "act": 1,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "林骁和周野从画左的卷帘门下冲出工坊，跑进雨里，在轰鸣的重卡前刹住脚步",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the young man in <Picture 2>, with a warm crooked grin, messy short black hair, light stubble and an olive-green bomber jacket over a grey hoodie.\n<Subject 3> is the colossal six-wheeled mining haul truck in <Picture 3>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 4> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> burst out of the workshop's rolling door into the rain and skid to a stop in front of the blazing truck <Subject 3>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked black bob, eyebrow scar and burnt-orange jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, crooked grin, messy hair, stubble and olive bomber jacket stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, eye level, static camera, the warehouse rolling door at the left of frame and the blazing front of <Subject 3> at the right, its amber lights cutting through the rain. <Subject 1> ducks under the half-raised door and sprints out first with a flashlight, and <Subject 2> follows with his tablet, both running left to right. They splash through puddles and skid to a stop a few meters from the shuddering, roaring truck, its glare silhouetting them as the rain soaks them. The shot ends with both frozen side by side, small and dark against the wall of amber light.\n\noverall_soundscape:\nThe truck's engine roaring and rumbling, a rolling door rattling, running footsteps splashing, rain hammering, their heavy breathing as they stop.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_04",
+  "scene": "S06",
+  "act": 1,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "双人近景：两人在雨中目瞪口呆，画外的琥珀光不规律地闪动在脸上",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the young man in <Picture 3> and <Picture 4>, with a warm crooked grin, messy short black hair, light stubble and an olive-green bomber jacket over a grey hoodie.\n<Picture 5> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> stand stunned in the downpour, their faces lit by flickering amber light.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked black bob, eyebrow scar and burnt-orange jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, crooked grin, messy hair, stubble and olive bomber jacket stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Medium close-up two-shot, eye level, frontal, slow push-in; <Subject 1> is on the left and <Subject 2> on the right, both facing the camera and the unseen truck behind it. Warm amber light from off-screen floods their faces and pulses unevenly, while the cool teal of the night yard and the rain fill the background. Water runs down her face and the silver streak clings to her cheek; his hair is flattened by the rain and his tablet hangs forgotten at his side. His mouth falls open; her eyes widen and she takes half a step back, the flashlight drooping in her hand. Ground vibrations make droplets jump on their shoulders. The shot ends on both faces, stunned and silent in the pulsing glow.\n\noverall_soundscape:\nThe engine's deep rumble from off-screen, heavy rain on their jackets, a rising mechanical groan, their shallow breathing.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_05",
+  "scene": "S06",
+  "act": 1,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "变形第一段（一）：重卡车身沿接缝拆开翻转，两只前轮甩到将成肩膀的高处，驾驶室后仰，胸部从底盘中升起（同时参考机器人与重卡形态）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, whose vehicle form is the six-wheeled mining haul truck in <Picture 2>; both forms share weathered yellow and graphite stone-textured armor and amber lights, and the robot has a flat faceplate with one amber optic band, no mouth, and truck wheels on its shoulders and lower legs.\n<Picture 3> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> begins transforming from its haul truck form: body panels split and flip, the giant front tires swing up toward its shoulders, and a torso slowly rises.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - robot form follows <Picture 1> and truck form follows <Picture 2>; colors, stone textures, wheels and amber lights stay identical through the transformation.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, low angle from the wet asphalt at a three-quarter front view, static camera. <Subject 1> sits in its truck form with all amber lights blazing. Seams split open along its yellow body with sharp hydraulic hisses; heavy panels unlatch, flip over and slide back, revealing dark graphite machinery and an amber hexagonal glow deep inside. The two giant front tires swing upward on massive arms, rotating until they fold onto the high points where shoulders are forming. The cab section tilts backward and the chest assembly rises slowly out of the chassis, pistons extending, rainwater pouring off every plate. The shot ends with the half-formed torso upright on the still-folded rear chassis.\n\noverall_soundscape:\nDeep hydraulic hisses, heavy plates unlatching with booming clanks, gears grinding, tires creaking as they rotate, water cascading off steel, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_06",
+  "scene": "S06",
+  "act": 1,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "变形第一段（二）：极低机位，前景是背对镜头的渺小两人，磐石的胸甲在他们头顶依次合拢，轮胎落定在肩上（同时参考机器人与重卡形态）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, whose vehicle form is the six-wheeled mining haul truck in <Picture 2>; both forms share weathered yellow and graphite stone-textured armor and amber lights, and the robot has a flat faceplate with one amber optic band, no mouth, and truck wheels on its shoulders and lower legs.\n<Subject 2> is the woman engineer in <Picture 3>, seen from behind, with a short black bob with one silver streak on the left and a burnt-orange work jacket with reflective strips.\n<Subject 3> is the young man in <Picture 4>, seen from behind, with messy short black hair and an olive-green bomber jacket over a grey hoodie.\n<Picture 5> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] Mid-transformation, the torso of <Subject 1> rises above <Subject 2> and <Subject 3> as its chest plates lock.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - robot form follows <Picture 1> and truck form follows <Picture 2>; colors, stone textures, wheels and amber lights stay identical through the transformation.\n<Subject 2> (appears in [Shot 1]): fully_preserved - build, silver-streaked black bob and burnt-orange jacket stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - build, messy black hair and olive bomber jacket stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, very low angle from behind <Subject 2> and <Subject 3>, small in the lower left foreground with their backs to camera, her flashlight beam pointing up. Above them the torso of <Subject 1> keeps rising from the folded truck chassis, already twice the height of the warehouse door. Heavy plates slam into place across its chest one after another, locking around the glowing amber core, and the giant tires settle onto its shoulders with a deep clunk. Rain cascades onto the humans below. The shot ends with the broad chest fully formed above them, the head not yet risen.\n\noverall_soundscape:\nBooming plate locks echoing across the yard, sighing pistons, a resonant hum from the chest core, water splashing down.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_07",
+  "scene": "S06",
+  "act": 1,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "变形第二段（一）：车尾底盘一分为二展开成双腿，四只后轮折到小腿外侧，巨足踩裂地面，机体站起高过集装箱（同时参考机器人与重卡形态）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, whose vehicle form is the six-wheeled mining haul truck in <Picture 2>; both forms share weathered yellow and graphite stone-textured armor and amber lights, and the robot has a flat faceplate with one amber optic band, no mouth, and truck wheels on its shoulders and lower legs.\n<Picture 3> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> continues transforming: its rear chassis unfolds into two massive legs that plant onto the asphalt and lift its body upright.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - robot form follows <Picture 1> and truck form follows <Picture 2>; colors, stone textures, wheels and amber lights stay identical through the transformation.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, low angle at ground level, slow tilt up following the motion. The rear chassis of <Subject 1>, carrying its four remaining giant tires, splits down the middle. Each half rotates downward and extends with grinding hydraulics, the tires folding against the outside of the lower legs. Huge blocky feet stamp down one after the other onto the wet asphalt, cracking it and blasting rainwater outward in rings. The knees lock with a heavy clank and the whole machine pushes upward, rising above the container stacks, a gantry crane behind it for scale. The shot ends with the still headless body standing upright and towering, rain streaming off its yellow and graphite armor.\n\noverall_soundscape:\nGrinding hydraulics, two earth-shaking footfalls cracking asphalt, water bursting outward, knee joints locking with a deep clank, containers rattling nearby.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_08",
+  "scene": "S06",
+  "act": 1,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "变形第二段（二）：头部从双肩之间升起锁定，平板面罩上的琥珀色横向光带闪了闪，随即全亮（同时参考机器人与重卡形态）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, whose vehicle form is the six-wheeled mining haul truck in <Picture 2>; both forms share weathered yellow and graphite stone-textured armor and amber lights, and the robot has a flat faceplate with one amber optic band, no mouth, and truck wheels on its shoulders and lower legs.\n<Picture 3> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] To finish the transformation, the head of <Subject 1> rises from between its shoulders and its amber optic band ignites.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - robot form follows <Picture 1> and truck form follows <Picture 2>; colors, stone textures, wheels and amber lights stay identical through the transformation.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Close-up, low angle on the space between the massive shoulders of <Subject 1>, the giant tires framing both sides, rain falling through the amber glow of the chest core below. Armor plates on the upper chest slide apart and a heavy, blocky head rises slowly on a thick neck assembly, locking into place with a deep clunk. Its stoic flat faceplate is dark, weathered and stone-textured, with no mouth. A beat of stillness. Then the single horizontal amber optic band across the faceplate flickers, catches, and blazes to full brightness, its light spilling out through the rain. The shot ends on the glowing optic band staring straight ahead.\n\noverall_soundscape:\nSliding plates, a slow mechanical rise ending in a heavy lock, a moment of near silence with only rain, then a deep resonant power-up tone as the optic band ignites.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_09",
+  "scene": "S06",
+  "act": 1,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "极低机位全身亮相（慢节奏镜）：十二米高的磐石在雨中完全站起，静立片刻后缓缓低头，俯视脚边渺小的两人",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, an amber chest core, and truck wheels on its shoulders and lower legs.\n<Subject 2> is the woman engineer in <Picture 2>, seen from behind, with a short black bob with one silver streak on the left and a burnt-orange work jacket with reflective strips.\n<Subject 3> is the young man in <Picture 3>, seen from behind, with messy short black hair and an olive-green bomber jacket over a grey hoodie.\n<Picture 4> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> stands at its full twelve-meter height in the rain and slowly lowers its head to look down at <Subject 2> and <Subject 3>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - stone-textured yellow and graphite armor, amber optic band, chest core and folded wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - build, silver-streaked black bob and burnt-orange jacket stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - build, messy black hair and olive bomber jacket stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, extreme low angle just above the asphalt behind <Subject 2> and <Subject 3>, slow tilt up. The two humans stand tiny at the bottom left of frame, barely taller than its foot. <Subject 1> towers over them at full height, rising above the warehouse roofline, its amber core and optic band glowing through sheets of rain, container stacks and a gantry crane behind it for scale. Steam drifts from its joints. Then, with a low hydraulic groan, it slowly bends its head down toward the two humans. The shot ends with the amber band aimed directly at them, its light falling over their small figures.\n\noverall_soundscape:\nHeavy rain on vast armor plates, steam hissing from the joints, a slow deep hydraulic groan as the head lowers, the low steady hum of the chest core.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_10",
+  "scene": "S06",
+  "act": 1,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "林骁仰头近景，琥珀光照亮她的眼睛，手电从指间滑落，镜头一路下摇跟到手电在湿地上滚动停在她靴边",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the 12-meter ancient guardian robot in <Picture 3>, with weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, an amber chest core, and truck wheels on its shoulders and lower legs.\n<Picture 4> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> stares up at <Subject 2>, and her flashlight slips from her fingers and rolls across the wet ground.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked black bob, eyebrow scar and burnt-orange jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - stone-textured yellow and graphite armor, amber optic band, chest core and folded wheels stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Medium close-up, low angle on <Subject 1> as she looks up, with the amber-lit underside of the head and chest of <Subject 2> high above her in soft focus. Rain streams down her upturned face; warm amber light bathes her eyes and the scar through her right eyebrow. Her lips part, she does not blink, and her grip slowly loosens. The flashlight slips from her gloved fingers and drops; the camera follows it down in one continuous tilt as it clatters onto the wet asphalt, its beam spinning, and rolls through a puddle until it stops against her boot, its beam now lighting the giant foot ahead. The shot ends low on the flashlight, its beam trembling with the ground vibration.\n\noverall_soundscape:\nRain on her face and jacket, her breath catching, the hollow clatter of a metal flashlight on wet asphalt, a rolling rattle through a puddle, the giant's low hum above.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_11",
+  "scene": "S06",
+  "act": 1,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "磐石侧身在画左，直起身转头望向画右远处高架上腾起的爆炸火光，胸口核心随之脉动",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, an amber chest core, and truck wheels on its shoulders and lower legs.\n<Picture 2> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> straightens up and turns its head toward a distant fireball blooming over the elevated highway in the city.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - stone-textured yellow and graphite armor, amber optic band, chest core and folded wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, low angle from the side, static camera, <Subject 1> in profile at the left of frame facing right. Beyond the container stacks on the right, the rain-hazed megacity skyline glows teal and orange, and an elevated highway threads between the towers far away. A huge orange fireball blooms over the highway, its light flickering off the clouds, followed by a crimson flash. <Subject 1> slowly straightens from looking down and turns its massive head toward the explosion, its amber optic band narrowing and brightening, its chest core pulsing. Rain hisses on its shoulders. The shot ends with the giant standing still in profile, gazing toward the distant fire.\n\noverall_soundscape:\nA deep distant explosion rolling across the harbor a beat after the flash, rain on armor, a slow servo grind as the head turns, the core's pulsing hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_12",
+  "scene": "S06",
+  "act": 1,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "磐石面罩特写，脸朝画右，没有嘴，琥珀光带随每个音节明灭，第一次开口",
+  "dialogue": [
+   {
+    "who": "PANSHI",
+    "text": "它醒了。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, an amber chest core, and truck wheels on its shoulders and lower legs.\n<Picture 2> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] Close-up on the faceplate of <Subject 1> as its amber optic band pulses with each syllable and it speaks for the first time.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - stone-textured yellow and graphite armor, amber optic band, chest core and folded wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Close-up on the stoic flat faceplate of <Subject 1>, low angle, very slow push-in, its face turned three-quarters toward the right of frame. Rain runs over the stone-textured plates and old battle scars, and the distant fire flickers orange along its edges. It has no mouth and nothing on its face moves. <Subject 1>'s amber optic band pulses in sync with each syllable as it (S1) says in a very deep, slow, resonant voice, <d>[Chinese] 它醒了。</d> After the words the band dims to a low, steady glow, as if the machine is remembering something ancient. The shot ends on the glowing band reflecting the distant fire.\n\noverall_soundscape:\nRain on the faceplate, a subharmonic resonance under the voice that vibrates the armor, distant sirens from the city, the slow hum of the core.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_13",
+  "scene": "S06",
+  "act": 1,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "反向变形：磐石前倾下蹲，头缩回、双腿收进车尾、肩轮落回前轴，几秒内落成六轮重卡，车头朝画右（同时参考机器人与重卡形态）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, whose vehicle form is the six-wheeled mining haul truck in <Picture 2>; both forms share weathered yellow and graphite stone-textured armor and amber lights, and the robot has a flat faceplate with one amber optic band, no mouth, and truck wheels on its shoulders and lower legs.\n<Picture 3> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> rapidly folds from its robot form back into its haul truck form, ready to drive.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - robot form follows <Picture 1> and truck form follows <Picture 2>; colors, stone textures, wheels and amber lights stay identical through the transformation.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, eye level, slow arc around to its right side. <Subject 1> stands upright in the rain, then drops forward into a crouch. In one fast, fluid sequence its head retracts between the shoulders, its legs fold up and back into the rear chassis, the shoulder tires swing down to the front axle, and its chest plates slam shut over the amber core. Rainwater sprays from every closing seam. Within seconds it lands on six wheels as the massive yellow haul truck, facing right, its amber headlamps flaring and its suspension bouncing once. The shot ends with the truck crouched low, engine roaring, wheels spinning on the wet asphalt.\n\noverall_soundscape:\nA rapid cascade of clanks, hisses and locking plates, six tires slamming onto the ground, the suspension bouncing, the engine bursting into a full roar, wheels spinning in water.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_14",
+  "scene": "S06",
+  "act": 1,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "低机位在堆场大门：重卡从画左冲来撞开大门，铁栏弯折、铁丝网撕裂，冲向画右远处燃烧的高架",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the colossal six-wheeled mining haul truck in <Picture 1>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 2> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> accelerates across the yard, smashes through the steel yard gate and charges toward the distant burning highway.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, low angle at the yard exit, static camera with an impact shake. A tall chain-link and steel-bar gate closes off the exit in the foreground, rain streaming through it. <Subject 1> roars toward it from the left, amber headlamps blazing, giant tires throwing up sheets of water. It slams through the gate without slowing; the steel bars bend, the chain-link tears and the gate panels fly away spinning into the rain. The truck thunders past the camera toward the right, its amber taillights streaking. The shot ends with the twisted gate swinging and the truck's lights receding toward the burning glow of the distant elevated highway on the right of frame.\n\noverall_soundscape:\nA thundering engine, a violent crash of steel and tearing chain-link, gate panels clanging across the asphalt, tires roaring through water, the engine note fading into the distance.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s06_15",
+  "scene": "S06",
+  "act": 1,
+  "beat": 9,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁望着画右愣了一秒，咬牙转身朝画左的工坊狂奔，边跑边喊；周野回过神追上去",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "周野！帮我穿装甲！"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the young man in <Picture 3>, with a warm crooked grin, messy short black hair, light stubble and an olive-green bomber jacket over a grey hoodie.\n<Picture 4> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> stares after the departed truck for a second, then spins and sprints back toward the workshop, shouting to <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked black bob, eyebrow scar and burnt-orange jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, crooked grin, messy hair, stubble and olive bomber jacket stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze, on a rainy harbor night where sodium-orange lights and teal shadows meet the amber glow of an awakening machine. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, eye level, the broken gate and the distant fire behind them on the right, the warehouse door off-screen left. <Subject 1> stands frozen in the rain beside <Subject 2>, both staring right after the vanished truck, the fallen flashlight still glowing at her feet. One second passes. Her jaw sets, her eyes harden, and she spins toward the left of frame. <Subject 1> (S1) shouts in a fast, urgent, determined voice, <d>[Chinese] 周野！帮我穿装甲！</d> She sprints out of frame toward the workshop, splashing through puddles. <Subject 2> blinks, then scrambles after her with his tablet. The shot ends on the empty wet ground, the abandoned flashlight beam pointing at the burning horizon.\n\noverall_soundscape:\nRain, the truck's engine fading far away, a distant explosion, sudden splashing sprinting footsteps, a second pair of footsteps scrambling after her.\n\nnon_diegetic_music: N/A"
+ }
+]

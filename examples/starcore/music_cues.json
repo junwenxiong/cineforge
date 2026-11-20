@@ -1,0 +1,20 @@
+[
+ {"scenes": ["P01"], "file": "cue1_prologue_scottbuckley_chronicle.mp3", "offset": 0, "gain_db": -12, "note": "远古之战：神秘到史诗"},
+ {"scenes": ["S01", "S02"], "file": "cue2_workshop_scottbuckley_tomorrow.mp3", "offset": 0, "gain_db": -16, "note": "雨夜澜城 + 工坊试飞，轻快"},
+ {"scenes": ["S03", "S04"], "file": "cue2_rainnight_scottbuckley_beyondthesewalls.mp3", "offset": 0, "gain_db": -16, "note": "星核出水、旧重卡，悬疑"},
+ {"scenes": ["S05"], "file": "cue3_ambush_scottbuckley_juggernaut.mp3", "offset": 0, "gain_db": -13, "note": "裂锋伏击车队"},
+ {"scenes": ["S06"], "file": "cue3_awakening_scottbuckley_emergent.mp3", "offset": 0, "gain_db": -13, "note": "磐石苏醒变形"},
+ {"scenes": ["S07"], "file": "cue4_chase_scottbuckley_simulacra.mp3", "offset": 0, "gain_db": -13, "note": "高架对决、碎片嵌入"},
+ {"scenes": ["S08", "S09"], "file": "cue2_rainnight_scottbuckley_beyondthesewalls.mp3", "offset": 200, "gain_db": -17, "note": "黎明对峙、守护者记忆"},
+ {"scenes": ["S10"], "file": "cue2_workshop_scottbuckley_tomorrow.mp3", "offset": 40, "gain_db": -15, "note": "铸甲蒙太奇、雀翎登场"},
+ {"scenes": ["S11"], "file": "cue5_flight_scottbuckley_intotheunknown.mp3", "offset": 0, "gain_db": -12, "note": "第一次飞行"},
+ {"scenes": ["S12"], "file": "cue4_battle_scottbuckley_pursuit.mp3", "offset": 0, "gain_db": -14, "note": "夜袭、周野被掳"},
+ {"scenes": ["S13", "S14"], "file": "cue3_ambush_scottbuckley_juggernaut.mp3", "offset": 95, "gain_db": -15, "note": "黑塔崛起、指挥中心"},
+ {"scenes": ["S15"], "file": "cue4_battle2_scottbuckley_catalyst.mp3", "offset": 0, "gain_db": -13, "note": "澜城之战"},
+ {"scenes": ["S16"], "file": "cue4_chase_scottbuckley_simulacra.mp3", "offset": 120, "gain_db": -13, "note": "林骁对裂锋"},
+ {"scenes": ["S17", "S18"], "file": "cue6_sorrow_scottbuckley_thelongdark.mp3", "offset": 0, "gain_db": -14, "note": "磐石坠海、至暗时刻"},
+ {"scenes": ["S19"], "file": "cue7_resolve_scottbuckley_uprising.mp3", "offset": 0, "gain_db": -14, "note": "决意、敬礼"},
+ {"scenes": ["S20"], "file": "cue6_sorrow_scottbuckley_thelongdark.mp3", "offset": 250, "gain_db": -14, "note": "深海交还碎片"},
+ {"scenes": ["S21", "S22"], "file": "cue7_climax_scottbuckley_thefury.mp3", "offset": 0, "gain_db": -12, "note": "重生 + 最终决战"},
+ {"scenes": ["S23"], "file": "cue8_dawn_scottbuckley_starfire.mp3", "offset": 0, "gain_db": -13, "note": "黎明与尾声"}
+]

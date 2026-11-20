@@ -1,0 +1,454 @@
+[
+  {
+    "id": "ec_s15_01",
+    "scene": "S15",
+    "act": 4,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "EWS",
+    "summary_zh": "三天后的清晨，金色日出照在两栋高楼之间的玻璃天桥上，空气清澈",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] Three days later, the golden sunrise strikes the glass sky-bridge between two towers.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Extreme wide exterior shot, static. Golden sunrise light strikes the enclosed glass sky-bridge forty floors up between two modern glass towers; its clear panels flash gold. Below, the city is sharp all the way to the horizon under a clean sky. The shot ends with the sun clearing the horizon behind the towers.\n\noverall_soundscape:\nHigh wind around the towers, the distant city waking, a far-off ferry horn.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s15_02",
+    "scene": "S15",
+    "act": 4,
+    "beat": 2,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "天桥内：碎掉的那块玻璃已经换成新的，沈砚独自站在新玻璃前（画左）",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Picture 3> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] Inside the sky-bridge, <Subject 1> stands alone before the newly replaced glass panel.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Wide shot inside the sky-bridge, eye level, static. One floor-to-ceiling glass panel is visibly new, its steel frame brighter and its glass spotless. <Subject 1> walks slowly up to the new panel on the left of the frame and stops in front of it, facing the sunrise, alone on the long stone floor. The shot ends with her standing motionless, sunlight on her face.\n\noverall_soundscape:\nHer slow footsteps on polished stone, wind pressing softly on the glass, the distant city.\n\nnon_diegetic_music: N/A",
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s15_02.png",
+    "keyframe_prompt": "Draw a single photoreal opening keyframe. Preserve the identities and costumes in the supplied reference images. Depict initial pose before action; no montage.\nOriginal scene context:\nsubject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Picture 3> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] Inside the sky-bridge, <Subject 1> stands alone before the newly replaced glass panel.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Wide shot inside the sky-bridge, eye level, static. One floor-to-ceiling glass panel is visibly new, its steel frame brighter and its glass spotless. <Subject 1> walks slowly up to the new panel on the left of the frame and stops in front of it, facing the sunrise, alone on the long stone floor. The shot ends with her standing motionless, sunlight on her face.\n\noverall_soundscape:\nHer slow footsteps on polished stone, wind pressing softly on the glass, the distant city.\n\nnon_diegetic_music: N/A\nAuthoritative composition and head-count (overrides conflicting background crowd or end-state instructions):\nExactly 1 person: Shen left near the new clear glass panel. City visible through glass, no human reflection anywhere; matte floor without reflected bodies.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage.",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Picture 3> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] Inside the sky-bridge, <Subject 1> stands alone before the newly replaced glass panel.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Wide shot inside the sky-bridge, eye level, static. One floor-to-ceiling glass panel is visibly new, its steel frame brighter and its glass spotless. <Subject 1> walks slowly up to the new panel on the left of the frame and stops in front of it, facing the sunrise, alone on the long stone floor. The shot ends with her standing motionless, sunlight on her face.\n\noverall_soundscape:\nHer slow footsteps on polished stone, wind pressing softly on the glass, the distant city.\n\nnon_diegetic_music: N/A\n\nMandatory continuous shot constraints:\nExactly 1 person: Shen left near the new clear glass panel. City visible through glass, no human reflection anywhere; matte floor without reflected bodies.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage."
+  },
+  {
+    "id": "ec_s15_03",
+    "scene": "S15",
+    "act": 4,
+    "beat": 3,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "FS",
+    "summary_zh": "许棠走过来，耳机挂在脖子上。XU: 医生说，：「医生说，你丢了大概三年的记忆。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "医生说，你丢了大概三年的记忆。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Subject 2> is the woman in <Picture 3>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Picture 4> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] <Subject 1> joins <Subject 2> at the glass and tells her she lost about three years of memory.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Full shot, eye level, static. Within the first second, <Subject 1> (S1) says gently, without her usual edge, <d>[Chinese] 医生说，你丢了大概三年的记忆。</d> She walks in from the right along the stone floor, headphones around her neck, and stops beside <Subject 2>, who stands at the glass on the left. The shot ends with the two side by side, looking out at the sunrise.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer gentle voice, sneakers on stone, wind against the glass, the city far below.\n\nnon_diegetic_music: N/A",
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s15_03.png",
+    "keyframe_prompt": "Draw a single photoreal opening keyframe. Preserve the identities and costumes in the supplied reference images. Depict initial pose before action; no montage.\nOriginal scene context:\nsubject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Subject 2> is the woman in <Picture 3>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Picture 4> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] <Subject 1> joins <Subject 2> at the glass and tells her she lost about three years of memory.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Full shot, eye level, static. Within the first second, <Subject 1> (S1) says gently, without her usual edge, <d>[Chinese] 医生说，你丢了大概三年的记忆。</d> She walks in from the right along the stone floor, headphones around her neck, and stops beside <Subject 2>, who stands at the glass on the left. The shot ends with the two side by side, looking out at the sunrise.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer gentle voice, sneakers on stone, wind against the glass, the city far below.\n\nnon_diegetic_music: N/A\nAuthoritative composition and head-count (overrides conflicting background crowd or end-state instructions):\nExactly 2 people: Shen left at window and Xu right beginning to approach, separated full bodies. Glass shows only city, matte floor and no human reflections.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage.",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Subject 2> is the woman in <Picture 3>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Picture 4> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] <Subject 1> joins <Subject 2> at the glass and tells her she lost about three years of memory.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Full shot, eye level, static. Within the first second, <Subject 1> (S1) says gently, without her usual edge, <d>[Chinese] 医生说，你丢了大概三年的记忆。</d> She walks in from the right along the stone floor, headphones around her neck, and stops beside <Subject 2>, who stands at the glass on the left. The shot ends with the two side by side, looking out at the sunrise.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer gentle voice, sneakers on stone, wind against the glass, the city far below.\n\nnon_diegetic_music: N/A\n\nMandatory continuous shot constraints:\nExactly 2 people: Shen left at window and Xu right beginning to approach, separated full bodies. Glass shows only city, matte floor and no human reflections.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage."
+  },
+  {
+    "id": "ec_s15_04",
+    "scene": "S15",
+    "act": 4,
+    "beat": 4,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s15_04.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚看着日出。SHEN: 可我记：「可我记得你的脚步声。挺奇怪的。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "可我记得你的脚步声。挺奇怪的。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot on an enclosed glass sky-bridge forty floors up at sunrise, low warm golden sunlight with crisp shadows, the city sharp all the way to the horizon behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"可我记得你的脚步声。挺奇怪的。\" Her lips move in sync with each syllable, her voice soft and a little puzzled, almost amused. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line a faint smile touches her mouth, her eyes still on the sunrise. The shot ends with her faint smile in the golden light. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, wind pressing softly against the glass. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s15_05",
+    "scene": "S15",
+    "act": 4,
+    "beat": 5,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s15_05.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠笑了。反应镜",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot on an enclosed glass sky-bridge forty floors up at sunrise, low warm golden sunlight with crisp shadows, the city sharp all the way to the horizon behind. Close-up at eye level, static camera, she is slightly right of center looking toward frame left. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. She laughs silently, her eyes crinkling, and looks down, a little embarrassed. The shot ends with her eyes lowered, still smiling. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: A soft breath of laughter, wind against the glass. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s15_06",
+    "scene": "S15",
+    "act": 4,
+    "beat": 6,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s15_06.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠。XU: 我爸的留言，：「我爸的留言，最后还有一句。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "我爸的留言，最后还有一句。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot on an enclosed glass sky-bridge forty floors up at sunrise, low warm golden sunlight with crisp shadows, the city sharp all the way to the horizon behind. Medium close-up at eye level, static camera, she is slightly right of center looking toward frame left. Within the first second she says in Mandarin Chinese, \"我爸的留言，最后还有一句。\" Her lips move in sync with each syllable, her voice quiet and careful. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she takes a slim black phone out of her hoodie pocket. The shot ends with the phone in her hand, her eyes on it. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, wind pressing softly against the glass. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s15_07",
+    "scene": "S15",
+    "act": 4,
+    "beat": 7,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "INSERT",
+    "summary_zh": "许棠的手机举在两人之间，金色阳光落在手上",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1>, seen only as her hand and the cuff of her mustard-yellow hoodie sleeve.\n<Subject 2> is the woman in <Picture 2>, seen only as the shoulder and sleeve of her charcoal-grey trench coat at the left edge of the frame.\n<Picture 3> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] <Subject 1>'s hand holds a phone up between the two of them in the golden light.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Subject 2> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 2>.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Insert close-up, static. <Subject 1>'s hand holds a slim black phone up between her and <Subject 2>, whose charcoal sleeve is at the left edge of the frame; the screen shows only an abstract waveform, no text. Golden sunlight falls across her fingers and the edge of the phone. The shot ends with her thumb pressing play.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nA soft tap on glass, wind against the panels, a faint speaker crackle starting.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s15_08",
+    "scene": "S15",
+    "act": 4,
+    "beat": 8,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "双人并肩听着，两人都不开口。CHENG(VO)：「棠棠，等这件事过去，爸爸想去听你的演出。」",
+    "dialogue": [
+      {
+        "who": "CHENG",
+        "text": "棠棠，等这件事过去，爸爸想去听你的演出。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Subject 3> is an unseen older man, heard only as a recorded message playing from a phone; there is no picture of him and he never appears on screen.\n<Picture 5> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] Side by side, <Subject 1> and <Subject 2> listen in silence to the last line of <Subject 3>'s message.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Two-shot medium close-up, eye level, static. Within the first second, the recorded voice of <Subject 3> (S3) comes from the phone between them in a tired, gentle older male voice, <d>[Chinese] 棠棠，等这件事过去，爸爸想去听你的演出。</d> <Subject 1> on the left and <Subject 2> on the right stand shoulder to shoulder, listening; both keep their lips closed and neither speaks; the voice comes from the phone. <Subject 2>'s eyes slowly fill with tears. The shot ends with both of them still, the sunrise on their faces.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe recorded older male voice with a soft phone-speaker crackle, wind against the glass, a held breath.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s15_09",
+    "scene": "S15",
+    "act": 4,
+    "beat": 9,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s15_09.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠流着泪，却在笑。无台词",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot on an enclosed glass sky-bridge forty floors up at sunrise, low warm golden sunlight with crisp shadows, the city sharp all the way to the horizon behind. Close-up at eye level, static camera, she is slightly right of center looking toward frame left. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. Tears run down her cheeks but she is smiling, a wide, trembling smile, her chin shaking; she does not wipe them away. The shot ends with her trembling smile through tears. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her unsteady breathing, a small sob that turns into a laugh, wind against the glass. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s15_10",
+    "scene": "S15",
+    "act": 4,
+    "beat": 10,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s15_10.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 他一直：「他一直在等你。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "他一直在等你。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot on an enclosed glass sky-bridge forty floors up at sunrise, low warm golden sunlight with crisp shadows, the city sharp all the way to the horizon behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"他一直在等你。\" Her lips move in sync with each syllable, her voice quiet and warm. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she turns her head from the sunrise toward frame right, toward her. The shot ends with her warm gaze toward frame right. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, wind pressing softly against the glass. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s15_11",
+    "scene": "S15",
+    "act": 4,
+    "beat": 11,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s15_11.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠。XU: 现在换我，：「现在换我，替他记着。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "现在换我，替他记着。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot on an enclosed glass sky-bridge forty floors up at sunrise, low warm golden sunlight with crisp shadows, the city sharp all the way to the horizon behind. Close-up at eye level, static camera, she is slightly right of center looking toward frame left. Within the first second she says in Mandarin Chinese, \"现在换我，替他记着。\" Her lips move in sync with each syllable, her voice quiet and steady through tears. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she presses the phone against her chest with both hands. The shot ends with the phone held to her chest. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, wind pressing softly against the glass. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s15_12",
+    "scene": "S15",
+    "act": 4,
+    "beat": 12,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "FS",
+    "summary_zh": "陆时野拿着两杯咖啡和一个文件夹走过来。LU: 韩铮的案：「韩铮的案子重审了，要原取证师签字。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "韩铮的案子重审了，要原取证师签字。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 2> is the woman in <Picture 3>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 3> is the woman in <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] <Subject 1> arrives with two coffees and a folder and says the Han Zheng case is being retried.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Full shot, eye level, static. Within the first second, <Subject 1> (S1) says in a rough, easy voice, <d>[Chinese] 韩铮的案子重审了，要原取证师签字。</d> He walks in from the right along the bridge, two paper cups of coffee in one hand and a thin folder tucked under his arm, and stops in front of <Subject 2> and <Subject 3> at the glass. He holds out one coffee. The shot ends with the coffee held out toward <Subject 2>.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis rough easy voice, his footsteps on stone, paper cups creaking, wind against the glass.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s15_13",
+    "scene": "S15",
+    "act": 4,
+    "beat": 13,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s15_13.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 我已经：「我已经不记得那个案子了。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "我已经不记得那个案子了。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot on an enclosed glass sky-bridge forty floors up at sunrise, low warm golden sunlight with crisp shadows, the city sharp all the way to the horizon behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"我已经不记得那个案子了。\" Her lips move in sync with each syllable, her voice quiet and honest, a little sad. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she looks down at the folder below the frame. The shot ends with her eyes lowered to the folder. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, wind pressing softly against the glass. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s15_14",
+    "scene": "S15",
+    "act": 4,
+    "beat": 14,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s15_14.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: 那就签你今天：「那就签你今天亲眼看见的。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "那就签你今天亲眼看见的。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot on an enclosed glass sky-bridge forty floors up at sunrise, low warm golden sunlight with crisp shadows, the city sharp all the way to the horizon behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"那就签你今天亲眼看见的。\" His lips move in sync with each syllable, his voice low and warm. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he holds out the open folder and a pen toward frame left. The shot ends with the folder and pen held out toward her. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, wind pressing softly against the glass. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s15_15",
+    "scene": "S15",
+    "act": 4,
+    "beat": 15,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "INSERT",
+    "summary_zh": "沈砚在文件上签名（字迹不可读），笔尖划过纸面。画外是她的声音。SHEN(VO): 这一：「这一次，我签我看见的。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "这一次，我签我看见的。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1>, seen only as her hand, the slim silver wristwatch on her left wrist and the cuff of her white shirt.\n<Picture 2> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] <Subject 1>'s hand signs the document while her voice says she signs what she saw.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Insert close-up looking down at an open folder held against a steel window frame, static. Within the first second, <Subject 1> (S1) says off-screen in a low, steady voice, <d>[Chinese] 这一次，我签我看见的。</d> Only her hand, the silver wristwatch and the white shirt cuff are visible as she signs a document with a black pen, the signature an unreadable abstract line, the pen tip scratching across the paper. The shot ends with the pen lifting off the page in golden sunlight.\n\noverall_soundscape:\nHer low voice, the scratch of the pen nib on paper, wind against the glass.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s15_16",
+    "scene": "S15",
+    "act": 4,
+    "beat": 16,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "三人并肩站在玻璃前，日光铺满城市。LU: 镜川说，：「镜川说，能帮你补回记忆。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "镜川说，能帮你补回记忆。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 2> is the woman in <Picture 3>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 3> is the woman in <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] Standing side by side at the glass, <Subject 1> tells <Subject 2> Jingchuan says it can restore her memories.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): partially_preserved - hair and clothing remain consistent; facial features appear only in the physically visible side profile, never on the back of the head\n<Subject 2> (appears in [Shot 1]): partially_preserved - hair and clothing remain consistent; facial features appear only in the physically visible side profile, never on the back of the head\n<Subject 3> (appears in [Shot 1]): partially_preserved - hair and clothing remain consistent; facial features appear only in the physically visible side profile, never on the back of the head\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Low warm golden sunlight streams through the glass with crisp shadows; the city below is sharp all the way to the horizon.\n[Shot 1] Medium shot from behind and slightly to the side, eye level, static. Within the first second, <Subject 1> (S1) says in a low, careful voice, <d>[Chinese] 镜川说，能帮你补回记忆。</d> The three stand side by side at the glass in three-quarter back view: <Subject 3> on the far left, <Subject 2> in the middle and <Subject 1> on the right with a coffee cup. He turns his head toward <Subject 2> as he speaks, his profile sharp, the sunlit city spread out below. The shot ends with him waiting for her answer.\nKeep the three-quarter rear composition; faces are visible only at the side when a head naturally turns, never on the back of a head.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis careful voice, wind against the glass, the faint city far below.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s15_17",
+    "scene": "S15",
+    "act": 4,
+    "beat": 17,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s15_17.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 不补了：「不补了。我想自己重新记。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "不补了。我想自己重新记。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot on an enclosed glass sky-bridge forty floors up at sunrise, low warm golden sunlight with crisp shadows, the city sharp all the way to the horizon behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"不补了。我想自己重新记。\" Her lips move in sync with each syllable, her voice soft and certain. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she smiles slightly, her eyes on the city. The shot ends with her slight smile, eyes on the city. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, wind pressing softly against the glass. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s15_18",
+    "scene": "S15",
+    "act": 4,
+    "beat": 18,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s15_18.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠。XU: 从哪儿开始记：「从哪儿开始记？」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "从哪儿开始记？"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot on an enclosed glass sky-bridge forty floors up at sunrise, low warm golden sunlight with crisp shadows, the city sharp all the way to the horizon behind. Medium close-up at eye level, static camera, she is slightly right of center looking toward frame left. Within the first second she says in Mandarin Chinese, \"从哪儿开始记？\" Her lips move in sync with each syllable, her voice light and teasing. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she tilts her head, waiting. The shot ends with her head tilted, a small grin. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, wind pressing softly against the glass. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s15_19",
+    "scene": "S15",
+    "act": 4,
+    "beat": 19,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_skybridge_dawn.png"
+    ],
+    "seconds": 8,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "沈砚望向日出，三人的剪影映在新玻璃上，轮廓锐利。SHEN: 就从这个日：「就从这个日出开始。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "就从这个日出开始。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the man in <Picture 2>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 3> is the woman in <Picture 3>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 4> is the location reference for [Shot 1]: the same enclosed glass sky-bridge forty floors up at sunrise, floor-to-ceiling clear glass panels in thin black steel frames, a polished dark stone floor, low warm golden sunlight streaming in with crisp shadows, crystal-clear air, the city below sharp all the way to the horizon.\n\nsummary:\n[reference generation] <Subject 1>, <Subject 2> and <Subject 3> stand as crisp silhouettes before the new glass as the sun rises.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. The rising sun sits low in the frame behind the glass; its golden light outlines the three figures with clean hard edges.\n[Shot 1] Wide shot from inside the sky-bridge looking toward the sunrise, static. Within the first second, <Subject 1> (S1) says softly in a low, steady voice, <d>[Chinese] 就从这个日出开始。</d> The three stand side by side before the new glass panel as a crisp silhouette against the rising sun: <Subject 1> on the left, <Subject 2> and <Subject 3> to her right, every outline sharp-edged, their figures reflected faintly in the new glass. <Subject 1> lifts her face toward the sun. The shot ends with the three silhouettes motionless and the sun fully above the horizon.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer soft low voice, wind against the glass, the distant city waking, a far-off ferry horn.\n\nnon_diegetic_music: N/A"
+  }
+]

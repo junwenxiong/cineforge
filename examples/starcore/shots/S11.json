@@ -1,0 +1,259 @@
+[
+ {
+  "id": "sc_s11_01",
+  "scene": "S11",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "黎明前蓝调时刻，旧仓库屋顶，林骁穿 Mk-II 独自站在屋顶边缘，远处是澜城天际线和海湾",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 2> is the location reference for [Shot 1], a container harbor yard at night beside an old warehouse, with stacked containers, gantry cranes, sodium-orange lights and wet asphalt, here in the deep blue hour just before dawn, seen from above the warehouse roof.\n\nsummary:\n[reference generation] In the blue hour before dawn, <Subject 1> stands alone at the edge of the old warehouse roof above the harbor yard, facing the distant sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same containers, cranes, sodium lights and wet asphalt; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: deep blue pre-dawn light, sodium-orange yard lamps and a thin warm glow on the horizon, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Extreme wide shot, slow drone-style orbit around the warehouse roof from right to left. Initial state: the harbor yard lies still below, the wet asphalt reflecting sodium-orange lights, gantry cranes standing dark against a deep blue sky with a thin band of warm light on the eastern horizon. <Subject 1> stands small at the edge of the flat warehouse roof, a pearl-white figure with softly glowing teal seams, the T-shaped visor a single teal line. Wind tugs at loose roofing sheets and a few gulls lift off the gutter. She rolls her shoulders, flexes her armored fingers, then sets one foot forward, facing the sea bay at frame right. End state: the orbit ends with her in profile at frame center, the megacity skyline glittering at frame left and the brightening sea horizon at frame right, a gantry crane and the containers below giving clear scale.\n\noverall_soundscape:\nCool pre-dawn wind across the rooftop, a loose roofing sheet flapping, distant gulls, a ship's horn far out on the bay, the soft standby hum of the suit's thrusters.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_02",
+  "scene": "S11",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "俯拍：周野站在屋下湿漉漉的堆场里，仰头冲屋顶喊",
+  "dialogue": [
+   {
+    "who": "ZHOU",
+    "text": "这次别撞我的显示器！"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the young man in <Picture 1> and <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Picture 3> is the location reference for [Shot 1], a container harbor yard at night beside an old warehouse, with stacked containers, gantry cranes, sodium-orange lights and wet asphalt, here at ground level in the blue pre-dawn light.\n\nsummary:\n[reference generation] Down in the yard, <Subject 1> cups a hand beside his mouth and shouts a teasing warning up at the roof.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same containers, cranes, sodium lights and wet asphalt; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: deep blue pre-dawn light, sodium-orange yard lamps and a thin warm glow on the horizon, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, high angle looking down from the roof edge into the yard, static with a slight wind sway. Initial state: <Subject 1> stands on the wet asphalt beside a stack of containers, the warehouse wall at frame left, his rugged tablet tucked under one arm, his face tilted up toward the camera in the cool blue pre-dawn light, an orange sodium lamp glowing behind him. He cups his free hand beside his mouth and <Subject 1> (S1) shouts up with a teasing grin, <d>[Chinese] 这次别撞我的显示器！</d> He jabs a finger at the roof for emphasis, then takes two steps back and raises the tablet, which glows with abstract graphics and no text. End state: he squints upward, the crooked grin fading into nervous anticipation, his breath faintly visible in the chill air, a puddle at his feet reflecting the brightening sky.\n\noverall_soundscape:\nHis shout echoing off the containers, pre-dawn wind, a crane's distant warning beep, water dripping from the gutters, his boots splashing in a puddle.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_03",
+  "scene": "S11",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "仰拍：推进器点火，稳定的青色火焰，林骁从屋顶平稳腾空、悬停后直冲上天；周野在前景仰望",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the young man in <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Picture 3> is the location reference for [Shot 1], a container harbor yard at night beside an old warehouse, with stacked containers, gantry cranes, sodium-orange lights and wet asphalt, here seen from yard level looking up at the warehouse roof against the blue pre-dawn sky.\n\nsummary:\n[reference generation] <Subject 1> ignites her back and calf thrusters with a steady teal flame and rises cleanly off the warehouse roof while <Subject 2> watches from the yard.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same containers, cranes, sodium lights and wet asphalt; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: deep blue pre-dawn light, sodium-orange yard lamps and a thin warm glow on the horizon, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, low angle from yard level, tilting up to follow the ascent. Initial state: <Subject 2> stands in the foreground at frame left, seen from behind, looking up; above him, <Subject 1> crouches at the roof edge against the deep blue sky. The thruster pods on her back and calves ignite with clean, steady teal flames, without any sputter, blasting dust and rainwater off the roof. She straightens and rises smoothly, three meters, then ten, and hovers in perfect balance. Then the flames brighten and she shoots straight upward, leaving a clean teal trail. End state: the camera holds on an empty sky with the fading trail, <Subject 2>'s raised arm shielding his eyes at the bottom of frame.\n\noverall_soundscape:\nA deep, smooth thruster ignition roar, swirling wind and spray, rattling roof sheets, a rising whoosh as she climbs, an amazed laugh from the yard.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_04",
+  "scene": "S11",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "林骁从下方冲破厚厚的云层，钻出云海",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 2> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise, with glass towers around a wide sea bay and golden haze, here the sky above it, with the city glow showing through a thick cloud layer.\n\nsummary:\n[reference generation] <Subject 1> rockets upward through a thick layer of clouds and bursts out of the cloud tops into the open sky.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same glass towers, sea bay and golden haze; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: golden sunrise light, horizontal lens flares and gold reflections against cool blue shadows, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, the camera looking straight down at the top of the cloud layer, then tilting up with her as she passes. Initial state: a dense, rolling sea of grey-blue clouds fills the frame, the faint glow of city lights bleeding through from below at frame left. A teal point of light grows inside the clouds, then <Subject 1> punches up through the surface, trailing streamers of vapor that spiral off her limbs, her thruster pods blazing teal. She climbs past the lens with her arms tight at her sides, and the camera tilts up to follow her silhouette against a sky shifting from deep blue to pale gold. End state: she levels out above the sea of clouds, a small pearl-white figure with a teal trail at frame center, the horizon line brightening behind her.\n\noverall_soundscape:\nA muffled roar inside the cloud, then a sudden burst of clean open wind as she breaks through, the thruster roar trailing off, a high whistle of air over the armor plates.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_05",
+  "scene": "S11",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "云海之上朝阳初升，金光洒满白色装甲，林骁悬停着张开双臂",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 2> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise, with glass towers around a wide sea bay and golden haze, here seen from high above a sea of clouds with only the tallest towers piercing through.\n\nsummary:\n[reference generation] Above the sea of clouds the sun rises and floods <Subject 1>'s white armor with golden light as she hovers and turns toward it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same glass towers, sea bay and golden haze; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: golden sunrise light, horizontal lens flares and gold reflections against cool blue shadows, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Extreme wide shot, slow push-in with a gentle arc from left to right. Initial state: an endless sea of clouds stretches to the horizon, tinted pink and gold, with the tops of the tallest glass towers of the megacity piercing through at frame left. <Subject 1> hovers at frame center, her thrusters in a soft steady teal glow, facing right toward the horizon. The rim of the sun breaks over the horizon at frame right, and a golden flare washes across the clouds and up her body; the matte pearl-white plates turn warm gold while the teal seams and the T-shaped visor glow against them. She slowly spreads her arms wide, feeling the light. End state: her silhouette is haloed by the sunrise, the arc settling into a three-quarter view, long anamorphic flares streaking horizontally across the frame.\n\noverall_soundscape:\nQuiet high-altitude wind, a soft steady thruster purr, the faint ticking of armor plates warming in the sun, an almost silent stillness.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_06",
+  "scene": "S11",
+  "act": 2,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "头盔内：金光透过面罩，林骁忍不住笑出声",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "它飞起来了！"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with a single silver streak on the left and a small scar through her right eyebrow.\n<Subject 2> is the sleek powered armor suit in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a glowing hexagonal teal chest core, and a smooth helmet with a single vertical T-shaped teal visor slit.\n\nsummary:\n[reference generation] Inside the helmet, <Subject 1> bursts out laughing in the golden light and cries out in joy.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal core and T-shaped visor stay identical.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: golden sunrise light, horizontal lens flares and gold reflections against cool blue shadows, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Close-up from inside the helmet, the lens just in front of the inner visor and looking back at her face, static with a slight flight vibration. Initial state: <Subject 1>'s face fills the frame, framed by the graphite inner lining of the helmet of <Subject 2>, golden sunlight spilling through the T-shaped visor slit and mixing with the teal glow of abstract HUD rings that show no letters or numbers. Her eyes are wide and her lips parted in disbelief. Her lips tremble, then a laugh breaks out of her, and <Subject 1> (S1) says breathlessly and joyfully, <d>[Chinese] 它飞起来了！</d> She laughs again, eyes shining wet, her head tipping back against the helmet pad. End state: a wide, unguarded grin, sunlight crossing the scar through her right eyebrow and the silver streak at her temple.\n\noverall_soundscape:\nMuffled in-helmet acoustics, rushing wind outside, her laugh and breathless voice close and intimate, soft HUD chirps, the steady thruster hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_07",
+  "scene": "S11",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "林骁翻身从云端俯冲，扑向阳光下的澜城海湾",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 2> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise, with glass towers around a wide sea bay and golden haze.\n\nsummary:\n[reference generation] <Subject 1> rolls over and dives from the clouds toward the wide, sunlit sea bay of the city.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same glass towers, sea bay and golden haze; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: golden sunrise light, horizontal lens flares and gold reflections against cool blue shadows, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, the camera following behind and above her and dropping with her into a steep dive. Initial state: <Subject 1> hovers above thinning clouds, the golden bay and the glass towers of the city visible through the gaps far below. She tucks her arms, rolls forward and dives head-first, thruster pods flaring teal. The camera plunges with her through wisps of cloud; the bay rushes up, the city skyline on the left side of the frame and the open sea on the right, sunlight glittering on the water. Vapor trails peel off her shoulders and calves. End state: she pulls out of the dive just above the bay and levels off a few meters above the water, flying toward frame right.\n\noverall_soundscape:\nA rising scream of wind, thrusters roaring louder, a deep whoosh as she pulls out of the dive, the hiss of the water surface below.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_08",
+  "scene": "S11",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁贴着海面掠过，推进器在水面激起两道白浪",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 2> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise, with glass towers around a wide sea bay and golden haze, here at water level on the bay.\n\nsummary:\n[reference generation] <Subject 1> skims low over the bay, her thrusters throwing up two parallel walls of white spray.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same glass towers, sea bay and golden haze; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: golden sunrise light, horizontal lens flares and gold reflections against cool blue shadows, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium tracking shot, the camera at water level flying alongside her, matching her speed. Initial state: <Subject 1> streaks across frame center horizontally from left to right, body flat, arms angled back, two meters above the golden water. Twin teal thruster plumes from her calves cut into the surface and kick up two tall parallel rooster tails of white spray behind her. She tilts one hand like a wing and rolls slightly, a fingertip grazing the water and drawing a thin line of foam. Sunlight glints off the spray droplets around her, forming a faint rainbow. End state: she pulls slightly ahead of the camera, the two white wakes stretching back toward the city towers on the shore at frame left.\n\noverall_soundscape:\nA deep thruster roar skimming the water, hissing spray, rushing wind, waves slapping, a gull crying in the distance.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_09",
+  "scene": "S11",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "航拍：下方沿海公路上，磐石重卡和雀翎摩托并驾齐驱飞驰",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the colossal six-wheeled mining haul truck in <Picture 1>, with weathered industrial yellow and dark graphite stone-textured panels, amber running lights and giant rugged tires.\n<Subject 2> is the riderless racing motorcycle in <Picture 2>, with sharp white-and-cyan fairings and glowing cyan wheel rims.\n<Picture 3> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise, with glass towers around a wide sea bay and golden haze, here with a curving coastal road along the bay.\n\nsummary:\n[reference generation] On the coastal road below, <Subject 1> and <Subject 2> race side by side along the sunlit bay.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite panels, amber lights and giant tires stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white-and-cyan fairings and cyan rims stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same glass towers, sea bay and golden haze; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: golden sunrise light, horizontal lens flares and gold reflections against cool blue shadows, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide aerial shot, high angle, the camera tracking alongside and slightly ahead of the vehicles. Initial state: a curving multi-lane coastal road hugs the bay, the golden sea on the right and the city towers on the left, the road empty in the early morning. <Subject 1>, colossal and yellow, rolls along the inner lane, its giant tires kicking up dust and its amber running lights glowing; beside it in the outer lane, <Subject 2> keeps pace, tiny by comparison, its cyan wheel rims glowing. The motorcycle surges ahead and weaves playfully across the truck's path, then drops back alongside. A streetlamp and a guardrail flash past, barely reaching the truck's wheel hubs, showing its scale. End state: both vehicles race side by side toward frame right and the rising sun, long shadows stretching across the road behind them.\n\noverall_soundscape:\nThe deep diesel-electric growl of the truck, the high electric whine of the motorcycle, tires humming on asphalt, wind and surf along the shore.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_10",
+  "scene": "S11",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "低机位跟拍：摩托与重卡飞驰，林骁从两者之间贴着头顶掠过，重卡闪灯致意",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the riderless racing motorcycle in <Picture 1>, with sharp white-and-cyan fairings and glowing cyan wheel rims.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 2>, with weathered industrial yellow and dark graphite stone-textured panels, amber running lights and giant rugged tires.\n<Subject 3> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 3>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 4> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise, with glass towers around a wide sea bay and golden haze, here at road level on the coastal road.\n\nsummary:\n[reference generation] At road level, <Subject 1> and <Subject 2> speed side by side as <Subject 3> swoops low over them, trailing teal light.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white-and-cyan fairings and cyan rims stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite panels, amber lights and giant tires stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass towers, sea bay and golden haze; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: golden sunrise light, horizontal lens flares and gold reflections against cool blue shadows, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium tracking shot, low angle at road level just ahead of the vehicles, pulling back at speed. Initial state: <Subject 1> fills the right half of the frame, cyan rims glowing; behind it to the left looms the towering yellow front of <Subject 2>, tires taller than a person, amber lights burning. A teal streak appears at the upper left and <Subject 3> dives into frame, flying low between them just above the truck's hood, rolling once as she passes. The truck's amber lights flash twice in greeting and the motorcycle answers with a bright double chirp. End state: <Subject 3> climbs out of frame toward the sun, the two vehicles racing behind her.\n\noverall_soundscape:\nRoaring truck engine and tires, the motorcycle's electric whine, a thruster roar sweeping overhead with a Doppler shift, a bright double chirp, a deep horn blast.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_11",
+  "scene": "S11",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "林骁在玻璃高楼之间高速穿梭，从天桥下钻过",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 2> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise, with glass towers around a wide sea bay and golden haze, here inside a canyon of tall glass towers.\n\nsummary:\n[reference generation] <Subject 1> weaves at high speed between the gleaming glass towers of the city in the golden morning light.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same glass towers, sea bay and golden haze; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: golden sunrise light, horizontal lens flares and gold reflections against cool blue shadows, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, the camera chasing behind her at the same speed and banking with her. Initial state: a canyon of tall glass towers rises on both sides, their mirrored faces glowing gold with sunrise, sky bridges spanning between them high above the empty streets. <Subject 1> enters from frame left, flying fast, banks hard right around the corner of one tower, then left between two others, her reflection racing across the glass beside her. She threads under a sky bridge with only meters to spare, teal thruster trails curving behind her. End state: she bursts out of the tower canyon into open air above the waterfront, the bay glittering ahead at frame right.\n\noverall_soundscape:\nThruster roar echoing between the towers, a whoosh of air with each bank, glass panes humming in her wake, wind howling under the sky bridge.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_12",
+  "scene": "S11",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "FS",
+  "summary_zh": "林骁在海堤步道上轻巧落地，单膝着地后站起；磐石重卡已停在她身后",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 2>, with weathered industrial yellow and dark graphite stone-textured panels, amber running lights and giant rugged tires.\n<Picture 3> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise, with glass towers around a wide sea bay and golden haze, here from a stone seawall promenade on the bay.\n\nsummary:\n[reference generation] <Subject 1> descends and touches down on the seawall promenade beside the parked <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite panels, amber lights and giant tires stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same glass towers, sea bay and golden haze; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: golden sunrise light, horizontal lens flares and gold reflections against cool blue shadows, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Full shot, eye level, static camera on the seafront promenade, the sea at frame right. Initial state: an empty stone seawall promenade with railings, the sun low over the bay at frame right throwing long golden light; <Subject 2> is already parked on the promenade behind the landing spot, its giant tires taller than a person, amber running lights glowing softly. <Subject 1> descends from the top of the frame, her thrusters easing down to a soft teal glow, and lands lightly in a crouch, one armored hand touching the stone, a ring of dust puffing out. She rises to stand just left of center. The truck's amber lights blink once, like a greeting. End state: she glances over her shoulder at the truck, then turns back to face the sunrise over the water.\n\noverall_soundscape:\nThrusters spooling down with a soft whine, a light metallic touchdown on stone, surf against the seawall, gulls, the truck's deep idle rumble.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_13",
+  "scene": "S11",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "变形：磐石重卡在林骁身后拆解翻转、起身，化为十二米高的磐石",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 2>, with weathered industrial yellow and dark graphite stone-textured panels, amber running lights and giant rugged tires.\n<Subject 3> is the 12-meter-tall ancient guardian robot in <Picture 3>, the robot form of <Subject 2>, with weathered yellow and dark graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, an amber hexagonal chest core, and wheels folded on its shoulders and legs.\n<Picture 4> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise, with glass towers around a wide sea bay and golden haze, here from the seawall promenade.\n\nsummary:\n[reference generation] Behind <Subject 1>, <Subject 2> transforms into <Subject 3>, towering over her on the seawall.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite panels, amber lights and giant tires stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - yellow-graphite armor, amber optic band, chest core and folded wheels stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same glass towers, sea bay and golden haze; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: golden sunrise light, horizontal lens flares and gold reflections against cool blue shadows, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, very low angle from behind <Subject 1>, small in the foreground left of center, slow tilt up, the sea at frame right. Initial state: <Subject 2> sits parked beside her. Its panels unlock; the cab folds back, the tires rotate onto the shoulders and lower legs, massive legs unfold onto the stone, and the torso rises on pumping pistons. The head lifts last and the amber optic band ignites. End state: <Subject 3> stands twelve meters tall, a lamppost at its ankle for scale, as <Subject 1> tilts her head back to look up.\n\noverall_soundscape:\nGrinding heavy plates, thunderous hydraulic pistons, a resonant locking clank, a rising hum as the optic band ignites, surf.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s11_14",
+  "scene": "S11",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_skyline.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "背影大远景：林骁与磐石并肩站在海堤上看日出，一小一大两个剪影",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>, with weathered yellow and dark graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, an amber hexagonal chest core, and wheels folded on its shoulders and legs.\n<Picture 3> is the location reference for [Shot 1], a futuristic coastal megacity skyline at sunrise, with glass towers around a wide sea bay and golden haze, here from behind the seawall facing the sunrise over the open bay.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> stand side by side on the seawall, silhouetted against the sunrise over the bay.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite armor, amber optic band, chest core and folded wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same glass towers, sea bay and golden haze; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with volumetric haze and high dynamic range: golden sunrise light, horizontal lens flares and gold reflections against cool blue shadows, with teal thruster accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Extreme wide shot from behind, low angle, very slow pull-back. Initial state: the sun sits just above the sea horizon right of center, turning the bay into a sheet of gold. On the seawall in the middle band of the frame, the small armored figure of <Subject 1> stands on the left and the towering silhouette of <Subject 2> on the right, its amber optic band glowing faintly; city towers rise at the far left edge. <Subject 2> slowly lowers one huge hand beside her, palm open, and she lays her armored hand on its fingertip. Neither of them speaks. End state: the two silhouettes, one small and one enormous, share the sunrise, long shadows stretching toward the camera.\n\noverall_soundscape:\nGentle surf against the seawall, seabirds, a soft breeze, the deep idle hum of the guardian's core.\n\nnon_diegetic_music: N/A"
+ }
+]

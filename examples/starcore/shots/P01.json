@@ -1,0 +1,254 @@
+[
+ {
+  "id": "sc_p01_01",
+  "scene": "P01",
+  "act": 0,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_space.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "太空大远景：星核拖着蓝白长尾划向原始地球。磐石画外音。",
+  "dialogue": [
+   {
+    "who": "PANSHI(VO)",
+    "text": "很久以前，我们为一颗星核而战。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the star core in <Picture 1>, a faceted crystal sphere with swirling blue-white light inside, shown bare without its capsule.\n<Subject 2> is the narrator heard only off-screen, the very deep, slow, ancient voice of a giant guardian robot; no body of it is visible in this shot.\n<Picture 2> is the location reference for [Shot 1], deep space with a dense starfield, a faint blue-violet nebula and a distant spiral galaxy.\n\nsummary:\n[reference generation] In deep space, <Subject 1> streaks toward the ash-clouded primordial Earth as a blazing blue-white comet while <Subject 2> narrates off-screen.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): partially_preserved - crystal facets and swirling blue-white light are kept; the reference capsule is absent. Here it burns as a comet with a long tail.\n<Subject 2> (voice only, off-screen in [Shot 1]): weak_reference - only the deep, slow narrator voice is present; no body, face or mouth appears.\n<Picture 2> ([Shot 1] location): partially_preserved - same starfield density, nebula colors and depth of space; the composition is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, with deep black space, a cold blue-white light source and a dim, ash-veiled planet. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Extreme wide shot, locked-off camera with a very slow drift forward. The curved limb of primordial Earth fills the lower third of the frame, a dim grey-brown planet wrapped in swirling ash clouds, pinpoints of orange lava glow and silent lightning flickering across its night side. Against the star-filled black above, a point of blue-white light appears at upper frame left: <Subject 1>, its faceted crystal heart blazing white-hot, trailing a long luminous tail of plasma and glittering debris. It arcs steadily down toward the right, its light catching the edge of the atmosphere and laying a thin blue rim along the planet's curve. The camera holds as the comet grows brighter and touches the upper atmosphere, ending with a soft blue flare blooming on the cloud tops at center frame. Over the image, <Subject 2> (S1) says off-screen in a very deep, slow, resonant voice, <d>[Chinese] 很久以前，我们为一颗星核而战。</d> No one is on screen and no mouth moves.\n\noverall_soundscape:\nThe near silence of space, a low swelling resonant hum from the crystal, a faint crackle of plasma, and a deep sub-bass rumble as it meets the atmosphere.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_02",
+  "scene": "P01",
+  "act": 0,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_ancient.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "星核穿透火山灰云层，蓝白光尾划过原始海洋上空。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the star core in <Picture 1>, a faceted crystal sphere with swirling blue-white light inside, shown bare without its capsule.\n<Picture 2> is the location reference for [Shot 1], primordial Earth: a volcanic ocean under an ash-filled sky, lava glow on the horizon and lightning in the clouds.\n\nsummary:\n[reference generation] <Subject 1> tears down through the ash clouds above the volcanic ocean of <Picture 2>, lighting the storm from within.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): partially_preserved - crystal facets and swirling blue-white light are kept; the reference capsule is absent. Here it falls as a blazing streak.\n<Picture 2> ([Shot 1] location): partially_preserved - same ash sky, lava-lit horizon and storm lightning; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, with volumetric ash haze, storm lightning and orange lava glow against a cold slate-blue sky. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Extreme wide shot from low above the heaving black water, the camera tilting slowly upward. The volcanic ocean stretches to a horizon of glowing orange lava, columns of steam rising from the sea, the ash-filled sky heavy and churning. Lightning forks through the clouds. A blue-white glow builds inside the cloud layer at upper frame left, then <Subject 1> punches through the cloud base as a blazing streak, trailing a long tail of plasma and falling embers. Its cold light washes across the wave crests and turns the ash haze pale blue as it passes overhead. It descends diagonally toward the right on a long arc that will reach the sea far away, and the shot ends with the streak still falling high above the horizon, the clouds behind it torn open and glowing.\n\noverall_soundscape:\nA rising, tearing roar of the comet through the air, rolling thunder, crashing waves, hissing steam and the distant rumble of volcanoes.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_03",
+  "scene": "P01",
+  "act": 0,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_ancient.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "建立镜：火山灰天空下，磐石（画左）与裂锋（画右）在海边玄武岩悬崖顶上缠斗，闪电照亮装甲。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin crimson glowing optic slits and no mouth, swept-back wing blades on its back and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], primordial Earth: a volcanic ocean under an ash-filled sky, lava glow on the horizon and lightning in the clouds.\n\nsummary:\n[reference generation] On a basalt sea cliff above the volcanic ocean of <Picture 3>, <Subject 1> and <Subject 2> grapple as lightning lights their armor.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured plates, amber optic band, amber hex chest core and folded truck wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal armor, crimson optic slits, wing blades and right-forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same ash sky, lava-lit horizon and storm lightning; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, with volumetric ash haze, storm lightning and orange lava glow against a cold slate-blue sky. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Extreme wide low-angle shot from the churning surf at the base of a towering black basalt cliff, slow crane up. On the cliff top far above, two colossal figures are locked together: <Subject 1> on the left, <Subject 2> on the right, each gripping the other's forearms, feet braced, house-sized boulders cracking loose and tumbling down the cliff face under their weight. Waves explode against the rocks in the foreground, giving scale. A sheet of lightning flashes behind them, lighting the stone-textured yellow plates and amber optic band of <Subject 1> and the gunmetal blades and crimson optic slits of <Subject 2>; then darkness, with only the amber and crimson glows burning. They shove against each other, neither giving ground, as the camera rises toward their level, ending on the two giants in a straining deadlock against the lava-lit horizon.\n\noverall_soundscape:\nDeep grinding metal under strain, heavy hydraulic groans, rocks cracking and falling, thunder, wind and huge waves pounding the cliff.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_04",
+  "scene": "P01",
+  "act": 0,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_ancient.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "低机位中景：闪电中磐石用肩膀把裂锋顶开，裂锋的刃翼刮过岩石迸出火花。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin crimson glowing optic slits and no mouth, swept-back wing blades on its back and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], primordial Earth: a volcanic ocean under an ash-filled sky, lava glow on the horizon and lightning in the clouds.\n\nsummary:\n[reference generation] In a lightning flash, <Subject 1> heaves <Subject 2> back across the cliff top, its blade armor scraping sparks off the stone.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured plates, amber optic band, amber hex chest core and folded truck wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal armor, crimson optic slits, wing blades and right-forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same ash sky, lava-lit horizon and storm lightning; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, with volumetric ash haze, storm lightning and orange lava glow against a cold slate-blue sky. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Medium shot from a low angle at knee height on the cliff top, with a slight shake, ash drifting through the air. <Subject 1> fills frame left and <Subject 2> frame right, locked shoulder to shoulder, their armor grinding. A lightning bolt strikes the sea behind them and the flash lights every scar and plate. <Subject 1> drops its weight and drives forward with its massive shoulder, its amber chest core flaring brighter; <Subject 2> is shoved back several strides, its armored feet gouging trenches in the basalt, its swept-back wing blades scraping the rock and throwing showers of orange sparks. The shot ends with <Subject 2> crouched at frame right, regaining its balance, crimson optic slits narrowing, while <Subject 1> stands braced at left, chest core pulsing.\n\noverall_soundscape:\nA heavy metal impact, blades shrieking against stone, crackling sparks, hydraulics hissing, thunder and gusting wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_05",
+  "scene": "P01",
+  "act": 0,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_ancient.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "裂锋右臂能量炮充能，向画左的磐石开火。磐石画外音（前半句）。",
+  "dialogue": [
+   {
+    "who": "PANSHI(VO)",
+    "text": "它能让钢铁拥有生命……"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin crimson glowing optic slits and no mouth, swept-back wing blades on its back and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], primordial Earth: a volcanic ocean under an ash-filled sky, lava glow on the horizon and lightning in the clouds.\n\nsummary:\n[reference generation] <Subject 2> raises its right-forearm cannon and fires a crimson energy beam leftward at <Subject 1>, while the voice of <Subject 1> narrates off-screen.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured plates, amber optic band, amber hex chest core and folded truck wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal armor, crimson optic slits, wing blades and right-forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same ash sky, lava-lit horizon and storm lightning; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, with volumetric ash haze, storm lightning and orange lava glow against a cold slate-blue sky. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Wide shot, side-on profile across the cliff top, slow lateral dolly. <Subject 2> at frame right straightens and swings up its right forearm; the built-in crimson cannon charges, its barrel glowing brighter, crimson light spilling across the wet basalt and drifting ash. <Subject 1> at frame left plants its feet and raises its massive forearms. The cannon fires: a thick crimson energy beam crosses the frame from right to left and slams into the raised arms of <Subject 1>, pushing it back one heavy step. Over the image, the voice of <Subject 1> (S1) is heard off-screen as a slow voiceover narration in a very deep, resonant tone, <d>[Chinese] 它能让钢铁拥有生命……</d> No one on screen speaks: neither robot has a mouth and the optic band does not pulse with the words. The shot ends with the beam still hammering against its guard.\n\noverall_soundscape:\nA rising electric whine of the cannon charging, a thunderous energy discharge, sizzling impact on armor, wind and distant thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_06",
+  "scene": "P01",
+  "act": 0,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_ancient.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "磐石交叉双臂格挡能量束，火花与装甲碎片飞溅，随后把光束偏转向天空。磐石画外音（后半句）。",
+  "dialogue": [
+   {
+    "who": "PANSHI(VO)",
+    "text": "也能让钢铁吞噬一切。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core and huge haul-truck wheels folded on its shoulders and lower legs.\n<Picture 2> is the location reference for [Shot 1], primordial Earth: a volcanic ocean under an ash-filled sky, lava glow on the horizon and lightning in the clouds.\n\nsummary:\n[reference generation] <Subject 1> blocks a crimson energy beam with its forearms as sparks and armor fragments burst, while its own voice narrates off-screen.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured plates, amber optic band, amber hex chest core and folded truck wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same ash sky, lava-lit horizon and storm lightning; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, with volumetric ash haze, storm lightning and orange lava glow against a cold slate-blue sky. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Medium close-up on the upper body of <Subject 1>, low angle, the camera jolting with each impact. Its crossed forearms are raised in front of the flat faceplate, the amber horizontal optic band glowing between them. A crimson energy beam from off-screen right hammers into the armor; the stone-textured yellow plates glow red-hot at the point of contact, sparks spray toward the lens and chips of armor fly off in slow tumbling arcs. <Subject 1> grinds forward against the force, then sweeps its arms outward and deflects the beam up into the ash clouds, where it bursts in a crimson flash. Over the image, the voice of <Subject 1> (S1) continues off-screen as voiceover, <d>[Chinese] 也能让钢铁吞噬一切。</d> No one on screen speaks; the robot has no mouth and its optic band stays steady. The shot ends on <Subject 1> lowering its scorched, smoking forearms.\n\noverall_soundscape:\nA sustained energy beam roar, crackling sparks, metal fragments clattering, a hydraulic grunt as the beam is deflected, a distant explosion and thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_07",
+  "scene": "P01",
+  "act": 0,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_ancient.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "星核坠入海面，冲起贯穿云层的蓝白光柱。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the star core in <Picture 1>, a faceted crystal sphere with swirling blue-white light inside, shown bare without its capsule.\n<Picture 2> is the location reference for [Shot 1], primordial Earth: a volcanic ocean under an ash-filled sky, lava glow on the horizon and lightning in the clouds.\n\nsummary:\n[reference generation] <Subject 1> plunges into the volcanic ocean of <Picture 2> and a towering pillar of blue-white light erupts from the sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): partially_preserved - crystal facets and swirling blue-white light are kept; the reference capsule is absent.\n<Picture 2> ([Shot 1] location): partially_preserved - same ash sky, lava-lit horizon and storm lightning; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, with volumetric ash haze, storm lightning and orange lava glow against a cold slate-blue sky. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Extreme wide shot over the open volcanic ocean, the camera steady at sea level with the lava-lit horizon low in frame. From upper frame left, <Subject 1> falls as a blazing blue-white streak, its tail trailing embers through the ash haze, and strikes the water at frame center-right. For an instant everything goes still. Then a colossal column of blue-white light erupts straight up from the impact point and punches through the clouds, the sea around its base boiling into steam and spray. The light floods the whole seascape cold blue, overpowering the orange lava glow, and lightning crawls down the clouds toward it. Debris and droplets hang glittering in the air. The shot ends on the pillar of light standing over the sea, its base still widening.\n\noverall_soundscape:\nA piercing descending whistle, a deep concussive impact, a roaring geyser of water and steam, and a sustained resonant crystal hum filling the air.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_08",
+  "scene": "P01",
+  "act": 0,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_ancient.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "环形巨浪扩散撞上悬崖，磐石与裂锋松开彼此，同时转头望向光柱。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin crimson glowing optic slits and no mouth, swept-back wing blades on its back and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], primordial Earth: a volcanic ocean under an ash-filled sky, lava glow on the horizon and lightning in the clouds.\n\nsummary:\n[reference generation] A ring-shaped wave from the light pillar slams into the cliff, and <Subject 1> and <Subject 2> break apart and turn toward the light.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured plates, amber optic band, amber hex chest core and folded truck wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal armor, crimson optic slits, wing blades and right-forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same ash sky, lava-lit horizon and storm lightning; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, with volumetric ash haze, storm lightning and orange lava glow against a cold slate-blue sky. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Wide shot from behind and below the two robots at the cliff edge, looking out to sea at frame right, where a blue-white pillar of light stands on the horizon. A ring-shaped wave races outward from its base across the ocean, a wall of dark water rising higher as it approaches. <Subject 1> at frame left and <Subject 2> at frame right break apart from their struggle and turn their heads toward the light, the amber optic band and the crimson optic slits both catching its glow. The wave slams into the cliff below them and explodes upward in a vast curtain of white spray that rises to their knees and rains down over them. The shot ends with both giants standing still, outlined against the pillar, water streaming off their armor.\n\noverall_soundscape:\nThe rushing roar of the approaching wave, a thunderous crash against rock, spray raining down on metal, and the deep resonant hum of the light pillar.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_09",
+  "scene": "P01",
+  "act": 0,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_ancient.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "FS",
+  "summary_zh": "磐石冲向悬崖边扑向光柱方向，裂锋拦腰抱住它，两者扭打着翻出悬崖。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin crimson glowing optic slits and no mouth, swept-back wing blades on its back and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], primordial Earth: a volcanic ocean under an ash-filled sky, lava glow on the horizon and lightning in the clouds.\n\nsummary:\n[reference generation] <Subject 1> charges toward the cliff edge to reach the light, <Subject 2> tackles it, and the two giants topple off the cliff together.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured plates, amber optic band, amber hex chest core and folded truck wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal armor, crimson optic slits, wing blades and right-forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same ash sky, lava-lit horizon and storm lightning; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, with volumetric ash haze, storm lightning and orange lava glow against a cold slate-blue sky. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Full shot, side-on, the camera panning fast to follow. <Subject 1> breaks into a heavy charge from frame left toward the cliff edge at frame right, each footstep cracking the basalt and throwing up rock. <Subject 2>, standing near the edge, spins and lunges into it, wing blades flaring, and seizes it around the torso. The momentum carries both colossal bodies over the lip of the cliff. Locked together, the amber optic band and chest core of <Subject 1> blazing and the crimson optic slits of <Subject 2> flaring, they tip outward against the glowing light pillar on the horizon and begin to fall, huge chunks of cliff breaking away with them. The shot ends as they drop below the edge, leaving the cliff lip crumbling and empty.\n\noverall_soundscape:\nThundering footsteps, cracking rock, a heavy metal collision, straining hydraulics, a rush of wind as they fall, and the distant hum of the light.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_10",
+  "scene": "P01",
+  "act": 0,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_ancient.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "两台机体扭打着砸入大海，掀起巨大水花。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin crimson glowing optic slits and no mouth, swept-back wing blades on its back and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], primordial Earth: a volcanic ocean under an ash-filled sky, lava glow on the horizon and lightning in the clouds.\n\nsummary:\n[reference generation] Still locked together, <Subject 1> and <Subject 2> crash into the volcanic ocean of <Picture 3>, raising a colossal splash.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured plates, amber optic band, amber hex chest core and folded truck wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal armor, crimson optic slits, wing blades and right-forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same ash sky, lava-lit horizon and storm lightning; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, with volumetric ash haze, storm lightning and orange lava glow against a cold slate-blue sky. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Extreme wide shot from low on the water's surface, looking up at the cliff face, which towers over the waves like a skyscraper. The two giants fall through frame from top center, <Subject 1> and <Subject 2> still grappling, turning slowly in the air, amber and crimson lights streaking. They hit the sea at the foot of the cliff and a colossal white splash erupts, a dome of water and steam rising higher than the cliff top, then collapsing in heavy curtains. Ring waves race toward the camera and lift it. The shot ends on the churning foam where they vanished, a faint amber and crimson glow sinking beneath the surface, the blue-white pillar of light still standing on the horizon behind.\n\noverall_soundscape:\nA whistling fall, a deafening deep impact on water, a roaring column of spray collapsing, hissing steam, and waves surging past the camera.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_11",
+  "scene": "P01",
+  "act": 0,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "海底建立镜：两台机体缓缓沉入黑暗，星核的光在两者之间渐弱。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin crimson glowing optic slits and no mouth, swept-back wing blades on its back and a crimson energy cannon built into its right forearm.\n<Subject 3> is the star core in <Picture 3>, a faceted crystal sphere with swirling blue-white light inside, shown bare without its capsule.\n<Picture 4> is the location reference for [Shot 1], the deep ocean floor in near darkness, with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] In <Picture 4>, <Subject 1> and <Subject 2> sink slowly into the dark with <Subject 3> glowing faintly between them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured plates, amber optic band, amber hex chest core and folded truck wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal armor, crimson optic slits, wing blades and right-forearm cannon stay identical.\n<Subject 3> (appears in [Shot 1]): partially_preserved - crystal facets and swirling blue-white light are kept; the reference capsule is absent.\n<Picture 4> ([Shot 1] location): partially_preserved - same near-darkness, drifting particles and blue bioluminescence; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, in near-black deep water with drifting particles, faint blue bioluminescence and soft volumetric light shafts. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Wide shot underwater, the camera sinking slowly alongside them. Through drifting particles, the two colossal robots descend in near darkness, their struggle slowed to a heavy drift: <Subject 1> on the left, one arm reaching downward, and <Subject 2> on the right, wing blades trailing bubbles, still clutching its shoulder. Between them <Subject 3> sinks too, pulsing blue-white, the only bright thing in the abyss, lighting the undersides of their armor. The amber optic band flickers and the crimson optic slits fade as they fall. The rocky seabed rises out of the dark, speckled with faint blue bioluminescence. The shot ends as their feet settle into the sediment, raising slow clouds of silt.\n\noverall_soundscape:\nMuffled deep-water pressure, slow bubbles, groaning metal settling, a fading crystal hum and the soft thud of silt.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_12",
+  "scene": "P01",
+  "act": 0,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "海底近景：磐石半埋在泥沙里，把星核握进掌心守住，光芒与琥珀光带一起暗下。磐石画外音。",
+  "dialogue": [
+   {
+    "who": "PANSHI(VO)",
+    "text": "我选择沉睡，守着它。直到今天。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is the star core in <Picture 2>, a faceted crystal sphere with swirling blue-white light inside, shown bare without its capsule.\n<Picture 3> is the location reference for [Shot 1], the deep ocean floor in near darkness, with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] Half-buried on the seabed of <Picture 3>, <Subject 1> closes its hand around <Subject 2> as both their lights fade, while its own voice narrates off-screen.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured plates, amber optic band, amber hex chest core and folded truck wheels stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - crystal facets and swirling blue-white light are kept; the reference capsule is absent.\n<Picture 3> ([Shot 1] location): partially_preserved - same near-darkness, drifting particles and blue bioluminescence; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, in near-black deep water with drifting particles, faint blue bioluminescence and soft volumetric light shafts. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Medium close-up underwater, slow push-in on the head and chest of <Subject 1>, lying half-buried in silt in near darkness, drifting particles passing the lens. Its huge armored hand rests on the seabed in the foreground, and <Subject 2> glows weakly inside its loosely curled fingers, blue-white light rippling over the stone-textured yellow plates and the flat faceplate. <Subject 1> slowly closes its fingers around the crystal to shield it; the light softens to a faint glow and its amber optic band fades to a dim ember. Over the image, the voice of <Subject 1> (S1) is heard off-screen as a slow, weary voiceover, <d>[Chinese] 我选择沉睡，守着它。直到今天。</d> No one on screen speaks; the robot has no mouth and its band does not pulse. The shot ends with a sliver of blue light between its fingers.\n\noverall_soundscape:\nDeep muffled water, a slow metallic creak of fingers closing, the crystal's hum fading lower, and a long low resonance.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_p01_13",
+  "scene": "P01",
+  "act": 0,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "延时：沉积物层层覆盖两台机体，岩层叠压，星核光点消失在岩层深处。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is the 15-meter war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin crimson glowing optic slits and no mouth, swept-back wing blades on its back and a crimson energy cannon built into its right forearm.\n<Subject 3> is the star core in <Picture 3>, a faceted crystal sphere with swirling blue-white light inside, shown bare without its capsule.\n<Picture 4> is the location reference for [Shot 1], the deep ocean floor in near darkness, with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] A time-lapse on <Picture 4>: sediment and rock strata bury <Subject 1>, <Subject 2> and the last glow of <Subject 3> over countless ages.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - silhouette, yellow-graphite plates and dark optic band stay identical until buried.\n<Subject 2> (appears in [Shot 1]): fully_preserved - angular gunmetal silhouette and wing blades stay identical until buried.\n<Subject 3> (appears in [Shot 1]): partially_preserved - crystal facets and swirling blue-white light are kept; the reference capsule is absent. Only a tiny point of its light remains.\n<Picture 4> ([Shot 1] location): partially_preserved - same near-darkness, drifting particles and blue bioluminescence; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, in near-black deep water with drifting particles, faint blue bioluminescence and soft volumetric light shafts. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Wide locked-off time-lapse that becomes a slow vertical descent into the ground. On the dark seabed, <Subject 1> lies at frame left and <Subject 2> at frame right, lifeless, their lights out; a single blue-white pinpoint of <Subject 3> glows between them. Silt rains down faster and faster, streaking like snow, burying their armor until only a faceplate edge and a wing-blade tip remain, then those vanish under smooth seabed. The camera sinks into a cross-section of rock as strata stack and compress above the buried shapes, coloured bands sliding upward past the lens. Deep within, the tiny blue-white point flickers once more and fades, ending in black.\n\noverall_soundscape:\nA low, slow geological rumble, the accelerating hiss of falling silt, grinding rock pressure, and the last faint crystal tone dying into silence.\n\nnon_diegetic_music: N/A"
+ }
+]

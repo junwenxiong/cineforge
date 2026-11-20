@@ -1,0 +1,77 @@
+[
+ {
+  "id": "ec_pilot_01",
+  "scene": "PILOT",
+  "act": 0,
+  "beat": 1,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/loc_skybridge.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "试拍 = ec_s01_04：回放质感 + 画面里的人不开口、画外有人说话（测 memory_style 是否仍锐利、沈砚是否误对口型）",
+  "dialogue": [
+   {
+    "who": "CHENG",
+    "text": "是你……"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, <Subject 1>'s silent, expressionless face fills the view while the unseen viewer speaks off-screen.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, dark eyes, ponytail, silver implant ring and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. White LED light from below sharpens her cheekbones; the city glitters behind her through the glass.\n[Shot 1] Close-up, first-person view at eye level, static. Within the first second, the unseen man whose eyes we are looking through (S1) says off-screen in a hoarse, stunned older male voice, <d>[Chinese] 是你……</d> <Subject 1>'s face fills the center of the frame; her lips stay pressed shut and she does not speak. Her dark eyes are flat and unblinking, every eyelash and skin pore crisp. The shot ends with her chin lifting very slightly.\n\noverall_soundscape:\nA hoarse breath behind the words, the hum of the LED strips, wind against the glass, a faint electronic flicker at the frame edges.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "ec_pilot_02",
+  "scene": "PILOT",
+  "act": 0,
+  "beat": 2,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/echo/refs/gu_face.png",
+   "assets/echo/refs/gu.png",
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/loc_gulab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "试拍 = S12 第 10 镜：双人同框、只有右侧的顾言之开口（测两张脸的身份保持、说话人分配、暖光下的锐度）",
+  "dialogue": [
+   {
+    "who": "GU",
+    "text": "小砚，忘了今晚。你还是最好的取证师。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>, with silver-white swept-back hair, thin rimless rectangular glasses, a gentle composed smile, a cream-white linen mandarin-collar suit and a black lacquered cane with a silver handle.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt; she is strapped into a black leather readout chair with a gold halo-ring headset on her head.\n<Picture 5> is the location reference for [Shot 1], a private research lab at night with walnut wood panels, brushed brass fittings, a black leather readout chair and floor-to-ceiling windows over a sharp city skyline.\n\nsummary:\n[reference generation] <Subject 1> leans in close over <Subject 2>, who is strapped into the readout chair, and gently tells her to forget tonight.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver hair, rimless glasses, cream linen suit and black cane stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same walnut, brass and window view; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm clear practical lamps from the right, the gold headset glowing softly on her temples, the city skyline sharp through the windows.\n[Shot 1] Two-shot, medium, eye level, static. Within the first second, <Subject 1> (S1) says in a soft, low, almost tender voice, <d>[Chinese] 小砚，忘了今晚。你还是最好的取证师。</d> <Subject 2> sits strapped into the black leather readout chair on the left, wrists held by leather straps, the gold halo-ring headset on her head, staring up at him. <Subject 1> stands on the right, leaning down toward her, one hand resting on the chair arm, his black lacquered cane propped against the chair. Her lips stay pressed shut; her jaw tightens and her eyes harden. The shot ends with him straightening slowly, still smiling, both faces sharp.\n\noverall_soundscape:\nHis soft voice close in a quiet wood-panelled room, the creak of leather straps, the faint electrical whine of the headset warming up, the city far below the windows.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "ec_pilot_03",
+  "scene": "PILOT",
+  "act": 0,
+  "beat": 3,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/echo/refs/shen_face.png",
+   "assets/echo/refs/shen.png",
+   "assets/echo/refs/loc_apartment.png"
+  ],
+  "keyframe": "assets/echo/kf/ec_pilot_03.png",
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "试拍 = S09 第 5 镜：LTX 单人近景中文对白「可我的记忆里，窗外一直在下雨。」（测中文口型、开口时间、皮肤锐度）",
+  "dialogue": [
+   {
+    "who": "SHEN",
+    "text": "可我的记忆里，窗外一直在下雨。"
+   }
+  ],
+  "ltx_prompt": "A photoreal live-action thriller shot in a minimalist high-rise apartment at night, a warm brass floor lamp lighting her face from frame left, a floor-to-ceiling window behind her showing sharp city towers under a dry, clear starry sky. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"可我的记忆里，窗外一直在下雨。\" Her lips move in sync with each syllable, her voice quiet and slow with dawning horror. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, in a charcoal trench coat over a white high-collar shirt. After the line she turns her head slowly to look at the dry window glass behind her. The shot ends with her staring at the clear sky, her reflection faint on the glass. Deep focus with crisp skin pores, individual hair strands and fabric weave; the city behind her is equally sharp; no haze, no bokeh, no rain. Audio: her quiet, slow female voice speaking the Mandarin line, the low hum of the city through the glass, a clock ticking in the room. No music, no on-screen text."
+ }
+]

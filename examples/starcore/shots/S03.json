@@ -1,0 +1,191 @@
+[
+ {
+  "id": "sc_s03_01",
+  "scene": "S03",
+  "act": 1,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "航拍建立镜：风浪中的深蓝七号海上采矿平台，钻塔灯光刺破夜雨，远处画左有城市微光。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a huge offshore deep-sea mining platform at night in rough sea, with a tall drill tower, floodlights, a helipad, spray and wind.\n\nsummary:\n[reference generation] An aerial establishing view of the offshore mining platform of <Picture 1>, battered by a storm at night, its drill tower lights cutting through the rain.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same platform structure, drill tower, floodlights and storm weather; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a stormy night at sea with harsh white floodlights, slanting rain, spray and cold blue-black water. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Extreme wide aerial shot, the camera circling slowly from left to right at a distance, low over the waves. The huge offshore mining platform of <Picture 1> rises from a black, heaving sea on massive steel legs, waves smashing against them and exploding into white spray. On its deck stand cranes, a helipad and a tall lattice drill tower crowned with blinking red lights. Banks of white floodlights blaze through the slanting rain, their beams thick with spray and haze. Tiny figures in orange coveralls move along the walkways, giving scale to the structure. Far away on the left horizon, the faint glow of a coastal city sits under the clouds. The shot ends with a wave breaking high over the lower deck while the platform's lights hold steady.\n\noverall_soundscape:\nHowling wind, heavy rain, thundering waves against the steel legs, the deep machinery hum of the platform and a distant foghorn.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s03_02",
+  "scene": "S03",
+  "act": 1,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "低机位上摇：钻杆旋转着深入月池，钻塔探照灯刺破雨幕。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a huge offshore deep-sea mining platform at night in rough sea, with a tall drill tower, floodlights, a helipad, spray and wind.\n\nsummary:\n[reference generation] From the drill floor of <Picture 1>, the floodlit drill tower looms overhead as the spinning drill string descends into the sea.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same platform structure, drill tower, floodlights and storm weather; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a stormy night at sea with harsh white floodlights, slanting rain, spray and cold blue-black water. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Wide shot, extreme low angle from the drill floor of <Picture 1>, slow tilt up. A massive spinning steel drill pipe runs down through the center of the frame into the open moon pool below, seawater surging in the opening and spray boiling up around the pipe. The tilt climbs the tall lattice drill tower, rain streaming down its girders, floodlights mounted along it blasting harsh white beams that pierce the darkness and flare across the lens. Two workers in orange coveralls and hard hats, seen from behind, brace against the wind on a catwalk halfway up, tiny against the structure. The shot ends at the top of the tower, its red warning beacon blinking against the storm clouds.\n\noverall_soundscape:\nThe grinding rotation of the drill pipe, roaring generators, wind whistling through the girders, rain on steel and water surging below.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s03_03",
+  "scene": "S03",
+  "act": 1,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "水下：钻杆穿过黑暗海水钻入海床，扬起泥沙。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the deep ocean floor in near darkness, with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] Underwater above <Picture 1>, the drill string descends through dark water and bores into the rocky seabed.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same near-darkness, drifting particles and blue bioluminescence; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, in near-black deep water with drifting particles, faint blue bioluminescence and soft volumetric light shafts. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Wide shot underwater, the camera descending slowly beside a long steel drill pipe that stretches up out of frame into darkness, a faint wavering trace of surface light far above. Drifting particles float through the beam of a small work light clamped to the pipe. The pipe spins steadily, plunging toward the rocky seabed of <Picture 1>, where faint specks of blue bioluminescence dot the rocks and a few pale fish dart away from the vibration. At the bottom, the drill head grinds into the seabed and throws up a billowing cloud of grey silt that spreads outward in slow motion, swallowing the light. The camera settles at seabed level, ending with the pipe spinning inside the silt cloud, the borehole hidden beneath it.\n\noverall_soundscape:\nMuffled deep-water pressure, the low grinding vibration of the drill carried through the water, rumbling rock and slow bubbles.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s03_04",
+  "scene": "S03",
+  "act": 1,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "钻孔剖面特写：钻头撞上发光的晶体岩层，蓝白光从钻孔涌出。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the star core material in <Picture 1>: faceted crystal with swirling blue-white light inside; here it appears as a buried layer of the same glowing crystal, with no capsule.\n<Picture 2> is the location reference for [Shot 1], the deep ocean floor in near darkness, with drifting particles, faint blue bioluminescence and a rocky seabed.\n\nsummary:\n[reference generation] Deep in the seabed of <Picture 2>, the drill bit breaks into a buried layer of glowing crystal like <Subject 1>, and blue-white light floods out of the borehole.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): partially_preserved - faceted crystal texture and swirling blue-white light are kept; it is a rock layer, not the sphere in the capsule.\n<Picture 2> ([Shot 1] location): partially_preserved - same near-darkness, drifting particles and blue bioluminescence; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, in near-black deep water with drifting particles, faint blue bioluminescence and soft volumetric light shafts. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Close-up on a cross-section of the borehole, camera locked off. The carbide drill bit grinds down through compacted grey rock, fragments and silt swirling around it. Its teeth break through into a hidden layer below: faceted crystal with the same swirling blue-white light as <Subject 1>, buried between ancient rock strata. On contact a crack of blue-white light splits the rock; the bit shudders and stalls. Then brilliant light surges up the borehole and around the pipe, flooding the water with a cold glow, the swirling patterns inside the crystal visibly pulsing. Sediment particles sparkle in the beam. The shot ends with a column of blue-white light pouring upward out of the seabed, the drill pipe silhouetted inside it.\n\noverall_soundscape:\nA screeching grind of the bit, a sharp crystalline crack, the drill stalling with a groan, and a deep rising resonant hum that fills the water.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s03_05",
+  "scene": "S03",
+  "act": 1,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "平台剧烈震动，穿橙色工装的工人（远景背侧，不露脸）抓住栏杆，红色警报灯旋转。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a huge offshore deep-sea mining platform at night in rough sea, with a tall drill tower, floodlights, a helipad, spray and wind.\n\nsummary:\n[reference generation] The deck of <Picture 1> shakes violently as workers in orange coveralls grab the railings under spinning red alarm lights.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same platform structure, drill tower, floodlights and storm weather; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a stormy night at sea with harsh white floodlights, slanting rain, spray and cold blue-black water. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Wide shot on the main deck of <Picture 1>, handheld camera shaking hard. Rain lashes the floodlit deck, and a sudden violent tremor rocks the whole platform: equipment slides, a stack of pipes rolls, and the drill tower sways and groans above. Four workers in orange coveralls, hard hats and safety glasses, seen at a distance from behind and side-on with no faces visible, stumble and lunge for the steel railings, gripping on as the deck tilts. Red rotating alarm beacons flare to life along the walkway, sweeping red light across the wet steel and the falling rain. A burst of white water surges up through the deck grating. The shot ends with the workers clinging on, red light pulsing over them, the tremor still running through the structure.\n\noverall_soundscape:\nA deep shuddering rumble, groaning steel, rolling pipes clanging, wailing alarm sirens, indistinct shouts lost in the wind, rain and crashing waves.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s03_06",
+  "scene": "S03",
+  "act": 1,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "插入：旋转的红色警报灯下，工人戴手套的手死死抓住震动的栏杆，螺栓跳动。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a huge offshore deep-sea mining platform at night in rough sea, with a tall drill tower, floodlights, a helipad, spray and wind.\n\nsummary:\n[reference generation] An insert on a railing of <Picture 1>: a gloved hand grips the shaking rail beneath a spinning red alarm beacon.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same platform structure, drill tower, floodlights and storm weather; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a stormy night at sea with harsh white floodlights, slanting rain, spray and cold blue-black water. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Insert shot, close on a section of wet steel railing on <Picture 1>, the camera shaking with the tremor. A red rotating alarm beacon on a post at the top of frame spins, its beam sweeping across the scene every second and turning the rain red. A worker's gloved hand, in the sleeve of an orange coverall, slams onto the rail and grips it hard, the knuckles straining through the glove. The rail vibrates violently; rivets and bolts jitter, and water droplets bounce off the steel and spray away in sheets. Another tremor hits, the bolts rattle louder and the hand tightens its grip. The shot ends with the beacon washing red across the hand as the shaking slowly subsides, rain still streaming down the rail.\n\noverall_soundscape:\nA wailing alarm siren close by, rattling bolts, a deep structural rumble, rain spattering on steel and the hard breathing of the worker.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s03_07",
+  "scene": "S03",
+  "act": 1,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/core_capsule.png",
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "低机位：平台吊臂从海中吊起透明收容舱，舱内悬浮着发光的星核。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the star core in <Picture 1>, a fist-sized faceted crystal sphere with swirling blue-white light inside, floating in a transparent cylindrical containment capsule with steel end caps.\n<Picture 2> is the location reference for [Shot 1], a huge offshore deep-sea mining platform at night in rough sea, with a tall drill tower, floodlights, a helipad, spray and wind.\n\nsummary:\n[reference generation] A platform crane on <Picture 2> hoists the transparent containment capsule holding <Subject 1> out of the stormy sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - faceted crystal, swirling blue-white light and the capsule with steel end caps stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same platform structure, drill tower, floodlights and storm weather; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a stormy night at sea with harsh white floodlights, slanting rain, spray and cold blue-black water. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Wide shot, low angle from the edge of the deck, looking out over the railing toward the sea at frame right. A heavy steel crane boom swings out over the black water, its cable taut and dripping. The cable rises steadily, and out of the churning waves comes <Subject 1>: the transparent containment capsule, about half a meter tall with steel end caps, swinging on its lifting frame, the fist-sized crystal floating at its center and shining blue-white through the water streaming off it. Its light turns the spray around it pale blue and catches the falling rain. Floodlights swing to track it. Workers in orange coveralls on the deck below, seen from behind, step back and stare up. The shot ends with the glowing capsule hanging high against the storm clouds.\n\noverall_soundscape:\nA straining winch, a creaking crane cable, water pouring off the capsule, wind, heavy rain, distant alarms and a low crystal hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s03_08",
+  "scene": "S03",
+  "act": 1,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/core_capsule.png",
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "特写：收容舱摆到镜头前停住，海水从舱壁淌下，星核在里面旋转发光。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the star core in <Picture 1>, a fist-sized faceted crystal sphere with swirling blue-white light inside, floating in a transparent cylindrical containment capsule with steel end caps.\n<Picture 2> is the location reference for [Shot 1], a huge offshore deep-sea mining platform at night in rough sea, with a tall drill tower, floodlights, a helipad, spray and wind.\n\nsummary:\n[reference generation] Close on <Subject 1> as the capsule swings in front of the lens with seawater streaming down its walls.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - faceted crystal, swirling blue-white light and the capsule with steel end caps stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same platform structure, drill tower, floodlights and storm weather; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a stormy night at sea with harsh white floodlights, slanting rain, spray and cold blue-black water. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Close-up, the camera at deck level on <Picture 2> as the capsule swings in on the crane hook and slows to a stop in front of the lens. <Subject 1> fills the center of frame: the transparent cylinder with its steel end caps, seawater streaming down the curved walls in sheets, raindrops hitting and running down. Inside, the fist-sized faceted crystal floats perfectly still at the center, its swirling blue-white light moving slowly within, casting rippling caustic patterns onto the wet steel deck and through the rain. Floodlight glare blooms on the glass. The capsule turns gently on its cable, showing its facets one by one. The shot ends with the capsule hanging motionless, the last stream of water dripping from its lower cap.\n\noverall_soundscape:\nWater streaming and dripping, the cable creaking, rain tapping on glass and steel, wind, and a steady low resonant hum from the crystal.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s03_09",
+  "scene": "S03",
+  "act": 1,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/core_capsule.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "指挥中心：秦岳将军背手站立，注视全息屏上旋转的星核影像。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face, deep-set eyes and a dark navy dress uniform with plain silver collar insignia and no flags or emblems.\n<Subject 2> is the star core in <Picture 2>, a fist-sized faceted crystal sphere inside a transparent cylindrical capsule with steel end caps; here it appears only as a large translucent blue holographic projection.\n<Picture 3> is the location reference for [Shot 1], a dark military command center with large holographic displays of abstract maps, cold blue light and officers' consoles, with no readable text.\n\nsummary:\n[reference generation] In <Picture 3>, <Subject 1> stands before a large holographic projection of <Subject 2>, studying it in silence.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, grey crew cut, deep-set eyes and plain navy uniform stay identical; no flags or emblems.\n<Subject 2> (appears in [Shot 1]): partially_preserved - the faceted sphere and capsule silhouette are kept, rendered as a translucent blue-white hologram.\n<Picture 3> ([Shot 1] location): partially_preserved - same dark room, blue hologram light and console layout; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, in a dark command room lit by cold blue hologram light, with deep shadows and subtle haze. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Medium shot, eye level, slow push-in from behind the officers' consoles. The dark command center is lit only by cold blue light. <Subject 1> stands at frame left, hands clasped behind his back, his dark navy dress uniform crisp, facing a large holographic display at frame right. Floating in the hologram is <Subject 2>, magnified, a slowly rotating translucent blue-white projection of the capsule and faceted crystal, with abstract scan lines and data shapes orbiting it and no readable text. Its light flickers across his stern, weathered face. Officers at consoles in the soft-focus background glance up at him. He narrows his deep-set eyes, studying it without moving. The shot ends with the hologram light pulsing once across his still face.\n\noverall_soundscape:\nThe low electronic hum of the hologram, soft console beeps, muffled radio chatter and the air-conditioning drone of a sealed room.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s03_10",
+  "scene": "S03",
+  "act": 1,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin_face.png",
+   "assets/starcore/refs/core_capsule.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "秦岳下令：立刻封锁消息，今晚十二点前转运到海防基地（19 字，用 8 秒）。",
+  "dialogue": [
+   {
+    "who": "QIN",
+    "text": "立刻封锁消息。今晚十二点前，转运到海防基地。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face, deep-set eyes and a dark navy dress uniform with plain silver collar insignia and no flags or emblems.\n<Subject 2> is the star core in <Picture 2>, a fist-sized faceted crystal sphere inside a transparent cylindrical capsule with steel end caps; here it appears only as a large translucent blue holographic projection.\n<Picture 3> is the location reference for [Shot 1], a dark military command center with large holographic displays of abstract maps, cold blue light and officers' consoles, with no readable text.\n\nsummary:\n[reference generation] Lit by the hologram of <Subject 2> in <Picture 3>, <Subject 1> turns to his officers and gives a curt order.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, grey crew cut, deep-set eyes and plain navy uniform stay identical; no flags or emblems.\n<Subject 2> (appears in [Shot 1]): partially_preserved - the faceted sphere and capsule silhouette are kept, rendered as a translucent blue-white hologram.\n<Picture 3> ([Shot 1] location): partially_preserved - same dark room, blue hologram light and console layout; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, in a dark command room lit by cold blue hologram light, with deep shadows and subtle haze. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Medium close-up, eye level, slightly low angle, static. <Subject 1> stands at frame left, facing three-quarters toward frame right, the translucent blue-white hologram of <Subject 2> glowing in soft focus beyond his shoulder, its slow rotation reflected in his deep-set eyes. His grey crew cut and the plain silver collar insignia on his navy uniform catch the cold light. He holds his gaze on the hologram a moment longer, then turns his head slightly toward the officers off-screen left, jaw tight. <Subject 1> (S1) says in a low, restrained voice, <d>[Chinese] 立刻封锁消息。今晚十二点前，转运到海防基地。</d> He does not raise his voice; he gives one small nod. The shot ends with him turning back to the hologram, his face set like stone.\n\noverall_soundscape:\nThe hologram's low hum, a pause in the console chatter, the click of an officer's headset, and the faint drone of the command room.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s03_11",
+  "scene": "S03",
+  "act": 1,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/core_capsule.png",
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "特写：甲板上固定好的收容舱里，星核脉动了一下，光芒偏向画左远处的陆地。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the star core in <Picture 1>, a fist-sized faceted crystal sphere with swirling blue-white light inside, floating in a transparent cylindrical containment capsule with steel end caps.\n<Picture 2> is the location reference for [Shot 1], a huge offshore deep-sea mining platform at night in rough sea, with a tall drill tower, floodlights, a helipad, spray and wind.\n\nsummary:\n[reference generation] Back on the deck of <Picture 2>, <Subject 1> pulses once inside its capsule and its light leans toward the distant land.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - faceted crystal, swirling blue-white light and the capsule with steel end caps stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same platform structure, drill tower, floodlights and storm weather; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a stormy night at sea with harsh white floodlights, slanting rain, spray and cold blue-black water. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Close-up, the capsule now secured upright in a steel cradle on the rain-swept deck, the camera static at its level, the dark sea and storm behind. <Subject 1> glows steadily inside the transparent cylinder, the fist-sized faceted crystal floating at its center, raindrops running down the glass. Far in the background at frame left, the faint glow of the coastal city sits on the horizon. Suddenly the crystal pulses once, a deep throb of blue-white light that flares outward and makes every raindrop sparkle. As the pulse fades, the swirling light inside gathers and streams toward the left side of the crystal, as if pulled, all its brightness leaning toward the distant city lights. The shot ends with the crystal glowing lopsided, its light pointing toward land, while the rain keeps falling.\n\noverall_soundscape:\nRain hammering on steel, wind, waves far below, and one deep resonant pulse from the crystal that hums and slowly settles.\n\nnon_diegetic_music: N/A"
+ }
+]

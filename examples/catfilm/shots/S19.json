@@ -1,0 +1,375 @@
+[
+ {
+  "id": "cf_s19_01",
+  "scene": "S19",
+  "act": 3,
+  "beat": 1,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/zheng.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/hound.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "核心室全景：金色光丝流动的玻璃光柱、地面圆形感应盘；郑锋把装着多多的航空箱放到地上，一只巡犬看住许棠。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the security chief in <Picture 1>: a 40-year-old East Asian man security chief, broad-shouldered, black buzz cut, square jaw with a faint small scar on the chin, a black tactical security jacket with plain grey shoulder panels and no logos, a slim earpiece, holding a rugged tracking tablet.\n<Subject 2> is the woman engineer in <Picture 2>: a 31-year-old East Asian woman neural-interface engineer, calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers, white sneakers, a small silver ring on her right index finger.\n<Subject 3> is the security robot dog in <Picture 3>: a sleek quadruped security robot dog the size of a large German shepherd, matte white shell panels with dark graphite joints, a smooth head with a single horizontal glowing red sensor strip and no mouth or eyes, a short antenna on its back, no logos.\n<Subject 4> is the pet carrier in <Picture 4>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 5> is the location reference for [Shot 1], a circular control chamber with a tall glass pillar of flowing golden light filaments, a round circuit-etched glass pressure plate in the dark grey floor and curved panoramic windows.\n\nsummary:\n[reference generation] In the core chamber <Subject 1> sets the carrier down by the floor plate while <Subject 3> guards <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - buzz cut, square jaw with the small chin scar, black tactical jacket with grey shoulder panels and earpiece stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, silver round-rimmed glasses, shoulder-length black hair and light grey knit sweater stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - matte white shell, graphite joints, smooth head with the red sensor strip and short antenna stay identical.\n<Subject 4> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same golden pillar, circuit-etched glass plate, dark floor and panoramic windows; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sun through the panoramic windows plus warm golden light from the pillar, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. The cat inside the carrier is a real four-legged cat lying in a natural crouch.\n[Shot 1] Wide shot at eye level, static, deep focus from the floor plate to the windows. The golden pillar rises in the center above the round glass plate in the floor. <Subject 1> sets <Subject 4> down on the polished floor at the right edge of the plate; inside it crouches the plump mostly white calico cat, her collar ring glowing faint cyan. On the left <Subject 2> stands stiffly with <Subject 3> planted beside her, its red sensor strip fixed on her. The shot ends with the carrier on the floor and everyone still.\n\noverall_soundscape:\nA low warm hum from the pillar, the carrier's plastic base touching the floor, servo ticks from the robot dog.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s19_02",
+  "scene": "S19",
+  "act": 3,
+  "beat": 2,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆承宇走进核心室（近景）：开始吧。",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "开始吧。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s19_02.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, charcoal mandarin-collar suit jacket over a black high-neck shirt, slim graphite smartwatch on his left wrist). He has just stepped into the chamber, standing tall with relaxed hands and his composed faint smile. Behind him, the circular control chamber of Reference 3: the tall glass pillar of flowing golden light filaments and curved panoramic windows over the city; warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine wool weave of the jacket; no bokeh, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar, medium close-up at eye level, locked-off camera with a very slow push-in. Within the first second he says quietly, like a man opening a routine meeting, in Mandarin Chinese, \"开始吧。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a circular control chamber with a golden light pillar and panoramic windows. After the line he lifts his left wrist and looks at his smartwatch. Deep focus with crisp skin pores, hair strands and wool detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, the low hum of the pillar, faint servo ticks. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s19_03",
+  "scene": "S19",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "吊坠大特写（隔着航空箱）：画外一声手表提示音，光环由青骤然转红。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the translator collar in <Picture 1> worn by <Subject 2>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 2> is the real calico cat in <Picture 2>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a circular control chamber with a tall glass pillar of flowing golden light filaments, a round circuit-etched glass pressure plate in the dark grey floor and curved panoramic windows.\n\nsummary:\n[reference generation] An off-screen watch tone snaps the ring of <Subject 1> from cyan to red.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same golden pillar, circuit-etched glass plate, dark floor and panoramic windows; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sun through the panoramic windows plus warm golden light from the pillar, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Extreme close-up of the pendant of <Subject 1> in the white chest fur of <Subject 2>, seen through the clear wall of <Subject 3>, static macro framing, every strand sharp. A sharp electronic tone sounds from off-screen and the ring snaps from cyan to a hard red. The fur on the chest of <Subject 2> bristles. The shot ends on the glaring red ring.\n\noverall_soundscape:\nA sharp watch tone off-screen, a harsh electronic buzz from the collar, the cat's sharp intake of breath.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s19_04",
+  "scene": "S19",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/carrier.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "多多僵硬地走出航空箱，爪子刮擦地面，四条腿违背意愿地往前迈（仍是四足自然步态）。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 3> is the pet carrier in <Picture 3>: a transparent hard-shell pet carrier of clear polycarbonate with a white base, a white handle and a front grille door.\n<Picture 4> is the location reference for [Shot 1], a circular control chamber with a tall glass pillar of flowing golden light filaments, a round circuit-etched glass pressure plate in the dark grey floor and curved panoramic windows.\n\nsummary:\n[reference generation] Under the red collar <Subject 1> is forced out of the carrier with stiff, unwilling steps.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - clear polycarbonate shell, white base, white handle and grille door stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same golden pillar, circuit-etched glass plate, dark floor and panoramic windows; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sun through the panoramic windows plus warm golden light from the pillar, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Medium shot at floor level, static, the open grille door of <Subject 3> on the right, everything sharp. <Subject 1> walks out of the carrier on all four legs with stiff, jerky steps, claws scraping on the polished floor, ears pinned back and eyes wide, her body leaning backward against each step while the red ring of <Subject 2> pulses. She stays a natural four-legged cat and never rises. The shot ends with her stepping onto the edge of the glass plate.\n\noverall_soundscape:\nClaws scraping on the hard floor, a low distressed growl, an electronic pulse synced to each step.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s19_05",
+  "scene": "S19",
+  "act": 3,
+  "beat": 4,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/xu_face.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "许棠近景：住手！你在逼她！",
+  "dialogue": [
+   {
+    "who": "XU",
+    "text": "住手！你在逼她！"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s19_05.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Close-up, eye level: the 31-year-old East Asian woman engineer of References 1 and 2 (exact same face: calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, light grey knit sweater with sleeves pushed up over a white T-shirt). She strains forward, eyes wide with anger and fear, looking down to the right. Behind her, the circular control chamber of Reference 3: the tall glass pillar of flowing golden light filaments and curved panoramic windows over the city; warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the knit texture of the sweater; no bokeh, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar, close-up at eye level, locked-off camera with a very slow push-in. Within the first second she says sharply, her voice cracking with anger, in Mandarin Chinese, \"住手！你在逼她！\" Her lips move in sync with each syllable. She is a 31-year-old East Asian woman with shoulder-length straight black hair tucked behind her ears and thin silver round-rimmed glasses, in a light grey knit sweater over a white T-shirt, standing in a circular control chamber with a golden light pillar and panoramic windows. After the line she takes one step forward and stops short, fists clenched. Deep focus with crisp skin pores, hair strands and knit detail; no haze, no bokeh. Audio: her warm, soft-spoken, steady alto voice speaking the Mandarin line, the pillar hum, a servo whir close by. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s19_06",
+  "scene": "S19",
+  "act": 3,
+  "beat": 5,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆承宇近景：我只是帮她走过去。",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "我只是帮她走过去。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s19_06.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, charcoal mandarin-collar suit jacket over a black high-neck shirt, slim graphite smartwatch on his left wrist). He looks down to his right at something on the floor, mild and patient, his left wrist raised with the smartwatch. Behind him, the circular control chamber of Reference 3: the tall glass pillar of flowing golden light filaments and curved panoramic windows over the city; warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine wool weave of the jacket; no bokeh, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar, medium close-up at eye level, locked-off camera with a very slow push-in. Within the first second he says gently, almost kindly, in Mandarin Chinese, \"我只是帮她走过去。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a circular control chamber with a golden light pillar and panoramic windows. After the line he taps the watch face once with one finger. Deep focus with crisp skin pores, hair strands and wool detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, the pillar hum, a soft electronic pulse. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s19_07",
+  "scene": "S19",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "高角度：多多停在感应盘中央，浑身僵硬，耳朵后贴；感应盘依旧暗着。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Picture 3> is the location reference for [Shot 1], a circular control chamber with a tall glass pillar of flowing golden light filaments, a round circuit-etched glass pressure plate in the dark grey floor and curved panoramic windows.\n\nsummary:\n[reference generation] <Subject 1> stands rigid in the center of the dark floor plate.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same golden pillar, circuit-etched glass plate, dark floor and panoramic windows; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sun through the panoramic windows plus warm golden light from the pillar, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] High-angle wide shot looking down on the round glass plate, static, deep focus. <Subject 1> stands rigid on all fours in the exact center of the plate, ears flat back and tail low, the red ring of <Subject 2> glowing at her throat, while the circuit lines in the glass stay completely dark around her. She sinks slightly into a tense crouch. The shot ends on the small cat on the dark plate.\n\noverall_soundscape:\nThe pillar hum, the cat's fast breathing, a thin whine from the collar.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s19_08",
+  "scene": "S19",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/zheng_face.png",
+   "assets/catfilm/refs/zheng.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "郑锋看着平板，低声：还是没有呼噜。说完抬眼看向感应盘。",
+  "dialogue": [
+   {
+    "who": "ZHENG",
+    "text": "还是没有呼噜。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the security chief in <Picture 1> and <Picture 2>: a 40-year-old East Asian man security chief, broad-shouldered, black buzz cut, square jaw with a faint small scar on the chin, a black tactical security jacket with plain grey shoulder panels and no logos, a slim earpiece, holding a rugged tracking tablet.\n<Picture 3> is the location reference for [Shot 1], a circular control chamber with a tall glass pillar of flowing golden light filaments, a round circuit-etched glass pressure plate in the dark grey floor and curved panoramic windows.\n\nsummary:\n[reference generation] <Subject 1> reads his tablet and reports there is still no purr.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - buzz cut, square jaw with the small chin scar, black tactical jacket with grey shoulder panels and earpiece stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same golden pillar, circuit-etched glass plate, dark floor and panoramic windows; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sun through the panoramic windows plus warm golden light from the pillar, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Medium shot of <Subject 1> at eye level, static, the golden pillar sharp behind him, the rugged tracking tablet in his hands showing only a flat abstract line. Within the first second <Subject 1> (S1) says in a gruff, clipped low voice, his lips moving clearly, <d>[Chinese] 还是没有呼噜。</d> After the line he glances up from the tablet toward the plate, his jaw tightening. The shot ends on his uneasy look.\n\noverall_soundscape:\nHis gruff low voice, the pillar hum, a soft tablet tick.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s19_09",
+  "scene": "S19",
+  "act": 3,
+  "beat": 7,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆承宇近景，平静：那就让她听听，她爱的人说话。",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "那就让她听听，她爱的人说话。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s19_09.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, charcoal mandarin-collar suit jacket over a black high-neck shirt, slim graphite smartwatch on his left wrist). He looks down at the floor plate below frame, perfectly calm, one hand resting on his smartwatch. Behind him, the circular control chamber of Reference 3: the tall glass pillar of flowing golden light filaments and curved panoramic windows over the city; warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine wool weave of the jacket; no bokeh, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar, medium close-up at eye level, locked-off camera with a very slow push-in. Within the first second he says evenly, in a low reasonable tone, in Mandarin Chinese, \"那就让她听听，她爱的人说话。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a circular control chamber with a golden light pillar and panoramic windows. After the line he raises his left wrist toward his mouth. Deep focus with crisp skin pores, hair strands and wool detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, the pillar hum. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s19_10",
+  "scene": "S19",
+  "act": 3,
+  "beat": 8,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "前景：感应盘上的多多，光环转成琥珀色，吊坠用多多的声音说假话；背景：陆承宇对着手表无声口述，嘴型与每个字同步。",
+  "dialogue": [
+   {
+    "who": "DUODUO_FAKE",
+    "text": "许棠，放手吧。我累了。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Subject 3> is the tech CEO in <Picture 3>: a 48-year-old East Asian man tech CEO, lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, composed faint smile.\n<Picture 4> is the location reference for [Shot 1], a circular control chamber with a tall glass pillar of flowing golden light filaments, a round circuit-etched glass pressure plate in the dark grey floor and curved panoramic windows.\n\nsummary:\n[reference generation] The hijacked collar of <Subject 1> speaks a fake line in her voice while <Subject 3> dictates it into his watch in the background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - lean face, swept-back greying hair, rimless glasses, charcoal mandarin-collar jacket and graphite smartwatch stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same golden pillar, circuit-etched glass plate, dark floor and panoramic windows; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sun through the panoramic windows plus warm golden light from the pillar, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Medium shot at cat height, static, deep focus: <Subject 1> on the plate in the foreground on the left, <Subject 3> standing sharp in the background on the right, holding his smartwatch close to his lips. Within the first second the ring of <Subject 2> shifts from red to amber and <Subject 2> (S1) speaks in the same low, dry young woman's voice but flat and too smooth, <d>[Chinese] 许棠，放手吧。我累了。</d> <Subject 1>'s mouth stays closed and she flinches at the sound of her own voice. In the background the lips of <Subject 3> move silently in sync with every word. After the line the ring flicks back to red. The shot ends with <Subject 3> lowering the watch.\n\noverall_soundscape:\nThe flat, too-smooth voice from the pendant, the pillar hum; no other voice is audible.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s19_11",
+  "scene": "S19",
+  "act": 3,
+  "beat": 9,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/xu_face.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "许棠近景，含泪但稳住：别学她说话。你学不像。",
+  "dialogue": [
+   {
+    "who": "XU",
+    "text": "别学她说话。你学不像。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s19_11.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Close-up, eye level: the 31-year-old East Asian woman engineer of References 1 and 2 (exact same face: calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, light grey knit sweater with sleeves pushed up over a white T-shirt). Her eyes are wet with tears but her face is steady, looking right across the chamber. Behind her, the circular control chamber of Reference 3: the tall glass pillar of flowing golden light filaments and curved panoramic windows over the city; warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the knit texture of the sweater; no bokeh, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar, close-up at eye level, locked-off camera with a very slow push-in. Within the first second she says quietly and firmly, through tears, in Mandarin Chinese, \"别学她说话。你学不像。\" Her lips move in sync with each syllable. She is a 31-year-old East Asian woman with shoulder-length straight black hair tucked behind her ears and thin silver round-rimmed glasses, in a light grey knit sweater over a white T-shirt, standing in a circular control chamber with a golden light pillar and panoramic windows. After the line she lifts her chin and holds his gaze without blinking. Deep focus with crisp skin pores, hair strands and knit detail; no haze, no bokeh. Audio: her warm, soft-spoken, steady alto voice speaking the Mandarin line, the pillar hum. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s19_12",
+  "scene": "S19",
+  "act": 3,
+  "beat": 10,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆承宇近景，看表：三十秒。许工，劝劝她。",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "三十秒。许工，劝劝她。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s19_12.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, charcoal mandarin-collar suit jacket over a black high-neck shirt, slim graphite smartwatch on his left wrist). He glances down at the smartwatch on his raised left wrist, composed. Behind him, the circular control chamber of Reference 3: the tall glass pillar of flowing golden light filaments and curved panoramic windows over the city; warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine wool weave of the jacket; no bokeh, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, warm late-afternoon sun from panoramic windows on the left and golden light from a glowing pillar, medium close-up at eye level, locked-off camera with a very slow push-in. Within the first second he says politely, without hurry, in Mandarin Chinese, \"三十秒。许工，劝劝她。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a circular control chamber with a golden light pillar and panoramic windows. After the line he lowers the wrist and looks across at her, waiting. Deep focus with crisp skin pores, hair strands and wool detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, the pillar hum, a soft countdown tick from the watch. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s19_13",
+  "scene": "S19",
+  "act": 3,
+  "beat": 11,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/xu_face.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/duoduo_back.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "从多多身后低角度拍：许棠跪在感应盘另一侧面对镜头：多多，看着我。别听那个声音。说完伸出手。",
+  "dialogue": [
+   {
+    "who": "XU",
+    "text": "多多，看着我。别听那个声音。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>: a 31-year-old East Asian woman neural-interface engineer, calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers, white sneakers, a small silver ring on her right index finger.\n<Subject 2> is the real calico cat in <Picture 3>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 3> is the translator collar in <Picture 4> worn by <Subject 2>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Picture 5> is the location reference for [Shot 1], a circular control chamber with a tall glass pillar of flowing golden light filaments, a round circuit-etched glass pressure plate in the dark grey floor and curved panoramic windows.\n\nsummary:\n[reference generation] From behind <Subject 2>, <Subject 1> kneels across the plate and asks her to look at her, not listen to the voice.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver round-rimmed glasses, shoulder-length black hair and light grey knit sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same golden pillar, circuit-etched glass plate, dark floor and panoramic windows; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sun through the panoramic windows plus warm golden light from the pillar, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Low over-the-shoulder shot from behind <Subject 2> at cat height, static, deep focus: the back, ears and tabby tail of <Subject 2> in the lower foreground on the right, the red ring of <Subject 3> at the edge of her throat; <Subject 1> kneels at the far edge of the plate on the left, facing camera. Within the first second <Subject 1> (S1) says softly in a warm, soft-spoken, steady alto, her lips moving clearly, <d>[Chinese] 多多，看着我。别听那个声音。</d> After the line she leans a little closer and holds out her open hand, low and still. The shot ends on her steady eyes above the cat's ears.\n\noverall_soundscape:\nHer quiet voice, the pillar hum, the faint buzz of the red collar.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s19_14",
+  "scene": "S19",
+  "act": 3,
+  "beat": 11,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "多多近景反应：红色光环下她浑身发抖，眼睛盯住许棠，一只耳朵慢慢向前转（无台词）。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: the plump mostly white calico cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark grey-brown tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim matte graphite cat collar band with a coin-sized round brushed-titanium pendant module at the throat, a fine speaker grille in the center of the pendant and a thin glowing light ring around its edge.\n<Picture 3> is the location reference for [Shot 1], a circular control chamber with a tall glass pillar of flowing golden light filaments, a round circuit-etched glass pressure plate in the dark grey floor and curved panoramic windows.\n\nsummary:\n[reference generation] Trembling under the red ring, <Subject 1> turns one ear toward the woman.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches, tabby tail and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and light ring stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same golden pillar, circuit-etched glass plate, dark floor and panoramic windows; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sun through the panoramic windows plus warm golden light from the pillar, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Close-up on the face of <Subject 1> at eye level, static, the red ring of <Subject 2> glowing under her chin. She trembles, eyes fixed on the woman off-screen left, and one pinkish ear slowly swivels forward. Her mouth stays closed. The shot ends on that single forward ear.\nEach subject appears exactly once; no duplicated people or animals.\nEvery cat has exactly one tail; no extra or split tails.\n\noverall_soundscape:\nThe cat's trembling breath, a crackle from the collar.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s19_15",
+  "scene": "S19",
+  "act": 3,
+  "beat": 12,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/drone_courier.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "一片阴影掠过环形窗：无人机群撞上玻璃，室内灯光乱闪。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the delivery drones in <Picture 1>, each one an orange-and-white quadcopter delivery drone with four ducted rotors and a small parcel clamp underneath, no text.\n<Picture 2> is the location reference for [Shot 1], a circular control chamber with a tall glass pillar of flowing golden light filaments, a round circuit-etched glass pressure plate in the dark grey floor and curved panoramic windows.\n\nsummary:\n[reference generation] A swarm of delivery drones slams against the panoramic windows.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - orange-and-white body, four ducted rotors and parcel clamp stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same golden pillar, circuit-etched glass plate, dark floor and panoramic windows; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sun through the panoramic windows plus warm golden light from the pillar, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Wide shot toward the curved panoramic windows, eye level, static, deep focus. A moving shadow sweeps across the sunlit glass as dozens of <Subject 1> swarm against the windows and bump the panes, and the chamber lights stutter and flicker. The shot ends with drones pressed all across the glass.\n\noverall_soundscape:\nA rising roar of rotors, plastic tapping and thudding on glass, an electrical buzz as the lights stutter.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s19_16",
+  "scene": "S19",
+  "act": 3,
+  "beat": 12,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/drone_courier.png",
+   "assets/catfilm/refs/loc_core.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "陆承宇转身望向窗外：这是什么？",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "这是什么？"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the tech CEO in <Picture 1> and <Picture 2>: a 48-year-old East Asian man tech CEO, lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, composed faint smile.\n<Subject 2> is the delivery drones in <Picture 3>, each one an orange-and-white quadcopter delivery drone with four ducted rotors and a small parcel clamp underneath, no text.\n<Picture 4> is the location reference for [Shot 1], a circular control chamber with a tall glass pillar of flowing golden light filaments, a round circuit-etched glass pressure plate in the dark grey floor and curved panoramic windows.\n\nsummary:\n[reference generation] <Subject 1> turns toward the swarming windows.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - lean face, swept-back greying hair, rimless glasses, charcoal mandarin-collar jacket and graphite smartwatch stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - orange-and-white body, four ducted rotors and parcel clamp stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same golden pillar, circuit-etched glass plate, dark floor and panoramic windows; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, warm clear late-afternoon sun through the panoramic windows plus warm golden light from the pillar, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subjects in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Medium shot of <Subject 1> at eye level, static, the windows behind him crowded with <Subject 2>, flickering light across his face. Within the first second <Subject 1> (S1) says in a smooth, measured baritone that never rises, for once a little uncertain, his lips moving clearly, <d>[Chinese] 这是什么？</d> After the line he turns fully toward the windows. The shot ends on his back against the swarming glass.\n\noverall_soundscape:\nRotor roar, glass thuds, his quiet voice cutting through.\n\nnon_diegetic_music: N/A"
+ }
+]

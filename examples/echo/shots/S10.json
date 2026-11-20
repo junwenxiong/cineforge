@@ -1,0 +1,651 @@
+[
+  {
+    "id": "ec_s10_01",
+    "scene": "S10",
+    "act": 3,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "审讯室：哑光灰墙、钢桌、明亮均匀的白色顶光、大块单向玻璃。沈砚戴着手铐坐在桌边（画左），陆时野推门进来，坐到对面（画右）",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the man in <Picture 3> and <Picture 4>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Picture 5> is the location reference for [Shot 1]: a modern police interrogation room, matte grey walls, a brushed steel table with two chairs, bright even white ceiling light, a large dark one-way mirror on one wall, a steel door.\n\nsummary:\n[reference generation] <Subject 1> sits handcuffed in an interrogation room; <Subject 2> walks in and sits down opposite her.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Bright, even white ceiling light on both faces; the dark one-way mirror reflects the room crisply.\n[Shot 1] Wide shot from the corner of the room, eye level, static. <Subject 1> sits on the left side of the brushed steel table, her wrists in steel handcuffs resting on the tabletop, facing frame right. The steel door on the right opens and <Subject 2> walks in with a thin folder, pulls out the chair opposite her and sits down. The shot ends with the two of them facing each other across the table, the dark one-way mirror on the back wall reflecting them sharply.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe heavy steel door unlatching, his footsteps, the chair legs scraping on the floor, the handcuff chain touching steel.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s10_02",
+    "scene": "S10",
+    "act": 3,
+    "beat": 2,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_02.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: 从十点四十说：「从十点四十说起。你去天桥干什么？」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "从十点四十说起。你去天桥干什么？"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"从十点四十说起。你去天桥干什么？\" His lips move in sync with each syllable, his voice slow, rough and flat. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he leans forward and rests his forearms on the steel table. The shot ends with him waiting, eyes steady on her. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_03",
+    "scene": "S10",
+    "act": 3,
+    "beat": 3,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_03.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "沈砚。SHEN: 不记得：「不记得。那三个小时被人换掉了。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "不记得。那三个小时被人换掉了。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Medium close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"不记得。那三个小时被人换掉了。\" Her lips move in sync with each syllable, her voice low and steady. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, her wrists in steel handcuffs resting on the steel table. After the line she lifts her cuffed hands slightly off the table and sets them down again. The shot ends with her looking straight at him. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_04",
+    "scene": "S10",
+    "act": 3,
+    "beat": 4,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_04.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: 换成了什么？：「换成了什么？」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "换成了什么？"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"换成了什么？\" His lips move in sync with each syllable, his voice dry and skeptical. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he raises one eyebrow and taps a finger once on the table. The shot ends with him watching her, unconvinced. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_05",
+    "scene": "S10",
+    "act": 3,
+    "beat": 5,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_05.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "沈砚。SHEN: 一个下雨：「一个下雨的夜晚。可昨晚没下雨。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "一个下雨的夜晚。可昨晚没下雨。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Medium close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"一个下雨的夜晚。可昨晚没下雨。\" Her lips move in sync with each syllable, her voice low, steady and clear. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, her wrists in steel handcuffs resting on the steel table. After the line she holds his gaze without blinking. The shot ends with her eyes steady on him. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_06",
+    "scene": "S10",
+    "act": 3,
+    "beat": 6,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "OTS",
+    "summary_zh": "过沈砚的肩拍陆时野，他靠回椅背。LU: 所以你的证：「所以你的证据，是天气。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "所以你的证据，是天气。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the woman in <Picture 3>, seen from behind: the back of her low black ponytail and the shoulder of her charcoal-grey trench coat.\n<Picture 4> is the location reference for [Shot 1]: a modern police interrogation room, matte grey walls, a brushed steel table with two chairs, bright even white ceiling light, a large dark one-way mirror on one wall, a steel door.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> leans back and says her evidence is the weather.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Bright, even white ceiling light on both faces; the dark one-way mirror reflects the room crisply.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a dry, rough voice, <d>[Chinese] 所以你的证据，是天气。</d> <Subject 2>'s shoulder and the back of her ponytail fill the left foreground, sharp and in focus, her cuffed hands on the steel table. <Subject 1> sits on the right; after the line he leans back in his chair and folds his arms. The shot ends with him settled back, eyes on her, unconvinced.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis dry voice, the chair creaking as he leans back, the leather jacket rustling, the ceiling light buzz.\n\nnon_diegetic_music: N/A",
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s10_06.png",
+    "keyframe_prompt": "Draw a single photoreal opening keyframe. Preserve the identities and costumes in the supplied reference images. Depict initial pose before action; no montage.\nOriginal scene context:\nsubject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the woman in <Picture 3>, seen from behind: the back of her low black ponytail and the shoulder of her charcoal-grey trench coat.\n<Picture 4> is the location reference for [Shot 1]: a modern police interrogation room, matte grey walls, a brushed steel table with two chairs, bright even white ceiling light, a large dark one-way mirror on one wall, a steel door.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> leans back and says her evidence is the weather.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Bright, even white ceiling light on both faces; the dark one-way mirror reflects the room crisply.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a dry, rough voice, <d>[Chinese] 所以你的证据，是天气。</d> <Subject 2>'s shoulder and the back of her ponytail fill the left foreground, sharp and in focus, her cuffed hands on the steel table. <Subject 1> sits on the right; after the line he leans back in his chair and folds his arms. The shot ends with him settled back, eyes on her, unconvinced.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis dry voice, the chair creaking as he leans back, the leather jacket rustling, the ceiling light buzz.\n\nnon_diegetic_music: N/A\nAuthoritative composition and head-count (overrides conflicting background crowd or end-state instructions):\nExactly 2 people: Lu seated right, Shen shoulder and ponytail foreground left. His two arms still resting before leaning back. Dark one-way glass completely blank and nonreflective.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage.",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the woman in <Picture 3>, seen from behind: the back of her low black ponytail and the shoulder of her charcoal-grey trench coat.\n<Picture 4> is the location reference for [Shot 1]: a modern police interrogation room, matte grey walls, a brushed steel table with two chairs, bright even white ceiling light, a large dark one-way mirror on one wall, a steel door.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> leans back and says her evidence is the weather.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Bright, even white ceiling light on both faces; the dark one-way mirror reflects the room crisply.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a dry, rough voice, <d>[Chinese] 所以你的证据，是天气。</d> <Subject 2>'s shoulder and the back of her ponytail fill the left foreground, sharp and in focus, her cuffed hands on the steel table. <Subject 1> sits on the right; after the line he leans back in his chair and folds his arms. The shot ends with him settled back, eyes on her, unconvinced.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis dry voice, the chair creaking as he leans back, the leather jacket rustling, the ceiling light buzz.\n\nnon_diegetic_music: N/A\n\nMandatory continuous shot constraints:\nExactly 2 people: Lu seated right, Shen shoulder and ponytail foreground left. His two arms still resting before leaning back. Dark one-way glass completely blank and nonreflective.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage."
+  },
+  {
+    "id": "ec_s10_07",
+    "scene": "S10",
+    "act": 3,
+    "beat": 7,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_07.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 还有一：「还有一根拐杖的声音。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "还有一根拐杖的声音。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"还有一根拐杖的声音。\" Her lips move in sync with each syllable, her voice quieter, almost a murmur. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, her wrists in steel handcuffs resting on the steel table. After the line she leans a few centimeters toward him. The shot ends with her eyes fixed on his. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_08",
+    "scene": "S10",
+    "act": 3,
+    "beat": 8,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_08.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: 顾言之帮你拖：「顾言之帮你拖到天亮，你反咬他一口？」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "顾言之帮你拖到天亮，你反咬他一口？"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"顾言之帮你拖到天亮，你反咬他一口？\" His lips move in sync with each syllable, his voice low and hard. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line his eyes narrow and his mouth tightens under his beard. The shot ends with him staring at her, hard. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_09",
+    "scene": "S10",
+    "act": 3,
+    "beat": 9,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_09.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 陆时野：「陆时野。刻写，就是他发明的。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "陆时野。刻写，就是他发明的。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"陆时野。刻写，就是他发明的。\" Her lips move in sync with each syllable, her voice low and very clear. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, her wrists in steel handcuffs resting on the steel table. After the line she does not look away; a muscle in her jaw flexes. The shot ends with her stare unwavering. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_10",
+    "scene": "S10",
+    "act": 3,
+    "beat": 10,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_10.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "陆时野沉默。反应镜",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Close-up at eye level, static camera, he is slightly right of center looking toward frame left. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. He sits silent, looking at her; his eyes drop to the table for a moment, his jaw working under the beard, then lift back to her, uncertain for the first time. The shot ends with him silent, breathing slowly. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: The buzz of the ceiling lights, his slow breath, the faint click of the handcuff chain off-screen. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_11",
+    "scene": "S10",
+    "act": 3,
+    "beat": 11,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_11.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 他能改：「他能改我的记忆，五年前……也能改韩铮的。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "他能改我的记忆，五年前……也能改韩铮的。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"他能改我的记忆，五年前……也能改韩铮的。\" Her lips move in sync with each syllable, her voice quiet and careful, with a small pause in the middle. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, her wrists in steel handcuffs resting on the steel table. After the line she watches his face closely. The shot ends with her watching him, waiting. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_12",
+    "scene": "S10",
+    "act": 3,
+    "beat": 12,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "陆时野猛地站起来，椅子刮过地面。LU: 别拿他来：「别拿他来跟我做交易。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "别拿他来跟我做交易。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the woman in <Picture 3>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Picture 4> is the location reference for [Shot 1]: a modern police interrogation room, matte grey walls, a brushed steel table with two chairs, bright even white ceiling light, a large dark one-way mirror on one wall, a steel door.\n\nsummary:\n[reference generation] <Subject 1> shoots to his feet and warns <Subject 2> not to bargain with Han Zheng's name.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Bright, even white ceiling light on both faces; the dark one-way mirror reflects the room crisply.\n[Shot 1] Medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a hoarse, angry voice, <d>[Chinese] 别拿他来跟我做交易。</d> He sits on the right across the steel table from <Subject 2>, who sits on the left in handcuffs. On the last word he shoves himself up to his feet, his chair scraping back across the floor. The shot ends with him standing over the table, fists on the steel, glaring down at her.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis angry voice, the chair legs screeching across the floor, his fists thumping onto steel, the ceiling light buzz.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s10_13",
+    "scene": "S10",
+    "act": 3,
+    "beat": 13,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_13.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 不是交：「不是交易。我在认错。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "不是交易。我在认错。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Close-up at eye level, static camera, she sits slightly left of center looking up toward frame right. Within the first second she says in Mandarin Chinese, \"不是交易。我在认错。\" Her lips move in sync with each syllable, her voice very quiet and steady. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, her wrists in steel handcuffs resting on the steel table. After the line she lowers her eyes once, then raises them to his. The shot ends with her looking up toward frame right, steady. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_14",
+    "scene": "S10",
+    "act": 3,
+    "beat": 14,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_14.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: 认错？：「认错？」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "认错？"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Medium close-up at eye level, static camera, he stands slightly right of center looking down toward frame left. Within the first second he says in Mandarin Chinese, \"认错？\" His lips move in sync with each syllable, his voice a rough, disbelieving half-whisper. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the word he stays standing, hands braced on the table edge, staring down at her. The shot ends with him frozen, searching her face. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_15",
+    "scene": "S10",
+    "act": 3,
+    "beat": 15,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_15.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 那份回：「那份回放是我签的字。我从没怀疑过。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "那份回放是我签的字。我从没怀疑过。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"那份回放是我签的字。我从没怀疑过。\" Her lips move in sync with each syllable, her voice low and clear, her voice thinning. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, her wrists in steel handcuffs resting on the steel table. After the line her lips press together and her eyes glisten. The shot ends with her holding his gaze, eyes wet. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_16",
+    "scene": "S10",
+    "act": 3,
+    "beat": 16,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_16.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 如果它：「如果它是假的，我欠他五年。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "如果它是假的，我欠他五年。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"如果它是假的，我欠他五年。\" Her lips move in sync with each syllable, her voice barely above a whisper. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, her wrists in steel handcuffs resting on the steel table. After the line a single tear wells in one eye but does not fall; she does not look away. The shot ends with the tear held on her lashes, her gaze steady. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_17",
+    "scene": "S10",
+    "act": 3,
+    "beat": 17,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "陆时野走到单向玻璃前，背对着她，玻璃里映出两个人。无台词",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Picture 5> is the location reference for [Shot 1]: a modern police interrogation room, matte grey walls, a brushed steel table with two chairs, bright even white ceiling light, a large dark one-way mirror on one wall, a steel door.\n\nsummary:\n[reference generation] <Subject 1> walks to the one-way mirror and stands with his back to <Subject 2>, both reflected in the glass.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): partially_preserved - the direct rear view preserves hair and clothing only; facial identity is preserved only in the physically correct mirror reflection\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Bright, even white ceiling light on both faces; the dark one-way mirror reflects the room crisply.\n[Shot 1] Medium shot from beside the one-way mirror, eye level, static. <Subject 1> walks to the large dark one-way mirror and stops with his back to the room, facing the glass. The mirror reflects him sharply, and behind him in the reflection <Subject 2> sits at the steel table in handcuffs, watching his back. He puts one hand flat against the cold glass. The shot ends with both of them still, his face and her face sharp in the reflection.\nThe direct view of <Subject 1> shows only the back of his head, never facial features; his face is visible only in the mirror. Reflections belong to the same two people, not additional people.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis slow footsteps, his palm meeting the glass with a soft thud, the buzz of the ceiling lights, her quiet breathing.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s10_18",
+    "scene": "S10",
+    "act": 3,
+    "beat": 18,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_18.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野对着玻璃低声说。LU: 他女儿上初中：「他女儿上初中了。家长会，他一次都没去过。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "他女儿上初中了。家长会，他一次都没去过。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Medium close-up at eye level, static camera, he stands close to the dark mirror slightly right of center, seen in three-quarter view facing frame left. Within the first second he says in Mandarin Chinese, \"他女儿上初中了。家长会，他一次都没去过。\" His lips move in sync with each syllable, his voice low and hoarse, speaking to the glass. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he lowers his head slightly and his hand slides down the glass. The shot ends with him standing with his head bowed against the mirror. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_19",
+    "scene": "S10",
+    "act": 3,
+    "beat": 19,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_19.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚眼眶发红。SHEN: 让我证：「让我证明给你看。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "让我证明给你看。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"让我证明给你看。\" Her lips move in sync with each syllable, her voice quiet and steady. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, her wrists in steel handcuffs resting on the steel table. After the line she sits very still, cuffed hands clasped on the table, her eyes on his back off-screen right. The shot ends with her eyes red-rimmed and steady. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_20",
+    "scene": "S10",
+    "act": 3,
+    "beat": 20,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "FS",
+    "summary_zh": "门开，顾言之拄着手杖走进来。手杖声：两步、一停、一敲",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>: a 62-year-old East Asian man, silver-white hair swept back neatly, thin rimless rectangular glasses, a gentle composed smile, clean-shaven, a cream-white linen mandarin-collar suit, holding a black lacquered walking cane with a polished plain silver handle in his right hand, a slight limp on his left leg.\n<Picture 3> is the location reference for [Shot 1]: a modern police interrogation room, matte grey walls, a brushed steel table with two chairs, bright even white ceiling light, a large dark one-way mirror on one wall, a steel door.\n\nsummary:\n[reference generation] <Subject 1> enters the interrogation room leaning on his cane, his limp audible.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, swept-back silver hair, rimless glasses, cream linen suit and black cane stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Bright, even white ceiling light on both faces; the dark one-way mirror reflects the room crisply.\n[Shot 1] Full shot of the steel door, eye level, static. The steel door opens and <Subject 1> enters, leaning on the black lacquered cane in his right hand, the slight limp on his left leg visible: step, step, a pause, then the hard tap of the cane tip on the floor. He stops just inside, his gentle smile in place, looking toward the table off-screen left. The shot ends with him standing still, both hands resting on the silver handle.\n\noverall_soundscape:\nThe steel door unlatching, then his gait on the hard floor: step, step, a pause, then the hard tap of a cane tip, the tap echoing off the bare walls; the ceiling light buzz.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s10_21",
+    "scene": "S10",
+    "act": 3,
+    "beat": 21,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_21.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "顾言之。GU: 陆队长，公证：「陆队长，公证厅要求把她移交镜川。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "陆队长，公证厅要求把她移交镜川。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"陆队长，公证厅要求把她移交镜川。\" His lips move in sync with each syllable, his voice warm, low and unhurried. He is a 62-year-old East Asian man with silver-white hair swept back neatly, thin rimless rectangular glasses and a clean-shaven face, wearing a cream-white linen mandarin-collar suit. After the line he inclines his head politely, his right hand resting on the silver handle of his cane just below the frame. The shot ends with him smiling mildly toward frame left. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His warm, low older male voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_22",
+    "scene": "S10",
+    "act": 3,
+    "beat": 22,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_22.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "顾言之。GU: 七点之前，要：「七点之前，要做一次完整读取。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "七点之前，要做一次完整读取。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"七点之前，要做一次完整读取。\" His lips move in sync with each syllable, his voice warm and soft, never hurried. He is a 62-year-old East Asian man with silver-white hair swept back neatly, thin rimless rectangular glasses and a clean-shaven face, wearing a cream-white linen mandarin-collar suit. After the line he glances toward the table off-screen left, then back, his smile unchanged. The shot ends with his smile unchanged and his eyes calm. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His warm, low older male voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_23",
+    "scene": "S10",
+    "act": 3,
+    "beat": 23,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "OTS",
+    "summary_zh": "过顾言之的肩拍陆时野。LU: 她说，改她：「她说，改她记忆的人是你。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "她说，改她记忆的人是你。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is the older man in <Picture 3>, seen from behind: his swept-back silver-white hair and the shoulder of his cream-white linen suit.\n<Picture 4> is the location reference for [Shot 1]: a modern police interrogation room, matte grey walls, a brushed steel table with two chairs, bright even white ceiling light, a large dark one-way mirror on one wall, a steel door.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> tells him she says he is the one who rewrote her memory.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Bright, even white ceiling light on both faces; the dark one-way mirror reflects the room crisply.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a slow, rough voice, <d>[Chinese] 她说，改她记忆的人是你。</d> <Subject 2>'s cream linen shoulder and swept-back silver hair fill the left foreground, sharp and in focus. <Subject 1> stands on the right by the steel table, watching for a reaction; after the line he stays still, his eyes searching the older man's face. The shot ends with him waiting, arms at his sides.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis slow rough voice, the ceiling light buzz, the faint creak of his leather jacket, a held silence.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s10_24",
+    "scene": "S10",
+    "act": 3,
+    "beat": 24,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/gu_face.png",
+      "assets/echo/refs/gu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_24.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "顾言之带着悲悯的笑。GU: 被改过记忆的：「被改过记忆的人，都这么说。」",
+    "dialogue": [
+      {
+        "who": "GU",
+        "text": "被改过记忆的人，都这么说。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"被改过记忆的人，都这么说。\" His lips move in sync with each syllable, his voice soft and sorrowful, warm. He is a 62-year-old East Asian man with silver-white hair swept back neatly, thin rimless rectangular glasses and a clean-shaven face, wearing a cream-white linen mandarin-collar suit. After the line he gives a small, pitying smile and a slow sigh. The shot ends with him looking toward frame left with gentle sorrow. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His warm, low older male voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_25",
+    "scene": "S10",
+    "act": 3,
+    "beat": 25,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_25.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "陆时野看看沈砚，又看看顾言之。反应镜",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Close-up at eye level, static camera, he is slightly right of center looking toward frame left. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. He looks toward frame left at the woman at the table, then his eyes slide to the older man beside him and back again; his jaw tightens and his shoulders sag slightly. The shot ends with his jaw tight and his shoulders sagging. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: The buzz of the ceiling lights, his slow heavy breath, the faint click of a cane handle off-screen. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_26",
+    "scene": "S10",
+    "act": 3,
+    "beat": 26,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_26.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: ……带走吧：「……带走吧。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "……带走吧。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"……带走吧。\" His lips move in sync with each syllable, his voice a rough, defeated murmur. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the words he looks down at the floor and does not lift his eyes. The shot ends with his eyes on the floor. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the faint buzz of the ceiling lights in a hard-walled room. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s10_27",
+    "scene": "S10",
+    "act": 3,
+    "beat": 27,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_bureau.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s10_27.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚被人拉起来，看着陆时野，一言不发。反应镜",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot in a police interrogation room at night under bright, even white ceiling light, matte grey walls and a dark one-way mirror behind. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, her wrists in steel handcuffs. She rises from the chair as if pulled up from off-screen, her cuffed hands in front of her; she looks toward frame right at him, silent, her eyes steady and wet, lips pressed shut. The shot ends with her eyes steady and wet, lips closed. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: The chair scraping back, the handcuff chain clinking, footsteps, the buzz of the ceiling lights. No music, no on-screen text."
+  }
+]

@@ -1,0 +1,251 @@
+[
+ {
+  "id": "sc_s04_01",
+  "scene": "S04",
+  "act": 1,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "雨夜堆场全景（慢建立镜）：周野的拖车拖着巨型黄色六轮矿用重卡穿过集装箱通道，停向画左旧仓库前的空地",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the colossal six-wheeled mining haul truck in <Picture 1>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 2> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] On a rainy harbor night, a small tow rig hauls the dead, colossal haul truck <Subject 1> through the container yard toward the old warehouse.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Extreme wide shot from a high crane position looking down a long lane between container stacks, slow descending crane move. Rain falls in silver sheets through the sodium-orange floodlights; gantry cranes stand dark against the glowing skyline in the distance. At first the wet lane is empty, mirroring the lights. A battered small tow rig with flashing amber beacons emerges from between the stacks in the background, its tow chains taut, dragging <Subject 1> behind it. The truck is dead and unlit; its giant tires roll slowly through deep puddles, throwing up spray, and its yellow body dwarfs both the tow rig and the containers. The camera descends as the pair crawls forward and curves toward the old high-windowed warehouse on the left of frame, ending near eye level as the tow rig slows in front of the warehouse's large rolling door, the truck's massive grille facing right.\n\noverall_soundscape:\nHeavy rain hissing on asphalt and steel containers, the strained diesel growl of the tow rig, clanking tow chains, the slow crunch and slosh of giant tires through puddles, a distant ship horn over the water.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_02",
+  "scene": "S04",
+  "act": 1,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "拖车驾驶室内，周野单手开车，回头从后窗看身后巨大的重卡车头，挑眉苦笑",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the young man in <Picture 1> and <Picture 2>, with a warm crooked grin, messy short black hair, light stubble and an olive-green bomber jacket over a grey hoodie.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 3>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 4> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> drives the tow rig through the rain and glances back through the rear window at the giant truck <Subject 2> he is towing.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, crooked grin, messy hair, stubble and olive bomber jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Medium close-up from the passenger seat inside the cramped tow rig cab, handheld with a gentle sway. <Subject 1> grips the steering wheel with one hand, his rugged tablet wedged on the dashboard with its screen turned away. Wipers thump across the rain-streaked windshield, smearing sodium-orange light over his face. He twists to look over his shoulder through the small rear window, where the dark yellow front of <Subject 2> fills the glass, its grille rising far above the cab, lit in pulses by the rig's flashing amber beacon. He blows out a long breath, raises his eyebrows and turns back to the road with a wry crooked grin, ending on his profile as the cab rocks over a bump.\n\noverall_soundscape:\nRain drumming on the cab roof, rhythmic wiper thumps, the rig's diesel engine straining under the load, chains clanking behind, the deep creak of the towed truck's suspension.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_03",
+  "scene": "S04",
+  "act": 1,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "低机位：拖车停在工坊卷帘门前，重卡随之停稳，周野跳下车，站在比人还高的轮胎旁显得渺小",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the young man in <Picture 1>, with a warm crooked grin, messy short black hair, light stubble and an olive-green bomber jacket over a grey hoodie.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 2>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 3> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] The tow rig stops in front of the warehouse, and <Subject 1> jumps down from the cab to stand beside the towering truck <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, crooked grin, messy hair, stubble and olive bomber jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, low angle close to the wet asphalt, static camera. The tow rig rolls to a stop at the left of frame in front of the warehouse's large rolling door; behind it, <Subject 2> slides the last meter and halts with a heavy groan, the tow chains slackening into a puddle. The truck faces right, its yellow panels streaked with rust and rain. The driver's door swings open and <Subject 1> hops down onto the asphalt with his tablet, rain spattering his olive bomber jacket. He walks past the front wheel, whose tire stands well above his head, gives it a pat, then steps back and cranes his neck to take in the whole machine. The shot ends with him small at the lower left of frame beneath the giant dark vehicle.\n\noverall_soundscape:\nBrakes squealing, the deep groan of the truck's frame settling, chains slapping into water, a cab door slamming, boots splashing, rain rattling on steel panels.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_04",
+  "scene": "S04",
+  "act": 1,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "横移跟拍：林骁打着手电沿车身行走，光束扫过斑驳的黄色装甲板和比人还高的轮胎",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 2>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 3> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> walks along the side of the dormant truck <Subject 2> in the rain, sweeping her flashlight across its weathered panels.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked black bob, eyebrow scar and burnt-orange jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, eye level, slow lateral tracking move from left to right alongside the truck. <Subject 1> walks in the rain beside the long body of <Subject 2>, the reflective strips on her jacket catching the sodium light and a heavy flashlight in her gloved hand. The beam sweeps across the yellow armor-like panels, revealing deep scratches, rust streaks, dents and a surface textured like weathered stone rather than painted steel. Raindrops glitter in the beam. She passes a giant tire whose tread rises above her head, and her steps slow as she studies the strange seams between the plates. The tracking move ends as she stops beside the next wheel, flashlight angled upward, the truck body stretching beyond both edges of the frame.\n\noverall_soundscape:\nRain pattering on metal and puddles, slow footsteps on wet asphalt, the faint buzz of sodium lamps, water dripping off the truck's panels, a distant crane motor whining.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_05",
+  "scene": "S04",
+  "act": 1,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "低机位近景：林骁仰头，手电光束顺着比她还高的轮胎爬到轮毂顶端",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 3>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 4> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> tilts her head back as her flashlight beam climbs a tire of <Subject 2> that towers above her.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked black bob, eyebrow scar and burnt-orange jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Medium close-up, low angle, slow tilt up. <Subject 1> stands close to a giant tire of <Subject 2>, rain running down her face and the silver streak in her hair plastered to her temple. Her flashlight beam starts on the deep, worn tread at her shoulder height and slowly climbs the tire wall, past chunky lugs packed with old dirt, until it reaches the rim far above her head. Her eyes follow the beam, widening slightly, her breath misting in the cold air, the scar through her right eyebrow catching the light. The shot ends with her face tilted up in quiet awe, half lit by the reflected flashlight glow and half by the sodium-orange yard lights behind her.\n\noverall_soundscape:\nClose rain on her jacket and the rubber tread, her slow breathing, water trickling down the tire wall, a low wind moaning between the containers.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_06",
+  "scene": "S04",
+  "act": 1,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁走到车头前，犹豫片刻，伸手把手掌贴上冰冷的车头面板",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 2>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 3> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> stops in front of the massive grille of <Subject 2> and lays her palm flat against its front panel.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked black bob, eyebrow scar and burnt-orange jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, eye level, profile angle, slow push-in. <Subject 1> steps into frame from the left and stops before the massive front of <Subject 2>; the grille and dark headlamps tower above her, the truck facing right of frame. She lowers the flashlight so its beam pools on the wet ground, hesitates, then slowly raises her free hand in its fingerless glove and lays her palm flat against the front panel beside an unlit amber running light. Rain streams down the plate around her fingers. She holds completely still, her head tilted as if listening for something inside the machine, ending with her hand pressed to the metal and her face in profile.\n\noverall_soundscape:\nRain tapping on the steel panel and her jacket, a soft scrape of glove on metal, her held breath, sodium lamps buzzing, faint waves lapping at the quay.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_07",
+  "scene": "S04",
+  "act": 1,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "特写：林骁的指尖划过冰冷的车头面板，表面像风化的岩石，停在一道旧伤痕里",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 2>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 3> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] Extreme close-up of the fingertips of <Subject 1> tracing the cold, stone-like surface of <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked black bob, eyebrow scar and burnt-orange jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Insert shot, extreme close-up with macro depth of field, locked camera. The bare fingertips of <Subject 1> poke out of her black fingerless glove, resting on the yellow front panel of <Subject 2>. Slowly they slide sideways across the surface. Up close the paint is gone in places and the plate looks like ancient weathered stone: fine pits, layered grain, hairline cracks with grit trapped inside, beads of rain trembling on the texture. Her fingertips pause over a deep old gouge in the plate, like a battle scar, and press down gently. A thin mist curls off the cold wet metal in the spill of the flashlight. The shot ends with her fingertips resting still inside the gouge.\n\noverall_soundscape:\nMagnified texture sound of fingertips dragging over gritty stone-like metal, individual raindrops ticking on the plate, a faint deep resonance like a distant heartbeat inside the panel.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_08",
+  "scene": "S04",
+  "act": 1,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "特写：林骁手边，车头的琥珀色示廓灯忽然微弱地亮起一下，又熄灭",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the colossal six-wheeled mining haul truck in <Picture 1>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Subject 2> is the woman engineer in <Picture 2>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Picture 3> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] The dead amber running light of <Subject 1> glows faintly for a moment beside the hand of <Subject 2>, then fades to dark.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, silver-streaked black bob, eyebrow scar and burnt-orange jacket stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Close-up, eye level, locked camera with shallow focus. The round amber running light on the front corner of <Subject 1> fills the right half of frame, its lens dusty, cracked and dark, rain sliding over it. The gloved hand of <Subject 2> rests on the plate at the left edge, soft and out of focus. For two seconds nothing moves but the rain. Then a faint amber glow rises deep inside the lens, swelling slowly like a single heartbeat and throwing warm light across her fingers and the wet stone-textured panel. It holds for a breath, flickers once, and fades back into darkness, leaving the lens cold and black again. The shot ends on the dark light and her motionless hand.\n\noverall_soundscape:\nRain ticking on the lens, then a very low electrical hum swelling with the glow and dying away, a single soft resonant thrum from deep inside the truck, then only rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_09",
+  "scene": "S04",
+  "act": 1,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁吓得抽回手，后退一步踩进水坑，手电光乱晃，死死盯着熄灭的车灯",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 3>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 4> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] Startled, <Subject 1> jerks her hand off the truck <Subject 2> and stumbles one step back.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked black bob, eyebrow scar and burnt-orange jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, eye level, front three-quarter angle, the dark front of <Subject 2> filling the right half of frame. <Subject 1> stands with her hand still on the panel, staring at the running light that has just gone dark. Suddenly she yanks her hand back as if burned and stumbles one step backward, her boot splashing into a puddle. The flashlight beam jerks wildly across the grille and the rain. She catches her balance, chest heaving, eyes wide and fixed on the dead light, the scar through her right eyebrow drawn tight. The shot ends with her standing one step away from the truck, flashlight trained on its front, breath steaming in the cold.\n\noverall_soundscape:\nA sharp intake of breath, a boot splashing into water, the flashlight rattling in her grip, her fast breathing, rain hammering on the truck's hood.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_10",
+  "scene": "S04",
+  "act": 1,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "周野拿着平板走近，瞥一眼熄灭的车灯，耸肩调侃，用指节敲了敲车身",
+  "dialogue": [
+   {
+    "who": "ZHOU",
+    "text": "线路老化吧……这玩意儿至少报废二十年了。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the young man in <Picture 1> and <Picture 2>, with a warm crooked grin, messy short black hair, light stubble and an olive-green bomber jacket over a grey hoodie.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 3>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 4> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> walks up beside the old truck <Subject 2> and shrugs off the flicker as old wiring.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, crooked grin, messy hair, stubble and olive bomber jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Medium close-up, eye level, slight low angle, staying on the same side of the action as the previous shot; <Subject 1> faces left of frame toward the off-screen woman, with the dark grille of <Subject 2> soft in the background at right. He strolls up with his tablet tucked under one arm, rain beading in his messy hair, glances at the truck's dead light and gives an easy shrug with his crooked grin. <Subject 1> (S1) says in a relaxed, teasing voice, <d>[Chinese] 线路老化吧……这玩意儿至少报废二十年了。</d> He reaches back and knocks his knuckles twice on the panel behind him, ending with a casual smile while the truck stays dark and silent.\n\noverall_soundscape:\nRain on his jacket and the truck, footsteps in puddles, two hollow metallic knocks on the panel that echo strangely deep, the buzz of a sodium lamp overhead.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_11",
+  "scene": "S04",
+  "act": 1,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "林骁特写，盯着画右的车头，眉头紧锁，低声说出疑点",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "它没有电池。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Picture 3> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] <Subject 1> stares at the front of the old truck and quietly points out that it has no battery.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked black bob, eyebrow scar and burnt-orange jacket stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Close-up, eye level, very slow push-in on her face, which looks toward the right of frame. <Subject 1> ignores the joke; rain drips from her hair and the silver streak clings to her cheek. Her eyes stay locked on the front of the truck, a soft-focus wall of yellow plating at the right edge of frame lit by sodium-orange light. Her brow furrows, the eyebrow scar tightening, as her engineer's mind works through it. She lowers the flashlight slightly. <Subject 1> (S1) says in a low, clear, uneasy voice, <d>[Chinese] 它没有电池。</d> She swallows, her jaw tight, still not blinking, ending on her steady, unsettled gaze as rain streaks past the lens.\n\noverall_soundscape:\nRain close on her hood and shoulders, a distant harbor buoy bell, the low hum of the yard lights, silence between drops.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_12",
+  "scene": "S04",
+  "act": 1,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "过肩双人中景：周野的笑容慢慢消失，两人并肩望着沉默的重卡，镜头缓推",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, seen from behind, with a short black bob with one silver streak on the left and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the young man in <Picture 2>, seen from behind, with messy short black hair and an olive-green bomber jacket over a grey hoodie.\n<Subject 3> is the colossal six-wheeled mining haul truck in <Picture 3>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 4> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] The grin of <Subject 2> fades as he and <Subject 1> stand side by side, staring at the silent truck <Subject 3>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - build, silver-streaked black bob and burnt-orange jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - build, messy black hair and olive bomber jacket stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Medium two-shot from behind the pair, past their shoulders, slow push-in. <Subject 1> stands at the left of frame and <Subject 2> at the right, both facing the enormous dark front of <Subject 3>. <Subject 2> turns toward her, his grin fading as her words sink in; he looks back at the truck, lowers his tablet and takes an uncertain half-step closer to her. Her flashlight beam rests on the grille, rain pouring through it. Nothing on the truck moves, yet the push-in makes its silent front feel like a face watching them, ending with both figures motionless beneath the looming grille.\n\noverall_soundscape:\nSteady rain on metal and asphalt, an uneasy shuffle of boots, a long low creak from the truck's frame as it settles, wind whistling through the container stacks.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s04_13",
+  "scene": "S04",
+  "act": 1,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "大远景（慢节奏收尾镜）：远处海平面方向，云层下闪过一道暗红色的光，两人转头望向画右",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, seen from behind, with a short black bob with one silver streak on the left and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the young man in <Picture 2>, seen from behind, with messy short black hair and an olive-green bomber jacket over a grey hoodie.\n<Subject 3> is the colossal six-wheeled mining haul truck in <Picture 3>, with weathered yellow and graphite stone-textured panels, amber running lights and giant tires taller than a person.\n<Picture 4> is the location reference for [Shot 1], a rainy container harbor yard at night with stacked containers, gantry cranes, sodium-orange lights, wet asphalt and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] Far out over the sea, a dim crimson flash ripples beneath the clouds while <Subject 1> and <Subject 2> turn to look, the dormant truck <Subject 3> beside them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - build, silver-streaked black bob and burnt-orange jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - build, messy black hair and olive bomber jacket stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - six-wheel layout, yellow and graphite stone-textured panels and amber lights stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy yard, containers, cranes, sodium lights and old warehouse; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range, volumetric haze and heavy rain, lit by sodium-orange yard lights against cool teal-blue night shadows. Keep the main action in the vertical center of the frame with clear margins top and bottom; no on-screen text or logos.\n[Shot 1] Extreme wide shot, low angle from behind the pair, static camera drifting slightly right. At left the dark silhouette of <Subject 3> rises above <Subject 1> and <Subject 2>, small figures in the rain beside its front wheel. Beyond the containers and cranes on the right, the black sea meets low storm clouds at the horizon. For a moment there is only rain. Then a dim crimson flash pulses beneath the clouds far out over the water, tinting them blood red before fading. Both figures turn their heads right toward it. A second, fainter flash flickers. The shot ends on the dark horizon, the two figures frozen and the truck silent behind them.\n\noverall_soundscape:\nRain over the whole yard, a very distant low rumble rolling across the water like far thunder, the wind rising, a ship horn sounding once and fading.\n\nnon_diegetic_music: N/A"
+ }
+]

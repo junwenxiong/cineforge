@@ -1,0 +1,20 @@
+{
+ "title_zh": "残响",
+ "title": "残响",
+ "title_en": "THE LAST ECHO",
+ "prefix": "ec",
+ "render_prefix": "ec",
+ "genre": "近未来悬疑惊悚",
+ "credits": [
+  ["残响", "Title"], ["THE LAST ECHO", "TitleEn"], ["", "Body"],
+  ["原创故事 · 编剧 · 分镜 · 导演", "Head"], ["AI 导演工作流（Claude Code）", "Body"], ["", "Body"],
+  ["主要角色", "Head"], ["沈砚 · 陆时野 · 顾言之 · 许棠 · 程牧", "Body"], ["", "Body"],
+  ["视频生成", "Head"], ["MiniMax H3 · LTX-2.5 · DramaPie Box · Google Colab", "Body"], ["", "Body"],
+  ["角色与场景设定", "Head"], ["gpt-image-2 · Gemini", "Body"], ["", "Body"],
+  ["配乐", "Head"], ["Music by Scott Buckley (www.scottbuckley.com.au)\\Nreleased under CC-BY 4.0\\NChronicle · Beyond These Walls · Emergent · Juggernaut · Simulacra\\NPursuit · Catalyst · The Long Dark · Uprising · The Fury · Starfire · Legacy", "Body"], ["", "Body"],
+  ["本片人物、组织与故事均为原创", "Body"], ["", "Body"], ["", "Body"],
+  ["— 完 —", "Head"]
+ ],
+ "credits_seconds": 62,
+ "credits_music": "cue8_credits_scottbuckley_legacy.mp3"
+}

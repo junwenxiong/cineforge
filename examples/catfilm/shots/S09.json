@@ -1,0 +1,323 @@
+[
+ {
+  "id": "cf_s09_01",
+  "scene": "S09",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/ke.png",
+   "assets/catfilm/refs/fang_v2.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "楼顶水塔的阴影里，阿柯靠着小方坐着；多多趴在楼边望着下面的小巷，吊坠熄灭。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Subject 3> is the courier in <Picture 3>: a 26-year-old East Asian man with a cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Subject 4> is the delivery robot in <Picture 4>: a squat knee-high cube with a white body, bright orange side panels, six small black wheels, a round front display face with two glowing white dot eyes, a hinged top lid and a small orange flag antenna.\n<Picture 5> is the location reference for [Shot 1], a sunny rooftop with wooden planters, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges.\n\nsummary:\n[reference generation] In the shade of a rooftop water tank, <Subject 3> sits resting against <Subject 4> while <Subject 1> lies at the parapet looking down, her pendant dark.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and thin light ring stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, fingerless gloves, earpiece and canvas bag stay identical.\n<Subject 4> (appears in [Shot 1]): fully_preserved - white cube body, orange side panels, six wheels, white dot eyes, top lid and orange flag stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same planters, solar panels, blue water tank, railings and parapet; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear bright midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Wide shot at rooftop level, static, everything sharp from the planters in the foreground to the towers beyond. On the left, <Subject 1> lies on the low parapet, front paws tucked, gazing down into the alley below; the light ring of <Subject 2> is completely dark and unlit. On the right, in the crisp shadow of the blue water tank, <Subject 3> sits on the deck with his back against <Subject 4>, knees up, breathing out after the chase; the white dot eyes of <Subject 4> blink slowly. <Subject 1> flicks the tip of her dark tabby tail once. The shot ends on the quiet tableau, the city glittering in the noon sun behind them.\nEach subject appears exactly once; no duplicated people or animals.\nExactly the characters listed in subject_definitions appear, each exactly once; no twins, no look-alike extras, no second copy of any robot or animal.\n\noverall_soundscape:\nRooftop wind, distant city hum, a far-off drone buzz, the courier's tired exhale, a soft electronic blink tone from the robot.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s09_02",
+  "scene": "S09",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "多多转头冲阿柯叫了一声（真实猫叫，没有翻译），吊坠仍然不亮。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Picture 3> is the location reference for [Shot 1], a sunny rooftop with wooden planters, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges.\n\nsummary:\n[reference generation] <Subject 1> turns from the parapet and gives one real, untranslated meow toward the courier off-screen right; her pendant stays dark.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and thin light ring stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same planters, solar panels, blue water tank, railings and parapet; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear bright midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Medium shot at cat height, static, <Subject 1> on the parapet in the left of frame, facing right. She turns her head toward the courier off-screen right, opens her mouth and gives one real, worried cat meow; the light ring of <Subject 2> stays completely dark, no voice comes from it. She closes her mouth, ears angled back, and holds his gaze. The shot ends with her green-amber eyes fixed off-screen right.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nOne real cat meow, slightly hoarse; rooftop wind; no electronic sounds at all.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s09_03",
+  "scene": "S09",
+  "act": 2,
+  "beat": 2,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/ke_face.png",
+   "assets/catfilm/refs/ke.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "阿柯近景，轻声回应多多：没有翻译，我也知道你担心他。",
+  "dialogue": [
+   {
+    "who": "KE",
+    "text": "没有翻译，我也知道你担心他。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s09_03.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, looking slightly down toward frame left: the 26-year-old East Asian man drone courier of References 1 and 2 (exact same face: cheerful round face, short spiky ash-brown dyed hair, one wireless earpiece in his right ear, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves). He sits in the shade, his face gentle, eyes on something small just off-frame left. Behind him, the sunny rooftop with wooden planters, tilted solar panels and a blue cylindrical water tank (Reference 3), clear bright midday sunlight. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the nylon texture and reflective piping of the windbreaker; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear bright midday sunlight, medium close-up eye level, looking slightly down toward frame left, locked-off camera with a very slow push-in. Within the first second he says softly, unusually gentle in Mandarin Chinese, \"没有翻译，我也知道你担心他。\" His lips move in sync with each syllable. He is a 26-year-old East Asian man with a cheerful round face and short spiky ash-brown dyed hair, in a bright orange-and-white courier windbreaker with reflective piping and no logos, one wireless earpiece in his right ear, sitting in the shade of a rooftop water tank and looking down toward a cat just off-frame left. After the line he gives a small reassuring nod and rubs the back of his neck with one gloved hand. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his fast, lively, slightly nasal young man's voice speaking the Mandarin line, rooftop wind, distant city hum. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s09_04",
+  "scene": "S09",
+  "act": 2,
+  "beat": 3,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/ke_face.png",
+   "assets/catfilm/refs/ke.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "阿柯近景，望着远处的衡渊塔：我以前在衡渊管过实验动物。",
+  "dialogue": [
+   {
+    "who": "KE",
+    "text": "我以前在衡渊管过实验动物。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s09_04.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, three-quarter profile looking into the distance at frame right: the 26-year-old East Asian man drone courier of References 1 and 2 (exact same face: cheerful round face, short spiky ash-brown dyed hair, one wireless earpiece in his right ear, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves). His usual grin is gone; he squints toward a far tower. Behind him, the sunny rooftop with wooden planters, tilted solar panels and a blue cylindrical water tank (Reference 3), clear bright midday sunlight. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the nylon texture and reflective piping of the windbreaker; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear bright midday sunlight, medium close-up eye level, three-quarter profile looking into the distance at frame right, locked-off camera with a very slow push-in. Within the first second he says quietly, without his usual chatter in Mandarin Chinese, \"我以前在衡渊管过实验动物。\" His lips move in sync with each syllable. He is a 26-year-old East Asian man with a cheerful round face and short spiky ash-brown dyed hair, in a bright orange-and-white courier windbreaker with reflective piping and no logos, one wireless earpiece in his right ear, on a sunny rooftop, gazing at a distant twisting glass skyscraper far off-frame right. After the line his jaw tightens and he keeps staring into the distance. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his fast, lively, slightly nasal young man's voice speaking the Mandarin line, wind across the roof, a faint far-off city hum. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s09_05",
+  "scene": "S09",
+  "act": 2,
+  "beat": 4,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/ke_face.png",
+   "assets/catfilm/refs/ke.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "阿柯近景，神色发暗：戴项圈的猫，眼睛都是空的。",
+  "dialogue": [
+   {
+    "who": "KE",
+    "text": "戴项圈的猫，眼睛都是空的。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s09_05.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Close-up, eye level, slightly frontal: the 26-year-old East Asian man drone courier of References 1 and 2 (exact same face: cheerful round face, short spiky ash-brown dyed hair, one wireless earpiece in his right ear, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves). His face is shadowed and serious, eyes lowered. Behind him, the sunny rooftop with wooden planters, tilted solar panels and a blue cylindrical water tank (Reference 3), clear bright midday sunlight. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the nylon texture and reflective piping of the windbreaker; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear bright midday sunlight, close-up eye level, slightly frontal, locked-off camera with a very slow push-in. Within the first second he says low and heavy in Mandarin Chinese, \"戴项圈的猫，眼睛都是空的。\" His lips move in sync with each syllable. He is a 26-year-old East Asian man with a cheerful round face and short spiky ash-brown dyed hair, in a bright orange-and-white courier windbreaker with reflective piping and no logos, one wireless earpiece in his right ear, sitting on a sunny rooftop, remembering something painful. After the line he lowers his eyes to his gloved hands and swallows. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his fast, lively, slightly nasal young man's voice speaking the Mandarin line, near silence, light wind. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s09_06",
+  "scene": "S09",
+  "act": 2,
+  "beat": 4,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "多多的反应近景：听着阿柯的话，慢慢眨了一下眼，耳朵转向他。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1>, seen close: a pure white face and chest, a dark black-and-orange crown patch between pinkish ears, a small orange spot beside a pinkish-tan nose and green-amber eyes.\n<Subject 2> is the translator collar in <Picture 2> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Picture 3> is the location reference for [Shot 1], a sunny rooftop with wooden planters, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges.\n\nsummary:\n[reference generation] A reaction close-up: <Subject 1> listens to the courier and gives him one slow blink.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white face, black-and-orange crown patch, orange spot beside the nose, pinkish ears and green-amber eyes stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and thin light ring stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same planters, solar panels, blue water tank, railings and parapet; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear bright midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Close-up of the face of <Subject 1> at eye level, static, her white face sharp against the bright sky, the dark pendant of <Subject 2> visible at her throat. Her ears turn toward the courier off-screen right; she holds his gaze and gives one long, slow cat blink, eyes closing and reopening. Her whiskers relax. The shot ends with her eyes calm and half-lidded.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nRooftop wind, a distant gull, near silence.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s09_07",
+  "scene": "S09",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/momo.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "管道一阵响动：墨墨从排水管爬上屋顶，一条腿有点瘸，耳朵上沾着灰。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the black cat in <Picture 1>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Picture 2> is the location reference for [Shot 1], a sunny rooftop with wooden planters, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges.\n\nsummary:\n[reference generation] With a clatter from a drainpipe, <Subject 1> hauls himself up onto the parapet, limping slightly, dust on one ear.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same planters, solar panels, blue water tank, railings and parapet; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear bright midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Wide shot at the corner of the parapet, static, the drainpipe on the left. A metal clatter rattles up the pipe, then <Subject 1> pulls himself over the parapet edge with his front claws, scrambles onto the deck and limps a few steps on three good legs, favouring one front paw; grey dust clings to one ear. He shakes his head once. The shot ends with him standing on the deck, tail up, amber-gold eyes searching.\n\noverall_soundscape:\nA tinny drainpipe clatter, scrabbling claws on concrete, soft uneven paw steps, a small sneeze-like head shake.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s09_08",
+  "scene": "S09",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/momo.png",
+   "assets/catfilm/refs/pair_scale.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "多多奔过去，两只猫碰鼻。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1> and <Picture 3>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Subject 2> is the black cat in <Picture 2> and <Picture 3>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Subject 3> is the translator collar in <Picture 4> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Picture 5> is the location reference for [Shot 1], a sunny rooftop with wooden planters, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges.\n\nsummary:\n[reference generation] <Subject 1> runs across the roof to <Subject 2> and the two cats touch noses.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and thin light ring stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same planters, solar panels, blue water tank, railings and parapet; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear bright midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker. <Subject 2> is also a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Medium two-shot at cat height, static, <Subject 2> on the right facing left. <Subject 1> trots in from the left and stops nose to nose with him; the two real cats touch noses gently, whiskers forward, then sniff each other's cheeks. The pendant of <Subject 3> is still dark. The shot ends with both cats close together, <Subject 1> visibly larger and plumper than the slender black cat.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nSoft quick paw steps, two small sniffs, rooftop wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s09_09",
+  "scene": "S09",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/duoduo_face.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "吊坠特写：短暂亮起微弱青光，铃开口。",
+  "dialogue": [
+   {
+    "who": "LING",
+    "text": "只开三十秒。墨墨，你还好吗？"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the translator collar in <Picture 1> worn by <Subject 2>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Subject 2> is the real calico cat in <Picture 2>, seen close: a pure white face and chest, a dark black-and-orange crown patch between pinkish ears, a small orange spot beside a pinkish-tan nose and green-amber eyes.\n<Picture 3> is the location reference for [Shot 1], a sunny rooftop with wooden planters, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges.\n\nsummary:\n[reference generation] In an extreme close-up the pendant of <Subject 1> lights up a faint cyan for a few seconds and the AI speaks quietly.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and thin light ring stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white face, black-and-orange crown patch, orange spot beside the nose, pinkish ears and green-amber eyes stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same planters, solar panels, blue water tank, railings and parapet; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear bright midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker.\n[Shot 1] Extreme close-up of the round pendant nestled in the white chest fur of <Subject 2>, static macro framing, every fur strand sharp. Within the first second the ring glows cool cyan and <Subject 1> (S1) speaks in a bright, quick, earnest gender-neutral synthetic voice like a polite twelve-year-old, with a faint metallic shimmer, from its tiny speaker, hushed and quick, <d>[Chinese] 只开三十秒。墨墨，你还好吗？</d> The ring glows only dimly, as if on low power. The mouth of <Subject 2> is out of frame and does not move. The shot ends with the cyan glow holding at a faint level.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nA tiny low-power chime, the synthetic voice close and hushed from the pendant, wind brushing the fur.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s09_10",
+  "scene": "S09",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/momo.png",
+   "assets/catfilm/refs/pair_scale.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "墨墨昂着头，吊坠光环淡绿，替墨墨说话。",
+  "dialogue": [
+   {
+    "who": "MOMO",
+    "text": "两条铁狗，没一条追得上我。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1> and <Picture 3>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Subject 2> is the black cat in <Picture 2> and <Picture 3>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Subject 3> is the translator collar in <Picture 4> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Picture 5> is the location reference for [Shot 1], a sunny rooftop with wooden planters, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges.\n\nsummary:\n[reference generation] <Subject 2> lifts his chin proudly as the pendant of <Subject 3> on <Subject 1> glows pale green and voices him.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and thin light ring stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same planters, solar panels, blue water tank, railings and parapet; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear bright midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker. <Subject 2> is also a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Medium two-shot at cat height, static, <Subject 1> on the left, <Subject 2> on the right facing her, both fully sharp. Within the first second the ring glows pale green and <Subject 3> (S1) speaks in a husky, scratchy teenage boy's voice from its tiny speaker, <d>[Chinese] 两条铁狗，没一条追得上我。</d> The mouths of both cats stay closed; <Subject 2> raises his chin high and his tail stands straight up, a little swagger in his posture despite the dusty ear. The shot ends with <Subject 2> looking pleased with himself.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe husky translated voice from the pendant, a short proud chirp-like breath from the black cat, wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s09_11",
+  "scene": "S09",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/momo.png",
+   "assets/catfilm/refs/pair_scale.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "多多用头撞了一下墨墨，光环琥珀色。",
+  "dialogue": [
+   {
+    "who": "DUODUO",
+    "text": "下次再乱跑，我咬你。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1> and <Picture 3>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Subject 2> is the black cat in <Picture 2> and <Picture 3>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Subject 3> is the translator collar in <Picture 4> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Picture 5> is the location reference for [Shot 1], a sunny rooftop with wooden planters, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges.\n\nsummary:\n[reference generation] <Subject 1> bumps her head against <Subject 2> while her pendant glows amber and scolds him.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and thin light ring stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same planters, solar panels, blue water tank, railings and parapet; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear bright midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker. <Subject 2> is also a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Medium two-shot at cat height, static, <Subject 1> on the left, <Subject 2> on the right. Within the first second the ring glows warm amber and <Subject 3> (S1) speaks in a low, dry, unhurried young woman's voice with a faint electronic grain from its tiny speaker, <d>[Chinese] 下次再乱跑，我咬你。</d> The mouth of <Subject 1> stays closed. She butts her forehead firmly against the side of his head in a real cat head-bump; <Subject 2> sways and blinks. The shot ends with the two cats shoulder to shoulder.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe low dry voice from the pendant, a soft thump of fur on fur, a tiny surprised mrrp from the black cat.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s09_12",
+  "scene": "S09",
+  "act": 2,
+  "beat": 9,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/duoduo.png",
+   "assets/catfilm/refs/momo.png",
+   "assets/catfilm/refs/pair_scale.png",
+   "assets/catfilm/refs/collar_v2.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "墨墨瞥了一眼阿柯，光环淡绿：告诉那个人类，他的鱼干太咸。",
+  "dialogue": [
+   {
+    "who": "MOMO",
+    "text": "告诉那个人类，他的鱼干太咸。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the real calico cat in <Picture 1> and <Picture 3>: a plump, mostly white cat with a black-and-orange crown patch, an orange spot beside the nose, pinkish ears, green-amber eyes, an orange-brown back patch, a dark tabby flank patch and a dark tabby tail.\n<Subject 2> is the black cat in <Picture 2> and <Picture 3>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Subject 3> is the translator collar in <Picture 4> worn by <Subject 1>: a slim graphite band with a coin-sized round titanium pendant at her throat and a thin light ring around a fine speaker grille.\n<Picture 5> is the location reference for [Shot 1], a sunny rooftop with wooden planters, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges.\n\nsummary:\n[reference generation] <Subject 2> glances sideways at the courier off-screen while the pendant of <Subject 3> glows pale green and voices his complaint.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white body, black-and-orange crown patch, orange spot beside the nose, pinkish ears, green-amber eyes, back patches and plump size stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - graphite band, round titanium pendant, speaker grille and thin light ring stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same planters, solar panels, blue water tank, railings and parapet; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear bright midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 1> is a real four-legged cat with natural feline anatomy and behaviour; she never stands on her hind legs and her mouth stays closed whenever the collar speaks - the voice comes only from the pendant speaker. <Subject 2> is also a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Medium two-shot at cat height, static, <Subject 1> on the left, <Subject 2> on the right. Within the first second the ring glows pale green and <Subject 3> (S1) speaks in a husky, scratchy teenage boy's voice from its tiny speaker, <d>[Chinese] 告诉那个人类，他的鱼干太咸。</d> The mouths of both cats stay closed; <Subject 2> slides his amber-gold eyes toward the courier off-screen right with a sly sideways look and flicks one ear. The shot ends on his deadpan stare.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe husky translated voice from the pendant, wind, a distant drone.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s09_13",
+  "scene": "S09",
+  "act": 2,
+  "beat": 10,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/ke.png",
+   "assets/catfilm/refs/momo.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "阿柯笑着抹了下眼角，对墨墨说话。",
+  "dialogue": [
+   {
+    "who": "KE",
+    "text": "喂你一年，第一句就是差评？"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the courier in <Picture 1>: a 26-year-old East Asian man with a cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Subject 2> is the black cat in <Picture 2>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Picture 3> is the location reference for [Shot 1], a sunny rooftop with wooden planters, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges.\n\nsummary:\n[reference generation] <Subject 1> laughs and wipes the corner of his eye as he answers <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, fingerless gloves, earpiece and canvas bag stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 3> ([Shot 1] location): partially_preserved - same planters, solar panels, blue water tank, railings and parapet; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear bright midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Medium shot at low angle from behind <Subject 2> in the lower foreground, <Subject 1> sitting against the water tank, both sharp. Within the first second <Subject 1> (S1) says, laughing in a fast, lively, slightly nasal young man's voice, his lips moving clearly, <d>[Chinese] 喂你一年，第一句就是差评？</d> He laughs, his eyes wet, and wipes the corner of one eye with the knuckle of his gloved hand. The black cat in the foreground does not react. The shot ends with <Subject 1> grinning down at the cat.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe courier's laugh breaking into the line, rooftop wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s09_14",
+  "scene": "S09",
+  "act": 2,
+  "beat": 11,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/ke.png",
+   "assets/catfilm/refs/momo.png",
+   "assets/catfilm/refs/loc_roof.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "阿柯慢慢伸出手；墨墨看了看，第一次让他摸了头。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the courier in <Picture 1>: a 26-year-old East Asian man with a cheerful round face, short spiky ash-brown dyed hair, a bright orange-and-white courier windbreaker with reflective piping and no logos, black fingerless cycling gloves, one wireless earpiece in his right ear and a small canvas cross-body bag.\n<Subject 2> is the black cat in <Picture 2>: a slightly smaller, slender, solid glossy black short-haired cat with round amber-gold eyes and no markings, no collar.\n<Picture 3> is the location reference for [Shot 1], a sunny rooftop with wooden planters, rows of tilted solar panels, a blue cylindrical water tank, metal railings and a low parapet, neighbouring towers linked by glass sky bridges.\n\nsummary:\n[reference generation] <Subject 1> slowly reaches out and <Subject 2>, after a look, lets him stroke his head for the first time.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - round face, spiky ash-brown hair, orange-and-white windbreaker, fingerless gloves, earpiece and canvas bag stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - solid glossy black coat, round amber-gold eyes and smaller slender size stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same planters, solar panels, blue water tank, railings and parapet; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear bright midday sunlight, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text. <Subject 2> is a real four-legged cat with natural feline anatomy; he never stands on his hind legs and his mouth never moves to form words.\n[Shot 1] Medium close-up at cat height, static, <Subject 2> in the center, the gloved hand and smiling face of <Subject 1> entering from the right. His hand moves slowly toward the black cat and stops a few centimeters away. <Subject 2> looks at the hand, sniffs it, then pushes the top of his head up into the palm; <Subject 1> strokes him once from head to neck. The shot ends with the cat's eyes half closed under the hand.\nEach subject appears exactly once; no duplicated people or animals.\nExactly the characters listed in subject_definitions appear, each exactly once; no twins, no look-alike extras, no second copy of any robot or animal.\n\noverall_soundscape:\nA soft sniff, the faint rustle of glove on fur, wind, the courier's held breath released.\n\nnon_diegetic_music: N/A"
+ }
+]

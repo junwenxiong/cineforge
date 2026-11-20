@@ -1,0 +1,272 @@
+[
+ {
+  "id": "sc_s16_01",
+  "scene": "S16",
+  "act": 3,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng_jet.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "裂锋战机从画右冲入楼群上空，空中变形为机器人：机翼折叠、躯干展开、双臂伸出",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the black delta-wing stealth bomber in <Picture 1>, with sharp faceted panels and a crimson underglow.\n<Subject 2> is the 15-meter-tall rebel war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm. It is the robot form of <Subject 1>.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the open air above the skyscraper rooftops.\n\nsummary:\n[reference generation] Above the rooftops, <Subject 1> transforms in mid-air into <Subject 2> while still hurtling forward.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - faceted black delta-wing shape and crimson underglow stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, slightly low angle from a rooftop edge, camera panning from right to left with the motion. <Subject 1> streaks in from frame right just above the skyscraper rooftops, crimson underglow lighting the rain. In mid-air its faceted panels split open: the delta wings fold back and become the swept wing blades, the fuselage unfolds into a torso, two legs swing down, and two arms extend from the sides, the crimson cannon sliding into place on the right forearm. The head rises last and the thin crimson optic slits ignite. A tiny teal light hovers between the towers at frame left. The shot ends with <Subject 2> fully formed and still hurtling toward that teal light, its left arm reaching forward.\n\noverall_soundscape:\nA jet shriek collapsing into heavy mechanical clanks, sliding blade-like plates, hydraulic hisses, a distorted low hum as the optic slits ignite, rushing wind and rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_02",
+  "scene": "S16",
+  "act": 3,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁悬停在画左，裂锋的巨手从画右抓来，阴影罩住她，五根指爪合拢",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the 15-meter-tall rebel war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the open air between two glass skyscrapers.\n\nsummary:\n[reference generation] The giant left hand of <Subject 2> sweeps in from the right and closes around <Subject 1> as she hovers between the towers.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Medium shot, eye level in mid-air, static camera with wind shake. <Subject 1> hovers on the left side of the frame, thruster pods burning steady teal, rain beading on her pearl-white plates. A huge gunmetal-black hand sweeps in from frame right, each blade-like finger longer than her whole body, its shadow falling over her and blotting out the city glow behind. Behind the hand, the head of <Subject 2> looms out of focus, crimson optic slits blazing. Her visor flares teal and she jerks back. The fingers begin to close around her from both sides. The shot ends with the claws a meter from her, rain streaming off their edges.\n\noverall_soundscape:\nA rush of displaced air, heavy servo whine of the giant fingers, a sharp gasp inside the helmet, thruster flare, rain and wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_03",
+  "scene": "S16",
+  "act": 3,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁向下急坠，从合拢的指缝间钻出，翻身朝画左加速逃开，巨爪在她身后抓空",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the 15-meter-tall rebel war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the open air between two glass skyscrapers.\n\nsummary:\n[reference generation] <Subject 1> drops out of the closing grip of <Subject 2> through a gap between the fingers and rockets away to the left.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Medium shot, eye level in mid-air, the camera dropping with her. <Subject 1> cuts her thrusters and falls straight down as the giant fingers of <Subject 2> slam shut above her head, grabbing only rain. She twists through the narrow gap between its thumb and forefinger, the edge of a claw scraping sparks off her shoulder plate. Below the hand, she flips over, reignites every thruster pod in a burst of teal flame and shoots away toward frame left. The empty fist of <Subject 2> fills the right side of the frame. The shot ends with her shrinking into the distance between the towers and the giant fist opening to give chase.\n\noverall_soundscape:\nGiant fingers clanging shut, a screech of metal on metal, rushing wind, a sharp thruster ignition boom, a distorted mechanical growl.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_04",
+  "scene": "S16",
+  "act": 3,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "高空大远景：林骁的青色光点在楼顶之间穿梭，裂锋从画右在楼顶间跃进追赶，踩塌水塔",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the 15-meter-tall rebel war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the rooftops of skyscrapers far above the streets, with antennas, water tanks and cooling units.\n\nsummary:\n[reference generation] High above the city, <Subject 1> weaves across the rooftops while <Subject 2> bounds from roof to roof behind her.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Extreme wide aerial shot, high angle above the skyscraper rooftops, slow drift from right to left. The rain-soaked city stretches below in teal and orange, smoke rising from distant fires. <Subject 1>, a small white figure trailing a teal streak, weaves left between rooftop antennas and water tanks, barely above the roofs. Behind her from frame right, <Subject 2> bounds from rooftop to rooftop with its wing blades spread, each landing crushing a water tank or cooling unit and throwing up spray and debris; it is many times larger than the water tanks. The shot ends with <Subject 2> gaining ground, one stride behind her teal trail.\n\noverall_soundscape:\nDistant thruster roar, huge rhythmic landing booms, bursting water tanks, crumpling metal, wind and rain, sirens far below.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_05",
+  "scene": "S16",
+  "act": 3,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "跟拍：林骁贴着楼顶低飞，裂锋的巨脚在她身后踏碎冷却机组，她猛地拉起翻身，面向画右的裂锋悬停",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the 15-meter-tall rebel war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the rooftops of skyscrapers far above the streets, with antennas, water tanks and cooling units.\n\nsummary:\n[reference generation] <Subject 1> skims a rooftop as the foot of <Subject 2> smashes down behind her, then pulls up and spins around to face it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide tracking shot, low angle at rooftop level, the camera racing alongside from her right. <Subject 1> skims across a wet rooftop toward frame left, her thruster wash blasting puddles into spray. Behind her, the gunmetal foot of <Subject 2> slams down from above and crushes a row of cooling units, the impact cracking the roof and throwing chunks of concrete past her. At the roof's far edge she pulls up hard, flips backward over the drop and turns in mid-air, thrusters flaring to brake. The shot ends with her hovering above the edge, facing frame right, while <Subject 2> straightens up across the roof, crimson slits fixed on her.\n\noverall_soundscape:\nA thunderous foot impact, crushed metal, cracking concrete, scattering debris, a screaming thruster burn, heavy breathing inside the helmet, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_06",
+  "scene": "S16",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁悬停蓄力：胸口六边形核心爆亮，全身青色纹路逐段亮起，双掌并拢推向画右",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the air above a skyscraper roof edge.\n\nsummary:\n[reference generation] <Subject 1> hovers and channels all her power, her chest core and armor seams blazing teal as she thrusts both palms forward.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Medium shot, slightly low angle, slow push-in. <Subject 1> hovers above a roof edge on the left side of the frame, facing frame right, rain hammering her plates and the city glowing far below. She draws both arms back. The hexagonal core in her chest brightens from a glow to a blinding teal star, and the energy seams along her limbs light up section by section from the chest outward to her hands. Rain hitting her armor flashes into steam. Teal light gathers between her palms into a crackling sphere, and her whole frame trembles with the strain. The shot ends with her thrusting both palms forward and the sphere bursting out toward frame right.\n\noverall_soundscape:\nA rising electric charge climbing in pitch, sizzling steam, the core's resonant hum swelling, a strained grunt, then a deep concussive release.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_07",
+  "scene": "S16",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "青色冲击波正面轰中裂锋，它抬起右前臂炮管格挡，能量在装甲上炸开四散",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall rebel war robot in <Picture 1>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the rooftops of skyscrapers far above the streets, with antennas, water tanks and cooling units.\n\nsummary:\n[reference generation] A full-power teal shockwave slams into <Subject 1>, which simply raises its right forearm and blocks it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, low angle from the rooftop, static camera with heavy impact shake. <Subject 1> stands on the far side of the roof, right of center, facing frame left. A massive ring of teal energy rushes in from frame left across the roof, tearing up gravel and flipping cooling units. <Subject 1> raises its right forearm, the cannon arm, across its chest. The shockwave detonates against the arm in a dome of teal light that splashes outward around its body, evaporating the rain into a wall of steam and blowing out the windows of a neighboring tower. Its feet slide back half a step, crushing the roof surface. The shot ends with the teal light dispersing into drifting sparks and steam around it.\n\noverall_soundscape:\nA colossal concussive blast, crackling energy, shattering windows, metal feet grinding on concrete, a long hiss of steam.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_08",
+  "scene": "S16",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "仰拍：蒸汽散开，裂锋缓缓放下手臂，装甲毫发无伤，深红眼缝眯起",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall rebel war robot in <Picture 1>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the rooftops of skyscrapers far above the streets, with antennas, water tanks and cooling units.\n\nsummary:\n[reference generation] As the steam clears, <Subject 1> lowers its arm completely unharmed, its crimson optic slits narrowing.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Medium close-up on the upper body and head of <Subject 1>, low angle, very slow push-in. Steam rolls around it, lit teal by fading sparks and crimson by its own eyes. Its right forearm is raised across its faceplate. It lowers the arm slowly. The gunmetal-black armor is untouched: no dent, no crack, only rain hissing as it hits the hot plates and a few teal embers sliding off. The thin crimson optic slits narrow and brighten as its head tilts slightly toward frame left. The shot ends with the head of <Subject 1> lowered toward the camera, crimson slits glowing through the clearing steam.\n\noverall_soundscape:\nSteam hissing, rain on hot metal, a deep distorted mechanical rumble like a low laugh, the slow whine of servos lowering the arm.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_09",
+  "scene": "S16",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "裂锋闪电般探手，从空中一把攥住林骁，她在巨拳里挣扎，只露出头盔和背部推进器",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the 15-meter-tall rebel war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the air above a skyscraper roof edge.\n\nsummary:\n[reference generation] <Subject 2> lunges and snatches <Subject 1> out of the air in its left fist, where she struggles.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, eye level in mid-air beside the roof edge, static camera with impact shake. <Subject 1> hovers on the left, her chest core dimmed after the blast, thrusters sputtering as she tries to back away. <Subject 2> lunges in from frame right with frightening speed, and its giant left hand snaps shut around her body. She is caught from the waist down inside the fist; only her helmet, arms, shoulders and the two thruster pods on her back stick out above the fingers. She pounds on the claws and her thrusters roar at full power, but the fist does not move. The shot ends with <Subject 2> lifting her up toward its head.\n\noverall_soundscape:\nA rush of air, a heavy metallic clamp, armored fists hammering on metal, straining thrusters, a pained grunt inside the helmet.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_10",
+  "scene": "S16",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "过肩镜头：林骁被攥在前景画左，裂锋的头在画右逼近，深红眼缝随音节闪烁，金属失真低语",
+  "dialogue": [
+   {
+    "who": "LIEFENG",
+    "text": "你的骨头，比你的装甲还脆。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall rebel war robot in <Picture 1>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Subject 2> is the armored heroine in <Picture 2>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; seen only as out-of-focus towers and rain behind the robot's head.\n\nsummary:\n[reference generation] Holding <Subject 2> in its fist, <Subject 1> brings her up to its face and sneers at her through flickering crimson optic slits.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical. Seen from behind, inside the giant fist.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Close-up over the shoulder of <Subject 2>, who is held in the giant fist in the left foreground, back to the camera, helmet and thruster pods in soft focus. On the right, the faceplate of <Subject 1> fills the frame, angular gunmetal plates streaming with rain, two thin crimson optic slits glowing a few meters from her. It has no mouth. Its fingers tighten and her armor creaks. <Subject 1>'s crimson optic slits flicker in sync with each syllable as it (S1) says in a distorted, metallic low whisper, <d>[Chinese] 你的骨头，比你的装甲还脆。</d> The shot ends with the crimson slits steady and bright, reflected on her teal visor.\n\noverall_soundscape:\nRain drumming on metal, the creak of armor under pressure, a deep electrical rumble under the voice, wind howling between the towers.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_11",
+  "scene": "S16",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "头盔内特写：林骁咬紧牙关，HUD 闪烁抽象红色警示图形，深红光照在她脸上，她仍死死盯着画右",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and sharp determined eyes; only her face and hair are used, since her body is inside the armor.\n<Subject 2> is the powered armor in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal seams along the limbs, a glowing hexagonal teal chest core, and a helmet with a vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; seen only as streaks of rain and crimson light outside the visor.\n\nsummary:\n[reference generation] Inside the helmet of <Subject 2>, <Subject 1> strains against the crushing grip, abstract red warning shapes flashing around her face.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, black bob with the silver streak on the left and right-eyebrow scar stay identical; the work jacket is not shown.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Close-up from inside the helmet, camera fixed in front of her face, trembling with the pressure. The face of <Subject 1> fills the center, framed by the dark padded interior of the helmet of <Subject 2>. Crimson light from outside floods across her face, mixing with the teal glow of the interface. Abstract red warning shapes pulse at the edges of the view, with no letters or numbers. A thin scrape of blood marks her cheek. She grits her teeth, veins standing out at her temple, the scar through her right eyebrow tight. She refuses to look away and glares toward frame right, breath hissing through her teeth. The shot ends with her eyes still fixed on the crimson light, defiant.\n\noverall_soundscape:\nRapid warning beeps, metal groaning around the helmet, strained breathing through clenched teeth, a muffled distorted rumble outside.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_12",
+  "scene": "S16",
+  "act": 3,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "特写：裂锋右手两根指爪夹住林骁左侧背部推进器，一点点捏扁，青焰熄灭，火花喷出",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall rebel war robot in <Picture 1>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Subject 2> is the armored heroine in <Picture 2>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; seen only as out-of-focus rain and city lights.\n\nsummary:\n[reference generation] In close-up, two fingers of <Subject 1> pinch the left back thruster pod of <Subject 2> and crush it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical. Only its fingers are seen.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical. Only her back and thruster pods are seen.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Insert close-up on her back, static camera. The upper back of <Subject 2> fills the lower half of the frame, gripped in the giant fist, both thruster pods still burning teal and straining. From frame right, two blade-like gunmetal fingers of the other hand of <Subject 1> close in and pinch the left thruster pod. They squeeze slowly. The pearl-white casing buckles and folds, the teal flame chokes and sputters, and the energy seams on that side flicker. Then the casing crumples completely, and a fountain of sparks and teal arcs sprays out from the ruptured pod. The shot ends with the left pod crushed flat and spitting sparks while the right pod still burns.\n\noverall_soundscape:\nGrinding, crumpling metal, a choking, stuttering thruster sputter, a sharp electrical crackle, a burst of sparks, rain hissing on hot metal.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_13",
+  "scene": "S16",
+  "act": 3,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "被捏碎的推进器炸开一团火花，冲击震开裂锋的指爪，林骁翻滚着脱手坠出画面下方",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit. Her left back thruster pod is crushed, sparking and leaking smoke, and only the right one still burns.\n<Subject 2> is the 15-meter-tall rebel war robot in <Picture 2>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the air beside a skyscraper, high above the streets.\n\nsummary:\n[reference generation] The crushed thruster of <Subject 1> explodes in sparks, jolting the fingers of <Subject 2> open, and she tumbles out of its grip.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Medium shot, eye level beside the giant fist, static camera with violent shake. <Subject 1> is still caught in the fist of <Subject 2>, her crushed left thruster pod spitting sparks. The pod explodes in a bright burst of sparks and teal arcs. She convulses, and the teal seams on her left side go dark. The blast jolts the giant fingers apart. She slips out between them and tumbles backward into the void, her right thruster firing in a wild uncontrolled burst. <Subject 2> looks down after her, crimson slits glowing. The shot ends with her falling out of the bottom of the frame, trailing smoke and sparks.\n\noverall_soundscape:\nA sharp electrical explosion, a cry of pain inside the helmet, metal fingers grinding open, an erratic thruster scream fading downward, wind and rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_14",
+  "scene": "S16",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "林骁失控螺旋下坠，仅剩右侧推进器断续喷火，左侧拖着黑烟火花，坠向下方楼顶的玻璃天顶",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit. Her left back thruster pod is crushed, sparking and leaking smoke, and only the right one still burns.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the canyon between towers, looking down at a lower building whose roof is a glass canopy over a sky garden.\n\nsummary:\n[reference generation] <Subject 1> spirals down between the towers out of control toward the glass canopy of a lower building.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, high angle looking down the canyon between towers, the camera tilting down to follow. <Subject 1> spins downward out of control, her right thruster coughing teal flame in bursts while the crushed left pod trails black smoke and sparks. She tries to stabilize, arms flailing, but each burst only spins her harder. Rain streaks past her, and lit windows blur by. Far below, the roof of a lower building is a curved glass canopy over a sky garden, glowing softly. The shot ends with her plunging straight toward the glass canopy, now filling the bottom of the frame.\n\noverall_soundscape:\nA rising wind roar, a stuttering, misfiring thruster, crackling sparks, a strained cry inside the helmet, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s16_15",
+  "scene": "S16",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "楼顶空中花园内低机位仰拍：林骁砸穿玻璃天顶，碎玻璃和雨水一起倾泻，她摔在湿地面上，胸口核心光芒闪烁",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit. Her left back thruster pod is crushed, sparking and leaking smoke, and only the right one still burns.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the inside of a rooftop sky garden under a curved glass canopy, with planters and wet stone paving, open to the storm once the glass breaks.\n\nsummary:\n[reference generation] <Subject 1> smashes through the glass canopy of a rooftop sky garden and crashes onto the wet floor amid falling shards.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; the sky garden interior is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI action film shot with anamorphic lenses: a rainy megacity night high above the streets, teal-blue and sodium-orange city glow, crimson enemy light, distant fires and smoke, volumetric haze, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, low angle from the stone floor of a rooftop sky garden, looking up through a curved glass canopy at the rainy night sky; static camera. Planters and small trees frame the edges. A teal streak trailing smoke grows above the glass. <Subject 1> smashes through the canopy in an explosion of glittering shards, rain pouring in through the hole after her. She slams onto the paving, skids across it, crushing a planter, and comes to rest on her side. Glass rains down around her. The shot ends with her lying still amid the shards, the crushed thruster sparking, the hexagonal chest core flickering weakly, rain falling on her through the broken roof.\n\noverall_soundscape:\nA deafening glass explosion, a heavy armored impact, scraping metal on stone, tinkling shards, sputtering sparks, then rain pouring through the broken canopy.\n\nnon_diegetic_music: N/A"
+ }
+]

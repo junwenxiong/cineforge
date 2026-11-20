@@ -1,0 +1,20 @@
+{
+ "title_zh": "三花信号",
+ "title": "三花信号",
+ "title_en": "CALICO  SIGNAL",
+ "prefix": "cf",
+ "render_prefix": "cf",
+ "credits_seconds": 62,
+ "credits_music": "cue8_credits_scottbuckley_legacy.mp3",
+ "credits": [
+  ["三花信号", "Title"], ["CALICO SIGNAL", "TitleEn"], ["", "Body"],
+  ["主演", "Head"], ["多多（本色出演）", "Body"], ["", "Body"],
+  ["特别出演", "Head"], ["墨墨", "Body"], ["", "Body"],
+  ["原创故事 · 分镜 · 导演", "Head"], ["AI 导演工作流（Claude Code）", "Body"], ["", "Body"],
+  ["视频生成", "Head"], ["MiniMax H3 · LTX-2.5 · DramaPie Box · Google Colab", "Body"], ["", "Body"],
+  ["角色与场景设定", "Head"], ["gpt-image-2 · Gemini（多多依据真实照片）", "Body"], ["", "Body"],
+  ["配乐", "Head"], ["Music by Scott Buckley (www.scottbuckley.com.au)\\Nreleased under CC-BY 4.0\\NBeyond These Walls · Tomorrow · The Long Dark · Simulacra\\NInto The Unknown · Emergent · Pursuit · Uprising · Catalyst\\NJuggernaut · The Fury · Starfire · Legacy", "Body"], ["", "Body"],
+  ["本片故事、人物与科技设定均为原创", "Body"], ["没有猫在拍摄中受到惊吓", "Body"], ["", "Body"], ["", "Body"],
+  ["— 完 —", "Head"]
+ ]
+}

@@ -1,0 +1,367 @@
+[
+ {
+  "id": "cf_s10_01",
+  "scene": "S10",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "阳光照进白色玻璃实验室；许棠坐在密封玻璃隔间里。陆承宇走进来，整了整袖口。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the engineer in <Picture 1>: a 31-year-old East Asian woman with calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, a light grey knit sweater with sleeves pushed up over a white T-shirt, slim dark navy trousers and white sneakers.\n<Subject 2> is the CEO in <Picture 2>: a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt and a slim graphite smartwatch on his left wrist.\n<Picture 3> is the location reference for [Shot 1], a white high-tech laboratory high in a skyscraper, with a sealed glass observation cell holding one chair and a small desk, slim server columns with tiny cyan lights, workbenches with collars and test pads, floor-to-ceiling windows with a city view and a sliding glass door.\n\nsummary:\n[reference generation] Sunlight fills the white lab; <Subject 1> sits in the sealed glass cell as <Subject 2> walks in and straightens his cuff.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, glasses, tucked black hair, grey knit sweater, navy trousers and white sneakers stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - lean face, greying swept-back hair, rimless glasses, charcoal mandarin-collar jacket and graphite smartwatch stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same glass cell, server columns, workbenches, windows and sliding door; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-afternoon daylight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Wide shot at eye level, static, the glass observation cell on the left and the sliding glass door on the right, deep focus across the whole lab. Inside the cell, <Subject 1> sits upright on the single chair, hands in her lap, watching. <Subject 2> walks in from the right, unhurried, stops a few steps from the glass and tugs his left cuff straight over the graphite smartwatch. The shot ends with the two of them facing each other through the clean glass.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nSoft hiss of the sliding door, measured footsteps on a polished floor, faint server fans.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s10_02",
+  "scene": "S10",
+  "act": 2,
+  "beat": 2,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆承宇近景，隔着玻璃微笑：许工，休息得好吗？三点半彩排。",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "许工，休息得好吗？三点半彩排。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s10_02.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, facing frame left toward the glass: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist). A composed faint smile. Behind him, the white high-tech lab with slim server columns, tiny cyan lights and the clean glass wall of an observation cell at his side (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine weave of the charcoal jacket; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, medium close-up eye level, facing frame left toward the glass, locked-off camera with a very slow push-in. Within the first second he says pleasantly, with a courteous smile in Mandarin Chinese, \"许工，休息得好吗？三点半彩排。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a white high-tech lab just outside a sealed glass observation cell, facing a prisoner inside. After the line he holds the polite smile and folds his hands in front of him. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, faint server fans, quiet lab room tone. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_03",
+  "scene": "S10",
+  "act": 2,
+  "beat": 3,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/xu_face.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "许棠近景，反打：你把听懂，做成了监听。",
+  "dialogue": [
+   {
+    "who": "XU",
+    "text": "你把听懂，做成了监听。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s10_03.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, facing frame right toward the glass: the 31-year-old East Asian woman engineer of References 1 and 2 (exact same face: calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, light grey knit sweater with sleeves pushed up over a white T-shirt). Her face is pale and steady, eyes hard behind her glasses. Behind her, the inside of a sealed glass observation cell with a chair, a small desk and the white lab with server columns beyond the glass (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the knit texture of the sweater; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, medium close-up eye level, facing frame right toward the glass, locked-off camera with a very slow push-in. Within the first second she says quietly and coldly in Mandarin Chinese, \"你把听懂，做成了监听。\" Her lips move in sync with each syllable. She is a 31-year-old East Asian woman with shoulder-length straight black hair tucked behind her ears and thin silver round-rimmed glasses, in a light grey knit sweater over a white T-shirt, sitting inside a sealed glass observation cell in a white high-tech lab, facing her captor outside the glass. After the line she keeps her eyes locked on him without blinking. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: her warm, soft-spoken, steady alto voice speaking the Mandarin line, the muffled hush of the sealed cell, faint server fans. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_04",
+  "scene": "S10",
+  "act": 2,
+  "beat": 4,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆承宇近景：三百万只宠物，三百万双耳朵。",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "三百万只宠物，三百万双耳朵。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s10_04.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, facing frame left toward the glass: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist). A calm, almost proud expression. Behind him, the white high-tech lab with slim server columns, tiny cyan lights and the clean glass wall of an observation cell at his side (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine weave of the charcoal jacket; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, medium close-up eye level, facing frame left toward the glass, locked-off camera with a very slow push-in. Within the first second he says evenly, almost admiringly in Mandarin Chinese, \"三百万只宠物，三百万双耳朵。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a white high-tech lab just outside a sealed glass observation cell, facing a prisoner inside. After the line he lifts his chin slightly, savouring the idea. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, faint server fans. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_05",
+  "scene": "S10",
+  "act": 2,
+  "beat": 4,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/xu_face.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "许棠的反应近景：下颌收紧，眼神一沉（无台词）。",
+  "dialogue": [],
+  "keyframe": "assets/catfilm/kf/cf_s10_05.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Close-up, eye level, facing frame right: the 31-year-old East Asian woman engineer of References 1 and 2 (exact same face: calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, light grey knit sweater with sleeves pushed up over a white T-shirt). Her eyes are fixed on the man outside the glass. Behind her, the inside of a sealed glass observation cell with a chair, a small desk and the white lab with server columns beyond the glass (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the knit texture of the sweater; no bokeh, no soft focus, no blur, no haze. Lips closed. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, close-up eye level, facing frame right, locked-off camera with a very slow push-in. She does not speak; her lips stay closed throughout. She is a 31-year-old East Asian woman with shoulder-length straight black hair tucked behind her ears and thin silver round-rimmed glasses, in a light grey knit sweater over a white T-shirt, sitting inside a sealed glass observation cell in a white high-tech lab, facing her captor outside the glass. Her jaw tightens and her gaze darkens as the words sink in; she draws one slow breath through her nose. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: no dialogue, a slow breath, muffled cell hush. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_06",
+  "scene": "S10",
+  "act": 2,
+  "beat": 5,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆承宇近景，轻敲玻璃：你造的是钥匙。我只是造了门。",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "你造的是钥匙。我只是造了门。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s10_06.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, facing frame left, the glass wall close at frame left: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist). A faint smile, one hand raised near the glass. Behind him, the white high-tech lab with slim server columns, tiny cyan lights and the clean glass wall of an observation cell at his side (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine weave of the charcoal jacket; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, medium close-up eye level, facing frame left, the glass wall close at frame left, locked-off camera with a very slow push-in. Within the first second he says lightly, as if stating a simple fact in Mandarin Chinese, \"你造的是钥匙。我只是造了门。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a white high-tech lab just outside a sealed glass observation cell, facing a prisoner inside. After the line he taps the glass twice lightly with one knuckle. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, two light knocks on thick glass, faint server fans. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_07",
+  "scene": "S10",
+  "act": 2,
+  "beat": 6,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/xu_face.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "许棠近景：项圈还能往它们脑子里写指令。",
+  "dialogue": [
+   {
+    "who": "XU",
+    "text": "项圈还能往它们脑子里写指令。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s10_07.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, facing frame right: the 31-year-old East Asian woman engineer of References 1 and 2 (exact same face: calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, light grey knit sweater with sleeves pushed up over a white T-shirt). She leans forward in the chair, accusing. Behind her, the inside of a sealed glass observation cell with a chair, a small desk and the white lab with server columns beyond the glass (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the knit texture of the sweater; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, medium close-up eye level, facing frame right, locked-off camera with a very slow push-in. Within the first second she says sharply, voice tight with anger in Mandarin Chinese, \"项圈还能往它们脑子里写指令。\" Her lips move in sync with each syllable. She is a 31-year-old East Asian woman with shoulder-length straight black hair tucked behind her ears and thin silver round-rimmed glasses, in a light grey knit sweater over a white T-shirt, sitting inside a sealed glass observation cell in a white high-tech lab, facing her captor outside the glass. After the line she grips the edge of the small desk. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: her warm, soft-spoken, steady alto voice speaking the Mandarin line, muffled cell hush, the faint creak of the chair. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_08",
+  "scene": "S10",
+  "act": 2,
+  "beat": 7,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/xu_face.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "许棠近景，盯着他：你要的不是理解，是服从。",
+  "dialogue": [
+   {
+    "who": "XU",
+    "text": "你要的不是理解，是服从。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s10_08.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Close-up, eye level, facing frame right: the 31-year-old East Asian woman engineer of References 1 and 2 (exact same face: calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, light grey knit sweater with sleeves pushed up over a white T-shirt). Her stare is unflinching. Behind her, the inside of a sealed glass observation cell with a chair, a small desk and the white lab with server columns beyond the glass (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the knit texture of the sweater; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, close-up eye level, facing frame right, locked-off camera with a very slow push-in. Within the first second she says slowly and firmly in Mandarin Chinese, \"你要的不是理解，是服从。\" Her lips move in sync with each syllable. She is a 31-year-old East Asian woman with shoulder-length straight black hair tucked behind her ears and thin silver round-rimmed glasses, in a light grey knit sweater over a white T-shirt, sitting inside a sealed glass observation cell in a white high-tech lab, facing her captor outside the glass. After the line she keeps staring at him, unblinking. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: her warm, soft-spoken, steady alto voice speaking the Mandarin line, near silence. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_09",
+  "scene": "S10",
+  "act": 2,
+  "beat": 8,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆承宇近景，笑意不变：理解，本来就是服从的第一步。",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "理解，本来就是服从的第一步。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s10_09.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, facing frame left: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist). His faint smile does not change. Behind him, the white high-tech lab with slim server columns, tiny cyan lights and the clean glass wall of an observation cell at his side (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine weave of the charcoal jacket; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, medium close-up eye level, facing frame left, locked-off camera with a very slow push-in. Within the first second he says gently, as if teaching in Mandarin Chinese, \"理解，本来就是服从的第一步。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a white high-tech lab just outside a sealed glass observation cell, facing a prisoner inside. After the line his smile stays exactly the same and he adjusts his rimless glasses with one finger. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, faint server fans. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_10",
+  "scene": "S10",
+  "act": 2,
+  "beat": 9,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆承宇俯身靠近玻璃：密钥在项圈里。四点前，它会回来。",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "密钥在项圈里。四点前，它会回来。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s10_10.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, slightly low angle, facing frame left, close to the glass: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist). He stands close to the glass wall. Behind him, the white high-tech lab with slim server columns, tiny cyan lights and the clean glass wall of an observation cell at his side (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine weave of the charcoal jacket; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, medium close-up slightly low angle, facing frame left, close to the glass, locked-off camera with a very slow push-in. Within the first second he says softly and confidently in Mandarin Chinese, \"密钥在项圈里。四点前，它会回来。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a white high-tech lab just outside a sealed glass observation cell, facing a prisoner inside. After the line he leans in closer to the glass, his reflection faint on its surface. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, faint server fans, quiet room tone. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_11",
+  "scene": "S10",
+  "act": 2,
+  "beat": 10,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/xu_face.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "许棠近景，嘴角浮起一丝笑：你抓不住她。她连我都抓不住。",
+  "dialogue": [
+   {
+    "who": "XU",
+    "text": "你抓不住她。她连我都抓不住。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s10_11.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Close-up, eye level, facing frame right: the 31-year-old East Asian woman engineer of References 1 and 2 (exact same face: calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, light grey knit sweater with sleeves pushed up over a white T-shirt). Her expression softens with a hidden pride. Behind her, the inside of a sealed glass observation cell with a chair, a small desk and the white lab with server columns beyond the glass (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the knit texture of the sweater; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, close-up eye level, facing frame right, locked-off camera with a very slow push-in. Within the first second she says quietly, with a hint of pride in Mandarin Chinese, \"你抓不住她。她连我都抓不住。\" Her lips move in sync with each syllable. She is a 31-year-old East Asian woman with shoulder-length straight black hair tucked behind her ears and thin silver round-rimmed glasses, in a light grey knit sweater over a white T-shirt, sitting inside a sealed glass observation cell in a white high-tech lab, facing her captor outside the glass. After the line a small knowing smile lifts one corner of her mouth. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: her warm, soft-spoken, steady alto voice speaking the Mandarin line, muffled cell hush. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_12",
+  "scene": "S10",
+  "act": 2,
+  "beat": 10,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆承宇的反应近景：笑容停顿了一拍（无台词）。",
+  "dialogue": [],
+  "keyframe": "assets/catfilm/kf/cf_s10_12.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, facing frame left: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist). His polite smile is in place. Behind him, the white high-tech lab with slim server columns, tiny cyan lights and the clean glass wall of an observation cell at his side (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine weave of the charcoal jacket; no bokeh, no soft focus, no blur, no haze. Lips closed. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, medium close-up eye level, facing frame left, locked-off camera with a very slow push-in. He does not speak; his lips stay closed throughout. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a white high-tech lab just outside a sealed glass observation cell, facing a prisoner inside. His smile stalls for one beat, his eyes narrowing slightly behind the rimless glasses, then the smile returns. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: no dialogue, faint server fans. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_13",
+  "scene": "S10",
+  "act": 2,
+  "beat": 11,
+  "mode": "reference",
+  "engine": "h3",
+  "refs": [
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "陆承宇手表震动，郑锋的声音从表里传出（画外）。",
+  "dialogue": [
+   {
+    "who": "ZHENG",
+    "text": "陆总，跟丢了。但它们往塔这边来了。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the CEO in <Picture 1>, seen only as a left wrist and hand: a charcoal mandarin-collar suit jacket cuff and a slim graphite smartwatch.\n<Picture 2> is the location reference for [Shot 1], a white high-tech laboratory high in a skyscraper, with a sealed glass observation cell holding one chair and a small desk, slim server columns with tiny cyan lights, workbenches with collars and test pads, floor-to-ceiling windows with a city view and a sliding glass door.\n\nsummary:\n[reference generation] The smartwatch on the wrist of <Subject 1> buzzes and the security chief's voice comes from its speaker.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - charcoal cuff and slim graphite smartwatch stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same glass cell, server columns, workbenches, windows and sliding door; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action film shot on spherical lenses, clear early-afternoon daylight through floor-to-ceiling windows, deep focus, crisp detail on fur, skin and materials, high dynamic range; no haze, no fog, no bokeh, no shallow depth of field. Keep the main subject in the center of the frame with clear headroom; no on-screen text.\n[Shot 1] Insert close-up of the left wrist of <Subject 1> raised at chest height, static, the charcoal cuff and the slim graphite smartwatch sharp, the white lab behind. The watch face glows with abstract pulsing graphics and vibrates. Within the first second an off-screen man speaks from the tiny watch speaker in a gruff, clipped low voice, slightly compressed, <d>[Chinese] 陆总，跟丢了。但它们往塔这边来了。</d> No person on screen speaks. <Subject 1> turns his wrist slightly toward himself to listen. The shot ends on the glowing watch face.\n\noverall_soundscape:\nA short watch vibration buzz, a gruff voice small and tinny from the watch speaker.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "cf_s10_14",
+  "scene": "S10",
+  "act": 2,
+  "beat": 12,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/lu_face.png",
+   "assets/catfilm/refs/lu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "陆承宇近景，直起身：那就开门，让她自己进来。",
+  "dialogue": [
+   {
+    "who": "LU",
+    "text": "那就开门，让她自己进来。"
+   }
+  ],
+  "keyframe": "assets/catfilm/kf/cf_s10_14.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Medium close-up, eye level, facing frame left: the 48-year-old East Asian man tech CEO of References 1 and 2 (exact same face: lean face, neatly swept-back black hair greying at the temples, rimless glasses, a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist). He stands upright, lowering his wrist. Behind him, the white high-tech lab with slim server columns, tiny cyan lights and the clean glass wall of an observation cell at his side (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the fine weave of the charcoal jacket; no bokeh, no soft focus, no blur, no haze. Lips closed, about to speak. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, medium close-up eye level, facing frame left, locked-off camera with a very slow push-in. Within the first second he says calmly, almost amused in Mandarin Chinese, \"那就开门，让她自己进来。\" His lips move in sync with each syllable. He is a 48-year-old East Asian man with a lean face, neatly swept-back black hair greying at the temples and rimless glasses, in a charcoal mandarin-collar suit jacket over a black high-neck shirt, a slim graphite smartwatch on his left wrist, standing in a white high-tech lab just outside a sealed glass observation cell, facing a prisoner inside. After the line he straightens his jacket and turns his head toward the door at frame right. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: his smooth, measured baritone that never rises speaking the Mandarin line, faint server fans. No music, no on-screen text."
+ },
+ {
+  "id": "cf_s10_15",
+  "scene": "S10",
+  "act": 2,
+  "beat": 12,
+  "mode": "keyframe",
+  "engine": "ltx",
+  "refs": [
+   "assets/catfilm/refs/xu_face.png",
+   "assets/catfilm/refs/xu.png",
+   "assets/catfilm/refs/loc_lab.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "许棠的反应近景：明白这是陷阱，转头望向窗外的城市（无台词）。",
+  "dialogue": [],
+  "keyframe": "assets/catfilm/kf/cf_s10_15.png",
+  "keyframe_prompt": "Opening frame of a photoreal live-action film shot, 16:9. Close-up, eye level, facing frame right: the 31-year-old East Asian woman engineer of References 1 and 2 (exact same face: calm intelligent dark eyes, shoulder-length straight black hair tucked behind her ears, thin silver round-rimmed glasses, light grey knit sweater with sleeves pushed up over a white T-shirt). The smile is gone; worry rises in her eyes. Behind her, the inside of a sealed glass observation cell with a chair, a small desk and the white lab with server columns beyond the glass (Reference 3), clear early-afternoon daylight through floor-to-ceiling windows. Deep focus: face and background both sharp; crisp skin pores, individual hair strands, the knit texture of the sweater; no bokeh, no soft focus, no blur, no haze. Lips closed. Head and shoulders centered with clear headroom. No text, no letters, no logos, no watermark.",
+  "ltx_prompt": "A photoreal live-action film shot, clear early-afternoon daylight through floor-to-ceiling windows, close-up eye level, facing frame right, locked-off camera with a very slow push-in. She does not speak; her lips stay closed throughout. She is a 31-year-old East Asian woman with shoulder-length straight black hair tucked behind her ears and thin silver round-rimmed glasses, in a light grey knit sweater over a white T-shirt, sitting inside a sealed glass observation cell in a white high-tech lab, facing her captor outside the glass. Her face goes still with alarm, and she turns her head toward the bright window and the city beyond, as if looking for someone out there. Deep focus with crisp skin pores, hair strands and fabric detail; no haze, no bokeh. Audio: no dialogue, muffled cell hush, a faint server hum. No music, no on-screen text."
+ }
+]

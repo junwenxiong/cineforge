@@ -1,0 +1,17 @@
+[
+ {"scenes": ["S01", "S02"], "file": "cue2_rainnight_scottbuckley_beyondthesewalls.mp3", "offset": 0, "gain_db": -17, "note": "第三天、不速之客：悬疑，压在对白下面"},
+ {"scenes": ["S03", "S04"], "file": "cue2_workshop_scottbuckley_tomorrow.mp3", "offset": 0, "gain_db": -16, "note": "三十二楼一跃、屋顶黑猫：轻快冒险"},
+ {"scenes": ["S05"], "file": "cue6_sorrow_scottbuckley_thelongdark.mp3", "offset": 0, "gain_db": -18, "note": "回忆：护身符，温柔"},
+ {"scenes": ["S06", "S07"], "file": "cue2_workshop_scottbuckley_tomorrow.mp3", "offset": 60, "gain_db": -17, "note": "天台快递站、货舱：喜剧"},
+ {"scenes": ["S08"], "file": "cue4_chase_scottbuckley_simulacra.mp3", "offset": 0, "gain_db": -14, "note": "巡犬追击"},
+ {"scenes": ["S09"], "file": "cue5_flight_scottbuckley_intotheunknown.mp3", "offset": 0, "gain_db": -17, "note": "水塔下：没有翻译也懂"},
+ {"scenes": ["S10"], "file": "cue3_awakening_scottbuckley_emergent.mp3", "offset": 0, "gain_db": -18, "note": "玻璃笼：反派动机，低频压迫"},
+ {"scenes": ["S11"], "file": "cue4_battle_scottbuckley_pursuit.mp3", "offset": 0, "gain_db": -17, "note": "潜入衡渊塔"},
+ {"scenes": ["S12", "S13"], "file": "cue2_rainnight_scottbuckley_beyondthesewalls.mp3", "offset": 200, "gain_db": -16, "note": "重逢→中点反转→被改写的声音"},
+ {"scenes": ["S14"], "file": "cue7_resolve_scottbuckley_uprising.mp3", "offset": 0, "gain_db": -16, "note": "墨墨的选择：阿柯读懂它"},
+ {"scenes": ["S15", "S16"], "file": "cue6_sorrow_scottbuckley_thelongdark.mp3", "offset": 250, "gain_db": -16, "note": "只听你、铃的告白：至暗与决心"},
+ {"scenes": ["S17"], "file": "cue4_battle2_scottbuckley_catalyst.mp3", "offset": 0, "gain_db": -14, "note": "四十架无人机集结"},
+ {"scenes": ["S18"], "file": "cue3_ambush_scottbuckley_juggernaut.mp3", "offset": 95, "gain_db": -17, "note": "发布会：华丽而不祥"},
+ {"scenes": ["S19", "S20"], "file": "cue7_climax_scottbuckley_thefury.mp3", "offset": 0, "gain_db": -14, "note": "核心室对峙、铃的最后一次翻译"},
+ {"scenes": ["S21", "S22"], "file": "cue8_dawn_scottbuckley_starfire.mp3", "offset": 0, "gain_db": -16, "note": "呼噜（开头 20 秒压到 -24 让呼噜声露出来）→ 听得见"}
+]

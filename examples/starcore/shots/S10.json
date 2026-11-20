@@ -1,0 +1,294 @@
+[
+ {
+  "id": "sc_s10_01",
+  "scene": "S10",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "蒙太奇开场：深夜工坊全景，林骁独自坐在工作台前，头顶浮着青色全息装甲线框图（无文字）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with a single silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Picture 2> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] Late at night in the empty workshop, <Subject 1> works alone at a cluttered workbench beneath a floating teal holographic wireframe of a new armor suit.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar and jacket stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, high angle from the rafters, slow descending crane move through the hanging chains. Initial state: the vast workshop is dark except for one pool of warm tungsten light over a workbench at frame center-left; the empty armor test rig stands in shadow at center-right, and blue moonlight slants down from the high windows through drifting dust. <Subject 1> sits hunched at the bench, a life-size teal holographic wireframe of a slim armored suit rotating slowly above it, built only from glowing lines and abstract shapes with no text or numbers. As the camera descends, she reaches up and drags the chest section of the hologram toward her with two fingers, the lines rippling and re-forming into a sleeker shape. End state: the camera settles at bench height behind her shoulder, her silhouette framed against the turning teal wireframe, empty coffee cups and scattered tools around her.\n\noverall_soundscape:\nSoft electric hum of the hologram projector, faint chime-like tones as the wireframe re-forms, a distant harbor foghorn, chains creaking gently, the low buzz of the tungsten lamps.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_02",
+  "scene": "S10",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "林骁的脸被全息青光照亮，她用指尖拉伸线框胸甲的六边形核心",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>, with a short asymmetrical black bob with a single silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] Close on <Subject 1>'s face, lit by the teal hologram, as she reshapes the chest core of the wireframe with her fingertips.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar and jacket stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium close-up, eye level, from the far side of the hologram looking back at her through the glowing lines, very slow push-in. Initial state: <Subject 1> leans toward the hologram, chin resting on one fingerless-gloved fist, her face washed in teal light with warm tungsten rim light on her hair and the silver streak. She lifts her free hand and pinches the hexagonal chest core of the wireframe, then spreads her fingers so the abstract lines widen and lock into place with a soft flash. Her eyes narrow in concentration, then a small satisfied smile pulls at the corner of her mouth. End state: she leans back an inch, studying the reshaped outline, teal lines reflected in her pupils. The hologram shows only abstract geometry, no readable text or numbers. Behind her, the workshop melts into soft bokeh of warm work lights and blue windows.\n\noverall_soundscape:\nClose hum of the projector, a soft crystalline click as the wireframe locks, her slow exhale, night wind against the high windows, the faint tick of a cooling lamp.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_03",
+  "scene": "S10",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "特写：林骁用角磨机打磨一块珍珠白装甲板，火花四溅",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with a single silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Picture 2> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] Close-up of <Subject 1>'s gloved hands grinding the edge of a curved pearl-white armor plate, throwing a fountain of sparks across the bench.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar and jacket stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Close-up, low angle at bench level, slow lateral slide from left to right. Initial state: a curved matte pearl-white armor plate with a dark graphite inner edge is clamped in a vise on the scarred steel bench; <Subject 1>'s fingerless-gloved hands, burnt-orange jacket sleeves with reflective strips pushed up to the forearm, steady an angle grinder above it. The disc touches the edge and a dense fan of bright orange sparks sprays toward frame right, bouncing off the concrete floor and drifting like fireflies through the haze. She draws the grinder smoothly along the curve, leaving a clean polished bevel that catches the light. End state: she lifts the grinder away, the last sparks fading, a thin wisp of smoke curling up from the gleaming edge. Keep the plate and hands in the vertical center; the plate carries no text or markings.\n\noverall_soundscape:\nHigh-pitched whine of the angle grinder biting into metal, crackling spark showers, the vise creaking under pressure, a ventilation fan humming somewhere in the dark workshop.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_04",
+  "scene": "S10",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁推起护目镜，吹掉粉尘，把装甲板举到灯下检查弧度",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>, with a short asymmetrical black bob with a single silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] <Subject 1> pushes up her goggles, blows the dust off the finished pearl-white plate and holds it up to the work light to check its curve.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar and jacket stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, eye level, static camera with a gentle handheld drift. Initial state: <Subject 1> stands at the bench with clear safety goggles over her eyes, a fine haze of metal dust hanging in the warm lamp beam, the smooth curved pearl-white plate held in both hands. She pushes the goggles up onto her forehead, leaving a faint ring of grime around her eyes, purses her lips and blows a puff of dust off the plate. Then she lifts the plate toward the tungsten lamp and rotates it slowly so the light glides across the flawless matte surface, her eyes tracking the curve. End state: she nods once to herself, holding the plate beside her face, the scar through her right eyebrow catching the light. Behind her, blue moonlight from the high windows, hanging chains and scrap piles sit in soft focus.\n\noverall_soundscape:\nA soft puff of breath, dust settling, the faint scrape of the plate against her gloves, the low buzz of the lamp, water lapping at the harbor pilings outside.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_05",
+  "scene": "S10",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "周野坐在测试架旁，用平板调试一具小型推进器，喷口吐出稳定的青焰",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the young man in <Picture 1> and <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] <Subject 1> tunes a compact thruster pod bolted to a test stand, tapping his rugged tablet until the nozzle answers with a clean teal pulse.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, slightly low angle, slow arc from left to right around the test stand. Initial state: <Subject 1> sits on a rolling stool beside a waist-high steel stand where a compact pearl-white thruster pod is bolted, its nozzle pointing away from him toward frame right; his rugged tablet glows with abstract waveform graphics and no text. He taps the tablet with his thumb and the nozzle answers with a soft teal flicker; he taps again and the flicker swells into a short, clean pulse of teal flame that pushes a ripple of heat haze across the bench. His crooked grin spreads and he pumps a small fist. End state: the pod idles with a gentle teal glow while <Subject 1> leans in close to listen to it, warm work light on one side of his face and blue moonlight on the other.\n\noverall_soundscape:\nRising electric whine of the thruster pod, a soft whump of teal flame, quick tablet taps, the squeak of the stool's wheels, the steady background hum of the workshop.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_06",
+  "scene": "S10",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "特写：碎片嵌在六边形插座里，青光沿透明管线一股股流进推进器",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the young man in <Picture 1>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Picture 2> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] Insert of the thumb-sized glowing shard seated in a hexagonal socket, its teal light pulsing along transparent conduits into the thruster pod as <Subject 1>'s hand opens a valve.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Insert, macro lens, very shallow depth of field, slow rack focus from foreground to background. Initial state: in sharp focus at frame center, a thumb-sized faceted crystal shard with swirling blue-white light inside sits in a small hexagonal graphite socket on the bench, glowing softly teal; bundles of transparent conduits run from the socket toward a pearl-white thruster pod in soft focus behind it. A pulse of bright teal light swells inside the shard and travels down the conduits like liquid, one bead of light after another, flowing from left to right. In the background, the hand of <Subject 1>, olive-green bomber jacket cuff visible, turns a small brass valve, and the pulses speed up. As the focus racks back to the pod, its seams light up teal in answer. End state: the conduits glow in a steady rhythmic flow, the pod shining, the shard pulsing like a heartbeat.\n\noverall_soundscape:\nA deep resonant crystalline hum that swells and fades with each pulse, liquid electric whooshes along the conduits, the squeak of the valve, the pod's answering electric purr.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_07",
+  "scene": "S10",
+  "act": 2,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "门外一声电机尖啸，无人驾驶的白青色赛车摩托从画左钻进卷帘门，横向漂移急停",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the riderless racing motorcycle in <Picture 1>, with sharp white-and-cyan fairings and glowing cyan wheel rims.\n<Subject 2> is the woman engineer in <Picture 2>, with a short asymmetrical black bob with a single silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 3> is the young man in <Picture 3>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Picture 4> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] With a scream of electric motors, <Subject 1> bursts into the workshop under the rolling door and slides sideways to a stop while <Subject 2> and <Subject 3> spin around.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white-and-cyan fairings and cyan rims stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar and jacket stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, low angle near the floor, static. Initial state: the rolling door at frame left stands half open onto the dark yard; <Subject 2> at her bench and <Subject 3> at his test stand are small figures in warm light at the back right. A rising electric scream builds outside, then <Subject 1>, riderless, cyan rims blazing, shoots in under the door from frame left and slides sideways across the concrete in a long drift, spitting dust and loose bolts. It stops dead at frame center, broadside to the camera. End state: the bike idles with its rims glowing, dust swirling through the moonbeams, while <Subject 2> and <Subject 3> stand frozen, staring at it.\n\noverall_soundscape:\nA piercing electric motor scream, tires screeching on concrete, scattered bolts clattering, then a soft electric idle hum and settling dust.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_08",
+  "scene": "S10",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "FS",
+  "summary_zh": "变形：摩托车身展开站起，化为三米高的侦察机器人雀翎",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the riderless racing motorcycle in <Picture 1>, with sharp white-and-cyan fairings and glowing cyan wheel rims.\n<Subject 2> is the 3-meter-tall scout robot in <Picture 2>, the robot form of <Subject 1>, with a slim pearl-white and electric-cyan frame, two large round cyan optic eyes, motorcycle wheels on its forearms, and no mouth.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] <Subject 1> transforms in place into <Subject 2>, its fairings unfolding and lifting until the slim scout robot stands three meters tall in the workshop.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white-and-cyan fairings and cyan rims stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white-and-cyan frame, round cyan eyes and forearm wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Full shot, low angle at knee height, slow push-in. Initial state: <Subject 1> idles broadside at frame center, its rims glowing cyan, dust drifting through the moonlight. Its fairings split along clean seams; the front and rear wheels swing outward and up as the frame tips upright, and the wheels fold onto two emerging forearms. Slim legs unfold from the chassis and plant on the concrete, a torso of pearl-white and electric-cyan panels rises and locks with small mechanical clicks, and a compact head pivots up last. End state: <Subject 2> stands fully formed, three meters tall, motorcycle wheels on its forearms, its two large round optic eyes still dark. A workbench and a tool cart beside its legs show its scale. The motion is quick, precise and light, never bulky.\n\noverall_soundscape:\nA rapid cascade of mechanical clicks, servo whirs and sliding panels, wheels spinning down, a final crisp lock-in clank, the low workshop hum underneath.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_09",
+  "scene": "S10",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "雀翎的两只大圆眼亮起、眨了眨，歪头好奇地啾鸣",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 3-meter-tall scout robot in <Picture 1>, with a slim pearl-white and electric-cyan frame, two large round cyan optic eyes, motorcycle wheels on its forearms, and no mouth.\n<Picture 2> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] Close-up of <Subject 1>'s head as its two large round cyan eyes light up and blink, and it tilts its head with a curious chirp.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white-and-cyan frame, round cyan eyes and forearm wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Close-up, eye level with the robot's head, static camera with a slight handheld breathe. Initial state: the compact pearl-white head of <Subject 1> fills the center of frame, its two large round optic eyes dark. The eyes flicker on with an electric-cyan glow, their irises contracting and widening like camera apertures as they focus. The robot blinks twice, thin shutter-like lids sliding down and up, then tilts its head to one side and lets out a bright, rising electronic chirp, its eyes brightening with each note. It has no mouth; all of its emotion shows through eye brightness and the tilt of its head. End state: the head is cocked curiously, eyes wide and shining, with the warm workshop lights and the blue high windows blurred behind it.\n\noverall_soundscape:\nA soft power-on hum, two tiny mechanical shutter blinks, a bright curious two-tone electronic chirp, servos whirring in its neck.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_10",
+  "scene": "S10",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "【一镜两切】周野吓得从椅子上跳起来；切近景：雀翎歪头，伸手指戳了戳他的耳机",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the young man in <Picture 1> and <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Subject 2> is the 3-meter-tall scout robot in <Picture 3>, with a slim pearl-white and electric-cyan frame, two large round cyan optic eyes, motorcycle wheels on its forearms, and no mouth.\n<Picture 4> is the location reference for [Shot 1] and [Shot 2], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] <Subject 1> leaps off his stool in fright as <Subject 2> leans toward him, then the robot tilts its head and pokes his headset with one fingertip.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1] and [Shot 2]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Subject 2> (appears in [Shot 1] and [Shot 2]): fully_preserved - white-and-cyan frame, round cyan eyes and forearm wheels stay identical.\n<Picture 4> ([Shot 1] and [Shot 2] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, eye level, static, holding the 180-degree line with <Subject 1> at frame left and <Subject 2> at frame right. Initial state: <Subject 1> sits on his rolling stool, tablet in hand, staring open-mouthed as <Subject 2> bends down toward him. When the big cyan eyes come within a meter of his face, he yelps, jolts off the stool and stumbles back against a workbench, clutching his tablet.\n[Shot 2] At 00:04.000, the shot cuts to a close-up two-shot over the robot's right shoulder, same lighting and screen sides. <Subject 2> tilts its head, extends one slender white-and-cyan finger and taps the left earcup of his headset twice. The headset beeps; <Subject 1> flinches, then breaks into a disbelieving laugh and a crooked grin. End state: the finger hovers near the headset as he grins nervously up at the glowing eyes.\n\noverall_soundscape:\nA startled yelp, stool wheels rattling across concrete, two soft taps and a headset beep, a nervous laugh, a small curious chirp.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_11",
+  "scene": "S10",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "卷帘门外停着磐石重卡，车灯随声音明灭，向两人介绍雀翎",
+  "dialogue": [
+   {
+    "who": "PANSHI",
+    "text": "雀翎，我的侦察兵。它会保护你们。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the colossal six-wheeled mining haul truck in <Picture 1>, with weathered industrial yellow and dark graphite stone-textured panels, amber running lights and giant rugged tires.\n<Subject 2> is the young man in <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Subject 3> is the 3-meter-tall scout robot in <Picture 3>, with a slim pearl-white and electric-cyan frame, two large round cyan optic eyes, motorcycle wheels on its forearms, and no mouth.\n<Picture 4> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] Through the open rolling door, <Subject 1> parked outside speaks to <Subject 2> and <Subject 3>, its amber running lights pulsing with every syllable.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite panels, amber lights and giant tires stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - white-and-cyan frame, round cyan eyes and forearm wheels stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot from deep inside the workshop, eye level, slow push-in. Initial state: <Subject 2> and <Subject 3> stand side by side in the foreground at frame right; through the open rolling door at frame left, the colossal front of <Subject 1> fills the doorway, its tires taller than the door frame. Both turn toward it. The truck has no face and no mouth; <Subject 1>'s amber running lights pulse in sync with each syllable as it (S1) says in a very deep, slow voice, <d>[Chinese] 雀翎，我的侦察兵。它会保护你们。</d> Nobody inside the workshop speaks. <Subject 3> straightens proudly with a short happy chirp. End state: the amber lights dim, and <Subject 2> gives <Subject 3> a crooked half-smile.\n\noverall_soundscape:\nA very deep resonant voice with a diesel-electric undertone, the truck's low idle rumble, a happy electronic chirp, night wind through the open door.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_12",
+  "scene": "S10",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "着装特写：测试架机械臂把 Mk-II 前臂甲扣合到林骁小臂上，青色能量缝亮起",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with a single silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the sleek powered armor suit in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a glowing hexagonal teal chest core, and a smooth helmet with a single vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] Close-up of the test rig clamping the pearl-white forearm plate of <Subject 2> around <Subject 1>'s outstretched arm, its teal seam lighting up as it locks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar and jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal core and T-shaped visor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Close-up, side angle at arm height, slow tracking move along the arm from wrist to elbow. Initial state: <Subject 1> stands inside the armor test rig in her charcoal tank top, her right arm extended into frame from the left, a fingerless glove on her hand. A mechanical rig arm swings a curved matte pearl-white and dark graphite forearm plate of <Subject 2> in from frame right. The two halves of the plate open like a clamshell, close around her forearm and seal with a sharp magnetic clack, and a thin teal energy seam ignites and runs along the plate from wrist to elbow. She flexes her fingers. End state: the armored forearm holds at frame center, the teal seam glowing steadily, warm work light gleaming on the matte surface.\n\noverall_soundscape:\nPneumatic hiss of the rig arm, a sharp magnetic clack, bolts ratcheting tight, a rising electric hum as the teal seam lights, her slow breath.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_13",
+  "scene": "S10",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "胸甲左右合拢，胸口六边形青色核心（碎片在内）亮起，青光照亮林骁的脸",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1> and <Picture 2>, with a short asymmetrical black bob with a single silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the sleek powered armor suit in <Picture 3>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a glowing hexagonal teal chest core, and a smooth helmet with a single vertical T-shaped teal visor slit.\n<Picture 4> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] The chest plate of <Subject 2> closes over <Subject 1>'s torso and its hexagonal teal core flares to life, lighting her face from below.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar and jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal core and T-shaped visor stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium close-up, frontal, eye level, slow push-in from chest to face. Initial state: <Subject 1> stands in the test rig, both arms already armored in pearl-white and graphite, her neck and face bare, chin raised. Two halves of the chest plate of <Subject 2> swing in from left and right on rig arms and close across her torso with a deep clunk. At the center of the chest, the hexagonal core, with the thumb-sized crystal shard seated inside it, flickers, then blazes bright teal; teal seams race outward across the plates. The teal glow rises onto her face from below, catching the silver streak in her hair and the scar through her right eyebrow. Her lips part in quiet wonder. End state: her face and the glowing core share the frame, her eyes steady and determined.\n\noverall_soundscape:\nA heavy locking clunk of the chest plates, a deep crystalline power-up hum rising in pitch, crackling energy racing along the seams, her slow exhale.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_14",
+  "scene": "S10",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "背面中景：机械臂把背部推进器压装到装甲背上，喷口亮起青光",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with a single silver streak on the left, a small scar through her right eyebrow, and a burnt-orange work jacket with reflective strips.\n<Subject 2> is the sleek powered armor suit in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a glowing hexagonal teal chest core, and a smooth helmet with a single vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] From behind, the rig lowers the compact back thruster pods of <Subject 2> onto <Subject 1>'s armored back, and the nozzles glow teal as they lock.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar and jacket stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal core and T-shaped visor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot from behind, slightly low angle, static with a slow tilt up. Initial state: <Subject 1> stands in the test rig with her back to the camera, her short black bob with the silver streak visible above the pearl-white and graphite back plate of <Subject 2>; her burnt-orange jacket hangs over the rig railing at frame right. An overhead rig arm descends with the compact twin back thruster pods, positions them over her shoulder blades and drives them down onto the back plate. Locking pins slam home one after another, and the nozzles flare with a brief teal glow before settling into a soft idle light. End state: her armored silhouette stands framed in the rig, thruster pods glowing, blue moonlight from the high windows falling across her shoulders.\n\noverall_soundscape:\nA heavy servo whine as the arm descends, four locking pins slamming home in rhythm, a short teal ignition whoosh, steam hissing, the rig's steel frame creaking.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_15",
+  "scene": "S10",
+  "act": 2,
+  "beat": 9,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "头盔甲片从颈部和脑后滑出合拢，罩住林骁的脸，T 形面罩亮起青光",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with a single silver streak on the left and a small scar through her right eyebrow.\n<Subject 2> is the sleek powered armor suit in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a glowing hexagonal teal chest core, and a smooth helmet with a single vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] The smooth helmet of <Subject 2> closes around <Subject 1>'s face, and its T-shaped visor slit ignites teal.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal core and T-shaped visor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Close-up, frontal, eye level, static camera with a very slight push-in at the end. Initial state: <Subject 1> stands in the test rig armored up to the neck in <Subject 2>, the glowing hexagonal core at the bottom of frame, her bare face looking straight into the lens, the silver streak falling across her forehead. She gives a small nod. Segmented pearl-white and graphite helmet plates slide up from the collar and forward from behind her head, overlapping and sealing smoothly over her hair, cheeks and eyes until her face disappears behind the smooth faceplate. A beat of darkness, then a single vertical T-shaped visor slit ignites with bright teal light, spreading from the center outward. End state: the closed helmet faces the camera, the T-shaped visor glowing steadily, teal light reflecting off the rig bars and warm work lights flaring in the background.\n\noverall_soundscape:\nA fast sequence of sliding plate clicks, a soft pressurized seal hiss, a moment of muffled silence, then a sharp rising electronic tone as the visor lights.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s10_16",
+  "scene": "S10",
+  "act": 2,
+  "beat": 10,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "头盔内视角：林骁的脸被 HUD 青光照亮，她闭眼深吸一口气，再睁开",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with a single silver streak on the left and a small scar through her right eyebrow.\n<Subject 2> is the sleek powered armor suit in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a glowing hexagonal teal chest core, and a smooth helmet with a single vertical T-shaped teal visor slit.\n\nsummary:\n[reference generation] From inside the helmet, <Subject 1>'s face glows in the teal light of abstract HUD graphics as she takes one deep breath.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal core and T-shaped visor stay identical.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with contrast lighting, volumetric haze and high dynamic range: warm tungsten work lights against cool blue moonlight, with teal energy accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Close-up from inside the helmet, the lens placed just in front of the inner visor and looking back at her face, static with a faint vibration. Initial state: <Subject 1>'s face fills the center of frame in near darkness, framed by the padded graphite inner lining of the helmet of <Subject 2>; only her eyes, brows and cheekbones are lit. Abstract HUD graphics bloom to life between her and the lens: thin teal arcs, rotating rings and pulsing dots, with no letters or numbers, reflected softly in her pupils and on her skin. Her eyes track the shapes left and right. She closes her eyes and draws a long, deep breath that lifts her shoulders, holds it, then opens her eyes again, steady and calm. End state: her determined gaze locks forward, teal light rim-lighting the scar through her right eyebrow and the silver streak at her temple.\n\noverall_soundscape:\nMuffled closed-helmet acoustics, soft electronic chirps of the HUD booting up, her close amplified inhale and slow exhale, the low steady hum of the suit.\n\nnon_diegetic_music: N/A"
+ }
+]

@@ -1,0 +1,455 @@
+[
+ {
+  "id": "sc_s15_01",
+  "scene": "S15",
+  "act": 3,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "大远景：无人机群像黑云一样从画右海面压向画左的澜城天际线（慢节奏建立镜）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the spider drone in <Picture 1>, a dog-sized black six-legged machine with a single glowing crimson eye and sharp metal legs; many identical copies appear. Here they fly, legs tucked, on small crimson hover jets under their bodies.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; seen here from high above the bay.\n\nsummary:\n[reference generation] A vast swarm of <Subject 1> drones rolls in from the sea like a black storm cloud toward the city skyline.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical on every drone.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; the camera is a new position over the bay.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Extreme wide shot, high angle from over the dark bay, slow drift left. The rain-soaked megacity glows on the left side of the frame, towers lit teal and sodium-orange, elevated highways threaded with light. From the right, over the open sea, a black cloud rolls in low above the waves, so dense it blots out the horizon; it is made of thousands of <Subject 1> drones, their crimson eyes glittering like embers inside smoke. The swarm moves as one, rippling and folding. Its leading edge reaches the first coastal towers, and their lit windows go dark behind it. The shot ends with the black cloud filling the right two-thirds of the frame and pressing against the skyline, lightning flickering above.\n\noverall_soundscape:\nA rising, buzzing roar of thousands of tiny jets, rain on water, air-raid sirens wailing across the city, thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_02",
+  "scene": "S15",
+  "act": 3,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "高架路面低机位：车流急停，无人机群前锋从楼群之间俯冲落到车顶，市民向画左逃散",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the spider drone in <Picture 1>, a dog-sized black six-legged machine with a single glowing crimson eye and sharp metal legs; many identical copies appear. Here they fly, legs tucked, on small crimson hover jets under their bodies.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the wet lanes of an elevated highway between towers.\n\nsummary:\n[reference generation] On an elevated highway, cars skid to a stop as the front of the swarm of <Subject 1> drones dives between the towers and lands on the cars.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical on every drone.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, low angle from the wet lanes of an elevated highway, static camera. Cars brake hard and skid to a stop, headlights flaring in the rain. Above the towers on the right, the leading edge of the swarm of <Subject 1> drones descends like a falling curtain, crimson eyes flickering, and splits around a skyscraper. A few dozen drones break away and dive at the highway, unfold their six legs and land on car roofs with sharp impacts, denting the metal. Small figures of civilians throw open their doors and run toward frame left. The shot ends with drones crawling over the stalled cars, crimson eyes sweeping, while the swarm darkens the sky above.\n\noverall_soundscape:\nScreeching tires, car horns, the swarm's buzzing roar overhead, metallic thuds of landing drones, clicking legs on car roofs, distant screams, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_03",
+  "scene": "S15",
+  "act": 3,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "海堤上一排防空炮台转向画右齐射，炮口火光由近及远依次亮起",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here a fortified seawall below the towers carrying a row of heavy anti-air turrets.\n\nsummary:\n[reference generation] A row of coastal anti-air turrets on the seawall swivels toward the sea and fires a rolling salvo into the night sky.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; the seawall and turrets are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, low angle along the seawall, the line of turrets running from the foreground into the distance, the city towers glowing on frame left and the black sea on frame right. Rain lashes the armored turret housings, each twice the height of the soldiers in rain ponchos crouching beside them with ear protection. The turrets swivel up toward the right in unison. Then they fire in a rolling salvo from foreground to background, each muzzle flash lighting the wet concrete orange, the recoil shaking water off the barrels. Brass shell casings tumble onto the wall. The shot ends with smoke streaming off the barrels and tracer lines climbing away toward the upper right.\n\noverall_soundscape:\nDeep staggered cannon booms rolling down the line, clanging shell casings, hydraulic turret whine, rain and wind, an indistinct shouted command.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_04",
+  "scene": "S15",
+  "act": 3,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "曳光弹划破夜空扎进画右的无人机群，爆出成片火花坠向海面",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the spider drone in <Picture 1>, a dog-sized black six-legged machine with a single glowing crimson eye and sharp metal legs; many identical copies appear. Here they fly, legs tucked, on small crimson hover jets under their bodies.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; seen from a rooftop looking out over the bay.\n\nsummary:\n[reference generation] Streams of tracer fire arc across the rainy sky and rake into the swarm of <Subject 1> drones, which burst into sparks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical on every drone.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Extreme wide shot, low angle from a rooftop looking out over the bay, slow tilt up. Streams of orange tracer fire rise from the seawall at the lower left and arc across the rainy sky in glowing dotted lines. They rake into the black swarm of <Subject 1> drones on the right, and drones burst into hundreds of small orange-white sparks, tumbling into the sea like burning embers. Flak shells explode in puffs of light inside the cloud, tearing holes that the swarm quickly closes again. The shot ends with the sky crisscrossed by tracer lines while the swarm keeps advancing through the flashes.\n\noverall_soundscape:\nRapid distant gunfire, crackling flak bursts, the swarm's buzzing roar, sizzling sparks hitting the water, thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_05",
+  "scene": "S15",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "跟拍：磐石重卡在高架上从画左冲向画右，撞开废弃车辆，冲上断裂的路面腾空",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the colossal six-wheeled mining haul truck in <Picture 1>, weathered industrial yellow and dark graphite with stone-like textures, amber running lights and giant rugged tires.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here a stretch of elevated highway with a collapsed section ahead.\n\nsummary:\n[reference generation] <Subject 1> thunders down the elevated highway, shoves aside an abandoned car and launches off a broken section of road.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow and graphite body, stone-like texture, amber lights and giant tires stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide tracking shot, low angle, the camera racing alongside. <Subject 1> thunders down the rain-slick elevated highway from frame left to frame right, its giant tires throwing up sheets of spray, amber running lights blazing. Abandoned cars are tiny beside its tires; it shoulders one aside and sends it spinning. Ahead, a section of the highway has collapsed, its broken edge slanting upward like a ramp. <Subject 1> accelerates, engine roaring, and hits the broken edge. The shot ends with its front wheels leaving the ground as it launches into the air over the gap, rain and debris trailing behind it.\n\noverall_soundscape:\nA massive diesel-electric roar, tires hissing on wet asphalt, a crunch as a car is shoved aside, rain, a sharp bang as the truck hits the broken edge.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_06",
+  "scene": "S15",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/panshi_truck.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "仰拍：重卡在半空中拆解翻转，变形为磐石机器人，握拳下落",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core, and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is the colossal six-wheeled mining haul truck in <Picture 2>, weathered industrial yellow and dark graphite with stone-like textures, amber running lights and giant rugged tires. It is the vehicle form of <Subject 1>.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the gap of a collapsed elevated highway section.\n\nsummary:\n[reference generation] In mid-air above the broken highway, <Subject 2> unfolds and transforms into <Subject 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow and graphite stone-textured armor, amber optic band, amber chest core and folded wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow and graphite body, stone-like texture, amber lights and giant tires stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, low angle from the highway below, camera tilting up to follow, motion slowed slightly. <Subject 2> sails across the gap in the rain, nose up, amber lights trailing streaks. Its body panels split along their seams and rotate: the cab folds down into a chest and reveals the glowing amber hexagonal core, the rear frame splits into two legs, the huge wheels flip onto the shoulders and lower legs, and arms swing out from the sides. A flat faceplate rises and the amber optic band blazes on. The shot ends with <Subject 1> fully formed in mid-air, right fist drawn back, starting to fall toward a black shape on the highway at frame right.\n\noverall_soundscape:\nClanking, sliding heavy plates, hydraulic hisses, rotating gears, a deep resonant thrum as the optic band ignites, rushing wind and rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_07",
+  "scene": "S15",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "磐石从画左落地，一拳砸碎刚落地的大型蚀灭者机体，碎片飞溅",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core, and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is a large Eclipser war machine with no reference picture: about eight meters tall, hunched, with angular black plating, four thick legs and a cluster of crimson eyes.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the elevated highway beyond the collapsed section, with a crashed police car.\n\nsummary:\n[reference generation] <Subject 1> lands on the highway and smashes the freshly landed <Subject 2> to pieces with one punch.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow and graphite stone-textured armor, amber optic band, amber chest core and folded wheels stay identical.\n<Subject 2> (appears in [Shot 1]): weak_reference - text-defined only; keep its black angular plating and crimson eye cluster.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, low angle from behind a crashed police car in the foreground, static camera with impact shake. On the highway at frame right, <Subject 2> has just landed and pushes itself up out of a crater in the asphalt, crimson eyes swiveling. <Subject 1> drops in from frame left and lands on both feet, cracking the road. In the same motion it drives its right fist down into <Subject 2>. The black plating caves in, and the machine bursts apart in a shower of sparks and fragments, its crimson eyes going dark. Shards clatter across the road past the police car. The shot ends with <Subject 1> rising to full height in the rain, steam rising off its fist, amber optic band glowing.\n\noverall_soundscape:\nA huge landing boom, cracking asphalt, a crushing metal impact, a burst of fragments, a dying electronic whine, rain hissing on hot metal.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_08",
+  "scene": "S15",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "跟拍：林骁在玻璃高楼之间高速穿梭，压弯绕过楼角、侧滚穿过楼缝，朝画右加速",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the canyons between rain-streaked glass skyscrapers.\n\nsummary:\n[reference generation] <Subject 1> streaks between the glass towers at high speed, banking and rolling through narrow gaps toward the enemy.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide tracking shot, the camera flying behind and slightly above her, matching speed. <Subject 1> streaks between rain-streaked glass towers from frame left toward frame right, the thruster pods on her back and calves burning steady teal flame. She banks hard around the corner of a skyscraper, her reflection flashing across the glass, then rolls sideways through a narrow gap between two towers, rain spraying off her plates. Ahead, a string of small crimson lights crosses the gap. The shot ends with her leveling out and accelerating straight at them, teal flame flaring longer.\n\noverall_soundscape:\nThruster roar Doppler-shifting past, rushing wind and rain, glass windows humming as she passes, distant explosions.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_09",
+  "scene": "S15",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁空中急停，推出右掌，青色冲击波把一串无人机逐个打碎",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the spider drone in <Picture 2>, a dog-sized black six-legged machine with a single glowing crimson eye and sharp metal legs; many identical copies appear. Here they fly, legs tucked, on small crimson hover jets under their bodies.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here open air between two glass towers.\n\nsummary:\n[reference generation] <Subject 1> brakes in mid-air and blasts a line of <Subject 2> drones apart with a teal energy shockwave from her palm.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical on every drone.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Medium shot, eye level in mid-air, static camera framing her from the side. <Subject 1> brakes on the left side of the frame, thruster pods flaring to hold her hovering. A chain of <Subject 2> drones flies at her from the right in a line, crimson eyes fixed on her. She thrusts her right palm forward; the hexagonal chest core flashes, and a ring of teal energy bursts from her hand, rippling through the rain. The shockwave tears through the line of drones one after another, each bursting into sparks and broken legs. The shot ends with debris falling away through the rain and <Subject 1> lowering her hand, teal light fading from her palm.\n\noverall_soundscape:\nA charging electric whine, a deep concussive whoomp, a rapid chain of small metallic explosions, falling debris, a steady thruster roar.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_10",
+  "scene": "S15",
+  "act": 3,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "POV",
+  "summary_zh": "头盔内主观视角：青色锁定框（抽象图形、无文字）逐个套住前方躲闪的无人机",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the spider drone in <Picture 1>, a dog-sized black six-legged machine with a single glowing crimson eye and sharp metal legs; many identical copies appear. Here they fly, legs tucked, on small crimson hover jets under their bodies.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; seen in flight between towers.\n\nsummary:\n[reference generation] Point of view through a helmet visor in flight, as abstract teal lock-on brackets track several <Subject 1> drones.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical on every drone.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Point-of-view shot from inside a closed armor helmet, the camera flying forward fast between rainy towers and rolling gently. No body is visible. A faint curved visor edge frames the image, and rain streaks across the outside of the glass. Thin teal holographic graphics float in view, purely abstract, with no numbers, letters or symbols: corner brackets, rings and arcs. Ahead, a dozen <Subject 1> drones scatter across the night sky. Teal brackets snap onto them one by one, shrink tight around each crimson eye and follow them as they dodge. A circular reticle in the center turns from a thin outline to a solid ring. The shot ends with every drone framed by a pulsing teal bracket.\n\noverall_soundscape:\nMuffled wind outside the helmet, quick breathing, soft electronic lock-on chirps rising in pitch, a steady thruster rumble.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_11",
+  "scene": "S15",
+  "act": 3,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "头盔内特写：林骁的脸被 HUD 青光照亮，眼睛追着目标转动，咬牙点头放出攻击",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and sharp determined eyes; only her face and hair are used, since her body is inside the armor.\n<Subject 2> is the powered armor in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal seams along the limbs, a glowing hexagonal teal chest core, and a helmet with a vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; seen only as streaking lights outside the visor.\n\nsummary:\n[reference generation] Inside the closed helmet of <Subject 2>, the face of <Subject 1> is lit by the teal HUD as her eyes track targets and she releases the attack.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, black bob with the silver streak on the left and right-eyebrow scar stay identical; the work jacket is not shown.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Close-up from inside the helmet, camera fixed in front of her face, gentle vibration. The face of <Subject 1> fills the center, framed by the dark padded interior of the helmet of <Subject 2>. Abstract teal graphics without text reflect in her eyes and glow on her skin; the silver streak in her black bob and the scar through her right eyebrow catch the light. Her eyes dart left, right and up, following targets, pupils narrowing. She exhales through clenched teeth and gives a tiny nod. A burst of teal light flashes across her face from outside. The shot ends with her eyes already searching for the next target.\n\noverall_soundscape:\nClose, quick breathing, rapid lock-on chirps, a muffled concussive blast outside, the low hum of the helmet systems.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_12",
+  "scene": "S15",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "跟拍：雀翎摩托从画左冲过燃烧的街道，在一辆被压住的轿车旁横向急停，车里困着母女",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the white-and-cyan racing motorcycle in <Picture 1>, with glowing cyan wheel rims and sharp fairings, no rider.\n<Subject 2> is a young mother and her six-year-old daughter with no reference picture: the mother in a grey raincoat, the girl in a yellow raincoat; their faces stay small in frame.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here a street at ground level beneath an elevated highway, littered with burning drone wreckage.\n\nsummary:\n[reference generation] <Subject 1> races down a burning street and skids to a stop beside a crushed car where <Subject 2> are trapped.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white-and-cyan fairings and glowing cyan rims stay identical.\n<Subject 2> (appears in [Shot 1]): weak_reference - text-defined only; keep the grey and yellow raincoats consistent.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide tracking shot, low angle at road level, the camera racing just ahead. <Subject 1> screams down the street from frame left, cyan rims glowing, weaving between burning drone wreckage and abandoned cars, spray fanning from its tires. Ahead on the right, a silver sedan sits crushed under a fallen concrete slab, its hood on fire; through the cracked rear window, <Subject 2> bang on the glass. <Subject 1> leans into a hard skid, rear wheel sliding sideways. The shot ends with it stopping broadside beside the car, steam rising from the wet asphalt.\n\noverall_soundscape:\nA high electric motor shriek, tires skidding on wet asphalt, crackling flames, muffled cries from inside the car, distant explosions, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_12_v2",
+  "scene": "S15",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "跟拍：雀翎摩托从画左冲过燃烧的街道，在一辆被压住的轿车旁横向急停，车里困着母女（重拍）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the white-and-cyan racing motorcycle in <Picture 1>, with glowing cyan wheel rims and sharp aerodynamic fairings; it drives itself and has no rider.\n<Subject 2> is a young mother and her six-year-old daughter with no reference picture: the mother in a grey raincoat, the girl in a yellow raincoat, both with natural human faces, small in frame.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here a street at ground level beneath an elevated highway, littered with burning drone wreckage.\n\nsummary:\n[reference generation] The riderless <Subject 1> races down a burning street and skids to a stop beside a crushed car where <Subject 2> are trapped.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white-and-cyan fairings and glowing cyan rims stay identical; the seat stays empty.\n<Subject 2> (appears in [Shot 1]): weak_reference - text-defined only; keep the grey and yellow raincoats consistent.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters. Nobody rides the motorcycle: there is no rider, no helmet and no person on or touching it at any moment; its seat is empty. The only people in the shot are the two inside the car.\n[Shot 1] Wide side-on tracking shot, low angle at road level, the camera moving alongside. The empty <Subject 1> speeds down the street from frame left toward frame right, cyan rims glowing, passing burning drone wreckage, spray fanning from its tires. Ahead on the right, one silver sedan sits crushed under a fallen concrete slab, its hood on fire. Through its side window, <Subject 2> are visible: the mother in grey holding the girl in yellow, both pressing a hand against the glass. <Subject 1> brakes hard, its rear wheel sliding sideways. The shot ends with it stopped broadside beside the car, upright and empty, steam rising from the wet asphalt.\n\noverall_soundscape:\nA high electric motor shriek, tires skidding on wet asphalt, crackling flames, muffled cries from inside the car, distant explosions, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_13",
+  "scene": "S15",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "摩托变形为雀翎，扯下卡死的车门，把母女抱出车外",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 3-meter-tall scout robot in <Picture 1>, with a slim pearl-white and electric-cyan frame, two large round expressive cyan optic eyes, and motorcycle wheels on its forearms.\n<Subject 2> is the white-and-cyan racing motorcycle in <Picture 2>, with glowing cyan wheel rims and sharp fairings, no rider. It is the vehicle form of <Subject 1>.\n<Subject 3> is a young mother and her six-year-old daughter with no reference picture: the mother in a grey raincoat, the girl in a yellow raincoat; their faces stay small in frame.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here a burning street beside a crushed silver sedan.\n\nsummary:\n[reference generation] <Subject 2> transforms into <Subject 1>, which tears the jammed door off the crushed car and lifts <Subject 3> out.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - slim white-and-cyan frame, round cyan eyes and forearm wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white-and-cyan fairings and glowing cyan rims stay identical.\n<Subject 3> (appears in [Shot 1]): weak_reference - text-defined only; keep the grey and yellow raincoats consistent.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Medium shot, eye level beside the crushed sedan, static camera. <Subject 2> stands broadside; its fairings split and unfold, the frame rises upright, the wheels swing onto the forearms, and <Subject 1> stands up, three meters tall, round cyan eyes blinking on. It grips the jammed rear door with both hands and wrenches it off with a screech of metal, tossing it aside. Leaning in, it gently gathers <Subject 3>, the mother clutching the girl, into its arms. The shot ends with <Subject 1> holding them against its chest, its eyes narrowing into worried crescents as flames spread behind.\n\noverall_soundscape:\nClicking, sliding panels and a motor whir, a bright electronic chirp, tearing metal, the girl crying, crackling fire growing louder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_13_v2",
+  "scene": "S15",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "摩托变形为雀翎，扯下卡死的车门，把母女抱出车外（重拍）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 3-meter-tall scout robot in <Picture 1>, with a slim pearl-white and electric-cyan frame, two large round expressive cyan optic eyes, no mouth, and one motorcycle wheel on each forearm.\n<Subject 2> is the white-and-cyan racing motorcycle in <Picture 2>, with glowing cyan wheel rims and sharp fairings, no rider. It is the vehicle form of <Subject 1>, the same single machine.\n<Subject 3> is a young mother and her six-year-old daughter with no reference picture: the mother in a grey raincoat, the girl in a yellow raincoat; their faces stay small in frame.\n<Picture 3> is the location reference for [Shot 1], a rainy megacity street at night beside a crushed silver sedan, signs without readable text.\n\nsummary:\n[reference generation] <Subject 2> unfolds into <Subject 1>, which pulls the jammed door off the crushed car and lifts <Subject 3> out.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - slim white-and-cyan frame, round cyan eyes and forearm wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white-and-cyan fairings and glowing cyan rims stay identical until it unfolds.\n<Subject 3> (appears in [Shot 1]): weak_reference - text-defined only; keep the grey and yellow raincoats consistent.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers and wet reflections; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters. There is exactly one machine in this shot: the motorcycle becomes the robot. Once the robot stands, no motorcycle remains anywhere in frame; its two wheels are now the two wheels on the robot's forearms. Exactly two people: one mother, one girl.\n[Shot 1] Medium-wide shot, eye level beside the crushed sedan, static camera. <Subject 2> stands broadside on the left, nobody on it. Its fairings fold open, the frame rises upright and the two wheels swing up onto the forearms, so the whole motorcycle becomes <Subject 1>, three meters tall, round cyan eyes lighting up. It steps to the car, grips the jammed rear door with both hands and pulls it off, setting it down on the road. It leans in and gently lifts <Subject 3> out, the mother holding the girl. The shot ends with <Subject 1> standing beside the open car, holding both of them against its chest, flames behind.\n\noverall_soundscape:\nSliding panels and a motor whir, tearing metal, the girl crying, crackling fire.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_14",
+  "scene": "S15",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "雀翎抱着母女向画左跃开，身后轿车爆炸，它落地护住二人",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 3-meter-tall scout robot in <Picture 1>, with a slim pearl-white and electric-cyan frame, two large round expressive cyan optic eyes, and motorcycle wheels on its forearms.\n<Subject 2> is a young mother and her six-year-old daughter with no reference picture: the mother in a grey raincoat, the girl in a yellow raincoat; their faces stay small in frame.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here a burning street beside a crushed silver sedan.\n\nsummary:\n[reference generation] <Subject 1> leaps clear with <Subject 2> in its arms as the car explodes behind them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - slim white-and-cyan frame, round cyan eyes and forearm wheels stay identical.\n<Subject 2> (appears in [Shot 1]): weak_reference - text-defined only; keep the grey and yellow raincoats consistent.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, low angle from across the street, static camera. <Subject 1> crouches beside the burning sedan with <Subject 2> held tightly in its arms, shielding them with its slim white shoulders. Flames reach the fuel tank. <Subject 1> springs toward frame left in a long arcing leap, its forearm wheels spinning. Behind it, the sedan explodes in a ball of orange fire, throwing debris and a wave of rain spray. <Subject 1> lands on one knee in the foreground, curling around the mother and girl as burning fragments rain down. The shot ends with it lifting its head, cyan eyes blinking, and the girl peeking out unharmed from its arms.\n\noverall_soundscape:\nA deep whoosh and explosion, clattering debris, a soft relieved electronic warble, the girl's gasp, rain and sirens.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_15",
+  "scene": "S15",
+  "act": 3,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "极低机位仰拍：蜘蛛无人机爬满一栋玻璃大楼外墙，玻璃开裂坠落，楼内灯光逐层熄灭",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the spider drone in <Picture 1>, a dog-sized black six-legged machine with a single glowing crimson eye and sharp metal legs; many identical copies appear.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here the street at the foot of a tall glass skyscraper.\n\nsummary:\n[reference generation] Hundreds of <Subject 1> drones crawl over the facade of a glass skyscraper, cracking the panes as they swarm upward.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical on every drone.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, extreme low angle from the street at the foot of a glass skyscraper, slow tilt up. The facade is crawling with hundreds of <Subject 1> drones, black bodies covering the glass like a moving skin, crimson eyes glittering. Their sharp legs punch into the panes, spiderweb cracks spreading, and shards rain down into the street, where tiny figures of people scatter. Office lights inside flicker and die floor by floor as the drones swarm upward. The shot ends tilted up toward the upper floors, where the swarm is thickest, as a lone teal light streaks across the sky above the roofline.\n\noverall_soundscape:\nA dense chattering of thousands of metal legs on glass, cracking panes, glass shattering on the street, screams below, sirens, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_16",
+  "scene": "S15",
+  "act": 3,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "林骁贴着大楼外墙俯冲，一路扫出冲击波，把无人机成片扫落，在街面上空急停",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the spider drone in <Picture 2>, a dog-sized black six-legged machine with a single glowing crimson eye and sharp metal legs; many identical copies appear.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; seen from a neighboring rooftop facing a drone-covered glass skyscraper.\n\nsummary:\n[reference generation] <Subject 1> dives down the drone-covered facade and sweeps <Subject 2> drones off the glass in sheets with a continuous teal shockwave.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical on every drone.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot from a neighboring rooftop, the camera panning down with her. <Subject 1> dives headfirst down the face of the drone-covered skyscraper from the upper part of the frame, teal thruster flames trailing. She sweeps her right arm along the facade as she falls; a continuous teal shockwave rolls off her palm and peels <Subject 2> drones off the glass in sheets, sending hundreds tumbling away in sparks. Just above the street, she flips upright and brakes, thrusters flaring, and hovers. The shot ends with a clean, teal-lit stripe down the facade and drones raining around her into the street.\n\noverall_soundscape:\nA screaming dive, the rolling concussive roar of the shockwave, hundreds of small metallic pops, debris clattering on asphalt, a thruster flare.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_17",
+  "scene": "S15",
+  "act": 3,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "大桥上：磐石面朝画右挡住海上涌来的无人机，士兵们在它脚后背靠背守住另一头",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core, and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is a squad of about a dozen soldiers with no reference picture, in dark grey tactical armor and helmets with rifles; their faces are never seen up close.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here a wide cable-stayed bridge across the bay, its deck barricaded with overturned trucks.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> hold a bridge back to back, the robot facing the sea end while the soldiers cover the city end.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow and graphite stone-textured armor, amber optic band, amber chest core and folded wheels stay identical.\n<Subject 2> (appears in [Shot 1]): weak_reference - text-defined only; keep the grey armor and helmets uniform.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot, low angle from the bridge deck, static camera. <Subject 1> stands in the center of the bridge facing frame right, toward the sea, five times the height of the soldiers, rain streaming off its yellow plates. Behind its heels, <Subject 2> kneel behind a barricade of overturned trucks with their backs to it, firing toward frame left at drones climbing over the far railing. From frame right, a wave of drones swarms along the deck and over the cables. <Subject 1> sweeps its arm and knocks them off the bridge into the bay, then plants its feet. The shot ends with the robot and the soldiers holding position, muzzle flashes and amber light glowing through the rain.\n\noverall_soundscape:\nRifle fire, the swarm's buzzing, heavy metal impacts, drones splashing into the water, deep hydraulic groans, rain and wind through the bridge cables.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_18",
+  "scene": "S15",
+  "act": 3,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "一群无人机俯冲自爆，磐石单膝跪下张开身躯护住士兵，用后背挡下连环爆炸",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core, and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is a squad of about a dozen soldiers with no reference picture, in dark grey tactical armor and helmets with rifles; their faces are never seen up close.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here a wide cable-stayed bridge across the bay, its deck barricaded with overturned trucks.\n\nsummary:\n[reference generation] As a cluster of drones dives in to explode, <Subject 1> kneels and covers <Subject 2> with its body, taking the blasts on its back.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow and graphite stone-textured armor, amber optic band, amber chest core and folded wheels stay identical.\n<Subject 2> (appears in [Shot 1]): weak_reference - text-defined only; keep the grey armor and helmets uniform.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Medium shot, low angle from among the soldiers at its feet, static camera with heavy shake. A tight cluster of drones dives at the barricade, glowing crimson, about to detonate. <Subject 1> turns, drops to one knee and spreads its huge arms and torso over <Subject 2>, its back toward the incoming drones. The drones explode against its back in a chain of orange fireballs; the blasts roll over its shoulders and the wheels mounted there, but none reach the soldiers. Sparks and burning fragments shower around them. The shot ends with <Subject 1> still hunched over the soldiers, smoke pouring off its scarred back, its amber chest core glowing above them.\n\noverall_soundscape:\nA rapid chain of explosions, shrapnel ringing off armor, a deep hydraulic groan, soldiers shouting, rain sizzling on hot plates.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_19",
+  "scene": "S15",
+  "act": 3,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "仰拍：烟雾中磐石低头看着脚下的士兵（只见头盔和背影），琥珀光带缓缓明灭两次，又起身面向大海",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core, and huge haul-truck wheels folded on its shoulders and lower legs.\n<Subject 2> is a squad of about a dozen soldiers with no reference picture, in dark grey tactical armor and helmets with rifles; their faces are never seen up close.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here a wide cable-stayed bridge across the bay, its deck barricaded with overturned trucks.\n\nsummary:\n[reference generation] Under the shelter of <Subject 1>, the helmeted <Subject 2> look up at it, and its amber optic band pulses back at them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow and graphite stone-textured armor, amber optic band, amber chest core and folded wheels stay identical.\n<Subject 2> (appears in [Shot 1]): weak_reference - text-defined only; keep the grey armor and helmets uniform.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Medium close-up, low angle from the bridge deck past the backs of two helmeted soldiers in the foreground, their faces hidden. Smoke drifts across the frame. Above them, the scarred faceplate of <Subject 1> looks down, its amber optic band glowing steadily through the haze, its huge hand braced on the deck beside the soldiers. <Subject 2> lower their rifles and look up at it, rain running off their helmets. The amber band pulses slowly twice. One soldier reaches out and pats the edge of a giant finger once. The shot ends with <Subject 1> rising out of frame to face the sea again as the smoke clears.\n\noverall_soundscape:\nRinging silence after the explosions, crackling embers, the robot's low mechanical hum, heavy breathing, rain, distant sirens.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_20",
+  "scene": "S15",
+  "act": 3,
+  "beat": 9,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "指挥中心全息屏：红色光点群冲破两道蓝色防线，在第三道防线前停滞后退（抽象图形）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the dark military command center with large holographic tactical displays showing abstract maps and blue light.\n\nsummary:\n[reference generation] On the tactical hologram, the red swarm breaks two blue defense lines but stalls and recedes at the third.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same blue holographic light and dark consoles; the close hologram view is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light with slow red alert pulses, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every hologram shows only abstract graphics.\n[Shot 1] Insert close-up on the holographic table, camera slowly descending over it. A blue wireframe coastline shows three glowing curved blue lines arching around the city, which sits on the left; the sea is on the right. Red swarm points push against the two outer lines, which flicker and break into fragments. The red mass presses on the third, innermost line, but it holds steady and brightens, and red points that touch it wink out in tiny bursts. The front of the swarm stalls, then thins and pulls back toward the right. No numbers, letters or symbols appear anywhere. The shot ends with the third blue line glowing solid and unbroken.\n\noverall_soundscape:\nThe hologram's hum, a tracking beep that accelerates then eases, indistinct radio reports, the alarm softening in the background.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_21",
+  "scene": "S15",
+  "act": 3,
+  "beat": 9,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin_face.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "秦岳俯身撑着全息台，握拳砸在台沿，压着嗓子喊出第三防线守住了",
+  "dialogue": [
+   {
+    "who": "QIN",
+    "text": "第三防线守住了！"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, and a dark navy dress uniform with plain silver collar insignia.\n<Picture 2> is the location reference for [Shot 1], the dark military command center with large holographic tactical displays showing abstract maps, blue light and officers' consoles.\n\nsummary:\n[reference generation] <Subject 1> watches the hologram, clenches his fist on the table and announces that the third defense line has held.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and navy uniform with silver collar insignia stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same dark room, blue displays and consoles; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light with slow red alert pulses, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every hologram shows only abstract graphics.\n[Shot 1] Medium close-up, slightly low angle, static camera. <Subject 1> leans over the holographic table facing frame left, both hands on its edge, blue light on his weathered face, his collar slightly loosened. He watches the map intently; his eyes widen a fraction. He clenches his right fist and brings it down on the table edge with a dull thud. <Subject 1> (S1) says in a low voice that rises into a controlled shout, <d>[Chinese] 第三防线守住了！</d> Out of focus behind him, officers raise their fists. The shot ends with him straightening up, fist still clenched, eyes fixed on the map, the faintest relief in his face.\n\noverall_soundscape:\nA fist thud on metal, brief scattered cheers, radio chatter, the alarm slowing to a calmer tone.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_22",
+  "scene": "S15",
+  "act": 3,
+  "beat": 10,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng_jet.png",
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "高空大远景：裂锋战机从画右的无人机群中撕裂而出，压坡俯冲向画左楼群间的青色光点",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the black delta-wing stealth bomber in <Picture 1>, with sharp faceted panels and a crimson underglow.\n<Subject 2> is the spider drone in <Picture 2>, a dog-sized black six-legged machine with a single glowing crimson eye and sharp metal legs; many identical copies appear. Here they fly, legs tucked, on small crimson hover jets under their bodies.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; seen from high above, fires burning in several districts.\n\nsummary:\n[reference generation] <Subject 1> tears out of the swarm of <Subject 2> drones high above the city and dives toward the towers.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - faceted black delta-wing shape and crimson underglow stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical on every drone.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; the high aerial view is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Extreme wide shot high above the city, camera hanging still in the rain. Below, the city glows teal and orange, with fires burning in several districts. The black swarm of <Subject 2> drones fills the right side of the sky. Suddenly the swarm parts like a curtain as <Subject 1> tears out of it from the right, scattering drones, its crimson underglow lighting the rain red. It banks steeply, vapor trails streaming from its wingtips, and dives toward the towers on the left. The shot ends with <Subject 1> streaking down toward a tiny teal point of light hovering between the skyscrapers.\n\noverall_soundscape:\nA tearing, high-pitched jet shriek, a sonic boom, scattering drones buzzing, wind, distant explosions below.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_23",
+  "scene": "S15",
+  "act": 3,
+  "beat": 10,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng_jet.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "裂锋战机贴着楼顶高度从画右向画左掠过，激波震碎整面玻璃幕墙",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the black delta-wing stealth bomber in <Picture 1>, with sharp faceted panels and a crimson underglow.\n<Picture 2> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; seen from a skyscraper ledge at rooftop height.\n\nsummary:\n[reference generation] <Subject 1> rockets between the towers at rooftop height, its shock wave blowing out a whole glass curtain wall.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - faceted black delta-wing shape and crimson underglow stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Wide shot from a skyscraper ledge, a fast pan from right to left following the jet. <Subject 1> rockets past between the towers at rooftop height, so close that its shock wave blows out an entire glass curtain wall in a glittering cascade that falls toward the street. Rain is sucked into spirals in its wake, and its crimson underglow sweeps across the wet facades. It rolls onto its side to slip between two buildings. The shot ends with the jet shrinking into the distance on the left, racing toward a teal glow.\n\noverall_soundscape:\nA deafening jet scream with Doppler shift, a sonic boom, glass exploding and tinkling down, roaring wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s15_24",
+  "scene": "S15",
+  "act": 3,
+  "beat": 10,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/liefeng_jet.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁悬停在楼间，深红光从画右映上白色装甲，她猛地转头举臂防御，战机急速逼近",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the black delta-wing stealth bomber in <Picture 2>, with sharp faceted panels and a crimson underglow.\n<Picture 3> is the location reference for [Shot 1], the futuristic coastal megacity at night in the rain, with towers, elevated highways and glowing signs without readable text; here open air between two glass towers.\n\nsummary:\n[reference generation] <Subject 1> hovers between the towers and turns to face <Subject 2> as it closes in from the right.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - faceted black delta-wing shape and crimson underglow stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night towers, wet reflections and glowing signs; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI war film shot with anamorphic lenses: a rainy megacity night in teal-blue and sodium-orange, crimson drone eyes, explosions and tracer fire, volumetric smoke, high dynamic range. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and signs carry no readable letters.\n[Shot 1] Medium shot, eye level in mid-air, static camera. <Subject 1> hovers between two glass towers on the left side of the frame, thruster pods holding her steady, breathing hard after the fight, drone debris falling past. A crimson glow grows on her white plates from frame right. She snaps her helmeted head toward it, the T-shaped visor flaring teal, and raises both arms into a guard. In the background on the right, <Subject 2> closes in fast, growing from a red point into a black delta shape. The shot ends with the jet's crimson light flooding her armor as it fills the right edge of the frame.\n\noverall_soundscape:\nA steady thruster hum, rain, a rising, approaching jet shriek, a sharp intake of breath inside the helmet, falling debris.\n\nnon_diegetic_music: N/A"
+ }
+]

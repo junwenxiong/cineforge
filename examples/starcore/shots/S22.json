@@ -1,0 +1,528 @@
+[
+ {
+  "id": "sc_s22_01",
+  "scene": "S22",
+  "act": 4,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "磐石托着林骁大步涉海冲向画右的黑塔，海浪在它腰间翻滚（建立镜）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the woman in the powered armor in <Picture 2>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1> charges through the waist-deep storm sea toward the black tower, carrying <Subject 2> against its chest.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Extreme wide tracking shot low over the waves, the camera trucking right alongside. <Subject 1> wades from frame left toward the black tower on the right, the sea churning white around its waist, its glowing seams streaking light through the rain. Its left hand is held close to its chest with <Subject 2> crouched on the palm, a tiny figure against the giant fingers. A grey navy patrol boat with no markings rides its bow wave in the foreground for scale. With each stride a wall of water bursts outward; <Subject 1> leans forward and accelerates from a heavy walk into a charge. The shot ends with the black tower looming close ahead, lightning crawling across its crimson-lit surface.\n\noverall_soundscape:\nMassive water surges with each stride, deep pounding footfalls muffled by the sea, storm wind, thunder, the guardian's hum building.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_02",
+  "scene": "S22",
+  "act": 4,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "FS",
+  "summary_zh": "磐石把手掌贴到黑塔底部的维修通道边，林骁跳上钢格栅",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the woman in the powered armor in <Picture 2>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] At the tower's base, <Subject 1> lowers its palm to a steel maintenance walkway and <Subject 2> jumps off onto it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Full shot at walkway level on the black tower's lower wall, static camera. Waves smash against the fused black machinery below a narrow steel maintenance walkway with railings. <Subject 1>'s enormous hand sweeps in from frame left and stops against the railing, fingers dwarfing the walkway, seams glowing. <Subject 2> runs two heavy steps across the palm and leaps; her powerless armor lands hard on the wet grating on one knee. She rises and looks back once as the giant hand withdraws to the left, then grips the railing. The shot ends with her alone on the walkway, rain sheeting past, crimson light pulsing in the wall beside her.\n\noverall_soundscape:\nA heavy clang of armor on steel grating, waves exploding against metal, servos groaning as the hand pulls away, rain, wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_03",
+  "scene": "S22",
+  "act": 4,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "蜘蛛无人机群从黑塔外壁蜂拥而下，扑满磐石全身；磐石扯下一把捏碎",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the swarm of dog-sized black six-legged spider drones in <Picture 2>, each with one glowing crimson eye.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 2> pour down the tower wall and leap onto <Subject 1>, which tears a handful away and crushes them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - black six-legged bodies and single crimson eyes stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot, low angle from the water, slow pan following the swarm. <Subject 1> stands waist-deep at the foot of the black tower on the right. Hundreds of <Subject 2> spill down the fused black wall like black oil, single crimson eyes glinting, and leap in waves onto its arms, chest and head, clinging and stabbing with sharp legs, sparks bursting on its yellow plates. <Subject 1> staggers half a step, then tears a cluster off its chest with one hand, crushes them in its fist in a shower of crimson sparks, and flings the wreckage into the sea. The shot ends with dozens more still crawling over its shoulders, its glowing seams flaring beneath them.\n\noverall_soundscape:\nThousands of skittering metal legs, screeching clicks, sparks and scraping metal, steel crunching in a giant fist, waves, storm.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_04",
+  "scene": "S22",
+  "act": 4,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "战斗机从画左俯冲，导弹齐射在塔壁炸成一串火球，扫清无人机，为磐石开路",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the swarm of dog-sized black six-legged spider drones in <Picture 2>, each with one glowing crimson eye.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] Fighter jets dive in from the left and fire a missile salvo that blasts <Subject 2> off the tower and clears a path for <Subject 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - black six-legged bodies and single crimson eyes stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Extreme wide shot from high behind <Subject 1>, looking toward the black tower on the right, static camera. The tower wall above the waterline is crawling with <Subject 2>. Four grey fighter jets with no markings dive in from frame left, release a salvo of missiles that streak over <Subject 1>'s shoulder on white smoke trails, and pull up into the clouds. The missiles detonate in a rolling chain of orange fireballs along the wall, blowing burning drones off in sprays of debris that rain into the sea. <Subject 1> shrugs the last drones off its shoulders and strides forward through the falling fire. The shot ends on a cleared, smoking path up the tower's base toward the platform above.\n\noverall_soundscape:\nJet roar diving and climbing, missiles whooshing, a rolling chain of heavy explosions, debris splashing into the sea, rain and wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_05",
+  "scene": "S22",
+  "act": 4,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "周野骑着雀翎摩托，沿黑塔外壁螺旋上升的维修通道高速冲刺",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the white-and-cyan racing motorcycle in <Picture 1>, with sharp aerodynamic fairings and glowing cyan wheel rims; it is the vehicle form of a scout robot.\n<Subject 2> is the man in <Picture 2>: a 30-year-old East Asian man with a crooked grin, messy black hair, light stubble, an olive-green patched bomber jacket over a grey hoodie and a headset around his neck.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 2> rides <Subject 1> at full speed up the spiraling maintenance walkway on the tower's outer wall.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white-and-cyan fairings and glowing cyan rims stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, hair, stubble, olive jacket and headset stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide tracking shot from a camera pacing alongside on the right, slight high angle. A narrow steel maintenance walkway spirals up the black tower's outer wall, waves exploding far below. <Subject 1> races up it from frame left, cyan wheel rims glowing, rooster tails of rainwater spraying from the tires, with <Subject 2> crouched low on the seat, hair plastered by rain, headset bouncing at his neck. The motorcycle leans hard through a tight bend, sparks flying as a fairing scrapes the railing, then jumps a gap in the broken grating and lands with a hard bounce. The shot ends with it accelerating up the next level of the walkway, its cyan glow streaking through the rain.\n\noverall_soundscape:\nA shrill electric motor whine rising in pitch, tires hissing on wet steel, a hard clang over the gap, sparks, wind and crashing waves far below.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_06",
+  "scene": "S22",
+  "act": 4,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "FS",
+  "summary_zh": "雀翎摩托在林骁身旁急停，周野跳下，雀翎变形为机器人形态（变形镜头）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is one scout robot in two forms: the white-and-cyan racing motorcycle with glowing cyan rims in <Picture 1>, and the 3-meter-tall slim robot with round cyan eyes and forearm wheels in <Picture 2>.\n<Subject 2> is the man in <Picture 3>: a 30-year-old East Asian man with a crooked grin, messy black hair, light stubble, an olive-green patched bomber jacket over a grey hoodie and a headset around his neck.\n<Subject 3> is the woman in the powered armor in <Picture 4>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Picture 5> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1> skids to a stop beside <Subject 3> on the walkway, <Subject 2> hops off, and the motorcycle unfolds into its robot form.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - both forms keep the same white-and-cyan panels and cyan glow.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, hair, stubble, olive jacket and headset stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Picture 5> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Full shot at walkway level, static camera. <Subject 3> waits on a landing of the maintenance walkway, her dark armor dripping. <Subject 1>, in motorcycle form, roars up from the left and skids sideways to a stop beside her, spraying water. <Subject 2> hops off and grips her shoulder. Behind him the motorcycle's panels split and fold: the wheels swing onto its forearms, the frame stands up, and the slim robot unfolds to three meters tall, two round cyan eyes lighting up. The shot ends with the three together on the landing, <Subject 1> tilting its head at <Subject 3>, the drill tower rising above them in crimson haze.\n\noverall_soundscape:\nTires screeching on wet steel, the motor winding down, rapid mechanical clicks and whirring servos, a bright electronic chirp, rain and wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_07",
+  "scene": "S22",
+  "act": 4,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "黑塔平台上，磐石从画左、裂锋从画右冲刺，肩撞肩正面对撞",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the 15-meter-tall war robot in <Picture 2>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] On the black tower's broad platform, <Subject 1> and <Subject 2> charge at each other and collide head-on.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot, low angle at deck level, static camera. The broad platform of the black tower stretches across the frame, cluttered with old cranes and pipe racks taller than buses for scale, the drill tower rising in the background. <Subject 1> climbs over the edge on the left and charges right, glowing seams blazing; <Subject 2> sprints in from the right, wing blades swept back. Each footfall cracks the deck plating. They slam together shoulder to shoulder in the center of frame in a flash of crimson against blue-white and amber light. The shot ends with both giants locked, straining against each other, sparks pouring from their grinding armor.\n\noverall_soundscape:\nThundering metal footfalls, cracking deck plates, a colossal collision boom, grinding armor and showering sparks, storm wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_08",
+  "scene": "S22",
+  "act": 4,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "对撞产生环形冲击波，震碎平台周围的塔架、吊机和外壳，碎片坠海",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the 15-meter-tall war robot in <Picture 2>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] The shockwave from the collision rips outward across the platform and shatters the structures around <Subject 1> and <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Extreme wide shot from a high angle off the tower's flank, static camera. <Subject 1> and <Subject 2> are locked together in the center of the platform. A visible ring of compressed air and rain bursts outward from the point of impact, flattening the spray. The ring tears through everything around them: steel struts snap, a lattice crane topples, pipe racks burst, and panels of fused black machinery peel away from the tower and tumble into the sea in great splashes. The shot ends with debris still raining down around the two locked giants and a fresh fork of lightning splitting the sky above them.\n\noverall_soundscape:\nA deep concussive boom, shrieking metal tearing, a crane crashing down, debris showering, huge splashes, thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_09",
+  "scene": "S22",
+  "act": 4,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "两台巨型机体互换重拳，闪电瞬间照亮两者的剪影",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the 15-meter-tall war robot in <Picture 2>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1> and <Subject 2> trade heavy punches on the platform, frozen in silhouette by a lightning flash.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium shot of both giants from the waist up, low angle, handheld shake, <Subject 1> on the left and <Subject 2> on the right. <Subject 2> swings a bladed fist that cracks against <Subject 1>'s faceplate, snapping its head sideways in a spray of sparks. <Subject 1> answers with a crushing hook to <Subject 2>'s jaw that twists its whole torso around. A blinding lightning flash freezes them for a split second as stark silhouettes, the glowing seams and crimson slits the only color in the frame. The shot ends with both giants squaring up again, rain steaming on their battered armor.\n\noverall_soundscape:\nHeavy metallic impacts like struck bells, grinding servos, a lightning crack and rolling thunder, rain hissing on hot metal.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_10",
+  "scene": "S22",
+  "act": 4,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "裂锋蹬开磐石后跃，右臂炮口蓄满深红能量，向磐石开炮",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall war robot in <Picture 1>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1> leaps back, levels its forearm cannon and fires a crimson energy blast at <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium shot over <Subject 2>'s left shoulder toward <Subject 1> on the right, slight low angle, static camera. <Subject 1> kicks off <Subject 2>'s chest and jumps back across the deck, landing in a crouch. It raises its right forearm; the cannon's barrel segments slide open and crimson energy swirls inside, brightening until it bathes the falling rain red. Its crimson optic slits narrow. The cannon fires a thick crimson beam toward <Subject 2> and the camera, the recoil shoving <Subject 1> back a step. The shot ends in a flare of crimson light filling the frame.\n\noverall_soundscape:\nA rising high-pitched energy whine, crackling charge, a violent blast and recoil boom, rain sizzling in the beam.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_11",
+  "scene": "S22",
+  "act": 4,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "磐石抬起左臂，新生的六边形青白光盾展开，挡下深红炮击",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the 15-meter-tall war robot in <Picture 2>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1> raises its forearm and a new blue-white light shield blooms to block <Subject 2>'s crimson beam.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot, low angle from the deck beside <Subject 1>, static camera. <Subject 1> stands on the left as the crimson beam from <Subject 2> on the right roars toward it. <Subject 1> braces and raises its left forearm; from the glowing seams of its arm a translucent shield of blue-white hexagonal light unfolds outward, cell by cell, wider than its torso and edged with amber. The beam smashes into the shield and splashes off in torrents of red sparks that scorch the deck. <Subject 1>'s feet slide back a meter, gouging the plating, then hold. The shot ends with the beam sputtering out and <Subject 1> lowering the still-glowing shield slightly to look over its edge.\n\noverall_soundscape:\nThe crimson beam's roar, a deep crystalline hum as the shield forms, a sizzling impact, cascading sparks, scraping metal feet.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_12",
+  "scene": "S22",
+  "act": 4,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "钻塔底部，雀翎托起林骁的脚把她送上高处横梁，周野在下面拉紧安全绳",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in the powered armor in <Picture 1>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Subject 2> is the 3-meter-tall scout robot in <Picture 2>: a slim pearl-white and electric-cyan frame, two large round cyan optic eyes and motorcycle wheels on its forearms.\n<Subject 3> is the man in <Picture 3>: a 30-year-old East Asian man with a crooked grin, messy black hair, light stubble, an olive-green patched bomber jacket over a grey hoodie and a headset around his neck.\n<Picture 4> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] At the foot of the drill tower, <Subject 2> boosts <Subject 1> up onto a high crossbeam while <Subject 3> braces her safety cable.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Subject 2> (appears in [Shot 1]): fully_preserved - white-and-cyan body, round cyan eyes and wheels stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, hair, stubble, olive jacket and headset stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot from a low angle at the base of the drill tower's steel lattice, static camera, the giants' battle flashing blue and crimson in the right background. <Subject 1>, heavy and slow in her powerless armor, reaches for a strut above her head. <Subject 2> cups its slim hands under her boot, eyes glowing bright, and lifts her smoothly upward. <Subject 1> grabs a higher crossbeam and hauls herself onto it. Below, <Subject 3> loops a safety cable around a beam, plants his feet and braces it over his shoulder, nodding up at her. The shot ends with <Subject 1> kneeling on the crossbeam, looking up the long climb toward the faint crimson glow at the summit.\n\noverall_soundscape:\nRain hammering the steel lattice, creaking armor plates, servo whirr from the scout robot, a taut cable creaking, distant giant impacts.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_13",
+  "scene": "S22",
+  "act": 4,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "仰拍，林骁在无动力装甲里徒手沿钻塔外壁向上攀爬，塔顶星核被深红能量包裹",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in the powered armor in <Picture 1>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Subject 2> is the star core in <Picture 2>: a fist-sized faceted crystal sphere with swirling blue-white light, out of its capsule, locked in a black socket and smothered in crimson energy.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1> climbs hand over hand up the drill tower's outer lattice toward <Subject 2> glowing at the summit.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Subject 2> (appears in [Shot 1]): fully_preserved - faceted crystal and swirling light stay identical; no capsule.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot from a steep low angle up the drill tower's lattice, slow tilt up following her. Rain streams down the black steel; far above, <Subject 2> blazes at the summit in its socket, its blue-white light choked by crimson arcs. <Subject 1> climbs steadily, hand over hand, armored boots wedging into the lattice joints, her dark, powerless suit making every pull slow and heavy, a safety cable trailing beneath her. A gust slams her sideways; one hand slips and she swings, then catches the beam again and pulls herself back in. The shot ends with her two-thirds of the way up, pausing to look at the crimson-lit summit.\n\noverall_soundscape:\nHowling wind at height, rain lashing steel, heavy breathing inside a helmet, creaking armor, the low crackle of crimson energy above.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_14",
+  "scene": "S22",
+  "act": 4,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "裂锋扭头发现钻塔上的林骁，肘击甩开磐石，扑向钻塔",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall war robot in <Picture 1>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 3> is the woman in the powered armor in <Picture 3>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Picture 4> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1> spots <Subject 3> on the drill tower, shoves <Subject 2> aside and lunges toward her.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Picture 4> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium shot of <Subject 1> from the waist up, low angle, quick pan left with its movement. <Subject 1> and <Subject 2> grapple in the center of the platform. <Subject 1>'s head snaps to the left; its crimson optic slits flare as it spots <Subject 3>, a tiny dark figure climbing the drill tower in the left background. It drives an elbow into <Subject 2>'s chest, knocking it back, then lunges toward the drill tower, one bladed claw stretched out, wing blades flaring. The shot ends with its claw reaching toward the tiny climbing figure as the lattice shudders.\n\noverall_soundscape:\nA sharp electronic screech, a crunching metal impact, pounding footfalls, claws scraping steel, storm wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_15",
+  "scene": "S22",
+  "act": 4,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "磐石从后面抱住裂锋的腰，把它从钻塔前硬生生拖回来",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the 15-meter-tall war robot in <Picture 2>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1> grabs <Subject 2> from behind, locks its arms around its waist and drags it back from the drill tower.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot from the base of the drill tower looking out across the platform, low angle, static camera. <Subject 2> lunges toward camera, its claw reaching for the lattice an arm's length away. <Subject 1> charges in behind it, wraps both huge arms around <Subject 2>'s waist and heaves. <Subject 2>'s claw scrapes across the lattice in a shower of sparks as it is dragged backward, away from camera; <Subject 1> digs its heels in, its feet plowing grooves through the deck plating, its glowing seams flaring with effort. The shot ends with both giants several strides back from the drill tower, <Subject 2> thrashing in <Subject 1>'s locked arms.\n\noverall_soundscape:\nScreeching claws on steel, a heavy body slam, grinding feet tearing the deck, straining servos, thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_16",
+  "scene": "S22",
+  "act": 4,
+  "beat": 9,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁翻上钻塔塔顶小平台，跪在插着星核的黑色接口前",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in the powered armor in <Picture 1>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Subject 2> is the star core in <Picture 2>: a fist-sized faceted crystal sphere with swirling blue-white light, out of its capsule, locked in a black socket and smothered in crimson energy.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1> hauls herself onto the tiny summit platform of the drill tower, face to face with <Subject 2> in its socket.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Subject 2> (appears in [Shot 1]): fully_preserved - faceted crystal and swirling light stay identical; no capsule.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium shot at the summit, the camera behind the socket looking back at the ledge, slow push-in. A small grated platform crowns the drill tower; in its center <Subject 2> sits locked in a black machine socket, cables pulsing crimson down into the tower and a crimson light beam rising from it into the clouds. <Subject 1>'s gauntlet slaps onto the ledge, then the other; she drags her heavy, powerless armor over the edge, rolls onto her knees and crawls forward against the wind. The shot ends with her kneeling before the socket, the crimson glare reflected across her dark visor.\n\noverall_soundscape:\nScreaming wind, crackling crimson energy, a deep throbbing pulse from the socket, armor scraping on steel, labored breathing.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_17",
+  "scene": "S22",
+  "act": 4,
+  "beat": 9,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "林骁双手握住星核，深红电弧从接口窜出，缠绕她的双臂",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in the powered armor in <Picture 1>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Subject 2> is the star core in <Picture 2>: a fist-sized faceted crystal sphere with swirling blue-white light, out of its capsule, locked in a black socket and smothered in crimson energy.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1>'s armored hands close around <Subject 2> and crimson electric arcs coil up her arms.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Subject 2> (appears in [Shot 1]): fully_preserved - faceted crystal and swirling light stay identical; no capsule.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Close-up on her hands and the socket, slight high angle, static camera. <Subject 1>'s pearl-white and graphite gauntlets reach in from frame left and close around <Subject 2> in the black socket. Instantly crimson electric arcs leap from the socket, wrap around her wrists and snake up her forearms, crawling over the dark armor plates in writhing bands and scorching faint black marks. Her fingers tremble but tighten their grip. Between her hands the core's own blue-white light flickers under the crimson. The shot ends with arcs coiled around both arms up to the elbows, her grip unbroken.\n\noverall_soundscape:\nViolent crackling electricity, a high whine, sizzling metal, a sharp pained gasp from inside the helmet, wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_18",
+  "scene": "S22",
+  "act": 4,
+  "beat": 10,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "林骁一脚蹬住接口、弓背发力，装甲吱嘎作响，咬紧牙关往外拔",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in the powered armor in <Picture 1>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Subject 2> is the star core in <Picture 2>: a fist-sized faceted crystal sphere with swirling blue-white light, out of its capsule, locked in a black socket and smothered in crimson energy.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1> braces her boot against the socket and strains with all her strength to pull <Subject 2> free.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Subject 2> (appears in [Shot 1]): fully_preserved - faceted crystal and swirling light stay identical; no capsule.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium close-up from her right side at summit level, handheld with a subtle shake. <Subject 1> kneels over the socket, crimson arcs still coiling around her forearms, both hands locked on <Subject 2>. She plants one armored boot against the socket's rim, leans back, arches her spine and pulls. Her closed helmet tips back toward the sky, shoulders shaking, armor plates groaning and grinding at the joints, rain bouncing off them. The core lifts a few centimeters, crimson sparks spitting from the socket around it. The shot ends at the peak of her effort, her whole body bowed like a drawn bow, the core half out of the socket.\n\noverall_soundscape:\nA strained, clenched-teeth growl from inside the helmet, grinding armor joints, screaming electric crackle, creaking metal, wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_19",
+  "scene": "S22",
+  "act": 4,
+  "beat": 10,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "星核被猛地拔出接口，深红褪去，只剩纯净的蓝白光",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the star core in <Picture 1>: a fist-sized faceted crystal sphere with swirling blue-white light, out of its capsule, locked in a black socket and smothered in crimson energy.\n<Subject 2> is the woman in the powered armor in <Picture 2>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] <Subject 1> rips free of the socket in <Subject 2>'s hands, and the crimson drains away, leaving pure blue-white light.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - faceted crystal and swirling light stay identical; no capsule.\n<Subject 2> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Insert shot, tight on the socket and the core, low angle, static camera. <Subject 1> is half out of the black socket, gripped by <Subject 2>'s gauntlets, crimson arcs wrapping everything. With a final heave it tears free in a burst of sparks; cables whip loose and the crimson arcs snap away from her arms like broken threads. Raised in her hands against the storm sky, the crystal sheds its crimson glow, and its own swirling blue-white light blooms bright and clean, lighting the rain around it. The shot ends on the core glowing pure blue-white between her dark gauntlets.\n\noverall_soundscape:\nA sharp metallic wrench and pop, snapping cables, crackling arcs cutting out, then a pure ringing crystal resonance swelling.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_20",
+  "scene": "S22",
+  "act": 4,
+  "beat": 11,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "黑塔的深红光芒骤然熄灭，冲向云层的光柱消失，整座塔陷入黑暗",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, lightning, crimson glow within.\n\nsummary:\n[reference generation] The black tower's crimson glow and its light beam into the clouds go out all at once.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same fused black machinery, storm sea and lightning; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning against crimson, blue-white and amber glows. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Extreme wide shot from far out at sea, static camera. The colossal black tower fills the right of frame, crimson light pulsing through every seam of its fused machinery and a crimson beam rising from the peak into the clouds; at its summit a tiny blue-white point of light shines. In one instant the beam cuts off. The crimson glow dies in a fast wave from the top down, seam by seam, until the whole tower is a dark silhouette lit only by lightning. The shot ends with the tower black and silent against the storm, the blue-white point still glowing at the peak and faint blue-white and amber light flickering on the platform below.\n\noverall_soundscape:\nA deep power-down drone falling in pitch, the crimson hum cutting to silence, then only rain, wind and rolling thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_21",
+  "scene": "S22",
+  "act": 4,
+  "beat": 11,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "海底，成千上万台休眠机体的深红眼睛一排排熄灭",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the dormant machine legion on the seabed: thousands of black six-legged machines built like the spider drone in <Picture 1>, each with one crimson eye.\n<Picture 2> is the location reference for [Shot 1], the deep ocean floor in near darkness, drifting particles, faint blue bioluminescence and rocky seabed.\n\nsummary:\n[reference generation] On the seabed, the crimson eyes of <Subject 1> go dark row by row.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged bodies and single crimson eyes stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same darkness, particles, bioluminescence and rocks; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, deep underwater cinematography in near darkness, drifting particles, faint blue bioluminescence and small crimson eye-lights. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot gliding low over the seabed, slow dolly backward. Rows upon rows of <Subject 1> stretch away into the darkness, half-buried in silt among the rocks, thousands of single crimson eyes glowing in long, neat lines, drifting particles catching their light. Starting at the far end, the eyes go dark one row at a time, a wave of darkness sweeping toward camera; legs twitch once and fold, small puffs of silt rising as the bodies settle. The last row in the foreground flickers and goes out. The shot ends with only faint blue bioluminescence and drifting particles left in the deep.\n\noverall_soundscape:\nMuffled underwater pressure, a cascading series of soft electronic power-down clicks, settling silt, deep ocean silence.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_22",
+  "scene": "S22",
+  "act": 4,
+  "beat": 12,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "裂锋甩开磐石，嘶吼着扑向塔顶的林骁",
+  "dialogue": [
+   {
+    "who": "LIEFENG",
+    "text": "不——！"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall war robot in <Picture 1>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, its crimson inner glow now dead, lit by lightning.\n\nsummary:\n[reference generation] <Subject 1> wrenches free of <Subject 2> and lunges toward the summit, roaring in fury.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery and storm sea; crimson glow off, camera position new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning; the tower's crimson glow is gone, leaving only blue-white and amber light. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium shot of <Subject 1>, high angle from the drill tower looking down at it, fast push-in. The tower around it has gone dark; only lightning and the guardian's light remain. <Subject 1> throws <Subject 2> off its back with a violent twist, then lunges straight toward camera, claw reaching up for the summit, wing blades spread wide. <Subject 1>'s crimson optic slits flare wildly in sync with the sound as it (S1) roars in a distorted metallic voice, <d>[Chinese] 不——！</d> It has no mouth; only the slits flicker. The shot ends with its claw filling the frame.\n\noverall_soundscape:\nA distorted metallic roar, grinding servos, a heavy footfall shaking the steel, rain, thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_23",
+  "scene": "S22",
+  "act": 4,
+  "beat": 13,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "磐石抢到裂锋面前，一拳正中裂锋胸口",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the 15-meter-tall war robot in <Picture 2>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, its crimson inner glow now dead, lit by lightning.\n\nsummary:\n[reference generation] <Subject 1> steps into <Subject 2>'s path and drives a punch into the center of its chest.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery and storm sea; crimson glow off, camera position new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning; the tower's crimson glow is gone, leaving only blue-white and amber light. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot from a low angle near the base of the drill tower, static camera, <Subject 1> on the left and <Subject 2> on the right. <Subject 2> lunges toward the drill tower. <Subject 1> plants itself in the way and draws back its right fist, the blue-white and amber light in its seams racing down its arm into the knuckles, then drives a straight punch into <Subject 2>'s chest. The impact stops <Subject 2> dead in mid-lunge with a thunderclap, its feet lifting off the deck. The shot ends with <Subject 1>'s fist buried in the chest armor, both giants frozen in a blast of light.\n\noverall_soundscape:\nA seismic metallic impact, a thunderclap of released energy, armor buckling, rain blasted away, an echoing boom.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_24",
+  "scene": "S22",
+  "act": 4,
+  "beat": 13,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "裂锋胸口特写，琥珀与青白光从拳头处贯穿裂锋，从背后射出",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall war robot in <Picture 1>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, its crimson inner glow now dead, lit by lightning.\n\nsummary:\n[reference generation] Amber and blue-white light from <Subject 2>'s fist pierces straight through <Subject 1>'s chest.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery and storm sea; crimson glow off, camera position new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning; the tower's crimson glow is gone, leaving only blue-white and amber light. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Close-up on <Subject 1>'s chest with <Subject 2>'s fist buried in it, side angle, slow push-in. Cracks spread across the gunmetal armor around the knuckles. Interwoven amber and blue-white light floods into the cracks, races through them in jagged veins, then bursts out through <Subject 1>'s back between its wing blades in brilliant shafts that cut through the rain. Fragments of black armor spin away into the dark. The shot ends with the light blazing through the shattered chest plate and the last crimson glow inside <Subject 1> guttering.\n\noverall_soundscape:\nArmor cracking, a rising crystalline roar of energy, a piercing burst, fragments clattering, storm wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_25",
+  "scene": "S22",
+  "act": 4,
+  "beat": 14,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "裂锋头部大特写，深红眼缝闪烁几下后熄灭",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall war robot in <Picture 1>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Picture 2> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, its crimson inner glow now dead, lit by lightning.\n\nsummary:\n[reference generation] <Subject 1>'s crimson optic slits flicker and go out.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same fused black machinery and storm sea; crimson glow off, camera position new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning; the tower's crimson glow is gone, leaving only blue-white and amber light. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Extreme close-up of <Subject 1>'s angular head, eye level, static camera. Rain streams down its gunmetal plates, the blue-white and amber light from its pierced chest reflecting up from below. Its thin crimson optic slits stutter: bright, dim, bright, then a long fading flicker as tiny internal shutters fail. The glow shrinks to two thin lines, then to two points, and dies. Its head sags a few degrees. The shot ends on its dark, lifeless faceplate, rain running over the empty slits while lightning flickers across the metal.\n\noverall_soundscape:\nA stuttering electronic buzz, a failing whine winding down, a final click, then only rain on metal and distant thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_26",
+  "scene": "S22",
+  "act": 4,
+  "beat": 14,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "裂锋失去光芒，向后倒下，越过平台边缘坠入画右的风暴大海",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall war robot in <Picture 1>: angular gunmetal-black blade armor, thin crimson optic slits, swept-back wing blades and a crimson cannon in its right forearm; it has no mouth.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, its crimson inner glow now dead, lit by lightning.\n\nsummary:\n[reference generation] Lifeless, <Subject 1> topples backward off the edge of the platform and plunges into the storm sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - gunmetal blade armor, crimson slits and wing blades stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery and storm sea; crimson glow off, camera position new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning; the tower's crimson glow is gone, leaving only blue-white and amber light. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot from a low angle near the platform's right edge, static camera. <Subject 2> on the left slowly pulls its fist out of <Subject 1>'s chest. <Subject 1>, its optic slits dark, sways, then topples backward like a felled tower, wing blades scraping across the broken railing, and falls past the edge on the right. Far below it hits the churning sea in a colossal explosion of white water that rises higher than the platform. The shot ends with <Subject 2> standing at the edge looking down as the spray rains back over it.\n\noverall_soundscape:\nGroaning metal, scraping blades, a long falling whoosh, a massive thunderous splash, cascading water, wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_27",
+  "scene": "S22",
+  "act": 4,
+  "beat": 15,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "熄灭的黑塔开始崩塌，大块熔合机械剥落坠入海中",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, its crimson inner glow now dead, lit by lightning.\n\nsummary:\n[reference generation] The darkened black tower begins to collapse into the sea.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same fused black machinery and storm sea; crimson glow off, camera position new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning; the tower's crimson glow is gone, leaving only blue-white and amber light. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Extreme wide shot from far out at sea, static camera with a subtle shake. The dark tower stands against the storm, a tiny blue-white point of light at its peak and faint amber light on the platform below. Deep fractures open across its fused black machinery; huge sections slough off and slide down its flanks, crashing into the sea in towering plumes of spray. The drill tower at the peak tilts, and the whole upper structure begins to sag. The shot ends with the tower visibly leaning, debris falling in sheets, lightning outlining the collapse.\n\noverall_soundscape:\nDeep groaning metal, cracking and booming collapses, colossal splashes, a low rumbling roar beneath thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_28",
+  "scene": "S22",
+  "act": 4,
+  "beat": 15,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "塔顶崩裂，林骁抱着星核向后坠落，碎片在她周围落下",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman in the powered armor in <Picture 1>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Subject 2> is the star core in <Picture 2>: a fist-sized faceted crystal sphere with swirling blue-white light, out of its capsule.\n<Picture 3> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, its crimson inner glow now dead, lit by lightning.\n\nsummary:\n[reference generation] The summit breaks apart and <Subject 1> falls backward into the air, clutching <Subject 2> to her chest.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Subject 2> (appears in [Shot 1]): fully_preserved - faceted crystal and blue-white light stay identical; no capsule.\n<Picture 3> ([Shot 1] location): partially_preserved - same fused black machinery and storm sea; crimson glow off, camera position new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning; the tower's crimson glow is gone, leaving only blue-white and amber light. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Medium shot, the camera falling with her, slight high angle, rain streaking upward past the lens. The summit platform splits beneath <Subject 1>; she topples backward off it, both arms wrapped around <Subject 2> against her dark chest plate, its blue-white light the only bright thing on her. Chunks of black machinery and twisted lattice tumble around her. Her powerless thrusters do nothing; she curls her body around the core, knees drawn up, and keeps falling. The shot ends with her plummeting through the debris, the core's glow streaking through the dark.\n\noverall_soundscape:\nWind roaring past, tumbling metal debris, the core's ringing hum, crashing collapse above, rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s22_29",
+  "scene": "S22",
+  "act": 4,
+  "beat": 16,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "磐石扑过来伸出巨手，稳稳接住坠落的林骁，手指合拢护住她",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter-tall ancient guardian robot in <Picture 1>: weathered yellow and graphite stone-textured armor, a flat faceplate with one amber optic band and no mouth, truck wheels on its shoulders and legs; its seams and cracked chest core glow blue-white and amber.\n<Subject 2> is the woman in the powered armor in <Picture 2>: matte pearl-white and dark graphite plates and a smooth closed helmet with a T-shaped visor slit; the suit is powerless, its seams, chest core and visor dark, one back thruster a salvaged patch and a mismatched, scorched makeshift replacement thruster bolted onto the left side of her back.\n<Subject 3> is the star core in <Picture 3>: a fist-sized faceted crystal sphere with swirling blue-white light, out of its capsule.\n<Picture 4> is the location reference for [Shot 1], a colossal black tower of fused alien machinery rising from a stormy night sea around an old drilling platform, its crimson inner glow now dead, lit by lightning.\n\nsummary:\n[reference generation] <Subject 1> reaches out and catches the falling <Subject 2> safely in its giant palm.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone armor, amber optic band and wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - plates, colors and helmet stay identical; the teal glow stays off.\n<Subject 3> (appears in [Shot 1]): fully_preserved - faceted crystal and blue-white light stay identical; no capsule.\n<Picture 4> ([Shot 1] location): partially_preserved - same fused black machinery and storm sea; crimson glow off, camera position new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses, cinematic contrast lighting, volumetric haze and driving rain, a storm-night palette of blue-black sea and white lightning; the tower's crimson glow is gone, leaving only blue-white and amber light. Keep the main action in the vertical center of the frame with about 12% clear space at the top and bottom; no on-screen text.\n[Shot 1] Wide shot, low angle from beside the platform, slow upward tilt that settles. Debris falls through the rain past the collapsing tower. <Subject 2> plummets from above, a small dark figure with <Subject 3> glowing blue-white in her arms. <Subject 1> lunges across the shattered deck from the left and stretches out its huge open hand. She lands in the center of the palm; the hand gives with the impact, sinking a few meters, then holds steady. Its fingers curl up gently around her like a shield, and <Subject 1> draws her in toward its glowing chest. The shot ends with debris bouncing off its shoulders while the hand stays perfectly still.\n\noverall_soundscape:\nFalling debris, a soft heavy thud of armor on metal, a hydraulic cushioning hiss, the guardian's deep hum, collapse rumbling behind.\n\nnon_diegetic_music: N/A"
+ }
+]

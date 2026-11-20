@@ -1,0 +1,262 @@
+[
+ {
+  "id": "sc_s12_01",
+  "scene": "S12",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "深夜工坊全景，大部分灯已关，周野独自在显示器前打瞌睡",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the young man in <Picture 1>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Picture 2> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door, here with most work lights switched off.\n\nsummary:\n[reference generation] Deep in the night, <Subject 1> sits alone in the dark workshop, dozing off in front of a bank of glowing monitors.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting, volumetric haze and high dynamic range: cold blue moonlight and dim monitor glow, pierced by crimson drone eyes and teal armor light. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, high angle from the rafters, very slow push-in. Initial state: the workshop is nearly dark; the empty armor test rig stands in the center, chains hang motionless, and cold blue moonlight falls in long shafts from the high windows on the right wall. At frame left, <Subject 1> slumps in his chair before a bank of monitors showing slow abstract graphs and no text, their glow the only light on him; his rugged tablet rests on his knee and the headset hangs around his neck. His head nods forward, jerks up, then sinks slowly onto his folded arms on the desk. End state: he is fully asleep, monitor light flickering on his messy hair, the vast dark space around him silent and still, his small figure at frame left and the moonlit windows at frame right.\n\noverall_soundscape:\nDeep night silence, the faint whir of computer fans, a monitor's soft electronic tick, his slow breathing, a distant ship horn, chains creaking almost imperceptibly.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_02",
+  "scene": "S12",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "近景：周野趴在桌上熟睡，平板滑落在地；身后高窗上一道多足黑影一闪而过",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the young man in <Picture 1> and <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] Close on <Subject 1> asleep at his desk as his tablet slides off his knee, while a small shadow flickers across the moonlit window behind him.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting, volumetric haze and high dynamic range: cold blue moonlight and dim monitor glow, pierced by crimson drone eyes and teal armor light. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium close-up, eye level, static camera, shallow focus. Initial state: <Subject 1> sleeps with his cheek resting on his folded arms on the desk, mouth slightly open, his light stubble and messy hair lit by the cool glow of the monitors, the headset around his neck pushed askew. His rugged tablet slips slowly off his knee and lands softly on the floor beside the chair; he only murmurs and shifts, still asleep. In the soft-focus background at frame right, the high window glows blue with moonlight, and a small, many-legged dark shadow scuttles across the glass and vanishes. End state: he sleeps on, peaceful and unaware, the empty window glowing behind him.\n\noverall_soundscape:\nSoft snoring, a muted thud as the tablet hits the floor, a sleepy murmur, computer fans humming, a faint metallic tick-tick from somewhere high above.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_03",
+  "scene": "S12",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "ECU",
+  "summary_zh": "大特写：墙上通风口格栅里，一只蜘蛛无人机的深红独眼亮起，细爪扣住格栅",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the dog-sized spider drone in <Picture 1>, with a black six-legged body, sharp metal legs and a single glowing crimson eye.\n<Picture 2> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] Inside a dark ventilation duct, the single crimson eye of <Subject 1> lights up behind the grille.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting, volumetric haze and high dynamic range: cold blue moonlight and dim monitor glow, pierced by crimson drone eyes and teal armor light. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Extreme close-up, eye level with a rusty steel ventilation grille high on the workshop wall at frame right, static camera with an imperceptibly slow push-in. Initial state: the slats of the grille are dark, a cobweb trembling in a thin draft, nothing visible inside. Deep in the duct, a single glowing crimson eye flickers on, dim at first, then brightening and focusing, its lens ring rotating. Sharp black metal leg tips ease forward and curl around the slats from inside, one after another, testing them. Crimson light spills through the slats onto the dust and the cobweb. End state: the eye of <Subject 1> glares through the grille at frame center, two black leg tips gripping the slats, ready to push through.\n\noverall_soundscape:\nA faint electronic power-up whine, a tiny lens servo whirring, the delicate scrape of metal claws on steel slats, a hollow draft moaning through the duct.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_04",
+  "scene": "S12",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "仰拍：数十只蜘蛛无人机从高窗挤进来，顺着砖墙潮水般爬下",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the dog-sized spider drone in <Picture 1>, with a black six-legged body, sharp metal legs and a single glowing crimson eye. Dozens of identical copies of it appear in this shot.\n<Picture 2> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] Dozens of <Subject 1> pour in through the high windows and swarm down the workshop wall, their crimson eyes glowing.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting, volumetric haze and high dynamic range: cold blue moonlight and dim monitor glow, pierced by crimson drone eyes and teal armor light. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, low angle from the workshop floor looking up at the right wall, static camera. Initial state: the row of tall high windows glows blue with moonlight, the dusty glass intact. One pane silently swings open; <Subject 1> squeezes through, then another, then a stream of identical copies, dozens of dog-sized black bodies, each with a single crimson eye. They flow over the window sills and down the brick wall in a rippling dark tide, legs ticking, their eyes scattering little red points of light across the wall. Their silhouettes are crisp against the moonlit glass. End state: the wall beneath the windows is crawling with drones, the leading ones already reaching the scrap piles on the floor.\n\noverall_soundscape:\nA swelling chorus of rapid metallic clicking and skittering, the creak of a window hinge, tiny servo whines, a low electronic hum building beneath it all.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_05",
+  "scene": "S12",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "无人机沿天花板横梁倒爬、顺吊链垂下，聚到熟睡的周野头顶",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the dog-sized spider drone in <Picture 1>, with a black six-legged body, sharp metal legs and a single glowing crimson eye. Many identical copies of it appear in this shot.\n<Subject 2> is the young man in <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] <Subject 1> crawl upside down along the ceiling beams and down the hanging chains toward the sleeping <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting, volumetric haze and high dynamic range: cold blue moonlight and dim monitor glow, pierced by crimson drone eyes and teal armor light. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, low angle from beside the desk looking up past <Subject 2>, slow tilt up from him to the ceiling. Initial state: <Subject 2> is asleep in the foreground at frame left, the monitors glowing; above him the steel roof beams and hanging chains are dark. Copies of <Subject 1> crawl upside down along the beams from frame right, crimson eyes sliding through the darkness, and several lower themselves head-first down the hanging chains, legs wrapped around the links, the chains swaying slightly. One drone stops directly above his head, its crimson eye fixed on him, a thin glint of silver wire spooling from its belly. End state: a cluster of crimson eyes hangs in the darkness above the sleeping man.\n\noverall_soundscape:\nSoft metallic ticking overhead, chains clinking faintly as they sway, a thin wire spooling with a high whisper, his oblivious slow breathing.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_06",
+  "scene": "S12",
+  "act": 2,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "周野惊醒，看见四周的深红光点，抓起扳手大喊林骁",
+  "dialogue": [
+   {
+    "who": "ZHOU",
+    "text": "林骁！林骁！"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the young man in <Picture 1> and <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Subject 2> is the dog-sized spider drone in <Picture 3>, with a black six-legged body, sharp metal legs and a single glowing crimson eye. Many identical copies of it lurk in this shot.\n<Picture 4> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] <Subject 1> jerks awake, sees <Subject 2> closing in around him, grabs a heavy wrench and shouts for help.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting, volumetric haze and high dynamic range: cold blue moonlight and dim monitor glow, pierced by crimson drone eyes and teal armor light. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, eye level, handheld camera with nervous energy. Initial state: <Subject 1> is slumped asleep at his desk at frame left; a drop of oil falls onto his cheek from above and his eyes snap open. He looks up and freezes: the crimson eyes of <Subject 2> glow in the darkness above him and on the floor to his right. He shoves his chair back, snatches a heavy steel wrench from the desk and raises it in both hands, backing toward the monitors, eyes darting. <Subject 1> (S1) shouts in a frightened, desperate voice, <d>[Chinese] 林骁！林骁！</d> End state: he stands braced with the wrench raised, chest heaving, the crimson eyes reflected in the monitors behind him and on the steel of the wrench, the drones edging closer from frame right.\n\noverall_soundscape:\nA sharp intake of breath, the chair scraping back, the wrench clanking off the desk, his shouts echoing through the cavernous workshop, a sudden surge of metallic clicking from every direction.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_07",
+  "scene": "S12",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "无人机扑上来，周野挥扳手打飞一只，其余射出金属细丝把他缠住",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the dog-sized spider drone in <Picture 1>, with a black six-legged body, sharp metal legs and a single glowing crimson eye. Many identical copies of it appear in this shot.\n<Subject 2> is the young man in <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] <Subject 1> leap onto <Subject 2> from all sides and bind him in glinting metal wire as he swings the wrench.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting, volumetric haze and high dynamic range: cold blue moonlight and dim monitor glow, pierced by crimson drone eyes and teal armor light. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, eye level, static camera with a sharp shake on impact. Initial state: <Subject 2> stands at frame center with the wrench raised as copies of <Subject 1> close in across the floor from frame right and from the beams above. The first drone springs off a workbench; he swings the wrench and knocks it spinning into a scrap pile with a shower of sparks. Three more leap at once, landing on his back and arms, and fire thin silver filaments that whip around his torso, wrists and legs, glinting in the moonlight. The wrench is yanked from his hands and clatters away. End state: <Subject 2> is tightly wrapped from shoulders to knees in shining wire and topples sideways onto the concrete, drones clinging to him, his face straining.\n\noverall_soundscape:\nA heavy metallic clang as the wrench connects, sparks hissing, a rapid zip of wires firing and cinching tight, the wrench clattering on concrete, his muffled grunts.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_08",
+  "scene": "S12",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "无人机群把被缠住的周野拖过地面、拖上砖墙，一只撞碎高窗玻璃",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the dog-sized spider drone in <Picture 1>, with a black six-legged body, sharp metal legs and a single glowing crimson eye. A swarm of identical copies of it appears in this shot.\n<Subject 2> is the young man in <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] The swarm of <Subject 1> drags the bound <Subject 2> across the floor and up the wall toward a high window that one drone smashes open.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting, volumetric haze and high dynamic range: cold blue moonlight and dim monitor glow, pierced by crimson drone eyes and teal armor light. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, low angle from the floor, slow tilt up following the movement. Initial state: <Subject 2> lies on the floor at frame center, wrapped in silver wire, a dozen copies of <Subject 1> gripping the wire around him. In one coordinated surge they haul him across the floor to the right wall and up the brick, his body scraping against it, legs kicking. Above them, a drone smashes out a high window pane, shards of glass glittering in the moonlight as they fall. End state: the swarm has dragged him halfway up the wall toward the broken window, his legs still kicking, the jagged moonlit frame waiting above him.\n\noverall_soundscape:\nFrantic clicking of many legs, wire creaking under tension, his muffled shouts, a window pane shattering and glass tinkling onto the concrete, boots scraping on brick.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_09",
+  "scene": "S12",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "林骁穿 Mk-II 撞破屋顶，带着青光砸落在无人机群中央，冲击波掀飞一片无人机",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the dog-sized spider drone in <Picture 2>, with a black six-legged body, sharp metal legs and a single glowing crimson eye. Many identical copies of it appear in this shot.\n<Picture 3> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] <Subject 1> smashes down through the workshop roof in a burst of teal light and lands among the swarming <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting, volumetric haze and high dynamic range: cold blue moonlight and dim monitor glow, pierced by crimson drone eyes and teal armor light. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot, low angle from the floor, static camera with a heavy shake on impact. Initial state: the dark workshop, copies of <Subject 2> swarming across the floor and the right wall, crimson eyes everywhere, moonlight slanting in from the windows. A teal glow brightens through the roof panels at the upper left of the frame, then <Subject 1> crashes straight down through the roof in an explosion of corrugated metal, dust and sparks, thrusters blazing. She lands in a three-point crouch mid-floor, concrete cracking around her, and a shockwave scatters drones and scrap. End state: she rises amid falling debris, armor glowing teal, visor lifting toward the camera, crimson eyes turning on her from all sides.\n\noverall_soundscape:\nA thunderous crash of metal roofing, raining debris and sparks, a deep thruster roar cut off by a concrete-cracking impact, scattering drones clattering, a rising teal energy hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_10",
+  "scene": "S12",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "林骁连拳打碎几只无人机，转身扑向高窗，但周野已被拖出窗外消失在夜色里",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Subject 2> is the dog-sized spider drone in <Picture 2>, with a black six-legged body, sharp metal legs and a single glowing crimson eye. Several identical copies of it appear in this shot.\n<Subject 3> is the young man in <Picture 3>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green bomber jacket with a wireless headset around his neck.\n<Picture 4> is the location reference for [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows, and a large rolling door.\n\nsummary:\n[reference generation] <Subject 1> smashes leaping <Subject 2> as <Subject 3> is dragged out through the high window.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, olive jacket and headset stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same warehouse materials and warm-versus-blue lighting; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting, volumetric haze and high dynamic range: cold blue moonlight and dim monitor glow, pierced by crimson drone eyes and teal armor light. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium shot, eye level, tracking with her, deep focus keeping the high window at frame right sharp. Initial state: <Subject 1> stands left of center, fists raised, as copies of <Subject 2> leap at her from the right. She punches through the first with a teal flash, shattering it, then backhands two more out of the air, sparks and crimson lenses scattering. High on the wall behind her, the swarm pulls the bound <Subject 3> into the broken window frame. She lunges toward him, arm outstretched, but he vanishes into the darkness. End state: <Subject 1> freezes mid-reach, staring at the empty window.\n\noverall_soundscape:\nCrunching metal impacts, teal energy thumps, then a sudden hush as the clicking recedes.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_11",
+  "scene": "S12",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "林骁低飞追到码头边急停，黑色海面上一簇深红光点正远去",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 1>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 2> is the location reference for [Shot 1], a container harbor yard at night beside an old warehouse, with stacked containers, gantry cranes, sodium-orange lights and wet asphalt, here at the concrete edge of the harbor dock facing the black open sea.\n\nsummary:\n[reference generation] <Subject 1> lands at the edge of the harbor dock and stares at a cluster of crimson lights fading away across the black sea.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same containers, cranes, sodium lights and wet asphalt; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting and high dynamic range: a night harbor dock, cold blue moonlight, sodium-orange lamps on wet concrete and a black sea, with crimson and teal accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Wide shot from behind her, low angle at dock level, slow push-in. Initial state: the harbor dock at night, a wet concrete edge with mooring bollards, stacked containers at frame left and gantry cranes silhouetted against the moonlit sky; the black sea stretches away to frame right. <Subject 1> streaks in from frame left low over the yard and lands hard at the very edge of the dock, skidding to a stop with one boot on the lip as her thrusters cut out. Far out on the black water, a tight cluster of tiny crimson points of light moves away toward the horizon at frame right, growing smaller. She takes one step forward to the edge, fists clenched, teal seams glowing. End state: she stands motionless at the edge as the crimson points shrink to nothing in the darkness.\n\noverall_soundscape:\nThrusters spooling down with a hiss, boots scraping on wet concrete, waves slapping the dock pilings, wind across the water, a distant fading electronic clicking, a buoy bell far out.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_12",
+  "scene": "S12",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "码头边，Mk-II 面罩从中间向两侧打开，露出林骁的脸，她急促喘气望着空荡的海面",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with a single silver streak on the left and a small scar through her right eyebrow.\n<Subject 2> is the sleek powered armor suit in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a glowing hexagonal teal chest core, and a smooth helmet with a single vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], a container harbor yard at night beside an old warehouse, with stacked containers, gantry cranes, sodium-orange lights and wet asphalt, here at the dock edge, the yard lights and cranes behind her.\n\nsummary:\n[reference generation] At the dock edge, the faceplate of <Subject 2> splits open and <Subject 1> stares out at the empty dark sea, breathing hard.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal core and T-shaped visor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same containers, cranes, sodium lights and wet asphalt; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting and high dynamic range: a night harbor dock, cold blue moonlight, sodium-orange lamps on wet concrete and a black sea, with crimson and teal accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Medium close-up, frontal, slightly low angle, the black sea behind the camera, static. Initial state: <Subject 1> stands at the dock edge sealed in <Subject 2>, the closed helmet's T-shaped visor glowing teal, sodium-orange yard lights and cranes blurred behind her at frame left. The faceplate splits down the center and retracts to both sides with a hiss, revealing her face: sweat at her temples, the silver streak in her black bob stuck to her forehead, the scar through her right eyebrow. Her eyes search the water, wide and desperate, and her breath fogs in the cold air. Faint crimson points reflect in her pupils, then disappear. Her jaw tightens and the hexagonal chest core flares brighter for a moment. End state: she stands motionless, lips pressed together, eyes fixed on the empty horizon.\n\noverall_soundscape:\nA pneumatic hiss as the faceplate retracts, her ragged unmuffled breathing, waves against the pilings, wind gusting across the dock, a distant buoy bell.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_13",
+  "scene": "S12",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "地面特写：一只残破的无人机在码头上抽搐，深红独眼随声闪烁，传出裂锋的声音",
+  "dialogue": [
+   {
+    "who": "LIEFENG",
+    "text": "用碎片来换他。黎明前，深蓝七号。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the dog-sized spider drone in <Picture 1>, with a black six-legged body, sharp metal legs and a single glowing crimson eye.\n<Subject 2> is the armored heroine, a woman in a sleek full-body powered armor suit in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a hexagonal teal chest core and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], a container harbor yard at night beside an old warehouse, with stacked containers, gantry cranes, sodium-orange lights and wet asphalt, here at ground level on the wet concrete dock.\n\nsummary:\n[reference generation] A crippled <Subject 1> twitches on the wet dock near the feet of <Subject 2>, and a distorted metallic voice speaks through it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core and T-shaped visor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same containers, cranes, sodium lights and wet asphalt; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting and high dynamic range: a night harbor dock, cold blue moonlight, sodium-orange lamps on wet concrete and a black sea, with crimson and teal accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Close-up, ground level, low angle, static, shallow focus. Initial state: on the wet concrete in the foreground at frame right lies a broken <Subject 1>, two of its six legs torn off, its body cracked, sparks spitting from a severed joint; behind it in soft focus stand the armored legs of <Subject 2>. The drone's remaining legs twitch and scrape. The drone has no mouth; <Subject 1>'s single crimson eye stutters on and flickers in sync with each syllable as it (S1) says in a distorted, low metallic whisper relayed from far away, <d>[Chinese] 用碎片来换他。黎明前，深蓝七号。</d> Only the eye pulses with the words; no one on screen opens a mouth. End state: the eye dims to a faint ember and the legs go still as <Subject 2> steps one pace closer.\n\noverall_soundscape:\nElectrical crackling and sparks from the broken drone, scraping metal legs, the distorted metallic whisper with digital crackle, waves and wind, a low thruster idle.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s12_14",
+  "scene": "S12",
+  "act": 2,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "仰拍特写：林骁低头盯着熄灭的无人机，惊恐转为决绝，手按住胸口发光的核心，抬眼望向大海",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with a single silver streak on the left and a small scar through her right eyebrow.\n<Subject 2> is the sleek powered armor suit in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal energy seams, a glowing hexagonal teal chest core, and a smooth helmet with a single vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], a container harbor yard at night beside an old warehouse, with stacked containers, gantry cranes, sodium-orange lights and wet asphalt, here seen as a moonlit sky with a gantry crane silhouette above her.\n\nsummary:\n[reference generation] <Subject 1> stares down at the silent drone, her shock hardening into resolve as she presses a hand over the glowing chest core of <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal core and T-shaped visor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same containers, cranes, sodium lights and wet asphalt; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with tense low-key lighting and high dynamic range: a night harbor dock, cold blue moonlight, sodium-orange lamps on wet concrete and a black sea, with crimson and teal accents. Keep the main action in the vertical center with about 12% clear space top and bottom; no on-screen text or logos.\n[Shot 1] Close-up, low angle looking up at her from the drone's position on the ground, static with a very slow push-in. Initial state: <Subject 1>'s face, framed by the retracted faceplate of <Subject 2>, looks straight down into the lens, lit from below by the dying crimson glow and by the hexagonal teal chest core at the bottom of the frame; the moonlit sky and a gantry crane silhouette sit above her. Her eyes are wet and wide with shock. She swallows hard and her breathing slows. Gradually her expression hardens: her brows draw down, the scar through her right eyebrow tightening, her jaw setting. Her right armored hand rises into frame and presses flat over the glowing chest core, teal light leaking between her fingers. End state: her eyes lift from the drone toward the dark sea at frame right, cold and determined.\n\noverall_soundscape:\nHer slow, controlled breathing, the last faint crackle of the dead drone, the chest core's resonant hum rising, wind and waves, a distant foghorn.\n\nnon_diegetic_music: N/A"
+ }
+]

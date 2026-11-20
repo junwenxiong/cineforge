@@ -1,0 +1,300 @@
+[
+ {
+  "id": "sc_s18_01",
+  "scene": "S18",
+  "act": 3,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "雨中废墟大全景，林骁独自靠着断墙坐着（慢节奏建立镜 8 秒）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her helmet is cracked with the faceplate half open, her left back thruster pod is crushed, and the chest core glows only weakly.\n<Picture 2> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] In the rain-soaked ruins below the broken highway, <Subject 1> sits slumped and alone against a shattered wall.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal chest core and helmet design stay identical; only the battle damage is new.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Wide shot, slow crane down from above the broken elevated highway, quiet and deliberate. Rain falls through drifting smoke; small fires burn in overturned cars, their orange glow reflected in the flooded street; a severed highway span hangs on the left with rebar trailing. In the center, small against the wreckage, <Subject 1> sits on the wet ground with her back against a broken concrete wall, legs out, arms limp, her damaged armor dull in the rain, the weak teal glow at her chest the only cold light. She does not move. The shot ends at ground level, framing her alone among the ruins, the dark sea faintly visible beyond the seawall on the right.\n\noverall_soundscape:\nSteady rain, crackling fires, water dripping from twisted rebar, distant sirens, a far-off groan of collapsing metal, waves beyond the seawall.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_02",
+  "scene": "S18",
+  "act": 3,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "林骁近景：头盔破裂、面罩半开、脸上有擦伤血痕",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer whose face comes from <Picture 1> and whose powered armor comes from <Picture 2>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a sleek pearl-white and graphite suit with teal energy seams and a glowing hexagonal teal chest core. Her helmet is cracked, the faceplate half open, with thin scrapes and dried blood on her cheek; her left back thruster pod is crushed.\n<Picture 3> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] Close on <Subject 1>'s exhausted face through her cracked, half-open helmet as rain runs over the scrapes on her cheek.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, armor colors, teal seams and chest core stay identical; only the damage is new.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium close-up, eye level, very slow push-in. <Subject 1> sits against the wall, the faceplate of her cracked helmet hanging half open, a jagged fracture across one side. Rain runs down her face over thin scrapes and a smear of dried blood on her cheek; wet strands of the silver-streaked bob cling to her forehead. Her eyes are empty, fixed on nothing. Slowly she lets her head fall back against the concrete and closes her eyes, her lips trembling once. The shot ends with her head resting back, rainwater pooling in the broken rim of the helmet.\n\noverall_soundscape:\nRain ticking on the cracked helmet, her shallow uneven breathing, a dripping drainpipe, distant crackle of fire.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_03",
+  "scene": "S18",
+  "act": 3,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "特写：她胸口的碎片光芒微弱地闪烁",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her helmet is cracked with the faceplate half open, her left back thruster pod is crushed, and the chest core glows only weakly.\n<Picture 2> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] Insert of the hexagonal teal core in <Subject 1>'s chest flickering weakly in the rain.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal chest core and helmet design stay identical; only the battle damage is new.\n<Picture 2> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Insert close-up on the chest of <Subject 1>'s armor, static, shallow focus. Rain beads and streams across scratched pearl-white plates. The hexagonal teal core in the center of her chest, where the shard is embedded, glows only faintly and flickers like a failing bulb: bright, dim, almost out, then a weak return. The teal energy seams leading away from it are dark. Her gloved armored hand rises slowly into frame and rests over the core, its light leaking between her fingers. The shot ends with the faint teal glow pulsing weakly beneath her hand.\n\noverall_soundscape:\nRain on armor, a soft irregular electrical hum rising and fading with the flicker, her slow breathing.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_04",
+  "scene": "S18",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "雀翎摩托从画左冲进废墟急停，后座上是被救出来的周野",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the autonomous scout machine in its vehicle form, the futuristic white-and-cyan racing motorcycle in <Picture 1>, with glowing cyan wheel rims, sharp aerodynamic fairings and no rider at the handlebars.\n<Subject 2> is the 30-year-old man in <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green flight bomber jacket with patches over a grey hoodie, a headset around his neck; tonight he is soaked, scuffed and has no tablet.\n<Picture 3> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] <Subject 1> races through the flooded ruins from the left and skids to a stop, carrying the rescued <Subject 2> on its back seat.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white-and-cyan fairings and glowing cyan wheel rims stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, patched olive bomber jacket and headset stay identical; rain and grime are new.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Wide shot, low angle at street level, camera panning right. A whining electric motor grows louder; cyan wheel rims flash between burning wrecks as <Subject 1> bursts in from frame left, no one at the handlebars, <Subject 2> clinging on from the rear seat. It weaves around a fallen lamppost, its headlight cutting the rain, then brakes hard and slides sideways, throwing a long fan of water across the street. The shot ends with the motorcycle stopped at a slant near the broken wall, cyan rims glowing, and <Subject 2> already swinging a leg off.\n\noverall_soundscape:\nA rising electric motor shriek, tires hissing through water, a hard braking skid, a splash, rain, crackling fire.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_04_v2",
+  "scene": "S18",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "雀翎摩托从画左冲进废墟急停，后座上是被救出来的周野（重拍）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the autonomous scout machine in its vehicle form, the futuristic white-and-cyan racing motorcycle in <Picture 1>, with glowing cyan wheel rims, sharp aerodynamic fairings, and an empty front seat: it drives itself with no rider at the handlebars.\n<Subject 2> is the single 30-year-old man in <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green flight bomber jacket with patches over a grey hoodie, a headset around his neck; tonight he is soaked, scuffed and has no tablet.\n<Picture 3> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] The riderless <Subject 1> drives itself in from the left and skids to a stop, with <Subject 2> as its only passenger, sitting alone on the rear seat.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - white-and-cyan fairings and glowing cyan wheel rims stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, patched olive bomber jacket and headset stay identical; rain and grime are new.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Wide side-on shot, low angle at street level, camera panning right to follow. Exactly one person is in the whole frame: <Subject 2>. A whining electric motor grows louder; cyan wheel rims flash between burning wrecks as <Subject 1> bursts in from frame left in clear profile. The front seat and handlebars are empty, nobody steering; <Subject 2> sits alone on the rear seat behind that empty space, both hands gripping the grab rail. It weaves around a fallen lamppost, its headlight cutting the rain, then brakes hard and slides sideways, throwing a long fan of water across the street. The shot ends with the motorcycle stopped at a slant near the broken wall, cyan rims glowing, the front seat still empty, and <Subject 2> swinging a leg off the back. There is no second man, no driver and no other people anywhere in frame.\n\noverall_soundscape:\nA rising electric motor shriek, tires hissing through water, a hard braking skid, a splash, rain, crackling fire.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_05",
+  "scene": "S18",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "周野跳下车冲过去，跪下紧紧抱住林骁",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 30-year-old man in <Picture 1>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green flight bomber jacket with patches over a grey hoodie, a headset around his neck; tonight he is soaked, scuffed and has no tablet.\n<Subject 2> is the woman engineer whose face comes from <Picture 2> and whose powered armor comes from <Picture 3>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a sleek pearl-white and graphite suit with teal energy seams and a glowing hexagonal teal chest core. Her helmet is cracked, the faceplate half open, with thin scrapes and dried blood on her cheek; her left back thruster pod is crushed.\n<Picture 4> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] <Subject 1> jumps off the motorcycle, runs through the rain and drops to his knees to hug <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, patched olive bomber jacket and headset stay identical; rain and grime are new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, armor colors, teal seams and chest core stay identical; only the damage is new.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium shot, eye level, handheld, following <Subject 1> from left to right. He leaps off the bike on the left, splashes across the flooded street and drops to his knees in front of <Subject 2>, who sits against the broken wall on the right. He throws his arms around her armored shoulders and pulls her into a tight hug; her arms stay limp for a moment, then one hand lifts weakly to his back. The shot ends with the two of them holding each other against the wall, rain pouring over both.\n\noverall_soundscape:\nRunning footsteps splashing, knees hitting wet concrete, armor clanking against his body, rain, the idle hum of the motorcycle.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_06",
+  "scene": "S18",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "周野抱着林骁，又气又心疼地骂她",
+  "dialogue": [
+   {
+    "who": "ZHOU",
+    "text": "你个傻子，叫你别来。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 30-year-old man in <Picture 1> and <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green flight bomber jacket with patches over a grey hoodie, a headset around his neck; tonight he is soaked, scuffed and has no tablet.\n<Subject 2> is the woman engineer whose face comes from <Picture 3> and whose powered armor comes from <Picture 4>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a sleek pearl-white and graphite suit with teal energy seams and a glowing hexagonal teal chest core. Her helmet is cracked, the faceplate half open, with thin scrapes and dried blood on her cheek; her left back thruster pod is crushed.\n<Picture 5> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] Holding <Subject 2> tightly, <Subject 1> scolds her through tears of relief.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, patched olive bomber jacket and headset stay identical; rain and grime are new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, armor colors, teal seams and chest core stay identical; only the damage is new.\n<Picture 5> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium close two-shot in profile, eye level, slight handheld breathing, <Subject 1> on the left and <Subject 2> on the right. He holds her, his cheek pressed to the side of her cracked helmet, rain dripping from his messy hair, eyes shut tight. He pulls back just enough to look at her, half laughing and half crying, and <Subject 1> (S1) says in a warm, shaking voice, <d>[Chinese] 你个傻子，叫你别来。</d> His crooked grin breaks through for a second and fails. The shot ends with him pressing his forehead against the rim of her helmet while she stares at him, numb.\n\noverall_soundscape:\nRain, his choked laugh and breathing, armor creaking, the motorcycle humming in the background.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_07",
+  "scene": "S18",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/queling_bike.png",
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "一旁的空摩托展开变形为雀翎，蹲下身默默守着两人",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the scout robot that starts as the white-and-cyan racing motorcycle in <Picture 1> and unfolds into the 3-meter-tall slim robot in <Picture 2>, with pearl-white and electric-cyan panels, two large round cyan optic eyes, and motorcycle wheels on its forearms.\n<Picture 3> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] Beside the embracing pair, the empty motorcycle unfolds into the scout robot <Subject 1>, which crouches down with dimmed eyes.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - both forms keep the same pearl-white and cyan panels, cyan wheel rims and round cyan eyes.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium-wide shot, low angle, static. <Subject 1> stands empty on the wet street in its motorcycle form, cyan rims glowing, rain bouncing off its fairings; the embracing pair is just out of frame on the right. Its panels unlatch with soft clicks: the front fairing splits and lifts into a slim torso, the wheels swing outward onto its forearms, and two legs unfold to the ground as it rises to three meters. Two large round cyan eyes blink on. It looks right toward the pair, its eyes dim to a soft, sad glow, and it lowers itself into a quiet crouch. The shot ends with <Subject 1> crouched in the rain, head tilted, watching over them.\n\noverall_soundscape:\nPrecise mechanical clicks and whirs of the transformation, servo hum, a soft descending electronic chirp, rain on metal.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_08",
+  "scene": "S18",
+  "act": 3,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "林骁声音发抖地说出心里话（台词上半句）",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "我以为造出能飞的东西，就能保护所有人……"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer whose face comes from <Picture 1> and whose powered armor comes from <Picture 2>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a sleek pearl-white and graphite suit with teal energy seams and a glowing hexagonal teal chest core. Her helmet is cracked, the faceplate half open, with thin scrapes and dried blood on her cheek; her left back thruster pod is crushed.\n<Picture 3> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] Still sitting against the wall, <Subject 1> begins to confess in a trembling voice.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, armor colors, teal seams and chest core stay identical; only the damage is new.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Close-up, eye level from slightly left of her, static. <Subject 1> has eased back from the hug, her cracked faceplate half open, rain and tears mixing on her scraped cheek. She stares down at her open armored hands resting on her knees. Her lips tremble; she swallows, and <Subject 1> (S1) says in a low, trembling voice, <d>[Chinese] 我以为造出能飞的东西，就能保护所有人……</d> Her voice cracks on the last words and trails away. The shot ends with her fingers curling slowly into fists, her eyes glistening.\n\noverall_soundscape:\nRain, her shaky breath between words, soft drips from the helmet rim, distant fire.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_09",
+  "scene": "S18",
+  "act": 3,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "越过周野肩头，林骁说出下半句后崩溃低头",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "可我连它都保护不了。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer whose face comes from <Picture 1> and whose powered armor comes from <Picture 2>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a sleek pearl-white and graphite suit with teal energy seams and a glowing hexagonal teal chest core. Her helmet is cracked, the faceplate half open, with thin scrapes and dried blood on her cheek; her left back thruster pod is crushed.\n<Subject 2> is the 30-year-old man in <Picture 3>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green flight bomber jacket with patches over a grey hoodie, a headset around his neck; tonight he is soaked, scuffed and has no tablet.\n<Picture 4> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> finishes her confession and breaks down.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, armor colors, teal seams and chest core stay identical; only the damage is new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, patched olive bomber jacket and headset stay identical; rain and grime are new.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium close-up over <Subject 2>'s shoulder, static: he is a soft dark shape in the left foreground, <Subject 1> sharp on the right of frame. She lifts her eyes toward the sea off-screen right, jaw tight, and <Subject 1> (S1) says in a broken whisper, <d>[Chinese] 可我连它都保护不了。</d> Her face collapses; she bows her head and presses her armored fist against her forehead, shoulders shaking. <Subject 2>'s hand comes into frame and rests on her shoulder plate. The shot ends with her head bowed under the rain and his hand holding steady.\n\noverall_soundscape:\nRain, her suppressed sob, armor creaking, a deep roll of distant thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_10",
+  "scene": "S18",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "反打周野：他扶着林骁的肩，告诉她今晚所有人都在跟她一起打（台词 24 字，8 秒）",
+  "dialogue": [
+   {
+    "who": "ZHOU",
+    "text": "你一直想一个人证明自己。可今晚，所有人都在跟你一起打。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 30-year-old man in <Picture 1> and <Picture 2>, with a warm crooked grin, messy short black hair, light stubble, and an olive-green flight bomber jacket with patches over a grey hoodie, a headset around his neck; tonight he is soaked, scuffed and has no tablet.\n<Subject 2> is the armored woman in <Picture 3>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her helmet is cracked with the faceplate half open, her left back thruster pod is crushed, and the chest core glows only weakly.\n<Picture 4> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] Kneeling in front of <Subject 2>, <Subject 1> looks her in the eye and tells her she was never fighting alone.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, messy hair, stubble, patched olive bomber jacket and headset stay identical; rain and grime are new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal chest core and helmet design stay identical; only the battle damage is new.\n<Picture 4> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Medium close-up on <Subject 1>, reverse angle over the back of <Subject 2>'s cracked helmet in the right foreground, static. <Subject 1> kneels in the rain on the left, both hands on her shoulder plates, water running off his headset. He waits until she looks up at him; his voice steadies, and <Subject 1> (S1) says in a warm, firm voice, <d>[Chinese] 你一直想一个人证明自己。可今晚，所有人都在跟你一起打。</d> Behind him, searchlight beams sweep the smoke and distant soldiers move between the wrecks. The shot ends with him holding her gaze, his crooked smile slowly returning.\n\noverall_soundscape:\nRain easing slightly, distant searchlight motors, far-off radio chatter, his steady breathing.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_11",
+  "scene": "S18",
+  "act": 3,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "林骁低头看胸口的碎片，光芒开始有节奏地脉动",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer whose face comes from <Picture 1> and whose powered armor comes from <Picture 2>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a sleek pearl-white and graphite suit with teal energy seams and a glowing hexagonal teal chest core. Her helmet is cracked, the faceplate half open, with thin scrapes and dried blood on her cheek; her left back thruster pod is crushed.\n<Picture 3> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] <Subject 1> looks down at her chest core as its weak teal light begins to pulse in a steady rhythm.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, armor colors, teal seams and chest core stay identical; only the damage is new.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Close-up, high angle from just above her, slow push-in. <Subject 1> lowers her eyes to her chest, her cracked faceplate half open. The hexagonal teal core, flickering weakly a moment ago, steadies and begins to pulse in slow, even beats like a heartbeat, lighting her face from below in teal waves. She frowns, uncertain, and touches it with two gloved fingers; it pulses again under her touch, a little stronger. The shot ends with her face lit by the rhythm, eyes narrowing as she begins to understand.\n\noverall_soundscape:\nA soft resonant hum swelling and fading with each pulse, rain, her held breath.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_12",
+  "scene": "S18",
+  "act": 3,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "越过林骁肩头：远处海面下一点微弱的琥珀光与她胸口的碎片同步脉动，雀翎也转头望向海面",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core. Her helmet is cracked with the faceplate half open, her left back thruster pod is crushed, and the chest core glows only weakly.\n<Subject 2> is the 3-meter-tall slim scout robot in <Picture 2>, with pearl-white and electric-cyan panels, two large expressive round cyan optic eyes and motorcycle wheels mounted on its forearms.\n<Picture 3> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] Over <Subject 1>'s shoulder, a faint amber light pulses beneath the distant sea in perfect sync with her chest core, and <Subject 2> turns to look.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal chest core and helmet design stay identical; only the battle damage is new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - slim pearl-white and cyan frame, round cyan eyes and forearm wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Wide shot over <Subject 1>'s left shoulder from behind, static, deep focus. Her cracked helmet and the teal glow at her chest sit in the left foreground; <Subject 2> crouches beside her on the right, cyan eyes dim. Past the ruined street and the broken seawall, the black sea stretches under the rain. Deep beneath its surface a tiny amber point glows faintly, then pulses, and her chest core pulses at the exact same moment, again and again in perfect rhythm. <Subject 2>'s round eyes brighten and it turns its head toward the water. The shot ends with both lights, near teal and distant amber, beating together.\n\noverall_soundscape:\nRain, waves breaking on the seawall, a low resonant hum pulsing in sync, a soft rising curious chirp.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_12_v2",
+  "scene": "S18",
+  "act": 3,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/queling.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "越过林骁肩头：远处海面下一点微弱的琥珀光与她胸口的碎片同步脉动，雀翎也转头望向海面（重拍）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored woman in <Picture 1>, in a sleek full-body powered suit of matte pearl-white and dark graphite plates with teal energy seams and a hexagonal teal chest core, with a smooth closed human-shaped helmet, scuffed and cracked across the back; her left back thruster pod is crushed and the chest core glows only weakly.\n<Subject 2> is the 3-meter-tall slim scout robot in <Picture 2>, with pearl-white and electric-cyan panels, two large round cyan optic eyes and motorcycle wheels mounted on its forearms.\n<Picture 3> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined seawall street, small fires, the dark sea ahead.\n\nsummary:\n[reference generation] Over <Subject 1>'s left shoulder, a faint amber light pulses beneath the distant sea in perfect sync with her chest core, and <Subject 2> turns its head toward the water.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, chest core glow and smooth helmet shape stay identical; only the battle damage is new.\n<Subject 2> (appears in [Shot 1]): fully_preserved - slim pearl-white and cyan frame, round cyan eyes and forearm wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night city and wet reflections; the seawall and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Over-the-shoulder shot from directly behind <Subject 1>, static, deep focus. The back of her smooth helmet and her left pearl-white shoulder plate fill the left third of the foreground, large and steady; we never see her face, and her helmet keeps the same shape throughout. Beyond her shoulder, the black sea fills the center of the frame under the rain. <Subject 2> stands apart on the right in the mid-ground, in profile. Deep beneath the sea surface at frame center, a single amber point glows faintly. It pulses brighter; at the exact same instant a teal glow pulses from her chest. Again and again, perfectly synchronized like one heartbeat. <Subject 2>'s round eyes brighten and it turns its head toward the amber light. The shot ends with both lights, near teal and distant amber, beating together. Exactly one woman and one scout robot are in frame; no other robots or figures.\n\noverall_soundscape:\nRain, waves breaking on the seawall, a low resonant hum pulsing in sync, a soft rising curious chirp.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s18_13",
+  "scene": "S18",
+  "act": 3,
+  "beat": 8,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "林骁的眼神变了：磐石还没死",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "碎片在回应它……磐石还没死。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer whose face comes from <Picture 1> and whose powered armor comes from <Picture 2>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and a sleek pearl-white and graphite suit with teal energy seams and a glowing hexagonal teal chest core. Her helmet is cracked, the faceplate half open, with thin scrapes and dried blood on her cheek; her left back thruster pod is crushed.\n<Picture 3> is the location reference for [Shot 1], the rainy coastal megacity at night after the battle: a ruined street under the broken elevated highway, small fires, towers and signs without readable text, the dark sea to the right.\n\nsummary:\n[reference generation] <Subject 1>'s despair turns to resolve as she realizes the robot in the sea is still alive.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, silver-streaked bob, eyebrow scar, armor colors, teal seams and chest core stay identical; only the damage is new.\n<Picture 3> ([Shot 1] location): partially_preserved - same rainy night city, towers, highway and wet reflections; the ruins and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film: anamorphic lenses, low-key cinematic lighting, heavy rain and drifting smoke, a desaturated blue night broken by orange embers and teal armor glow. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text.\n[Shot 1] Close-up, eye level, slow push-in. <Subject 1> stares toward the sea off-screen right, teal light pulsing on her scraped face through the half-open faceplate. Her eyes, empty a moment ago, sharpen and focus, and her breathing slows. She wipes the rain from her face with the back of her armored hand, and <Subject 1> (S1) says quietly, with growing certainty, <d>[Chinese] 碎片在回应它……磐石还没死。</d> The shot ends with her jaw set and her gaze locked on the sea, the teal glow on her chest now steady and bright.\n\noverall_soundscape:\nRain easing, the pulsing hum growing stronger, a distant wave, her steady breath.\n\nnon_diegetic_music: N/A"
+ }
+]

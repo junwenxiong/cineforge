@@ -1,0 +1,527 @@
+[
+  {
+    "id": "ec_s04_01",
+    "scene": "S04",
+    "act": 1,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "FS",
+    "summary_zh": "旧居民楼走廊，沈砚刚敲过贴满吸音棉的门；门开，许棠挂着耳机堵在门口",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the young woman in <Picture 3> and <Picture 4>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1], a small independent sound studio in an old apartment block at night, with wooden acoustic diffuser panels and grey foam, a large mixing console, two monitor speakers on stands, a vinyl shelf and warm desk lamps.\n\nsummary:\n[reference generation] In an old apartment corridor, the padded studio door opens and <Subject 2> blocks the doorway in front of <Subject 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, choppy bangs, silver ear hoops, mustard hoodie and black headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. A bare white ceiling light in the narrow corridor; warm lamplight spills out from the studio door. Deep focus, crisp detail.\n[Shot 1] Full shot in the narrow corridor, eye level, static, side-on to the door. <Subject 1> stands at frame left facing a door padded with grey acoustic foam, her hand lowering from knocking. The door swings open: <Subject 2> fills the doorway at frame right, headphones around her neck, one hand on the door edge, blocking the way. The shot ends with the two women facing each other across the threshold.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe last knuckle knock on padded foam, a lock clicking, the door creaking open.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s04_02",
+    "scene": "S04",
+    "act": 1,
+    "beat": 2,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_02.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠盯着她：「你就是新闻里那个人。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "你就是新闻里那个人。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Medium close-up at eye level, static camera, she stands in the padded doorway slightly right of center, looking toward frame left. Within the first second she says in Mandarin Chinese, \"你就是新闻里那个人。\" Her lips move in sync with each syllable, her voice quick and sharp. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line her eyes narrow and she tightens her grip on the door edge. The shot ends with her glare fixed on the visitor. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quick, sharp young female voice speaking the Mandarin line, the faint hiss of the monitor speakers and the buzz of a desk lamp. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_03",
+    "scene": "S04",
+    "act": 1,
+    "beat": 3,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_03.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "沈砚：「我想问几个关于你父亲的问题。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "我想问几个关于你父亲的问题。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in the narrow corridor of an old apartment block at night, a bare white ceiling light overhead and warm lamplight from an open studio door on her face. Medium close-up at eye level, static camera, she is slightly left of center, looking toward frame right. Within the first second she says in Mandarin Chinese, \"我想问几个关于你父亲的问题。\" Her lips move in sync with each syllable, her voice low and even. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she holds still, hands at her sides. The shot ends with her calm eyes on Xu. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, steady female voice speaking the Mandarin line, the hum of the corridor light and a muffled bass line from the studio. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_04",
+    "scene": "S04",
+    "act": 1,
+    "beat": 4,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_04.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠：「他怎么死的，你应该比我清楚。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "他怎么死的，你应该比我清楚。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Medium close-up at eye level, static camera, she stands in the padded doorway slightly right of center, looking toward frame left. Within the first second she says in Mandarin Chinese, \"他怎么死的，你应该比我清楚。\" Her lips move in sync with each syllable, her voice sharp and cutting. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she lifts her chin, glaring. The shot ends with her chin raised, daring her. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quick, sharp young female voice speaking the Mandarin line, the faint hiss of the monitor speakers and the buzz of a desk lamp. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_05",
+    "scene": "S04",
+    "act": 1,
+    "beat": 5,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "许棠要关门，沈砚伸手抵住门板：「如果是我，我不会来这儿。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "如果是我，我不会来这儿。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the young woman in <Picture 3> and <Picture 4>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1], a small independent sound studio in an old apartment block at night, with wooden acoustic diffuser panels and grey foam, a large mixing console, two monitor speakers on stands, a vinyl shelf and warm desk lamps.\n\nsummary:\n[reference generation] <Subject 2> tries to shut the door; <Subject 1> holds it open with her palm and speaks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, choppy bangs, silver ear hoops, mustard hoodie and black headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. A bare white ceiling light in the narrow corridor; warm lamplight spills out from the studio door. Deep focus, crisp detail.\n[Shot 1] Medium two-shot in the doorway, eye level, static. Within the first second, <Subject 1> (S1) says in a low, steady, clear female voice, <d>[Chinese] 如果是我，我不会来这儿。</d> At frame right <Subject 2> pushes the padded door shut, and at frame left <Subject 1>'s flat palm stops it against the grey foam. After the line <Subject 2> stops pushing, her hand still on the door. The shot ends with the door held half open between them.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nFoam squeaking under her palm, the door hinge creaking, her low voice, Xu's sharp breath.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s04_06",
+    "scene": "S04",
+    "act": 1,
+    "beat": 6,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "录音棚内：木质扩散板墙、调音台、暖色台灯。许棠走到调音台前，沈砚跟进来",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the young woman in <Picture 1> and <Picture 2>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Subject 2> is the woman in <Picture 3> and <Picture 4>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Picture 5> is the location reference for [Shot 1], a small independent sound studio in an old apartment block at night, with wooden acoustic diffuser panels and grey foam, a large mixing console, two monitor speakers on stands, a vinyl shelf and warm desk lamps.\n\nsummary:\n[reference generation] Inside the cramped studio, <Subject 1> walks back to the mixing console and <Subject 2> follows her in.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, choppy bangs, silver ear hoops, mustard hoodie and black headphones stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm bright desk lamps light the wooden diffuser panels and the mixing console. Deep focus, crisp detail.\n[Shot 1] Wide shot inside the studio, eye level, static. <Subject 1> walks away from the door across the cramped room to the large mixing console at frame right and turns to lean against it. <Subject 2> steps in through the padded door at frame left and stops just inside, looking around the room. The shot ends with the two women facing each other across the room.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nSneakers on old floorboards, the padded door thumping shut, the soft hiss of the monitor speakers, a desk lamp's faint buzz.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s04_07",
+    "scene": "S04",
+    "act": 1,
+    "beat": 7,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_07.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠背靠调音台：「三年，他一个电话都没打过。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "三年，他一个电话都没打过。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Medium close-up at eye level, static camera, she leans back against the mixing console slightly right of center, looking toward frame left. Within the first second she says in Mandarin Chinese, \"三年，他一个电话都没打过。\" Her lips move in sync with each syllable, her voice quick and bitter. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she folds her arms over her hoodie. The shot ends with her arms crossed, eyes hard. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quick, sharp young female voice speaking the Mandarin line, the faint hiss of the monitor speakers and the buzz of a desk lamp. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_08",
+    "scene": "S04",
+    "act": 1,
+    "beat": 8,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_08.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠：「现在人死了，倒有人来问我。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "现在人死了，倒有人来问我。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Medium close-up at eye level, static camera, she leans against the mixing console slightly right of center, arms crossed, looking toward frame left. Within the first second she says in Mandarin Chinese, \"现在人死了，倒有人来问我。\" Her lips move in sync with each syllable, her voice sharp with a bitter edge. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she looks away and down toward the console, her jaw tight. The shot ends with her eyes averted. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quick, sharp young female voice speaking the Mandarin line, the faint hiss of the monitor speakers and the buzz of a desk lamp. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_09",
+    "scene": "S04",
+    "act": 1,
+    "beat": 9,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "INSERT",
+    "summary_zh": "调音台上一部手机，屏幕亮着一条未读语音的抽象图标，没有文字",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a small independent sound studio in an old apartment block at night, with wooden acoustic diffuser panels and grey foam, a large mixing console, two monitor speakers on stands, a vinyl shelf and warm desk lamps.\n\nsummary:\n[reference generation] A phone lies on the mixing console, its screen showing an unread voice message as an abstract icon.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm bright desk lamps light the wooden diffuser panels and the mixing console. Deep focus, crisp detail.\n[Shot 1] Insert close-up on the mixing console, static. A black smartphone lies face-up among the faders. Its screen is lit with a single abstract voice-message icon, a small rounded shape with a pulsing dot, no letters or numbers. The fader caps and worn knobs around it are crisp. The pulsing dot fades and lights again. The shot ends with the dot glowing steadily on the dark screen.\n\noverall_soundscape:\nA faint electronic hum from the console, the buzz of the desk lamp, a muffled car passing outside.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s04_10",
+    "scene": "S04",
+    "act": 1,
+    "beat": 10,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_10.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚看着那部手机：「十一点四十，他给你留过言。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "十一点四十，他给你留过言。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Close-up at eye level, static camera, she is slightly left of center, looking down toward frame right at a phone on the console. Within the first second she says in Mandarin Chinese, \"十一点四十，他给你留过言。\" Her lips move in sync with each syllable, her voice quiet and precise. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she lifts her eyes from the phone to Xu off-screen right. The shot ends with her eyes on Xu. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, steady female voice speaking the Mandarin line, the faint hiss of the monitor speakers and the buzz of a desk lamp. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_11",
+    "scene": "S04",
+    "act": 1,
+    "beat": 11,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_11.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠：「我没听。也不打算听。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "我没听。也不打算听。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Close-up at eye level, static camera, she is slightly right of center, looking toward frame left. Within the first second she says in Mandarin Chinese, \"我没听。也不打算听。\" Her lips move in sync with each syllable, her voice clipped and hard. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she looks away, her jaw set. The shot ends with her eyes turned away. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quick, sharp young female voice speaking the Mandarin line, the faint hiss of the monitor speakers and the buzz of a desk lamp. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_12",
+    "scene": "S04",
+    "act": 1,
+    "beat": 12,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_12.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚：「那可能是他最后一句真话。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "那可能是他最后一句真话。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Close-up at eye level, static camera, she is slightly left of center, looking toward frame right. Within the first second she says in Mandarin Chinese, \"那可能是他最后一句真话。\" Her lips move in sync with each syllable, her voice quiet and steady. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she holds Xu's gaze. The shot ends with her eyes steady. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, steady female voice speaking the Mandarin line, the faint hiss of the monitor speakers and the buzz of a desk lamp. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_13",
+    "scene": "S04",
+    "act": 1,
+    "beat": 13,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_13.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠冷笑：「真话？你们只信脑子里的录像。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "真话？你们只信脑子里的录像。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Close-up at eye level, static camera, she is slightly right of center, looking toward frame left. Within the first second she says in Mandarin Chinese, \"真话？你们只信脑子里的录像。\" Her lips move in sync with each syllable, her voice sharp and scornful, a cold smile on her lips. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line her cold smile drops away. The shot ends with her face hard and unsmiling. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quick, sharp young female voice speaking the Mandarin line, the faint hiss of the monitor speakers and the buzz of a desk lamp. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_14",
+    "scene": "S04",
+    "act": 1,
+    "beat": 14,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "OTS",
+    "summary_zh": "过许棠的肩拍沈砚（画左）：「录像能改。声音，也许改不了。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "录像能改。声音，也许改不了。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the young woman in <Picture 3>, seen from behind: the back of her chin-length choppy black hair, the large black headphones around her neck and the shoulder of her oversized mustard-yellow hoodie.\n<Picture 4> is the location reference for [Shot 1], a small independent sound studio in an old apartment block at night, with wooden acoustic diffuser panels and grey foam, a large mixing console, two monitor speakers on stands, a vinyl shelf and warm desk lamps.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> suggests that the voice in the memory may not have been altered.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm bright desk lamps light the wooden diffuser panels and the mixing console. Deep focus, crisp detail.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a low, steady, clear female voice, <d>[Chinese] 录像能改。声音，也许改不了。</d> <Subject 2>'s shoulder, the headphones around her neck and her choppy hair fill the right foreground, sharp and in focus. <Subject 1> stands at frame left facing her, looking toward frame right. After the line she takes one small step closer. The shot ends with her standing close, waiting.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer low, careful voice, the hiss of the monitor speakers, a floorboard creaking under her step.\n\nnon_diegetic_music: N/A",
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s04_14.png",
+    "keyframe_prompt": "Draw a single photoreal opening keyframe. Preserve the identities and costumes in the supplied reference images. Depict initial pose before action; no montage.\nOriginal scene context:\nsubject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the young woman in <Picture 3>, seen from behind: the back of her chin-length choppy black hair, the large black headphones around her neck and the shoulder of her oversized mustard-yellow hoodie.\n<Picture 4> is the location reference for [Shot 1], a small independent sound studio in an old apartment block at night, with wooden acoustic diffuser panels and grey foam, a large mixing console, two monitor speakers on stands, a vinyl shelf and warm desk lamps.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> suggests that the voice in the memory may not have been altered.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm bright desk lamps light the wooden diffuser panels and the mixing console. Deep focus, crisp detail.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a low, steady, clear female voice, <d>[Chinese] 录像能改。声音，也许改不了。</d> <Subject 2>'s shoulder, the headphones around her neck and her choppy hair fill the right foreground, sharp and in focus. <Subject 1> stands at frame left facing her, looking toward frame right. After the line she takes one small step closer. The shot ends with her standing close, waiting.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer low, careful voice, the hiss of the monitor speakers, a floorboard creaking under her step.\n\nnon_diegetic_music: N/A\nAuthoritative composition and head-count (overrides conflicting background crowd or end-state instructions):\nExactly 2 people: Shen left facing camera, Xu right foreground back of head and mustard shoulder. No other people.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage.",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the young woman in <Picture 3>, seen from behind: the back of her chin-length choppy black hair, the large black headphones around her neck and the shoulder of her oversized mustard-yellow hoodie.\n<Picture 4> is the location reference for [Shot 1], a small independent sound studio in an old apartment block at night, with wooden acoustic diffuser panels and grey foam, a large mixing console, two monitor speakers on stands, a vinyl shelf and warm desk lamps.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> suggests that the voice in the memory may not have been altered.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm bright desk lamps light the wooden diffuser panels and the mixing console. Deep focus, crisp detail.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a low, steady, clear female voice, <d>[Chinese] 录像能改。声音，也许改不了。</d> <Subject 2>'s shoulder, the headphones around her neck and her choppy hair fill the right foreground, sharp and in focus. <Subject 1> stands at frame left facing her, looking toward frame right. After the line she takes one small step closer. The shot ends with her standing close, waiting.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer low, careful voice, the hiss of the monitor speakers, a floorboard creaking under her step.\n\nnon_diegetic_music: N/A\n\nMandatory continuous shot constraints:\nExactly 2 people: Shen left facing camera, Xu right foreground back of head and mustard shoulder. No other people.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage."
+  },
+  {
+    "id": "ec_s04_15",
+    "scene": "S04",
+    "act": 1,
+    "beat": 15,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_15.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠一愣（反应镜）",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Close-up at eye level, static camera, she is slightly right of center, looking toward frame left. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. Her expression freezes; her eyes widen slightly and her lips part, the sharpness gone for a moment. The shot ends with her eyes searching the visitor's face. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: the hiss of the monitor speakers and her caught breath. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_16",
+    "scene": "S04",
+    "act": 1,
+    "beat": 16,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_16.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠：「你想让我听什么？」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "你想让我听什么？"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Medium close-up at eye level, static camera, she leans against the console slightly right of center, arms crossed, looking toward frame left. Within the first second she says in Mandarin Chinese, \"你想让我听什么？\" Her lips move in sync with each syllable, her voice quieter, still guarded. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she uncrosses her arms. The shot ends with her hands resting on the console edge. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quick, sharp young female voice speaking the Mandarin line, the faint hiss of the monitor speakers and the buzz of a desk lamp. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_17",
+    "scene": "S04",
+    "act": 1,
+    "beat": 17,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "双人：沈砚把一张银色数据卡放在调音台上推过去：「他最后的三十秒。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "他最后的三十秒。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the young woman in <Picture 3> and <Picture 4>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1], a small independent sound studio in an old apartment block at night, with wooden acoustic diffuser panels and grey foam, a large mixing console, two monitor speakers on stands, a vinyl shelf and warm desk lamps.\n\nsummary:\n[reference generation] <Subject 1> slides a silver data card across the console to <Subject 2>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, choppy bangs, silver ear hoops, mustard hoodie and black headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm bright desk lamps light the wooden diffuser panels and the mixing console. Deep focus, crisp detail.\n[Shot 1] Medium two-shot across the mixing console, eye level, static: <Subject 1> at frame left, <Subject 2> at frame right. Within the first second, <Subject 1> (S1) says in a low, steady, clear female voice, <d>[Chinese] 他最后的三十秒。</d> <Subject 1>'s fingers rest on a slim silver data card on the console. After the line she slides it across the console toward <Subject 2>, who looks down at it. The shot ends with the card resting in front of <Subject 2>'s hand.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe card scraping softly across the console surface, her low voice, the monitor speaker hiss.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s04_18",
+    "scene": "S04",
+    "act": 1,
+    "beat": 18,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_18.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠：「我凭什么帮一个嫌疑人？」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "我凭什么帮一个嫌疑人？"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Close-up at eye level, static camera, she is slightly right of center, looking toward frame left. Within the first second she says in Mandarin Chinese, \"我凭什么帮一个嫌疑人？\" Her lips move in sync with each syllable, her voice sharp and defensive. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line her eyes drop to the card on the console. The shot ends with her eyes on the card. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quick, sharp young female voice speaking the Mandarin line, the faint hiss of the monitor speakers and the buzz of a desk lamp. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_19",
+    "scene": "S04",
+    "act": 1,
+    "beat": 19,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_19.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚：「凭你也不信，他是自己掉下去的。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "凭你也不信，他是自己掉下去的。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Close-up at eye level, static camera, she is slightly left of center, looking toward frame right. Within the first second she says in Mandarin Chinese, \"凭你也不信，他是自己掉下去的。\" Her lips move in sync with each syllable, her voice low and certain. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt. After the line she waits, unblinking. The shot ends with her calm eyes on Xu. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, steady female voice speaking the Mandarin line, the faint hiss of the monitor speakers and the buzz of a desk lamp. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_20",
+    "scene": "S04",
+    "act": 1,
+    "beat": 20,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_20.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠盯着数据卡，下颌收紧（反应镜）",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Close-up at eye level, static camera, she is slightly right of center, looking down toward frame left at a card on the console. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. Her jaw tightens and her throat moves as she swallows. The shot ends with her eyes still fixed on the card. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: the hiss of the monitor speakers and a slow breath. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s04_21",
+    "scene": "S04",
+    "act": 1,
+    "beat": 21,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "沈砚放下一张名片，转身走向门口",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the young woman in <Picture 3> and <Picture 4>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1], a small independent sound studio in an old apartment block at night, with wooden acoustic diffuser panels and grey foam, a large mixing console, two monitor speakers on stands, a vinyl shelf and warm desk lamps.\n\nsummary:\n[reference generation] <Subject 1> leaves a blank card on the console and turns toward the door while <Subject 2> stays still.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, choppy bangs, silver ear hoops, mustard hoodie and black headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm bright desk lamps light the wooden diffuser panels and the mixing console. Deep focus, crisp detail.\n[Shot 1] Medium two-shot by the mixing console, eye level, static. <Subject 1>'s fingertips leave a small plain white card, its face blank, on the console beside the silver data card; she turns and walks toward the padded door at frame left. <Subject 2> stays at the console at frame right, not looking at her. The shot ends with <Subject 1> reaching the door, her back to the room.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe tap of the card on the console, her boots on old floorboards, the speaker hiss.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s04_22",
+    "scene": "S04",
+    "act": 1,
+    "beat": 22,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s04_22.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "许棠没有回头：「……我会听。不是为了你。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "……我会听。不是为了你。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio in an old apartment block at night, lit by warm bright desk lamps, wooden acoustic diffuser panels and grey foam behind. Close-up at eye level, static camera, she is slightly right of center, facing the console, eyes down toward the card, her back to the door. Within the first second she says in Mandarin Chinese, \"……我会听。不是为了你。\" Her lips move in sync with each syllable, her voice low and rough. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she keeps her eyes on the card, not turning around. The shot ends with her face still, eyes lowered. Deep focus, crisp detail, with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quick, sharp young female voice speaking the Mandarin line, the padded door closing behind her and the speaker hiss. No music, no on-screen text."
+  }
+]

@@ -1,0 +1,227 @@
+[
+ {
+  "id": "sc_s14_01",
+  "scene": "S14",
+  "act": 3,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "指挥中心全景：红色警报灯旋转，军官们奔向控制台，中央全息沙盘展开海岸线地图（慢节奏建立镜）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the dark military command center with large holographic tactical displays showing abstract maps, blue light and officers' consoles, here swept by a rotating red alert beacon.\n\nsummary:\n[reference generation] Red alert light pulses through the command center as officers rush to their consoles around a giant tactical hologram.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same dark room, blue holographic displays and consoles; red alert light and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light cut by pulsing red alert light, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every screen and hologram shows only abstract graphics.\n[Shot 1] Wide establishing shot from a high corner of the room, slow push-in toward the center. The dark command center is lit by cool blue hologram light, and a rotating red alert beacon sweeps everything in crimson once a second. A dozen officers in dark navy uniforms hurry along rows of consoles, some pressing headsets to their ears, others pointing at screens of abstract graphics. In the middle of the room, a large round holographic table flickers and expands into a floating blue map of a coastline: land on the left half, open sea on the right. A red mass blooms on the sea side of the map. The shot ends with the officers turning toward the hologram, its glow lighting their faces from below.\n\noverall_soundscape:\nA rhythmic two-tone alarm, overlapping indistinct radio chatter, rapid keyboard clicks, footsteps on a metal floor, the low electrical hum of the hologram.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s14_02",
+  "scene": "S14",
+  "act": 3,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_command.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "全息屏特写：黑塔线框模型立在画右海面，红色光点群从塔基涌出流向画左海岸线（抽象图形）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the dark command center with blue holographic displays, here blurred in the background behind the hologram.\n<Picture 2> is the shape reference for the hologram model in [Shot 1]: only the black tower's silhouette is used, rendered as a translucent wireframe, not as a real tower.\n\nsummary:\n[reference generation] A close view of the tactical hologram: a wireframe model of the black tower stands at sea while a swarm of red points streams toward the coastline.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same blue hologram light and dark consoles, out of focus.\n<Picture 2> ([Shot 1] hologram shape): weak_reference - only the tower silhouette is borrowed, drawn as a blue-and-red wireframe.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light cut by pulsing red alert light, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every screen and hologram shows only abstract graphics.\n[Shot 1] Insert close-up on the hologram, camera slowly orbiting from right to left. A translucent blue wireframe of the tower stands on the right side of the frame on a grid of rippling sea, a red pulse throbbing at its tip. From its base, thousands of tiny red points pour out like smoke and stream leftward across the grid toward a jagged blue coastline outline on the left. Plain circles around the coastline shrink steadily like a countdown, with no numbers or letters. The red swarm spreads wider as it travels, and red alert light washes over the hologram in rhythmic pulses. The shot ends with the front edge of the red swarm touching the coastline outline, which flashes red.\n\noverall_soundscape:\nA soft holographic hum, digital tracking chirps, the alarm muffled in the background, a rising warning tone as the swarm reaches the coast.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s14_03",
+  "scene": "S14",
+  "act": 3,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "过肩镜头：年轻军官从控制台转身，向前景的秦岳报告无人机群动向（台词 20 字，8 秒）",
+  "dialogue": [
+   {
+    "who": "OFFICER",
+    "text": "将军，无人机群正朝澜城移动，预计十二分钟抵达！"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, and a dark navy dress uniform with plain silver collar insignia.\n<Subject 2> is an unnamed young male duty officer with no reference picture: short black hair, a plain dark navy duty uniform and a slim headset with a microphone.\n<Picture 2> is the location reference for [Shot 1], the dark military command center with large holographic tactical displays showing abstract maps, blue light and officers' consoles.\n\nsummary:\n[reference generation] <Subject 2> spins around from his console and reports the incoming drone swarm to <Subject 1>, who stands in the foreground.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and navy uniform with silver collar insignia stay identical.\n<Subject 2> (appears in [Shot 1]): weak_reference - text-defined only, no picture; keep his young face, plain navy uniform and headset consistent.\n<Picture 2> ([Shot 1] location): partially_preserved - same dark room, blue holographic displays and consoles; red alert light and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light cut by pulsing red alert light, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every screen and hologram shows only abstract graphics.\n[Shot 1] Medium shot over the right shoulder of <Subject 1>, whose back and grey crew cut sit out of focus in the right foreground; static camera. In sharp focus in the mid-ground left, <Subject 2> sits at a console glowing with abstract blue graphics, one hand on his headset. He spins his chair toward <Subject 1>, half rises and holds his gaze steady despite the alarm, red light sweeping across his face. <Subject 2> (S1) says in a fast, urgent, slightly breathless voice, <d>[Chinese] 将军，无人机群正朝澜城移动，预计十二分钟抵达！</d> <Subject 1> does not move. The shot ends with <Subject 2> standing at attention, waiting for orders, while the console behind him flashes red.\n\noverall_soundscape:\nThe two-tone alarm, indistinct radio chatter, the creak of a swivel chair, rapid console beeps, the hologram's low hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s14_04",
+  "scene": "S14",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin_face.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "秦岳近景：盯着全息屏，红光一下下扫过脸，下颌绷紧",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, and a dark navy dress uniform with plain silver collar insignia.\n<Picture 2> is the location reference for [Shot 1], the dark military command center with large holographic tactical displays showing abstract maps, blue light and officers' consoles.\n\nsummary:\n[reference generation] <Subject 1> stares at the tactical hologram in silence, his jaw tightening as the red alert light sweeps over him.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and navy uniform with silver collar insignia stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same dark room, blue holographic displays and consoles; red alert light and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light cut by pulsing red alert light, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every screen and hologram shows only abstract graphics.\n[Shot 1] Medium close-up, slightly low angle, slow push-in. <Subject 1> stands facing frame left, his face lit from below by the blue hologram and swept every second by red alert light. Reflections of tiny red points drift across his deep-set eyes. He stares at the display without blinking; his jaw tightens and the lines around his mouth deepen. He breathes in slowly through his nose, and his eyes flick from one side of the map to the other, measuring the distance. Behind him, out of focus, officers move between consoles. The shot ends with his face set hard, his gaze locked on the coastline, the red light passing over him again.\n\noverall_soundscape:\nThe alarm slightly muffled, the hologram's hum, faint radio chatter, his slow controlled breath.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s14_05",
+  "scene": "S14",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "特写：秦岳垂在身侧的手指一根根收紧，握成拳",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, and a dark navy dress uniform with plain silver collar insignia.\n<Picture 2> is the location reference for [Shot 1], the dark military command center with large holographic tactical displays showing abstract maps, blue light and officers' consoles.\n\nsummary:\n[reference generation] In close-up, the hand of <Subject 1> slowly closes into a tight fist at his side.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and navy uniform with silver collar insignia stay identical. Only his hand and uniform sleeve are seen.\n<Picture 2> ([Shot 1] location): partially_preserved - same dark room, blue holographic displays and consoles; red alert light and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light cut by pulsing red alert light, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every screen and hologram shows only abstract graphics.\n[Shot 1] Insert close-up at waist height, static camera. The right hand of <Subject 1> hangs beside the crisp seam of his dark navy uniform trousers, the edge of the holographic table glowing blue behind it, the cuff of his sleeve in frame. Red alert light pulses across his knuckles. His fingers curl slowly, one by one, into a tight fist; the knuckles pale and the hand trembles slightly with the strain. Then the fist goes still. The shot ends with the clenched fist held motionless beside his leg, lit alternately blue and red.\n\noverall_soundscape:\nThe muffled alarm, a faint creak of skin and fabric, the hologram's hum, distant footsteps.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s14_06",
+  "scene": "S14",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "侧门滑开，林骁穿着 Mk-II 从画左走进指挥中心，军官们纷纷回头让路",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the armored heroine in <Picture 1>, a slim woman fully enclosed in powered armor of matte pearl-white and dark graphite plates, with glowing teal seams, a glowing hexagonal teal chest core, compact thruster pods on the back and calves, and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 2> is the location reference for [Shot 1], the dark military command center with large holographic tactical displays showing abstract maps, blue light and officers' consoles, with a heavy sliding door on the left wall.\n\nsummary:\n[reference generation] The door slides open and <Subject 1> strides into the command center as the officers turn to stare.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same dark room, blue holographic displays and consoles; red alert light and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light cut by pulsing red alert light, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every screen and hologram shows only abstract graphics.\n[Shot 1] Wide shot, eye level from inside the room, static camera. A heavy steel door on the left wall slides open sideways with a hiss, and white corridor light spills in through the haze. <Subject 1> strides through the doorway from frame left with heavy armored footsteps, the teal seams and hexagonal chest core glowing and reflecting on the polished floor. She walks right toward the holographic table in the center. Officers at the consoles turn in their chairs to stare as she passes, and one steps aside to let her through. Red alert light washes over her white plates. The shot ends with <Subject 1> stopping at the edge of the holographic table, the blue map glowing between her and the room.\n\noverall_soundscape:\nA pneumatic door hiss, heavy metallic armored footsteps, the low idle hum of the suit's thrusters, the alarm, chairs creaking as officers turn.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s14_07",
+  "scene": "S14",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "近景：Mk-II 面罩沿 T 形线向两侧分开收起，露出林骁的脸",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and sharp determined eyes; only her face and hair are used, since her body is inside the armor.\n<Subject 2> is the powered armor in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal seams along the limbs, a glowing hexagonal teal chest core, and a helmet with a vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], the dark military command center with large holographic tactical displays showing abstract maps, blue light and officers' consoles.\n\nsummary:\n[reference generation] <Subject 1>, wearing <Subject 2>, opens her helmet's faceplate, which splits and slides to both sides to reveal her face.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, black bob with the silver streak on the left and right-eyebrow scar stay identical; the work jacket is not shown.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same dark room, blue holographic displays and consoles; red alert light and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light cut by pulsing red alert light, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every screen and hologram shows only abstract graphics.\n[Shot 1] Medium close-up, eye level, static camera. <Subject 1> stands facing frame right in <Subject 2>, the helmet closed, the T-shaped teal visor slit glowing. The visor light fades, and the faceplate splits along the vertical line of the T; the two halves slide sideways and fold back into the sides of the helmet with a smooth mechanical motion. Her face is revealed: the short black bob with its silver streak on the left, the small scar through her right eyebrow, a thin sheen of sweat. Teal light from the chest core lights her chin from below while blue hologram light and red alert pulses play across her face. She exhales once, sharply. The shot ends with her looking straight toward frame right, eyes steady.\n\noverall_soundscape:\nA soft servo whir and two metallic clicks as the faceplate halves retract, a puff of released air, the alarm and hologram hum around her.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s14_07_v2",
+  "scene": "S14",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "近景：Mk-II 面罩沿 T 形线向两侧分开收起，露出林骁的脸（重拍）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and sharp determined eyes, her body inside the armor.\n<Subject 2> is the powered armor in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal seams, a glowing hexagonal teal chest core, and a closed helmet with a vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], the dark command center with blue holographic map displays.\n\nsummary:\n[reference generation] <Subject 1>, wearing <Subject 2>, opens her helmet's front faceplate to reveal her face.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, black bob with the silver streak on the left and right-eyebrow scar stay identical; the work jacket is not shown.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical in color in every frame.\n<Picture 3> ([Shot 1] location): partially_preserved - same dark room, blue holographic displays and consoles; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light with a soft, steady dim red glow in the background, thin haze, high contrast. Keep the main action in the vertical center of the frame; no on-screen text, and every screen shows only abstract map graphics. Exactly one person is in frame; there are no officers or other figures near her. The armor stays pearl-white and graphite in every frame.\n[Shot 1] Medium close-up, eye level, static camera. <Subject 1> stands still facing frame right in <Subject 2>, head and shoulders in frame, the helmet closed and the T-shaped teal visor slit glowing. The visor light switches off. The faceplate is one hard, opaque metal plate: it splits cleanly down the vertical line of the T, and the two rigid halves slide straight sideways and tuck behind the cheek guards. The plates never turn transparent and never melt or blend into her skin; her face does not show through the visor before it opens. The helmet shell stays on around the top and sides of her head; only the front opens. Her face is now fully visible: the black bob with the silver streak on the left against her forehead, the small scar through her right eyebrow. The teal chest core lights her chin from below. The shot ends with her face steady, eyes looking toward frame right.\n\noverall_soundscape:\nA soft servo whir, two metallic clicks, a puff of released air, a muffled alarm.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s14_08",
+  "scene": "S14",
+  "act": 3,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "林骁近景，面向画右的秦岳，平静而坚定地说出决定，手掌按在胸口核心上",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "裂锋要的是碎片。我去。你们守住城市。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and sharp determined eyes; only her face and hair are used, since her body is inside the armor.\n<Subject 2> is the powered armor in <Picture 2>, with matte pearl-white and dark graphite plates, glowing teal seams along the limbs, a glowing hexagonal teal chest core, and a helmet with a vertical T-shaped teal visor slit.\n<Picture 3> is the location reference for [Shot 1], the dark military command center with large holographic tactical displays showing abstract maps, blue light and officers' consoles.\n\nsummary:\n[reference generation] <Subject 1>, wearing <Subject 2> with the faceplate open, tells the general that she will go alone while the army defends the city.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, black bob with the silver streak on the left and right-eyebrow scar stay identical; the work jacket is not shown.\n<Subject 2> (appears in [Shot 1]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same dark room, blue holographic displays and consoles; red alert light and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light cut by pulsing red alert light, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every screen and hologram shows only abstract graphics.\n[Shot 1] Medium close-up, slightly low angle, very slow push-in. <Subject 1> stands in <Subject 2> with the faceplate open, facing frame right toward the general off-screen, the blurred hologram glowing behind her. Her gaze is calm but hard. She steps half a pace forward, and <Subject 1> (S1) says in a clear, steady, fast voice, <d>[Chinese] 裂锋要的是碎片。我去。你们守住城市。</d> As she speaks the last words, she presses her armored hand flat against the glowing hexagonal core on her chest, and teal light seeps between her fingers. The shot ends with her holding the hand there, chin raised, waiting for an answer.\n\noverall_soundscape:\nThe alarm low under the dialogue, the hologram's hum, a soft metallic clink of her gauntlet against the chest plate, the core's faint resonant hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s14_09",
+  "scene": "S14",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "秦岳看着画左的林骁，又转头望向身后玻璃墙外机库里半跪的磐石，焦点移到磐石",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, and a dark navy dress uniform with plain silver collar insignia.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core, and huge haul-truck wheels folded on its shoulders and lower legs.\n<Picture 3> is the location reference for [Shot 1], the dark military command center with large holographic tactical displays showing abstract maps, blue light and officers' consoles; on the right, a tall glass wall overlooks a vast, dimly lit military hangar below.\n\nsummary:\n[reference generation] <Subject 1> studies the woman off-screen, then turns to look through the glass wall at <Subject 2> kneeling in the hangar below.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and navy uniform with silver collar insignia stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow and graphite stone-textured armor, amber optic band, amber chest core and folded wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same dark room, blue holographic displays and consoles; red alert light and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light cut by pulsing red alert light, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every screen and hologram shows only abstract graphics.\n[Shot 1] Medium shot, eye level, static camera. <Subject 1> stands left of center facing frame left, toward the woman off-screen, blue hologram light on his face. Behind him on the right, a tall glass wall looks down into a vast hangar. He studies her in silence, then slowly turns his head over his right shoulder toward the glass. The focus shifts to the hangar: <Subject 2> kneels on one knee under work lights, and soldiers and armored trucks at its feet look like toys beside it. Its amber optic band brightens slowly, as if returning his gaze. The shot ends with <Subject 1> soft in the foreground in profile, looking at <Subject 2>.\n\noverall_soundscape:\nThe muffled alarm, the hologram's hum, a deep mechanical hum faintly through the glass, distant echoes of tools in the hangar.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s14_09_v2",
+  "scene": "S14",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "秦岳看着画左的林骁，又转头望向身后玻璃墙外机库里半跪的磐石，焦点移到磐石（重拍）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, and a dark navy dress uniform with plain silver collar insignia.\n<Subject 2> is the 12-meter-tall ancient guardian robot in <Picture 2>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal chest core, and huge haul-truck wheels folded on its shoulders and lower legs.\n<Picture 3> is the location reference for [Shot 1], the dark command center with blue holographic map displays; on the right, a tall glass wall overlooks a vast, dimly lit military hangar below.\n\nsummary:\n[reference generation] <Subject 1> turns from the woman off-screen to look through the glass at <Subject 2>, kneeling in the hangar below.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and navy uniform with silver collar insignia stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow and graphite stone-textured armor, amber optic band, amber chest core and folded wheels stay identical; no red armor parts.\n<Picture 3> ([Shot 1] location): partially_preserved - same dark room and glass wall; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light with a soft, steady dim red glow in the background, thin haze, high contrast. Keep the main action in the vertical center of the frame; no on-screen text, and every screen shows only abstract map graphics. Exactly one man stands in the room in the foreground; the only robot is <Subject 2>, in the hangar.\n[Shot 1] Medium shot, eye level, static camera. <Subject 1> stands left of center facing frame left, toward the woman off-screen, his hands hanging empty at his sides. There is no hologram, no floating graphic and no glowing object near his hands or in the foreground. Behind him on the right, a tall glass wall looks down into a vast hangar. He pauses, then slowly turns his head over his right shoulder toward the glass. The focus racks to the hangar: <Subject 2> kneels on one knee, one hand on the floor; it stays kneeling for the whole shot and does not stand up. Small soldiers and armored trucks at its knee look like toys beside it. Its amber optic band brightens slowly. The shot ends with <Subject 1> soft in the foreground in profile, looking down at <Subject 2>.\n\noverall_soundscape:\nThe muffled alarm, a deep mechanical hum through the glass, distant tool echoes.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s14_10",
+  "scene": "S14",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin_face.png",
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk2.png",
+   "assets/starcore/refs/loc_command.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "（一镜两切）秦岳转回头低声下令；4.5 秒切到林骁点头，面罩合拢、T 形面罩亮起青光",
+  "dialogue": [
+   {
+    "who": "QIN",
+    "text": "所有单位，听她指挥。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old East Asian man with a grey crew cut, a stern weathered face with deep-set eyes, and a dark navy dress uniform with plain silver collar insignia.\n<Subject 2> is the woman engineer in <Picture 2>, with a short asymmetrical black bob with one silver streak on the left, a small scar through her right eyebrow, and sharp determined eyes; only her face and hair are used, since her body is inside the armor.\n<Subject 3> is the powered armor in <Picture 3>, with matte pearl-white and dark graphite plates, glowing teal seams along the limbs, a glowing hexagonal teal chest core, and a helmet with a vertical T-shaped teal visor slit.\n<Picture 4> is the location reference for [Shot 1] and [Shot 2], the dark command center with blue holographic displays and consoles.\n\nsummary:\n[reference generation] <Subject 1> orders all units to follow the woman; the shot cuts to <Subject 2>, wearing <Subject 3>, nodding and sealing her helmet.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and navy uniform with silver collar insignia stay identical.\n<Subject 2> (appears in [Shot 2]): fully_preserved - face, black bob with the silver streak on the left and right-eyebrow scar stay identical; the work jacket is not shown.\n<Subject 3> (appears in [Shot 2]): fully_preserved - pearl-white and graphite plates, teal seams, hexagonal teal chest core and T-shaped visor stay identical.\n<Picture 4> ([Shot 1] and [Shot 2] location): partially_preserved - same blue hologram light and red alert pulses in both shots.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: a dark command-center interior in cool blue hologram light cut by pulsing red alert light, thin haze, high contrast. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text, and every screen and hologram shows only abstract graphics.\n[Shot 1] Medium close-up of <Subject 1>, slightly low angle, static camera. He turns his head back from the glass to face frame left, toward the woman, his weathered face lit blue and red. A silent beat; his jaw unclenches. <Subject 1> (S1) says in a low, restrained voice, <d>[Chinese] 所有单位，听她指挥。</d>\n[Shot 2] At 00:04.500, the shot cuts to a medium close-up of <Subject 2> in <Subject 3>, facing frame right, faceplate open. She gives one firm nod. The faceplate halves slide back across her face and seal, and the T-shaped visor slit lights up bright teal. The shot ends on the closed helmet, the visor glowing.\n\noverall_soundscape:\nThe alarm, indistinct radio orders, two metallic clicks and a hiss as the helmet seals, a rising thruster whine.\n\nnon_diegetic_music: N/A"
+ }
+]

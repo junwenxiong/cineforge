@@ -1,0 +1,116 @@
+[
+ {
+  "id": "sc_s01_01",
+  "scene": "S01",
+  "act": 1,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_highway.png",
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "航拍建立镜：雨夜澜城，楼群在画左，海湾与港口在画右。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for the city towers in [Shot 1], the futuristic coastal megacity at night in rain, with glowing towers on both sides, glowing signs without readable text and wet reflections.\n<Picture 2> is the location reference for the harbor at the water's edge in [Shot 1], a rainy container harbor yard at night, with stacked shipping containers, gantry cranes, sodium-orange lights, wet asphalt reflections, a megacity skyline in the distance and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] A rainy-night aerial reveal of the coastal megacity of <Picture 1>, with the sodium-lit harbor of <Picture 2> glowing at the edge of the bay.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same tower architecture, rain and teal-blue night glow; the camera position is new.\n<Picture 2> ([Shot 1] location): partially_preserved - same containers, cranes, sodium-orange light and rain; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a rainy night of deep teal-blue city light against sodium-orange harbor lamps, with wet reflections and volumetric rain haze. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Extreme wide aerial shot, the camera gliding slowly forward and descending through low rain clouds. Below, the coastal megacity spreads out at night: dense clusters of glass towers on the left, their facades glowing deep teal-blue with bands of soft white and amber light, glowing signs reduced to abstract colour blocks with no readable text. The dark sea bay opens on the right side of the frame, and along its edge lies the sodium-orange grid of the container harbor and its gantry cranes. Rain streaks across the lens in fine diagonal lines and wisps of cloud slide past. Thin threads of moving light trace elevated roads and rail lines between the towers. The shot ends with the clouds clearing and the full city laid out below, the glowing harbor at the center of the frame.\n\noverall_soundscape:\nWind rushing past at altitude, steady heavy rain, the distant layered hum of the city, faint horns and a far-off roll of thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s01_02",
+  "scene": "S01",
+  "act": 1,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "航拍跟拍：磁悬浮列车在雨中穿过发光的高楼之间。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the futuristic coastal megacity at night in rain, with glowing towers on both sides, glowing signs without readable text and wet reflections.\n\nsummary:\n[reference generation] A sleek maglev train glides between the glowing, rain-soaked towers of <Picture 1> as the aerial camera tracks alongside it.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same tower architecture, rain and teal-blue night glow; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a rainy night of deep teal-blue city light against sodium-orange harbor lamps, with wet reflections and volumetric rain haze. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Wide aerial tracking shot at the height of the fortieth floor, the camera flying parallel to an elevated maglev guideway that curves between two walls of glass towers in the city of <Picture 1>. A long, smooth white maglev train with a continuous band of soft window light enters from frame left and races to the right, floating just above its guideway, rain spraying off its roof in thin mist and a faint blue glow pulsing underneath. The tower facades reflect the train as a moving streak of light, and water sheets down the glass. The camera keeps pace, then slowly falls behind as the train pulls ahead and banks around a tower, its ribbon of light disappearing into the rain. The shot ends on the empty curving guideway glistening wet under the city glow, rain still drifting through the frame.\n\noverall_soundscape:\nA rising electromagnetic whoosh as the train passes, rain hissing on glass, gusting wind, and the dense ambient hum of the city.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s01_03",
+  "scene": "S01",
+  "act": 1,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "雨中无人机灯带像发光丝带在楼群之间流动。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the futuristic coastal megacity at night in rain, with glowing towers on both sides, glowing signs without readable text and wet reflections.\n\nsummary:\n[reference generation] Swarms of tiny light drones flow like glowing ribbons through the rain between the towers of <Picture 1>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same tower architecture, rain and teal-blue night glow; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a rainy night of deep teal-blue city light against sodium-orange harbor lamps, with wet reflections and volumetric rain haze. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Wide shot from the edge of a rooftop high in the city of <Picture 1>, slow upward tilt. Between two towers, hundreds of tiny drones, each a single point of soft light, fly in formation, forming long flowing ribbons of teal and warm amber that ripple and twist like silk in the wind; they make purely abstract shapes with no letters or symbols. Rain falls through them and every droplet catches their glow. The ribbons sweep past the glass facades and reflect in the dark windows, then braid together into a single wave that curves upward over the tower tops. The camera tilts up to follow, ending on the ribbon dissolving into the low clouds, which glow softly from within.\n\noverall_soundscape:\nA soft, high collective hum of drone rotors rising and falling, steady rain, water dripping from ledges, and the distant drone of the city.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s01_04",
+  "scene": "S01",
+  "act": 1,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "建立镜：港口集装箱堆场，龙门吊、钠灯与雨，远处天际线，画左有一座旧仓库。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a rainy container harbor yard at night, with stacked shipping containers, gantry cranes, sodium-orange lights, wet asphalt reflections, a megacity skyline in the distance and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] An establishing view of the rainy container harbor yard of <Picture 1>, with gantry cranes, sodium lights and the city skyline behind.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same containers, cranes, sodium-orange light and rain; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a rainy night of deep teal-blue city light against sodium-orange harbor lamps, with wet reflections and volumetric rain haze. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Extreme wide shot from a high corner of the yard in <Picture 1>, slow descending crane. Canyons of stacked shipping containers in faded reds, blues and greys stretch away in rows, their wet corrugated sides glinting. Giant gantry cranes stand over them like steel skeletons, their warning lights blinking. Sodium-orange lamps on tall poles cast pools of light through the falling rain, each pool full of glittering droplets, and the wet asphalt between the stacks mirrors every lamp. Far behind, the megacity skyline glows teal-blue through the haze. At the left edge of the yard, a dark old warehouse with a row of high windows stands apart from the stacks. The camera descends steadily to container-top height, ending with the rows of containers leading the eye toward the distant skyline at the center of the frame.\n\noverall_soundscape:\nSteady rain drumming on steel containers, water gurgling in drains, a distant ship horn, crane motors humming and the electric buzz of sodium lamps.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s01_05",
+  "scene": "S01",
+  "act": 1,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "低机位：积水倒映钠灯，镜头上摇，龙门吊从头顶吊过一个集装箱。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a rainy container harbor yard at night, with stacked shipping containers, gantry cranes, sodium-orange lights, wet asphalt reflections, a megacity skyline in the distance and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] At ground level in <Picture 1>, rain splashes into a puddle as a gantry crane swings a container overhead.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same containers, cranes, sodium-orange light and rain; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a rainy night of deep teal-blue city light against sodium-orange harbor lamps, with wet reflections and volumetric rain haze. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Low-angle wide shot with the camera almost on the wet asphalt of <Picture 1>, a broad puddle filling the foreground. Raindrops pock the puddle, which mirrors the sodium-orange lamps and the steel lattice of a huge gantry crane above. In the background, an automated straddle carrier with amber beacon lights rolls slowly between the container stacks, with no driver visible. The camera tilts up from the reflection to the real crane: its spreader lifts a full-size shipping container high overhead and swings it across the frame from right to left, rain sheeting off its sides and pouring down in streams. The shot ends with the container passing over the lens, its dark ribbed underside filling the top of the frame as water falls from it into the puddle.\n\noverall_soundscape:\nRain splashing in puddles, the whine of crane winches, clanking cables, a swinging container creaking, and a distant ship horn.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s01_06",
+  "scene": "S01",
+  "act": 1,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_yard.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "慢推建立镜：镜头穿过空地推向堆场边的旧仓库，高窗里闪着焊花火光。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], a rainy container harbor yard at night, with stacked shipping containers, gantry cranes, sodium-orange lights, wet asphalt reflections, a megacity skyline in the distance and an old high-windowed warehouse on the left.\n\nsummary:\n[reference generation] The camera pushes slowly toward the old warehouse at the edge of <Picture 1>, where welding light flickers in its high windows.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same containers, cranes, sodium-orange light and rain; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a rainy night of deep teal-blue city light against sodium-orange harbor lamps, with wet reflections and volumetric rain haze. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Wide shot at eye level from between two container stacks in <Picture 1>, slow steady push-in. Ahead, at the left edge of the yard, stands the old harbor warehouse: weathered brick and corrugated steel walls streaked with rust, a large rolling door shut tight, and a row of tall, grimy windows high under the roofline. The building is dark except for those high windows, where bursts of blue-white welding light flicker irregularly, throwing brief flashes onto the falling rain outside and the wet asphalt in front. A loose cable sways from the gutter, and water pours off the roof edge in silver threads under the sodium lamps. The camera keeps pushing forward across the empty wet lot, ending with the warehouse facade filling the frame as the high windows flash again.\n\noverall_soundscape:\nRain on the warehouse roof, water pouring from gutters, the wet empty lot, and from inside, the faint intermittent crackle and buzz of a welder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s01_07",
+  "scene": "S01",
+  "act": 1,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_yard.png",
+   "assets/starcore/refs/loc_workshop.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "特写：雨水淌过高窗玻璃，窗内焊花闪烁，过渡到工坊内景。",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for the warehouse exterior in [Shot 1], a rainy container harbor yard at night, with stacked shipping containers, gantry cranes, sodium-orange lights, wet asphalt reflections, a megacity skyline in the distance and an old high-windowed warehouse on the left.\n<Picture 2> is the location reference for the interior glimpsed through the glass in [Shot 1], a cavernous salvage workshop in an old harbor warehouse at night, with hanging chains, scrap piles, cluttered workbenches, warm tungsten work lights against cool blue moonlight from high windows and a central armor test rig.\n\nsummary:\n[reference generation] Close on a rain-streaked high window of the warehouse in <Picture 1>, with welding sparks flickering behind the glass in the workshop of <Picture 2>.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same containers, cranes, sodium-orange light and rain; the camera position is new.\n<Picture 2> ([Shot 1] location): partially_preserved - same warehouse materials, chains, scrap piles and warm-versus-blue lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses in high dynamic range, on a rainy night of deep teal-blue city light against sodium-orange harbor lamps, with wet reflections and volumetric rain haze. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks.\n[Shot 1] Close-up on one tall, grimy window high on the warehouse wall of <Picture 1>, the camera drifting slowly closer. Rain runs down the old glass in branching rivulets, blurring the view inside. Behind it, the warm tungsten glow of the cavernous workshop of <Picture 2> is just visible, soft and out of focus: hanging chains, the outline of a workbench. A burst of blue-white welding light flares behind the glass, making every raindrop sparkle, then dims; a shower of orange sparks falls past the inside of the window. The flashes repeat in an uneven rhythm. The camera keeps pushing until the glass fills the frame, ending on one last bright flare that whites out the window.\n\noverall_soundscape:\nClose rain tapping on glass, water trickling, and from inside, the sharper crackle and hiss of welding with a faint metallic clank.\n\nnon_diegetic_music: N/A"
+ }
+]

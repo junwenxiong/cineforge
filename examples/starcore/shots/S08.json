@@ -1,0 +1,254 @@
+[
+ {
+  "id": "sc_s08_01",
+  "scene": "S08",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "清晨大远景：残破冒烟的高架，装甲车和士兵在画右围住磐石",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 2> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] At dawn, armored vehicles and soldiers surround <Subject 1> on the wrecked, smoking highway, every weapon aimed at it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Extreme wide aerial shot, high angle, slow crane down toward the road. The rain has stopped; the elevated highway is cracked and scattered with burnt-out cars, thin columns of smoke rising into the pale blue dawn. <Subject 1> stands motionless left of center, its amber optic band dim, towering over everything. On the right half of the frame, a curved line of unmarked dark grey eight-wheeled armored vehicles blocks the lanes, and dozens of soldiers in dark navy tactical armor and visored helmets crouch behind them, rifles raised. White searchlights from the vehicles converge on its chest. The shot ends with the camera settling at a high three-quarter angle, the standoff frozen in silence.\n\noverall_soundscape:\nQuiet morning wind, smoldering wrecks crackling, dripping water, idling armored vehicle engines, a distant helicopter, the faint buzz of searchlights.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_02",
+  "scene": "S08",
+  "act": 2,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "士兵背后中景：枪口和激光点对准磐石，磐石缓缓转头看向他们",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 2> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] Behind a line of soldiers, rifle muzzles stay trained on <Subject 1>, which slowly turns its head toward them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium shot from behind a row of crouching soldiers on frame right, camera at shoulder height, with a rack focus. In the foreground, out-of-focus visored helmets and rifle barrels point toward frame left. Focus pulls to <Subject 1> in the background, its weathered yellow armor streaked with soot and rainwater, a fresh dent in its chest plate, dozens of red laser dots crawling across it. Slowly, <Subject 1> turns its faceplate toward the soldiers, the amber band brightening slightly. A rifle clicks somewhere in the line. The shot ends with the guardian's band fixed on the soldiers, nobody moving.\n\noverall_soundscape:\nTense silence, a rifle safety clicking, boots shuffling on wet asphalt, a low servo groan as the head turns, breathing inside helmets, distant smoke crackle.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_03",
+  "scene": "S08",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "FS",
+  "summary_zh": "秦岳从装甲车走出，穿过士兵走到最前面，抬起目光",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old man with a grey crew cut, a stern weathered face and a dark navy dress uniform with plain silver collar insignia.\n<Picture 2> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] <Subject 1> steps out of an armored vehicle and walks forward through the soldiers.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and plain navy uniform stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Full shot, eye level, camera static, then panning left with him. On frame right, the heavy rear door of an unmarked armored vehicle swings open with a hydraulic hiss. <Subject 1> steps down onto the wet asphalt, his polished boots splashing in a shallow puddle, and straightens his navy uniform jacket. The soldiers nearby straighten as he passes between them without a word, his face expressionless. He walks three measured steps toward frame left, past the line of rifles, and stops in front of it. The shot ends with <Subject 1> standing still, his gaze slowly rising toward something enormous beyond the top of the frame.\n\noverall_soundscape:\nHydraulic door hiss, boots splashing, the rustle of uniforms, idling engines, quiet radio chatter without clear words, wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_04",
+  "scene": "S08",
+  "act": 2,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin_face.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "仰拍中近景：秦岳抬头注视磐石，面无表情",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old man with a grey crew cut, a stern weathered face and a dark navy dress uniform with plain silver collar insignia.\n<Subject 2> is the 12-meter ancient guardian robot in <Picture 2>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 3> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] <Subject 1> looks up at <Subject 2> towering above him, his face unreadable.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and plain navy uniform stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium close-up, low angle, slow push-in on his face. <Subject 1> stands on frame right facing left, tilting his head back. Behind him, out of focus in the upper left, <Subject 2> fills the background like a building, its amber optic band glowing softly. Cold dawn light catches the deep lines of his weathered face and the plain silver insignia on his collar. His eyes travel slowly up over the giant's dented armor to its faceplate. His jaw tightens once; he does not blink. The shot ends with <Subject 1> holding the guardian's gaze, motionless, a strand of smoke drifting between them.\n\noverall_soundscape:\nSoft wind, distant gulls, the faint electrical hum of the guardian's optic band, the creak of leather gloves as he clenches a fist.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_05",
+  "scene": "S08",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "林骁拖着冒烟的 Mk-I 从磐石腿后走出，挡在它前面张开双臂",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman wearing the crude prototype exosuit in <Picture 1>, with raw brushed-steel plates, orange hazard stripes, a bulky backpack thruster, an open-face helmet frame around her silver-streaked black bob and a crystal shard glowing teal-white in its round chest light; the suit is now scorched and dented.\n<Subject 2> is the 12-meter ancient guardian robot in <Picture 2>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 3> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] <Subject 1> limps out in her smoking armor and plants herself in front of <Subject 2>, arms spread wide toward the soldiers.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - raw steel plates, hazard stripes, cables, thruster and helmet frame stay identical; scorch marks and the glowing shard are added.\n<Subject 2> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Wide shot, eye level, camera static, the guardian's legs filling the left of the frame. From behind <Subject 2>'s massive wheel-clad leg, <Subject 1> limps out, one armored leg dragging, thin smoke trailing from the scorched backpack thruster. The soldiers' red laser dots swing onto her. She keeps walking until she stands squarely between <Subject 2> and the line of rifles on frame right, a tiny figure at the giant's feet, the shard in her chest pulsing. She turns to face the soldiers and throws her arms out wide. The shot ends with <Subject 1> standing still, arms spread, guarding the towering guardian behind her.\n\noverall_soundscape:\nA dragging steel boot scraping asphalt, smoke sputtering from the damaged thruster, hydraulic wheeze, a shouted command without clear words, rifles shifting.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_06",
+  "scene": "S08",
+  "act": 2,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/lin_face.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "林骁中近景，张开双臂向士兵大喊别开枪",
+  "dialogue": [
+   {
+    "who": "LIN",
+    "text": "别开枪！它刚才救了这条路上所有人！"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the woman engineer in <Picture 1>, with sharp determined eyes, a short asymmetrical black bob with one silver streak on the left, and a small scar through her right eyebrow.\n<Subject 2> is the crude prototype exosuit she wears in <Picture 2>, with raw brushed-steel plates, orange hazard stripes, exposed cables, a bulky backpack thruster, an open-face helmet frame and a crystal shard glowing teal-white in its round chest light; the suit is now scorched and dented.\n<Picture 3> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] Arms spread, <Subject 1> shouts at the soldiers not to shoot.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, black bob with silver streak and eyebrow scar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - raw steel plates, hazard stripes, cables, thruster and helmet frame stay identical; scorch marks and the glowing shard are added.\n<Picture 3> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium close-up, eye level, handheld with a slight sway. <Subject 1> faces frame right, her arms spread out past the edges of the frame, soot smeared across her cheek and a thin scrape on her temple inside the open helmet frame of <Subject 2>. The morning wind lifts the silver streak in her hair. Red laser dots flicker over her armored chest, where the shard pulses teal-white. Her chest heaves; she leans forward and <Subject 1> (S1) shouts in a clear, urgent voice, <d>[Chinese] 别开枪！它刚才救了这条路上所有人！</d> The shot ends with her breathing hard, chin raised, refusing to move.\n\noverall_soundscape:\nHer ragged breathing, the armor's hydraulic hiss, the soft pulsing hum of the shard, wind, a rifle shifting.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_07",
+  "scene": "S08",
+  "act": 2,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin_face.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "秦岳中近景，面无表情下令让开",
+  "dialogue": [
+   {
+    "who": "QIN",
+    "text": "让开。这东西是威胁。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old man with a grey crew cut, a stern weathered face and a dark navy dress uniform with plain silver collar insignia.\n<Picture 2> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] Unmoved, <Subject 1> orders the woman to step aside and calls the guardian a threat.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and plain navy uniform stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium close-up, eye level, static camera on the opposite side of the axis, <Subject 1> on frame right facing left. Behind him, out-of-focus soldiers keep their rifles raised. His face shows nothing; his eyes stay on the woman standing in front of the giant, out of frame on the left. After a short silence, <Subject 1> (S1) says in a low, controlled voice, <d>[Chinese] 让开。这东西是威胁。</d> He gives a barely visible nod to the soldiers at his side. The shot ends with the rifles behind him tightening their aim, red laser dots sliding back into place.\n\noverall_soundscape:\nLow wind, rifle stocks shifting against armor, a radio click, distant smoke crackle, the low idle of engines.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_08",
+  "scene": "S08",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "磐石缓缓单膝跪地，路面震动，士兵后退",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Subject 2> is the woman wearing the crude prototype exosuit in <Picture 2>, with raw brushed-steel plates, orange hazard stripes, a bulky backpack thruster, an open-face helmet frame around her silver-streaked black bob and a crystal shard glowing teal-white in its round chest light; the suit is now scorched and dented.\n<Picture 3> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] <Subject 1> slowly lowers itself to one knee behind <Subject 2>, shaking the highway.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - raw steel plates, hazard stripes, cables, thruster and helmet frame stay identical; scorch marks and the glowing shard are added.\n<Picture 3> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Wide shot, low angle from the road surface, camera slowly tilting down with the motion. <Subject 1> towers behind <Subject 2>, who still stands with arms spread in the center of the frame. Hydraulic pistons hiss as <Subject 1> bends, lowering its colossal body until one knee meets the asphalt with a deep thud. The road shudders, puddles ripple in rings, and the soldiers at the right edge of the frame flinch and step back. Its huge hands come to rest on its raised knee, palms open. The shot ends with <Subject 1> kneeling, its faceplate lowered to hover just above <Subject 2>, the amber band pulsing softly.\n\noverall_soundscape:\nA long hydraulic hiss, grinding joints, a deep heavy thud that shakes the ground, rippling water, startled shouts without clear words, wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_09",
+  "scene": "S08",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "磐石面部特写，琥珀光带明灭：我不是你们的敌人",
+  "dialogue": [
+   {
+    "who": "PANSHI",
+    "text": "我不是你们的敌人。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 2> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] Kneeling, <Subject 1> tells the soldiers it is not their enemy.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Close-up, slightly low angle, static camera on <Subject 1>'s flat stoic faceplate, which faces frame right toward the soldiers. Rainwater still runs down the stone-textured yellow plates and gathers in old battle scars. It has no mouth; the amber optic band is the only thing that moves. <Subject 1>'s amber optic band pulses in sync with each syllable as it (S1) says in a very deep, slow voice, <d>[Chinese] 我不是你们的敌人。</d> The red laser dots on its faceplate waver. The shot ends with the band holding a steady, warm glow in the cold dawn light.\n\noverall_soundscape:\nA deep resonant voice with subsonic weight, soft hydraulic breathing, water dripping from armor, wind, uneasy silence among the soldiers.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_10",
+  "scene": "S08",
+  "act": 2,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "磐石转头望向画右的大海：真正的威胁……在海底",
+  "dialogue": [
+   {
+    "who": "PANSHI",
+    "text": "真正的威胁……在海底。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 2> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] <Subject 1> turns its head toward the sea and warns that the real threat lies on the seabed.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium shot of <Subject 1>'s head and shoulders, camera static, the giant truck wheels on its shoulders framing the shot. Beyond the right guardrail, a gap between the towers reveals the grey, restless sea under a faint gold horizon. Slowly, with a long servo groan, <Subject 1> turns its faceplate away from the soldiers toward the sea on frame right. Its amber optic band pulses in sync with each syllable as it (S1) says in a very deep, slow voice, <d>[Chinese] 真正的威胁……在海底。</d> It has no mouth. The shot ends with the guardian staring out over the water, the band dimming to a low, steady glow.\n\noverall_soundscape:\nA long servo groan, wind rising off the sea, distant surf, the deep resonant voice, a gull far away.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_11",
+  "scene": "S08",
+  "act": 2,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MS",
+  "summary_zh": "士兵们面面相觑，枪口一支接一支微微下垂",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter ancient guardian robot in <Picture 1>, with weathered industrial-yellow and dark graphite stone-textured armor, a flat faceplate with one glowing amber horizontal optic band and no mouth, and a glowing amber hexagonal chest core.\n<Picture 2> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] The soldiers exchange uncertain glances and slowly lower their rifle muzzles in front of <Subject 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow-graphite stone-textured armor, amber optic band, chest core and shoulder wheels stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium shot, eye level, slow lateral dolly along the line of soldiers on frame right. The soldiers in dark navy tactical armor and visored helmets hold their rifles, the warm amber glow of <Subject 1>, kneeling out of focus in the left background, reflected in their visors. One soldier turns his helmet toward the man beside him; the second glances back. A third looks down at his rifle. Hesitantly, the nearest soldier lowers his muzzle a few centimeters, and one by one the others along the line follow. Red laser dots slide off the guardian's armor onto the wet road. The shot ends with the line of rifles dipped, the soldiers motionless.\n\noverall_soundscape:\nUneasy silence, armor plates creaking as heads turn, rifles lowering with soft clicks, a low exhale, wind, the guardian's faint hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_12",
+  "scene": "S08",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/qin_face.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "MCU",
+  "summary_zh": "秦岳沉默片刻后下令：带它回基地。所有人",
+  "dialogue": [
+   {
+    "who": "QIN",
+    "text": "带它回基地。所有人。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the general in <Picture 1>, a 56-year-old man with a grey crew cut, a stern weathered face and a dark navy dress uniform with plain silver collar insignia.\n<Picture 2> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] After a long silence, <Subject 1> orders the guardian and everyone brought back to base.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - grey crew cut, weathered face and plain navy uniform stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Medium close-up, eye level, static camera, <Subject 1> on frame right facing left. He stands silent, the cold dawn light warming to a thin gold on one side of his face. His eyes move from the woman in front of the giant down to the lowered rifles, then up to the kneeling guardian, both out of frame on the left. He breathes out slowly through his nose. Then <Subject 1> (S1) says in a low, restrained voice, <d>[Chinese] 带它回基地。所有人。</d> He turns his head toward an officer beside him. The shot ends with <Subject 1> turning away, his decision made.\n\noverall_soundscape:\nWind, a long exhale, distant gulls, the creak of his gloves, the soft idle of engines.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s08_13",
+  "scene": "S08",
+  "act": 2,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/panshi.png",
+   "assets/starcore/refs/mk1.png",
+   "assets/starcore/refs/qin.png",
+   "assets/starcore/refs/loc_highway.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "士兵撤下枪口，秦岳回车，林骁放下双臂仰望磐石，第一缕阳光照上高架",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 12-meter guardian robot in <Picture 1>, with weathered yellow stone-textured armor, one amber optic band and no mouth, and an amber hexagonal chest core.\n<Subject 2> is the woman in the prototype exosuit in <Picture 2>, with raw steel plates, orange hazard stripes, an open helmet frame and a crystal shard glowing teal-white in its chest light, the suit scorched and dented.\n<Subject 3> is the general in <Picture 3>, with a grey crew cut, a stern weathered face and a dark navy uniform.\n<Picture 4> is the location reference for [Shot 1], the same elevated highway between towers, now seen at cold dawn after the rain, with cracked lanes, wet reflections and smoke from burnt-out cars.\n\nsummary:\n[reference generation] The soldiers stand down, <Subject 3> walks back to his vehicle, and <Subject 2> lowers her arms beneath <Subject 1> as the first sunlight breaks through.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - yellow stone-textured armor, amber optic band and chest core stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - steel plates, hazard stripes and helmet frame stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - crew cut, weathered face and navy uniform stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same lanes, towers and wet surfaces; night lighting becomes cold dawn; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot on anamorphic lenses with high dynamic range and volumetric haze, at cold blue-grey dawn after the rain, with wet asphalt and drifting smoke. Keep the main action in the vertical center with about 12% safe space at top and bottom; no on-screen text, insignia or flags.\n[Shot 1] Wide shot, eye level, slow push-in, the axis kept with the guardian on frame left and the soldiers on frame right. <Subject 3> walks back toward the armored vehicles on frame right while the soldiers sling their rifles and step aside. In the center, <Subject 2> lets her arms drop, her shoulders sagging with relief, then turns and looks up. Behind her, <Subject 1> still kneels, its faceplate lowered toward her. A shaft of first sunlight breaks between the towers and sweeps across the highway, lighting the smoke and turning the guardian's weathered yellow armor gold as its amber band brightens. The shot ends with the small woman and the kneeling giant together in the golden light.\n\noverall_soundscape:\nRifles being slung, boots moving away, vehicle doors closing, wind easing, the deep hum of the guardian, a distant sea breeze.\n\nnon_diegetic_music: N/A"
+ }
+]

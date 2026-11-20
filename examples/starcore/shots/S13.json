@@ -1,0 +1,242 @@
+[
+ {
+  "id": "sc_s13_01",
+  "scene": "S13",
+  "act": 3,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "风暴夜海，深蓝七号平台孤立在巨浪中，一道闪电劈中钻塔（慢节奏建立镜）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the huge offshore deep-sea mining platform with its tall drill tower, floodlights and helipad, here deserted at night in a violent thunderstorm.\n\nsummary:\n[reference generation] A slow aerial approach over a storm-tossed sea toward the deserted mining platform as a bolt of lightning strikes its drill tower.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same platform layout, drill tower, helipad and floodlights; the thunderstorm and camera position are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, volumetric storm haze, driving rain, a cold blue-black night broken by white lightning and crimson glow. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Extreme wide aerial shot, high angle, slow push-in from frame left toward the platform, which sits right of center on black, heaving water. Wind-driven rain slants across the lens. Swells three stories high break against the platform's steel legs and burst into white spray, and several floodlights on the deck flicker and swing in the gusts. No people are visible; the helipad is empty and streaming with water. Halfway through the push-in, a jagged white bolt of lightning splits the clouds and strikes the tip of the drill tower, lighting the whole structure blue-white for an instant and leaving a faint red-hot glow at the tip. The shot ends with the camera still drifting closer, the platform silhouetted against flickering clouds.\n\noverall_soundscape:\nHowling wind, heavy rain hissing on the sea, waves booming against steel legs, a sharp lightning crack followed by deep rolling thunder, groaning metal.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_02",
+  "scene": "S13",
+  "act": 3,
+  "beat": 1,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "甲板低机位，闪电照亮站在停机坪上的裂锋（画右）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall rebel war robot in <Picture 1>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Picture 2> is the location reference for [Shot 1], the offshore mining platform deck with its helipad, pipe racks and tall drill tower, at night in a thunderstorm.\n\nsummary:\n[reference generation] From deck level, a lightning flash reveals <Subject 1> standing motionless on the platform's helipad in the storm.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Picture 2> ([Shot 1] location): partially_preserved - same deck, helipad and drill tower; storm lighting and a low deck-level camera are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, volumetric storm haze, driving rain, a cold blue-black night broken by white lightning and crimson glow. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Wide shot, low angle from the wet deck, static camera with a slight wind shake. Rain sheets across stacked pipe racks and a toppled yellow forklift in the left foreground. The helipad on the right side of the frame is only a dark shape. A lightning flash suddenly floods the scene and reveals <Subject 1> standing on the helipad, six times the height of the forklift, wing blades swept back, its thin crimson optic slits glowing through the rain. It does not move; water streams down its angular plates. As the flash fades, only the two crimson slits and the faint red line of its forearm cannon remain visible. The shot ends with <Subject 1> slowly turning its head toward the drill tower on frame left.\n\noverall_soundscape:\nRain hammering steel deck plates, wind whistling through pipe racks, a lightning crack and thunder, a low distorted mechanical hum, a heavy servo whine as the head turns.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_03",
+  "scene": "S13",
+  "act": 3,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "FS",
+  "summary_zh": "裂锋登上钻台，用左手指爪捏着残缺的星核，举向钻塔上的接口",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall rebel war robot in <Picture 1>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Subject 2> is the star core in <Picture 2>, a fist-sized faceted crystal sphere with swirling blue-white light inside; here it is out of its capsule and has one small chipped facet where a shard is missing.\n<Picture 3> is the location reference for [Shot 1], the mining platform's tall steel lattice drill tower and upper drill floor, at night in a thunderstorm.\n\nsummary:\n[reference generation] <Subject 1> climbs onto the upper drill floor and lifts <Subject 2> toward a heavy socket mounted on the drill tower.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - faceted crystal and swirling blue-white light stay identical; the capsule is absent and one facet is chipped.\n<Picture 3> ([Shot 1] location): partially_preserved - same steel lattice drill tower and floodlights; storm and camera angle are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, volumetric storm haze, driving rain, a cold blue-black night broken by white lightning and crimson glow. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Full shot, low angle looking up the drill tower, slow tilt up. <Subject 1> steps from the deck onto the upper drill floor, its clawed foot denting the steel grating, and grips the lattice frame with its right hand. Floodlights below rake up across its gunmetal plates. Pinched between the blade-like fingers of its left hand, <Subject 2> looks tiny, a point of blue-white light no bigger than a fingertip of the giant hand, pulsing unevenly. <Subject 1> raises the crystal toward a heavy ring-shaped steel socket mounted on the tower just above its head; arcs of static jump between crystal and socket as they get closer. The shot ends with the crystal held a hand's width below the socket, the crimson optic slits of <Subject 1> brightening.\n\noverall_soundscape:\nRain and wind, steel grating buckling under a massive foot, the lattice tower creaking, the crystal's resonant ringing hum rising, crackling static arcs, distant thunder.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_04",
+  "scene": "S13",
+  "act": 3,
+  "beat": 2,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/liefeng.png",
+   "assets/starcore/refs/core.png",
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "INSERT",
+  "summary_zh": "特写：裂锋的指爪把星核压进接口，锁扣逐个合拢，星核光芒爬上深红纹路",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the 15-meter-tall rebel war robot in <Picture 1>, with angular blade-like gunmetal-black armor, thin glowing crimson optic slits and no mouth, swept-back wing blades, and a crimson energy cannon built into its right forearm.\n<Subject 2> is the star core in <Picture 2>, a fist-sized faceted crystal sphere with swirling blue-white light inside; here it is out of its capsule and has one small chipped facet where a shard is missing.\n<Picture 3> is the location reference for [Shot 1], the drill tower's steel lattice, here an out-of-focus background in the storm.\n\nsummary:\n[reference generation] In close-up, the fingers of <Subject 1> push <Subject 2> into the socket, the clamps lock, and crimson veins spread through the crystal.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - blade-like gunmetal-black armor, crimson optic slits, wing blades and forearm cannon stay identical. Only its fingertips are seen.\n<Subject 2> (appears in [Shot 1]): fully_preserved - faceted crystal and swirling blue-white light stay identical; the capsule is absent and one facet is chipped.\n<Picture 3> ([Shot 1] location): partially_preserved - same steel lattice, out of focus; the close socket detail is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, volumetric storm haze, driving rain, a cold blue-black night broken by white lightning and crimson glow. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Insert close-up, side angle, static camera locked off at socket height. The blade-like gunmetal fingertips of <Subject 1> fill the right half of the frame, rain beading on them. They push <Subject 2> into the ring-shaped socket, which is rimmed with teeth of black alien metal. Six steel clamps snap shut around the crystal one after another. The swirling blue-white light inside <Subject 2> stalls, then crimson veins creep across its facets like cracks filling with red light. The fingers withdraw slowly to the right. The shot ends with the crystal locked in the socket, pulsing crimson and blue in a heartbeat rhythm, steam rising where the rain hits it.\n\noverall_soundscape:\nSix sharp metallic clacks, a deep resonant hum dropping in pitch, an electrical heartbeat throb, hissing steam as rain hits the hot crystal, wind.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_05",
+  "scene": "S13",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_platform.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "深红能量从塔顶接口沿钻塔一路向下，灌进钻杆、没入海中",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the offshore mining platform's tall drill tower and the drill pipe running from the deck down into the rough sea, at night in a thunderstorm.\n\nsummary:\n[reference generation] A pulse of crimson energy races from the top of the drill tower down its frame and along the drill pipe into the sea.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same drill tower, deck edge and floodlights; the crimson energy and storm are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, volumetric storm haze, driving rain, a cold blue-black night broken by white lightning and crimson glow. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Wide shot from the platform's edge, fast tilt down following the energy. The shot opens on the top of the drill tower glowing red against storm clouds. A bright crimson pulse bursts from the socket and runs down the steel lattice like liquid fire, branching into thin veins along every beam; floodlights it passes burst one after another in showers of sparks. The pulse reaches the drill floor and dives into the central drill pipe, which glows red-hot from within. The camera keeps tilting down past the deck edge to the black waves, where the pipe disappears into the sea. The shot ends with the water around the pipe lighting up crimson from beneath, the glow spreading outward in a ring as the waves heave.\n\noverall_soundscape:\nA rising electric surge, popping floodlight bulbs and sparks, metal ticking from heat, a deep rumbling whoosh as the energy plunges into the water, storm wind and rain.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_06",
+  "scene": "S13",
+  "act": 3,
+  "beat": 3,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "水下：深红光沿钻杆向下疾冲，灌进海床钻孔，岩石裂纹泛红",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles and faint blue bioluminescence; a single steel drill pipe descends from above into the rocky seabed.\n\nsummary:\n[reference generation] Underwater, the crimson pulse rushes down the long drill pipe through dark water and drives into the seabed.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same dark rocky seabed, particles and blue bioluminescence; the drill pipe and crimson light are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, deep-sea darkness with drifting particles, faint blue bioluminescence and invading crimson light. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Wide underwater shot, camera just above the rocky seabed looking up along the drill pipe, static. The steel pipe enters from the top of the frame and plunges straight into a bore hole at the bottom center. Faint blue bioluminescent specks drift through the black water. A crimson glow appears high up the pipe and races downward, turning the pipe red-hot from within and pushing clouds of boiling bubbles off its surface. The light reaches the seabed and floods into the bore hole; thin crimson fractures crawl outward across the surrounding rock like roots. The shot ends with the seabed around the hole glowing dull red and silt beginning to lift from the shaking rock.\n\noverall_soundscape:\nMuffled underwater pressure, a descending electric thrum through the pipe, a rush of bubbles, a deep crack and grinding of rock, a low subsonic rumble.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_07",
+  "scene": "S13",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "海底大全景：岩层崩裂，成千上万台休眠机体的深红眼睛一排排亮起，延伸到黑暗尽头（慢节奏）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the dormant war machine type of the deep legion, text-defined with no reference picture: a truck-sized body of angular black plating crusted with sediment and a single round crimson eye; many identical copies appear.\n<Picture 1> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles and faint blue bioluminescence, here a vast rocky trench.\n\nsummary:\n[reference generation] The seabed rock splits open across a vast trench and the crimson eyes of thousands of buried <Subject 1> ignite row after row.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): weak_reference - text-defined only; keep the black angular bodies and single crimson eyes uniform.\n<Picture 1> ([Shot 1] location): partially_preserved - same dark rocky seabed and particles; the trench scale and crimson light are new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, deep-sea darkness with drifting particles, faint blue bioluminescence and invading crimson light. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Extreme wide shot, low angle just above the seabed, very slow crane up. A vast underwater trench stretches into darkness toward frame right and the open sea. Crimson fractures race outward across the trench floor, and the rock layers split open, slabs tilting and silt billowing up. Beneath the broken rock lie endless rows of <Subject 1> packed shoulder to shoulder, half buried in sediment. Their crimson eyes ignite all at once in the foreground, then row after row toward the horizon, thousands of red points in perfect lines. The shot ends with the camera hovering high above an ocean floor dotted to the horizon with crimson eyes, silt clouds drifting slowly through the red glow.\n\noverall_soundscape:\nDeep grinding of splitting rock, a massive subsonic boom, rushing water and silt, a cascade of soft electronic chimes as eyes ignite in waves, a low mechanical heartbeat.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_08",
+  "scene": "S13",
+  "act": 3,
+  "beat": 4,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_seabed.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "特写：泥沙从一台休眠机体头部滑落，深红独眼闪了两下后亮起，猛地抬头",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the dormant war machine type of the deep legion, text-defined with no reference picture: a truck-sized body of angular black plating crusted with sediment and a single round crimson eye; many identical copies appear.\n<Picture 1> is the location reference for [Shot 1], the deep ocean floor in near darkness with drifting particles and grey sediment.\n\nsummary:\n[reference generation] One buried <Subject 1> wakes: silt slides off its head and its single crimson eye switches on.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): weak_reference - text-defined only; keep the black angular bodies and single crimson eyes uniform.\n<Picture 1> ([Shot 1] location): partially_preserved - same dark seabed and drifting particles; the close framing is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, deep-sea darkness with drifting particles, faint blue bioluminescence and invading crimson light. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Close-up, eye level with the machine, static camera with a slow drift. The angular black head of one <Subject 1> lies half buried in grey sediment, encrusted with ancient shells, filling the center of the frame. The seabed trembles; fine silt slides off its plates in thin streams and drifts upward. A thin crimson ring flickers inside its single round eye socket, stutters twice, then snaps on at full brightness and lights the floating particles red. The head twitches and tilts upward with a jerky mechanical motion, shedding more silt. The shot ends with the eye staring straight up toward the surface, its glow pulsing slowly, other red eyes blinking on in the blurred darkness behind it.\n\noverall_soundscape:\nMuffled seabed rumble, the hiss of sliding silt, a rising electronic whine, a sharp click as the eye locks on, creaking ancient metal.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_09",
+  "scene": "S13",
+  "act": 3,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_platform.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "海面沸腾，黑色金属尖塔破浪而出，从四面围住平台",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the offshore mining platform with its tall drill tower and floodlights, at night in a thunderstorm.\n<Picture 2> is the design reference for the alien machinery in [Shot 1], the colossal black tower of fused alien machinery with a crimson glow from within, which is only beginning to form here.\n\nsummary:\n[reference generation] The sea around the platform boils and huge black spires of alien machinery burst out of the water and close in on it.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same platform, drill tower and floodlights; the boiling sea and sea-level camera are new.\n<Picture 2> ([Shot 1] machinery design): partially_preserved - same black fused-machinery texture and inner crimson glow; the tower is not yet complete.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, volumetric storm haze, driving rain, a cold blue-black night broken by white lightning and crimson glow. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Extreme wide shot from sea level, the platform centered, static camera rocked by swells. The sea around the platform churns into a wide boiling ring lit crimson from below. Huge black spires of fused alien machinery tear up through the surface on all sides, shedding waterfalls, crimson light glowing in their seams; within seconds they stand taller than the drill tower, and the platform looks small between them. Lightning flickers across the clouds. The spires lean inward, and their tips grind against the platform's steel legs and deck edges. The shot ends with the platform encircled by a crown of dripping black spires, its floodlights tiny against them.\n\noverall_soundscape:\nRoaring, boiling water, colossal grinding metal, cascading waterfalls, thunder, the platform's steel shrieking under pressure.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_10",
+  "scene": "S13",
+  "act": 3,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_platform.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "低机位：黑色机械像藤蔓一样爬上平台支柱、吞没停机坪，缠满钻塔与之熔合",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the offshore mining platform's steel legs, deck, helipad and drill tower, at night in a thunderstorm.\n<Picture 2> is the design reference for the alien machinery in [Shot 1], the colossal black tower of fused alien machinery with a crimson glow from within, which is only beginning to form here.\n\nsummary:\n[reference generation] Black alien machinery climbs the platform's legs, swallows the deck and wraps the drill tower, fusing with the steel.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same steel legs, helipad and drill tower at the start; they are progressively covered.\n<Picture 2> ([Shot 1] machinery design): partially_preserved - same black fused-machinery texture and inner crimson glow; the tower is not yet complete.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, volumetric storm haze, driving rain, a cold blue-black night broken by white lightning and crimson glow. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Wide shot, low angle from a catwalk near the waterline, slow tilt up. Black alien machinery climbs the platform's steel legs like vines, plate locking into plate with fast ratcheting motions. Where it touches, the steel darkens and melts into it, rivets and railings swallowed. The growth surges up past the deck edge and engulfs the empty helipad, then spirals around the drill tower in thick bands, crimson light pulsing upward through the seams in waves. Floodlights die one by one as they are covered. The shot ends tilted up at the drill tower, now fully sheathed in black fused machinery, a crimson heartbeat glowing through the cracks.\n\noverall_soundscape:\nRapid ratcheting and clicking of interlocking plates, groaning and melting steel, hissing steam, a pulsing electrical heartbeat, waves crashing below.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_11",
+  "scene": "S13",
+  "act": 3,
+  "beat": 5,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 8,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "大远景缓慢拉远：成形的黑塔矗立在风暴海上，平台被吞没在塔基里（慢节奏）",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the colossal black tower of fused alien machinery rising from a stormy sea around an offshore drilling platform, lit by lightning and a crimson glow from within.\n\nsummary:\n[reference generation] The completed colossal black tower stands in the storm, the mining platform swallowed into its base.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same black fused machinery, storm and inner crimson glow; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, volumetric storm haze, driving rain, a cold blue-black night broken by white lightning and crimson glow. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Extreme wide shot, low angle from far out at sea, slow pull-back. The newly formed tower rises in the center of the frame, several hundred meters tall, its base still swallowing the remains of the mining platform; one tiny flickering floodlight near the waterline gives the scale. Its surface keeps shifting as plates settle and lock into place, and crimson light breathes through the seams. Storm waves smash against its foot and explode into spray. Lightning strikes its upper flank and crawls down the plating. The camera keeps pulling back over the heaving water until the tower is a black monolith against churning clouds. The shot ends with the tower standing still, glowing crimson, rain sweeping across the frame.\n\noverall_soundscape:\nStorm wind and rain, waves exploding against the base, deep settling groans of metal, a lightning strike and long rolling thunder, a slow low mechanical breathing hum.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_12",
+  "scene": "S13",
+  "act": 3,
+  "beat": 6,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "EWS",
+  "summary_zh": "塔基仰拍：黑塔顶部射出深红光柱直冲云层，云层围着光柱旋转",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the colossal black tower of fused alien machinery rising from a stormy sea around an offshore drilling platform, lit by lightning and a crimson glow from within.\n\nsummary:\n[reference generation] A solid crimson beam erupts from the top of the black tower and punches into the storm clouds, which begin to spiral around it.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same black fused machinery, storm and inner crimson glow; camera position is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, volumetric storm haze, driving rain, a cold blue-black night broken by white lightning and crimson glow. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Extreme wide shot, very low angle from the waterline near the base of the tower, static camera. The tower soars upward, its tip lost in the storm clouds. Crimson light gathers at the summit, brightening until the falling rain around it glows red. A solid crimson beam erupts from the top and shoots straight into the clouds, punching a hole through them; the clouds start to spiral around the beam in a slowly turning ring lit red from within. A shockwave rolls down the tower and flattens the waves around its base. The shot ends with the beam pulsing steadily, the clouds wheeling around it, the whole sea glowing red.\n\noverall_soundscape:\nA rising high-pitched energy charge, a thunderous blast as the beam fires, a continuous deep pulsing drone, wind roaring into the vortex, waves slapping the tower base.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_13",
+  "scene": "S13",
+  "act": 3,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/drone.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "WS",
+  "summary_zh": "黑塔外壁挂着金属笼，周野抓着笼栏，蜘蛛无人机在笼外爬动；他望向画左远处的城市灯光",
+  "dialogue": [],
+  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1>, a 30-year-old East Asian man with messy short black hair, light stubble, an olive-green bomber jacket with patches over a grey hoodie, and a wireless headset around his neck; his hands are empty and he is soaked by rain.\n<Subject 2> is the spider drone in <Picture 2>, a dog-sized black six-legged machine with a single glowing crimson eye and sharp metal legs; many identical copies appear.\n<Picture 3> is the location reference for [Shot 1], the outer wall of the colossal black tower of fused alien machinery high above the stormy sea, lit by crimson glow from within.\n\nsummary:\n[reference generation] <Subject 1>, locked in a metal cage fused to the tower's outer wall, grips the bars while <Subject 2> drones crawl around him, and he looks toward the distant city.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, messy black hair, stubble, olive bomber jacket and headset stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - black six-legged body and single crimson eye stay identical on every drone.\n<Picture 3> ([Shot 1] location): partially_preserved - same black fused machinery and crimson glow; a close view of the wall is new.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, volumetric storm haze, driving rain, a cold blue-black night broken by white lightning and crimson glow. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Wide shot, camera hovering just out from the tower wall, slow lateral drift from right to left. A two-meter cage of black alien bars is fused to the vertical wall high above the sea; waves churn far below. <Subject 1> stands inside, soaked, gripping the bars with both hands, his face lit red by the beam above. Three <Subject 2> drones crawl across the wall around the cage, legs clicking, crimson eyes sweeping over him. One drone climbs onto the cage roof and peers down through the bars; <Subject 1> leans away from it. He then turns his head to frame left, toward the faint glow of the city on the horizon. The shot ends with him pressed against the bars, staring toward the city lights.\n\noverall_soundscape:\nWind shrieking past the tower, rain rattling on metal bars, rapid clicking of drone legs, a servo whir from a drone's eye, the beam's pulsing drone overhead, distant waves far below.\n\nnon_diegetic_music: N/A"
+ },
+ {
+  "id": "sc_s13_14",
+  "scene": "S13",
+  "act": 3,
+  "beat": 7,
+  "mode": "reference",
+  "refs": [
+   "assets/starcore/refs/zhou_face.png",
+   "assets/starcore/refs/zhou.png",
+   "assets/starcore/refs/loc_tower.png"
+  ],
+  "seconds": 6,
+  "resolution": "720p",
+  "shot_size": "CU",
+  "summary_zh": "周野特写，隔着笼栏望向城市方向，低声说别来",
+  "dialogue": [
+   {
+    "who": "ZHOU",
+    "text": "林骁……别来。"
+   }
+  ],
+  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>, a 30-year-old East Asian man with messy short black hair, light stubble, an olive-green bomber jacket with patches over a grey hoodie, and a wireless headset around his neck; he is soaked by rain.\n<Picture 3> is the location reference for [Shot 1], the black fused-machinery tower wall, here an out-of-focus background of crimson-lit plates and rain.\n\nsummary:\n[reference generation] Through the cage bars, <Subject 1> looks toward the distant city and quietly begs his friend not to come.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, messy black hair, stubble, olive bomber jacket and headset stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same black plates and crimson glow, out of focus behind him.\n\ndetailed_description:\nThe target video is a photoreal blockbuster CGI film shot with anamorphic lenses: high dynamic range, volumetric storm haze, driving rain, a cold blue-black night broken by white lightning and crimson glow. Keep the main action in the vertical center of the frame with the top and bottom 12% kept clear; no on-screen text.\n[Shot 1] Close-up, eye level, framed between two black cage bars, very slow push-in. The face of <Subject 1> fills the center of the frame, rain running down his stubble, wet hair stuck to his forehead, his usual crooked grin gone. He looks toward frame left, where the distant city glow puts a faint blue light in his eyes, while crimson light from the beam washes the right side of his face. His knuckles tighten on the bars. He swallows, and <Subject 1> (S1) says in a hoarse, low, trembling voice, <d>[Chinese] 林骁……别来。</d> He closes his eyes and presses his forehead against the cold bars. The shot ends with his eyes opening again, still fixed on the city.\n\noverall_soundscape:\nWind and rain on metal bars, his unsteady breathing, the deep pulsing hum of the tower, distant thunder.\n\nnon_diegetic_music: N/A"
+ }
+]

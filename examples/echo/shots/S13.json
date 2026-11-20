@@ -1,0 +1,330 @@
+[
+  {
+    "id": "ec_s13_01",
+    "scene": "S13",
+    "act": 4,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/loc_hall_ext.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "EWS",
+    "summary_zh": "黎明前的蓝色天光下，公证厅白色石墙前的广场，陆时野的车停在台阶下",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1]: the exterior of a white stone public verification hall at dawn, a wide flight of pale stone steps, a clean empty plaza, a clear blue-to-gold dawn sky.\n\nsummary:\n[reference generation] Before dawn, Lu's car sits parked at the foot of the white stone verification hall's steps.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Clear blue pre-dawn light, the sky beginning to turn gold at the horizon; every stone edge is crisp.\n[Shot 1] Extreme wide shot from the far edge of the plaza, eye level, static. A white stone public verification hall rises under a clear blue pre-dawn sky; its wide flight of pale stone steps leads down to a clean empty plaza. An older dark-grey sedan is parked at the foot of the steps, its dashboard faintly lit inside. Nothing moves. The shot ends with the first hint of gold spreading along the edge of the sky.\n\noverall_soundscape:\nDawn quiet, a few early birds, a street sweeper far away, the soft tick of the car's cooling engine.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s13_02",
+    "scene": "S13",
+    "act": 4,
+    "beat": 2,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "车内：陆时野在驾驶座（画右），沈砚在副驾驶（画左），许棠从后排探身向前。XU: 再读一次：「再读一次，残响区会被冲干净。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "再读一次，残响区会被冲干净。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Subject 2> is the woman in <Picture 3>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 3> is the man in <Picture 4>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Picture 5> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n\nsummary:\n[reference generation] In the parked car, <Subject 1> leans forward from the back seat and warns that one more reading will wipe the echo zone.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Clear blue pre-dawn light through the clean windshield and a soft amber dashboard glow on their faces; the white stone hall outside is sharp.\n[Shot 1] Medium shot from the front of the cabin through the clean windshield, eye level, static. Within the first second, <Subject 1> (S1) says quietly and fast, <d>[Chinese] 再读一次，残响区会被冲干净。</d> She leans forward from the back seat into the gap between the two front seats; <Subject 2> sits in the passenger seat on the left and <Subject 3> in the driver's seat on the right, both turning their heads toward her. After the line she grips the backs of both seats. The shot ends with the three faces close together in the blue light.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHer quiet voice in the closed cabin, the leather seats creaking, early birds outside, the tick of the engine.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s13_03",
+    "scene": "S13",
+    "act": 4,
+    "beat": 3,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s13_03.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠。XU: 你可能会忘掉：「你可能会忘掉这几年的很多事。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "你可能会忘掉这几年的很多事。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked beside a white stone plaza in clear blue pre-dawn light, a soft amber dashboard glow on the face, a clean windshield showing the sharp stone hall outside. Medium close-up at eye level, static camera, she leans forward from the back seat, centered between the front seats, looking toward frame left. Within the first second she says in Mandarin Chinese, \"你可能会忘掉这几年的很多事。\" Her lips move in sync with each syllable, her voice quiet, the edge gone from her voice. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she looks down at her hands on the seat backs. The shot ends with her eyes lowered, worried. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, the quiet tick of the parked car and early birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s13_04",
+    "scene": "S13",
+    "act": 4,
+    "beat": 4,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s13_04.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: 还有别的办法：「还有别的办法。我们去找证据——」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "还有别的办法。我们去找证据——"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked beside a white stone plaza in clear blue pre-dawn light, a soft amber dashboard glow on the face, a clean windshield showing the sharp stone hall outside. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"还有别的办法。我们去找证据——\" His lips move in sync with each syllable, his voice rough and insistent. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he turns further toward her, one hand off the wheel, cut off mid-word. The shot ends with him turned toward her, lips parted. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the quiet tick of the parked car and early birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s13_05",
+    "scene": "S13",
+    "act": 4,
+    "beat": 5,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s13_05.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 证据就：「证据就在我脑子里。只能读一次。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "证据就在我脑子里。只能读一次。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked beside a white stone plaza in clear blue pre-dawn light, a soft amber dashboard glow on the face, a clean windshield showing the sharp stone hall outside. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"证据就在我脑子里。只能读一次。\" Her lips move in sync with each syllable, her voice low, calm and final. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, a faint red strap mark on her wrists and a small pressure mark on her left temple. After the line she touches her left temple lightly with two fingers. The shot ends with her fingers resting on her temple, calm. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the quiet tick of the parked car and early birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s13_06",
+    "scene": "S13",
+    "act": 4,
+    "beat": 6,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s13_06.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: 你会忘了我们：「你会忘了我们。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "你会忘了我们。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked beside a white stone plaza in clear blue pre-dawn light, a soft amber dashboard glow on the face, a clean windshield showing the sharp stone hall outside. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"你会忘了我们。\" His lips move in sync with each syllable, his voice hoarse and quiet. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he keeps staring at her, his throat tight. The shot ends with him staring at her, eyes wet. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the quiet tick of the parked car and early birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s13_07",
+    "scene": "S13",
+    "act": 4,
+    "beat": 7,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s13_07.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚平静地看着他。SHEN: 那你们：「那你们替我记着。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "那你们替我记着。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked beside a white stone plaza in clear blue pre-dawn light, a soft amber dashboard glow on the face, a clean windshield showing the sharp stone hall outside. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"那你们替我记着。\" Her lips move in sync with each syllable, her voice soft and steady, almost gentle. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, a faint red strap mark on her wrists and a small pressure mark on her left temple. After the line a small, calm smile appears. The shot ends with her small calm smile. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the quiet tick of the parked car and early birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s13_08",
+    "scene": "S13",
+    "act": 4,
+    "beat": 8,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s13_08.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "陆时野的喉结动了一下。反应镜",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked beside a white stone plaza in clear blue pre-dawn light, a soft amber dashboard glow on the face, a clean windshield showing the sharp stone hall outside. Close-up at eye level, static camera, he is slightly right of center looking toward frame left. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. He looks at her without speaking; his Adam's apple bobs once as he swallows, his eyes glistening in the blue light, and he turns his face to the windshield. The shot ends with him looking out through the windshield. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: The quiet cabin, his held breath, early birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s13_09",
+    "scene": "S13",
+    "act": 4,
+    "beat": 9,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s13_09.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠。XU: 我爸说，你是：「我爸说，你是唯一能看见的人。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "我爸说，你是唯一能看见的人。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked beside a white stone plaza in clear blue pre-dawn light, a soft amber dashboard glow on the face, a clean windshield showing the sharp stone hall outside. Medium close-up at eye level, static camera, she leans forward from the back seat, centered between the front seats, looking toward frame left. Within the first second she says in Mandarin Chinese, \"我爸说，你是唯一能看见的人。\" Her lips move in sync with each syllable, her voice quiet, her voice catching. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck. After the line she wipes one eye quickly with the heel of her hand. The shot ends with her eyes wet but steady. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, the quiet tick of the parked car and early birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s13_10",
+    "scene": "S13",
+    "act": 4,
+    "beat": 10,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s13_10.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚。SHEN: 这一次：「这一次，让所有人都看见。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "这一次，让所有人都看见。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked beside a white stone plaza in clear blue pre-dawn light, a soft amber dashboard glow on the face, a clean windshield showing the sharp stone hall outside. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"这一次，让所有人都看见。\" Her lips move in sync with each syllable, her voice low and clear. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, a faint red strap mark on her wrists and a small pressure mark on her left temple. After the line she looks out through the windshield at the stone hall, resolved. The shot ends with her eyes on the hall, resolved. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her low, steady female voice speaking the Mandarin line, the quiet tick of the parked car and early birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s13_11",
+    "scene": "S13",
+    "act": 4,
+    "beat": 11,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s13_11.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野点头。LU: 走吧。我陪你：「走吧。我陪你进去。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "走吧。我陪你进去。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked beside a white stone plaza in clear blue pre-dawn light, a soft amber dashboard glow on the face, a clean windshield showing the sharp stone hall outside. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"走吧。我陪你进去。\" His lips move in sync with each syllable, his voice rough and steady. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he nods once and pulls the key from the ignition. The shot ends with the key in his hand and his eyes on her. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the quiet tick of the parked car and early birds outside. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s13_12",
+    "scene": "S13",
+    "act": 4,
+    "beat": 12,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_hall_ext.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "FS",
+    "summary_zh": "三人下车，沈砚走在最前面",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the man in <Picture 3>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 3> is the woman in <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: the exterior of a white stone public verification hall at dawn, a wide flight of pale stone steps, a clean empty plaza, a clear blue-to-gold dawn sky.\n\nsummary:\n[reference generation] The three get out of the car at the foot of the hall's steps and <Subject 1> walks ahead.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Clear blue pre-dawn light, the sky beginning to turn gold at the horizon; every stone edge is crisp.\n[Shot 1] Full shot from the plaza, eye level, static. The car doors open at the foot of the pale stone steps: <Subject 1> steps out of the passenger side on the left of frame first and walks ahead toward the steps, while <Subject 2> and <Subject 3> close their doors and follow a pace behind. The shot ends with <Subject 1> at the bottom step and the other two right behind her.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nCar doors opening and thudding shut, footsteps on stone, early birds, a light wind across the plaza.\n\nnon_diegetic_music: N/A",
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s13_12.png",
+    "keyframe_prompt": "Draw a single photoreal opening keyframe. Preserve the identities and costumes in the supplied reference images. Depict initial pose before action; no montage.\nOriginal scene context:\nsubject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the man in <Picture 3>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 3> is the woman in <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: the exterior of a white stone public verification hall at dawn, a wide flight of pale stone steps, a clean empty plaza, a clear blue-to-gold dawn sky.\n\nsummary:\n[reference generation] The three get out of the car at the foot of the hall's steps and <Subject 1> walks ahead.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Clear blue pre-dawn light, the sky beginning to turn gold at the horizon; every stone edge is crisp.\n[Shot 1] Full shot from the plaza, eye level, static. The car doors open at the foot of the pale stone steps: <Subject 1> steps out of the passenger side on the left of frame first and walks ahead toward the steps, while <Subject 2> and <Subject 3> close their doors and follow a pace behind. The shot ends with <Subject 1> at the bottom step and the other two right behind her.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nCar doors opening and thudding shut, footsteps on stone, early birds, a light wind across the plaza.\n\nnon_diegetic_music: N/A\nAuthoritative composition and head-count (overrides conflicting background crowd or end-state instructions):\nExactly 3 people: Shen, Lu and Xu. Wide three-quarter side view of parked car at start of getting out. All three already visible at their own distinct door positions, feet touching pavement, Shen left foreground, Lu center beside driver door, Xu right at rear door. Clear gaps between bodies, no one hidden inside car. Start pose before walking away.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage.",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Subject 2> is the man in <Picture 3>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 3> is the woman in <Picture 4>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 5> is the location reference for [Shot 1]: the exterior of a white stone public verification hall at dawn, a wide flight of pale stone steps, a clean empty plaza, a clear blue-to-gold dawn sky.\n\nsummary:\n[reference generation] The three get out of the car at the foot of the hall's steps and <Subject 1> walks ahead.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 5> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Clear blue pre-dawn light, the sky beginning to turn gold at the horizon; every stone edge is crisp.\n[Shot 1] Full shot from the plaza, eye level, static. The car doors open at the foot of the pale stone steps: <Subject 1> steps out of the passenger side on the left of frame first and walks ahead toward the steps, while <Subject 2> and <Subject 3> close their doors and follow a pace behind. The shot ends with <Subject 1> at the bottom step and the other two right behind her.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nCar doors opening and thudding shut, footsteps on stone, early birds, a light wind across the plaza.\n\nnon_diegetic_music: N/A\n\nMandatory continuous shot constraints:\nExactly 3 people: Shen, Lu and Xu. Wide three-quarter side view of parked car at start of getting out. All three already visible at their own distinct door positions, feet touching pavement, Shen left foreground, Lu center beside driver door, Xu right at rear door. Clear gaps between bodies, no one hidden inside car. Start pose before walking away.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage."
+  },
+  {
+    "id": "ec_s13_13",
+    "scene": "S13",
+    "act": 4,
+    "beat": 13,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_hall_ext.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "第一缕晨光照上公证厅的台阶，三人拾级而上",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the man in <Picture 2>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 3> is the woman in <Picture 3>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 4> is the location reference for [Shot 1]: the exterior of a white stone public verification hall at dawn, a wide flight of pale stone steps, a clean empty plaza, a clear blue-to-gold dawn sky.\n\nsummary:\n[reference generation] The first sunlight slides down the hall's steps as the three climb them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. The first golden sunlight sweeps across the pale steps under a clear blue-to-gold sky; every stone edge is crisp.\n[Shot 1] Wide shot from the side of the steps, slightly low angle, static. The first ray of golden sunlight slides down across the pale stone steps of the hall. <Subject 1> climbs the steps with <Subject 2> and <Subject 3> one step behind her on either side, all three walking up into the light. The shot ends with them near the top, the sunlight full on the steps.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThree sets of footsteps on stone, early birds, a soft wind across the plaza.\n\nnon_diegetic_music: N/A",
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s13_13.png",
+    "keyframe_prompt": "Draw a single photoreal opening keyframe. Preserve the identities and costumes in the supplied reference images. Depict initial pose before action; no montage.\nOriginal scene context:\nsubject_definitions:\n<Subject 1> is the woman in <Picture 1>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the man in <Picture 2>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 3> is the woman in <Picture 3>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 4> is the location reference for [Shot 1]: the exterior of a white stone public verification hall at dawn, a wide flight of pale stone steps, a clean empty plaza, a clear blue-to-gold dawn sky.\n\nsummary:\n[reference generation] The first sunlight slides down the hall's steps as the three climb them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. The first golden sunlight sweeps across the pale steps under a clear blue-to-gold sky; every stone edge is crisp.\n[Shot 1] Wide shot from the side of the steps, slightly low angle, static. The first ray of golden sunlight slides down across the pale stone steps of the hall. <Subject 1> climbs the steps with <Subject 2> and <Subject 3> one step behind her on either side, all three walking up into the light. The shot ends with them near the top, the sunlight full on the steps.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThree sets of footsteps on stone, early birds, a soft wind across the plaza.\n\nnon_diegetic_music: N/A\nAuthoritative composition and head-count (overrides conflicting background crowd or end-state instructions):\nExactly 3 people: Shen, Lu and Xu. Side-on wide view at foot of stairs before ascending; Shen left nearest first step, Lu center, Xu right; three separated full bodies, no overlapping silhouettes.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage.",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1>: a 34-year-old East Asian woman forensic memory examiner, calm piercing dark eyes, straight black hair pulled back into a low tight ponytail, a thin silver implant ring visible behind her left ear, natural skin with visible pores, charcoal-grey tailored wool trench coat over a crisp white high-collar shirt, slim black trousers, black ankle boots, a slim silver wristwatch on her left wrist.\n<Subject 2> is the man in <Picture 2>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 3> is the woman in <Picture 3>, with chin-length choppy black hair and blunt bangs, three small silver hoops in her left ear, an oversized mustard-yellow hoodie, and large black studio headphones around her neck.\n<Picture 4> is the location reference for [Shot 1]: the exterior of a white stone public verification hall at dawn, a wide flight of pale stone steps, a clean empty plaza, a clear blue-to-gold dawn sky.\n\nsummary:\n[reference generation] The first sunlight slides down the hall's steps as the three climb them.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Subject 2> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 3> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. The first golden sunlight sweeps across the pale steps under a clear blue-to-gold sky; every stone edge is crisp.\n[Shot 1] Wide shot from the side of the steps, slightly low angle, static. The first ray of golden sunlight slides down across the pale stone steps of the hall. <Subject 1> climbs the steps with <Subject 2> and <Subject 3> one step behind her on either side, all three walking up into the light. The shot ends with them near the top, the sunlight full on the steps.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThree sets of footsteps on stone, early birds, a soft wind across the plaza.\n\nnon_diegetic_music: N/A\n\nMandatory continuous shot constraints:\nExactly 3 people: Shen, Lu and Xu. Side-on wide view at foot of stairs before ascending; Shen left nearest first step, Lu center, Xu right; three separated full bodies, no overlapping silhouettes.\nEach person appears exactly once. Each person has exactly two hands/arms: two arms total and two hands total, naturally attached; no extra limbs, clones, extra people or reflections showing extra people. Face and full-body reference images of the same character describe ONE person. Location references supply architecture only, never people. Gu Yanzhi is the silver-haired older man in cream suit with cane; Cheng Mu is the different older man in camel coat, never substitute or merge them. Keep all action within the central 1344:768 composition, no text, subtitles or montage."
+  },
+  {
+    "id": "ec_s13_14",
+    "scene": "S13",
+    "act": 4,
+    "beat": 14,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_hall_ext.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "INSERT",
+    "summary_zh": "沈砚手腕上淡淡的束带红痕，她把袖口拉下来盖住",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1>, seen only as her wrists, the slim silver wristwatch on her left wrist, and the cuffs of her white shirt and charcoal-grey trench coat.\n<Picture 2> is the location reference for [Shot 1]: the exterior of a white stone public verification hall at dawn, a wide flight of pale stone steps, a clean empty plaza, a clear blue-to-gold dawn sky.\n\nsummary:\n[reference generation] <Subject 1> pulls her sleeve down over the faint red strap mark on her wrist.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Golden early sunlight falls across her wrist; the pale stone steps behind are sharp.\n[Shot 1] Insert close-up of <Subject 1>'s left wrist as she walks up the steps, camera moving with her. A faint red strap mark circles her wrist beside the slim silver wristwatch. Her other hand pulls the white shirt cuff and the charcoal coat sleeve down over the mark. The shot ends with the mark hidden and her hand dropping away.\n\noverall_soundscape:\nFabric sliding over skin, footsteps on stone, the faint tick of the watch.\n\nnon_diegetic_music: N/A"
+  }
+]

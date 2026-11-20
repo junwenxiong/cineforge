@@ -1,0 +1,17 @@
+[
+ {"scenes": ["S01"], "file": "cue3_awakening_scottbuckley_emergent.mp3", "offset": 0, "gain_db": -15, "note": "坠落回放：悬疑开场，回到实验室后压低"},
+ {"scenes": ["S02"], "file": "cue2_rainnight_scottbuckley_beyondthesewalls.mp3", "offset": 0, "gain_db": -20, "note": "实验室三人戏：弦乐底，只托不抢对白"},
+ {"scenes": ["S03"], "file": "cue6_sorrow_scottbuckley_thelongdark.mp3", "offset": 0, "gain_db": -20, "note": "夜车：韩铮旧怨，钢琴与低弦"},
+ {"scenes": ["S04"], "file": "cue2_rainnight_scottbuckley_beyondthesewalls.mp3", "offset": 150, "gain_db": -20, "note": "许棠：不接的电话"},
+ {"scenes": ["S05"], "file": "cue3_awakening_scottbuckley_emergent.mp3", "offset": 90, "gain_db": -17, "note": "纸条：第一幕转折"},
+ {"scenes": ["S06"], "file": "cue1_prologue_scottbuckley_chronicle.mp3", "offset": 0, "gain_db": -20, "note": "恩师：温暖表面下的不安"},
+ {"scenes": ["S07"], "file": "cue6_sorrow_scottbuckley_thelongdark.mp3", "offset": 120, "gain_db": -18, "note": "父亲的留言：全片最安静的一场"},
+ {"scenes": ["S08"], "file": "cue4_chase_scottbuckley_simulacra.mp3", "offset": 0, "gain_db": -19, "note": "脚步声：调查的脉冲，脚步声段落让出频段"},
+ {"scenes": ["S09"], "file": "cue3_ambush_scottbuckley_juggernaut.mp3", "offset": 0, "gain_db": -17, "note": "中点反转与逮捕"},
+ {"scenes": ["S10"], "file": "cue2_rainnight_scottbuckley_beyondthesewalls.mp3", "offset": 300, "gain_db": -21, "note": "审讯：几乎只有底噪，顾言之进门时抬起"},
+ {"scenes": ["S11"], "file": "cue4_battle_scottbuckley_pursuit.mp3", "offset": 0, "gain_db": -18, "note": "残响区：陆时野转向，驱车"},
+ {"scenes": ["S12"], "file": "cue4_battle2_scottbuckley_catalyst.mp3", "offset": 0, "gain_db": -17, "note": "擦除与闯入"},
+ {"scenes": ["S13"], "file": "cue7_resolve_scottbuckley_uprising.mp3", "offset": 0, "gain_db": -19, "note": "黎明前：决定"},
+ {"scenes": ["S14"], "file": "cue7_climax_scottbuckley_thefury.mp3", "offset": 0, "gain_db": -18, "note": "公证厅高潮：残响播放时上扬，手杖落地瞬间静音两秒"},
+ {"scenes": ["S15"], "file": "cue8_dawn_scottbuckley_starfire.mp3", "offset": 0, "gain_db": -16, "note": "黎明：留言最后一句与结尾"}
+]

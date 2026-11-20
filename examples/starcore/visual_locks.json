@@ -1,0 +1,29 @@
+{
+ "characters": {
+  "LIN": "a 28-year-old East Asian woman engineer, sharp determined eyes, short asymmetrical black bob with a single silver streak on the left side, small scar through her right eyebrow, burnt-orange heavy-duty work jacket with reflective strips over a charcoal tank top, dark cargo pants, black work boots, fingerless gloves",
+  "MK1": "a crude prototype powered exosuit of raw brushed steel plates worn by a woman, exposed cables and hydraulic lines, orange hazard stripes, bulky backpack thruster, small round teal chest light, open-face helmet frame showing her face",
+  "MK2": "a sleek full-body powered armor suit of matte pearl-white and dark graphite plates, glowing teal energy seams along the limbs, a glowing hexagonal teal core in the center of the chest, a smooth closed helmet with a single vertical T-shaped glowing teal visor slit, compact thruster pods on the back and calves, slim athletic female proportions",
+  "ZHOU": "a 30-year-old East Asian man with a warm crooked grin, messy short black hair, light stubble, olive-green flight bomber jacket with patches over a grey hoodie, wireless headset around his neck, holding a rugged tablet",
+  "QIN": "a 56-year-old East Asian man, grey crew cut, stern weathered face, deep-set eyes, dark navy military dress uniform with plain silver collar insignia, no flags, no real-world emblems",
+  "PANSHI": "a 12-meter-tall ancient alien guardian robot, massive heavy-built humanoid frame, weathered industrial yellow and dark graphite armor plates with stone-like textured surfaces and battle scars, a stoic flat faceplate with one glowing amber horizontal optic band and no mouth, a glowing amber hexagonal core in the chest, huge rugged haul-truck wheels folded on its shoulders and lower legs, hydraulic pistons at the joints",
+  "PANSHI_TRUCK": "a colossal six-wheeled electric mining haul truck, weathered industrial yellow and dark graphite body panels with stone-like textured surfaces, amber running lights, rust streaks and dust, giant rugged tires",
+  "QUELING": "a 3-meter-tall agile scout robot with a slim frame, pearl-white and electric-cyan panels, two large expressive round cyan optic eyes, motorcycle wheels mounted on its forearms, playful curious posture",
+  "QUELING_BIKE": "a futuristic white-and-cyan racing motorcycle with glowing cyan wheel rims and sharp aerodynamic fairings, no rider",
+  "LIEFENG": "a 15-meter-tall menacing war robot with angular blade-like gunmetal-black armor, thin crimson glowing optic slits, swept-back wing blades on its back, a crimson energy cannon built into its right forearm, predatory stance",
+  "LIEFENG_JET": "a black delta-wing stealth bomber with sharp faceted panels and a crimson underglow, in flight",
+  "DRONE": "a dog-sized black six-legged spider drone with a single glowing crimson eye, sharp metal legs",
+  "CORE": "a fist-sized faceted crystal sphere with swirling blue-white light inside, floating inside a transparent cylindrical containment capsule with steel end caps"
+ },
+ "locations": {
+  "WORKSHOP": "a cavernous salvage workshop inside an old harbor warehouse at night, hanging chains, scrap metal piles, cluttered workbenches with tools and monitors, warm tungsten work lights against cool blue moonlight from high windows, an empty armor test rig in the center, large rolling door",
+  "YARD": "a rainy container harbor yard at night, stacked shipping containers, gantry cranes, sodium-orange lights, wet asphalt reflections, a futuristic megacity skyline in the distance, an old warehouse with high windows on the left",
+  "PLATFORM": "a huge offshore deep-sea mining platform at night in rough sea, tall drill tower, floodlights, helipad, spray and wind",
+  "HIGHWAY": "an elevated multi-lane highway through a futuristic coastal megacity at night, rain, glowing signs without readable text, towers on both sides, wet road reflections",
+  "COMMAND": "a dark military command center with large holographic tactical displays showing abstract maps, blue light, officers' consoles, no readable text",
+  "SKYLINE": "a futuristic coastal megacity skyline at sunrise, glass towers, a wide sea bay, golden light, light haze",
+  "TOWER": "a colossal black tower of fused alien machinery rising from a stormy sea, built around an offshore drilling platform, lightning, crimson glow from within",
+  "SEABED": "the deep ocean floor in near darkness, drifting particles, faint blue bioluminescence, rocky seabed",
+  "ANCIENT": "primordial Earth, a volcanic ocean under an ash-filled sky, lava glow on the horizon, lightning in the clouds"
+ },
+ "style": "Photoreal blockbuster CGI, Unreal Engine 5 cinematic render, high detail, sharp focus. No text, no letters, no logo, no watermark."
+}
