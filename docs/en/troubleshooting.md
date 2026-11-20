@@ -101,3 +101,7 @@ Use distinct names, not x/xB; target notebook titles exactly before stopping. pg
 ## Slow workers
 
 Drain slower GPUs first near completion; source A100 shots were ~100 s versus G4 ~42 s. Verify uploads before kill_when_drained.sh or any browser action.
+
+## Sudden close-ups
+
+If a face suddenly fills the screen after a cut, compare the neighboring shots' planned sizes. Use the [shot-size ladder](glossary.md#shot-size-how-much-you-see) to decide how much of the person and surroundings should stay visible. The current LTX picture instructions favor MS/MCU unless shot_size explicitly requests CU/ECU. The LTX video instructions also remove unwanted push-ins and ask for a steady camera. These instructions help, but do not automatically match framing between clips: inspect the starting pictures and watch the cut before accepting it.
