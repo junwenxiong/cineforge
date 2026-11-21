@@ -6,6 +6,7 @@ __pycache__/
 !.env.example
 CLAUDE.local.md
 renders/
+sources/
 videos/
 archive/
 .runtime/

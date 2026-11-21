@@ -26,7 +26,7 @@ exec(urllib.request.urlopen(f"{B}/boot.py?t={T}").read().decode())
 
 LTX：准备首帧，镜头写 engine: ltx，运行 `python3 tools/film/ltx_stage.py --film starcore`。单元用 W = "ltx_starcore_0of1"、LAB_MODEL = "ltx_starcore"，把 /boot.py 换为 /lab/file/ltx25.py。本地运行 `python3 tools/film/ltx_collect.py --film starcore --watch`。N 台机器从 `_0ofN` 到 `_(N-1)ofN`，使用同一固定任务表；按索引分片时不能运行 ltx_prune.py 或重写任务表。
 
-HF gated 模型先接受许可，再从本机直连 /lab/setsecret，以 stdin 提交只读令牌并带农场鉴权。该接口拒绝隧道请求，服务重启后令牌消失。curl 用 --data-binary @-，不要把 HF 令牌写进命令历史。已认证工作机可以读取 /lab/secret，因此必须信任所有工作机。
+HF gated 模型先接受许可，再用 `python3 tools/setup.py init` 把只读令牌存进本机私有的 `.env`（只需一次）。农场服务启动时自动读取 `HF_TOKEN` 放进内存，之后不用再粘贴。不重启就要换令牌时，从本机直连 /lab/setsecret，以 stdin 提交并带农场鉴权；该接口拒绝隧道请求。curl 用 --data-binary @-，不要把 HF 令牌写进命令历史。已认证工作机可以读取 /lab/secret，因此必须信任所有工作机。
 
 /status 带 ?t= 查询，结合 farm.log 的 claim、saved 判断进度。`farm_watch.py --film starcore` 查停滞，心跳不代表主循环正常。先用 `farm_supervisor.py --dry-run --once` 预览，启用动作前审查 Windows/浏览器依赖。colab_drive.py 是可选旧工具，会读取忽略目录中的 URL/token 文件。
 

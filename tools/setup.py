@@ -213,7 +213,7 @@ def cmd_init(args):
 
     current = read_env().get('HF_TOKEN', '')
     token = ''
-    if args.hf_token_stdin:
+    if args.token_stdin:
         token = sys.stdin.readline().strip()
     elif not current or args.reset_hf:
         if sys.stdin.isatty():
@@ -483,7 +483,7 @@ def main():
     sub = parser.add_subparsers(dest='cmd', required=True)
     init = sub.add_parser('init', help='create .env, store the HF token once, optional venv and hand model')
     init.add_argument('--reset-hf', action='store_true', help='replace the stored Hugging Face token')
-    init.add_argument('--hf-token-stdin', action='store_true', help='read the token from stdin (no prompt)')
+    init.add_argument('--hf-token-stdin', dest='token_stdin', action='store_true', help='read the token from stdin (no prompt)')
     init.add_argument('--venv', action='store_true', help='create .venv and install requirements.txt')
     init.add_argument('--hand-model', action='store_true', help='download the MediaPipe hand model to ~/.cache/mp')
     init.add_argument('--offline', action='store_true', help='skip token verification and downloads')
