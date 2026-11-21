@@ -114,3 +114,36 @@ If a face suddenly fills the screen after a cut, compare the neighboring shots' 
 4. In the edit, `tools/film/push_trim.py` cuts away before the face starts growing, but never before a line of dialogue has finished.
 
 Result on echo: shots whose face grew more than 2x went from 20 to 2. Do not anchor the last frame to the same keyframe: the model jumps to a close-up mid-shot and back.
+
+## Animal recasts: human hands instead of paws
+
+When you restage real footage with animal characters (people → cats with `tools/film/lab/ltx_v2v.py`), faces, ears and fur come out right but the hands stay human: five fingers, pink fingertips, nails, sometimes "furry human hands". Three causes stack up:
+
+1. **The control video carries the finger outlines.** The depth (or edge) map from the source shows every finger, and the model follows it.
+2. **The wording invites it.** "Paw-hands" or "five short fingers" in reference, keyframe or video prompts reads as a furry human hand.
+3. **The hand detector drops frames.** Clasped or overlapping hands, motion blur and film grain hide hands from MediaPipe for a second or more; unmasked frames keep the full finger outline.
+
+What fixes it:
+
+1. Find the hands in the source: `python3 tools/film/hand_mask.py source.mp4 --start S --dur D [--crop w:h:x:y] --out hands.json`. It merges a tracking pass and a low-confidence per-frame pass, pads and holds each box, and bridges gaps up to 1 s. Black-and-white footage works. It needs `mediapipe` and `opencv-python-headless` (in `requirements.txt`) and the MediaPipe hand model: `mkdir -p ~/.cache/mp && curl -L -o ~/.cache/mp/hand_landmarker.task https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task` (or set `HAND_MODEL`).
+2. Put the result in the job as `"hands": {...}`. `ltx_v2v.py` then melts the control inside soft ellipses (heavily blurred depth: the arm and hand stay one smooth shape, fingers vanish; edges are erased) and lowers control attention there with `--conditioning-attention-mask` (`hand_attn`, default 0.1). Do not dilate inside the box with a hand-sized kernel: it leaves a hard bright rectangle that the model paints as a sheet of paper.
+3. Describe real paws everywhere: "round furry paws, pink toe beans, same fur as the arm, NO separate fingers, NO fingernails, NO bare skin, never human hands; to hold something the paw curls around it". Review every keyframe's paws before rendering.
+4. In long takes, give a cat keyframe as a mid-shot guide (`guides`) whenever a new character enters the frame or hands come into close-up (hand-holding, covering the face). A character who walks in without a guide is drawn as a human.
+5. Check the result: `python3 tools/film/hand_check.py clip.mp4 --sheet hands.jpg`. MediaPipe only recognizes human hands, so it rarely fires on a real paw; each hit is scored for bare-skin likeness and put on a contact sheet. White or cream fur also scores high, so always look at the sheet.
+
+**A character stays human mid-shot.** Only the first frame is drawn as cats, so any face that is not clearly visible in it has no cat version to follow and is copied from the source. Watch for:
+
+- people who **enter** mid-shot;
+- people who **turn toward the camera or lift their head** after starting turned away or face down (these often come out as cat ears on a human face or a human mouth);
+- **blurred foreground heads or shoulders at the frame edge** that the image model left human in the first frame itself; the video then keeps them human throughout.
+
+Fix: extract the source frame where the face appears, have the image model redraw that frame with the cat version (same composition; reuse the same description for a recurring extra), and pass it as a `guides` entry at strength 0.8. Mention the entrance in the video prompt too ("a grey tabby maid cat walks in from the left"). If the first frame already kept a human, redraw the first frame and name the edge figure in the prompt. Review the **whole reel as a 2 fps contact sheet**, then zoom into suspect faces; checking one frame per shot misses these.
+
+**Garbled subtitles at the bottom of the frame.** Measured causes, most important first:
+
+1. **Never mention text in the video prompt.** Any of "subtitles", "captions", "text", even "no subtitles", makes the distilled pipeline paint captions: it has no CFG, so negations add the concept instead of removing it. Same two shots, same controls: 67 and 40 frames with text → 0 and 0 after deleting that sentence, with the original dialogue still conditioning the audio (lip sync kept).
+2. Subtitles burned into the source leave glyph dots at the bottom of the depth map. `ltx_v2v.py` inpaints white subtitle strokes and their outline in the bottom 22% of the source before computing the control (default; `clean_band: false` turns it off).
+3. "TV drama" leans toward captions; say "period feature film, shot on 35mm".
+4. Control videos are cached per shot ID; change the cache name when you change the control code.
+
+Check with `python3 tools/film/desub.py clip.mp4 --check` (count only frames inside the shot length). `--out` patches small captions, but thin text on bright fur does not clean well, so re-render instead. `no_audio: true` drops the dialogue as audio conditioning (loses lip sync); you should rarely need it.

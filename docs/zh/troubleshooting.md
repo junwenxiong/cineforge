@@ -114,3 +114,36 @@ H3 随帧数成本急增，优先 5–6 秒、一镜一个动作。
 4. 剪辑时 `tools/film/push_trim.py` 在人脸开始变大之前切走，但绝不切掉没说完的台词。
 
 《残响》结果：人脸放大超过 2 倍的镜头从 20 个降到 2 个。不要把最后一帧也锁成同一张首帧：模型会在镜头中段跳成大特写再跳回来。
+
+## 换物种重演：猫爪画成了人手
+
+用真人原片重演成动物角色（`tools/film/lab/ltx_v2v.py`，人 → 猫）时，脸、耳朵、毛都对，手却还是人手：五根手指、粉色指尖、指甲，有时是"长毛的人手"。原因有三层：
+
+1. **控制视频里带着手指轮廓。** 原片算出的深度图（或边缘图）里每根手指都在，模型照着画。
+2. **措辞在引导它。** 参考图、首帧或视频提示里写 "paw-hands"、"five short fingers"，模型理解成长毛的人手。
+3. **手部检测会漏帧。** 握手、手叠在一起、动作模糊、老胶片颗粒都会让 MediaPipe 丢手一秒以上，没遮住的帧保留了完整的手指轮廓。
+
+修法：
+
+1. 在原片里找手：`python3 tools/film/hand_mask.py 原片.mp4 --start S --dur D [--crop w:h:x:y] --out hands.json`。跟踪和低置信度逐帧两遍取并集，框外扩并前后保持，≤1 秒的漏检间隙自动补上。黑白片也能用。需要 `mediapipe`、`opencv-python-headless`（已写进 `requirements.txt`）和 MediaPipe 手部模型：`mkdir -p ~/.cache/mp && curl -L -o ~/.cache/mp/hand_landmarker.task https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task`（或用 `HAND_MODEL` 指定）。
+2. 把结果放进任务的 `"hands"` 字段。`ltx_v2v.py` 会在柔边椭圆里把控制"融化"（深度换成强模糊：手臂和手是一团光滑形状，手指消失；边缘图直接擦掉），并用 `--conditioning-attention-mask` 把手部控制强度降到 `hand_attn`（默认 0.1）。不要在框里用手那么大的核做膨胀：会留下硬边亮方块，模型把它画成一张纸。
+3. 所有提示都写真猫爪："round furry paws, pink toe beans, same fur as the arm, NO separate fingers, NO fingernails, NO bare skin, never human hands；握东西时爪子蜷着包住"。开拍前逐张看首帧里的爪子。
+4. 长镜头里**有新角色入画**、或手部特写（握手、捂脸）的时刻，各给一张猫版引导帧（`guides`）。没有引导帧就入画的人会被画成真人。
+5. 验收：`python3 tools/film/hand_check.py 成片.mp4 --sheet hands.jpg`。MediaPipe 只认人手，在真猫爪上很少触发；每个命中按"像裸皮肤"打分并拼成总览图。白色、奶油色的毛也会得高分，一定要看图确认。
+
+**镜头中途有人没变成猫。** 只有首帧画成了猫，首帧里看不清的脸没有猫版可参照，模型就照原片画成真人。容易漏的情况：
+
+- 镜头中途**入画**的人；
+- 一开始背对、低头，中途**转向镜头或抬起头**的人（常画成"猫耳朵 + 人脸"或人嘴）；
+- 首帧本身就漏了：**画面边缘虚焦的前景后脑勺、肩膀**被图像模型留成真人，视频就全程照画。
+
+修法：在人脸露出来的那一刻抽原片帧，用图像模型把它画成猫版（构图不变；同一个配角在各镜用同一段描述），作为 `guides` 引导帧传入，强度 0.8；视频提示里也写上入画动作（"a grey tabby maid cat walks in from the left"）。首帧已经留了真人的，重画首帧，并在提示里点名边缘那个角色是哪只猫。验收时把**整条成片按每秒 2 帧拼成总览图**逐格看，可疑的再放大到人脸；每镜只抽一张会漏掉。
+
+**画面底部冒出乱码字幕。** 实测原因，按重要性：
+
+1. **视频提示里一个字都不要提文字。** 写了 "subtitles"、"captions"、"text"，哪怕是 "no subtitles"，蒸馏版也会画字幕：它没有 CFG，否定词不起作用，反而把这个概念带进来。同两镜、同控制，删掉这句后带字帧 67、40 → 0、0，原声仍作音频条件，口型不丢。
+2. 原片烧录字幕会在深度图底部留下字形小点。`ltx_v2v.py` 算控制前先把原片底部 22% 的白色字幕笔画连黑描边 inpaint 掉（默认开，`clean_band: false` 关闭）。
+3. "TV drama" 偏向字幕，写 "period feature film, shot on 35mm"。
+4. 控制视频按镜号缓存，改了控制算法要换缓存文件名。
+
+验收用 `python3 tools/film/desub.py 成片.mp4 --check`（只数镜长以内的帧）；`--out` 能补小字幕，浅色毛发上的细字补不干净，优先重拍。`no_audio: true` 不给原声条件（口型会丢），一般用不到。
