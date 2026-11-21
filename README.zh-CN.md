@@ -4,21 +4,51 @@
 
 [English](README.md) · [安装指南](docs/zh/getting-started.md) · [白话词汇表](docs/zh/glossary.md)
 
+三部原创电影，每部约 30 分钟，全部用开源视频模型在租来的 Colab GPU 上拍成。**点开片段可以带声音观看。** 画面全部由 AI 生成，没有摄影机，也没有演员。
+
+<table>
+<tr>
+<td width="50%" align="center"><a href="VIDEO_URL_battle"><img src="docs/media/starcore_battle.webp" width="100%" alt="Starcore Dawn: Mech shield vs. drone swarm"></a><br><sub><b>星核黎明</b> · 机甲护盾硬抗无人机群</sub></td>
+<td width="50%" align="center"><a href="VIDEO_URL_clash"><img src="docs/media/starcore_clash.webp" width="100%" alt="Starcore Dawn: Final clash"></a><br><sub><b>星核黎明</b> · 最终对决</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center"><a href="VIDEO_URL_chase"><img src="docs/media/catfilm_chase.webp" width="100%" alt="Calico Signal: Robot dog in the fruit market"></a><br><sub><b>三花信号</b> · 机器狗冲进水果摊</sub></td>
+<td width="50%" align="center"><a href="VIDEO_URL_echo"><img src="docs/media/echo_studio.webp" width="100%" alt="The Last Echo: The voice on the tape"></a><br><sub><b>残响</b> · 录音里的声音</sub></td>
+</tr>
+</table>
+
+<sub>片段配乐：Scott Buckley，CC BY 4.0（scottbuckley.com.au）。片名：星核黎明、三花信号、残响。</sub>
+
+## 要多久？要多少钱？
+
+下面是**我们自己 2026-11-20 的实测**：一个人，一个 Colab Pro+ 账号。换了账号或电脑，结果会不一样。
+
+| | 星核黎明 | 三花信号 | 残响 |
+|---|---|---|---|
+| 片长（不含片尾） | 33 分钟 | 32 分钟 | 29 分钟 |
+| 成片镜头数 | 366 | 331 | 320 |
+| 视频模型 | H3 | H3 229 + LTX-2.5 102 | H3 117 + LTX-2.5 203 |
+| 实测 GPU 时间 | 4.2 GPU 小时¹ | 4.0 GPU 小时 | 6.2 GPU 小时 |
+| 拍摄时段² | 约 3 小时 | 两部共用一个农场同时拍，合计约 6.3 小时 | |
+| Colab 计算单元（约）³ | 约 110 | 两部合计约 190–245 | |
+| 折合（约）⁴ | 约 11 美元 | 两部合计约 19–25 美元 | |
+
+**单个镜头：** 6 秒的 H3 镜头在一块 G4（RTX PRO 6000，96 GB）上中位数 **43 秒**；6 秒的 LTX-2.5 镜头中位数 **38 秒**。新开的 Colab 电脑加载模型约 4 分钟。同一时间最多开了 **4 台 Colab 电脑**（3 台 G4 + 1 台 H100）。
+
+<sub>¹ Colab 农场拍的 265 个镜头的 GPU 生成时间；另有 101 镜在单独授权的 Box 机器上拍，未计入。所有数字取自每个镜头的任务记录和农场日志。
+² 从第一个到最后一个合格镜头回传。不含写剧本、出参考图和剪辑，含重拍。
+³ 拍摄时段 × 农场运行时 Colab 显示的用量：3 台 G4 约每小时 30 单元，4 台约 39 单元。Colab 不按片子分别计量。
+⁴ 按撰写时 Colab 按量购买约 10 美元 / 100 计算单元估算，请以当前价格为准。参考图的生图费用由你的生图服务另计。</sub>
+
+总花费取决于你的 Colab 套餐、能租到的电脑、重拍次数和生图服务。先小规模试，常看余额。
+
 ## 这是什么？
 
 你写一段故事，AI 编程助手用影铸把它变成剧本和参考图，再帮你租用 Google Colab 上的高性能电脑，逐个镜头拍摄。你和助手一起检查错误、重拍，再剪成一部约 30 分钟、带人声、配乐和字幕的电影。这还是一个早期项目：故事由你把关，花钱前由你确认，最后也需要你看画面、听声音。
 
 ## 它怎么工作？
 
-```mermaid
-flowchart TD
-    A[故事] --> B[剧本与分镜]
-    B --> C[参考图]
-    C --> D[在 Colab 拍镜头]
-    D --> E[检查与重拍]
-    E --> F[剪辑、音乐、字幕]
-    F --> G[电影]
-```
+<p align="center"><img src="docs/media/how-it-works.zh.png" width="100%" alt="故事、剧本和分镜、参考图、Colab 上拍摄、检查和重拍、剪辑和声音、成片"></p>
 
 1. **故事：** 说清楚你想拍的人物、地点和情节。
 2. **剧本与分镜：** 助手写台词，把每场戏拆成一条条短视频，也就是镜头。
@@ -95,20 +125,6 @@ flowchart TD
 
    **你应该看到：** `videos/starcore/final_master.mp4`。打开检查台词、字幕和署名。等所有视频上传完，再断开并删除自己的 Colab 电脑，确认计算点数不再消耗。
 
-## 要多久？要多少钱？
-
-下面是**一位使用者在 2026-11-20 的实测记录**，由原制作项目提供。不是对你的账号或电脑作出的承诺。
-
-| 测了什么 | 当时看到的结果 |
-|---|---|
-| 一台 G4 GPU 生成一个 6 秒镜头，模型已加载 | Box 上的 H3，或 LTX-2.5 distilled（较快的版本），约 40 秒 |
-| 《三花信号》 / Calico Signal | 331 镜：244 镜 H3 + 87 镜 LTX |
-| 当天拍摄时段 | 约 15:40–19:25，使用 3–4 台 G4，包含两轮重拍 |
-| 3 台 G4 时 Colab 显示的消耗 | 约 30 CU/小时 |
-| 4 台 G4 时 Colab 显示的消耗 | 约 39 CU/小时 |
-
-拍摄时段不包含写作、生图和最后剪辑的全部时间。总费用取决于你的 Colab 套餐、能分到的电脑、额外尝试次数和生图服务费用。目前没有发布核实过的整片总账。先小规模试拍，过程中常看余额。
-
 ## 开始前知道这些就好
 
 - 这是早期工具箱，还不是按一下“帮我拍电影”就能完成的产品。公开版尚未从全新环境开始验证完整出片。
@@ -136,7 +152,7 @@ flowchart TD
 
 ## 示例电影
 
-这里提供的是**文字剧本**。成片链接即将补充（coming soon）。
+这些文件夹里是**文字剧本**；本页顶部的片段就出自这几部成片。
 
 - [《星核黎明》 / Starcore Dawn](examples/starcore/README.md)：主示例。
 - [《三花信号》 / Calico Signal](examples/catfilm/README.md)。
