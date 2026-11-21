@@ -36,9 +36,18 @@ flowchart TD
 - [ ] **一个 [Hugging Face 账号](https://huggingface.co/join)。** 这个网站存放 AI 模型，也就是生成视频的软件。先接受 [LTX-2.5 的许可](https://huggingface.co/Lightricks/LTX-2.5)，以及所选方案需要的其他模型许可。
 - [ ] **一个生成参考图的工具。** 可以用你已有的生图服务，也可以自己准备图片；生图可能另收费。[参考图准备方法](docs/zh/getting-started.md)。
 
-## 五步开始
+## 六步开始
 
 下载仓库，在助手里打开 `cineforge` 文件夹。在这个文件夹里打开终端，也就是可以粘贴命令的窗口。先按上面的安装指南装好工具。以下命令适用于 Linux/WSL。
+
+0. **一次性设置，再体检电脑。** `init` 会建一个私密设置文件 `.env`，并请你输入 Hugging Face 令牌。输入时屏幕不显示，以后也不用再输：工具和助手都从这个文件读取。`doctor` 会列出哪些已就绪、其余怎么修。
+
+   ```sh
+   python3 tools/setup.py init
+   python3 tools/setup.py doctor
+   ```
+
+   **你应该看到：** 一列 `PASS`、`WARN`、`FAIL`，每个问题下面有一行 `fix:` 修法。`FAIL` 必须修好；`WARN` 只在部分环节需要。给 `init` 加上 `--venv` 可顺便装好 Python 依赖。[设置详情](docs/zh/getting-started.md)。
 
 1. **检查本地工具能不能运行。** 这一步不租电脑，也不生成电影。
 
@@ -123,7 +132,7 @@ flowchart TD
 
 代码采用 [Apache-2.0](LICENSE)。模型另有规则：[H3 许可](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE)不覆盖美国、欧盟、英国、韩国，并要求标注 AI 生成。[LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)需要先接受许可才能下载，这叫 *gated access（受限访问）*。
 
-把访问令牌当作密码。不要粘贴进项目文件，按[配置说明](docs/zh/render-farm.md)私下输入。Colab notebook 是放代码的网页，其中有你的隧道地址，要保持私密；隧道就是 Colab 连回你电脑的通道。[更多安全说明](SECURITY.md)。
+把访问令牌当作密码。令牌只放在 `python3 tools/setup.py init` 创建的私密 `.env` 文件里，不要粘贴进其他项目文件或聊天窗口。要更换 Hugging Face 令牌，运行 `python3 tools/setup.py init --reset-hf`。Colab notebook 是放代码的网页，其中有你的隧道地址，要保持私密；隧道就是 Colab 连回你电脑的通道。[更多安全说明](SECURITY.md)。
 
 ## 示例电影
 

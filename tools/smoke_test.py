@@ -6,6 +6,7 @@ import py_compile
 import secrets
 import shutil
 import socket
+import stat
 import subprocess
 import sys
 import tempfile
@@ -14,6 +15,51 @@ import urllib.error
 import urllib.request
 from new_film import create
 from validate_film import FilmConfig, ROOT, validate
+
+
+SETUP_FILES=['tools/setup.py','.env.example','.gitignore','requirements.txt','AGENTS.md','CLAUDE.md','GEMINI.md']
+
+
+def check_setup():
+    """init/doctor/run in a temp copy: never reads the real .env, no network, token never printed."""
+    with tempfile.TemporaryDirectory(prefix='cineforge-setup-') as directory:
+        root=Path(directory)
+        for rel in SETUP_FILES:
+            (root/rel).parent.mkdir(parents=True,exist_ok=True); shutil.copy2(ROOT/rel,root/rel)
+        shutil.copytree(ROOT/'skills',root/'skills')  # no .claude/.agents: init must restore them
+        env={k:v for k,v in os.environ.items() if k!='HF_TOKEN'}
+        env['PYTHONDONTWRITEBYTECODE']='1'
+        git=shutil.which('git')
+        if git: subprocess.run([git,'init','-q'],cwd=root,env=env,check=True,capture_output=True)
+        def setup(*args,stdin=''):
+            out=subprocess.run([sys.executable,str(root/'tools/setup.py'),*args],cwd=root,env=env,input=stdin,
+                               capture_output=True,text=True,timeout=300)
+            assert fake not in out.stdout+out.stderr, 'token printed'
+            return out
+        fake='hf_'+secrets.token_hex(16)
+        out=setup('init','--offline','--hf-token-stdin',stdin=fake+'\n')
+        assert out.returncode==0, out.stdout+out.stderr
+        assert f'HF_TOKEN={fake}' in (root/'.env').read_text().splitlines()
+        if os.name!='nt': assert stat.S_IMODE((root/'.env').stat().st_mode)==0o600
+        for stub in ['.claude/skills/cineforge/SKILL.md','.agents/skills/cineforge/SKILL.md']:
+            assert 'skills/cineforge/SKILL.md' in (root/stub).read_text(), stub
+        def doctor():
+            out=setup('doctor','--offline','--json')
+            report=json.loads(out.stdout)
+            checks={c['name']:c['status'] for c in report['checks']}
+            assert out.returncode==(1 if 'FAIL' in checks.values() else 0), out.stdout
+            assert report['ok']==(out.returncode==0)
+            return checks
+        checks=doctor()
+        assert checks['env-file']=='PASS' and checks['hf-token']=='PASS', checks
+        assert checks['hf-login']=='SKIP' and checks['ltx-access']=='SKIP', checks
+        assert checks['skills']=='PASS' and checks['instructions']=='PASS', checks
+        if git: assert checks['env-ignored']=='PASS', checks
+        out=setup('run','--',sys.executable,'-c','import os; print(len(os.environ["HF_TOKEN"]))')
+        assert out.returncode==0 and out.stdout.strip()==str(len(fake)), out.stderr
+        (root/'.env').write_text('HF_TOKEN=\n')
+        assert doctor()['hf-token']=='FAIL'
+    print('PASS setup init/doctor --offline --json/run in a temp copy; token stored, never printed')
 
 
 def main():
@@ -68,6 +114,7 @@ def main():
             try: proc.communicate(timeout=5)
             except subprocess.TimeoutExpired: proc.kill(); proc.communicate(timeout=5)
         print('PASS owned farm process stopped; temporary state removed')
+    check_setup()
     print('PASS offline smoke test (no GPU or external network)')
 
 
