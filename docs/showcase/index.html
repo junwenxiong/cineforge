@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CineForge · Showcase</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0d0f12; color: #e6e6e6; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+  header, section, footer { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  header { padding-top: 36px; }
+  h1 { margin: 0 0 6px; font-size: 28px; }
+  h2 { margin: 40px 0 6px; font-size: 21px; }
+  a { color: #8ab4ff; }
+  .lead, .note { color: #a9adb5; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 22px; margin-top: 16px; }
+  figure { margin: 0; background: #161a20; border-radius: 10px; overflow: hidden; scroll-margin-top: 16px; }
+  figure:target { outline: 2px solid #8ab4ff; }
+  video { display: block; width: 100%; background: #000; }
+  figcaption { padding: 10px 14px 14px; }
+  figcaption b { display: block; font-size: 17px; }
+  .facts { color: #a9adb5; font-size: 14px; }
+  footer { padding: 36px 20px 48px; font-size: 13px; color: #8a8f98; }
+</style>
+</head>
+<body>
+<header>
+  <h1>CineForge · 影铸 — Showcase</h1>
+  <p class="lead">Every clip was made with open video models on rented Colab GPUs using the scripts in <a href="https://github.com/junwenxiong/cineforge">this repository</a>. Press play for sound.</p>
+</header>
+
+<section>
+  <h2>Original films (text → film)</h2>
+  <p class="note">Three original films, about 30 minutes each. No camera, no actors. Measured time and cost for the whole film are listed under each clip.</p>
+  <div class="grid">
+    <figure id="battle">
+      <video controls preload="metadata" playsinline poster="media/starcore_battle.webp" src="media/starcore_battle.mp4"></video>
+      <figcaption><b>Starcore Dawn · Mech shield vs. drone swarm</b>
+        <span class="facts">Film: 33 min, 366 shots · 4.2 GPU-hours on Colab · about US$11</span></figcaption>
+    </figure>
+    <figure id="clash">
+      <video controls preload="metadata" playsinline poster="media/starcore_clash.webp" src="media/starcore_clash.mp4"></video>
+      <figcaption><b>Starcore Dawn · Final clash</b>
+        <span class="facts">Film: 33 min, 366 shots · 4.2 GPU-hours on Colab · about US$11</span></figcaption>
+    </figure>
+    <figure id="chase">
+      <video controls preload="metadata" playsinline poster="media/catfilm_chase.webp" src="media/catfilm_chase.mp4"></video>
+      <figcaption><b>Calico Signal · Robot dog in the fruit market</b>
+        <span class="facts">Film: 32 min, 331 shots · 4.0 GPU-hours on Colab</span></figcaption>
+    </figure>
+    <figure id="echo">
+      <video controls preload="metadata" playsinline poster="media/echo_studio.webp" src="media/echo_studio.mp4"></video>
+      <figcaption><b>The Last Echo · The voice on the tape</b>
+        <span class="facts">Film: 29 min, 320 shots · 6.2 GPU-hours on Colab</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <h2>Cat recast (video-to-video)</h2>
+  <p class="note">Real TV footage → cats, same motion &amp; original dialogue (v2v). Each shot keeps the source's depth and timing; a cat version of its first frame (plus a guide frame wherever a new face appears) sets the look; hands are masked so they come out as paws.</p>
+  <div class="grid">
+    <figure id="sanguo">
+      <video controls preload="metadata" playsinline poster="media/sanguo_anye.webp" src="media/sanguo_anye.mp4"></video>
+      <figcaption><b>三国 · 俺也一样</b>
+        <span class="facts">27.5 s · 7 shots · about 6 GPU-minutes including retakes (one RTX PRO 6000)</span></figcaption>
+    </figure>
+    <figure id="xiyou">
+      <video controls preload="metadata" playsinline poster="media/xiyou_renshenguo.webp" src="media/xiyou_renshenguo.mp4"></video>
+      <figcaption><b>西游 · 偷吃人参果</b>
+        <span class="facts">31 s · 2 shots · about 4.5 GPU-minutes including retakes</span></figcaption>
+    </figure>
+    <figure id="honglou">
+      <video controls preload="metadata" playsinline poster="media/honglou_liulaolao.webp" src="media/honglou_liulaolao.mp4"></video>
+      <figcaption><b>红楼 · 刘姥姥进大观园</b>
+        <span class="facts">28 s · 14 shots · about 7 GPU-minutes including retakes</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<footer>
+  Music in the original-film clips: Scott Buckley, CC BY 4.0 (scottbuckley.com.au).
+  Cat recasts are fan re-imaginings of scenes from the CCTV TV series 三国演义 (1994), 西游记 (1986) and 红楼梦 (1987); dialogue audio is from those series.
+  GPU times exclude model loading (about 1–4 minutes per fresh Colab computer).
+</footer>
+</body>
+</html>

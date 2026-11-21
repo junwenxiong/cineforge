@@ -8,16 +8,26 @@
 
 <table>
 <tr>
-<td width="50%" align="center"><a href="VIDEO_URL_battle"><img src="docs/media/starcore_battle.webp" width="100%" alt="Starcore Dawn: Mech shield vs. drone swarm"></a><br><sub><b>星核黎明</b> · 机甲护盾硬抗无人机群</sub></td>
-<td width="50%" align="center"><a href="VIDEO_URL_clash"><img src="docs/media/starcore_clash.webp" width="100%" alt="Starcore Dawn: Final clash"></a><br><sub><b>星核黎明</b> · 最终对决</sub></td>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#battle"><img src="docs/media/starcore_battle.webp" width="100%" alt="Starcore Dawn: Mech shield vs. drone swarm"></a><br><sub><b>星核黎明</b> · 机甲护盾硬抗无人机群</sub></td>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#clash"><img src="docs/media/starcore_clash.webp" width="100%" alt="Starcore Dawn: Final clash"></a><br><sub><b>星核黎明</b> · 最终对决</sub></td>
 </tr>
 <tr>
-<td width="50%" align="center"><a href="VIDEO_URL_chase"><img src="docs/media/catfilm_chase.webp" width="100%" alt="Calico Signal: Robot dog in the fruit market"></a><br><sub><b>三花信号</b> · 机器狗冲进水果摊</sub></td>
-<td width="50%" align="center"><a href="VIDEO_URL_echo"><img src="docs/media/echo_studio.webp" width="100%" alt="The Last Echo: The voice on the tape"></a><br><sub><b>残响</b> · 录音里的声音</sub></td>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#chase"><img src="docs/media/catfilm_chase.webp" width="100%" alt="Calico Signal: Robot dog in the fruit market"></a><br><sub><b>三花信号</b> · 机器狗冲进水果摊</sub></td>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#echo"><img src="docs/media/echo_studio.webp" width="100%" alt="The Last Echo: The voice on the tape"></a><br><sub><b>残响</b> · 录音里的声音</sub></td>
 </tr>
 </table>
 
-<sub>片段配乐：Scott Buckley，CC BY 4.0（scottbuckley.com.au）。片名：星核黎明、三花信号、残响。</sub>
+**猫咪重演（视频转视频）：** 真人电视剧原片 → 猫，动作和原声台词不变（v2v）。每段约 30 秒，含重拍每段 4–7 GPU 分钟。[在一个页面里看全部片段](https://junwenxiong.github.io/cineforge/showcase/)。
+
+<table>
+<tr>
+<td width="33%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#sanguo"><img src="docs/media/sanguo_anye.webp" width="100%" alt="Cat recast: 三国 · 俺也一样"></a><br><sub><b>三国 · 俺也一样</b></sub></td>
+<td width="33%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#xiyou"><img src="docs/media/xiyou_renshenguo.webp" width="100%" alt="Cat recast: 西游 · 偷吃人参果"></a><br><sub><b>西游 · 偷吃人参果</b></sub></td>
+<td width="33%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#honglou"><img src="docs/media/honglou_liulaolao.webp" width="100%" alt="Cat recast: 红楼 · 刘姥姥进大观园"></a><br><sub><b>红楼 · 刘姥姥进大观园</b></sub></td>
+</tr>
+</table>
+
+<sub>片段配乐：Scott Buckley，CC BY 4.0（scottbuckley.com.au）。片名：星核黎明、三花信号、残响。猫咪重演取自央视版《三国演义》（1994）、《西游记》（1986）、《红楼梦》（1987）的名场面，保留原声台词，属二次创作。</sub>
 
 ## 要多久？要多少钱？
 

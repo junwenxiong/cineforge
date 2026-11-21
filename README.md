@@ -8,16 +8,26 @@ Three original films, about 30 minutes each, made with open video models on rent
 
 <table>
 <tr>
-<td width="50%" align="center"><a href="VIDEO_URL_battle"><img src="docs/media/starcore_battle.webp" width="100%" alt="Starcore Dawn: Mech shield vs. drone swarm"></a><br><sub><b>Starcore Dawn</b> · Mech shield vs. drone swarm</sub></td>
-<td width="50%" align="center"><a href="VIDEO_URL_clash"><img src="docs/media/starcore_clash.webp" width="100%" alt="Starcore Dawn: Final clash"></a><br><sub><b>Starcore Dawn</b> · Final clash</sub></td>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#battle"><img src="docs/media/starcore_battle.webp" width="100%" alt="Starcore Dawn: Mech shield vs. drone swarm"></a><br><sub><b>Starcore Dawn</b> · Mech shield vs. drone swarm</sub></td>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#clash"><img src="docs/media/starcore_clash.webp" width="100%" alt="Starcore Dawn: Final clash"></a><br><sub><b>Starcore Dawn</b> · Final clash</sub></td>
 </tr>
 <tr>
-<td width="50%" align="center"><a href="VIDEO_URL_chase"><img src="docs/media/catfilm_chase.webp" width="100%" alt="Calico Signal: Robot dog in the fruit market"></a><br><sub><b>Calico Signal</b> · Robot dog in the fruit market</sub></td>
-<td width="50%" align="center"><a href="VIDEO_URL_echo"><img src="docs/media/echo_studio.webp" width="100%" alt="The Last Echo: The voice on the tape"></a><br><sub><b>The Last Echo</b> · The voice on the tape</sub></td>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#chase"><img src="docs/media/catfilm_chase.webp" width="100%" alt="Calico Signal: Robot dog in the fruit market"></a><br><sub><b>Calico Signal</b> · Robot dog in the fruit market</sub></td>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#echo"><img src="docs/media/echo_studio.webp" width="100%" alt="The Last Echo: The voice on the tape"></a><br><sub><b>The Last Echo</b> · The voice on the tape</sub></td>
 </tr>
 </table>
 
-<sub>Music in the clips: Scott Buckley, CC BY 4.0 (scottbuckley.com.au). Films: 星核黎明 / Starcore Dawn, 三花信号 / Calico Signal, 残响 / The Last Echo.</sub>
+**Cat recast (video-to-video):** real TV footage → cats, same motion & original dialogue (v2v). About 30 s each, 4–7 GPU-minutes per clip including retakes. [All clips on one page](https://junwenxiong.github.io/cineforge/showcase/).
+
+<table>
+<tr>
+<td width="33%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#sanguo"><img src="docs/media/sanguo_anye.webp" width="100%" alt="Cat recast: 三国 · 俺也一样"></a><br><sub><b>三国 · 俺也一样</b></sub></td>
+<td width="33%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#xiyou"><img src="docs/media/xiyou_renshenguo.webp" width="100%" alt="Cat recast: 西游 · 偷吃人参果"></a><br><sub><b>西游 · 偷吃人参果</b></sub></td>
+<td width="33%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#honglou"><img src="docs/media/honglou_liulaolao.webp" width="100%" alt="Cat recast: 红楼 · 刘姥姥进大观园"></a><br><sub><b>红楼 · 刘姥姥进大观园</b></sub></td>
+</tr>
+</table>
+
+<sub>Music in the clips: Scott Buckley, CC BY 4.0 (scottbuckley.com.au). Films: 星核黎明 / Starcore Dawn, 三花信号 / Calico Signal, 残响 / The Last Echo. Cat recasts: fan re-imaginings of scenes from the CCTV series 三国演义 (1994), 西游记 (1986), 红楼梦 (1987), with their original dialogue.</sub>
 
 ## How long and how much?
 
