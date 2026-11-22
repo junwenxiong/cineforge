@@ -4,3 +4,6 @@ Pillow>=10
 numpy>=1.24
 imageio-ffmpeg>=0.4.9
 playwright>=1.40
+# Hand masking / QA for animal recasts (hand_mask.py, hand_check.py, desub.py)
+mediapipe>=0.10.14
+opencv-python-headless>=4.8
