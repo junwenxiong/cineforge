@@ -40,6 +40,15 @@ flowchart TD
 
 Download this repository and open its `cineforge` folder in your assistant. Open a terminal there—a window where you paste commands. Install the tools using the setup guide above. These commands are for Linux/WSL.
 
+0. **Set up once, then check your computer.** `init` makes a private settings file called `.env` and asks for your Hugging Face token. What you type stays hidden, and you never need to give the token again: the tools and your assistant read it from that file. `doctor` then lists what is ready and how to fix the rest.
+
+   ```sh
+   python3 tools/setup.py init
+   python3 tools/setup.py doctor
+   ```
+
+   **You should see:** a list of `PASS`, `WARN` and `FAIL` lines, each problem with a `fix:` line under it. Fix every `FAIL`; a `WARN` is only needed for some tasks. Add `--venv` to `init` to also install the Python packages. [Setup details](docs/en/getting-started.md).
+
 1. **Check that the local tools work.** This does not rent a computer or generate a film.
 
    ```sh
@@ -123,7 +132,7 @@ The tools and instructions include safeguards for these problems. They reduce mi
 
 The code is [Apache-2.0](LICENSE). Models have different rules: [H3's license](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE) excludes the US, EU, UK and South Korea and requires AI-generated labelling. [LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) requires accepting its license before downloading; this is called *gated access*.
 
-Treat access tokens like passwords. Never paste them into project files; use the private input method in the [setup instructions](docs/en/render-farm.md). Keep the Colab notebook—the page containing your code—with its tunnel address private. The tunnel connects Colab to your computer. [More safety details](SECURITY.md).
+Treat access tokens like passwords. Keep them only in the private `.env` file that `python3 tools/setup.py init` creates; never paste them into other project files or into chat. To replace your Hugging Face token, run `python3 tools/setup.py init --reset-hf`. Keep the Colab notebook—the page containing your code—with its tunnel address private. The tunnel connects Colab to your computer. [More safety details](SECURITY.md).
 
 ## Example films
 

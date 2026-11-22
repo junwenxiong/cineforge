@@ -36,7 +36,9 @@ def video_dur(p: Path) -> float:
     """分段视频流的实际时长（按整帧取整，比 -t 请求的略长）。时间线按它累加，字幕才不会越往后越早。"""
     out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=duration",
                           "-of", "csv=p=0", str(p)], capture_output=True, text=True, check=True).stdout
-    return float(out.strip())
+    # 调色重编码的分段时间基是 1/1024，stream duration 会比真实整帧少 ~0.65ms；
+    # 115 段累积 ~75ms（2 帧），字幕和同期声就会比画面早。按整帧取整。
+    return round(float(out.strip()) * FPS) / FPS
 
 
 def has_nvenc() -> bool:
@@ -54,6 +56,7 @@ HD_SOURCES = {}
 HD = False
 FILM = FilmConfig()
 DRY_RUN = False
+CONTINUITY_TIMING = False
 
 
 def configure_hd(source_map=None):
@@ -122,7 +125,21 @@ def main():
     ap.add_argument("--hd", action="store_true")
     ap.add_argument("--hd-source-map", help="JSON id→path overrides for HD validation")
     ap.add_argument("--shot-ids", nargs="+", help="Restrict selected scenes to these shot IDs")
+    ap.add_argument('--continuity', action='store_true', help='Enable normalisation, audio crossfades, mild colour match and safe push-in trim')
+    for flag in ('normalize','audio-crossfade','color-match','trim-push-in','scene-dissolve'):
+        ap.add_argument('--'+flag, action='store_true')
+    ap.add_argument('--production-lufs', type=float, default=-18)
+    ap.add_argument('--jl-cut', choices=['j','l'])
     args = ap.parse_args()
+    flags=('normalize','audio_crossfade','color_match','trim_push_in','scene_dissolve')
+    if args.continuity or args.jl_cut or any(getattr(args,f) for f in flags):
+        if args.dry_run or args.hd or args.scenes or args.shot_ids or args.missing!='skip':
+            ap.error('Continuity currently requires a complete standard-resolution edit')
+        import continuity
+        opts=['--film',FilmConfig(args.film).name,'--name',args.name or 'final_v2','--lufs',str(args.production_lufs)]
+        opts += ['--'+f.replace('_','-') for f in flags if getattr(args,f) or (args.continuity and f!='scene_dissolve')]
+        if args.jl_cut: opts += ['--jl-cut',args.jl_cut]
+        return continuity.main(opts)
     global SHOTS, CUTS, CACHE, OUT, ORDER, FILM, DRY_RUN
     FILM = FilmConfig(args.film)
     SHOTS, CUTS, CACHE, OUT, ORDER = FILM.shots, FILM.cuts, FILM.cache, FILM.videos, FILM.order
@@ -176,12 +193,12 @@ def main():
         return
     lst = CACHE / f"{name}.txt"
     lst.write_text("".join(f"file '{p.as_posix()}'\n" for p in parts), encoding="utf-8")
-    if args.hd:
+    if args.hd or CONTINUITY_TIMING:
         # AAC packet padding must not extend each video segment in the concat demuxer.
         lst.write_text("".join(f"file '{p.as_posix()}'\nduration {video_dur(p):.6f}\n" for p in parts), encoding="utf-8")
     out = OUT / f"{name}.mp4"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), *VENC, *COMMON,
-                    "-movflags", "+faststart", *(["-frames:v", str(round(t * FPS))] if args.hd else []), str(out)], check=True)
+                    "-movflags", "+faststart", *(["-frames:v", str(round(t * FPS))] if args.hd or CONTINUITY_TIMING else []), str(out)], check=True)
     (OUT / f"{name}.json").write_text(json.dumps({"duration": round(t, 2), "shots": timeline, "missing": missing},
                                                  ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{out.relative_to(ROOT)}  {t / 60:.1f} min  {len(timeline) - (len(missing) if args.missing == 'slate' else 0)} shots used, {len(missing)} missing")

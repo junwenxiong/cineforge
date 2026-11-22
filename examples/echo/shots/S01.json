@@ -1,263 +1,271 @@
 [
- {
-  "id": "ec_s01_01",
-  "scene": "S01",
-  "act": 1,
-  "beat": 1,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/cheng.png",
-   "assets/echo/refs/loc_skybridge.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "WS",
-  "summary_zh": "程牧第一人称回放：沿玻璃天桥前行，对着电话说话（画外，自己的声音）",
-  "dialogue": [
-   {
-    "who": "CHENG",
-    "text": "东西交出去了。明天，全部公开。"
-   }
-  ],
-  "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1>, seen only as his own left hand and the sleeve of his long camel-colored wool overcoat at the bottom of the frame.\n<Picture 2> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] A first-person memory replay through the eyes of <Subject 1>, who walks alone along a glass sky-bridge at night and speaks into a phone.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the camel wool overcoat sleeve and the aged hand stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. Clean white LED strips light the floor; the night city below is crisp to the horizon.\n[Shot 1] First-person point-of-view wide shot at eye height, steady forward walking motion along the center line of the sky-bridge. Within the first second, the unseen man whose eyes we are looking through, <Subject 1> (S1), says off-screen in a tired, quiet older male voice, <d>[Chinese] 东西交出去了。明天，全部公开。</d> His left hand in the camel wool sleeve holds a slim black phone on speaker at the bottom center of the frame. Floor-to-ceiling glass panels in thin black steel frames slide past on both sides, the white LED strips glow along the base of the walls, and the city grid forty floors below glitters, every light sharp. The walk stays calm and even. The shot ends with the hand lowering the phone out of frame as the walk slows.\n\noverall_soundscape:\nHis own measured footsteps on polished stone, the faint electrical hum of the LED strips, a soft wind pressure against the glass, a distant city murmur far below.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s01_02",
-  "scene": "S01",
-  "act": 1,
-  "beat": 2,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/cheng_face.png",
-   "assets/echo/refs/cheng.png",
-   "assets/echo/refs/loc_skybridge.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "MCU",
-  "summary_zh": "回放：程牧停步，玻璃里映出他的脸；身后传来「两步、一停、一敲」的脚步声（手杖母题第一次）",
-  "dialogue": [],
-  "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>, with a thin lined face, short cropped white hair, round black-framed glasses, and a dark-navy turtleneck under a long camel-colored wool overcoat.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, <Subject 1> stops on the sky-bridge; his reflection in the dark glass shows him listening to uneven footsteps behind him.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, white hair, round black glasses, turtleneck and camel overcoat stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. The white LED strip lights his reflected face from below; the city lights behind the glass are pin-sharp.\n[Shot 1] Medium close-up, first-person view looking straight into a dark glass panel, static. The glass works as a mirror: <Subject 1>'s reflection fills the center of the frame, his face sharp and clear, the glittering city visible through the glass behind it. He has just stopped walking. Off-screen behind him, uneven footsteps approach on the stone floor: two steps, a pause, then the hard tap of a cane tip. His eyes slide sideways toward the sound and his jaw tightens. The shot ends with his reflection perfectly still, eyes turned toward the sound behind him.\n\noverall_soundscape:\nNear silence on the bridge, then an uneven rhythm on stone: step, step, a pause, then the hard tap of a cane tip, repeated once, closer; his breath catching in his throat.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s01_03",
-  "scene": "S01",
-  "act": 1,
-  "beat": 3,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/shen.png",
-   "assets/echo/refs/shen_face.png",
-   "assets/echo/refs/loc_skybridge.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "MS",
-  "summary_zh": "回放：主观镜头转身，天桥尽头穿炭灰色风衣的人走进灯光——是沈砚，面无表情（她的步伐平稳，与声音的节奏对不上）",
-  "dialogue": [],
-  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, the viewer turns and sees <Subject 1> walking toward the camera along the sky-bridge, expressionless.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. The LED strips throw clean white light up across her coat as she approaches.\n[Shot 1] Medium shot, first-person view at eye level; the camera turns from the glass to face down the length of the sky-bridge, then holds steady. At the far end, a figure in a charcoal-grey trench coat walks toward the camera along the center line. As she steps into the white LED light her face becomes fully visible and sharp: <Subject 1>, expressionless, eyes fixed on the camera, her ponytail tight. She walks with a smooth, even stride, hands at her sides. The shot ends with her stopping two meters from the camera, framed from the waist up in the center of the frame.\n\noverall_soundscape:\nFootsteps that do not match her smooth stride: step, step, a pause, then the hard tap of a cane tip; the hum of the LED strips; wind pressing on the glass.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s01_04",
-  "scene": "S01",
-  "act": 1,
-  "beat": 4,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/shen_face.png",
-   "assets/echo/refs/shen.png",
-   "assets/echo/refs/loc_skybridge.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "CU",
-  "summary_zh": "回放：沈砚的脸近在眼前，双唇紧闭不开口；程牧在画外说「是你……」",
-  "dialogue": [
-   {
-    "who": "CHENG",
-    "text": "是你……"
-   }
-  ],
-  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, <Subject 1>'s silent, expressionless face fills the view while the unseen viewer speaks off-screen.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, dark eyes, ponytail, silver implant ring and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. White LED light from below sharpens her cheekbones; the city glitters behind her through the glass.\n[Shot 1] Close-up, first-person view at eye level, static. Within the first second, the unseen man whose eyes we are looking through (S1) says off-screen in a hoarse, stunned older male voice, <d>[Chinese] 是你……</d> <Subject 1>'s face fills the center of the frame; her lips stay pressed shut and she does not speak. Her dark eyes are flat and unblinking, every eyelash and skin pore crisp. The shot ends with her chin lifting very slightly.\n\noverall_soundscape:\nA hoarse breath behind the words, the hum of the LED strips, wind against the glass, a faint electronic flicker at the frame edges.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s01_05",
-  "scene": "S01",
-  "act": 1,
-  "beat": 5,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/shen.png",
-   "assets/echo/refs/shen_face.png",
-   "assets/echo/refs/loc_skybridge.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "MCU",
-  "summary_zh": "回放：她双手猛推向镜头，画面后仰撞上玻璃，裂纹炸开",
-  "dialogue": [],
-  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, <Subject 1> shoves the viewer backward into a glass panel, which cracks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, charcoal trench coat and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. Clean white LED light; the cracking glass catches the city lights in sharp lines.\n[Shot 1] Medium close-up, first-person view, handheld. <Subject 1> stands close in front of the camera. She plants both hands flat against the viewer's chest at the bottom of the frame and shoves hard. The view lurches backward and slams against a glass panel; a white crack spiders outward across the glass at the edges of the frame. The shot ends with her face sharp in the center, still expressionless, as the view tilts back.\n\noverall_soundscape:\nA sharp exhale, a heavy thud against glass, a loud splintering crack spreading, the wind suddenly louder.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s01_06",
-  "scene": "S01",
-  "act": 1,
-  "beat": 6,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/loc_skybridge.png",
-   "assets/echo/refs/loc_city_night.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "WS",
-  "summary_zh": "回放：主观坠落，玻璃碎裂，天桥远去，城市扑面而来，白闪",
-  "dialogue": [],
-  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n<Picture 2> is the reference for the city below, a clean modern coastal city at night with crisp white streetlights and lit glass towers.\n\nsummary:\n[reference generation] In a memory replay, the viewer falls backward out of the sky-bridge toward the city, ending in a white flash.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n<Picture 2> ([Shot 1] city below): partially_preserved - same city lights and towers; the view is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. Night, the bridge lit white from inside, the city lit by crisp streetlights.\n[Shot 1] Wide first-person shot, falling backward. The cracked glass panel bursts into sharp glittering shards; the lit sky-bridge pulls rapidly upward and away against the night sky while the view tumbles backward; the sharp city grid below rushes up, every streetlight crisp even in fast motion. The shot ends in a sudden clean white flash that fills the frame.\n\noverall_soundscape:\nGlass shattering, a rushing roar of wind, the city sound rising fast, then an abrupt high electronic tone and silence at the white flash.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s01_07",
-  "scene": "S01",
-  "act": 1,
-  "beat": 7,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/shen_face.png",
-   "assets/echo/refs/shen.png",
-   "assets/echo/refs/loc_lab.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s01_07.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "CU",
-  "summary_zh": "实验室：沈砚在读取椅上猛地坐起，扯下银色光环头箍，喘气",
-  "dialogue": [],
-  "ltx_prompt": "A photoreal live-action thriller shot in a bright clinical memory forensics lab at night under even cool-white ceiling light, a glass display wall with abstract cyan waveforms behind her. Close-up at eye level, static camera. A 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, jolts upright in a white reclining readout chair and tears a thin silver halo-ring headset off her head in one motion. She holds it against her chest, gasping hard, her eyes wide and fixed off-screen right. The shot ends with her breathing raggedly, lips parted, the headset trembling in her hand. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: sharp gasps and ragged breathing, the plastic click of the headset, the soft hum of lab equipment, a low electronic tone fading out. No music, no on-screen text."
- },
- {
-  "id": "ec_s01_08",
-  "scene": "S01",
-  "act": 1,
-  "beat": 8,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/lu_face.png",
-   "assets/echo/refs/shen.png",
-   "assets/echo/refs/loc_lab.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "OTS",
-  "summary_zh": "过沈砚的肩拍：陆时野站在玻璃门口，「回放里推他的人……是你。」",
-  "dialogue": [
-   {
-    "who": "LU",
-    "text": "回放里推他的人……是你。"
-   }
-  ],
-  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 2> is the woman in <Picture 3>, seen from behind: the back of her low black ponytail and the shoulder of her charcoal-grey trench coat.\n<Picture 4> is the location reference for [Shot 1], a bright clinical memory forensics lab with white walls, even cool-white ceiling light, a white reclining readout chair with a silver halo-ring headset and a transparent glass display wall.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> stands in the lab doorway and tells her that the person in the replay is her.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Even cool-white ceiling light on both of them; cyan glow from the display wall on the side of his face.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a low, rough, even voice, <d>[Chinese] 回放里推他的人……是你。</d> <Subject 2>'s shoulder and the back of her ponytail fill the left foreground, sharp and in focus, as she sits in the white readout chair. <Subject 1> stands in the open sliding glass door on the right, arms folded over his leather jacket, his tired eyes fixed on her. After the line he uncrosses his arms and takes one slow step into the lab. The shot ends with him standing still, waiting for her answer.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis quiet, rough voice in a hard-surfaced room, the soft hiss of the sliding door rail, the lab equipment hum, her uneven breathing.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s01_09",
-  "scene": "S01",
-  "act": 1,
-  "beat": 9,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/shen_face.png",
-   "assets/echo/refs/shen.png",
-   "assets/echo/refs/loc_lab.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s01_09.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "CU",
-  "summary_zh": "沈砚近景反打，脸色发白：「不可能。昨晚我在家。」",
-  "dialogue": [
-   {
-    "who": "SHEN",
-    "text": "不可能。昨晚我在家。"
-   }
-  ],
-  "ltx_prompt": "A photoreal live-action thriller shot in a bright clinical memory forensics lab at night under even cool-white ceiling light. Close-up at eye level, static camera, she sits slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"不可能。昨晚我在家。\" Her lips move in sync with each syllable, her voice low and controlled but thin. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes, a thin silver implant ring behind her left ear, and a charcoal trench coat over a white high-collar shirt, her face pale. After the line she shakes her head once, a small, certain movement. The shot ends with her holding his gaze off-screen right, lips pressed together. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, controlled female voice speaking the Mandarin line, a shaky breath, the hum of the lab. No music, no on-screen text."
- },
- {
-  "id": "ec_s01_10",
-  "scene": "S01",
-  "act": 1,
-  "beat": 10,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/lu_face.png",
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_lab.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s01_10.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "MCU",
-  "summary_zh": "陆时野平静交代死者身份：「程牧，镜川联合创始人。午夜坠楼。」",
-  "dialogue": [
-   {
-    "who": "LU",
-    "text": "程牧，镜川联合创始人。午夜坠楼。"
-   }
-  ],
-  "ltx_prompt": "A photoreal live-action thriller shot in a bright clinical memory forensics lab at night under even cool-white ceiling light, glass partitions behind him. Medium close-up at eye level, static camera, he stands slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"程牧，镜川联合创始人。午夜坠楼。\" His lips move in sync with each syllable, his voice low, rough and matter-of-fact. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he lowers his eyes to a tablet in his hand, then looks back up at her. The shot ends with him watching her steadily. Deep focus with crisp skin pores, individual hair strands and leather texture; the background is equally sharp; no haze, no bokeh. Audio: his low, rough male voice speaking the Mandarin line, the faint tap of a finger on glass, the hum of the lab. No music, no on-screen text."
- },
- {
-  "id": "ec_s01_11",
-  "scene": "S01",
-  "act": 1,
-  "beat": 11,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/shen_face.png",
-   "assets/echo/refs/shen.png",
-   "assets/echo/refs/loc_lab.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s01_11.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "CU",
-  "summary_zh": "沈砚盯着画外的屏幕：「我只在新闻上……见过他。」（她真的不记得）",
-  "dialogue": [
-   {
-    "who": "SHEN",
-    "text": "我只在新闻上……见过他。"
-   }
-  ],
-  "ltx_prompt": "A photoreal live-action thriller shot in a bright clinical memory forensics lab at night, even cool-white ceiling light with cyan light from an off-screen display falling across her face. Close-up at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"我只在新闻上……见过他。\" Her lips move in sync with each syllable and she pauses briefly in the middle, unsure. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, in a charcoal trench coat over a white high-collar shirt. After the line her brow draws together as she stares harder at the screen off-screen right. The shot ends with her eyes narrowed and searching. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quiet, uncertain female voice speaking the Mandarin line, a soft electronic chirp from the display, the hum of the lab. No music, no on-screen text."
- },
- {
-  "id": "ec_s01_12",
-  "scene": "S01",
-  "act": 1,
-  "beat": 12,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/shen.png",
-   "assets/echo/refs/shen_face.png",
-   "assets/echo/refs/loc_lab.png"
-  ],
-  "seconds": 8,
-  "resolution": "720p",
-  "shot_size": "WS",
-  "summary_zh": "片名镜（8 秒）：沈砚走到显示墙前，墙上定格着回放里她自己的脸，她显得很小（片名后期叠加）",
-  "dialogue": [],
-  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 3> is the location reference for [Shot 1], a bright clinical memory forensics lab with white walls, even cool-white ceiling light, a white reclining readout chair with a silver halo-ring headset and a transparent glass display wall.\n\nsummary:\n[reference generation] <Subject 1> walks up to the lab's glass display wall, which shows a giant frozen image of her own expressionless face.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, charcoal trench coat and white collar stay identical, both in person and in the image on the display.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Even cool-white ceiling light; the display wall glows cyan around the frozen image.\n[Shot 1] Wide shot, eye level, very slow push-in. The large transparent display wall at the center of the lab shows a giant frozen close-up of <Subject 1>'s own expressionless face, a thin cyan scanline along its edges. <Subject 1> rises from the white readout chair at frame left and walks slowly to stand in front of the display, small against her own giant face. The shot ends with her motionless, looking up at the image, the whole lab sharp from the chair in the foreground to the display wall.\n\noverall_soundscape:\nHer slow footsteps on the epoxy floor, the low steady hum of the display wall, a faint electronic flicker, the lab air system.\n\nnon_diegetic_music: N/A"
- }
+  {
+    "id": "ec_s01_01",
+    "scene": "S01",
+    "act": 1,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/cheng.png",
+      "assets/echo/refs/loc_skybridge.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "程牧第一人称回放：沿玻璃天桥前行，对着电话说话（画外，自己的声音）",
+    "dialogue": [
+      {
+        "who": "CHENG",
+        "text": "东西交出去了。明天，全部公开。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1>, seen only as his own left hand and the sleeve of his long camel-colored wool overcoat at the bottom of the frame.\n<Picture 2> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] A first-person memory replay through the eyes of <Subject 1>, who walks alone along a glass sky-bridge at night and speaks into a phone.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the camel wool overcoat sleeve and the aged hand stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. Clean white LED strips light the floor; the night city below is crisp to the horizon.\n[Shot 1] First-person point-of-view wide shot at eye height, steady forward walking motion along the center line of the sky-bridge. Within the first second, the unseen man whose eyes we are looking through, <Subject 1> (S1), says off-screen in a tired, quiet older male voice, <d>[Chinese] 东西交出去了。明天，全部公开。</d> His left hand in the camel wool sleeve holds a slim black phone on speaker at the bottom center of the frame. Floor-to-ceiling glass panels in thin black steel frames slide past on both sides, the white LED strips glow along the base of the walls, and the city grid forty floors below glitters, every light sharp. The walk stays calm and even. The shot ends with the hand lowering the phone out of frame as the walk slows.\n\noverall_soundscape:\nHis own measured footsteps on polished stone, the faint electrical hum of the LED strips, a soft wind pressure against the glass, a distant city murmur far below.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s01_02",
+    "scene": "S01",
+    "act": 1,
+    "beat": 2,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/cheng_face.png",
+      "assets/echo/refs/cheng.png",
+      "assets/echo/refs/loc_skybridge.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "回放：程牧停步，玻璃里映出他的脸；身后传来「两步、一停、一敲」的脚步声（手杖母题第一次）",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>, with a thin lined face, short cropped white hair, round black-framed glasses, and a dark-navy turtleneck under a long camel-colored wool overcoat.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, <Subject 1> stops on the sky-bridge; his reflection in the dark glass shows him listening to uneven footsteps behind him.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, white hair, round black glasses, turtleneck and camel overcoat stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. The white LED strip lights his reflected face from below; the city lights behind the glass are pin-sharp.\n[Shot 1] Medium close-up, first-person view looking straight into a dark glass panel, static. The glass works as a mirror: <Subject 1>'s reflection fills the center of the frame, his face sharp and clear, the glittering city visible through the glass behind it. He has just stopped walking. Off-screen behind him, uneven footsteps approach on the stone floor: two steps, a pause, then the hard tap of a cane tip. His eyes slide sideways toward the sound and his jaw tightens. The shot ends with his reflection perfectly still, eyes turned toward the sound behind him.\n\noverall_soundscape:\nNear silence on the bridge, then an uneven rhythm on stone: step, step, a pause, then the hard tap of a cane tip, repeated once, closer; his breath catching in his throat.\n\nnon_diegetic_music: N/A",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>, with a thin lined face, short cropped white hair, round black-framed glasses, and a dark-navy turtleneck under a long camel-colored wool overcoat.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, <Subject 1> stops on the sky-bridge; his reflection in the dark glass shows him listening to uneven footsteps behind him.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, white hair, round black glasses, turtleneck and camel overcoat stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. The white LED strip lights his reflected face from below; the city lights behind the glass are pin-sharp.\n[Shot 1] medium shot, first-person view looking straight into a dark glass panel, static. The glass works as a mirror: <Subject 1>'s reflection fills the center of the frame, his face sharp and clear, the glittering city visible through the glass behind it. He has just stopped walking. Off-screen behind him, uneven footsteps approach on the stone floor: two steps, a pause, then the hard tap of a cane tip. His eyes slide sideways toward the sound and his jaw tightens. The shot ends with his reflection perfectly still, eyes turned toward the sound behind him.\n\noverall_soundscape:\nNear silence on the bridge, then an uneven rhythm on stone: step, step, a pause, then the hard tap of a cane tip, repeated once, closer; his breath catching in his throat.\n\nnon_diegetic_music: N/A. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.",
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s01_02.png",
+    "keyframe_prompt": "Create ONE photoreal live-action opening keyframe, no montage or text. subject_definitions:\n<Subject 1> is the older man in <Picture 1> and <Picture 2>, with a thin lined face, short cropped white hair, round black-framed glasses, and a dark-navy turtleneck under a long camel-colored wool overcoat.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, <Subject 1> stops on the sky-bridge; his reflection in the dark glass shows him listening to uneven footsteps behind him.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, white hair, round black glasses, turtleneck and camel overcoat stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. The white LED strip lights his reflected face from below; the city lights behind the glass are pin-sharp.\n[Shot 1] medium shot, first-person view looking straight into a dark glass panel, static. The glass works as a mirror: <Subject 1>'s reflection fills the center of the frame, his face sharp and clear, the glittering city visible through the glass behind it. He has just stopped walking. Off-screen behind him, uneven footsteps approach on the stone floor: two steps, a pause, then the hard tap of a cane tip. His eyes slide sideways toward the sound and his jaw tightens. The shot ends with his reflection perfectly still, eyes turned toward the sound behind him.\n\noverall_soundscape:\nNear silence on the bridge, then an uneven rhythm on stone: step, step, a pause, then the hard tap of a cane tip, repeated once, closer; his breath catching in his throat.\n\nnon_diegetic_music: N/A. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nFRAMING OVERRIDE: medium shot, waist-up if a person is visible; show torso, both shoulders and substantial surrounding set. Retain the original action, identity, location and props. For object inserts show the object and surrounding context, do not introduce faces. locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nEach specified subject appears exactly once; face and body references of a character represent ONE person. No clones or additional people. Each visible person has exactly two arms and two hands, naturally attached. Preserve single-subject shots as single-subject; location images supply architecture only.\nContinuity: match the lighting, colour grade, time of day and set dressing of the last reference image; same location. The last reference supplies lighting and set only, never copy its people or framing. Compose inside the central 1344:768 region; no text, subtitles or watermark.\nCORRECTION: camera is farther away. Show the entire torso down to the waist for MS, and down to mid-chest for MCU. Both shoulder edges fully inside the frame. Head occupies at most 30 percent of image height. Do not crop at the shoulders. Preserve original facial identity."
+  },
+  {
+    "id": "ec_s01_03",
+    "scene": "S01",
+    "act": 1,
+    "beat": 3,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/loc_skybridge.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "回放：主观镜头转身，天桥尽头穿炭灰色风衣的人走进灯光——是沈砚，面无表情（她的步伐平稳，与声音的节奏对不上）",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, the viewer turns and sees <Subject 1> walking toward the camera along the sky-bridge, expressionless.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, silver implant ring, charcoal trench coat and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. The LED strips throw clean white light up across her coat as she approaches.\n[Shot 1] Medium shot, first-person view at eye level; the camera turns from the glass to face down the length of the sky-bridge, then holds steady. At the far end, a figure in a charcoal-grey trench coat walks toward the camera along the center line. As she steps into the white LED light her face becomes fully visible and sharp: <Subject 1>, expressionless, eyes fixed on the camera, her ponytail tight. She walks with a smooth, even stride, hands at her sides. The shot ends with her stopping two meters from the camera, framed from the waist up in the center of the frame.\n\noverall_soundscape:\nFootsteps that do not match her smooth stride: step, step, a pause, then the hard tap of a cane tip; the hum of the LED strips; wind pressing on the glass.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s01_04",
+    "scene": "S01",
+    "act": 1,
+    "beat": 4,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_skybridge.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "回放：沈砚的脸近在眼前，双唇紧闭不开口；程牧在画外说「是你……」",
+    "dialogue": [
+      {
+        "who": "CHENG",
+        "text": "是你……"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, <Subject 1>'s silent, expressionless face fills the view while the unseen viewer speaks off-screen.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, dark eyes, ponytail, silver implant ring and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. White LED light from below sharpens her cheekbones; the city glitters behind her through the glass.\n[Shot 1] Close-up, first-person view at eye level, static. Within the first second, the unseen man whose eyes we are looking through (S1) says off-screen in a hoarse, stunned older male voice, <d>[Chinese] 是你……</d> <Subject 1>'s face fills the center of the frame; her lips stay pressed shut and she does not speak. Her dark eyes are flat and unblinking, every eyelash and skin pore crisp. The shot ends with her chin lifting very slightly.\n\noverall_soundscape:\nA hoarse breath behind the words, the hum of the LED strips, wind against the glass, a faint electronic flicker at the frame edges.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s01_05",
+    "scene": "S01",
+    "act": 1,
+    "beat": 5,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/loc_skybridge.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "回放：她双手猛推向镜头，画面后仰撞上玻璃，裂纹炸开",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, <Subject 1> shoves the viewer backward into a glass panel, which cracks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, charcoal trench coat and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. Clean white LED light; the cracking glass catches the city lights in sharp lines.\n[Shot 1] Medium close-up, first-person view, handheld. <Subject 1> stands close in front of the camera. She plants both hands flat against the viewer's chest at the bottom of the frame and shoves hard. The view lurches backward and slams against a glass panel; a white crack spiders outward across the glass at the edges of the frame. The shot ends with her face sharp in the center, still expressionless, as the view tilts back.\n\noverall_soundscape:\nA sharp exhale, a heavy thud against glass, a loud splintering crack spreading, the wind suddenly louder.\n\nnon_diegetic_music: N/A",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, <Subject 1> shoves the viewer backward into a glass panel, which cracks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, charcoal trench coat and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. Clean white LED light; the cracking glass catches the city lights in sharp lines.\n[Shot 1] medium shot, first-person view, fixed camera at the glass panel. <Subject 1> stands close in front of the camera. She plants both hands flat against the viewer's chest at the bottom of the frame and shoves hard. The shove lands with a heavy impact against the glass panel; a white crack spiders outward across the glass at the edges of the frame. The shot ends with her face sharp in the center, still expressionless, with the camera remaining fixed.\n\noverall_soundscape:\nA sharp exhale, a heavy thud against glass, a loud splintering crack spreading, the wind suddenly louder.\n\nnon_diegetic_music: N/A. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.",
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s01_05.png",
+    "keyframe_prompt": "Create ONE photoreal live-action opening keyframe, no montage or text. subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 3> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n\nsummary:\n[reference generation] In a memory replay, <Subject 1> shoves the viewer backward into a glass panel, which cracks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, charcoal trench coat and white collar stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. Clean white LED light; the cracking glass catches the city lights in sharp lines.\n[Shot 1] medium shot, first-person view, handheld. <Subject 1> stands close in front of the camera. She plants both hands flat against the viewer's chest at the bottom of the frame and shoves hard. The view lurches backward and slams against a glass panel; a white crack spiders outward across the glass at the edges of the frame. The shot ends with her face sharp in the center, still expressionless, as the view tilts back.\n\noverall_soundscape:\nA sharp exhale, a heavy thud against glass, a loud splintering crack spreading, the wind suddenly louder.\n\nnon_diegetic_music: N/A. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nFRAMING OVERRIDE: medium shot, waist-up if a person is visible; show torso, both shoulders and substantial surrounding set. Retain the original action, identity, location and props. For object inserts show the object and surrounding context, do not introduce faces. locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nEach specified subject appears exactly once; face and body references of a character represent ONE person. No clones or additional people. Each visible person has exactly two arms and two hands, naturally attached. Preserve single-subject shots as single-subject; location images supply architecture only.\nContinuity: match the lighting, colour grade, time of day and set dressing of the last reference image; same location. The last reference supplies lighting and set only, never copy its people or framing. Compose inside the central 1344:768 region; no text, subtitles or watermark."
+  },
+  {
+    "id": "ec_s01_06",
+    "scene": "S01",
+    "act": 1,
+    "beat": 6,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/loc_skybridge.png",
+      "assets/echo/refs/loc_city_night.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "回放：主观坠落，玻璃碎裂，天桥远去，城市扑面而来，白闪",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], an enclosed glass sky-bridge forty floors up at night, with clear glass panels in thin black steel frames, a polished dark stone floor and white LED strip lights along the base of the walls.\n<Picture 2> is the reference for the city below, a clean modern coastal city at night with crisp white streetlights and lit glass towers.\n\nsummary:\n[reference generation] In a memory replay, the viewer falls backward out of the sky-bridge toward the city, ending in a white flash.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n<Picture 2> ([Shot 1] city below): partially_preserved - same city lights and towers; the view is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Memory replay look: a slightly cool cyan grade with a thin flickering horizontal scanline only along the outer edges of the frame; the image itself stays sharp, clean and fully in focus. Night, the bridge lit white from inside, the city lit by crisp streetlights.\n[Shot 1] Wide first-person shot, falling backward. The cracked glass panel bursts into sharp glittering shards; the lit sky-bridge pulls rapidly upward and away against the night sky while the view tumbles backward; the sharp city grid below rushes up, every streetlight crisp even in fast motion. The shot ends in a sudden clean white flash that fills the frame.\n\noverall_soundscape:\nGlass shattering, a rushing roar of wind, the city sound rising fast, then an abrupt high electronic tone and silence at the white flash.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s01_07",
+    "scene": "S01",
+    "act": 1,
+    "beat": 7,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_lab.png"
+    ],
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s01_07.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "实验室：沈砚在读取椅上猛地坐起，扯下银色光环头箍，喘气",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot in a bright clinical memory forensics lab at night under even cool-white ceiling light, a glass display wall with abstract cyan waveforms behind her. medium shot at eye level, static camera. A 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, wearing a charcoal trench coat over a white high-collar shirt, jolts upright in a white reclining readout chair and tears a thin silver halo-ring headset off her head in one motion. She holds it against her chest, gasping hard, her eyes wide and fixed off-screen right. The shot ends with her breathing raggedly, lips parted, the headset trembling in her hand. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: sharp gasps and ragged breathing, the plastic click of the headset, the soft hum of lab equipment, a low electronic tone fading out. No music, no on-screen text.. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.",
+    "keyframe_prompt": "Photoreal live-action thriller OPENING KEYFRAME, landscape 16:9, waist-up medium shot. Exactly ONE woman, Shen, identity identical to first two reference images: East Asian woman, low black ponytail, charcoal trenchcoat, white high collar, small silver implant behind left ear. She is seated upright in the white readout chair in the clinical memory lab of reference 3. A single thin SILVER HALO HEADSET IS WORN ON HER HEAD, encircling her forehead. Her EMPTY right hand starts reaching toward that headset; left empty hand on chair arm. The headset has NOT yet been removed; she is about to remove it in the subsequent video. No ring or headset in either hand or against chest. No second headset or suspended ring. Eyes alarmed, lips parted. Both hands naturally attached; exactly two arms and two hands. Cool-white clinical light, cyan abstract display, crisp deep focus, no readable text or montage. Show entire waist and both shoulders with headroom; locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot. Each subject exactly once. The last reference is continuity only: match the lighting, colour grade, time of day and set dressing of the last reference image; same location. Preserve the clinical lab architecture and single woman specified above."
+  },
+  {
+    "id": "ec_s01_08",
+    "scene": "S01",
+    "act": 1,
+    "beat": 8,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_lab.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "OTS",
+    "summary_zh": "过沈砚的肩拍：陆时野站在玻璃门口，「回放里推他的人……是你。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "回放里推他的人……是你。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>, with short black hair greying at the temples, a short trimmed beard with grey flecks, tired kind eyes, and a worn dark-brown leather jacket over a navy knit sweater.\n<Subject 2> is the woman in <Picture 3>, seen from behind: the back of her low black ponytail and the shoulder of her charcoal-grey trench coat.\n<Picture 4> is the location reference for [Shot 1], a bright clinical memory forensics lab with white walls, even cool-white ceiling light, a white reclining readout chair with a silver halo-ring headset and a transparent glass display wall.\n\nsummary:\n[reference generation] Over <Subject 2>'s shoulder, <Subject 1> stands in the lab doorway and tells her that the person in the replay is her.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Subject 2> (appears in [Shot 1]): partially_preserved - only hair, back of head, shoulders and clothing are visible; the face is NOT visible in this shot\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Even cool-white ceiling light on both of them; cyan glow from the display wall on the side of his face.\n[Shot 1] Over-the-shoulder medium shot, eye level, static. Within the first second, <Subject 1> (S1) says in a low, rough, even voice, <d>[Chinese] 回放里推他的人……是你。</d> <Subject 2>'s shoulder and the back of her ponytail fill the left foreground, sharp and in focus, as she sits in the white readout chair. <Subject 1> stands in the open sliding glass door on the right, arms folded over his leather jacket, his tired eyes fixed on her. After the line he uncrosses his arms and takes one slow step into the lab. The shot ends with him standing still, waiting for her answer.\n<Subject 2> is seen strictly from behind: the back of the head and hair only, no face, no eyes, no glasses visible on the back of the head; exactly one <Subject 2> in the frame.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nHis quiet, rough voice in a hard-surfaced room, the soft hiss of the sliding door rail, the lab equipment hum, her uneven breathing.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s01_09",
+    "scene": "S01",
+    "act": 1,
+    "beat": 9,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_lab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s01_09.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "沈砚近景反打，脸色发白：「不可能。昨晚我在家。」",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "不可能。昨晚我在家。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a bright clinical memory forensics lab at night under even cool-white ceiling light. Close-up at eye level, static camera, she sits slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"不可能。昨晚我在家。\" Her lips move in sync with each syllable, her voice low and controlled but thin. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes, a thin silver implant ring behind her left ear, and a charcoal trench coat over a white high-collar shirt, her face pale. After the line she shakes her head once, a small, certain movement. The shot ends with her holding his gaze off-screen right, lips pressed together. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her low, controlled female voice speaking the Mandarin line, a shaky breath, the hum of the lab. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s01_10",
+    "scene": "S01",
+    "act": 1,
+    "beat": 10,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_lab.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s01_10.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野平静交代死者身份：「程牧，镜川联合创始人。午夜坠楼。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "程牧，镜川联合创始人。午夜坠楼。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a bright clinical memory forensics lab at night under even cool-white ceiling light, glass partitions behind him. Medium close-up at eye level, static camera, he stands slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"程牧，镜川联合创始人。午夜坠楼。\" His lips move in sync with each syllable, his voice low, rough and matter-of-fact. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater. After the line he lowers his eyes to a tablet in his hand, then looks back up at her. The shot ends with him watching her steadily. Deep focus with crisp skin pores, individual hair strands and leather texture; the background is equally sharp; no haze, no bokeh. Audio: his low, rough male voice speaking the Mandarin line, the faint tap of a finger on glass, the hum of the lab. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s01_11",
+    "scene": "S01",
+    "act": 1,
+    "beat": 11,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/loc_lab.png"
+    ],
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s01_11.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "沈砚盯着画外的屏幕：「我只在新闻上……见过他。」（她真的不记得）",
+    "dialogue": [
+      {
+        "who": "SHEN",
+        "text": "我只在新闻上……见过他。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a bright clinical memory forensics lab at night, even cool-white ceiling light with cyan light from an off-screen display falling across her face. medium shot at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"我只在新闻上……见过他。\" Her lips move in sync with each syllable and she pauses briefly in the middle, unsure. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, in a charcoal trench coat over a white high-collar shirt. After the line her brow draws together as she stares harder at the screen off-screen right. The shot ends with her eyes narrowed and searching. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quiet, uncertain female voice speaking the Mandarin line, a soft electronic chirp from the display, the hum of the lab. No music, no on-screen text.. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.",
+    "keyframe_prompt": "Create ONE photoreal live-action opening keyframe, no montage or text. A photoreal live-action thriller shot in a bright clinical memory forensics lab at night, even cool-white ceiling light with cyan light from an off-screen display falling across her face. medium shot at eye level, static camera, she is slightly left of center looking toward frame right. Within the first second she says in Mandarin Chinese, \"我只在新闻上……见过他。\" Her lips move in sync with each syllable and she pauses briefly in the middle, unsure. She is a 34-year-old East Asian woman with a low tight black ponytail, calm dark eyes and a thin silver implant ring behind her left ear, in a charcoal trench coat over a white high-collar shirt. After the line her brow draws together as she stares harder at the screen off-screen right. The shot ends with her eyes narrowed and searching. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: her quiet, uncertain female voice speaking the Mandarin line, a soft electronic chirp from the display, the hum of the lab. No music, no on-screen text.. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nFRAMING OVERRIDE: medium shot, waist-up if a person is visible; show torso, both shoulders and substantial surrounding set. Retain the original action, identity, location and props. For object inserts show the object and surrounding context, do not introduce faces. locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nEach specified subject appears exactly once; face and body references of a character represent ONE person. No clones or additional people. Each visible person has exactly two arms and two hands, naturally attached. Preserve single-subject shots as single-subject; location images supply architecture only.\nContinuity: match the lighting, colour grade, time of day and set dressing of the last reference image; same location. The last reference supplies lighting and set only, never copy its people or framing. Compose inside the central 1344:768 region; no text, subtitles or watermark.\nCORRECTION: camera is farther away. Show the entire torso down to the waist for MS, and down to mid-chest for MCU. Both shoulder edges fully inside the frame. Head occupies at most 30 percent of image height. Do not crop at the shoulders. Preserve original facial identity."
+  },
+  {
+    "id": "ec_s01_12",
+    "scene": "S01",
+    "act": 1,
+    "beat": 12,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/shen.png",
+      "assets/echo/refs/shen_face.png",
+      "assets/echo/refs/loc_lab.png"
+    ],
+    "seconds": 8,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "片名镜（8 秒）：沈砚走到显示墙前，墙上定格着回放里她自己的脸，她显得很小（片名后期叠加）",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>, with a short low tight black ponytail, calm piercing dark eyes, a thin silver implant ring behind her left ear, and a charcoal-grey trench coat over a crisp white high-collar shirt.\n<Picture 3> is the location reference for [Shot 1], a bright clinical memory forensics lab with white walls, even cool-white ceiling light, a white reclining readout chair with a silver halo-ring headset and a transparent glass display wall.\n\nsummary:\n[reference generation] <Subject 1> walks up to the lab's glass display wall, which shows a giant frozen image of her own expressionless face.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, ponytail, charcoal trench coat and white collar stay identical, both in person and in the image on the display.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Even cool-white ceiling light; the display wall glows cyan around the frozen image.\n[Shot 1] Wide shot, eye level, very slow push-in. The large transparent display wall at the center of the lab shows a giant frozen close-up of <Subject 1>'s own expressionless face, a thin cyan scanline along its edges. <Subject 1> rises from the white readout chair at frame left and walks slowly to stand in front of the display, small against her own giant face. The shot ends with her motionless, looking up at the image, the whole lab sharp from the chair in the foreground to the display wall.\n\noverall_soundscape:\nHer slow footsteps on the epoxy floor, the low steady hum of the display wall, a faint electronic flicker, the lab air system.\n\nnon_diegetic_music: N/A"
+  }
 ]

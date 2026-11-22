@@ -45,6 +45,19 @@ def log(*a):
         f.write(line + "\n")
 
 
+def load_env(path):
+    """Minimal .env reader (KEY=VALUE, # comments). Real environment variables win."""
+    import os
+    vals = {}
+    if path.is_file():
+        for line in path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                k, v = line.split("=", 1)
+                vals[k.strip()] = v.strip().strip("'\"")
+    return {k: os.environ.get(k) or v for k, v in vals.items()}
+
+
 def all_shots():
     items = []
     for film in FILMS:
@@ -191,6 +204,11 @@ class H(BaseHTTPRequestHandler):
             return self._ok(f.read_bytes(), "image/png")
         if path == "/lab/secret":    # 只在内存里的 HF 令牌，供 Colab 下载授权模型
             return self._ok(SECRETS.get("hf", "").encode(), "text/plain")
+        if path == "/lab/src":       # 本机下好的原片（如 B 站片段），云机直连拿不到时经此取；仅限 sources/ 下
+            f = (ROOT / q.get("p", [""])[0]).resolve()
+            if (ROOT / "sources").resolve() not in f.parents or not f.is_file():
+                return self._ok(b"not found", "text/plain", 404)
+            return self._ok(f.read_bytes(), "video/mp4")
         if path.startswith("/lab/file/"):
             f = (HERE / "lab" / path[len("/lab/file/"):]).resolve()
             if HERE / "lab" not in f.parents or not f.is_file():
@@ -280,6 +298,10 @@ def main():
     else:
         TOKEN = tf.read_text().strip() if args.reuse_token and tf.exists() else secrets.token_urlsafe(24)
         tf.write_text(TOKEN)
+    hf = load_env(ROOT / ".env").get("HF_TOKEN", "")
+    if hf:
+        SECRETS["hf"] = hf
+        log("lab secret loaded from .env (memory only)")
     log("farm server on", args.port)
     ThreadingHTTPServer(("127.0.0.1", args.port), H).serve_forever()
 

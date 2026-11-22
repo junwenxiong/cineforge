@@ -1,404 +1,409 @@
 [
- {
-  "id": "ec_s11_01",
-  "scene": "S11",
-  "act": 3,
-  "beat": 1,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/lu_face.png",
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_car.png",
-   "assets/echo/refs/loc_city_night.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "WS",
-  "summary_zh": "天亮前，刑侦支队门口，陆时野独自坐在车里，仪表盘的光照在他脸上",
-  "dialogue": [],
-  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Picture 3> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n<Picture 4> is the reference for the street outside the car: a clean modern coastal city at night seen from street level, wide dry streets, crisp white streetlights, an elevated highway, glass towers with lit windows, a clear starry sky.\n\nsummary:\n[reference generation] <Subject 1> sits alone in his parked car outside the police bureau before dawn.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Wide shot from outside the car through the clean windshield, eye level, static. The older dark-grey sedan is parked at the curb outside a modern police bureau entrance, the street dry and empty. <Subject 1> sits alone in the driver's seat on the right of frame, the soft amber dashboard glow lighting his tired face, hands resting on the steering wheel. He stares ahead without moving, then rubs his eyes once and lets his hand fall back to the wheel. The shot ends with him motionless behind the wheel.\n\noverall_soundscape:\nThe quiet idle of the engine, a siren far off in the city, the tick of the cooling hood, a light wind along the dry street.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s11_02",
-  "scene": "S11",
-  "act": 3,
-  "beat": 2,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_car.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "INSERT",
-  "summary_zh": "手机在中控台上震动，屏幕上是来电图标，没有文字",
-  "dialogue": [],
-  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1>, seen only as his hand and the cuff of his worn dark-brown leather jacket.\n<Picture 2> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n\nsummary:\n[reference generation] A phone vibrates on the car's center console and <Subject 1>'s hand reaches for it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Insert close-up looking down at the center console, static. A slim black phone lies face-up on the console, vibrating; its screen shows only a pulsing abstract green call icon, no text. The amber dashboard glow and a white streetlight glint off its glass, and the phone buzzes a few millimeters across the console. The shot ends with <Subject 1>'s hand in the leather sleeve reaching into frame toward it.\n\noverall_soundscape:\nThe rattling buzz of the phone on hard plastic, the engine idle, his weary exhale.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s11_03",
-  "scene": "S11",
-  "act": 3,
-  "beat": 3,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/xu_face.png",
-   "assets/echo/refs/xu.png",
-   "assets/echo/refs/loc_studio.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s11_03.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "MCU",
-  "summary_zh": "录音棚：许棠举着手机，另一只手按在调音台上。XU: 陆警官，我爸：「陆警官，我爸的留言里藏着一段数据。」",
-  "dialogue": [
-   {
-    "who": "XU",
-    "text": "陆警官，我爸的留言里藏着一段数据。"
-   }
-  ],
-  "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio at night, warm bright desk lamps, wooden acoustic diffuser panels and a mixing console behind her. Medium close-up at eye level, static camera, she is slightly right of center looking toward frame left. Within the first second she says in Mandarin Chinese, \"陆警官，我爸的留言里藏着一段数据。\" Her lips move in sync with each syllable, her voice fast, urgent, a little breathless. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck, a phone held to her ear, her other hand on the faders of the console. After the line she leans closer to the console, eyes on a screen off-screen left. The shot ends with her eyes fixed on the screen, phone pressed to her ear. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, the low hiss of the monitor speakers. No music, no on-screen text."
- },
- {
-  "id": "ec_s11_04",
-  "scene": "S11",
-  "act": 3,
-  "beat": 4,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/lu_face.png",
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_car.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s11_04.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "MCU",
-  "summary_zh": "车里，陆时野接起电话。LU: 半夜不睡，就：「半夜不睡，就为了这个？」",
-  "dialogue": [
-   {
-    "who": "LU",
-    "text": "半夜不睡，就为了这个？"
-   }
-  ],
-  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked outside a police bureau before dawn, a soft amber dashboard glow on the face and white streetlight falling through the clean windows. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"半夜不睡，就为了这个？\" His lips move in sync with each syllable, his voice a hoarse, tired grumble. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, sitting in the driver's seat with a phone at his ear. After the line he rubs his forehead with his free hand. The shot ends with him slumped in the driver's seat, listening. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the quiet idle of the engine. No music, no on-screen text."
- },
- {
-  "id": "ec_s11_05",
-  "scene": "S11",
-  "act": 3,
-  "beat": 5,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/xu_face.png",
-   "assets/echo/refs/xu.png",
-   "assets/echo/refs/loc_studio.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s11_05.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "MCU",
-  "summary_zh": "许棠。XU: 你听完再挂：「你听完再挂。」",
-  "dialogue": [
-   {
-    "who": "XU",
-    "text": "你听完再挂。"
-   }
-  ],
-  "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio at night, warm bright desk lamps, wooden acoustic diffuser panels and a mixing console behind her. Medium close-up at eye level, static camera, she is slightly right of center looking toward frame left. Within the first second she says in Mandarin Chinese, \"你听完再挂。\" Her lips move in sync with each syllable, her voice sharp and clipped. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck, a phone held to her ear. After the line she reaches toward the console without taking her eyes off the screen. The shot ends with her hand on a fader, eyes on the screen. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, the low hiss of the monitor speakers. No music, no on-screen text."
- },
- {
-  "id": "ec_s11_06",
-  "scene": "S11",
-  "act": 3,
-  "beat": 6,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/xu.png",
-   "assets/echo/refs/loc_studio.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "INSERT",
-  "summary_zh": "许棠推起调音台的推子，波形在屏幕上展开",
-  "dialogue": [],
-  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1>, seen only as her hand and the cuff of her oversized mustard-yellow hoodie sleeve.\n<Picture 2> is the location reference for [Shot 1]: a small independent sound studio inside an old apartment block at night, walls of wooden acoustic diffuser panels and grey foam, a large mixing console with faders, two monitor speakers on stands, a vinyl record shelf, warm bright desk lamps, coiled cables, a door padded with acoustic foam.\n\nsummary:\n[reference generation] <Subject 1>'s hand pushes a fader up and a waveform with hidden data unfolds on a screen.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm bright desk lamps light her face; the wooden diffuser panels behind her are sharp; the faders on the mixing console catch the light.\n[Shot 1] Insert close-up of the mixing console, static. <Subject 1>'s hand in the mustard-yellow sleeve pushes a fader smoothly upward. On a small screen above the console, an abstract cyan waveform unfolds from left to right with a dense hidden band of data pulsing inside it, no text or numbers. The shot ends with the fader at the top and the waveform spread across the whole screen.\n\noverall_soundscape:\nThe smooth slide of a fader, a low hiss rising in the monitor speakers, a faint pattern of digital chirps beneath it, the hum of the desk lamps.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s11_07",
-  "scene": "S11",
-  "act": 3,
-  "beat": 7,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/lu_face.png",
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_car.png"
-  ],
-  "seconds": 8,
-  "resolution": "720p",
-  "shot_size": "MCU",
-  "summary_zh": "陆时野听着电话，他不开口。CHENG(VO): 沈：「沈砚，从现在起，我的记忆实时同步到你的残响区。」",
-  "dialogue": [
-   {
-    "who": "CHENG",
-    "text": "沈砚，从现在起，我的记忆实时同步到你的残响区。"
-   }
-  ],
-  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is an unseen older man, heard only as a recorded message playing through a phone speaker; there is no picture of him and he never appears on screen.\n<Picture 3> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n\nsummary:\n[reference generation] <Subject 1> listens in silence as the hidden message from <Subject 2> plays through his phone.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Medium close-up from the front of the cabin, eye level, static. Within the first second, the recorded voice of <Subject 2> (S2) comes from the phone at <Subject 1>'s ear in a tired, gentle older male voice, <d>[Chinese] 沈砚，从现在起，我的记忆实时同步到你的残响区。</d> <Subject 1> sits in the driver's seat holding the phone to his ear; his lips stay closed; he does not speak; the voice comes from the phone. As the message plays, his tired eyes slowly lift from the steering wheel and stare ahead through the windshield, his hand tightening on the phone. The shot ends with him completely still, listening.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe recorded older male voice with a faint phone-speaker crackle, the engine idle, his breathing slowing to nothing.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s11_08",
-  "scene": "S11",
-  "act": 3,
-  "beat": 8,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/lu_face.png",
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_car.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "CU",
-  "summary_zh": "陆时野脸色变了，他不开口。CHENG(VO：「顾言之刻写过很多回放，包括韩铮案。」",
-  "dialogue": [
-   {
-    "who": "CHENG",
-    "text": "顾言之刻写过很多回放，包括韩铮案。"
-   }
-  ],
-  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is an unseen older man, heard only as a recorded message playing through a phone speaker; there is no picture of him and he never appears on screen.\n<Picture 3> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n\nsummary:\n[reference generation] <Subject 1>'s face changes as <Subject 2>'s recorded voice names the Han Zheng case.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Close-up from the front of the cabin, eye level, static. Within the first second, the recorded voice of <Subject 2> (S2) continues from the phone in a tired, gentle older male voice, <d>[Chinese] 顾言之刻写过很多回放，包括韩铮案。</d> <Subject 1>'s lips stay closed; he does not speak; the voice comes from the phone. At the name, the color drains from his face, his eyes widen and his breath stops. The shot ends with his face frozen, eyes glistening in the amber dashboard light.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe recorded voice through the phone speaker, his breath catching, the engine idle, a car passing far off.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s11_09",
-  "scene": "S11",
-  "act": 3,
-  "beat": 9,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/xu_face.png",
-   "assets/echo/refs/xu.png",
-   "assets/echo/refs/loc_studio.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "MCU",
-  "summary_zh": "许棠盯着波形，她不开口。CHENG(VO)：「完整读取会冲掉残响区。别让任何人读她。」",
-  "dialogue": [
-   {
-    "who": "CHENG",
-    "text": "完整读取会冲掉残响区。别让任何人读她。"
-   }
-  ],
-  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Subject 2> is an unseen older man, heard only as a recorded message playing through a phone speaker; there is no picture of him and he never appears on screen.\n<Picture 3> is the location reference for [Shot 1]: a small independent sound studio inside an old apartment block at night, walls of wooden acoustic diffuser panels and grey foam, a large mixing console with faders, two monitor speakers on stands, a vinyl record shelf, warm bright desk lamps, coiled cables, a door padded with acoustic foam.\n\nsummary:\n[reference generation] <Subject 1> stares at the waveform in silence as her father's recorded voice warns against a full readout.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm bright desk lamps light her face; the wooden diffuser panels behind her are sharp; the faders on the mixing console catch the light.\n[Shot 1] Medium close-up, eye level, static. Within the first second, the recorded voice of <Subject 2> (S2) plays from the monitor speakers in a tired, gentle older male voice, <d>[Chinese] 完整读取会冲掉残响区。别让任何人读她。</d> <Subject 1> sits at the mixing console with her phone in one hand, staring at the waveform on a screen off-screen left; her lips stay closed; she does not speak; the voice comes from the speakers. Her eyes fill as she hears her father's voice, but she does not look away. The shot ends with her pressing her free hand over her mouth.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe recorded older male voice from the monitor speakers, a low speaker hiss, her unsteady breath, the hum of the desk lamps.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s11_10",
-  "scene": "S11",
-  "act": 3,
-  "beat": 10,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/lu_face.png",
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_car.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s11_10.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "CU",
-  "summary_zh": "陆时野闭上眼。反应镜",
-  "dialogue": [],
-  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked outside a police bureau before dawn, a soft amber dashboard glow on the face and white streetlight falling through the clean windows. Close-up at eye level, static camera, he is slightly right of center looking toward frame left. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, sitting in the driver's seat with a phone at his ear. He closes his eyes slowly, his head tipping back against the headrest, the phone still at his ear; his jaw clenches under the beard. The shot ends with his eyes shut and his jaw clenched. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: The engine idle, the faint hiss of an open phone line, his long unsteady exhale. No music, no on-screen text."
- },
- {
-  "id": "ec_s11_11",
-  "scene": "S11",
-  "act": 3,
-  "beat": 11,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/lu_face.png",
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_car.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s11_11.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "MCU",
-  "summary_zh": "陆时野。LU: 顾言之要做的：「顾言之要做的，就是完整读取。」",
-  "dialogue": [
-   {
-    "who": "LU",
-    "text": "顾言之要做的，就是完整读取。"
-   }
-  ],
-  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked outside a police bureau before dawn, a soft amber dashboard glow on the face and white streetlight falling through the clean windows. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"顾言之要做的，就是完整读取。\" His lips move in sync with each syllable, his voice low and slow, a realization. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, sitting in the driver's seat with a phone at his ear. After the line he opens his eyes and stares through the windshield. The shot ends with his eyes fixed ahead, hard. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the quiet idle of the engine. No music, no on-screen text."
- },
- {
-  "id": "ec_s11_12",
-  "scene": "S11",
-  "act": 3,
-  "beat": 12,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_car.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "INSERT",
-  "summary_zh": "陆时野一拳砸在方向盘上",
-  "dialogue": [],
-  "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1>, seen only as his fist and the cuff of his worn dark-brown leather jacket.\n<Picture 2> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n\nsummary:\n[reference generation] <Subject 1>'s fist slams down on the steering wheel.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Insert close-up of the steering wheel, static. <Subject 1>'s fist in the worn leather sleeve slams down onto the top of the steering wheel once, hard; the wheel shudders and the amber dashboard lights flicker. The shot ends with the fist resting on the wheel, knuckles white.\n\noverall_soundscape:\nA heavy thump on the wheel, a short blare of the horn cut off, his harsh exhale, the engine idle.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s11_13",
-  "scene": "S11",
-  "act": 3,
-  "beat": 13,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/lu_face.png",
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_car.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s11_13.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "CU",
-  "summary_zh": "陆时野。LU: 是我亲手把：「是我亲手把她交出去的。」",
-  "dialogue": [
-   {
-    "who": "LU",
-    "text": "是我亲手把她交出去的。"
-   }
-  ],
-  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked outside a police bureau before dawn, a soft amber dashboard glow on the face and white streetlight falling through the clean windows. Close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"是我亲手把她交出去的。\" His lips move in sync with each syllable, his voice a hoarse whisper. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, sitting in the driver's seat. After the line he presses his knuckles against his mouth. The shot ends with his knuckles against his lips, eyes wet. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the quiet idle of the engine. No music, no on-screen text."
- },
- {
-  "id": "ec_s11_14",
-  "scene": "S11",
-  "act": 3,
-  "beat": 14,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/xu_face.png",
-   "assets/echo/refs/xu.png",
-   "assets/echo/refs/loc_studio.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s11_14.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "MCU",
-  "summary_zh": "许棠。XU: 那就亲手把她：「那就亲手把她带回来。」",
-  "dialogue": [
-   {
-    "who": "XU",
-    "text": "那就亲手把她带回来。"
-   }
-  ],
-  "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio at night, warm bright desk lamps, wooden acoustic diffuser panels and a mixing console behind her. Medium close-up at eye level, static camera, she is slightly right of center looking toward frame left. Within the first second she says in Mandarin Chinese, \"那就亲手把她带回来。\" Her lips move in sync with each syllable, her voice fierce and quick. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck, a phone held to her ear. After the line she slaps her hand flat on the console and pushes her chair back. The shot ends with her rising from the console, phone at her ear. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, the low hiss of the monitor speakers. No music, no on-screen text."
- },
- {
-  "id": "ec_s11_15",
-  "scene": "S11",
-  "act": 3,
-  "beat": 15,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/lu_face.png",
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_car.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s11_15.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "MCU",
-  "summary_zh": "陆时野发动汽车。LU: 镜川大厦。你：「镜川大厦。你下楼，我十分钟到。」",
-  "dialogue": [
-   {
-    "who": "LU",
-    "text": "镜川大厦。你下楼，我十分钟到。"
-   }
-  ],
-  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked outside a police bureau before dawn, a soft amber dashboard glow on the face and white streetlight falling through the clean windows. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"镜川大厦。你下楼，我十分钟到。\" His lips move in sync with each syllable, his voice rough and decisive. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, sitting in the driver's seat with a phone at his ear. After the line he drops the phone onto the console and turns the ignition key; the dashboard lights brighten. The shot ends with his hands on the wheel, eyes forward. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the engine roaring to life, the click of the ignition. No music, no on-screen text."
- },
- {
-  "id": "ec_s11_16",
-  "scene": "S11",
-  "act": 3,
-  "beat": 16,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/loc_city_night.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "WS",
-  "summary_zh": "轿车从支队门口急转驶出，车灯划过清晰干燥的街道",
-  "dialogue": [],
-  "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the street outside the police bureau: a clean modern coastal city at night seen from street level, wide dry streets, crisp white streetlights, an elevated highway, glass towers with lit windows, a clear starry sky.\n\nsummary:\n[reference generation] An older dark-grey sedan swings out from the curb outside the police bureau and speeds away down a dry street.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Crisp white streetlights and lit tower windows; the dry street and the starry night sky are sharp and clear.\n[Shot 1] Wide street-level shot, static. The older dark-grey sedan pulls out from the curb in front of the police bureau and swings into a sharp U-turn, its headlights sweeping across the clean, dry street and the glass towers. It accelerates away down the wide empty avenue under crisp white streetlights. The shot ends with its red taillights shrinking toward the elevated highway, every streetlight sharp.\n\noverall_soundscape:\nTires squealing on dry asphalt, the engine revving hard, the sound fading down the empty street, a siren far away.\n\nnon_diegetic_music: N/A"
- },
- {
-  "id": "ec_s11_17",
-  "scene": "S11",
-  "act": 3,
-  "beat": 17,
-  "mode": "keyframe",
-  "engine": "ltx",
-  "refs": [
-   "assets/echo/refs/lu_face.png",
-   "assets/echo/refs/lu.png",
-   "assets/echo/refs/loc_car.png"
-  ],
-  "keyframe": "assets/echo/kf/ec_s11_17.png",
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "CU",
-  "summary_zh": "车里，陆时野看着前方，低声说。LU: 韩铮……对：「韩铮……对不起。」",
-  "dialogue": [
-   {
-    "who": "LU",
-    "text": "韩铮……对不起。"
-   }
-  ],
-  "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving fast through a city at night, a soft amber dashboard glow on his face, white streetlights sweeping across the cabin through a clean windshield. Close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"韩铮……对不起。\" His lips move in sync with each syllable, his voice low and rough, barely audible. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, both hands on the steering wheel. After the words he grips the wheel tighter and keeps his eyes on the road. The shot ends with his eyes on the road and his hands tight on the wheel. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the engine pulling hard and tires on a dry road. No music, no on-screen text."
- },
- {
-  "id": "ec_s11_18",
-  "scene": "S11",
-  "act": 3,
-  "beat": 18,
-  "mode": "reference",
-  "engine": "h3",
-  "refs": [
-   "assets/echo/refs/xu_face.png",
-   "assets/echo/refs/xu.png",
-   "assets/echo/refs/loc_city_night.png"
-  ],
-  "seconds": 6,
-  "resolution": "720p",
-  "shot_size": "WS",
-  "summary_zh": "许棠冲出旧楼，站在路边，远处一对车灯开过来",
-  "dialogue": [],
-  "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Picture 3> is the location reference for [Shot 1], the street outside an old apartment block: a clean modern coastal city at night seen from street level, wide dry streets, crisp white streetlights, an elevated highway, glass towers with lit windows, a clear starry sky.\n\nsummary:\n[reference generation] <Subject 1> bursts out of an old apartment block onto the curb as headlights approach.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Crisp white streetlights and lit tower windows; the dry street and the starry night sky are sharp and clear.\n[Shot 1] Wide street-level shot, static. <Subject 1> bursts out of the doorway of an old apartment block at frame right and runs to the curb of the dry street, the headphones bouncing around her neck. She stops at the edge of the sidewalk, breathing hard, and turns to look down the avenue. Far down the street a pair of headlights speeds toward her under the crisp white streetlights. The shot ends with her standing at the curb, lit by the approaching headlights.\n\noverall_soundscape:\nA metal door banging open, running sneakers on dry pavement, her hard breathing, an engine approaching fast.\n\nnon_diegetic_music: N/A"
- }
+  {
+    "id": "ec_s11_01",
+    "scene": "S11",
+    "act": 3,
+    "beat": 1,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png",
+      "assets/echo/refs/loc_city_night.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "天亮前，刑侦支队门口，陆时野独自坐在车里，仪表盘的光照在他脸上",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Picture 3> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n<Picture 4> is the reference for the street outside the car: a clean modern coastal city at night seen from street level, wide dry streets, crisp white streetlights, an elevated highway, glass towers with lit windows, a clear starry sky.\n\nsummary:\n[reference generation] <Subject 1> sits alone in his parked car outside the police bureau before dawn.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n<Picture 4> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Wide shot from outside the car through the clean windshield, eye level, static. The older dark-grey sedan is parked at the curb outside a modern police bureau entrance, the street dry and empty. <Subject 1> sits alone in the driver's seat on the right of frame, the soft amber dashboard glow lighting his tired face, hands resting on the steering wheel. He stares ahead without moving, then rubs his eyes once and lets his hand fall back to the wheel. The shot ends with him motionless behind the wheel.\n\noverall_soundscape:\nThe quiet idle of the engine, a siren far off in the city, the tick of the cooling hood, a light wind along the dry street.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s11_02",
+    "scene": "S11",
+    "act": 3,
+    "beat": 2,
+    "mode": "reference",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "手机在中控台上震动，屏幕上是来电图标，没有文字",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1>, seen only as his hand and the cuff of his worn dark-brown leather jacket.\n<Picture 2> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n\nsummary:\n[reference generation] A phone vibrates on the car's center console and <Subject 1>'s hand reaches for it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Insert close-up looking down at the center console, static. A slim black phone lies face-up on the console, vibrating; its screen shows only a pulsing abstract green call icon, no text. The amber dashboard glow and a white streetlight glint off its glass, and the phone buzzes a few millimeters across the console. The shot ends with <Subject 1>'s hand in the leather sleeve reaching into frame toward it.\n\noverall_soundscape:\nThe rattling buzz of the phone on hard plastic, the engine idle, his weary exhale.\n\nnon_diegetic_music: N/A",
+    "ltx_prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1>, seen only as his hand and the cuff of his worn dark-brown leather jacket.\n<Picture 2> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n\nsummary:\n[reference generation] A phone vibrates on the car's center console and <Subject 1>'s hand reaches for it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Insert medium shot looking down at the center console, static. A slim black phone lies face-up on the console, vibrating; its screen shows only a pulsing abstract green call icon, no text. The amber dashboard glow and a white streetlight glint off its glass, and the phone buzzes a few millimeters across the console. The shot ends with <Subject 1>'s hand in the leather sleeve reaching into frame toward it.\n\noverall_soundscape:\nThe rattling buzz of the phone on hard plastic, the engine idle, his weary exhale.\n\nnon_diegetic_music: N/A. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.",
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s11_02.png",
+    "keyframe_prompt": "Create ONE photoreal live-action opening keyframe, no montage or text. subject_definitions:\n<Subject 1> is the man in <Picture 1>, seen only as his hand and the cuff of his worn dark-brown leather jacket.\n<Picture 2> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n\nsummary:\n[reference generation] A phone vibrates on the car's center console and <Subject 1>'s hand reaches for it.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Insert medium shot looking down at the center console, static. A slim black phone lies face-up on the console, vibrating; its screen shows only a pulsing abstract green call icon, no text. The amber dashboard glow and a white streetlight glint off its glass, and the phone buzzes a few millimeters across the console. The shot ends with <Subject 1>'s hand in the leather sleeve reaching into frame toward it.\n\noverall_soundscape:\nThe rattling buzz of the phone on hard plastic, the engine idle, his weary exhale.\n\nnon_diegetic_music: N/A. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nFRAMING OVERRIDE: medium shot, waist-up if a person is visible; show torso, both shoulders and substantial surrounding set. Retain the original action, identity, location and props. For object inserts show the object and surrounding context, do not introduce faces. locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nEach specified subject appears exactly once; face and body references of a character represent ONE person. No clones or additional people. Each visible person has exactly two arms and two hands, naturally attached. Preserve single-subject shots as single-subject; location images supply architecture only.\nContinuity: match the lighting, colour grade, time of day and set dressing of the last reference image; same location. The last reference supplies lighting and set only, never copy its people or framing. Compose inside the central 1344:768 region; no text, subtitles or watermark."
+  },
+  {
+    "id": "ec_s11_03",
+    "scene": "S11",
+    "act": 3,
+    "beat": 3,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s11_03.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "录音棚：许棠举着手机，另一只手按在调音台上。XU: 陆警官，我爸：「陆警官，我爸的留言里藏着一段数据。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "陆警官，我爸的留言里藏着一段数据。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio at night, warm bright desk lamps, wooden acoustic diffuser panels and a mixing console behind her. Medium close-up at eye level, static camera, she is slightly right of center looking toward frame left. Within the first second she says in Mandarin Chinese, \"陆警官，我爸的留言里藏着一段数据。\" Her lips move in sync with each syllable, her voice fast, urgent, a little breathless. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck, a phone held to her ear, her other hand on the faders of the console. After the line she leans closer to the console, eyes on a screen off-screen left. The shot ends with her eyes fixed on the screen, phone pressed to her ear. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, the low hiss of the monitor speakers. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s11_04",
+    "scene": "S11",
+    "act": 3,
+    "beat": 4,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s11_04.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "车里，陆时野接起电话。LU: 半夜不睡，就：「半夜不睡，就为了这个？」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "半夜不睡，就为了这个？"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked outside a police bureau before dawn, a soft amber dashboard glow on the face and white streetlight falling through the clean windows. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"半夜不睡，就为了这个？\" His lips move in sync with each syllable, his voice a hoarse, tired grumble. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, sitting in the driver's seat with a phone at his ear. After the line he rubs his forehead with his free hand. The shot ends with him slumped in the driver's seat, listening. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the quiet idle of the engine. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s11_05",
+    "scene": "S11",
+    "act": 3,
+    "beat": 5,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s11_05.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠。XU: 你听完再挂：「你听完再挂。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "你听完再挂。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio at night, warm bright desk lamps, wooden acoustic diffuser panels and a mixing console behind her. Medium close-up at eye level, static camera, she is slightly right of center looking toward frame left. Within the first second she says in Mandarin Chinese, \"你听完再挂。\" Her lips move in sync with each syllable, her voice sharp and clipped. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck, a phone held to her ear. After the line she reaches toward the console without taking her eyes off the screen. The shot ends with her hand on a fader, eyes on the screen. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, the low hiss of the monitor speakers. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s11_06",
+    "scene": "S11",
+    "act": 3,
+    "beat": 6,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "INSERT",
+    "summary_zh": "许棠推起调音台的推子，波形在屏幕上展开",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1>, seen only as her hand and the cuff of her oversized mustard-yellow hoodie sleeve.\n<Picture 2> is the location reference for [Shot 1]: a small independent sound studio inside an old apartment block at night, walls of wooden acoustic diffuser panels and grey foam, a large mixing console with faders, two monitor speakers on stands, a vinyl record shelf, warm bright desk lamps, coiled cables, a door padded with acoustic foam.\n\nsummary:\n[reference generation] <Subject 1>'s hand pushes a fader up and a waveform with hidden data unfolds on a screen.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm bright desk lamps light her face; the wooden diffuser panels behind her are sharp; the faders on the mixing console catch the light.\n[Shot 1] Insert close-up of the mixing console, static. <Subject 1>'s hand in the mustard-yellow sleeve pushes a fader smoothly upward. On a small screen above the console, an abstract cyan waveform unfolds from left to right with a dense hidden band of data pulsing inside it, no text or numbers. The shot ends with the fader at the top and the waveform spread across the whole screen.\n\noverall_soundscape:\nThe smooth slide of a fader, a low hiss rising in the monitor speakers, a faint pattern of digital chirps beneath it, the hum of the desk lamps.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s11_07",
+    "scene": "S11",
+    "act": 3,
+    "beat": 7,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "seconds": 8,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野听着电话，他不开口。CHENG(VO): 沈：「沈砚，从现在起，我的记忆实时同步到你的残响区。」",
+    "dialogue": [
+      {
+        "who": "CHENG",
+        "text": "沈砚，从现在起，我的记忆实时同步到你的残响区。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is an unseen older man, heard only as a recorded message playing through a phone speaker; there is no picture of him and he never appears on screen.\n<Picture 3> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n\nsummary:\n[reference generation] <Subject 1> listens in silence as the hidden message from <Subject 2> plays through his phone.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Medium close-up from the front of the cabin, eye level, static. Within the first second, the recorded voice of <Subject 2> (S2) comes from the phone at <Subject 1>'s ear in a tired, gentle older male voice, <d>[Chinese] 沈砚，从现在起，我的记忆实时同步到你的残响区。</d> <Subject 1> sits in the driver's seat holding the phone to his ear; his lips stay closed; he does not speak; the voice comes from the phone. As the message plays, his tired eyes slowly lift from the steering wheel and stare ahead through the windshield, his hand tightening on the phone. The shot ends with him completely still, listening.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe recorded older male voice with a faint phone-speaker crackle, the engine idle, his breathing slowing to nothing.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s11_08",
+    "scene": "S11",
+    "act": 3,
+    "beat": 8,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "陆时野脸色变了，他不开口。CHENG(VO：「顾言之刻写过很多回放，包括韩铮案。」",
+    "dialogue": [
+      {
+        "who": "CHENG",
+        "text": "顾言之刻写过很多回放，包括韩铮案。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1> and <Picture 2>: a 41-year-old East Asian man police detective, tired kind eyes with crow's feet, short black hair greying at the temples, a short neatly trimmed beard with grey flecks, a worn dark-brown leather jacket over a navy-blue knit sweater, dark jeans, a silver police badge clipped to his belt.\n<Subject 2> is an unseen older man, heard only as a recorded message playing through a phone speaker; there is no picture of him and he never appears on screen.\n<Picture 3> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n\nsummary:\n[reference generation] <Subject 1>'s face changes as <Subject 2>'s recorded voice names the Han Zheng case.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, greying temples, beard, leather jacket and navy sweater stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Close-up from the front of the cabin, eye level, static. Within the first second, the recorded voice of <Subject 2> (S2) continues from the phone in a tired, gentle older male voice, <d>[Chinese] 顾言之刻写过很多回放，包括韩铮案。</d> <Subject 1>'s lips stay closed; he does not speak; the voice comes from the phone. At the name, the color drains from his face, his eyes widen and his breath stops. The shot ends with his face frozen, eyes glistening in the amber dashboard light.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe recorded voice through the phone speaker, his breath catching, the engine idle, a car passing far off.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s11_09",
+    "scene": "S11",
+    "act": 3,
+    "beat": 9,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠盯着波形，她不开口。CHENG(VO)：「完整读取会冲掉残响区。别让任何人读她。」",
+    "dialogue": [
+      {
+        "who": "CHENG",
+        "text": "完整读取会冲掉残响区。别让任何人读她。"
+      }
+    ],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Subject 2> is an unseen older man, heard only as a recorded message playing through a phone speaker; there is no picture of him and he never appears on screen.\n<Picture 3> is the location reference for [Shot 1]: a small independent sound studio inside an old apartment block at night, walls of wooden acoustic diffuser panels and grey foam, a large mixing console with faders, two monitor speakers on stands, a vinyl record shelf, warm bright desk lamps, coiled cables, a door padded with acoustic foam.\n\nsummary:\n[reference generation] <Subject 1> stares at the waveform in silence as her father's recorded voice warns against a full readout.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Warm bright desk lamps light her face; the wooden diffuser panels behind her are sharp; the faders on the mixing console catch the light.\n[Shot 1] Medium close-up, eye level, static. Within the first second, the recorded voice of <Subject 2> (S2) plays from the monitor speakers in a tired, gentle older male voice, <d>[Chinese] 完整读取会冲掉残响区。别让任何人读她。</d> <Subject 1> sits at the mixing console with her phone in one hand, staring at the waveform on a screen off-screen left; her lips stay closed; she does not speak; the voice comes from the speakers. Her eyes fill as she hears her father's voice, but she does not look away. The shot ends with her pressing her free hand over her mouth.\nEach subject appears exactly once; no duplicated people or animals.\n\noverall_soundscape:\nThe recorded older male voice from the monitor speakers, a low speaker hiss, her unsteady breath, the hum of the desk lamps.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s11_10",
+    "scene": "S11",
+    "act": 3,
+    "beat": 10,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s11_10.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "陆时野闭上眼。反应镜",
+    "dialogue": [],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked outside a police bureau before dawn, a soft amber dashboard glow on the face and white streetlight falling through the clean windows. Close-up at eye level, static camera, he is slightly right of center looking toward frame left. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, sitting in the driver's seat with a phone at his ear. He closes his eyes slowly, his head tipping back against the headrest, the phone still at his ear; his jaw clenches under the beard. The shot ends with his eyes shut and his jaw clenched. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: The engine idle, the faint hiss of an open phone line, his long unsteady exhale. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s11_11",
+    "scene": "S11",
+    "act": 3,
+    "beat": 11,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s11_11.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "陆时野。LU: 顾言之要做的：「顾言之要做的，就是完整读取。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "顾言之要做的，就是完整读取。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked outside a police bureau before dawn, a soft amber dashboard glow on the face and white streetlight falling through the clean windows. Medium close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"顾言之要做的，就是完整读取。\" His lips move in sync with each syllable, his voice low and slow, a realization. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, sitting in the driver's seat with a phone at his ear. After the line he opens his eyes and stares through the windshield. The shot ends with his eyes fixed ahead, hard. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the quiet idle of the engine. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s11_12",
+    "scene": "S11",
+    "act": 3,
+    "beat": 12,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "INSERT",
+    "summary_zh": "陆时野一拳砸在方向盘上",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the man in <Picture 1>, seen only as his fist and the cuff of his worn dark-brown leather jacket.\n<Picture 2> is the location reference for [Shot 1]: the interior of an older dark-grey sedan driving through a city at night, worn black leather seats, soft amber dashboard glow, a clean clear windshield, white streetlights sweeping across the cabin, sharp city lights outside.\n\nsummary:\n[reference generation] <Subject 1>'s fist slams down on the steering wheel.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the visible hair, skin and clothing stay identical to <Picture 1>.\n<Picture 2> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Soft amber dashboard glow on his face; a white streetlight outside falls through the clean windshield; the bureau entrance beyond is sharp.\n[Shot 1] Insert close-up of the steering wheel, static. <Subject 1>'s fist in the worn leather sleeve slams down onto the top of the steering wheel once, hard; the wheel shudders and the amber dashboard lights flicker. The shot ends with the fist resting on the wheel, knuckles white.\n\noverall_soundscape:\nA heavy thump on the wheel, a short blare of the horn cut off, his harsh exhale, the engine idle.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s11_13",
+    "scene": "S11",
+    "act": 3,
+    "beat": 13,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s11_13.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "CU",
+    "summary_zh": "陆时野。LU: 是我亲手把：「是我亲手把她交出去的。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "是我亲手把她交出去的。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked outside a police bureau before dawn, a soft amber dashboard glow on the face and white streetlight falling through the clean windows. Close-up at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"是我亲手把她交出去的。\" His lips move in sync with each syllable, his voice a hoarse whisper. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, sitting in the driver's seat. After the line he presses his knuckles against his mouth. The shot ends with his knuckles against his lips, eyes wet. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the quiet idle of the engine. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s11_14",
+    "scene": "S11",
+    "act": 3,
+    "beat": 14,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_studio.png"
+    ],
+    "keyframe": "assets/echo/kf/ec_s11_14.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MCU",
+    "summary_zh": "许棠。XU: 那就亲手把她：「那就亲手把她带回来。」",
+    "dialogue": [
+      {
+        "who": "XU",
+        "text": "那就亲手把她带回来。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot in a small independent sound studio at night, warm bright desk lamps, wooden acoustic diffuser panels and a mixing console behind her. Medium close-up at eye level, static camera, she is slightly right of center looking toward frame left. Within the first second she says in Mandarin Chinese, \"那就亲手把她带回来。\" Her lips move in sync with each syllable, her voice fierce and quick. She is a 24-year-old East Asian woman with chin-length choppy black hair and blunt bangs and three small silver hoops in her left ear, wearing an oversized mustard-yellow hoodie with large black studio headphones around her neck, a phone held to her ear. After the line she slaps her hand flat on the console and pushes her chair back. The shot ends with her rising from the console, phone at her ear. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: Her quick, sharp young female voice speaking the Mandarin line, the low hiss of the monitor speakers. No music, no on-screen text."
+  },
+  {
+    "id": "ec_s11_15",
+    "scene": "S11",
+    "act": 3,
+    "beat": 15,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s11_15.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "陆时野发动汽车。LU: 镜川大厦。你：「镜川大厦。你下楼，我十分钟到。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "镜川大厦。你下楼，我十分钟到。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan parked outside a police bureau before dawn, a soft amber dashboard glow on the face and white streetlight falling through the clean windows. medium shot at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"镜川大厦。你下楼，我十分钟到。\" His lips move in sync with each syllable, his voice rough and decisive. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, sitting in the driver's seat with a phone at his ear. After the line he drops the phone onto the console and turns the ignition key; the dashboard lights brighten. The shot ends with his hands on the wheel, eyes forward. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the engine roaring to life, the click of the ignition. No music, no on-screen text.. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.",
+    "keyframe_prompt": "Create ONE photoreal live-action opening keyframe, no montage or text. A photoreal live-action thriller shot inside an older dark-grey sedan parked outside a police bureau before dawn, a soft amber dashboard glow on the face and white streetlight falling through the clean windows. medium shot at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"镜川大厦。你下楼，我十分钟到。\" His lips move in sync with each syllable, his voice rough and decisive. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, sitting in the driver's seat with a phone at his ear. After the line he drops the phone onto the console and turns the ignition key; the dashboard lights brighten. The shot ends with his hands on the wheel, eyes forward. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the engine roaring to life, the click of the ignition. No music, no on-screen text.. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nFRAMING OVERRIDE: medium shot, waist-up if a person is visible; show torso, both shoulders and substantial surrounding set. Retain the original action, identity, location and props. For object inserts show the object and surrounding context, do not introduce faces. locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nEach specified subject appears exactly once; face and body references of a character represent ONE person. No clones or additional people. Each visible person has exactly two arms and two hands, naturally attached. Preserve single-subject shots as single-subject; location images supply architecture only.\nContinuity: match the lighting, colour grade, time of day and set dressing of the last reference image; same location. The last reference supplies lighting and set only, never copy its people or framing. Compose inside the central 1344:768 region; no text, subtitles or watermark."
+  },
+  {
+    "id": "ec_s11_16",
+    "scene": "S11",
+    "act": 3,
+    "beat": 16,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/loc_city_night.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "轿车从支队门口急转驶出，车灯划过清晰干燥的街道",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Picture 1> is the location reference for [Shot 1], the street outside the police bureau: a clean modern coastal city at night seen from street level, wide dry streets, crisp white streetlights, an elevated highway, glass towers with lit windows, a clear starry sky.\n\nsummary:\n[reference generation] An older dark-grey sedan swings out from the curb outside the police bureau and speeds away down a dry street.\n\nretention_analysis:\n<Picture 1> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Crisp white streetlights and lit tower windows; the dry street and the starry night sky are sharp and clear.\n[Shot 1] Wide street-level shot, static. The older dark-grey sedan pulls out from the curb in front of the police bureau and swings into a sharp U-turn, its headlights sweeping across the clean, dry street and the glass towers. It accelerates away down the wide empty avenue under crisp white streetlights. The shot ends with its red taillights shrinking toward the elevated highway, every streetlight sharp.\n\noverall_soundscape:\nTires squealing on dry asphalt, the engine revving hard, the sound fading down the empty street, a siren far away.\n\nnon_diegetic_music: N/A"
+  },
+  {
+    "id": "ec_s11_17",
+    "scene": "S11",
+    "act": 3,
+    "beat": 17,
+    "mode": "keyframe",
+    "engine": "ltx",
+    "refs": [
+      "assets/echo/refs/lu_face.png",
+      "assets/echo/refs/lu.png",
+      "assets/echo/refs/loc_car.png"
+    ],
+    "keyframe": "assets/echo/lab_kf_ltx/ec_s11_17.png",
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "MS",
+    "summary_zh": "车里，陆时野看着前方，低声说。LU: 韩铮……对：「韩铮……对不起。」",
+    "dialogue": [
+      {
+        "who": "LU",
+        "text": "韩铮……对不起。"
+      }
+    ],
+    "ltx_prompt": "A photoreal live-action thriller shot inside an older dark-grey sedan driving fast through a city at night, a soft amber dashboard glow on his face, white streetlights sweeping across the cabin through a clean windshield. medium shot at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"韩铮……对不起。\" His lips move in sync with each syllable, his voice low and rough, barely audible. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, both hands on the steering wheel. After the words he grips the wheel tighter and keeps his eyes on the road. The shot ends with his eyes on the road and his hands tight on the wheel. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the engine pulling hard and tires on a dry road. No music, no on-screen text.. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.",
+    "keyframe_prompt": "Create ONE photoreal live-action opening keyframe, no montage or text. A photoreal live-action thriller shot inside an older dark-grey sedan driving fast through a city at night, a soft amber dashboard glow on his face, white streetlights sweeping across the cabin through a clean windshield. medium shot at eye level, static camera, he is slightly right of center looking toward frame left. Within the first second he says in Mandarin Chinese, \"韩铮……对不起。\" His lips move in sync with each syllable, his voice low and rough, barely audible. He is a 41-year-old East Asian man with short black hair greying at the temples, a short trimmed beard with grey flecks and tired kind eyes, wearing a worn dark-brown leather jacket over a navy knit sweater, both hands on the steering wheel. After the words he grips the wheel tighter and keeps his eyes on the road. The shot ends with his eyes on the road and his hands tight on the wheel. Deep focus with crisp skin pores, individual hair strands and fabric weave; the background is equally sharp; no haze, no bokeh. Audio: His hoarse, slow male voice speaking the Mandarin line, the engine pulling hard and tires on a dry road. No music, no on-screen text.. Camera: locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nFRAMING OVERRIDE: medium shot, waist-up if a person is visible; show torso, both shoulders and substantial surrounding set. Retain the original action, identity, location and props. For object inserts show the object and surrounding context, do not introduce faces. locked-off static camera, no zoom, no push-in, framing stays the same for the whole shot.\nEach specified subject appears exactly once; face and body references of a character represent ONE person. No clones or additional people. Each visible person has exactly two arms and two hands, naturally attached. Preserve single-subject shots as single-subject; location images supply architecture only.\nContinuity: match the lighting, colour grade, time of day and set dressing of the last reference image; same location. The last reference supplies lighting and set only, never copy its people or framing. Compose inside the central 1344:768 region; no text, subtitles or watermark."
+  },
+  {
+    "id": "ec_s11_18",
+    "scene": "S11",
+    "act": 3,
+    "beat": 18,
+    "mode": "reference",
+    "engine": "h3",
+    "refs": [
+      "assets/echo/refs/xu_face.png",
+      "assets/echo/refs/xu.png",
+      "assets/echo/refs/loc_city_night.png"
+    ],
+    "seconds": 6,
+    "resolution": "720p",
+    "shot_size": "WS",
+    "summary_zh": "许棠冲出旧楼，站在路边，远处一对车灯开过来",
+    "dialogue": [],
+    "prompt": "subject_definitions:\n<Subject 1> is the woman in <Picture 1> and <Picture 2>: a 24-year-old East Asian woman sound engineer, sharp wary eyes, chin-length choppy black hair with blunt bangs, three small silver hoop piercings in her left ear, an oversized mustard-yellow hoodie, black cargo pants, chunky white sneakers, large black over-ear studio headphones around her neck.\n<Picture 3> is the location reference for [Shot 1], the street outside an old apartment block: a clean modern coastal city at night seen from street level, wide dry streets, crisp white streetlights, an elevated highway, glass towers with lit windows, a clear starry sky.\n\nsummary:\n[reference generation] <Subject 1> bursts out of an old apartment block onto the curb as headlights approach.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - face, blunt bangs, three ear hoops, mustard hoodie and headphones stay identical.\n<Picture 3> ([Shot 1] location): partially_preserved - same materials, colors and lighting; the camera position is new.\n\ndetailed_description:\nThe target video is a photoreal live-action thriller shot on a large-format cinema camera with a spherical prime at f/8: deep focus, every plane sharp from foreground to background, crisp skin pores, hair strands and fabric weave, clean clear air with no haze, fog, smoke or bokeh. Keep the main action in the vertical center with about 12% clear space at top and bottom; no on-screen text, logos or watermarks. Crisp white streetlights and lit tower windows; the dry street and the starry night sky are sharp and clear.\n[Shot 1] Wide street-level shot, static. <Subject 1> bursts out of the doorway of an old apartment block at frame right and runs to the curb of the dry street, the headphones bouncing around her neck. She stops at the edge of the sidewalk, breathing hard, and turns to look down the avenue. Far down the street a pair of headlights speeds toward her under the crisp white streetlights. The shot ends with her standing at the curb, lit by the approaching headlights.\n\noverall_soundscape:\nA metal door banging open, running sneakers on dry pavement, her hard breathing, an engine approaching fast.\n\nnon_diegetic_music: N/A"
+  }
 ]

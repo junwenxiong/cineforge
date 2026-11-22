@@ -1,5 +1,6 @@
 """Measure edit continuity without models. Scale estimates are candidates, not face detection."""
 import argparse
+from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 import json
 import re
@@ -42,12 +43,20 @@ def scale_estimate(first,last):
 
 
 def measure(item):
-    shot,cut=item; sid=shot['id']; path=ROOT/'renders'/sid/'raw.mp4'
+    shot,cut=item; sid=shot['id']; path=Path(shot.get('_source', ROOT/'renders'/sid/'raw.mp4'))
+    signature=[path.stat().st_size,path.stat().st_mtime_ns]
     dur=duration(path); start=float(cut.get('in',.25)); end=min(float(cut.get('out',shot['seconds']*.92)),dur)
     a,b=frame(path,start),frame(path,max(start,end-1/24))
+    if shot.get('_source'): a,b=a[19:125],b[19:125]  # exclude baked letterbox from image statistics/scale search
     engine=shot.get('engine','h3')
-    out=dict(id=sid,scene=shot['scene'],engine=engine,shot_size=shot.get('shot_size'),dialogue=bool(shot.get('dialogue')),source=str(path),in_point=start,out_point=end,duration=dur,lufs=loudness(path),first=stats(a),last=stats(b))
+    receipt=ROOT/'renders'/sid/'job.json'
+    if not shot.get('_source') and receipt.exists():
+        job=json.loads(receipt.read_text()); via=job.get('via','')+' '+job.get('model','')
+        if 'ltx' in via.lower(): engine='ltx'
+        elif 'h3' in via.lower() or 'colab-farm' in via: engine='h3'
+    out=dict(id=sid,scene=shot['scene'],engine=engine,shot_size=shot.get('shot_size'),dialogue=bool(shot.get('dialogue')),source=str(path),signature=signature,in_point=start,out_point=end,duration=dur,lufs=loudness(path),first=stats(a),last=stats(b))
     if engine=='ltx': out['push_in']=scale_estimate(a,b)
+    if signature != [path.stat().st_size,path.stat().st_mtime_ns]: raise RuntimeError(f'Source changed during measurement: {sid}')
     return out,a,b
 
 
@@ -55,26 +64,40 @@ SIZES={'ECU':0,'CU':1,'MCU':2,'MS':3,'MWS':4,'FS':4,'WS':5,'EWS':6}
 
 
 def sheet(pairs,frames,dest):
-    canvas=Image.new('RGB',(1024,174*len(pairs)), '#202020'); d=ImageDraw.Draw(canvas)
+    canvas=Image.new('RGB',(1024,318*len(pairs)), '#202020'); d=ImageDraw.Draw(canvas)
     for i,p in enumerate(pairs):
-        a,b=p['from'],p['to']; y=i*174
-        canvas.paste(Image.fromarray(frames[a][1]).resize((512,144)),(0,y+30))
-        canvas.paste(Image.fromarray(frames[b][0]).resize((512,144)),(512,y+30))
+        a,b=p['from'],p['to']; y=i*318
+        canvas.paste(Image.fromarray(frames[a][1]).resize((512,288)),(0,y+30))
+        canvas.paste(Image.fromarray(frames[b][0]).resize((512,288)),(512,y+30))
         d.text((8,y+8),f"{a} -> {b} | size {p['size_jump']} | LU {p['loudness_jump']:.1f} | RGB {p['rgb_jump']:.1f}",fill='white')
     if pairs: canvas.save(dest)
 
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--film',required=True); ap.add_argument('--workers',type=int,default=4); args=ap.parse_args()
+    ap=argparse.ArgumentParser(); ap.add_argument('--film',required=True); ap.add_argument('--workers',type=int,default=4); ap.add_argument('--edit-cache', help='Measure immutable segments from this existing edit, not mutable raw takes'); args=ap.parse_args()
     film=FilmConfig(args.film); cuts=json.loads(film.cuts.read_text()) if film.cuts.exists() else {}
     shots=[s for s in film.load_shots() if not cuts.get(s['id'],{}).get('drop')]
     missing=[s['id'] for s in shots if not (ROOT/'renders'/s['id']/'raw.mp4').exists()]
-    if missing: raise SystemExit(f'Raw shots not stable/complete: {missing}')
+    if missing and not args.edit_cache: raise SystemExit(f'Raw shots not stable/complete: {missing}')
     # Follow final edit order where available, including explicit omissions.
-    timeline=film.videos/'final.json'
+    timeline=film.videos/f'{args.edit_cache or "final"}.json'
     if timeline.exists():
         lookup={s['id']:s for s in shots}; tl=json.loads(timeline.read_text())['shots']; shots=[lookup[s['id']] for s in tl]
         cuts={s['id']:{'in':s['in'],'out':s['out']} for s in tl}
+    if args.edit_cache:
+        import shlex
+        plan=ROOT/f'renders/qa/{args.film}_reframe_plan.json'
+        originals={s['id']:s for s in json.loads(plan.read_text())} if plan.exists() else {}
+        for shot in shots:
+            if shot['id'] in originals:
+                original=originals[shot['id']]
+                shot['shot_size']=original['old_size']; shot['engine']=original['old_engine']
+        paths=[shlex.split(line)[1] for line in (film.cache/f'{args.edit_cache}.txt').read_text().splitlines() if line.startswith('file ')]
+        if len(paths)!=len(shots): raise ValueError('Edit cache and timeline count differ')
+        for shot,path in zip(shots,paths):
+            if not Path(path).name.startswith(shot['id']+'_'): raise ValueError('Edit cache order mismatch')
+            shot['_source']=path
+            cuts[shot['id']]={'in':0,'out':duration(path)-1/24}
     qa=ROOT/'renders/qa'; qa.mkdir(exist_ok=True,parents=True)
     with ThreadPoolExecutor(args.workers) as pool: results=list(pool.map(measure,[(s,cuts.get(s['id'],{})) for s in shots]))
     measured=[r[0] for r in results]; frames={r[0]['id']:(r[1],r[2]) for r in results}; pairs=[]

@@ -136,8 +136,11 @@ def run_job(job, pipeline):
     pf = IN / f"{sid}.txt"
     pf.write_text(job["prompt"])
     frames = int(job["seconds"]) * 24 + 1
+    # 定机位：同一张关键帧再作为后段引导帧（auto 绑定 = guide），逼模型别推镜
+    anchors = "".join(f"--image {img} {min(frames - 1, int(round(pos * (frames - 1))))} {s} "
+                      for pos, s in job.get("anchors", []))
     cmd = (f"uv run python -m {module} {common} --width 1344 --height 768 --num-frames {frames} --frame-rate 24 "
-           f"--image {img} 0 1.0 --seed {job.get('seed', 42)} --output-path {mp4} --prompt \"$(cat {pf})\"")
+           f"--image {img} 0 1.0 {anchors}--seed {job.get('seed', 42)} --output-path {mp4} --prompt \"$(cat {pf})\"")
     t0 = time.time()
     rc = sh(cmd, lf, cwd=REPO)
     wall = time.time() - t0
