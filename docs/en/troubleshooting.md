@@ -139,6 +139,13 @@ What fixes it:
 
 Fix: extract the source frame where the face appears, have the image model redraw that frame with the cat version (same composition; reuse the same description for a recurring extra), and pass it as a `guides` entry at strength 0.8. Mention the entrance in the video prompt too ("a grey tabby maid cat walks in from the left"). If the first frame already kept a human, redraw the first frame and name the edge figure in the prompt. Review the **whole reel as a 2 fps contact sheet**, then zoom into suspect faces; checking one frame per shot misses these.
 
+Two more ways a whole shot stays human:
+
+- **The first frame does not match the source.** In very dark night footage the image model cannot read the frame and invents its own composition (an extra animal in the foreground, a different angle). The video model then finds no correspondence and draws the source person for the entire shot. Brighten the extracted frame before redrawing it (`ffmpeg ... -vf "eq=brightness=0.12:gamma=1.6"`), ask for "the same composition, do not add anything that is not in the picture", and compare the redrawn frame with the source side by side.
+- **Dissolves.** Scene-cut detection does not see a slow dissolve, so the last half second of a shot can contain the next shot's (human) face. Look at the end of each shot at 10 fps with timecodes and set `dur` to end before the dissolve starts; when assembling, hold the last frame over the gap so the original audio stays in sync.
+
+**Render fails with `EinopsError ... can't divide axis`.** The two-stage pipeline renders at half resolution first, so output width and height must both be divisible by 128 (1024×768, 1152×768 and 1280×768 work; 704 does not). Crop the source to the target aspect first (e.g. 5:3 footage: `crop=iw*0.9375:ih,scale=1280:768`) and recompute the hand masks with the new crop.
+
 **Garbled subtitles at the bottom of the frame.** Measured causes, most important first:
 
 1. **Never mention text in the video prompt.** Any of "subtitles", "captions", "text", even "no subtitles", makes the distilled pipeline paint captions: it has no CFG, so negations add the concept instead of removing it. Same two shots, same controls: 67 and 40 frames with text → 0 and 0 after deleting that sentence, with the original dialogue still conditioning the audio (lip sync kept).
