@@ -4,21 +4,61 @@
 
 [中文](README.zh-CN.md) · [Setup guide](docs/en/getting-started.md) · [Plain-English glossary](docs/en/glossary.md)
 
+Three original films, about 30 minutes each, made with open video models on rented Colab GPUs. **Click a clip to watch it with sound.** Everything you see was generated; no camera, no actors.
+
+<table>
+<tr>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#battle"><img src="docs/media/starcore_battle.webp" width="100%" alt="Starcore Dawn: Mech shield vs. drone swarm"></a><br><sub><b>Starcore Dawn</b> · Mech shield vs. drone swarm</sub></td>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#clash"><img src="docs/media/starcore_clash.webp" width="100%" alt="Starcore Dawn: Final clash"></a><br><sub><b>Starcore Dawn</b> · Final clash</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#chase"><img src="docs/media/catfilm_chase.webp" width="100%" alt="Calico Signal: Robot dog in the fruit market"></a><br><sub><b>Calico Signal</b> · Robot dog in the fruit market</sub></td>
+<td width="50%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#echo"><img src="docs/media/echo_studio.webp" width="100%" alt="The Last Echo: The voice on the tape"></a><br><sub><b>The Last Echo</b> · The voice on the tape</sub></td>
+</tr>
+</table>
+
+**Cat recast (video-to-video):** real TV footage → cats, same motion & original dialogue (v2v). About 30 s each, 4–7 GPU-minutes per clip including retakes. [All clips on one page](https://junwenxiong.github.io/cineforge/showcase/).
+
+<table>
+<tr>
+<td width="33%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#sanguo"><img src="docs/media/sanguo_anye.webp" width="100%" alt="Cat recast: 三国 · 俺也一样"></a><br><sub><b>三国 · 俺也一样</b></sub></td>
+<td width="33%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#xiyou"><img src="docs/media/xiyou_renshenguo.webp" width="100%" alt="Cat recast: 西游 · 偷吃人参果"></a><br><sub><b>西游 · 偷吃人参果</b></sub></td>
+<td width="33%" align="center"><a href="https://junwenxiong.github.io/cineforge/showcase/#honglou"><img src="docs/media/honglou_liulaolao.webp" width="100%" alt="Cat recast: 红楼 · 刘姥姥进大观园"></a><br><sub><b>红楼 · 刘姥姥进大观园</b></sub></td>
+</tr>
+</table>
+
+<sub>Music in the clips: Scott Buckley, CC BY 4.0 (scottbuckley.com.au). Films: 星核黎明 / Starcore Dawn, 三花信号 / Calico Signal, 残响 / The Last Echo. Cat recasts: fan re-imaginings of scenes from the CCTV series 三国演义 (1994), 西游记 (1986), 红楼梦 (1987), with their original dialogue.</sub>
+
+## How long and how much?
+
+These are **our own measurements from 2026-11-20**: one person, one Colab Pro+ account. They are not a promise for your account or computer.
+
+| | 星核黎明 Starcore Dawn | 三花信号 Calico Signal | 残响 The Last Echo |
+|---|---|---|---|
+| Film length (before credits) | 33 min | 32 min | 29 min |
+| Shots in the final cut | 366 | 331 | 320 |
+| Video models | H3 | 229 H3 + 102 LTX-2.5 | 117 H3 + 203 LTX-2.5 |
+| Measured GPU time | 4.2 GPU-hours¹ | 4.0 GPU-hours | 6.2 GPU-hours |
+| Filming window² | about 3 hours | about 6.3 hours for both films together, on a shared farm | |
+| Colab compute units (approx.)³ | about 110 | about 190–245 for both films | |
+| In money (approx.)⁴ | about US$11 | about US$19–25 for both films | |
+
+**One shot:** a 6-second H3 shot took a median **43 s** on one G4 GPU (RTX PRO 6000, 96 GB); a 6-second LTX-2.5 shot took a median **38 s**. Loading the models on a fresh Colab computer took about 4 minutes. Up to **4 Colab computers** ran at once (3× G4 + 1 H100).
+
+<sub>¹ GPU generation time of the 265 shots filmed on the Colab farm; 101 more shots ran on a separate licensed Box machine and are not counted. All numbers come from each shot's job record and the farm logs.
+² From the first to the last accepted shot arriving. Writing, picture-making and editing are not included; retakes are.
+³ Filming window × the usage Colab displayed while the farm ran: about 30 units/hour with 3 G4 computers, about 39 with 4. Colab does not report usage per film.
+⁴ At Colab's pay-as-you-go price of about US$10 per 100 compute units at the time of writing; check the current price. Image generation for reference pictures is billed separately by your image service.</sub>
+
+Your total cost depends on your Colab plan, which computers are free, how many retakes you need and your image service. Start small and check your balance often.
+
 ## What is this?
 
 You write a paragraph; your AI coding assistant uses CineForge to turn it into a script and reference pictures, then helps you rent powerful computers on Google Colab to film each shot. Together, you check for mistakes and edit the shots into a roughly 30-minute film with voices, music and subtitles. This is an early project: you guide the story, approve spending, and watch and listen before calling it finished.
 
 ## How it works
 
-```mermaid
-flowchart TD
-    A[Story] --> B[Script & shots]
-    B --> C[Reference pictures]
-    C --> D[Film shots on Colab]
-    D --> E[Check & retake]
-    E --> F[Edit, music, subtitles]
-    F --> G[Film]
-```
+<p align="center"><img src="docs/media/how-it-works.png" width="100%" alt="Story, script and shots, reference pictures, film on Colab, check and retake, edit and sound, film"></p>
 
 1. **Story:** Describe the people, setting and story you want.
 2. **Script & shots:** Your assistant writes the dialogue and breaks scenes into short video clips, called shots.
@@ -95,20 +135,6 @@ Download this repository and open its `cineforge` folder in your assistant. Open
 
    **You should see:** `videos/starcore/final_master.mp4`. Watch it and check the dialogue, subtitles and credits. Wait for every upload to finish, disconnect and delete your Colab computers, then confirm that compute-unit use has stopped.
 
-## How long and how much?
-
-These are **one person's measurements on 2026-11-20**, supplied from the original production run. They are not a promise for your account or computer.
-
-| What we measured | What we saw |
-|---|---|
-| One 6-second shot on one G4 GPU, after the model was loaded | About 40 seconds with H3 through Box or LTX-2.5 distilled, its faster version |
-| 《三花信号》 / Calico Signal | 331 shots: 244 H3 + 87 LTX |
-| Filming window that day | About 15:40–19:25 on 3–4 G4 computers, including two rounds of retakes |
-| Colab's displayed usage with 3 G4 computers | About 30 compute units per hour |
-| Colab's displayed usage with 4 G4 computers | About 39 compute units per hour |
-
-The filming window is not the time for writing, picture-making and final editing. Your total cost depends on your Colab plan, the computers available, extra attempts and image-service charges. We have not published a verified total bill. Start small and check your balance often.
-
 ## Good to know
 
 - This is an early toolkit, not a finished “make my movie” button. The public version has not been tested from a fresh setup through a complete film.
@@ -136,7 +162,7 @@ Treat access tokens like passwords. Keep them only in the private `.env` file th
 
 ## Example films
 
-These are **text-only scripts**. Film links are coming soon.
+These folders hold the **text-only scripts**; the clips at the top of this page come from the finished films.
 
 - [Starcore Dawn / 星核黎明](examples/starcore/README.md) — the main example.
 - [Calico Signal / 三花信号](examples/catfilm/README.md).
