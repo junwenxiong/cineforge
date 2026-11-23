@@ -220,6 +220,10 @@ export const api = {
     return request(`/api/queue${activeOnly ? '?active=1' : ''}`);
   },
 
+  tasks() {
+    return request('/api/tasks');
+  },
+
   queueJob(jobId) {
     return request(`/api/queue/${encodeURIComponent(jobId)}`);
   },
@@ -474,7 +478,7 @@ export function toast(msg, type = 'info', duration = 3600) {
   el.addEventListener('click', dismiss);
   root.appendChild(el);
 
-  while (root.children.length > 4) {
+  while (root.children.length > 2) {
     root.firstElementChild.remove();
   }
 

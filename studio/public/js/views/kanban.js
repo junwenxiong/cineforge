@@ -152,7 +152,7 @@ export async function render(container, ctx) {
     projects: [],
     projectId: ctx?.projectId || '',
     detail: null,
-    activeView: ['kanban', 'dag', 'storyboard'].includes(ctx?.query?.view) ? ctx.query.view : 'kanban',
+    activeView: ['kanban', 'dag', 'storyboard'].includes(ctx?.query?.view) ? ctx.query.view : 'dag',
     selectedScene: ctx?.query?.scene || '',
     selectedStageKey: '',
     inspectorShotId: null,
@@ -348,17 +348,18 @@ export async function render(container, ctx) {
           <div class="wf-error-box">
             <div style="font-size:16px;font-weight:700;">还没有可视化影片工作流</div>
             <div style="color:var(--text-secondary);font-size:13px;">去创作台输入一句话想法，3 秒自动生成 6 步工作流与逐镜看板。</div>
-            <button type="button" class="wf-btn wf-btn-gold" data-go-create>✨ 去创作台新建影片</button>
+            <button type="button" class="wf-btn wf-btn-gold" data-go-create>去生成视频</button>
           </div>
         `;
         container.querySelector('[data-go-create]')?.addEventListener('click', () => ctx.navigate('#create'));
         return;
       }
 
-      // Resolve projectId cleanly
+      // Resolve projectId cleanly — prefer user's newest studio_* project first
       let targetId = state.projectId;
       if (!targetId || !projects.some((p) => p.id === targetId)) {
-        const preferred = projects.find((p) => p.id === 'starcore')
+        const preferred = projects.find((p) => p.source === 'studio' || String(p.id).startsWith('studio_'))
+          || projects.find((p) => p.id === 'starcore')
           || projects.find((p) => p.id === 'classics')
           || projects[0];
         targetId = preferred.id;
@@ -478,8 +479,8 @@ export async function render(container, ctx) {
     }).join('');
 
     const selectInner = studioProjects.length
-      ? `<optgroup label="✨ 我的新建影片">${renderOptions(studioProjects)}</optgroup>
-         <optgroup label="🎬 平台实拍示范项目">${renderOptions(workspaceProjects)}</optgroup>`
+      ? `<optgroup label="我的项目">${renderOptions(studioProjects)}</optgroup>
+         <optgroup label="示例项目">${renderOptions(workspaceProjects)}</optgroup>`
       : renderOptions(state.projects);
 
     return `
@@ -497,27 +498,24 @@ export async function render(container, ctx) {
 
             <div class="wf-meta-badges">
               <span class="wf-chip ${isV2V ? 'wf-chip-cyan' : 'wf-chip-gold'}">
-                ${isV2V ? '🐱 V2V 换角' : '🎬 原创电影'}
+                ${isV2V ? 'V2V 换角' : '原创视频'}
               </span>
               <span class="wf-chip ${renderedShots > 0 ? 'wf-chip-emerald' : ''}">
-                已完成 ${esc(renderedShots)}/${esc(totalShots)} 镜${approvedShots ? ` · ${esc(approvedShots)} 过审` : ''}
-              </span>
-              <span class="wf-chip wf-chip-emerald">
-                预计成本 ${esc(formatCost(proj.est_cost_cny))}
+                已渲染 ${esc(renderedShots)}/${esc(totalShots)} 镜${approvedShots ? ` · ${esc(approvedShots)} 过审` : ''}
               </span>
               ${proj.style ? `<span class="wf-chip">${esc(proj.style)}</span>` : ''}
             </div>
           </div>
 
           <div class="wf-header-actions">
-            ${!String(proj.id || '').startsWith('studio_') && proj.source !== 'studio' ? `<span class="wf-chip guest-only">示范项目 · 只读浏览</span>` : ''}
+            ${!String(proj.id || '').startsWith('studio_') && proj.source !== 'studio' ? `<span class="wf-chip guest-only">示例项目 · 只读</span>` : ''}
             <button
               type="button"
               class="wf-btn wf-btn-surface ${!String(proj.id || '').startsWith('studio_') && proj.source !== 'studio' ? 'wf-readonly-hide' : ''}"
               data-action="render-preview"
               ${state.busy.renderingPreview ? 'disabled' : ''}
             >
-              🎬 ${state.busy.renderingPreview ? '合成预演中...' : '一键合成预演片'}
+              ${state.busy.renderingPreview ? '合成预演中...' : '合成快速预演'}
             </button>
             <button
               type="button"
@@ -525,15 +523,15 @@ export async function render(container, ctx) {
               data-action="dispatch-cloud"
               ${state.busy.dispatching ? 'disabled' : ''}
             >
-              ⚡ ${state.busy.dispatching ? '正在派发...' : '派发云端精拍'}
+              ${state.busy.dispatching ? '正在提交...' : '提交 Colab 渲染'}
             </button>
             <button
               type="button"
               class="wf-btn wf-btn-gold"
               data-action="watch-film"
-              ${watchUrl ? '' : 'disabled title="请先点击「一键合成预演片」或等待云端出片"'}
+              ${watchUrl ? '' : 'disabled title="请先点击「合成快速预演」或等待 Colab 出片"'}
             >
-              ▶ ${proj.final_video_url ? '观看电影成片' : '观看预演成片'}
+              ${proj.final_video_url ? '播放高清成片' : '播放预演视频'}
             </button>
           </div>
         </div>
@@ -583,7 +581,7 @@ export async function render(container, ctx) {
     const renderBtn = container.querySelector('[data-action="render-preview"]');
     if (renderBtn) {
       renderBtn.disabled = state.busy.renderingPreview;
-      renderBtn.textContent = state.busy.renderingPreview ? '🎬 合成预演中...' : '🎬 一键合成预演片';
+      renderBtn.textContent = state.busy.renderingPreview ? '合成预演中...' : '合成快速预演';
     }
   }
 
@@ -654,22 +652,22 @@ export async function render(container, ctx) {
           <button
             type="button"
             role="tab"
-            aria-selected="${state.activeView === 'kanban'}"
-            class="wf-tab-btn ${state.activeView === 'kanban' ? 'is-active' : ''}"
-            data-switch-view="kanban"
-            data-testid="tab-kanban"
-          >
-            📋 制片看板
-          </button>
-          <button
-            type="button"
-            role="tab"
             aria-selected="${state.activeView === 'dag'}"
             class="wf-tab-btn ${state.activeView === 'dag' ? 'is-active' : ''}"
             data-switch-view="dag"
             data-testid="tab-dag"
           >
-            🔀 Workflow 节点图
+            节点工作流 (ComfyUI)
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected="${state.activeView === 'kanban'}"
+            class="wf-tab-btn ${state.activeView === 'kanban' ? 'is-active' : ''}"
+            data-switch-view="kanban"
+            data-testid="tab-kanban"
+          >
+            分镜看板
           </button>
           <button
             type="button"
@@ -679,7 +677,7 @@ export async function render(container, ctx) {
             data-switch-view="storyboard"
             data-testid="tab-storyboard"
           >
-            🎞️ 故事板与角色资产
+            故事板与参考图
           </button>
         </div>
 
@@ -821,7 +819,7 @@ export async function render(container, ctx) {
       <section class="wf-storyboard-wrap">
         <div class="wf-refs-panel">
           <div class="wf-section-head">
-            <span class="wf-section-title">🎭 角色与场景定妆卡（Visual Locks）</span>
+            <span class="wf-section-title">角色与场景参考图（Visual Locks）</span>
             <span class="wf-section-sub">全片自动绑定以下视觉锚点，确保长篇连贯不换脸、不跑风</span>
           </div>
           ${refs.length ? `
@@ -850,7 +848,7 @@ export async function render(container, ctx) {
         </div>
 
         <div class="wf-section-head">
-          <span class="wf-section-title">🎞️ 院线级逐镜故事板（Contact Sheet）</span>
+          <span class="wf-section-title">逐镜故事板（Contact Sheet）</span>
           <span class="wf-section-sub">共 ${shots.length} 个镜头 · 点击任意画面进入精修与播放抽屉</span>
         </div>
 
@@ -880,6 +878,7 @@ export async function render(container, ctx) {
   }
 
   function renderNovicePanelHtml() {
+    if (!document.body.classList.contains('is-server-guest')) return '';
     const proj = state.detail?.project || {};
     const cq = state.detail?.cloud_job || null;
     const isStudioProj = proj.source === 'studio' || String(proj.id || '').startsWith('studio_');
@@ -921,13 +920,13 @@ export async function render(container, ctx) {
           <div class="wf-final-result-box" id="wf-final-result-box">
             <div class="wf-final-head">
               <div>
-                <span class="wf-chip wf-chip-emerald">🎉 云端成片已生成</span>
+                <span class="wf-chip wf-chip-emerald">云端成片已生成</span>
                 <span class="wf-final-sub">${isV2V ? '主角已成功换猫并保留原声节奏' : '所有分镜已自动剪辑合成可播 MP4'}</span>
               </div>
               ${hasSbs ? `
                 <div class="wf-seg-group" role="group" aria-label="切换成片视角">
-                  <button type="button" class="wf-btn wf-btn-sm ${!showSbs ? 'wf-btn-gold' : 'wf-btn-surface'}" data-final-mode="clean">🐱 纯净猫咪版</button>
-                  <button type="button" class="wf-btn wf-btn-sm ${showSbs ? 'wf-btn-gold' : 'wf-btn-surface'}" data-final-mode="side_by_side">🎞️ 左右原片对照版</button>
+                  <button type="button" class="wf-btn wf-btn-sm ${!showSbs ? 'wf-btn-gold' : 'wf-btn-surface'}" data-final-mode="clean">纯净猫咪版</button>
+                  <button type="button" class="wf-btn wf-btn-sm ${showSbs ? 'wf-btn-gold' : 'wf-btn-surface'}" data-final-mode="side_by_side">左右原片对照版</button>
                 </div>
               ` : ''}
             </div>
@@ -939,30 +938,28 @@ export async function render(container, ctx) {
                 playsinline
                 preload="metadata"
                 src="${esc(playerUrl)}"
-                ${proj.poster_url ? `poster="${esc(proj.poster_url)}"` : ''}
               ></video>
             </div>
             <div class="wf-final-actions">
               <a class="wf-btn wf-btn-gold" id="wf-download-final" href="${esc(playerUrl)}" download="${esc(proj.id || 'cineforge')}${showSbs ? '_side_by_side' : ''}.mp4">
-                ⬇️ 下载成片 MP4
+                下载成片 MP4
               </a>
-              <a class="wf-btn wf-btn-surface" href="#create">✨ 再创作一部</a>
-              <a class="wf-btn wf-btn-cyan" href="#eval">⭐ 去评测中心打分</a>
+              <a class="wf-btn wf-btn-surface" href="#studio">返回生成视频</a>
             </div>
           </div>
         ` : `
           <div class="wf-cloud-status-box">
             <div class="wf-cloud-status-row">
               <div class="wf-cloud-status-text">
-                <strong>${esc(cq?.stage_label || (st === 'failed' ? '云端生成遇到问题' : (st === 'canceled' || st === 'cancelled') ? '排队已取消' : '准备排入共享影棚'))}</strong>
-                <span>${esc(cq?.message || (proj.preview_video_url ? '即时预演已就绪（可先点击上方「观看预演成片」），点击右侧即可排入云端精拍。' : '系统已自动为你拆好分镜，排入共享显卡队列后将逐镜渲染并自动合成 MP4。'))}</span>
+                <strong>${esc(cq?.stage_label || (st === 'failed' ? '云端生成遇到问题' : (st === 'canceled' || st === 'cancelled') ? '排队已取消' : '准备排入云端队列'))}</strong>
+                <span>${esc(cq?.message || (proj.preview_video_url ? '即时预演已就绪，点击右侧即可排入 Colab 云端渲染。' : '系统已自动拆好分镜，排入 Colab 显卡队列后将逐镜渲染并自动合成 MP4。'))}</span>
               </div>
               <div class="wf-cloud-status-actions">
                 ${['queued', 'staging'].includes(st) ? `
                   <button type="button" class="wf-btn wf-btn-rose wf-btn-sm" data-cancel-cloud-job="${esc(cq.id)}">取消排队</button>
                 ` : (!cq || ['failed', 'canceled', 'cancelled'].includes(st)) ? `
                   <button type="button" class="wf-btn wf-btn-cyan wf-btn-sm" data-action="dispatch-cloud" ${state.busy.dispatching ? 'disabled' : ''}>
-                    ${st === 'failed' ? '↻ 重新排队生成' : '⚡ 免费排入云端生成'}
+                    ${st === 'failed' ? '重新排队生成' : '提交 Colab 渲染'}
                   </button>
                 ` : ''}
               </div>
@@ -1020,12 +1017,11 @@ export async function render(container, ctx) {
         ${isGuestServer && isStudioProj ? `
           <div class="wf-director-toggle-bar">
             <button type="button" class="wf-btn wf-btn-surface wf-btn-sm" data-toggle-director>
-              ${state.directorExpanded ? '▲ 收起导演精修工具' : '🎛️ 展开导演精修（改台词 / 单镜重拍）'}
+              ${state.directorExpanded ? '收起高级编排工具' : '展开节点工作流与分镜编辑'}
             </button>
           </div>
         ` : ''}
         ${showDirectorTools ? `
-          ${renderPipelineHtml()}
           ${renderToolbarHtml()}
           <div data-wf-workspace></div>
         ` : ''}
@@ -1091,8 +1087,8 @@ export async function render(container, ctx) {
             <div class="wf-drawer-media">
               ${hasOutVideo && hasCtrlVideo ? `
                 <div class="wf-media-toggle">
-                  <button type="button" class="wf-media-toggle-btn ${state.inspectorMediaMode !== 'control' ? 'is-active' : ''}" data-media-mode="output">🎬 AI 换角成片</button>
-                  <button type="button" class="wf-media-toggle-btn ${state.inspectorMediaMode === 'control' ? 'is-active' : ''}" data-media-mode="control">🎞️ 原片控制片段</button>
+                  <button type="button" class="wf-media-toggle-btn ${state.inspectorMediaMode !== 'control' ? 'is-active' : ''}" data-media-mode="output">AI 换角成片</button>
+                  <button type="button" class="wf-media-toggle-btn ${state.inspectorMediaMode === 'control' ? 'is-active' : ''}" data-media-mode="control">原片控制片段</button>
                 </div>
               ` : ''}
 
@@ -1181,7 +1177,7 @@ export async function render(container, ctx) {
               <button type="button" class="wf-btn wf-btn-rose wf-btn-sm" data-toggle-retake>↻ 打回重拍</button>
             </div>
             <button type="submit" form="wf-shot-form" class="wf-btn wf-btn-gold" ${state.busy.savingShot ? 'disabled' : ''}>
-              ${state.busy.savingShot ? '保存中...' : '💾 保存修改'}
+              ${state.busy.savingShot ? '保存中...' : '保存修改'}
             </button>
           </div>
         </aside>
@@ -1196,8 +1192,8 @@ export async function render(container, ctx) {
       <div class="wf-modal-backdrop" data-close-dispatch>
         <div class="wf-modal" role="dialog" aria-modal="true" aria-label="云端精拍派发清单">
           <div class="wf-modal-head">
-            <span class="wf-modal-title">⚡ 云端精拍清单已生成</span>
-            <button type="button" class="wf-btn wf-btn-ghost wf-btn-sm" data-close-dispatch>✕</button>
+            <span class="wf-modal-title">云端渲染任务已提交</span>
+            <button type="button" class="wf-btn wf-btn-ghost wf-btn-sm" data-close-dispatch>关闭</button>
           </div>
           <div class="wf-modal-body">
             <div class="wf-dispatch-stats">
@@ -1221,7 +1217,7 @@ export async function render(container, ctx) {
             <div class="wf-field">
               <label>
                 <span>脱敏 Colab Worker 启动片段（零密钥泄露 · 密钥仅由本机内存读取）</span>
-                <button type="button" class="wf-btn wf-btn-cyan wf-btn-sm" data-copy-snippet>📋 复制代码</button>
+                <button type="button" class="wf-btn wf-btn-cyan wf-btn-sm" data-copy-snippet>复制代码</button>
               </label>
               <div class="wf-code-box"><pre>${esc(info.colab_snippet || '# 暂未提供 Colab 片段')}</pre></div>
             </div>
@@ -1241,8 +1237,8 @@ export async function render(container, ctx) {
       <div class="wf-modal-backdrop" data-close-ref>
         <div class="wf-modal" role="dialog" aria-modal="true" aria-label="角色定妆参考图">
           <div class="wf-modal-head">
-            <span class="wf-modal-title">🎭 ${esc(ref.name || ref.id || '视觉锁参考图')}</span>
-            <button type="button" class="wf-btn wf-btn-ghost wf-btn-sm" data-close-ref>✕</button>
+            <span class="wf-modal-title">${esc(ref.name || ref.id || '视觉锁参考图')}</span>
+            <button type="button" class="wf-btn wf-btn-ghost wf-btn-sm" data-close-ref>关闭</button>
           </div>
           <div class="wf-modal-body">
             ${isValidUrl(ref.url) ? `<img class="wf-ref-lightbox-img" src="${esc(ref.url)}" alt="${esc(ref.name || '')}" />` : ''}
@@ -1377,7 +1373,7 @@ export async function render(container, ctx) {
       const isGuestServer = document.body.classList.contains('is-server-guest');
       if (isGuestServer) {
         const pos = resp?.queue_pos ?? 1;
-        toast(`⚡ 已加入共享显卡队列（当前第 ${pos} 位），完成后自动提示播放`, 'success');
+        toast(`已加入云端队列（当前第 ${pos} 位），完成后自动提示播放`, 'success');
       } else {
         state.dispatchModal = resp;
         toast(`已派发 ${resp?.shot_count ?? 0} 个镜头至云端清单`, 'success');

@@ -145,1167 +145,292 @@ const ICONS = {
 };
 
 // ---------------------------------------------------------------------------
-// VIEW 1: COMPUTE FARM MONITOR (#farm)
+// VIEW 1: CONNECT GOOGLE COLAB (#farm) — Honest 3-Step Setup, Live GPUs & Logs
 // ---------------------------------------------------------------------------
 
-const DEFAULT_TELEMETRY = [
-  { label: '09:00', shot_sec: 46, throughput_per_hr: 78, active_gpus: 1, source: 'baseline' },
-  { label: '09:30', shot_sec: 44, throughput_per_hr: 82, active_gpus: 1, source: 'baseline' },
-  { label: '10:00', shot_sec: 41, throughput_per_hr: 88, active_gpus: 2, source: 'measured' },
-  { label: '10:30', shot_sec: 39, throughput_per_hr: 92, active_gpus: 2, source: 'measured' },
-  { label: '11:00', shot_sec: 43, throughput_per_hr: 84, active_gpus: 2, source: 'measured' },
-  { label: '11:30', shot_sec: 38, throughput_per_hr: 95, active_gpus: 2, source: 'measured' },
-  { label: '12:00', shot_sec: 42, throughput_per_hr: 86, active_gpus: 1, source: 'baseline' },
-  { label: '13:00', shot_sec: 40, throughput_per_hr: 90, active_gpus: 2, source: 'measured' },
-  { label: '13:30', shot_sec: 37, throughput_per_hr: 97, active_gpus: 2, source: 'measured' },
-  { label: '14:00', shot_sec: 41, throughput_per_hr: 88, active_gpus: 2, source: 'measured' },
-  { label: '14:30', shot_sec: 39, throughput_per_hr: 92, active_gpus: 2, source: 'measured' },
-  { label: '15:00', shot_sec: 38, throughput_per_hr: 95, active_gpus: 2, source: 'measured' },
-  { label: '15:30', shot_sec: 42, throughput_per_hr: 86, active_gpus: 1, source: 'baseline' },
-  { label: '16:00', shot_sec: 40, throughput_per_hr: 90, active_gpus: 2, source: 'measured' },
-];
-
-const DEFAULT_COST_TIERS = [
-  {
-    key: '30s',
-    label: '30 秒爆款短片',
-    shots: 6,
-    renderTime: '约 4 分钟',
-    cu: 2,
-    oursUsd: 0.2,
-    oursCny: 1.4,
-    commercialCny: 48,
-    commercialNote: '主流商业平台按秒/重抽积分约 ¥48~¥75',
-    traditionalCny: 6000,
-    traditionalNote: '实拍场地 + 剪辑外包周期 3~5 天',
-  },
-  {
-    key: '3m',
-    label: '3 分钟微短剧',
-    shots: 36,
-    renderTime: '约 24 分钟',
-    cu: 11,
-    oursUsd: 1.1,
-    oursCny: 7.5,
-    commercialCny: 260,
-    commercialNote: '商业 AI 视频含角色返工约 ¥260~¥420',
-    traditionalCny: 35000,
-    traditionalNote: '小型剧组 / 外包动画制作约 2 周',
-  },
-  {
-    key: '30m',
-    label: '30 分钟院线长片',
-    shots: 366,
-    renderTime: '多卡并行 ~2.5 小时',
-    cu: 110,
-    oursUsd: 11,
-    oursCny: 78,
-    commercialCny: 1680,
-    commercialNote: '商业平台长片高配积分 ¥1,680+ 且角色易漂移',
-    traditionalCny: 240000,
-    traditionalNote: '传统影视外包团队制作周期 1~2 个月',
-  },
-];
-
-const DEFAULT_COLAB_SCRIPT = `# CineForge 脱敏 Colab GPU 接入模板（零密钥版本）
-# 说明：模型授权令牌仅由本机 farm_server 从 .env 内存态下发，不落盘、不进日志
-
-!git clone --depth 1 https://github.com/your-org/cineforge-worker.git /content/worker
-%cd /content/worker
-
-# 填入派片端临时地址与一次性任务口令（运行前向管理员获取）
-FARM_URL = "https://<your-farm-tunnel>.example"
-FARM_TOKEN = "<paste-session-token-here>"
-
-!python3 worker_client.py \\
-  --farm-url "$FARM_URL" \\
-  --token "$FARM_TOKEN" \\
-  --engine auto \\
-  --idle-shutdown 900`;
-
-function normalizeFarmData(raw) {
+function normalizeFarmData(raw, tasksSnap = null) {
   const d = raw && typeof raw === 'object' ? raw : {};
-  const stats = d.stats || d.metrics || {};
+  const farmServerOnline = Boolean(d.farm_server_online ?? d.online ?? d.farm_online);
+  const liveWorkers = Array.isArray(d.live_workers) ? d.live_workers : [];
+  const colabConnected = Boolean(d.colab_connected ?? liveWorkers.length > 0);
+  const onlineGpuCount = Number(d.online_gpu_count ?? liveWorkers.length ?? 0);
+  const port = Number(d.port ?? d.farm_port ?? 8765);
+  const startFarmCmd = String(d.start_farm_cmd || 'bash studio/start.sh --with-farm --port 8866');
+  const openColabUrl =
+    d.open_in_colab_url ||
+    d.colab_guide?.open_in_colab_url ||
+    'https://colab.research.google.com/github/junwenxiong/cineforge/blob/main/colab/CineForge_Colab_Worker.ipynb';
+  const notebookUrl = d.colab_notebook_url || '/api/farm/colab-notebook';
 
-  const online = Boolean(
-    d.online ??
-    d.farm_online ??
-    d.farm_server_online ??
-    d.dispatcher_online ??
-    d.server_online ??
-    (typeof d.status === 'string' && ['online', 'running', 'active', 'ready'].includes(d.status.toLowerCase()))
-  );
-
-  const totalShots = Number(
-    d.total_shots_rendered ??
-    d.rendered_shots ??
-    d.shots_rendered ??
-    d.total_shots ??
-    stats.total_shots_rendered ??
-    stats.rendered_shots ??
-    0
-  );
-
-  const medianH3 = Number(d.median_h3_sec ?? d.h3_median_sec ?? stats.median_h3_sec ?? d.median_wall_sec ?? 43) || 43;
-  const medianLtx = Number(d.median_ltx_sec ?? d.ltx_median_sec ?? stats.median_ltx_sec ?? 38) || 38;
-  const cost30mUsd = Number(d.est_cost_30min_usd ?? d.cost_30min_usd ?? stats.est_cost_30min_usd ?? 11) || 11;
-  const cu30m = Number(d.est_cu_30min ?? d.cu_30min ?? stats.est_cu_30min ?? 110) || 110;
-  const perMinCny = Number(d.cost_per_min_cny ?? stats.cost_per_min_cny ?? 2.4) || 2.4;
-  const savingsPct = Number(d.savings_pct ?? d.savings_percent ?? stats.savings_pct ?? 85) || 85;
-  const port = d.port ?? d.farm_port ?? 8765;
-
-  // Normalize workers
-  const rawWorkers = Array.isArray(d.workers)
-    ? d.workers
-    : Array.isArray(d.nodes)
-      ? d.nodes
-      : Array.isArray(d.gpus)
-        ? d.gpus
-        : [];
-
-  const workers = rawWorkers.map((w, idx) => ({
-    id: w.id || w.worker_id || w.name || `colab-worker-${idx + 1}`,
-    gpu: w.gpu || w.gpu_model || w.model || w.device || 'NVIDIA L4 / A100 Colab GPU',
-    status: String(w.status || (online ? 'online' : 'standby')).toLowerCase(),
-    completedShots: Number(w.completed_shots ?? w.shots ?? w.jobs_done ?? 0),
-    engine: w.engine || w.backend || 'H3 / LTX-2.5',
-    lastSeen: w.last_seen || w.updated_at || w.heartbeat || (online ? '刚刚' : '按需休眠'),
-  }));
-
-  // Normalize activity logs
-  const rawLogs = Array.isArray(d.activity)
-    ? d.activity
-    : Array.isArray(d.activities)
-      ? d.activities
-      : Array.isArray(d.logs)
-        ? d.logs
-        : Array.isArray(d.recent_logs)
-          ? d.recent_logs
-          : [];
-
-  const activity = rawLogs.slice(0, 40).map((entry) => {
-    if (typeof entry === 'string') {
+  const rawLogs = Array.isArray(d.recent_logs)
+    ? d.recent_logs
+    : Array.isArray(d.activity)
+      ? d.activity
+      : [];
+  const logs = rawLogs
+    .slice(0, 40)
+    .map((entry) => {
+      if (typeof entry === 'string') {
+        return { time: '', tag: 'FARM', level: 'info', message: redactSecrets(entry) };
+      }
       return {
-        time: '',
-        tag: 'FARM',
-        level: 'info',
-        message: redactSecrets(entry),
+        time: entry.time || entry.timestamp || '',
+        tag: String(entry.tag || entry.source || 'FARM').toUpperCase().slice(0, 10),
+        level: String(entry.level || 'info').toLowerCase(),
+        message: redactSecrets(entry.message || entry.text || entry.detail || ''),
       };
-    }
-    return {
-      time: entry.time || entry.timestamp || '',
-      tag: String(entry.source || entry.tag || entry.level || 'FARM').toUpperCase().slice(0, 10),
-      level: String(entry.level || 'info').toLowerCase(),
-      message: redactSecrets(entry.message || entry.text || entry.summary || ''),
-    };
-  }).filter((item) => item.message);
+    })
+    .filter((x) => x.message);
 
-  // Normalize cost comparison tiers if backend supplies them
-  let tiers = DEFAULT_COST_TIERS;
-  const rawTiers = d.cost_comparison || d.cost_tiers || d.tiers;
-  if (Array.isArray(rawTiers) && rawTiers.length >= 2) {
-    tiers = rawTiers.map((t, idx) => {
-      const fb = DEFAULT_COST_TIERS[idx] || DEFAULT_COST_TIERS[0];
-      return {
-        key: String(t.key || t.id || fb.key),
-        label: t.label || t.title || fb.label,
-        shots: Number(t.shots ?? t.est_shots ?? fb.shots),
-        renderTime: t.render_time || t.est_time || fb.renderTime,
-        cu: Number(t.cu ?? t.est_cu ?? fb.cu),
-        oursUsd: Number(t.ours_usd ?? t.cineforge_usd ?? fb.oursUsd),
-        oursCny: Number(t.ours_cny ?? t.cineforge_cny ?? t.platform_cny ?? fb.oursCny),
-        commercialCny: Number(t.commercial_cny ?? t.saas_cny ?? fb.commercialCny),
-        commercialNote: t.commercial_note || fb.commercialNote,
-        traditionalCny: Number(t.traditional_cny ?? t.studio_cny ?? fb.traditionalCny),
-        traditionalNote: t.traditional_note || fb.traditionalNote,
-      };
-    });
-  }
-
-  // Normalize colab_guide
-  const rawGuide = d.colab_guide || d.onboarding || {};
-  let colabSnippet = DEFAULT_COLAB_SCRIPT;
-  let colabNote = '安全架构说明：HF_TOKEN 等模型密钥仅存于本机 .env（权限 600）并由 farm_server 读入内存，绝不写入脚本、日志或前端导出包。';
-  let colabSteps = [
-    {
-      num: 'STEP 01',
-      title: '打开免费或闲置 Colab',
-      desc: '登录 Google Colab 新建笔记本，选择 T4（免费版）或 L4 / A100 运行时即可接入。',
-    },
-    {
-      num: 'STEP 02',
-      title: '运行脱敏接入脚本',
-      desc: '一键复制下方脱敏脚本粘贴运行，自动加入影铸共享算力池并领取分镜渲染任务。',
-    },
-    {
-      num: 'STEP 03',
-      title: '零密钥泄露 + 闲置休眠',
-      desc: '密钥仅留本机内存态；任务完成后自动休眠断开，绝不浪费任何一张 GPU 额度。',
-    },
-  ];
-
-  if (typeof rawGuide === 'string' && rawGuide.trim()) {
-    colabSnippet = redactSecrets(rawGuide.trim());
-  } else if (rawGuide && typeof rawGuide === 'object') {
-    const snippetCandidate = rawGuide.snippet || rawGuide.script || rawGuide.code || d.colab_snippet;
-    if (snippetCandidate) colabSnippet = redactSecrets(String(snippetCandidate).trim());
-    if (rawGuide.security_note || rawGuide.note) {
-      colabNote = redactSecrets(String(rawGuide.security_note || rawGuide.note));
-    }
-    if (Array.isArray(rawGuide.steps) && rawGuide.steps.length >= 3) {
-      colabSteps = rawGuide.steps.slice(0, 3).map((s, idx) => {
-        if (typeof s === 'string') {
-          return { num: `STEP 0${idx + 1}`, title: `步骤 ${idx + 1}`, desc: redactSecrets(s) };
-        }
-        return {
-          num: `STEP 0${idx + 1}`,
-          title: redactSecrets(s.title || `步骤 ${idx + 1}`),
-          desc: redactSecrets(s.desc || s.description || s.detail || ''),
-        };
-      });
-    }
-  }
-
-  // Normalize EasyColab telemetry series
-  const rawTelemetry = Array.isArray(d.telemetry) && d.telemetry.length >= 2 ? d.telemetry : DEFAULT_TELEMETRY;
-  const telemetry = rawTelemetry.slice(0, 24).map((pt, idx) => {
-    const shotSec = Math.max(10, Number(pt.shot_sec ?? pt.wall_sec ?? medianH3) || medianH3);
-    const activeGpus = Math.max(1, Number(pt.active_gpus ?? pt.gpus ?? 1) || 1);
-    const tp = Math.max(
-      1,
-      Number(pt.throughput_per_hr ?? Math.round((3600 / shotSec) * activeGpus)) || Math.round(3600 / shotSec)
-    );
-    return {
-      label: String(pt.label || pt.time || `T${idx + 1}`).slice(0, 12),
-      shot_sec: Number(shotSec.toFixed(1)),
-      throughput_per_hr: Math.round(tp),
-      active_gpus: activeGpus,
-      source: String(pt.source || 'baseline').toLowerCase() === 'measured' ? 'measured' : 'baseline',
-    };
-  });
-
-  // Normalize idle_guard & gdrive_cache_supported
-  const rawGuard = d.idle_guard && typeof d.idle_guard === 'object' ? d.idle_guard : {};
-  const idleGuard = {
-    enabled: rawGuard.enabled !== false,
-    timeout_min: Number(rawGuard.timeout_min ?? 15) || 15,
-    saved_cu_est: Number(rawGuard.saved_cu_est ?? 18.5),
-  };
-  if (!Number.isFinite(idleGuard.saved_cu_est) || idleGuard.saved_cu_est < 0) {
-    idleGuard.saved_cu_est = 18.5;
-  }
-  const gdriveCacheSupported = d.gdrive_cache_supported !== false;
+  const activeTasksCount = Number(tasksSnap?.active_count ?? 0);
 
   return {
-    online,
+    farmServerOnline,
+    colabConnected,
+    onlineGpuCount,
+    liveWorkers,
     port,
-    totalShots,
-    medianH3,
-    medianLtx,
-    cost30mUsd,
-    cu30m,
-    perMinCny,
-    savingsPct,
-    workers,
-    activity,
-    tiers,
-    telemetry,
-    idleGuard,
-    gdriveCacheSupported,
-    colabSteps,
-    colabSnippet,
-    colabNote,
+    startFarmCmd,
+    openColabUrl,
+    notebookUrl,
+    logs,
+    activeTasksCount,
+    securityNote:
+      d.colab_guide?.security_note ||
+      '所有 API Key 与 HF_TOKEN 仅保存在本机 .env（权限 600）或 Colab Secrets 中，不会写入笔记本或日志。',
   };
 }
 
-function buildTelemetryChartSvg(telemetry, metricKey, selectedIdx, esc) {
-  const isThroughput = metricKey === 'throughput_per_hr';
-  const points = telemetry.length >= 2 ? telemetry : DEFAULT_TELEMETRY;
-  const values = points.map((p) => (isThroughput ? p.throughput_per_hr : p.shot_sec));
-
-  const rawMin = Math.min(...values);
-  const rawMax = Math.max(...values);
-  const padSpan = Math.max(isThroughput ? 12 : 6, (rawMax - rawMin) * 0.25);
-  const minVal = Math.max(0, Math.floor((rawMin - padSpan) / 5) * 5);
-  const maxVal = Math.ceil((rawMax + padSpan) / 5) * 5;
-  const span = Math.max(1, maxVal - minVal);
-
-  const W = 960;
-  const H = 205;
-  const padL = 52;
-  const padR = 24;
-  const padT = 20;
-  const padB = 32;
-  const plotW = W - padL - padR;
-  const plotH = H - padT - padB;
-  const baseY = padT + plotH;
-
-  const coords = points.map((p, i) => {
-    const val = isThroughput ? p.throughput_per_hr : p.shot_sec;
-    const x = padL + (points.length === 1 ? plotW / 2 : (i / (points.length - 1)) * plotW);
-    const y = baseY - ((val - minVal) / span) * plotH;
-    return { x: Number(x.toFixed(1)), y: Number(y.toFixed(1)), val, pt: p, idx: i };
-  });
-
-  // Smooth Catmull-Rom -> cubic Bezier path clamped inside plot bounds
-  const clampY = (y) => Number(Math.max(padT + 2, Math.min(baseY - 2, y)).toFixed(1));
-  let linePath = `M ${coords[0].x} ${coords[0].y}`;
-  for (let i = 0; i < coords.length - 1; i++) {
-    const p0 = coords[Math.max(0, i - 1)];
-    const p1 = coords[i];
-    const p2 = coords[i + 1];
-    const p3 = coords[Math.min(coords.length - 1, i + 2)];
-    const cp1x = Number((p1.x + (p2.x - p0.x) / 6).toFixed(1));
-    const cp1y = clampY(p1.y + (p2.y - p0.y) / 6);
-    const cp2x = Number((p2.x - (p3.x - p1.x) / 6).toFixed(1));
-    const cp2y = clampY(p2.y - (p3.y - p1.y) / 6);
-    linePath += ` C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${p2.x} ${p2.y}`;
-  }
-
-  const areaPath = `${linePath} L ${coords[coords.length - 1].x} ${baseY} L ${coords[0].x} ${baseY} Z`;
-
-  const gridTicks = 4;
-  const gridLinesHtml = Array.from({ length: gridTicks + 1 }, (_, k) => {
-    const ratio = k / gridTicks;
-    const y = Number((padT + ratio * plotH).toFixed(1));
-    const labelVal = Math.round(maxVal - ratio * span);
-    const unit = isThroughput ? '' : 's';
-    return `
-      <line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="rgba(255,255,255,0.065)" stroke-dasharray="${k === gridTicks ? '0' : '4 5'}" stroke-width="1" />
-      <text x="${padL - 10}" y="${y + 4}" text-anchor="end" fill="#646D82" font-size="11" font-family="JetBrains Mono, ui-monospace, monospace">${labelVal}${unit}</text>
-    `;
-  }).join('');
-
-  const labelStep = Math.max(1, Math.ceil(coords.length / 8));
-  const xLabelsHtml = coords
-    .filter((_, i) => i === 0 || i === coords.length - 1 || i % labelStep === 0)
-    .map((c) => `
-      <text x="${c.x}" y="${H - 10}" text-anchor="middle" fill="#646D82" font-size="11" font-family="JetBrains Mono, ui-monospace, monospace">${esc(c.pt.label)}</text>
-    `)
-    .join('');
-
-  const strokeGradId = isThroughput ? 'fe-line-emerald' : 'fe-line-gold';
-  const areaGradId = isThroughput ? 'fe-area-emerald' : 'fe-area-gold';
-  const activeIdx = selectedIdx >= 0 && selectedIdx < coords.length ? selectedIdx : coords.length - 1;
-  const activeCoord = coords[activeIdx];
-
-  const dotsHtml = coords.map((c) => {
-    const isMeasured = c.pt.source === 'measured';
-    const isFocused = c.idx === activeIdx;
-    const fill = isMeasured
-      ? (isThroughput ? '#34D399' : '#F5B041')
-      : '#38BDF8';
-    return `
-      <g class="fe-chart-pt" data-point-idx="${c.idx}" tabindex="0" role="button" aria-label="${esc(c.pt.label)} 单镜 ${c.pt.shot_sec}秒 吞吐 ${c.pt.throughput_per_hr}镜每小时">
-        <circle cx="${c.x}" cy="${c.y}" r="${isFocused ? 11 : 7}" fill="${fill}" opacity="${isFocused ? '0.24' : '0.12'}" />
-        <circle cx="${c.x}" cy="${c.y}" r="${isFocused ? 4.8 : 3.5}" fill="${fill}" stroke="#090B10" stroke-width="1.8" />
-        <title>${esc(c.pt.label)} · 单镜 ${c.pt.shot_sec}s · 吞吐 ${c.pt.throughput_per_hr} 镜/时 · ${c.pt.active_gpus} 卡 (${isMeasured ? '实测' : '基线'})</title>
-      </g>
-    `;
-  }).join('');
-
-  return `
-    <svg class="fe-chart-svg" id="fe-telemetry-svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${isThroughput ? '云端每小时出片吞吐折线图' : '云端单镜渲染耗时折线图'}">
-      <defs>
-        <linearGradient id="fe-line-gold" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#38BDF8" />
-          <stop offset="55%" stop-color="#F5B041" />
-          <stop offset="100%" stop-color="#F7C266" />
-        </linearGradient>
-        <linearGradient id="fe-area-gold" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color="#F5B041" stop-opacity="0.30" />
-          <stop offset="65%" stop-color="#38BDF8" stop-opacity="0.08" />
-          <stop offset="100%" stop-color="#07080B" stop-opacity="0.0" />
-        </linearGradient>
-        <linearGradient id="fe-line-emerald" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#38BDF8" />
-          <stop offset="55%" stop-color="#34D399" />
-          <stop offset="100%" stop-color="#6EE7B7" />
-        </linearGradient>
-        <linearGradient id="fe-area-emerald" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color="#34D399" stop-opacity="0.32" />
-          <stop offset="65%" stop-color="#38BDF8" stop-opacity="0.08" />
-          <stop offset="100%" stop-color="#07080B" stop-opacity="0.0" />
-        </linearGradient>
-        <filter id="fe-stroke-glow" x="-10%" y="-25%" width="120%" height="150%">
-          <feGaussianBlur stdDeviation="3.2" result="blur" />
-          <feMerge>
-            <feMergeNode in="blur" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter>
-      </defs>
-
-      ${gridLinesHtml}
-      <line x1="${activeCoord.x}" y1="${padT}" x2="${activeCoord.x}" y2="${baseY}" stroke="rgba(245, 176, 65, 0.24)" stroke-dasharray="3 4" stroke-width="1" />
-      <path d="${areaPath}" fill="url(#${areaGradId})" />
-      <path d="${linePath}" fill="none" stroke="url(#${strokeGradId})" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#fe-stroke-glow)" />
-      ${dotsHtml}
-      ${xLabelsHtml}
-    </svg>
-  `;
-}
-
-function buildTelemetryReadoutHtml(pt, esc) {
-  if (!pt) return '';
-  const isMeasured = pt.source === 'measured';
-  return `
-    <span class="fe-tag ${isMeasured ? 'fe-tag--gold' : 'fe-tag--cyan'}" style="font-size:11px;padding:2px 8px;">${isMeasured ? '实测采样' : '基线校准'}</span>
-    <span class="fe-num">时段 <strong>${esc(pt.label)}</strong></span>
-    <span class="fe-num">单镜 <strong style="color:var(--accent-gold,#F5B041);">${pt.shot_sec}s</strong></span>
-    <span class="fe-num">吞吐 <strong style="color:var(--accent-emerald,#34D399);">${pt.throughput_per_hr} 镜/时</strong></span>
-    <span class="fe-num">活跃 <strong>${pt.active_gpus} 卡</strong></span>
-  `;
-}
-
-function buildCostCalcHtml(tier, esc) {
-  // Visual scaling: commercial vs ours are compared clearly while traditional stays 100% anchor
-  const maxTraditional = Math.max(tier.traditionalCny, tier.commercialCny, 1);
-  // Use logarithmic-assisted visual bar width so commercial (¥48~1680) and ours (¥1.4~78) remain visually legible alongside ¥240,000!
-  const logPct = (val) => {
-    const ratio = Math.log10(Math.max(val, 1) + 1) / Math.log10(maxTraditional + 1);
-    return Math.max(4, Math.min(100, Math.round(ratio * 100)));
-  };
-
-  const tradWidth = 100;
-  const commWidth = Math.max(24, Math.min(72, logPct(tier.commercialCny)));
-  const oursWidth = Math.max(6, Math.min(20, Math.round(logPct(tier.oursCny) * 0.42)));
-
-  const saveVsComm = Math.max(0, Math.round(tier.commercialCny - tier.oursCny));
-  const savePctVsComm = tier.commercialCny > 0
-    ? Math.max(85, Math.min(99, Math.round((1 - tier.oursCny / tier.commercialCny) * 100)))
-    : 92;
-
-  return `
-    <div class="fe-bar-list">
-      <div class="fe-bar-item">
-        <div class="fe-bar-meta">
-          <div class="fe-bar-label-wrap">
-            <span class="fe-bar-label">传统外包 / 实拍团队</span>
-            <span class="fe-tag">人工重资产</span>
-          </div>
-          <span class="fe-bar-price fe-num">¥${formatNumber(tier.traditionalCny)}+</span>
-        </div>
-        <div class="fe-bar-track">
-          <div class="fe-bar-fill fe-bar-fill--traditional" style="width:${tradWidth}%"></div>
-        </div>
-        <div class="fe-bar-note">
-          <span>${esc(tier.traditionalNote)}</span>
-          <span class="fe-num">基准参照 100%</span>
-        </div>
-      </div>
-
-      <div class="fe-bar-item">
-        <div class="fe-bar-meta">
-          <div class="fe-bar-label-wrap">
-            <span class="fe-bar-label">市面主流商用 AI 视频平台</span>
-            <span class="fe-tag fe-tag--rose">按次抽卡扣积分</span>
-          </div>
-          <span class="fe-bar-price fe-num">约 ¥${formatNumber(tier.commercialCny)}</span>
-        </div>
-        <div class="fe-bar-track">
-          <div class="fe-bar-fill fe-bar-fill--commercial" style="width:${commWidth}%"></div>
-        </div>
-        <div class="fe-bar-note">
-          <span>${esc(tier.commercialNote)}</span>
-          <span class="fe-num">仍需持续充值会员积分</span>
-        </div>
-      </div>
-
-      <div class="fe-bar-item fe-bar-item--ours">
-        <div class="fe-bar-meta">
-          <div class="fe-bar-label-wrap">
-            <span class="fe-bar-label">影铸 Colab 共享算力池（本平台）</span>
-            <span class="fe-tag fe-tag--emerald">内测体验官 ¥0 免费额度</span>
-          </div>
-          <span class="fe-bar-price fe-num">≈ ¥${tier.oursCny} <small style="font-size:12px;font-weight:600;opacity:0.85;">(${tier.cu} CU)</small></span>
-        </div>
-        <div class="fe-bar-track">
-          <div class="fe-bar-fill fe-bar-fill--ours" style="width:${oursWidth}%"></div>
-        </div>
-        <div class="fe-bar-note">
-          <span>折合 $${tier.oursUsd} · 开源模型权重 + 闲置 Colab GPU 共享编排</span>
-          <span style="color:var(--accent-emerald,#34D399);font-weight:650;">比商用平台立省 ${savePctVsComm}%</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="fe-calc-summary">
-      <div class="fe-savings-hero">
-        <span class="fe-savings-kicker">相比商用 AI 视频平台立省</span>
-        <div class="fe-savings-amount fe-num">¥${formatNumber(saveVsComm)}+</div>
-        <span class="fe-savings-sub">降本高达 <strong style="color:var(--accent-emerald,#34D399);">${savePctVsComm}%</strong> · 视觉锁保障主角连贯不重抽</span>
-      </div>
-
-      <div class="fe-telemetry-list">
-        <div class="fe-telemetry-row">
-          <span class="fe-telemetry-key">目标片长规格</span>
-          <span class="fe-telemetry-val">${esc(tier.label)}</span>
-        </div>
-        <div class="fe-telemetry-row">
-          <span class="fe-telemetry-key">预计拆解分镜数</span>
-          <span class="fe-telemetry-val fe-num">约 ${formatNumber(tier.shots)} 镜</span>
-        </div>
-        <div class="fe-telemetry-row">
-          <span class="fe-telemetry-key">云端实测出片耗时</span>
-          <span class="fe-telemetry-val">${esc(tier.renderTime)}</span>
-        </div>
-        <div class="fe-telemetry-row">
-          <span class="fe-telemetry-key">云算力真实消耗</span>
-          <span class="fe-telemetry-val fe-telemetry-val--gold fe-num">${tier.cu} CU (≈ $${tier.oursUsd} / ¥${tier.oursCny})</span>
-        </div>
-        <div class="fe-telemetry-row">
-          <span class="fe-telemetry-key">白领体验官实付</span>
-          <span class="fe-telemetry-val fe-telemetry-val--emerald">¥0（内测共享额度全包）</span>
-        </div>
-      </div>
-
-      <button type="button" class="fe-btn fe-btn--gold fe-btn--full" data-action="go-create">
-        ${ICONS.spark}
-        <span>立即免费试拍一支「${esc(tier.label)}」</span>
-      </button>
-    </div>
-  `;
-}
-
-function renderFarmContent(container, ctx, farm, state) {
+function renderColabContent(container, ctx, farm) {
   const esc = (v) => safeEsc(ctx, v);
-  const activeTier = farm.tiers.find((t) => t.key === state.selectedTierKey) || farm.tiers[0];
-  const notebookUrl = ctx?.api?.colabNotebookUrl || '/api/farm/colab-notebook';
 
-  const telemetry = farm.telemetry || DEFAULT_TELEMETRY;
-  const measuredCount = telemetry.filter((p) => p.source === 'measured').length;
-  const baselineCount = telemetry.length - measuredCount;
-  const peakGpus = Math.max(1, ...telemetry.map((p) => p.active_gpus || 1));
-  const avgShotSec = (telemetry.reduce((acc, p) => acc + p.shot_sec, 0) / Math.max(1, telemetry.length)).toFixed(1);
-  const avgThroughput = Math.round(telemetry.reduce((acc, p) => acc + p.throughput_per_hr, 0) / Math.max(1, telemetry.length));
-  const focusedIdx = state.selectedPointIdx >= 0 && state.selectedPointIdx < telemetry.length
-    ? state.selectedPointIdx
-    : telemetry.length - 1;
-  const focusedPt = telemetry[focusedIdx];
-  const savedCnyEst = (farm.idleGuard.saved_cu_est * 0.72).toFixed(1);
-
-  const statusPillHtml = farm.online
-    ? `<span class="fe-tag fe-tag--emerald"><span class="fe-dot fe-dot--online"></span>在线派片</span>`
-    : `<span class="fe-tag fe-tag--cyan"><span class="fe-dot fe-dot--standby"></span>省电待机</span>`;
-
-  const workersHtml = farm.workers.length > 0
-    ? farm.workers.map((w) => {
-        const isOnline = ['online', 'busy', 'running', 'active'].includes(w.status);
-        const pillClass = w.status === 'busy' || w.status === 'running'
-          ? 'fe-tag--cyan'
-          : isOnline
-            ? 'fe-tag--emerald'
-            : '';
-        const statusText = w.status === 'busy' || w.status === 'running'
-          ? '渲染中'
-          : isOnline
-            ? '在线就绪'
-            : '休眠待命';
+  const workersHtml = farm.liveWorkers.length > 0
+    ? farm.liveWorkers.map((w) => {
+        const isBusy = w.status === 'busy';
         return `
-          <div class="fe-worker-card">
-            <div class="fe-worker-top">
-              <div class="fe-worker-id">
-                <div class="fe-gpu-badge">${ICONS.gpu}</div>
-                <div style="min-width:0;">
-                  <div class="fe-worker-name">${esc(w.gpu)}</div>
-                  <div class="fe-worker-sub fe-num">节点 ${esc(w.id)}</div>
-                </div>
-              </div>
-              <span class="fe-tag ${pillClass}">
-                <span class="fe-dot ${isOnline ? 'fe-dot--online' : 'fe-dot--muted'}"></span>
-                ${esc(statusText)}
-              </span>
+          <div class="cf-colab-worker">
+            <div class="cf-colab-worker-main">
+              <div class="cf-colab-worker-name">${esc(w.gpu || 'Colab GPU')}</div>
+              <div class="cf-colab-worker-sub mono">节点 ${esc(w.id)} · ${esc(w.engine || 'H3 / LTX-2.5')}</div>
             </div>
-            <div class="fe-worker-metrics">
-              <div class="fe-worker-metric">
-                <span class="fe-worker-metric-k">累计出片</span>
-                <span class="fe-worker-metric-v fe-num">${formatNumber(w.completedShots)} 镜</span>
-              </div>
-              <div class="fe-worker-metric">
-                <span class="fe-worker-metric-k">推理引擎</span>
-                <span class="fe-worker-metric-v">${esc(w.engine)}</span>
-              </div>
-              <div class="fe-worker-metric">
-                <span class="fe-worker-metric-k">最近心跳</span>
-                <span class="fe-worker-metric-v fe-num">${esc(w.lastSeen)}</span>
-              </div>
+            <div class="cf-colab-worker-right">
+              <span class="st-badge ${isBusy ? 'is-gold' : 'is-emerald'}">${isBusy ? '正在渲染' : '在线就绪'}</span>
+              <span class="cf-colab-worker-seen">${esc(w.last_seen || '刚刚')}</span>
             </div>
           </div>
         `;
       }).join('')
     : `
-      <div class="fe-worker-card">
-        <div class="fe-worker-top">
-          <div class="fe-worker-id">
-            <div class="fe-gpu-badge">${ICONS.gpu}</div>
-            <div style="min-width:0;">
-              <div class="fe-worker-name">Colab G4 / L4 / H100 按需算力池</div>
-              <div class="fe-worker-sub">零闲置计费 · 派发任务后 60 秒唤醒</div>
-            </div>
-          </div>
-          <span class="fe-tag fe-tag--cyan"><span class="fe-dot fe-dot--standby"></span>休眠省额度</span>
-        </div>
-        <div class="fe-worker-metrics">
-          <div class="fe-worker-metric">
-            <span class="fe-worker-metric-k">累计已渲染</span>
-            <span class="fe-worker-metric-v fe-num">${formatNumber(farm.totalShots)} 镜</span>
-          </div>
-          <div class="fe-worker-metric">
-            <span class="fe-worker-metric-k">主力引擎</span>
-            <span class="fe-worker-metric-v">MiniMax H3 · LTX-2.5</span>
-          </div>
-          <div class="fe-worker-metric">
-            <span class="fe-worker-metric-k">本机预演服务</span>
-            <span class="fe-worker-metric-v" style="color:var(--accent-emerald,#34D399);">100% 就绪</span>
-          </div>
-        </div>
-      </div>
-      <div class="fe-standby-callout">
-        <span style="color:var(--accent-cyan,#38BDF8);margin-top:1px;">${ICONS.zap}</span>
-        <div>
-          <strong>智能省电策略生效中：</strong>当前没有正在烧卡的云端 GPU，不会产生任何待机费用。你可以照常在创作台新建项目、在工作流看板精修分镜并生成本地预演成片；点击「派发云端精拍」时随时唤醒 Colab 节点。
-        </div>
+      <div class="cf-colab-empty">
+        暂未检测到在线 Colab GPU。完成第 1、2 步并运行 Colab 单元格后，GPU 节点会在几秒内自动出现在这里。
       </div>
     `;
 
-  const logsHtml = farm.activity.length > 0
-    ? farm.activity.map((item) => {
-        const tagClass = item.level === 'ok' || item.level === 'success' || /done|complete|ok|完成/i.test(item.message)
-          ? 'fe-log-tag--ok'
-          : /cost|cu|dispatch|派发|queue/i.test(item.message)
-            ? 'fe-log-tag--gold'
-            : '';
-        return `
-          <div class="fe-log-row">
-            <span class="fe-log-time fe-num">${esc(item.time || '--:--')}</span>
-            <span class="fe-log-tag ${tagClass}">${esc(item.tag)}</span>
-            <span class="fe-log-msg">${esc(item.message)}</span>
-          </div>
-        `;
-      }).join('')
+  const logsHtml = farm.logs.length > 0
+    ? farm.logs.map((item) => `
+        <div class="st-log-line ${item.level === 'ok' ? 'is-ok' : item.level === 'error' ? 'is-error' : ''}">
+          <span class="st-log-time">${esc(item.time || '--:--')}</span>
+          <span class="st-log-tag">${esc(item.tag)}</span>
+          <span>${esc(item.message)}</span>
+        </div>
+      `).join('')
     : `
-      <div class="fe-log-row">
-        <span class="fe-log-time fe-num">READY</span>
-        <span class="fe-log-tag fe-log-tag--ok">LOCAL</span>
-        <span class="fe-log-msg">本地分镜编排与 ffmpeg 预演合成服务已就绪，随时可体验完整视频工作流。</span>
-      </div>
-      <div class="fe-log-row">
-        <span class="fe-log-time fe-num">STATS</span>
-        <span class="fe-log-tag fe-log-tag--gold">BENCH</span>
-        <span class="fe-log-msg">历史工作区累计验证 ${formatNumber(farm.totalShots)} 镜 · H3 中位 ${farm.medianH3}s/镜 · LTX-2.5 中位 ${farm.medianLtx}s/镜。</span>
-      </div>
-      <div class="fe-log-row">
-        <span class="fe-log-time fe-num">SAFE</span>
-        <span class="fe-log-tag">GUARD</span>
-        <span class="fe-log-msg">日志流已启用全自动脱敏过滤，所有密钥、令牌与隧道链接均不会出现在控制台。</span>
+      <div class="st-log-line">
+        <span class="st-log-time">--:--</span>
+        <span class="st-log-tag">READY</span>
+        <span>暂无运行日志。启动派片服务并接入 Colab 后，模型加载、分镜渲染与回传日志会实时显示在这里。</span>
       </div>
     `;
 
   container.innerHTML = `
-    <div class="fe-page" data-view="farm">
-      <header class="fe-header">
-        <div class="fe-header-copy">
-          <span class="fe-eyebrow">${ICONS.zap} COMPUTE FARM · 极低成本共享云算力</span>
-          <h1 class="fe-title">算力工坊 · 用一杯咖啡的成本拍院线大片</h1>
-          <p class="fe-subtitle">
-            通过将闲置与免费 Colab GPU 编排成分布式拍片池，把 30 分钟连续角色 AI 电影的渲染开销压低至约 $11（每分钟约 ¥2.4），普通白领体验官内测全程 ¥0 免费使用。
+    <div class="cf-colab-page" data-view="farm">
+      <header class="cf-colab-head">
+        <div>
+          <h1 class="cf-colab-title">连接 Google Colab 云端算力</h1>
+          <p class="cf-colab-sub">
+            所有视频模型（MiniMax-H3 开源4步 / LTX-2.5 / V2V 换角）都在 Colab GPU 运行，本机只提供 Web 界面与视频管理。
           </p>
         </div>
-        <div class="fe-header-actions">
-          <a
-            href="https://colab.research.google.com/github/junwenxiong/cineforge/blob/main/colab/CineForge_Colab_Worker.ipynb"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="fe-btn fe-btn--gold"
-            id="fe-open-colab"
-          >
-            ${ICONS.zap}
-            <span>一键在 Google Colab 打开</span>
-          </a>
-          <a
-            href="${esc(notebookUrl)}"
-            download="CineForge_Colab_Worker.ipynb"
-            class="fe-btn fe-btn--gold-outline"
-            id="fe-download-ipynb"
-            data-colab-notebook-download="true"
-          >
-            ${ICONS.download}
-            <span>下载 .ipynb 笔记本</span>
-          </a>
-          <button type="button" class="fe-btn" id="fe-farm-refresh">
+        <div class="cf-colab-head-actions">
+          <button type="button" class="st-mini-btn" id="fe-farm-refresh">
             ${ICONS.refresh}
-            <span>刷新实时状态</span>
+            <span>刷新状态</span>
           </button>
-          <button type="button" class="fe-btn" data-action="go-create">
-            ${ICONS.spark}
-            <span>去创作台拍片</span>
-          </button>
+          <a href="#studio" class="st-mini-btn is-gold">返回生成视频</a>
         </div>
       </header>
 
-      <!-- 1. Top KPI Strip (4 Cinema Glass Stat Cards) -->
-      <section class="fe-kpi-grid" aria-label="算力核心指标">
-        <article class="fe-kpi-card ${farm.online ? 'fe-kpi-card--emerald' : 'fe-kpi-card--cyan'}">
-          <div class="fe-kpi-top">
-            <span class="fe-kpi-label">派片服务状态</span>
-            <span class="fe-kpi-icon-box ${farm.online ? 'fe-kpi-icon-box--emerald' : 'fe-kpi-icon-box--cyan'}">${ICONS.server}</span>
-          </div>
-          <div class="fe-kpi-value-row">
-            <div class="fe-kpi-value fe-kpi-value--sm">
-              <span class="fe-dot ${farm.online ? 'fe-dot--online' : 'fe-dot--standby'}"></span>
-              <span>${farm.online ? '云端派片在线' : '待机省电 · 本地就绪'}</span>
-            </div>
-          </div>
-          <div class="fe-kpi-foot">
-            <div class="fe-kpi-chips">
-              ${statusPillHtml}
-              <span class="fe-mini-chip fe-num">端口 :${esc(farm.port)}</span>
-            </div>
-            <p class="fe-kpi-desc">
-              ${farm.online
-                ? '本机派片服务与云端算力通道正常在线，提交分镜即可批量渲染。'
-                : '云端 GPU 休眠省额度期间，本地分镜编排与预演成片仍 100% 流畅可用。'}
-            </p>
-          </div>
-        </article>
-
-        <article class="fe-kpi-card fe-kpi-card--cyan">
-          <div class="fe-kpi-top">
-            <span class="fe-kpi-label">实测出片吞吐</span>
-            <span class="fe-kpi-icon-box fe-kpi-icon-box--cyan">${ICONS.film}</span>
-          </div>
-          <div class="fe-kpi-value-row">
-            <span class="fe-kpi-value fe-num">${formatNumber(farm.totalShots)}</span>
-            <span class="fe-kpi-unit">个实拍分镜</span>
-          </div>
-          <div class="fe-kpi-foot">
-            <div class="fe-kpi-chips">
-              <span class="fe-mini-chip fe-num">H3 中位 ${farm.medianH3}s/镜</span>
-              <span class="fe-mini-chip fe-num">LTX-2.5 ${farm.medianLtx}s/镜</span>
-            </div>
-            <p class="fe-kpi-desc">来自真实工作区多部短片与长片流水线的全量落地镜头统计。</p>
-          </div>
-        </article>
-
-        <article class="fe-kpi-card fe-kpi-card--gold">
-          <div class="fe-kpi-top">
-            <span class="fe-kpi-label">30 分钟电影实测成本</span>
-            <span class="fe-kpi-icon-box fe-kpi-icon-box--gold">${ICONS.coins}</span>
-          </div>
-          <div class="fe-kpi-value-row">
-            <span class="fe-kpi-value fe-kpi-value--gold fe-num">≈ $${farm.cost30mUsd}</span>
-            <span class="fe-kpi-unit fe-num">/ ${farm.cu30m} CU</span>
-          </div>
-          <div class="fe-kpi-foot">
-            <div class="fe-kpi-chips">
-              <span class="fe-mini-chip fe-mini-chip--gold fe-num">每分钟约 ¥${farm.perMinCny}</span>
-              <span class="fe-mini-chip">1080p 成片</span>
-            </div>
-            <p class="fe-kpi-desc">基于 366 镜完整剧情长片实测，无需购买昂贵商用按月订阅。</p>
-          </div>
-        </article>
-
-        <article class="fe-kpi-card fe-kpi-card--emerald">
-          <div class="fe-kpi-top">
-            <span class="fe-kpi-label">相比商业平台节省</span>
-            <span class="fe-kpi-icon-box fe-kpi-icon-box--emerald">${ICONS.trending}</span>
-          </div>
-          <div class="fe-kpi-value-row">
-            <span class="fe-kpi-value fe-kpi-value--emerald fe-num">节省 ${farm.savingsPct}%+</span>
-          </div>
-          <div class="fe-kpi-foot">
-            <div class="fe-kpi-chips">
-              <span class="fe-mini-chip fe-mini-chip--emerald">体验官内测 ¥0</span>
-              <span class="fe-mini-chip">免按秒扣积分</span>
-            </div>
-            <p class="fe-kpi-desc">角色视觉锁减少抽卡废片率，把每一份算力都花在过审镜头上。</p>
-          </div>
-        </article>
-      </section>
-
-      <!-- 1.5 EasyColab Real-Time Telemetry Chart + Dual Cost-Guard Capsules -->
-      <section class="fe-panel fe-telemetry-panel" aria-label="EasyColab 实时算力监控折线图">
-        <div class="fe-panel-head">
-          <div class="fe-panel-title-wrap">
-            <h2 class="fe-panel-title">${ICONS.activity} EasyColab 风格实时算力监控曲线</h2>
-            <p class="fe-panel-sub fe-num">
-              实测 ${measuredCount} 点 · 基线校准 ${baselineCount} 点 · 峰值 ${peakGpus} 卡并行 · 均值 ${avgShotSec}s/镜 (${avgThroughput} 镜/时)
-            </p>
-          </div>
-          <div class="fe-seg-group" role="tablist" aria-label="切换监控指标" id="fe-telemetry-tabs">
-            <button
-              type="button"
-              role="tab"
-              class="fe-seg-btn ${state.telemetryMetric === 'shot_sec' ? 'is-active' : ''}"
-              data-telemetry-metric="shot_sec"
-              aria-selected="${state.telemetryMetric === 'shot_sec' ? 'true' : 'false'}"
-            >单镜耗时 (秒/镜)</button>
-            <button
-              type="button"
-              role="tab"
-              class="fe-seg-btn ${state.telemetryMetric === 'throughput_per_hr' ? 'is-active' : ''}"
-              data-telemetry-metric="throughput_per_hr"
-              aria-selected="${state.telemetryMetric === 'throughput_per_hr' ? 'true' : 'false'}"
-            >每小时吞吐 (镜/时)</button>
+      <!-- Honest Live Status Summary (3 Clear Indicators) -->
+      <section class="cf-colab-status-grid" aria-label="实时连接状态">
+        <div class="cf-colab-stat-card ${farm.farmServerOnline ? 'is-ok' : ''}">
+          <span class="cf-colab-stat-label">本机派片服务 (:${esc(farm.port)})</span>
+          <div class="cf-colab-stat-val">
+            <span class="status-dot ${farm.farmServerOnline ? 'online' : 'muted'}"></span>
+            <span>${farm.farmServerOnline ? '已启动运行中' : '未启动'}</span>
           </div>
         </div>
 
-        <div class="fe-chart-shell">
-          <div class="fe-chart-stage" id="fe-telemetry-stage">
-            ${buildTelemetryChartSvg(telemetry, state.telemetryMetric, focusedIdx, esc)}
+        <div class="cf-colab-stat-card ${farm.colabConnected ? 'is-ok' : ''}">
+          <span class="cf-colab-stat-label">在线 Colab GPU</span>
+          <div class="cf-colab-stat-val">
+            <span class="status-dot ${farm.colabConnected ? 'online' : 'muted'}"></span>
+            <span>${farm.colabConnected ? `${farm.onlineGpuCount} 台在线` : '0 台 · 未连接'}</span>
           </div>
-          <div class="fe-chart-foot">
-            <div class="fe-chart-legend">
-              <span class="fe-legend-item">
-                <span class="fe-legend-swatch ${state.telemetryMetric === 'throughput_per_hr' ? 'fe-legend-swatch--emerald' : 'fe-legend-swatch--gold'}"></span>
-                <span>实测采样点</span>
-              </span>
-              <span class="fe-legend-item">
-                <span class="fe-legend-swatch fe-legend-swatch--cyan"></span>
-                <span>基线校准点</span>
-              </span>
-            </div>
-            <div class="fe-chart-readout" id="fe-telemetry-readout">
-              ${buildTelemetryReadoutHtml(focusedPt, esc)}
-            </div>
+        </div>
+
+        <div class="cf-colab-stat-card">
+          <span class="cf-colab-stat-label">当前队列任务</span>
+          <div class="cf-colab-stat-val">
+            <span class="status-dot ${farm.activeTasksCount > 0 ? 'gold' : 'muted'}"></span>
+            <span>${farm.activeTasksCount} 个进行中 / 排队中</span>
           </div>
         </div>
       </section>
 
-      <!-- Dual Cost-Guard Capsule Cards -->
-      <section class="fe-guards-grid" aria-label="双省钱守护胶囊">
-        <article class="fe-guard-card fe-guard-card--emerald">
-          <div class="fe-guard-icon fe-guard-icon--emerald" aria-hidden="true">${ICONS.clockShield}</div>
-          <div class="fe-guard-body">
-            <div class="fe-guard-head">
-              <h3 class="fe-guard-title">闲置 ${farm.idleGuard.timeout_min} 分钟自动释放 Colab 显卡</h3>
-              <span class="fe-tag fe-tag--emerald">${farm.idleGuard.enabled ? '守护已开启' : '待开启'}</span>
-            </div>
-            <p class="fe-guard-desc">
-              队列清空满 ${farm.idleGuard.timeout_min} 分钟自动触发 <code>google.colab.runtime.unassign()</code> 释放 GPU 运行时，彻底防止忘记关机白扣 CU。
-            </p>
-            <div class="fe-guard-foot">
-              <span class="fe-mini-chip fe-mini-chip--emerald fe-num">累计预计守护节省 ${farm.idleGuard.saved_cu_est} CU (≈ ¥${savedCnyEst})</span>
-              <span class="fe-mini-chip">零闲置扣费</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="fe-guard-card fe-guard-card--cyan">
-          <div class="fe-guard-icon fe-guard-icon--cyan" aria-hidden="true">${ICONS.hardDrive}</div>
-          <div class="fe-guard-body">
-            <div class="fe-guard-head">
-              <h3 class="fe-guard-title">Colab 云端多模型 · 含视频上传与下载</h3>
-              <span class="fe-tag fe-tag--cyan">${farm.gdriveCacheSupported ? 'H3 开源4步 · LTX-2.5 · V2V · RelayVSR' : '按需启用'}</span>
-            </div>
-            <p class="fe-guard-desc">
-              点开 Colab 笔记本即可直接运行 <strong>MiniMax-H3（开源免 Box）</strong>、<strong>LTX-2.5</strong> 与 <strong>V2V 换角</strong>（推荐 A100 / H100 / G4），默认使用高速本地盘，成片自动回传本机 Web 并支持在 Colab 一键打包下载或备份至 Google Drive。
-            </p>
-            <div class="fe-guard-foot">
-              <span class="fe-mini-chip fe-mini-chip--gold">所有计算均在 Colab 完成</span>
-              <a
-                href="${esc(notebookUrl)}"
-                download="CineForge_Colab_Worker.ipynb"
-                class="fe-btn fe-btn--sm fe-btn--gold-outline"
-              >
-                ${ICONS.download}
-                <span>下载 .ipynb</span>
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <!-- 2. Interactive Cost Savings Visualizer -->
-      <section class="fe-panel fe-calc-panel" aria-label="成本对比计算器">
-        <div class="fe-panel-head">
-          <div class="fe-panel-title-wrap">
-            <h2 class="fe-panel-title">${ICONS.coins} 交互式成本对比计算器</h2>
-            <p class="fe-panel-sub">切换不同视频时长，直观对比传统外包、商业 AI 平台与影铸共享算力池的真实开销</p>
-          </div>
-          <div class="fe-seg-group" role="tablist" aria-label="选择影片时长" id="fe-cost-tabs">
-            ${farm.tiers.map((t) => `
-              <button
-                type="button"
-                role="tab"
-                class="fe-seg-btn ${t.key === activeTier.key ? 'is-active' : ''}"
-                data-tier-key="${esc(t.key)}"
-                aria-selected="${t.key === activeTier.key ? 'true' : 'false'}"
-              >${esc(t.label)}</button>
-            `).join('')}
-          </div>
-        </div>
-
-        <div class="fe-calc-grid" id="fe-cost-stage">
-          ${buildCostCalcHtml(activeTier, esc)}
-        </div>
-      </section>
-
-      <!-- 3. Live Nodes & Sanitized Activity Feed -->
-      <section class="fe-farm-split" aria-label="云端节点与实时渲染动态">
-        <div class="fe-panel">
-          <div class="fe-panel-head">
-            <div class="fe-panel-title-wrap">
-              <h2 class="fe-panel-title">${ICONS.gpu} 云端 GPU 节点池</h2>
-              <p class="fe-panel-sub">活跃及最近接入的 Colab 渲染节点状态一览</p>
-            </div>
-            <span class="fe-tag ${farm.workers.length > 0 ? 'fe-tag--emerald' : 'fe-tag--cyan'} fe-num">
-              ${farm.workers.length > 0 ? `${farm.workers.length} 个已登记节点` : '按需唤醒 · 0 闲置费'}
+      <!-- Step 1 & Step 2 -->
+      <section class="cf-colab-steps" aria-label="两步接入指南">
+        <article class="st-card cf-colab-step-card">
+          <div class="cf-colab-step-head">
+            <span class="cf-colab-step-num">第 1 步</span>
+            <h2 class="cf-colab-step-title">在本机同时启动 Web 界面与派片服务</h2>
+            <span class="st-badge ${farm.farmServerOnline ? 'is-emerald' : ''}">
+              ${farm.farmServerOnline ? '已完成' : '待启动'}
             </span>
           </div>
-          <div class="fe-worker-list">
-            ${workersHtml}
+          <p class="cf-colab-step-desc">
+            在项目目录运行下面这一行命令，终端会自动打开公网临时隧道并打印 <code>FARM_URL</code> 与 <code>FARM_TOKEN</code>：
+          </p>
+          <div class="cf-colab-cmd-row">
+            <code class="mono" id="cf-start-cmd">${esc(farm.startFarmCmd)}</code>
+            <button type="button" class="st-mini-btn" id="cf-copy-start-cmd">
+              ${ICONS.copy}
+              <span>复制命令</span>
+            </button>
           </div>
-        </div>
+        </article>
 
-        <div class="fe-panel">
-          <div class="fe-panel-head">
-            <div class="fe-panel-title-wrap">
-              <h2 class="fe-panel-title">${ICONS.terminal} 实时渲染动态流</h2>
-              <p class="fe-panel-sub">来自 farm / lab 流水线的脱敏聚合事件时间线</p>
-            </div>
-            <span class="fe-tag fe-tag--emerald">${ICONS.shield} 脱敏保护</span>
+        <article class="st-card cf-colab-step-card">
+          <div class="cf-colab-step-head">
+            <span class="cf-colab-step-num">第 2 步</span>
+            <h2 class="cf-colab-step-title">打开 Google Colab 笔记本并运行</h2>
+            <span class="st-badge ${farm.colabConnected ? 'is-emerald' : 'is-cyan'}">
+              ${farm.colabConnected ? '已接入 GPU' : '推荐 A100 / H100 / G4'}
+            </span>
           </div>
-          <div class="fe-log-box" role="log" aria-label="脱敏渲染日志">
+          <p class="cf-colab-step-desc">
+            在 Colab 顶部选择 GPU 运行时，把第 1 步终端打印的 <code>FARM_URL</code> 和 <code>FARM_TOKEN</code> 填进单元格 1，选好模型（MiniMax-H3 开源4步 / LTX-2.5 / V2V）后依次点击运行。队列空闲 15 分钟自动释放显卡防扣费。
+          </p>
+          <div class="cf-colab-btn-row">
+            <a
+              href="${esc(farm.openColabUrl)}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              id="fe-open-colab"
+            >
+              一键在 Google Colab 打开
+            </a>
+            <a
+              href="${esc(farm.notebookUrl)}"
+              download="CineForge_Colab_Worker.ipynb"
+              class="st-mini-btn"
+              id="fe-download-ipynb"
+              data-colab-notebook-download="true"
+            >
+              ${ICONS.download}
+              <span>下载 .ipynb 文件</span>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Step 3: Real Connected GPUs + Real-Time Sanitized Logs -->
+      <section class="cf-colab-live-grid" aria-label="在线节点与实时日志">
+        <article class="st-card">
+          <div class="st-section-head">
+            <div class="st-section-title">
+              <span>在线 GPU 节点</span>
+              <span class="st-count-pill">${farm.liveWorkers.length}</span>
+            </div>
+            <span class="st-label-hint">每 4 秒自动刷新</span>
+          </div>
+          <div class="cf-colab-worker-list">${workersHtml}</div>
+        </article>
+
+        <article class="st-card">
+          <div class="st-section-head">
+            <div class="st-section-title">
+              <span>实时运行日志（已自动脱敏）</span>
+            </div>
+            <span class="st-badge is-emerald">零密钥保护</span>
+          </div>
+          <div class="st-log-panel cf-colab-log-box" role="log" aria-label="脱敏运行日志">
             ${logsHtml}
           </div>
-        </div>
+        </article>
       </section>
 
-      <!-- 4. Collapsible Drawer: 1-Minute Colab GPU Onboarding -->
-      <section class="fe-panel fe-drawer-card ${state.drawerOpen ? 'is-open' : ''}" id="fe-colab-drawer">
-        <button
-          type="button"
-          class="fe-drawer-toggle"
-          id="fe-colab-toggle"
-          aria-expanded="${state.drawerOpen ? 'true' : 'false'}"
-        >
-          <div class="fe-drawer-toggle-left">
-            <span class="fe-tag fe-tag--gold">进阶折叠抽屉</span>
-            <span class="fe-panel-title" style="font-size:16px;">1 分钟接入你的免费 / 闲置 Colab GPU</span>
-            <span class="fe-panel-sub" style="margin:0;">普通白领无需操作 · 极客或团队成员可随时贡献自己的免费 GPU 加速</span>
-          </div>
-          <span class="fe-drawer-chevron" aria-hidden="true">${ICONS.chevron}</span>
-        </button>
-
-        <div class="fe-drawer-body">
-          <div class="fe-steps-grid">
-            ${farm.colabSteps.map((st) => `
-              <div class="fe-step-card">
-                <span class="fe-step-num">${esc(st.num)}</span>
-                <div class="fe-step-title">${esc(st.title)}</div>
-                <p class="fe-step-desc">${esc(st.desc)}</p>
-              </div>
-            `).join('')}
-          </div>
-
-          <div class="fe-code-wrap">
-            <div class="fe-code-head">
-              <span class="fe-code-caption">${ICONS.terminal} 脱敏 Colab Worker 接入脚本（不含任何私有密钥或隧道地址）</span>
-              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-                <a
-                  href="${esc(notebookUrl)}"
-                  download="CineForge_Colab_Worker.ipynb"
-                  class="fe-btn fe-btn--sm fe-btn--gold-outline"
-                >
-                  ${ICONS.download}
-                  <span>下载 CineForge_Colab_Worker.ipynb</span>
-                </a>
-                <button type="button" class="fe-btn fe-btn--sm fe-btn--gold" id="fe-copy-colab">
-                  ${ICONS.copy}
-                  <span>复制脱敏接入脚本</span>
-                </button>
-              </div>
-            </div>
-            <pre class="fe-code-pre" id="fe-colab-code">${esc(farm.colabSnippet)}</pre>
-          </div>
-
-          <div class="fe-security-note">
-            ${ICONS.shield}
-            <span>${esc(farm.colabNote)}</span>
-          </div>
-        </div>
-      </section>
+      <div class="cf-colab-footnote">${esc(farm.securityNote)}</div>
     </div>
   `;
 
-  // Bind telemetry chart metric tabs & point hover inspection
-  const teleTabs = container.querySelector('#fe-telemetry-tabs');
-  const teleStage = container.querySelector('#fe-telemetry-stage');
-  const teleReadout = container.querySelector('#fe-telemetry-readout');
-
-  const bindTelemetryPoints = () => {
-    if (!teleStage || !teleReadout) return;
-    teleStage.querySelectorAll('[data-point-idx]').forEach((ptEl) => {
-      const selectPoint = () => {
-        const idx = Number(ptEl.getAttribute('data-point-idx'));
-        if (!Number.isFinite(idx) || idx < 0 || idx >= telemetry.length) return;
-        state.selectedPointIdx = idx;
-        teleReadout.innerHTML = buildTelemetryReadoutHtml(telemetry[idx], esc);
-      };
-      ptEl.addEventListener('mouseenter', selectPoint);
-      ptEl.addEventListener('focus', selectPoint);
-      ptEl.addEventListener('click', () => {
-        selectPoint();
-        teleStage.innerHTML = buildTelemetryChartSvg(telemetry, state.telemetryMetric, state.selectedPointIdx, esc);
-        bindTelemetryPoints();
-      });
-    });
-  };
-  bindTelemetryPoints();
-
-  if (teleTabs && teleStage) {
-    teleTabs.addEventListener('click', (e) => {
-      const btn = e.target.closest('[data-telemetry-metric]');
-      if (!btn) return;
-      const metric = btn.getAttribute('data-telemetry-metric');
-      if (!metric || metric === state.telemetryMetric) return;
-      state.telemetryMetric = metric;
-      teleTabs.querySelectorAll('[data-telemetry-metric]').forEach((el) => {
-        const active = el.getAttribute('data-telemetry-metric') === metric;
-        el.classList.toggle('is-active', active);
-        el.setAttribute('aria-selected', active ? 'true' : 'false');
-      });
-      const idx = state.selectedPointIdx >= 0 && state.selectedPointIdx < telemetry.length
-        ? state.selectedPointIdx
-        : telemetry.length - 1;
-      teleStage.innerHTML = buildTelemetryChartSvg(telemetry, state.telemetryMetric, idx, esc);
-      bindTelemetryPoints();
-      const swatch = container.querySelector('.fe-chart-legend .fe-legend-swatch');
-      if (swatch) {
-        swatch.className = `fe-legend-swatch ${metric === 'throughput_per_hr' ? 'fe-legend-swatch--emerald' : 'fe-legend-swatch--gold'}`;
-      }
-    });
-  }
-
-  // Bind interactions
-  const costTabs = container.querySelector('#fe-cost-tabs');
-  const costStage = container.querySelector('#fe-cost-stage');
-  if (costTabs && costStage) {
-    costTabs.addEventListener('click', (e) => {
-      const btn = e.target.closest('[data-tier-key]');
-      if (!btn) return;
-      const key = btn.getAttribute('data-tier-key');
-      const nextTier = farm.tiers.find((t) => t.key === key);
-      if (!nextTier) return;
-      state.selectedTierKey = key;
-      costTabs.querySelectorAll('[data-tier-key]').forEach((el) => {
-        const active = el.getAttribute('data-tier-key') === key;
-        el.classList.toggle('is-active', active);
-        el.setAttribute('aria-selected', active ? 'true' : 'false');
-      });
-      costStage.innerHTML = buildCostCalcHtml(nextTier, esc);
-      bindCreateLinks(costStage, ctx);
-    });
-  }
-
-  bindCreateLinks(container, ctx);
-
-  const drawerEl = container.querySelector('#fe-colab-drawer');
-  const toggleBtn = container.querySelector('#fe-colab-toggle');
-  if (drawerEl && toggleBtn) {
-    toggleBtn.addEventListener('click', () => {
-      state.drawerOpen = !state.drawerOpen;
-      drawerEl.classList.toggle('is-open', state.drawerOpen);
-      toggleBtn.setAttribute('aria-expanded', state.drawerOpen ? 'true' : 'false');
-    });
-  }
-
-  const copyBtn = container.querySelector('#fe-copy-colab');
-  if (copyBtn) {
-    copyBtn.addEventListener('click', async () => {
-      const ok = await copyText(farm.colabSnippet, '已复制脱敏 Colab 接入脚本', ctx);
-      if (ok) {
-        const label = copyBtn.querySelector('span');
-        if (label) {
-          const old = label.textContent;
-          label.textContent = '✓ 已复制脚本';
-          const t = setTimeout(() => {
-            if (label.isConnected) label.textContent = old;
-          }, 1800);
-          registerCleanup(() => clearTimeout(t));
-        }
-      }
-    });
-  }
+  container.querySelector('#cf-copy-start-cmd')?.addEventListener('click', () => {
+    copyText(farm.startFarmCmd, '已复制启动命令', ctx);
+  });
 
   const refreshBtn = container.querySelector('#fe-farm-refresh');
-  if (refreshBtn) {
-    refreshBtn.addEventListener('click', async () => {
-      refreshBtn.disabled = true;
-      try {
-        const latest = await ctx.api.farmStatus();
-        ctx.store?.set?.('farmStatus', latest);
-        const nextFarm = normalizeFarmData(latest);
-        renderFarmContent(container, ctx, nextFarm, state);
-        notify(ctx, '算力工坊状态已刷新', 'success');
-      } catch (err) {
-        notify(ctx, `刷新失败：${err?.message || '请稍后重试'}`, 'error');
-        refreshBtn.disabled = false;
-      }
-    });
-  }
-}
-
-function bindCreateLinks(root, ctx) {
-  root.querySelectorAll('[data-action="go-create"]').forEach((btn) => {
-    btn.addEventListener('click', () => goRoute(ctx, '#create'));
+  refreshBtn?.addEventListener('click', async () => {
+    refreshBtn.disabled = true;
+    try {
+      const [latest, snap] = await Promise.all([
+        ctx.api.farmStatus(),
+        ctx.api.tasks().catch(() => null),
+      ]);
+      ctx.store?.set?.('farmStatus', latest);
+      if (snap) ctx.store?.set?.('liveTasks', snap);
+      renderColabContent(container, ctx, normalizeFarmData(latest, snap));
+      notify(ctx, '状态已刷新', 'success');
+    } catch (err) {
+      notify(ctx, `刷新失败：${err?.message || '请检查本地服务'}`, 'error');
+      refreshBtn.disabled = false;
+    }
   });
 }
 
 export async function renderFarm(container, ctx) {
   destroy();
   container.innerHTML = `
-    <div class="fe-page">
-      <div class="fe-loading">
-        <div class="fe-skel" style="height:82px;"></div>
-        <div class="fe-kpi-grid">
-          <div class="fe-skel"></div>
-          <div class="fe-skel"></div>
-          <div class="fe-skel"></div>
-          <div class="fe-skel"></div>
-        </div>
-        <div class="fe-skel" style="height:280px;"></div>
-      </div>
+    <div class="cf-colab-page">
+      <div class="skeleton" style="height:64px;border-radius:14px;"></div>
+      <div class="skeleton" style="height:220px;border-radius:16px;"></div>
     </div>
   `;
 
   let alive = true;
   registerCleanup(() => { alive = false; });
 
-  const state = {
-    selectedTierKey: '30m',
-    telemetryMetric: 'shot_sec',
-    selectedPointIdx: -1,
-    drawerOpen: false,
-  };
-
-  try {
-    const raw = await ctx.api.farmStatus();
-    if (!alive) return;
-    ctx.store?.set?.('farmStatus', raw);
-    const farm = normalizeFarmData(raw);
-    if (!farm.tiers.some((t) => t.key === state.selectedTierKey) && farm.tiers[0]) {
-      state.selectedTierKey = farm.tiers[0].key;
+  async function loadAndRender() {
+    try {
+      const [raw, snap] = await Promise.all([
+        ctx.api.farmStatus(),
+        ctx.api.tasks().catch(() => null),
+      ]);
+      if (!alive) return;
+      ctx.store?.set?.('farmStatus', raw);
+      if (snap) ctx.store?.set?.('liveTasks', snap);
+      renderColabContent(container, ctx, normalizeFarmData(raw, snap));
+    } catch {
+      if (!alive) return;
+      renderColabContent(container, ctx, normalizeFarmData({}, null));
     }
-    renderFarmContent(container, ctx, farm, state);
-  } catch (err) {
-    if (!alive) return;
-    // Still render graceful fallback view with clear toast so UI never breaks
-    const fallback = normalizeFarmData({});
-    renderFarmContent(container, ctx, fallback, state);
-    notify(ctx, `未能连接算力状态接口，已显示本地基准视图（${err?.message || 'offline'}）`, 'info');
   }
 
-  // Keep in sync if SSE broadcasts farm_status updates
-  if (ctx?.store && typeof ctx.store.subscribe === 'function') {
-    const unsub = ctx.store.subscribe('sse:farm_status', (data) => {
-      if (!alive || !data) return;
-      renderFarmContent(container, ctx, normalizeFarmData(data), state);
-    });
-    registerCleanup(unsub);
-  }
+  await loadAndRender();
+
+  const timer = setInterval(() => {
+    if (alive) loadAndRender();
+  }, 4000);
+  registerCleanup(() => clearInterval(timer));
 }
 
 // ---------------------------------------------------------------------------

@@ -413,7 +413,7 @@ export function renderDag(container, detail, callbacks = {}) {
       const res = await api.runProjectWorkflow(projectId, comfyWf);
       if (res?.workflow) comfyWf = res.workflow;
       comfyDirty = false;
-      toast(`🚀 已按当前节点流（${(comfyWf.engine || 'h3').toUpperCase()}）派发至 Colab 算力队列！`, 'success');
+      toast(`已按当前节点流（${(comfyWf.engine || 'h3').toUpperCase()}）提交至 Colab 算力队列`, 'success');
       if (typeof callbacks.onWorkflowRan === 'function') callbacks.onWorkflowRan(res);
     } catch (err) {
       toast(`运行工作流失败：${err?.message || '请重试'}`, 'error');
@@ -551,7 +551,7 @@ export function renderDag(container, detail, callbacks = {}) {
                       ${pv.max !== undefined ? `max="${esc(pv.max)}"` : ''}
                       ${pv.step !== undefined ? `step="${esc(pv.step)}"` : ''}
                     />
-                    ${isSeed ? `<button type="button" class="wf-btn wf-btn-sm" data-comfy-rand-seed title="随机种子">🎲</button>` : ''}
+                    ${isSeed ? `<button type="button" class="wf-btn wf-btn-sm" data-comfy-rand-seed title="随机种子">随机</button>` : ''}
                   </div>
                 </label>
               `;
@@ -591,13 +591,13 @@ export function renderDag(container, detail, callbacks = {}) {
         <div class="cf-toolbar-actions">
           <label class="wf-btn wf-btn-sm" title="导入标准 ComfyUI JSON 或 CineForge 节点流">
             <input type="file" accept=".json,application/json" data-comfy-import style="display:none;" />
-            <span>📥 导入 JSON</span>
+            <span>导入 JSON</span>
           </label>
           <a href="${esc(exportComfyUrl)}" download="${esc(projectId)}_comfyui_workflow.json" class="wf-btn wf-btn-sm" data-comfy-export>
-            <span>📤 导出 ComfyUI JSON</span>
+            <span>导出 ComfyUI JSON</span>
           </a>
           <button type="button" class="wf-btn wf-btn-gold wf-btn-sm" data-comfy-run ${comfyRunning ? 'disabled' : ''}>
-            <span>${comfyRunning ? '⏳ 派发中...' : '▶ Queue Prompt · 运行此流'}</span>
+            <span>${comfyRunning ? '提交中...' : '运行此工作流'}</span>
           </button>
         </div>
       </div>
@@ -722,14 +722,14 @@ export function renderDag(container, detail, callbacks = {}) {
         <div class="dag-topbar">
           <div class="wf-meta-badges">
             <span class="wf-chip ${isV2V ? 'wf-chip-cyan' : 'wf-chip-gold'}">
-              ${isV2V ? '🐱 V2V 经典换角流' : '🧩 Lite ComfyUI 可视化节点流'}
+              ${isV2V ? 'V2V 换角节点流' : 'Lite ComfyUI 节点流'}
             </span>
             <div class="cf-mode-switch" role="tablist" aria-label="切换工作流视图">
               <button type="button" class="wf-btn wf-btn-sm ${viewMode === 'comfy' ? 'wf-btn-gold' : ''}" data-wf-submode="comfy">
-                🧩 ComfyUI 节点流
+                ComfyUI 节点流
               </button>
               <button type="button" class="wf-btn wf-btn-sm ${viewMode === 'blueprint' ? 'wf-btn-gold' : ''}" data-wf-submode="blueprint">
-                🎬 6 步制片拓扑
+                流程总览
               </button>
             </div>
           </div>

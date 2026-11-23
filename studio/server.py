@@ -487,6 +487,18 @@ class StudioHandler(BaseHTTPRequestHandler):
                     }
                 )
                 return
+            if path == "/api/tasks":
+                sid = self._resolve_session()
+                self._send_json(
+                    bridge.get_live_tasks(
+                        self.server.db,
+                        session_id=sid,
+                        guest_mode=self.server.guest_mode,
+                        coordinator=self.server.coordinator,
+                        farm_port=self.server.farm_port,
+                    )
+                )
+                return
             if path == "/api/queue":
                 sid = self._resolve_session()
                 active_only = (qs.get("active") or ["0"])[0] == "1"
@@ -716,10 +728,10 @@ class StudioHandler(BaseHTTPRequestHandler):
                         )
                         return
                     try:
-                        dur = int(body.get("duration_sec") or 30)
+                        dur = int(body.get("duration_sec") or 15)
                     except (TypeError, ValueError):
-                        dur = 30
-                    body["duration_sec"] = max(10, min(self.server.max_guest_duration, dur))
+                        dur = 15
+                    body["duration_sec"] = max(5, min(self.server.max_guest_duration, dur))
                 body["owner_session"] = sid
                 auto_dispatch = bool(body.get("auto_dispatch"))
                 project = bridge.create_studio_project(self.server.db, body)
@@ -734,6 +746,12 @@ class StudioHandler(BaseHTTPRequestHandler):
                         owner_session=sid,
                     )
                     resp_payload["preview_job"] = preview_res
+                    eng_raw = str(body.get("engine") or "").strip().lower()
+                    eng_override = (
+                        "v2v"
+                        if project.get("mode") == "v2v"
+                        else ("ltx" if eng_raw in ("ltx", "ltx25", "ltx-2.5") else "h3")
+                    )
                     try:
                         cloud_res = bridge.dispatch_cloud_project(
                             self.server.db,
@@ -743,6 +761,7 @@ class StudioHandler(BaseHTTPRequestHandler):
                             owner_session=sid,
                             guest_mode=self.server.guest_mode,
                             max_guest_jobs=self.server.max_guest_jobs,
+                            engine_override=eng_override,
                         )
                         if cloud_res and self.server.guest_mode:
                             cloud_res = dict(cloud_res)

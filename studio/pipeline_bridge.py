@@ -17,6 +17,7 @@ import threading
 import time
 from typing import Any, Callable
 from urllib.parse import parse_qs, quote, unquote, urlparse
+import urllib.request
 import uuid
 
 from . import (
@@ -2181,7 +2182,9 @@ def _generate_shots_for_project(
         if c.strip()
     ] or [idea_clean]
 
-    if duration_sec <= 18:
+    if duration_sec <= 8:
+        count = 1
+    elif duration_sec <= 18:
         count = 4
     elif duration_sec <= 40:
         count = 6
@@ -2190,7 +2193,7 @@ def _generate_shots_for_project(
     else:
         count = 18
 
-    per_shot = max(3, min(8, int(round(duration_sec / count))))
+    per_shot = max(4, min(8, int(round(duration_sec / count))))
     style_prefix = style.get("prompt_prefix", "Photoreal cinematic film, high dynamic range")
     if mode == "v2v":
         engine = "LTX-2.5 V2V"
@@ -2284,7 +2287,7 @@ def create_studio_project(db: StudioDB, payload: dict[str, Any]) -> dict[str, An
     idea = str(payload.get("idea") or "").strip()
     mode = "v2v" if str(payload.get("mode") or "original").lower() == "v2v" else "original"
     style_id = str(payload.get("style_id") or ("cat_classics_v2v" if mode == "v2v" else "pixar_3d"))
-    duration_sec = max(10, min(600, int(payload.get("duration_sec") or 30)))
+    duration_sec = max(5, min(600, int(payload.get("duration_sec") or 15)))
     aspect = str(payload.get("aspect") or ("4:3" if mode == "v2v" else "16:9"))
     character_name = str(payload.get("character_name") or "").strip() or ("主角猫" if mode == "v2v" else "主角")
     creator_name = str(payload.get("creator_name") or "体验官").strip()[:40]
@@ -2442,6 +2445,46 @@ def create_studio_project(db: StudioDB, payload: dict[str, Any]) -> dict[str, An
 
     detail = get_project_detail(db, project_id)
     assert detail is not None
+
+    # Save initial Lite ComfyUI workflow with any user-chosen advanced overrides (engine/steps/seed)
+    try:
+        from . import workflow_engine as _wf_engine
+
+        eng_raw = str(payload.get("engine") or "").strip().lower()
+        if mode == "v2v":
+            preset_id = "ltx25_v2v_cat"
+        elif eng_raw in ("ltx", "ltx25", "ltx-2.5"):
+            preset_id = "ltx25_i2v"
+        elif input_ref_urls:
+            preset_id = "h3_r2v_4step"
+        else:
+            preset_id = "h3_r2v_4step"
+        wf_obj = _wf_engine.get_project_workflow(detail, preset_id=preset_id)
+        adv_steps = payload.get("steps")
+        adv_seed = payload.get("seed")
+        changed = False
+        for node in wf_obj.get("nodes") or []:
+            params = node.get("params") or {}
+            if adv_steps is not None and "steps" in params:
+                try:
+                    params["steps"] = max(1, min(60, int(adv_steps)))
+                    changed = True
+                except (TypeError, ValueError):
+                    pass
+            if adv_seed is not None and str(adv_seed).strip() != "" and "seed" in params:
+                try:
+                    params["seed"] = int(adv_seed)
+                    changed = True
+                except (TypeError, ValueError):
+                    pass
+            if "seconds" in params and duration_sec <= 8:
+                params["seconds"] = duration_sec
+                changed = True
+        if changed or eng_raw in ("ltx", "ltx25", "ltx-2.5"):
+            _wf_engine.save_project_workflow(project_id, wf_obj, detail=detail)
+    except Exception:  # noqa: BLE001
+        pass
+
     return detail["project"]
 
 
@@ -3251,11 +3294,103 @@ def _check_tcp_open(host: str, port: int, timeout: float = 0.25) -> bool:
         return False
 
 
+def _farm_state_dir() -> Path:
+    env_farm = os.environ.get("STUDIO_FARM_DIR")
+    return Path(env_farm) if env_farm else (ROOT / "renders" / "farm")
+
+
+def _query_live_farm_workers(farm_port: int) -> list[dict[str, Any]]:
+    """Query live connected Colab workers from local farm_server /status (token strictly in-memory)."""
+    if not _check_tcp_open("127.0.0.1", farm_port):
+        return []
+    fdir = _farm_state_dir()
+    tok_path = fdir / "token"
+    if not tok_path.is_file():
+        return []
+    try:
+        tok = tok_path.read_text(encoding="utf-8").strip()
+    except OSError:
+        return []
+    if not tok:
+        return []
+    try:
+        url = f"http://127.0.0.1:{farm_port}/status?t={quote(tok, safe='')}&w=studio_probe"
+        opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+        with opener.open(url, timeout=0.9) as resp:
+            if resp.status != 200:
+                return []
+            raw = json.loads(resp.read().decode("utf-8", errors="replace"))
+    except Exception:  # noqa: BLE001
+        return []
+    if not isinstance(raw, dict):
+        return []
+
+    now = time.time()
+    live: list[dict[str, Any]] = []
+    for wname, info in raw.items():
+        if not isinstance(info, dict):
+            continue
+        if wname in ("studio_probe", "probe"):
+            continue
+        seen_ts = max(float(info.get("seen") or 0), float(info.get("last_claim") or 0))
+        age = max(0, int(round(now - seen_ts))) if seen_ts > 0 else 9999
+        if age > 180:
+            continue
+        state_raw = str(info.get("state") or "online").strip().lower()
+        is_busy = state_raw in ("rendering", "busy", "running", "generating", "loading", "uploading")
+        gpu_name = sanitize_text(str(info.get("gpu") or info.get("device") or "Colab GPU"))[:56]
+        live.append(
+            {
+                "id": sanitize_text(str(wname))[:40],
+                "gpu": gpu_name or "Colab GPU",
+                "status": "busy" if is_busy else "online",
+                "state": state_raw or "online",
+                "completed_shots": int(info.get("done") or info.get("completed_shots") or 0),
+                "engine": sanitize_text(str(info.get("engine") or "H3 / LTX-2.5"))[:32],
+                "last_seen": f"{age}秒前" if age > 3 else "刚刚",
+                "last_seen_sec": age,
+                "live": True,
+            }
+        )
+    live.sort(key=lambda w: w["last_seen_sec"])
+    return live
+
+
+def _read_sanitized_recent_logs(limit: int = 35) -> list[dict[str, str]]:
+    """Read tail lines of farm.log and lab.log with strict secret/URL/path redaction."""
+    fdir = _farm_state_dir()
+    entries: list[dict[str, str]] = []
+    for fname, tag in (("farm.log", "FARM"), ("lab.log", "COLAB")):
+        lp = fdir / fname
+        if not lp.is_file():
+            continue
+        try:
+            lines = lp.read_text(encoding="utf-8", errors="ignore").splitlines()[-120:]
+        except OSError:
+            continue
+        for raw_line in lines:
+            clean = sanitize_text(raw_line).strip()
+            if not clean:
+                continue
+            m = re.match(r"^(\d{2}:\d{2}:\d{2})\s+(.*)$", clean)
+            ts = m.group(1) if m else ""
+            msg = m.group(2) if m else clean
+            lvl = "info"
+            if re.search(r"\b(done|complete|upload|ready|ok)\b|完成|回传", msg, re.I):
+                lvl = "ok"
+            elif re.search(r"\b(fail|error|err|corrupt|timeout|oom)\b|失败|错误", msg, re.I):
+                lvl = "error"
+            entries.append({"time": ts, "tag": tag, "level": lvl, "message": msg[:260]})
+    # Sort chronologically by HH:MM:SS when available, return newest last (or newest first for UI)
+    return entries[-limit:][::-1]
+
+
 def _parse_sanitized_farm_logs() -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     workers: dict[str, dict[str, Any]] = {}
     activities: list[dict[str, Any]] = []
+    fdir = _farm_state_dir()
 
-    farm_log = ROOT / "renders" / "farm" / "farm.log"
+    farm_log = fdir / "farm.log"
     if farm_log.is_file():
         try:
             lines = farm_log.read_text(encoding="utf-8", errors="ignore").splitlines()
@@ -3306,7 +3441,7 @@ def _parse_sanitized_farm_logs() -> tuple[list[dict[str, Any]], list[dict[str, A
                     continue
                 entry = workers.setdefault(
                     wname,
-                    {"id": wname, "gpu": "NVIDIA RTX PRO 6000 Blackwell", "status": "standby", "completed_shots": 0, "last_seen": ts, "engine": "LTX-2.5 V2V"},
+                    {"id": wname, "gpu": "Colab GPU", "status": "standby", "completed_shots": 0, "last_seen": ts, "engine": "LTX-2.5 V2V"},
                 )
                 entry["completed_shots"] += 1
                 entry["last_seen"] = ts
@@ -3324,7 +3459,7 @@ def _parse_sanitized_farm_logs() -> tuple[list[dict[str, Any]], list[dict[str, A
                     }
                 )
 
-    lab_log = ROOT / "renders" / "farm" / "lab.log"
+    lab_log = fdir / "lab.log"
     if lab_log.is_file():
         try:
             lines = lab_log.read_text(encoding="utf-8", errors="ignore").splitlines()
@@ -3337,7 +3472,7 @@ def _parse_sanitized_farm_logs() -> tuple[list[dict[str, Any]], list[dict[str, A
                 ts, wname, shot_id, wall = m_done.groups()
                 entry = workers.setdefault(
                     wname,
-                    {"id": wname, "gpu": "NVIDIA RTX PRO 6000 Blackwell", "status": "standby", "completed_shots": 0, "last_seen": ts, "engine": "LTX-2.5 V2V"},
+                    {"id": wname, "gpu": "Colab GPU", "status": "standby", "completed_shots": 0, "last_seen": ts, "engine": "LTX-2.5 V2V"},
                 )
                 entry["last_seen"] = ts
                 activities.append(
@@ -3352,26 +3487,6 @@ def _parse_sanitized_farm_logs() -> tuple[list[dict[str, Any]], list[dict[str, A
                         "message": f"[{wname}] 完成镜头 {shot_id} · 耗时 {wall}",
                     }
                 )
-
-    if not workers:
-        workers = {
-            "g4a": {
-                "id": "g4a",
-                "gpu": "NVIDIA RTX PRO 6000 Blackwell",
-                "status": "standby",
-                "completed_shots": 366,
-                "last_seen": "近期活跃",
-                "engine": "MiniMax H3 + LTX-2.5",
-            },
-            "h100a": {
-                "id": "h100a",
-                "gpu": "NVIDIA H100 80GB HBM3",
-                "status": "standby",
-                "completed_shots": 331,
-                "last_seen": "近期活跃",
-                "engine": "MiniMax H3",
-            },
-        }
 
     worker_list = sorted(workers.values(), key=lambda w: w["completed_shots"], reverse=True)[:8]
     recent = activities[-18:][::-1]
@@ -3780,25 +3895,43 @@ def get_farm_status(farm_port: int | None = None) -> dict[str, Any]:
     port = int(farm_port or os.environ.get("STUDIO_FARM_PORT", "8765"))
     online = _check_tcp_open("127.0.0.1", port)
     metrics = get_rendered_shot_metrics()
-    workers, recent_activity = _parse_sanitized_farm_logs()
-    telemetry = _build_farm_telemetry(workers)
-    if online:
-        for w in workers[:2]:
-            w["status"] = "online"
+    live_workers = _query_live_farm_workers(port) if online else []
+    hist_workers, recent_activity = _parse_sanitized_farm_logs()
+    recent_logs = _read_sanitized_recent_logs(limit=40)
 
+    # Merge live workers first (honest real-time state; NEVER fabricate online GPUs)
+    live_ids = {w["id"] for w in live_workers}
+    merged_workers = list(live_workers)
+    for hw in hist_workers:
+        if hw["id"] not in live_ids:
+            merged_workers.append(hw)
+
+    telemetry = _build_farm_telemetry(merged_workers)
+    colab_connected = len(live_workers) > 0
     saved_cu_est = round(max(14.5, metrics["total_shots_rendered"] * 0.021), 1)
+
+    if colab_connected:
+        mode_label = f"Colab 在线 ({len(live_workers)} GPU)"
+        status_note = f"已连接 {len(live_workers)} 台 Colab GPU，提交视频后会自动开始渲染。"
+    elif online:
+        mode_label = "派片已就绪 · 等待 Colab 连接"
+        status_note = "本机派片服务已启动，请打开 Google Colab 笔记本运行单元格以接入 GPU。"
+    else:
+        mode_label = "Colab 未连接"
+        status_note = "本机派片服务尚未启动，请按第 1 步命令启动后连接 Colab。"
 
     return {
         "online": online,
         "farm_online": online,
+        "farm_server_online": online,
+        "colab_connected": colab_connected,
+        "online_gpu_count": len(live_workers),
+        "live_workers": live_workers,
         "port": port,
         "farm_port": port,
-        "mode_label": "云端算力在线" if online else "待机省电模式（本地预演可用）",
-        "status_note": (
-            "本机派片服务运行中，可直接向授权 Colab GPU 节点下发渲染任务。"
-            if online
-            else "当前未占用云端按量付费 GPU（零闲置扣费）；分镜编排与本地 FFmpeg 预演片随时可用，需要精拍时一键唤醒即可。"
-        ),
+        "start_farm_cmd": "bash studio/start.sh --with-farm --port 8866",
+        "mode_label": mode_label,
+        "status_note": status_note,
         "total_shots_rendered": metrics["total_shots_rendered"],
         "median_h3_sec": 43,
         "median_ltx_sec": 38,
@@ -3871,9 +4004,10 @@ def get_farm_status(farm_port: int | None = None) -> dict[str, Any]:
                 "traditional_note": "传统影视团队制作周期 1~2 个月",
             },
         ],
-        "workers": workers,
-        "activity": recent_activity,
-        "recent_activity": recent_activity,
+        "workers": merged_workers,
+        "activity": recent_logs if recent_logs else recent_activity,
+        "recent_activity": recent_logs if recent_logs else recent_activity,
+        "recent_logs": recent_logs,
         "colab_guide": {
             "title": "1 分钟在 Colab 启动 H3 / LTX-2.5 / V2V 云端算力",
             "notebook_url": "/api/farm/colab-notebook",
@@ -3886,6 +4020,206 @@ def get_farm_status(farm_port: int | None = None) -> dict[str, Any]:
             "snippet": SANITIZED_COLAB_SNIPPET,
             "security_note": "安全约定：所有 API Key 与 HuggingFace 令牌仅保存在本机 .env（权限 600）或 Colab Secrets 并在内存中使用，笔记本与导出清单绝不暴露任何明文凭据。",
         },
+    }
+
+
+def get_live_tasks(
+    db: StudioDB,
+    *,
+    session_id: str | None = None,
+    guest_mode: bool = False,
+    coordinator: Any = None,
+    farm_port: int | None = None,
+) -> dict[str, Any]:
+    """Unified live status & progress view of all user generation tasks for the 1-screen Studio UI."""
+    port = int(farm_port or os.environ.get("STUDIO_FARM_PORT", "8765"))
+    farm_server_online = coordinator.is_farm_online() if coordinator else _check_tcp_open("127.0.0.1", port)
+    live_workers = _query_live_farm_workers(port) if (farm_server_online and not guest_mode) else []
+    colab_connected = len(live_workers) > 0
+    recent_logs = _read_sanitized_recent_logs(limit=30) if not guest_mode else []
+
+    all_jobs = db.list_jobs()
+    preview_by_pid: dict[str, dict[str, Any]] = {}
+    for j in all_jobs:
+        if j.get("kind") == "render_preview" and j.get("project_id") not in preview_by_pid:
+            preview_by_pid[j["project_id"]] = j
+
+    tasks: list[dict[str, Any]] = []
+    active_count = 0
+    for rec in db.list_studio_projects():
+        owner = rec.get("owner_session") or ""
+        if guest_mode and session_id and owner != session_id:
+            continue
+        pid = rec["id"]
+        cq = db.get_latest_cloud_job_for_project(pid)
+        pj = preview_by_pid.get(pid)
+        final_url = rec.get("final_video_url") or (cq.get("output_url") if cq else None)
+        sbs_url = rec.get("side_by_side_url") or (cq.get("side_by_side_url") if cq else None)
+        preview_url = rec.get("preview_video_url") or (pj.get("output_url") if pj else None)
+
+        mode = rec.get("mode") or "original"
+        cq_mode = (cq.get("mode") if cq else "") or mode
+        if cq_mode == "v2v" or mode == "v2v":
+            engine_label = "LTX-2.5 V2V"
+        elif cq_mode == "ltx":
+            engine_label = "LTX-2.5"
+        else:
+            engine_label = "MiniMax-H3"
+
+        cq_status = str(cq.get("status") or "") if cq else ""
+        pj_status = str(pj.get("status") or "") if pj else ""
+        total_shots = int(cq.get("total_shots") or 0) if cq else 0
+        done_shots = int(cq.get("done_shots") or 0) if cq else 0
+        queue_pos = (
+            db.get_queue_position(cq["id"])
+            if (cq and cq_status in ACTIVE_CLOUD_STATUSES)
+            else 0
+        )
+
+        # Compute crystal-clear unified status, progress (0..100), and 4-step index (0..3)
+        if cq_status == "completed" or final_url:
+            overall_status = "completed"
+            overall_progress = 100
+            step_index = 3
+            status_label = "已完成"
+            status_detail = "Colab 高清成片已生成，可直接播放或下载 MP4。"
+        elif cq_status == "assembling":
+            overall_status = "assembling"
+            overall_progress = max(88, int(cq.get("progress") or 90))
+            step_index = 3
+            status_label = "合成 MP4 中"
+            status_detail = cq.get("message") or "全部分镜渲染完成，正在拼接 MP4 成片..."
+            active_count += 1
+        elif cq_status in ("staging", "rendering"):
+            overall_status = "rendering"
+            overall_progress = max(25, min(88, int(cq.get("progress") or 30)))
+            step_index = 2
+            status_label = f"Colab 渲染中 ({done_shots}/{max(1, total_shots)})"
+            status_detail = cq.get("message") or f"正在 Colab GPU 逐镜生成（{done_shots}/{max(1, total_shots)} 镜）..."
+            active_count += 1
+        elif cq_status == "queued":
+            active_count += 1
+            if not farm_server_online:
+                overall_status = "queued_offline"
+                overall_progress = 20 if preview_url else 10
+                step_index = 1 if preview_url else 0
+                status_label = "等待连接 Colab"
+                status_detail = (
+                    "任务已排队；本机派片服务未启动，请打开顶部「连接 Colab」启动算力（本地预演可先播）。"
+                    if preview_url
+                    else "任务已排队；请打开顶部「连接 Colab」启动算力，正在生成本地快速预演..."
+                )
+            elif not colab_connected and not guest_mode:
+                overall_status = "queued_offline"
+                overall_progress = 22 if preview_url else 12
+                step_index = 1 if preview_url else 0
+                status_label = "等待 Colab 接入"
+                status_detail = "本机派片已就绪，但未检测到在线 Colab GPU。打开「连接 Colab」运行单元格即刻开始渲染。"
+            else:
+                overall_status = "queued"
+                overall_progress = 25 if preview_url else 15
+                step_index = 2 if preview_url else 1
+                status_label = f"排队中 (第 {max(1, queue_pos)} 位)"
+                status_detail = cq.get("message") or "已排入 Colab GPU 渲染队列，即将开始生成..."
+        elif cq_status == "failed":
+            overall_status = "failed"
+            overall_progress = 100
+            step_index = 2
+            status_label = "渲染失败"
+            status_detail = sanitize_text(str(cq.get("error") or cq.get("message") or "云端渲染出错，请检查日志后重试"))
+        elif cq_status in ("canceled", "cancelled"):
+            overall_status = "canceled"
+            overall_progress = 100
+            step_index = 1 if preview_url else 0
+            status_label = "已取消"
+            status_detail = "云端渲染任务已取消，可随时重新提交。"
+        elif pj_status == "running":
+            overall_status = "previewing"
+            overall_progress = max(10, min(85, int(pj.get("progress") or 20)))
+            step_index = 1
+            status_label = "生成预演中"
+            status_detail = pj.get("message") or "正在生成本地快速预演片..."
+            active_count += 1
+        elif preview_url:
+            overall_status = "preview_ready"
+            overall_progress = 50
+            step_index = 1
+            status_label = "预演就绪"
+            status_detail = "本地预演片已就绪，可随时提交到 Colab 渲染高清版。"
+        else:
+            overall_status = "draft"
+            overall_progress = 10
+            step_index = 0
+            status_label = "草稿"
+            status_detail = "尚未提交渲染任务。"
+
+        tasks.append(
+            {
+                "project_id": pid,
+                "title": rec.get("title") or "未命名视频",
+                "idea": rec.get("idea") or "",
+                "mode": mode,
+                "engine": engine_label,
+                "style_id": rec.get("style_id") or "",
+                "duration_sec": int(rec.get("duration_sec") or 15),
+                "aspect": rec.get("aspect") or "16:9",
+                "poster_url": rec.get("poster_url") or "",
+                "ref_images": rec.get("ref_images") or [],
+                "source_video_url": rec.get("source_video_url"),
+                "preview_video_url": preview_url,
+                "final_video_url": final_url,
+                "side_by_side_url": sbs_url,
+                "overall_status": overall_status,
+                "overall_progress": overall_progress,
+                "step_index": step_index,
+                "status_label": status_label,
+                "status_detail": status_detail,
+                "preview_job": (
+                    {
+                        "id": pj["id"],
+                        "status": pj["status"],
+                        "progress": pj["progress"],
+                        "message": pj["message"],
+                        "output_url": pj.get("output_url"),
+                    }
+                    if pj
+                    else None
+                ),
+                "cloud_job": (
+                    {
+                        "id": cq["id"],
+                        "mode": cq["mode"],
+                        "status": cq["status"],
+                        "progress": cq["progress"],
+                        "stage_label": cq.get("stage_label") or "",
+                        "message": cq.get("message") or "",
+                        "total_shots": total_shots,
+                        "done_shots": done_shots,
+                        "failed_shots": int(cq.get("failed_shots") or 0),
+                        "queue_pos": queue_pos,
+                        "output_url": cq.get("output_url"),
+                        "side_by_side_url": cq.get("side_by_side_url"),
+                        "error": sanitize_text(str(cq.get("error") or "")),
+                        "created_at": cq.get("created_at") or "",
+                        "updated_at": cq.get("updated_at") or "",
+                    }
+                    if cq
+                    else None
+                ),
+                "created_at": rec.get("created_at") or "",
+                "updated_at": (cq.get("updated_at") if cq else None) or rec.get("updated_at") or "",
+            }
+        )
+
+    return {
+        "ok": True,
+        "farm_server_online": farm_server_online,
+        "colab_connected": colab_connected,
+        "online_gpu_count": len(live_workers),
+        "live_workers": live_workers,
+        "active_count": active_count,
+        "tasks": tasks[:30],
+        "recent_logs": recent_logs,
     }
 
 
