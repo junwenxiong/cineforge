@@ -58,6 +58,17 @@ def load_env(path):
     return {k: os.environ.get(k) or v for k, v in vals.items()}
 
 
+def _studio_h3_shots():
+    qfile = FARM / "studio_h3_queue.json"
+    if not qfile.is_file():
+        return []
+    try:
+        data = json.loads(qfile.read_text(encoding="utf-8"))
+        return [s for s in data if isinstance(s, dict) and s.get("id")] if isinstance(data, list) else []
+    except Exception:
+        return []
+
+
 def all_shots():
     items = []
     for film in FILMS:
@@ -65,6 +76,11 @@ def all_shots():
     ids = [s["id"] for s in items]
     if len(ids) != len(set(ids)):
         raise ValueError("Duplicate shot IDs across films")
+    seen = set(ids)
+    for s in _studio_h3_shots():
+        if s["id"] not in seen:
+            seen.add(s["id"])
+            items.append(s)
     return items
 
 
@@ -104,8 +120,10 @@ def claim(worker, selected=None):
         return None
     with LOCK:
         all_shots()  # Validate shared namespace before writing any lease.
-        candidates = [s for film in FILMS if selected is None or film.name in selected
-                      for s in reversed(film.load_shots())]
+        studio_candidates = _studio_h3_shots() if (selected is None or "studio" in selected) else []
+        film_candidates = [s for film in FILMS if selected is None or film.name in selected
+                           for s in reversed(film.load_shots())]
+        candidates = studio_candidates + film_candidates
         for shot in candidates:
             if not claimable(shot):
                 continue
@@ -194,19 +212,28 @@ class H(BaseHTTPRequestHandler):
             m = q.get("m", [""])[0]
             f = FARM / (f"lab_jobs_{m}.json" if re.fullmatch(r"[A-Za-z0-9_][A-Za-z0-9_-]*", m) else "lab_jobs.json")
             return self._ok(f.read_bytes())
-        if path == "/lab/kf" :       # Legacy lab assets plus configured films’ LTX staging dirs
+        if path == "/lab/kf" :       # Legacy lab assets, configured films' LTX staging dirs, and Studio user jobs
             f = (ROOT / q.get("p", [""])[0]).resolve()
             legacy = f.parent.name.startswith("lab_kf_") and (ROOT / "assets/starcore").resolve() in f.parents
             staged = any(f.parent == (film.assets / "lab_kf_ltx").resolve()
                          and film.assets.resolve() in f.parents for film in FILMS)
-            if not f.is_file() or not (legacy or staged):
+            studio_staged = (
+                (ROOT / "assets").resolve() in f.parents
+                and f.parent.name in ("lab_kf_ltx", "refs")
+                and f.parent.parent.name.startswith("studio_")
+                and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp")
+            )
+            if not f.is_file() or not (legacy or staged or studio_staged):
                 return self._ok(b"not found", "text/plain", 404)
-            return self._ok(f.read_bytes(), "image/png")
+            ctype = "image/jpeg" if f.suffix.lower() in (".jpg", ".jpeg") else "image/png"
+            return self._ok(f.read_bytes(), ctype)
         if path == "/lab/secret":    # 只在内存里的 HF 令牌，供 Colab 下载授权模型
             return self._ok(SECRETS.get("hf", "").encode(), "text/plain")
-        if path == "/lab/src":       # 本机下好的原片（如 B 站片段），云机直连拿不到时经此取；仅限 sources/ 下
+        if path == "/lab/src":       # 本机下好的原片或访客上传视频，云机直连拿不到时经此取
             f = (ROOT / q.get("p", [""])[0]).resolve()
-            if (ROOT / "sources").resolve() not in f.parents or not f.is_file():
+            sources_ok = (ROOT / "sources").resolve() in f.parents and f.is_file()
+            uploads_ok = (ROOT / "studio" / "data" / "uploads").resolve() in f.parents and f.is_file() and f.suffix.lower() == ".mp4"
+            if not (sources_ok or uploads_ok):
                 return self._ok(b"not found", "text/plain", 404)
             return self._ok(f.read_bytes(), "video/mp4")
         if path.startswith("/lab/file/"):

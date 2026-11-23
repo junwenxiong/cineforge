@@ -18,6 +18,8 @@ else:
 B = globals().get("B") or os.environ["FARM_B"]
 T = globals().get("T") or os.environ["FARM_T"]
 W = globals().get("W") or os.environ.get("FARM_W", "colab")
+IDLE_SHUTDOWN_MIN = int(globals().get("IDLE_SHUTDOWN_MIN") or os.environ.get("CINEFORGE_IDLE_MIN") or 15)
+AUTO_UNASSIGN = bool(globals().get("AUTO_UNASSIGN") or os.environ.get("CINEFORGE_AUTO_UNASSIGN") == "1")
 C = Path("/content"); JOBS = C / "h3_jobs"; INPUT = C / "h3_input"; OUT = C / "h3_out"; STATUS = C / "h3_status.json"
 BATCH = FILMS.split(",")[0] if FILMS else "starcore"  # Stable VM namespace; shot IDs are globally unique.
 STATE = {"state": "boot", "done": 0, "failed": 0, "current": [], "gpu": ""}
@@ -201,10 +203,21 @@ def main():
             if not STATE["current"]:
                 empty_since = empty_since or time.time()
                 STATE["state"] = "idle"
-                if time.time() - empty_since > 900:
+                idle_limit = max(60, IDLE_SHUTDOWN_MIN * 60)
+                if time.time() - empty_since > idle_limit:
                     print("no more shots; exiting", flush=True)
                     STATE["state"] = "finished"
-                    req("/heartbeat", json.dumps(STATE).encode(), timeout=20)
+                    try:
+                        req("/heartbeat", json.dumps(STATE).encode(), timeout=20)
+                    except Exception:
+                        pass
+                    if AUTO_UNASSIGN:
+                        try:
+                            from google.colab import runtime  # type: ignore
+                            print("[IdleGuard] releasing Colab runtime...", flush=True)
+                            runtime.unassign()
+                        except Exception as exc:
+                            print("[IdleGuard] unassign skipped:", exc, flush=True)
                     return
         time.sleep(5)
 

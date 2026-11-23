@@ -135,6 +135,23 @@
 
    **你应该看到：** `videos/starcore/final_master.mp4`。打开检查台词、字幕和署名。等所有视频上传完，再断开并删除自己的 Colab 电脑，确认计算点数不再消耗。
 
+## 可视化工作台与访客分享（Web UI / Docker）
+
+不想在命令行逐条敲指令，或想把一个零门槛体验链接直接发给朋友/同事，复用你挂好的 Colab 显卡做短片或猫咪换角？可直接启动可视化工作台：
+
+```sh
+# 本机站主模式（纯标准库 + ffmpeg，零第三方 Python 依赖）
+bash studio/start.sh --port 8866
+
+# 外部零门槛访客分享模式（匿名会话隔离、单条限 30s、每访客默认 3 次免费额度）
+bash studio/start.sh --guest --public --port 8866
+
+# 或一键以 Docker 容器启动
+bash docker/run.sh --guest --port 8866
+```
+
+详见 [studio/README.md](studio/README.md) 中的接口说明、`#farm` EasyColab 监控与安全隔离规则。
+
 ## 开始前知道这些就好
 
 - 这是早期工具箱，还不是按一下“帮我拍电影”就能完成的产品。公开版尚未从全新环境开始验证完整出片。

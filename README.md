@@ -135,6 +135,23 @@ Download this repository and open its `cineforge` folder in your assistant. Open
 
    **You should see:** `videos/starcore/final_master.mp4`. Watch it and check the dialogue, subtitles and credits. Wait for every upload to finish, disconnect and delete your Colab computers, then confirm that compute-unit use has stopped.
 
+## Visual Studio & Guest Sharing (Web UI / Docker)
+
+Prefer a browser workflow or want friends/colleagues to try creating a short film or cat-recast clip from one link using your running Colab farm?
+
+```sh
+# Local host mode (zero third-party Python dependencies; requires Python 3.10+ & ffmpeg)
+bash studio/start.sh --port 8866
+
+# Shareable guest mode (anonymous session isolation, 30s/clip limit, 3 free cloud jobs/guest)
+bash studio/start.sh --guest --public --port 8866
+
+# Or run via Docker
+bash docker/run.sh --guest --port 8866
+```
+
+See [studio/README.md](studio/README.md) for API routes, `#farm` EasyColab monitoring, and security details.
+
 ## Good to know
 
 - This is an early toolkit, not a finished “make my movie” button. The public version has not been tested from a fresh setup through a complete film.

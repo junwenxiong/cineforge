@@ -8,7 +8,7 @@ from pathlib import Path
 B = globals().get("B") or os.environ["FARM_B"]
 T = globals().get("T") or os.environ["FARM_T"]
 W = globals().get("W") or os.environ.get("FARM_W", "lab")
-ROOT = Path("/content/ltx"); REPO = ROOT / "LTX-2"; MODELS = ROOT / "models"; OUT = ROOT / "out"; IN = ROOT / "in"
+ROOT = Path("/content/ltx"); REPO = ROOT / "LTX-2"; MODELS = Path(os.environ.get("CINEFORGE_MODEL_CACHE") or (ROOT / "models")); OUT = ROOT / "out"; IN = ROOT / "in"
 def worker_config(worker, override=None):
     shard = re.search(r"_(\d+)of(\d+)$", worker)
     index, count = (int(shard[1]), int(shard[2])) if shard else (0, 1)
@@ -30,7 +30,7 @@ FILES = {
                            "latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors"],
     "Lightricks/LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler": ["ltx-2.5-22b-ic-lora-pixel-spatial-upscaler-x2-1.0.safetensors"],
 }
-ENV = dict(os.environ, HF_HOME="/content/hf", HF_XET_HIGH_PERFORMANCE="1", PYTHONUNBUFFERED="1", MPLBACKEND="Agg")
+ENV = dict(os.environ, HF_HOME=os.environ.get("HF_HOME") or "/content/hf", HF_XET_HIGH_PERFORMANCE="1", PYTHONUNBUFFERED="1", MPLBACKEND="Agg")
 
 
 def url(path, **q):

@@ -10,8 +10,11 @@ B = globals().get("B") or os.environ["FARM_B"]
 T = globals().get("T") or os.environ["FARM_T"]
 W = globals().get("W") or os.environ.get("FARM_W", "v2v_lab")
 MODEL = W if W.startswith("v2v_") else "v2v_lab"
-ROOT = Path("/content/ltx"); REPO = ROOT / "LTX-2"; MODELS = ROOT / "models"
+ROOT = Path("/content/ltx"); REPO = ROOT / "LTX-2"; MODELS = Path(os.environ.get("CINEFORGE_MODEL_CACHE") or (ROOT / "models"))
 WORK = Path("/content/v2v"); SRC = WORK / "src"; OUT = WORK / "out"
+IDLE_SHUTDOWN_MIN = int(globals().get("IDLE_SHUTDOWN_MIN") or os.environ.get("CINEFORGE_IDLE_MIN") or 15)
+AUTO_UNASSIGN = bool(globals().get("AUTO_UNASSIGN") or os.environ.get("CINEFORGE_AUTO_UNASSIGN") == "1")
+POLL_STUDIO = bool(globals().get("POLL_STUDIO") or MODEL == "v2v_studio")
 UNION = "ltx-2.3-22b-ic-lora-union-control-ref0.5.safetensors"
 FILES = {
     "Lightricks/LTX-2.5": ["diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
@@ -22,7 +25,7 @@ FILES = {
     "Lightricks/LTX-2.3-22b-IC-LoRA-Union-Control": [UNION],
     "depth-anything/Depth-Anything-V2-Small-hf": ["config.json", "model.safetensors", "preprocessor_config.json"],
 }
-ENV = dict(os.environ, HF_HOME="/content/hf", HF_XET_HIGH_PERFORMANCE="1", PYTHONUNBUFFERED="1", MPLBACKEND="Agg")
+ENV = dict(os.environ, HF_HOME=os.environ.get("HF_HOME") or "/content/hf", HF_XET_HIGH_PERFORMANCE="1", PYTHONUNBUFFERED="1", MPLBACKEND="Agg")
 FPS = 24
 
 
@@ -107,15 +110,15 @@ def download():
 
 
 def fetch_source(job):
-    """原片只下载一次，按 md5 校验。source_url 可以是公网直链，也可以是 "sources/<文件>"
-    （本机已下好的片段，经派片服务 /lab/src 取，适合 B 站等云机不能直连的来源）。"""
+    """原片只下载一次，按 md5 校验。source_url 可以是公网直链，也可以是 "sources/<文件>" 或 "studio/data/uploads/<文件>"
+    （本机已下好或访客上传的片段，经派片服务 /lab/src 取，适合 B 站等云机不能直连的来源）。"""
     SRC.mkdir(parents=True, exist_ok=True)
     su = job["source_url"]
     f = SRC / Path(urllib.parse.urlparse(su).path).name
     if not f.exists():
         t0 = time.time()
         tmp = f.with_suffix(".part")
-        if su.startswith("sources/"):
+        if su.startswith("sources/") or su.startswith("studio/data/uploads/"):
             tmp.write_bytes(get("/lab/src", timeout=600, p=su))
         elif sh(f"curl -s -L --retry 5 -o {tmp} '{su}'"):
             raise RuntimeError("source download failed")
@@ -297,21 +300,61 @@ def main():
         log(f"... models={out(f'du -sh {MODELS} 2>/dev/null | cut -f1')} install_tail={tail(str(ROOT / 'install.log'), 1)[-100:]}")
     if errs:
         return
-    jobs = json.loads(get("/lab/jobs", m=MODEL))
-    srcs = {}                # 一张任务单可以混用多部原片
-    for job in jobs:
-        try:   # 每镜开拍前重读任务单，已删掉的跳过
-            if job["id"] not in {j["id"] for j in json.loads(get("/lab/jobs", m=MODEL))}:
+    if POLL_STUDIO:
+        done_file = WORK / "v2v_uploaded.txt"
+        done_ids = set(done_file.read_text().split()) if done_file.exists() else set()
+        srcs = {}
+        empty_since = None
+        idle_limit = max(60, IDLE_SHUTDOWN_MIN * 60)
+        log(f"v2v studio poll loop started (model={MODEL}, idle={IDLE_SHUTDOWN_MIN}m)")
+        while True:
+            try:
+                raw_jobs = get("/lab/jobs", m=MODEL)
+                jobs = json.loads(raw_jobs) if raw_jobs.strip() else []
+            except Exception as e:
+                print("jobs poll error", e, flush=True)
+                jobs = []
+            pending = [j for j in jobs if j.get("id") and j["id"] not in done_ids]
+            if pending:
+                empty_since = None
+                job = pending[0]
+                try:
+                    if job["source_url"] not in srcs:
+                        srcs[job["source_url"]] = fetch_source(job)
+                    run_job(job, srcs[job["source_url"]])
+                except Exception as e:
+                    log(f"FAIL {job['id']} {e}"[:3000])
+                done_ids.add(job["id"])
+                with done_file.open("a") as df:
+                    df.write(job["id"] + "\n")
                 continue
-        except Exception as e:
-            print("jobs refresh failed", e, flush=True)
-        try:
-            if job["source_url"] not in srcs:
-                srcs[job["source_url"]] = fetch_source(job)
-            run_job(job, srcs[job["source_url"]])
-        except Exception as e:
-            log(f"FAIL {job['id']} {e}"[:3000])
-    log("lab finished")
+            empty_since = empty_since or time.time()
+            if time.time() - empty_since > idle_limit:
+                log("v2v studio idle limit reached; exiting")
+                if AUTO_UNASSIGN:
+                    try:
+                        from google.colab import runtime  # type: ignore
+                        runtime.unassign()
+                    except Exception as exc:
+                        print("[IdleGuard] unassign skipped:", exc, flush=True)
+                return
+            time.sleep(15)
+    else:
+        jobs = json.loads(get("/lab/jobs", m=MODEL))
+        srcs = {}                # 一张任务单可以混用多部原片
+        for job in jobs:
+            try:   # 每镜开拍前重读任务单，已删掉的跳过
+                if job["id"] not in {j["id"] for j in json.loads(get("/lab/jobs", m=MODEL))}:
+                    continue
+            except Exception as e:
+                print("jobs refresh failed", e, flush=True)
+            try:
+                if job["source_url"] not in srcs:
+                    srcs[job["source_url"]] = fetch_source(job)
+                run_job(job, srcs[job["source_url"]])
+            except Exception as e:
+                log(f"FAIL {job['id']} {e}"[:3000])
+        log("lab finished")
 
 
 main()

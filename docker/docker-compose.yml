@@ -1,0 +1,25 @@
+services:
+  cineforge-studio:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    image: cineforge-studio:latest
+    container_name: cineforge-studio
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      STUDIO_HOST: "0.0.0.0"
+      STUDIO_PORT: "8866"
+      STUDIO_FARM_PORT: "8765"
+      STUDIO_MODE: "guest"
+      STUDIO_MAX_GUEST_JOBS: "3"
+      STUDIO_MAX_GUEST_DURATION: "30"
+      START_FARM: "0"
+      START_PUBLIC_TUNNEL: "0"
+    volumes:
+      - ../studio/data:/app/studio/data:rw
+      - ../films:/app/films:rw
+      - ../assets:/app/assets:rw
+      - ../renders:/app/renders:rw
+      - ../videos:/app/videos:ro
+      - ../sources:/app/sources:ro

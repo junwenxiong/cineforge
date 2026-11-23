@@ -32,3 +32,6 @@ assets/
 cookies.json
 **/token
 **/url
+studio/data/
+docker/*.tar
+
