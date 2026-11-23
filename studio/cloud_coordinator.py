@@ -15,6 +15,7 @@ from typing import Any, Callable
 from urllib.parse import parse_qs, quote, unquote, urlparse
 
 from . import PREVIEWS_DIR, ROOT, ensure_data_dirs
+from . import workflow_engine as wf_engine
 from .db import ACTIVE_CLOUD_STATUSES, StudioDB
 
 FFMPEG_BIN = shutil.which("ffmpeg") or "/usr/bin/ffmpeg"
@@ -304,7 +305,7 @@ class CloudCoordinator:
                 return self._enrich_job(existing), True
 
             job_id = f"cq_{uuid.uuid4().hex[:10]}"
-            norm_mode = "v2v" if mode == "v2v" else "original"
+            norm_mode = mode if mode in ("v2v", "ltx") else "original"
             farm_up = self.is_farm_online()
             rec = self.db.enqueue_cloud_job(
                 {
@@ -354,6 +355,7 @@ class CloudCoordinator:
             "active_count": len(active),
             "active": visible_active,
             "h3_active": sum(1 for j in active if j["mode"] == "original"),
+            "ltx_active": sum(1 for j in active if j["mode"] == "ltx"),
             "v2v_active": sum(1 for j in active if j["mode"] == "v2v"),
             "jobs": [self._enrich_job(j) for j in recent],
         }
@@ -362,6 +364,7 @@ class CloudCoordinator:
         while not self._stop_event.is_set():
             try:
                 self._step_lane("original")
+                self._step_lane("ltx")
                 self._step_lane("v2v")
             except Exception:
                 # Never allow transient filesystem/db hiccup to kill coordinator thread
@@ -369,7 +372,12 @@ class CloudCoordinator:
             self._stop_event.wait(self.poll_interval)
 
     def _prune_project_from_farm_files(self, project_id: str, mode: str) -> None:
-        qname = "lab_jobs_v2v_studio.json" if mode == "v2v" else "studio_h3_queue.json"
+        if mode == "v2v":
+            qname = "lab_jobs_v2v_studio.json"
+        elif mode == "ltx":
+            qname = "lab_jobs_ltx_studio.json"
+        else:
+            qname = "studio_h3_queue.json"
         qfile = self.farm_dir / qname
         items = _read_json(qfile, [])
         if isinstance(items, list):
@@ -422,12 +430,16 @@ class CloudCoordinator:
 
             if mode == "original":
                 self._stage_h3_job(active)
+            elif mode == "ltx":
+                self._stage_ltx_job(active)
             else:
                 self._stage_v2v_job(active)
             return
 
         if mode == "original":
             self._poll_h3_job(active)
+        elif mode == "ltx":
+            self._poll_ltx_job(active)
         else:
             self._poll_v2v_job(active)
 
@@ -505,24 +517,31 @@ class CloudCoordinator:
             )
             return
 
+        saved_wf = wf_engine.load_saved_workflow(pid)
+        wf_ov = wf_engine.extract_runtime_overrides(saved_wf) if saved_wf else {}
+
         queue_entries: list[dict[str, Any]] = []
         target_ids: list[str] = []
-        for sh in shots:
+        for idx, sh in enumerate(shots):
             sid = str(sh["id"])
             target_ids.append(sid)
             raw_mp4 = ROOT / "renders" / sid / "raw.mp4"
             job_json = _read_json(ROOT / "renders" / sid / "job.json", {})
             if raw_mp4.is_file() and isinstance(job_json, dict) and job_json.get("status") == "completed":
                 continue
-            queue_entries.append(
-                {
-                    "id": sid,
-                    "project_id": pid,
-                    "prompt": str(sh.get("prompt") or sh.get("summary_zh") or "Cinematic film shot"),
-                    "seconds": int(round(float(sh.get("seconds") or 5))),
-                    "refs": self._ensure_h3_refs(pid, list(sh.get("refs") or [])),
-                }
-            )
+            entry: dict[str, Any] = {
+                "id": sid,
+                "project_id": pid,
+                "prompt": str(wf_ov.get("prompt_override") or sh.get("prompt") or sh.get("summary_zh") or "Cinematic film shot"),
+                "seconds": int(round(float(wf_ov.get("seconds") or sh.get("seconds") or 5))),
+                "refs": self._ensure_h3_refs(pid, list(sh.get("refs") or [])),
+            }
+            for k in ("steps", "width", "height", "lora_strength", "sampler_name"):
+                if k in wf_ov and wf_ov[k] is not None:
+                    entry[k] = wf_ov[k]
+            if wf_ov.get("seed"):
+                entry["seed"] = int(wf_ov["seed"]) + idx
+            queue_entries.append(entry)
 
         self._job_ctx[job["id"]] = {"shot_ids": target_ids}
         qfile = self.farm_dir / "studio_h3_queue.json"
@@ -649,6 +668,154 @@ class CloudCoordinator:
                 stage_label="成片拼接失败",
                 error=str(exc)[:200],
                 message=f"成片合成失败：{str(exc)[:140]}",
+            )
+
+    # ---------- Lane 1b: LTX-2.5 Original Films ----------
+
+    def _stage_ltx_job(self, job: dict[str, Any]) -> None:
+        pid = job["project_id"]
+        studio_proj = self.db.get_studio_project(pid) or {}
+        shots = self._load_project_shots_with_overlays(pid)
+        if not shots:
+            self._update_and_broadcast(
+                job["id"],
+                status="failed",
+                progress=100,
+                stage_label="分镜脚本缺失",
+                error="Missing shots",
+                message="未找到该项目的分镜脚本",
+            )
+            return
+
+        saved_wf = wf_engine.load_saved_workflow(pid)
+        wf_ov = wf_engine.extract_runtime_overrides(saved_wf) if saved_wf else {}
+        dims = (int(wf_ov.get("width") or 1344), int(wf_ov.get("height") or 768))
+        ltx_out_dir = ROOT / "renders" / "lab" / "ltx_studio"
+        entries: list[dict[str, Any]] = []
+        shot_ids: list[str] = []
+        for idx, sh in enumerate(shots):
+            sid = str(sh["id"])
+            shot_ids.append(sid)
+            out_mp4 = ltx_out_dir / f"{sid}_distilled.mp4"
+            if out_mp4.is_file() and _probe_video(out_mp4)["ok"]:
+                continue
+            kf_rel = self._stage_v2v_kf(pid, sid, studio_proj, dims)
+            base_seed = int(wf_ov.get("seed") or 42)
+            entries.append(
+                {
+                    "id": sid,
+                    "project_id": pid,
+                    "seconds": max(3, min(10, int(round(float(wf_ov.get("seconds") or sh.get("seconds") or 5))))),
+                    "keyframe": kf_rel,
+                    "prompt": str(wf_ov.get("prompt_override") or sh.get("prompt") or sh.get("summary_zh") or "Cinematic film shot"),
+                    "seed": base_seed + idx,
+                }
+            )
+
+        self._job_ctx[job["id"]] = {"shot_ids": shot_ids, "dims": dims}
+        qfile = self.farm_dir / "lab_jobs_ltx_studio.json"
+        _atomic_write_json(qfile, entries)
+
+        total = len(shot_ids)
+        done = total - len(entries)
+        pct = 15 + int(70 * done / max(1, total))
+        self._update_and_broadcast(
+            job["id"],
+            status="rendering",
+            progress=pct,
+            stage_label="LTX-2.5 云端逐镜拍片中",
+            message=f"正在云端 GPU 用 LTX-2.5 逐镜生成（{done}/{total} 镜完成）",
+            total_shots=total,
+            done_shots=done,
+            failed_shots=0,
+        )
+
+    def _poll_ltx_job(self, job: dict[str, Any]) -> None:
+        pid = job["project_id"]
+        ctx = self._job_ctx.get(job["id"])
+        if not ctx:
+            shots = self._load_project_shots_with_overlays(pid)
+            ctx = {"shot_ids": [str(s["id"]) for s in shots], "dims": (1344, 768)}
+            self._job_ctx[job["id"]] = ctx
+
+        shot_ids: list[str] = ctx["shot_ids"]
+        total = max(1, len(shot_ids))
+        ltx_dir = ROOT / "renders" / "lab" / "ltx_studio"
+        valid_clips: list[Path] = []
+        for sid in shot_ids:
+            mp4 = ltx_dir / f"{sid}_distilled.mp4"
+            if not mp4.is_file():
+                alt = ltx_dir / f"{sid}_dfr.mp4"
+                if alt.is_file():
+                    mp4 = alt
+            if mp4.is_file() and _probe_video(mp4)["ok"]:
+                valid_clips.append(mp4)
+                ov = self.db.get_shot_overlay(pid, sid) or {}
+                if ov.get("status") in (None, "draft", "rendering", "retake"):
+                    self.db.upsert_shot_overlay(pid, sid, {"status": "review"})
+                    rel = mp4.relative_to(ROOT).as_posix()
+                    self.broadcast(
+                        "shot_updated",
+                        {
+                            "project_id": pid,
+                            "shot_id": sid,
+                            "shot": {"id": sid, "status": "review", "video_url": _media_url(rel)},
+                        },
+                    )
+
+        done_count = len(valid_clips)
+        pct = 15 + int(70 * done_count / total)
+        if done_count != job["done_shots"]:
+            self._update_and_broadcast(
+                job["id"],
+                status="rendering",
+                progress=pct,
+                done_shots=done_count,
+                stage_label="LTX-2.5 云端逐镜拍片中",
+                message=f"正在云端 GPU 用 LTX-2.5 逐镜生成（{done_count}/{total} 镜完成）",
+            )
+
+        if done_count < total:
+            return
+
+        self._prune_project_from_farm_files(pid, "ltx")
+        self._update_and_broadcast(
+            job["id"],
+            status="assembling",
+            progress=90,
+            stage_label="正在自动拼接 LTX-2.5 成片",
+            message="分镜已全部出片，正在合成为可播放 MP4 成片...",
+        )
+        try:
+            ensure_data_dirs()
+            proj = self.db.get_studio_project(pid) or {}
+            dims = _aspect_dims_for_h3(str(proj.get("aspect") or "16:9"))
+            final_abs = PREVIEWS_DIR / f"{pid}_final.mp4"
+            _assemble_concat_mp4(valid_clips, final_abs, dims)
+            final_url = _media_url(f"studio/data/previews/{pid}_final.mp4")
+            states = {
+                "script": "done", "refs": "done", "storyboard": "done",
+                "render": "done", "qa": "done", "master": "done",
+            }
+            self.db.update_studio_project(pid, final_video_url=final_url, stage_index=5, stages_state=states)
+            self.db.upsert_stage_override(pid, stage_index=5, stages_state=states)
+            self._update_and_broadcast(
+                job["id"],
+                status="completed",
+                progress=100,
+                stage_label="LTX-2.5 成片已生成",
+                message="全部镜头渲染并拼接完成，可直接播放或下载！",
+                done_shots=done_count,
+                output_url=final_url,
+            )
+        except Exception as exc:  # noqa: BLE001
+            self._update_and_broadcast(
+                job["id"],
+                status="failed",
+                progress=100,
+                stage_label="成片拼接失败",
+                error=str(exc)[:200],
+                message=f"LTX-2.5 成片合成失败：{str(exc)[:140]}",
             )
 
     # ---------- Lane 2: LTX-2.5 V2V Cat-Swap Films ----------

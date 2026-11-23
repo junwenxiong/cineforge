@@ -2171,6 +2171,7 @@ def _generate_shots_for_project(
     character_name: str,
     ref_rel_paths: list[str],
     v2v_options: dict[str, Any],
+    engine_choice: str = "h3",
 ) -> list[dict[str, Any]]:
     char = character_name.strip() or ("拟人主角猫" if mode == "v2v" else "主角")
     idea_clean = idea.strip() or f"围绕《{title}》展开的高情绪电影短片"
@@ -2191,7 +2192,12 @@ def _generate_shots_for_project(
 
     per_shot = max(3, min(8, int(round(duration_sec / count))))
     style_prefix = style.get("prompt_prefix", "Photoreal cinematic film, high dynamic range")
-    engine = "LTX-2.5 V2V" if mode == "v2v" else "MiniMax H3"
+    if mode == "v2v":
+        engine = "LTX-2.5 V2V"
+    elif str(engine_choice or "").lower() in ("ltx", "ltx25", "ltx-2.5"):
+        engine = "LTX-2.5"
+    else:
+        engine = "MiniMax H3"
 
     def _clause(idx: int) -> str:
         return clauses[idx % len(clauses)]
@@ -2343,6 +2349,7 @@ def create_studio_project(db: StudioDB, payload: dict[str, Any]) -> dict[str, An
         character_name=character_name,
         ref_rel_paths=materialized_rel_paths,
         v2v_options=v2v_options,
+        engine_choice=str(payload.get("engine") or "h3"),
     )
 
     # Write CineForge-compatible workflow files
@@ -2986,6 +2993,7 @@ def dispatch_cloud_project(
     owner_session: str = "",
     guest_mode: bool = False,
     max_guest_jobs: int = 3,
+    engine_override: str | None = None,
 ) -> dict[str, Any] | None:
     ensure_data_dirs()
     detail = get_project_detail(db, project_id, limit=1000, coordinator=coordinator)
@@ -3067,11 +3075,19 @@ def dispatch_cloud_project(
             db.update_studio_project(project_id, stage_index=3, stages_state=states)
         db.upsert_stage_override(project_id, stage_index=3, stages_state=states)
 
+    dispatch_mode = detail["project"]["mode"]
+    if engine_override in ("v2v", "ltx", "h3"):
+        dispatch_mode = "original" if engine_override == "h3" else engine_override
+    elif dispatch_mode != "v2v" and target_shots and all(
+        str(s.get("engine") or "").lower().startswith("ltx") for s in target_shots
+    ):
+        dispatch_mode = "ltx"
+
     if coordinator is not None:
         queue_job, dedup = coordinator.enqueue(
             project_id=project_id,
             owner_session=owner_session,
-            mode=detail["project"]["mode"],
+            mode=dispatch_mode,
             manifest_path=manifest_rel,
             total_shots=n,
         )
@@ -3084,7 +3100,7 @@ def dispatch_cloud_project(
                 "id": job_id,
                 "project_id": project_id,
                 "owner_session": owner_session,
-                "mode": detail["project"]["mode"],
+                "mode": dispatch_mode,
                 "status": "queued",
                 "progress": 8,
                 "stage_label": "已加入云端影棚队列" if farm_online else "等待云端影棚上线",
@@ -3467,68 +3483,108 @@ def _build_farm_telemetry(workers: list[dict[str, Any]]) -> list[dict[str, Any]]
     return padded + measured_points
 
 
+OPEN_IN_COLAB_URL = (
+    "https://colab.research.google.com/github/junwenxiong/cineforge/blob/main/colab/CineForge_Colab_Worker.ipynb"
+)
+
+
 def build_colab_worker_notebook() -> dict[str, Any]:
     """
-    Generate a clean, 100% secret-free EasyColab-style Jupyter Notebook (nbformat 4.5)
-    with Colab #@param form controls, Google Drive 30GB model cache, and auto idle GPU release.
+    Generate a clean, 100% secret-free EasyColab Jupyter Notebook (nbformat 4.5)
+    supporting open-source MiniMax-H3 (ComfyUI 4-step, no Box required), LTX-2.5,
+    LTX-2.5 V2V, RelayVSR X2, optional Box H3, direct Colab video upload/download,
+    and automatic idle GPU release.
     """
     cell_intro = [
-        "# 🎬 CineForge Studio · Colab GPU 算力节点（一键省钱版）\n",
+        "# 🎬 CineForge · Colab 云端算力工作台（支持 H3 开源版 / LTX-2.5 / V2V 换角 / RelayVSR）\n",
         "\n",
-        "将你的免费或闲置 Google Colab GPU（T4 / L4 / A100 / H100）安全接入 **影铸 Studio** 共享拍片流水线：\n",
-        "- **表单化零代码配置**：右侧/下方直接勾选模型模式、Google Drive 权重缓存与闲置自动释放时长。\n",
-        "- **30GB 权重免重下**：勾选 `USE_GDRIVE_CACHE` 后，模型权重持久化保存在你自己的 Google Drive。\n",
-        "- **防扣费闲置守护**：超过 `IDLE_SHUTDOWN_MIN` 分钟无任务时自动调用 `google.colab.runtime.unassign()` 释放显卡。\n",
-        "- **零密钥明文安全设计**：本笔记本不包含任何真实 API Key、HuggingFace Token 或隧道地址，仅使用临时会话占位符。\n",
+        "无需在本地配置任何 GPU 环境或安装模型权重，所有模型计算全部在 Google Colab 云端完成：\n",
+        "- **开箱支持多模型**：内置 **MiniMax-H3（开源 ComfyUI 4 步免 Box）**、**LTX-2.5**、**LTX-2.5 V2V 换角**、**RelayVSR 2× 超分**，并兼容已有 DramaPie Box 节点。\n",
+        "- **两种运行方式**：\n",
+        "  1. **连接本机 Web 工作台 (Farm)**：在本机运行 `bash studio/start.sh --with-farm` 打开前端界面，将终端显示的 `FARM_URL` 和 `FARM_TOKEN` 填入第一步，即可在本地 Web 选素材、写分镜、自动回传成片。\n",
+        "  2. **Colab 独立单镜试拍 (Standalone)**：不启动本机服务，直接在 Colab 内上传参考图/写提示词生成视频并下载。\n",
+        "- **推荐 GPU 配置**：Colab Pro/Pro+ 的 **G4 (96 GB) / H100 (80 GB) / A100 (80 GB)**。免费 T4 (15 GB) 显存不足以运行 22B/33B 视频模型。\n",
+        "- **防扣费 & 安全**：默认权重缓存在 Colab 本地高速盘 `/content`（避免撑爆 15 GB 免费 Drive），支持成片备份到 Google Drive、Colab 内直接上传/下载视频，以及闲置自动 `runtime.unassign()`。本笔记本不包含任何明文密钥或隧道地址。\n",
     ]
 
     cell_params = [
-        "#@title 1️⃣ 参数配置（无需改代码，直接勾选即可）\n",
-        'MODEL_MODE = "H3 原创电影"  #@param ["H3 原创电影", "LTX-2.5", "LTX-2.5 V2V 换角"]\n',
-        'USE_GDRIVE_CACHE = True  #@param {type:"boolean"}\n',
-        'IDLE_SHUTDOWN_MIN = 15  #@param {type:"slider", min:5, max:60, step:5}\n',
+        "#@title 1️⃣ 参数配置（无需改代码，直接下拉选择即可）\n",
+        'RUN_MODE = "连接本机 Web 工作台 (Farm)"  #@param ["连接本机 Web 工作台 (Farm)", "Colab 独立单镜试拍 (Standalone)"]\n',
+        'MODEL_MODE = "MiniMax-H3 (开源4步免Box)"  #@param ["MiniMax-H3 (开源4步免Box)", "LTX-2.5 (原创图生/首帧)", "LTX-2.5 V2V (视频换角/变猫)", "RelayVSR X2 (2倍超分)", "MiniMax-H3 (自带Box加速版)"]\n',
         'FARM_URL = "YOUR_FARM_URL"  #@param {type:"string"}\n',
         'FARM_TOKEN = "YOUR_FARM_TOKEN"  #@param {type:"string"}\n',
         'WORKER_NAME = "colab_gpu_01"  #@param {type:"string"}\n',
+        'IDLE_SHUTDOWN_MIN = 15  #@param {type:"slider", min:5, max:60, step:5}\n',
+        'USE_GDRIVE_CACHE = False  #@param {type:"boolean"}\n',
+        'BACKUP_OUTPUTS_TO_GDRIVE = True  #@param {type:"boolean"}\n',
+        'STANDALONE_PROMPT = "Photoreal cinematic sci-fi shot, warm tungsten key light, an orange tabby cat wearing a tiny space helmet looks out a spacecraft window at Earth, gentle ambient cabin hum and soft radio beep."  #@param {type:"string"}\n',
+        'STANDALONE_SECONDS = 5  #@param {type:"slider", min:4, max:8, step:1}\n',
         "\n",
         "import os\n",
-        'ENGINE_MAP = {\n',
-        '    "H3 原创电影": "minimax-h3",\n',
-        '    "LTX-2.5": "ltx-2.5",\n',
-        '    "LTX-2.5 V2V 换角": "ltx-2.5-v2v",\n',
+        "ENGINE_MAP = {\n",
+        '    "MiniMax-H3 (开源4步免Box)": "h3-open",\n',
+        '    "LTX-2.5 (原创图生/首帧)": "ltx-2.5",\n',
+        '    "LTX-2.5 V2V (视频换角/变猫)": "ltx-2.5-v2v",\n',
+        '    "RelayVSR X2 (2倍超分)": "relayvsr",\n',
+        '    "MiniMax-H3 (自带Box加速版)": "minimax-h3-box",\n',
         "}\n",
-        'ENGINE_KEY = ENGINE_MAP.get(MODEL_MODE, "minimax-h3")\n',
+        'ENGINE_KEY = ENGINE_MAP.get(MODEL_MODE, "h3-open")\n',
+        'IS_STANDALONE = RUN_MODE.startswith("Colab")\n',
         'os.environ["CINEFORGE_ENGINE"] = ENGINE_KEY\n',
         'os.environ["CINEFORGE_WORKER"] = WORKER_NAME\n',
         'os.environ["CINEFORGE_IDLE_MIN"] = str(IDLE_SHUTDOWN_MIN)\n',
-        'print(f"[CineForge] 模式={MODEL_MODE} ({ENGINE_KEY}) | Drive缓存={USE_GDRIVE_CACHE} | 闲置自动释放={IDLE_SHUTDOWN_MIN}分钟")\n',
+        'print(f"[CineForge] 运行方式={RUN_MODE} | 模型={MODEL_MODE} ({ENGINE_KEY}) | 闲置自动释放={IDLE_SHUTDOWN_MIN}分钟")\n',
     ]
 
     cell_cache = [
-        "#@title 2️⃣ 检查 GPU 并挂载 Google Drive 权重缓存（省去重复下载 30GB 模型）\n",
-        "import os, pathlib, subprocess\n",
+        "#@title 2️⃣ 显卡体检、读取 HF_TOKEN 并准备输出目录\n",
+        "import os, pathlib, shutil, subprocess\n",
         "\n",
-        'subprocess.run(["nvidia-smi", "--query-gpu=name,memory.total", "--format=csv,noheader"], check=False)\n',
+        'gpu_info = subprocess.run(["nvidia-smi", "--query-gpu=name,memory.total", "--format=csv,noheader"], capture_output=True, text=True).stdout.strip()\n',
+        'print("[CineForge] 当前 GPU:", gpu_info or "未检测到 GPU（请在上方「代码执行程序 -> 更改运行时类型」中开启 GPU）")\n',
+        "disk_free_gb = shutil.disk_usage('/content').free / 1e9\n",
+        'print(f"[CineForge] /content 可用磁盘: {disk_free_gb:.1f} GB")\n',
+        'if "T4" in gpu_info:\n',
+        '    print("⚠️ 警告：T4 (15 GB) 显存不足以运行 22B/33B 视频模型，建议切换至 A100 / H100 / G4。")\n',
         "\n",
+        "# 优先从 Colab Secrets 读取 HF_TOKEN（无需手贴明文；联机模式也会自动从本机 .env 获取）\n",
+        'if not os.environ.get("HF_TOKEN"):\n',
+        "    try:\n",
+        "        from google.colab import userdata\n",
+        '        sec = userdata.get("HF_TOKEN")\n',
+        "        if sec:\n",
+        '            os.environ["HF_TOKEN"] = sec.strip()\n',
+        '            print("[CineForge] 已从 Colab Secrets 加载 HF_TOKEN")\n',
+        "    except Exception:\n",
+        "        pass\n",
+        "\n",
+        'OUTPUT_DIR = pathlib.Path("/content/cineforge_outputs")\n',
+        "OUTPUT_DIR.mkdir(parents=True, exist_ok=True)\n",
         'CACHE_ROOT = pathlib.Path("/content/cineforge_cache")\n',
-        "if USE_GDRIVE_CACHE:\n",
+        "GDRIVE_OUT = None\n",
+        "if USE_GDRIVE_CACHE or BACKUP_OUTPUTS_TO_GDRIVE:\n",
         "    try:\n",
         "        from google.colab import drive\n",
         '        drive.mount("/content/drive", force_remount=False)\n',
-        '        CACHE_ROOT = pathlib.Path("/content/drive/MyDrive/CineForgeCache/models")\n',
-        '        print("[CineForge] 已启用 Google Drive 持久化权重缓存:", CACHE_ROOT)\n',
+        "        if BACKUP_OUTPUTS_TO_GDRIVE:\n",
+        '            GDRIVE_OUT = pathlib.Path("/content/drive/MyDrive/CineForgeOutputs")\n',
+        "            GDRIVE_OUT.mkdir(parents=True, exist_ok=True)\n",
+        '            print("[CineForge] 成片将自动备份至 Google Drive:", GDRIVE_OUT)\n',
+        "        if USE_GDRIVE_CACHE:\n",
+        '            CACHE_ROOT = pathlib.Path("/content/drive/MyDrive/CineForgeCache/models")\n',
+        '            print("[CineForge] 已启用 Google Drive 权重缓存（请确认 Drive 剩余空间 >= 80 GB）:", CACHE_ROOT)\n',
         "    except Exception as exc:\n",
-        '        print("[CineForge] 非 Colab 环境或未授权 Drive，回退到本地临时缓存:", exc)\n',
+        '        print("[CineForge] 非 Colab 环境或未授权 Drive，使用本地临时目录:", exc)\n',
         "\n",
         "CACHE_ROOT.mkdir(parents=True, exist_ok=True)\n",
         'os.environ["HF_HOME"] = str(CACHE_ROOT / "hf")\n',
         'os.environ["CINEFORGE_MODEL_CACHE"] = str(CACHE_ROOT)\n',
-        'print("[CineForge] 缓存目录就绪:", CACHE_ROOT)\n',
+        'print("[CineForge] 缓存目录就绪:", CACHE_ROOT, "| 成片目录:", OUTPUT_DIR)\n',
     ]
 
     cell_worker = [
-        "#@title 3️⃣ 启动领镜渲染循环（真实对接 farm_server.py，内置闲置自动释放显卡守护）\n",
-        "import os, urllib.parse, urllib.request\n",
+        "#@title 3️⃣ 启动云端模型计算（自动对接本机 Web 界面，或独立单镜出片）\n",
+        "import os, pathlib, shutil, urllib.parse, urllib.request\n",
         "\n",
         "def release_colab_runtime(reason: str) -> None:\n",
         '    print(f"[CineForge IdleGuard] {reason} -> 正在释放 Colab 显卡以节省 CU...")\n',
@@ -3536,30 +3592,102 @@ def build_colab_worker_notebook() -> dict[str, Any]:
         "        from google.colab import runtime\n",
         "        runtime.unassign()\n",
         "    except Exception as exc:\n",
-        '        print("[CineForge IdleGuard] 本地调试环境跳过 unassign():", exc)\n',
+        '        print("[CineForge IdleGuard] 非 Colab 环境跳过 unassign():", exc)\n',
         "\n",
-        'if not FARM_URL or FARM_URL == "YOUR_FARM_URL" or not FARM_TOKEN or FARM_TOKEN == "YOUR_FARM_TOKEN":\n',
-        '    print("[CineForge] 请先在第一步填入本机派片端生成的临时 FARM_URL 与一次性 FARM_TOKEN，然后重新运行本单元。")\n',
+        "def sync_outputs_to_drive() -> None:\n",
+        '    if not BACKUP_OUTPUTS_TO_GDRIVE or GDRIVE_OUT is None:\n',
+        "        return\n",
+        '    for mp4 in sorted(pathlib.Path("/content/cineforge_outputs").glob("*.mp4")):\n',
+        "        dst = GDRIVE_OUT / mp4.name\n",
+        "        if not dst.exists() or dst.stat().st_size != mp4.stat().st_size:\n",
+        "            shutil.copy2(mp4, dst)\n",
+        '    print("[CineForge] 已同步成片至 Google Drive:", GDRIVE_OUT)\n',
+        "\n",
+        'RAW_GITHUB = "https://raw.githubusercontent.com/junwenxiong/cineforge/main"\n',
+        "if IS_STANDALONE:\n",
+        '    print("[CineForge] 独立试拍模式：直接从 GitHub 拉取开源 MiniMax-H3 运行器并在 Colab 生成视频...")\n',
+        '    script_url = f"{RAW_GITHUB}/tools/film/lab/h3_comfy.py"\n',
+        "    ref_dir = pathlib.Path('/content/cineforge_uploads')\n",
+        "    ref_files = sorted(str(p) for p in ref_dir.glob('*') if p.suffix.lower() in ('.png', '.jpg', '.jpeg', '.webp')) if ref_dir.is_dir() else []\n",
+        "    worker_ns = {\n",
+        '        "B": "", "T": "", "W": WORKER_NAME,\n',
+        '        "STANDALONE_PROMPT": STANDALONE_PROMPT,\n',
+        '        "STANDALONE_REFS": ref_files,\n',
+        '        "STANDALONE_SECONDS": STANDALONE_SECONDS,\n',
+        '        "HF_TOKEN": os.environ.get("HF_TOKEN", ""),\n',
+        "    }\n",
+        "    with urllib.request.urlopen(script_url, timeout=30) as resp:\n",
+        '        code = resp.read().decode("utf-8")\n',
+        '    exec(compile(code, script_url, "exec"), worker_ns)\n',
+        "    sync_outputs_to_drive()\n",
+        'elif not FARM_URL or FARM_URL == "YOUR_FARM_URL" or not FARM_TOKEN or FARM_TOKEN == "YOUR_FARM_TOKEN":\n',
+        '    print("[CineForge] 请先在本机运行 `bash studio/start.sh --with-farm`，然后把终端显示的 FARM_URL 与 FARM_TOKEN 填入第 1 步，再重新运行本单元。")\n',
         "else:\n",
         '    base = FARM_URL.rstrip("/")\n',
         '    q = urllib.parse.urlencode({"t": FARM_TOKEN, "w": WORKER_NAME})\n',
-        "    if ENGINE_KEY == \"ltx-2.5-v2v\":\n",
+        '    if ENGINE_KEY == "ltx-2.5-v2v":\n',
         '        script_url = f"{base}/lab/file/ltx_v2v.py?{q}"\n',
         '        worker_ns = {"B": base, "T": FARM_TOKEN, "W": WORKER_NAME, "LAB_MODEL": "v2v_studio", "POLL_STUDIO": True, "IDLE_SHUTDOWN_MIN": IDLE_SHUTDOWN_MIN, "AUTO_UNASSIGN": True}\n',
-        "    elif ENGINE_KEY == \"ltx-2.5\":\n",
+        '    elif ENGINE_KEY == "ltx-2.5":\n',
         '        script_url = f"{base}/lab/file/ltx25.py?{q}"\n',
-        '        worker_ns = {"B": base, "T": FARM_TOKEN, "W": WORKER_NAME, "LAB_MODEL": "ltx25", "IDLE_SHUTDOWN_MIN": IDLE_SHUTDOWN_MIN, "AUTO_UNASSIGN": True}\n',
-        "    else:\n",
+        '        worker_ns = {"B": base, "T": FARM_TOKEN, "W": WORKER_NAME, "LAB_MODEL": "ltx_studio", "POLL_STUDIO": True, "IDLE_SHUTDOWN_MIN": IDLE_SHUTDOWN_MIN, "AUTO_UNASSIGN": True}\n',
+        '    elif ENGINE_KEY == "relayvsr":\n',
+        '        script_url = f"{base}/lab/file/relayvsr_film.py?{q}"\n',
+        '        worker_ns = {"B": base, "T": FARM_TOKEN, "W": WORKER_NAME}\n',
+        '    elif ENGINE_KEY == "minimax-h3-box":\n',
         '        script_url = f"{base}/boot.py?{q}"\n',
         '        worker_ns = {"B": base, "T": FARM_TOKEN, "W": WORKER_NAME, "FILMS": "", "IDLE_SHUTDOWN_MIN": IDLE_SHUTDOWN_MIN, "AUTO_UNASSIGN": True}\n',
+        "    else:\n",
+        '        script_url = f"{base}/lab/file/h3_comfy.py?{q}"\n',
+        '        worker_ns = {"B": base, "T": FARM_TOKEN, "W": WORKER_NAME, "FILMS": "", "IDLE_SHUTDOWN_MIN": IDLE_SHUTDOWN_MIN, "AUTO_UNASSIGN": True}\n',
         '    os.environ["CINEFORGE_AUTO_UNASSIGN"] = "1"\n',
-        '    print(f"[CineForge] 节点 {WORKER_NAME} 正在拉取工作脚本并接入派片服务...")\n',
+        '    print(f"[CineForge] 节点 {WORKER_NAME} 正在拉取 {ENGINE_KEY} 工作脚本并接入本机 Web 派片服务...")\n',
         "    try:\n",
         "        with urllib.request.urlopen(script_url, timeout=30) as resp:\n",
         '            code = resp.read().decode("utf-8")\n',
         '        exec(compile(code, script_url, "exec"), worker_ns)\n',
         "    finally:\n",
+        "        sync_outputs_to_drive()\n",
         '        release_colab_runtime("任务执行结束或队列已清空")\n',
+    ]
+
+    cell_media_io = [
+        "#@title 4️⃣ Colab 视频上传与下载工具箱（可选：直接上传参考素材 / 在 Colab 预览并下载成片）\n",
+        'ACTION = "列出并预览已生成的视频"  #@param ["列出并预览已生成的视频", "一键打包下载全部生成视频 (.zip)", "上传参考图/原片视频到 Colab"]\n',
+        "import pathlib, zipfile\n",
+        "from IPython.display import HTML, Video, display\n",
+        "\n",
+        'out_dir = pathlib.Path("/content/cineforge_outputs")\n',
+        'up_dir = pathlib.Path("/content/cineforge_uploads")\n',
+        "out_dir.mkdir(parents=True, exist_ok=True)\n",
+        "up_dir.mkdir(parents=True, exist_ok=True)\n",
+        "\n",
+        'if ACTION == "上传参考图/原片视频到 Colab":\n',
+        "    from google.colab import files\n",
+        "    uploaded = files.upload()\n",
+        "    for fname, raw in uploaded.items():\n",
+        "        dst = up_dir / pathlib.Path(fname).name\n",
+        "        dst.write_bytes(raw)\n",
+        '        print("已上传:", dst, f"({len(raw)/1e6:.2f} MB)")\n',
+        'elif ACTION == "一键打包下载全部生成视频 (.zip)":\n',
+        "    mp4s = sorted(out_dir.glob('*.mp4'))\n",
+        "    if not mp4s:\n",
+        '        print("暂无可下载的视频，请先运行第 3 步生成。")\n',
+        "    else:\n",
+        "        from google.colab import files\n",
+        '        zpath = pathlib.Path("/content/cineforge_outputs.zip")\n',
+        '        with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as zf:\n',
+        "            for p in mp4s:\n",
+        "                zf.write(p, arcname=p.name)\n",
+        '        print(f"已打包 {len(mp4s)} 个视频 -> {zpath}")\n',
+        "        files.download(str(zpath))\n",
+        "else:\n",
+        "    mp4s = sorted(out_dir.glob('*.mp4'))\n",
+        "    if not mp4s:\n",
+        '        print("目录为空：", out_dir)\n',
+        "    for p in mp4s:\n",
+        '        print(f"🎬 {p.name} ({p.stat().st_size/1e6:.2f} MB)")\n',
+        "        display(Video(str(p), embed=True, width=640))\n",
     ]
 
     return {
@@ -3569,7 +3697,7 @@ def build_colab_worker_notebook() -> dict[str, Any]:
             "colab": {
                 "name": "CineForge_Colab_Worker.ipynb",
                 "provenance": [],
-                "gpuType": "L4",
+                "gpuType": "A100",
                 "machine_shape": "hm",
             },
             "kernelspec": {
@@ -3611,6 +3739,14 @@ def build_colab_worker_notebook() -> dict[str, Any]:
                 "metadata": {"cellView": "form"},
                 "outputs": [],
                 "source": cell_worker,
+            },
+            {
+                "cell_type": "code",
+                "id": "cineforge-media-io",
+                "execution_count": None,
+                "metadata": {"cellView": "form"},
+                "outputs": [],
+                "source": cell_media_io,
             },
         ],
     }
@@ -3672,6 +3808,7 @@ def get_farm_status(farm_port: int | None = None) -> dict[str, Any]:
         "savings_pct": 87,
         "gdrive_cache_supported": True,
         "colab_notebook_url": "/api/farm/colab-notebook",
+        "open_in_colab_url": OPEN_IN_COLAB_URL,
         "idle_guard": {
             "enabled": True,
             "timeout_min": 15,
@@ -3738,15 +3875,16 @@ def get_farm_status(farm_port: int | None = None) -> dict[str, Any]:
         "activity": recent_activity,
         "recent_activity": recent_activity,
         "colab_guide": {
-            "title": "1 分钟接入你的免费 / 闲置 Colab GPU",
+            "title": "1 分钟在 Colab 启动 H3 / LTX-2.5 / V2V 云端算力",
             "notebook_url": "/api/farm/colab-notebook",
+            "open_in_colab_url": OPEN_IN_COLAB_URL,
             "steps": [
-                {"step": 1, "title": "一键下载 Colab 笔记本", "desc": "点击下载 CineForge_Colab_Worker.ipynb 上传至 Google Colab，内置表单勾选模型与 Drive 缓存。"},
-                {"step": 2, "title": "勾选 Drive 缓存 + 闲置释放", "desc": "开启 30GB 权重持久化免重下，开启 15 分钟闲置自动 unassign() 防止忘记关机扣费。"},
-                {"step": 3, "title": "填入会话占位符自动领镜", "desc": "模型授权密钥仅由本机 .env 内存态管理，拍完即停、零闲置计费。"},
+                {"step": 1, "title": "本机一键启动 Web + 派片服务", "desc": "运行 bash studio/start.sh --with-farm，终端会打印临时 FARM_URL 与 FARM_TOKEN，浏览器打开本机 Web 管理素材与分镜。"},
+                {"step": 2, "title": "一键在 Google Colab 打开笔记本", "desc": "点击 Open in Colab（推荐 A100 / H100 / G4），下拉选择 MiniMax-H3 开源4步 / LTX-2.5 / V2V / RelayVSR，填入连接信息点运行。"},
+                {"step": 3, "title": "自动回传成片 + Colab 内上传下载", "desc": "所有计算都在 Colab 完成，成片自动回传本机 Web 播片下载，同时支持在 Colab 内直接打包下载或备份到 Google Drive。"},
             ],
             "snippet": SANITIZED_COLAB_SNIPPET,
-            "security_note": "安全约定：所有 API Key 与 HuggingFace 令牌仅保存在本机 .env（权限 600）并在内存中使用，笔记本与导出清单绝不暴露任何明文凭据。",
+            "security_note": "安全约定：所有 API Key 与 HuggingFace 令牌仅保存在本机 .env（权限 600）或 Colab Secrets 并在内存中使用，笔记本与导出清单绝不暴露任何明文凭据。",
         },
     }
 

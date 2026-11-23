@@ -93,18 +93,19 @@ def main():
                               '--port',str(port),'--token-env','CINEFORGE_SMOKE_TOKEN'],env=env,
                               stdout=subprocess.PIPE,stderr=subprocess.PIPE)
         base=f'http://127.0.0.1:{port}'
+        opener=urllib.request.build_opener(urllib.request.ProxyHandler({}))
         try:
             for _ in range(100):
                 if proc.poll() is not None:
                     raise AssertionError(proc.communicate()[1].decode())
                 try:
-                    with urllib.request.urlopen(base+'/status?t='+token,timeout=.5) as response:
+                    with opener.open(base+'/status?t='+token,timeout=.5) as response:
                         assert json.load(response)=={}
                     break
                 except (urllib.error.URLError,TimeoutError): time.sleep(.05)
             else: raise AssertionError('Server did not become ready')
             for suffix in ['/status','/status?t=wrong']:
-                try: urllib.request.urlopen(base+suffix,timeout=1)
+                try: opener.open(base+suffix,timeout=1)
                 except urllib.error.HTTPError as exc: assert exc.code==403
                 else: raise AssertionError('Unauthenticated request accepted')
             assert not (root/'renders/farm/token').exists()

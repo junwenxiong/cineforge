@@ -987,11 +987,16 @@ export async function render(container, ctx) {
 
     if (state.activeView === 'dag') {
       dagHandle = renderDag(host, state.detail, {
+        api: ctx.api,
+        toast: ctx.toast,
         onNodeSelect() {
           // Node detail panel updates smoothly inside dag.js
         },
         onAction(stageKey) {
           handleDagStageAction(stageKey);
+        },
+        onWorkflowRan() {
+          refreshProject({ silent: true });
         },
       });
     } else if (state.activeView === 'storyboard') {

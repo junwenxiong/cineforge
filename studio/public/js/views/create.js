@@ -140,6 +140,7 @@ export async function render(container, ctx) {
     style_id: styles[0]?.id || '',
     duration_sec: initialMode === 'v2v' ? 15 : 30,
     aspect: initialMode === 'v2v' ? '4:3' : '16:9',
+    engine: initialMode === 'v2v' ? 'v2v' : 'h3',
     character_name: initialMode === 'v2v' ? '写实狸花猫主角' : '主角小星',
     ref_image_urls: [],
     source_video_url: null,
@@ -384,6 +385,7 @@ export async function render(container, ctx) {
       title: finalTitle,
       idea: finalIdea,
       mode: state.mode,
+      engine: state.mode === 'v2v' ? 'v2v' : (state.engine || 'h3'),
       style_id: state.style_id || styles[0]?.id || 'pixar_3d',
       duration_sec: isGuestServer ? Math.min(30, Number(state.duration_sec) || 30) : (Number(state.duration_sec) || 30),
       aspect: state.aspect || '16:9',
@@ -798,6 +800,34 @@ export async function render(container, ctx) {
                 </div>
               </div>
 
+              ${state.mode !== 'v2v' ? `
+                <div class="cr-field">
+                  <span class="cr-label">云端视频模型（全部在 Colab GPU 运行）</span>
+                  <div class="cr-aspect-row" role="radiogroup" aria-label="选择云端模型">
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked="${state.engine !== 'ltx' ? 'true' : 'false'}"
+                      class="cr-option-pill ${state.engine !== 'ltx' ? 'is-active' : ''}"
+                      data-engine="h3"
+                    >
+                      <span class="cr-option-main">MiniMax-H3（开源4步）</span>
+                      <span class="cr-option-sub">多参考图角色锁定最强 · 同步立体声</span>
+                    </button>
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked="${state.engine === 'ltx' ? 'true' : 'false'}"
+                      class="cr-option-pill ${state.engine === 'ltx' ? 'is-active' : ''}"
+                      data-engine="ltx"
+                    >
+                      <span class="cr-option-main">LTX-2.5（开源图生/首帧）</span>
+                      <span class="cr-option-sub">人物特写与中文口型自然 · 单首帧驱动</span>
+                    </button>
+                  </div>
+                </div>
+              ` : ''}
+
               <div class="cr-field">
                 <div class="cr-label-row">
                   <label class="cr-label" for="cr-creator-input">导演 / 体验官署名（选填）</label>
@@ -926,6 +956,19 @@ export async function render(container, ctx) {
         state.aspect = btn.dataset.aspect;
         container.querySelectorAll('[data-aspect]').forEach((pill) => {
           const active = pill.dataset.aspect === state.aspect;
+          pill.classList.toggle('is-active', active);
+          pill.setAttribute('aria-checked', active ? 'true' : 'false');
+        });
+        updateSummaryCard();
+      });
+    });
+
+    // Cloud engine pills (H3 vs LTX-2.5)
+    container.querySelectorAll('[data-engine]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.engine = btn.dataset.engine;
+        container.querySelectorAll('[data-engine]').forEach((pill) => {
+          const active = pill.dataset.engine === state.engine;
           pill.classList.toggle('is-active', active);
           pill.setAttribute('aria-checked', active ? 'true' : 'false');
         });

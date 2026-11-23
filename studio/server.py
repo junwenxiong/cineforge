@@ -28,6 +28,7 @@ from studio import PUBLIC_DIR, VERSION, ensure_data_dirs  # noqa: E402
 from studio.cloud_coordinator import CloudCoordinator  # noqa: E402
 from studio.db import StudioDB  # noqa: E402
 from studio import pipeline_bridge as bridge  # noqa: E402
+from studio import workflow_engine as wf_engine  # noqa: E402
 
 SESSION_ID_RE = re.compile(r"^[A-Za-z0-9_-]{6,48}$")
 
@@ -432,7 +433,7 @@ class StudioHandler(BaseHTTPRequestHandler):
 
     def do_OPTIONS(self) -> None:  # noqa: N802
         self.send_response(HTTPStatus.NO_CONTENT)
-        self.send_header("Allow", "GET, POST, PATCH, HEAD, OPTIONS")
+        self.send_header("Allow", "GET, POST, PUT, PATCH, HEAD, OPTIONS")
         self.send_header("Content-Length", "0")
         self.end_headers()
 
@@ -456,6 +457,9 @@ class StudioHandler(BaseHTTPRequestHandler):
                 return
             if path == "/api/templates":
                 self._send_json(bridge.get_templates())
+                return
+            if path == "/api/workflows/presets":
+                self._send_json({"ok": True, "presets": wf_engine.list_workflow_presets()})
                 return
             if path == "/api/session":
                 sid = self._resolve_session()
@@ -553,6 +557,48 @@ class StudioHandler(BaseHTTPRequestHandler):
                     self._send_error_json(404, f"Project not found: {pid}")
                     return
                 self._send_json(detail)
+                return
+            m_wf = re.fullmatch(r"/api/projects/([A-Za-z0-9_][A-Za-z0-9_-]*)/workflow", path)
+            if m_wf:
+                pid = m_wf.group(1)
+                sid = self._resolve_session()
+                if not self._require_project_read_access(pid, sid):
+                    return
+                detail = bridge.get_project_detail(
+                    self.server.db, pid, limit=60, session_id=sid, coordinator=self.server.coordinator
+                )
+                if not detail:
+                    self._send_error_json(404, f"Project not found: {pid}")
+                    return
+                preset_id = (qs.get("preset") or [None])[0]
+                wf = wf_engine.get_project_workflow(detail, preset_id=preset_id)
+                self._send_json({"ok": True, "workflow": wf})
+                return
+            m_wf_exp = re.fullmatch(r"/api/projects/([A-Za-z0-9_][A-Za-z0-9_-]*)/workflow/export", path)
+            if m_wf_exp:
+                pid = m_wf_exp.group(1)
+                sid = self._resolve_session()
+                if not self._require_project_read_access(pid, sid):
+                    return
+                detail = bridge.get_project_detail(
+                    self.server.db, pid, limit=60, session_id=sid, coordinator=self.server.coordinator
+                )
+                if not detail:
+                    self._send_error_json(404, f"Project not found: {pid}")
+                    return
+                fmt = (qs.get("format") or ["comfyui"])[0].lower()
+                wf = wf_engine.get_project_workflow(detail)
+                payload_obj = wf["comfyui_api"] if fmt == "comfyui" else {k: v for k, v in wf.items() if k not in ("presets", "comfyui_api")}
+                raw_bytes = (json.dumps(payload_obj, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+                fname = f"{pid}_comfyui_workflow.json" if fmt == "comfyui" else f"{pid}_cineforge_workflow.json"
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Content-Disposition", f'attachment; filename="{fname}"')
+                self.send_header("Content-Length", str(len(raw_bytes)))
+                self.send_header("Cache-Control", "no-store")
+                self.end_headers()
+                if self.command != "HEAD":
+                    self.wfile.write(raw_bytes)
                 return
             if path == "/api/jobs":
                 sid = self._resolve_session()
@@ -796,6 +842,83 @@ class StudioHandler(BaseHTTPRequestHandler):
                 self._send_json(res)
                 return
 
+            m_wf_save = re.fullmatch(r"/api/projects/([A-Za-z0-9_][A-Za-z0-9_-]*)/workflow", path)
+            if m_wf_save:
+                pid = m_wf_save.group(1)
+                if not self._require_project_write_access(pid, sid):
+                    return
+                detail = bridge.get_project_detail(
+                    self.server.db, pid, limit=60, session_id=sid, coordinator=self.server.coordinator
+                )
+                if not detail:
+                    self._send_error_json(404, "Project not found")
+                    return
+                body = self._read_json_body()
+                saved = wf_engine.save_project_workflow(pid, body, detail=detail)
+                self.server.broker.broadcast("workflow_updated", {"project_id": pid, "engine": saved.get("engine")})
+                self._send_json({"ok": True, "workflow": saved})
+                return
+
+            m_wf_imp = re.fullmatch(r"/api/projects/([A-Za-z0-9_][A-Za-z0-9_-]*)/workflow/import", path)
+            if m_wf_imp:
+                pid = m_wf_imp.group(1)
+                if not self._require_project_write_access(pid, sid):
+                    return
+                detail = bridge.get_project_detail(
+                    self.server.db, pid, limit=60, session_id=sid, coordinator=self.server.coordinator
+                )
+                if not detail:
+                    self._send_error_json(404, "Project not found")
+                    return
+                body = self._read_json_body()
+                raw_wf = body.get("workflow") if isinstance(body.get("workflow"), dict) else body
+                imported = wf_engine.import_external_workflow(pid, raw_wf, detail=detail)
+                self.server.broker.broadcast("workflow_updated", {"project_id": pid, "engine": imported.get("engine")})
+                self._send_json({"ok": True, "workflow": imported})
+                return
+
+            m_wf_run = re.fullmatch(r"/api/projects/([A-Za-z0-9_][A-Za-z0-9_-]*)/workflow/run", path)
+            if m_wf_run:
+                pid = m_wf_run.group(1)
+                if not self._require_project_write_access(pid, sid):
+                    return
+                detail = bridge.get_project_detail(
+                    self.server.db, pid, limit=60, session_id=sid, coordinator=self.server.coordinator
+                )
+                if not detail:
+                    self._send_error_json(404, "Project not found")
+                    return
+                body = self._read_json_body()
+                if isinstance(body.get("nodes"), list) and body["nodes"]:
+                    wf = wf_engine.save_project_workflow(pid, body, detail=detail)
+                elif isinstance(body.get("workflow"), dict) and body["workflow"].get("nodes"):
+                    wf = wf_engine.save_project_workflow(pid, body["workflow"], detail=detail)
+                else:
+                    wf = wf_engine.get_project_workflow(detail)
+                ov = wf.get("runtime_overrides") or {}
+                try:
+                    res = bridge.dispatch_cloud_project(
+                        self.server.db,
+                        self.server.broker.broadcast,
+                        pid,
+                        coordinator=self.server.coordinator,
+                        owner_session=sid,
+                        guest_mode=self.server.guest_mode,
+                        max_guest_jobs=self.server.max_guest_jobs,
+                        engine_override=ov.get("engine"),
+                    )
+                except PermissionError as exc:
+                    self._send_error_json(429, str(exc))
+                    return
+                if not res:
+                    self._send_error_json(404, "Project not found")
+                    return
+                if self.server.guest_mode:
+                    res = dict(res)
+                    res.pop("colab_snippet", None)
+                self._send_json({"ok": True, "workflow": wf, "cloud_dispatch": res, **res})
+                return
+
             m_cancel = re.fullmatch(r"/api/queue/([A-Za-z0-9_-]+)/cancel", path)
             if m_cancel:
                 qid = m_cancel.group(1)
@@ -860,6 +983,36 @@ class StudioHandler(BaseHTTPRequestHandler):
         except Exception as exc:  # noqa: BLE001
             self._send_error_json(500, bridge.sanitize_text(str(exc))[:240])
 
+    def do_PUT(self) -> None:  # noqa: N802
+        parsed = urlparse(self.path)
+        path = parsed.path
+        qs = parse_qs(parsed.query)
+        if not self._require_invite_for_write(qs):
+            return
+        try:
+            sid = self._resolve_session()
+            m_wf = re.fullmatch(r"/api/projects/([A-Za-z0-9_][A-Za-z0-9_-]*)/workflow", path)
+            if m_wf:
+                pid = m_wf.group(1)
+                if not self._require_project_write_access(pid, sid):
+                    return
+                detail = bridge.get_project_detail(
+                    self.server.db, pid, limit=60, session_id=sid, coordinator=self.server.coordinator
+                )
+                if not detail:
+                    self._send_error_json(404, "Project not found")
+                    return
+                body = self._read_json_body()
+                saved = wf_engine.save_project_workflow(pid, body, detail=detail)
+                self.server.broker.broadcast("workflow_updated", {"project_id": pid, "engine": saved.get("engine")})
+                self._send_json({"ok": True, "workflow": saved})
+                return
+            self._send_error_json(404, f"Unknown PUT endpoint: {path}")
+        except ValueError as exc:
+            self._send_error_json(400, str(exc))
+        except Exception as exc:  # noqa: BLE001
+            self._send_error_json(500, bridge.sanitize_text(str(exc))[:240])
+
     def do_PATCH(self) -> None:  # noqa: N802
         parsed = urlparse(self.path)
         path = parsed.path
@@ -908,7 +1061,7 @@ def run_server(
     max_guest_duration: int | None = None,
 ) -> None:
     if port == 8765:
-        raise ValueError("Port 8765 is reserved for automation/film/farm_server.py")
+        raise ValueError("Port 8765 is reserved for tools/film/farm_server.py")
     resolved_farm_port = int(farm_port if farm_port is not None else os.environ.get("STUDIO_FARM_PORT", "8765"))
     if resolved_farm_port == port and port != 0:
         raise ValueError("Studio port and farm_port cannot be identical")

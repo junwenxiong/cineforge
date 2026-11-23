@@ -1,22 +1,24 @@
 # CineForge Studio（影铸 · AI 视频可视化工作流看板平台）
 
-将底层 CineForge 短剧与 V2V 换角流水线封装为面向非技术创作者的电影级可视化工作流看板，融合 EasyColab 表单化一键接入与零安装外部访客体验，纯 Python 3.14 标准库 + FFmpeg 驱动，零第三方依赖。
+将底层 CineForge 短剧与 V2V 换角流水线封装为面向创作者的本地可视化工作流看板 + Google Colab 云端多模型算力节点，支持 **MiniMax-H3（开源 ComfyUI 4 步免 Box）**、**LTX-2.5**、**LTX-2.5 V2V** 与 **RelayVSR X2**，纯 Python 3.10+ 标准库 + FFmpeg 驱动，零本地 GPU 要求。
 
 ## 快速启动
 
 ```bash
-# 本机启动（默认 http://127.0.0.1:8866）
+# 推荐：一条命令同时启动本地 Web (8866) + 派片服务 (8765) + Colab 隧道，并打印接入信息
+bash studio/start.sh --with-farm --port 8866
+
+# 仅启动本机 Web 界面（默认 http://127.0.0.1:8866）
 bash studio/start.sh
 
 # 办公室局域网共享给同事体验
 bash studio/start.sh --lan --port 8866
 
-# 外部零门槛公网评测（推荐：访客模式 + cloudflared 临时隧道，无口令直达）
+# 外部零门槛公网评测（访客模式 + cloudflared 临时隧道，无口令直达）
 bash studio/start.sh --public --guest --port 8866
-
-# 可选：为写操作加上临时邀请口令（只读画廊/样片仍零门槛浏览）
-bash studio/start.sh --public --guest --invite-code TEAM2026
 ```
+
+云端算力一键打开：[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/junwenxiong/cineforge/blob/main/colab/CineForge_Colab_Worker.ipynb)
 
 > 端口 `8765` 保留给现有 `tools/film/farm_server.py`，Studio 默认监听 `8866`。
 
@@ -35,6 +37,11 @@ bash studio/start.sh --public --guest --invite-code TEAM2026
 | `POST /api/projects/{id}/advance-stage` | 推进 6 步工作流阶段状态 |
 | `POST /api/projects/{id}/render-preview` | 后台 FFmpeg 实时合成 H.264 + AAC 可播预演片并推送 SSE 进度 |
 | `POST /api/projects/{id}/dispatch-cloud` | 生成 `studio/data/dispatch/{id}_jobs.json` 派片清单与脱敏 Colab 模板 |
+| `GET /api/workflows/presets` | 获取内置简版 ComfyUI 工作流模板列表（H3 4步 R2V/T2V、LTX-2.5、V2V、多模型混拍流） |
+| `GET / PUT /api/projects/{id}/workflow` | 读取或保存项目的 Lite ComfyUI 节点流（节点坐标、参数与旁路状态） |
+| `GET /api/projects/{id}/workflow/export` | 导出标准 ComfyUI API `.json` 或 CineForge 节点流 JSON |
+| `POST /api/projects/{id}/workflow/import` | 导入外部 ComfyUI API / UI JSON 或 CineForge 节点流 JSON |
+| `POST /api/projects/{id}/workflow/run` | 按当前 ComfyUI 节点流参数（模型/步数/种子/分辨率）一键 Queue Prompt 派发至 Colab |
 | `POST /api/uploads` | 上传图片/视频素材至 `studio/data/uploads/`（视频自动抽帧） |
 | `GET /api/jobs` / `GET /api/jobs/{job_id}` | 查询预演合成与派片任务进度 |
 | `GET /api/farm/status` | 脱敏算力池状态、16 点实时算力折线图 `telemetry`、闲置释放守护 `idle_guard`、Google Drive 缓存与成本对比 |

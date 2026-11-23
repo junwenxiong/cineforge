@@ -153,6 +153,40 @@ export const api = {
     });
   },
 
+  workflowPresets() {
+    return request('/api/workflows/presets');
+  },
+
+  projectWorkflow(projectId, presetId = '') {
+    const qs = presetId ? `?preset=${encodeURIComponent(presetId)}` : '';
+    return request(`/api/projects/${encodeURIComponent(projectId)}/workflow${qs}`);
+  },
+
+  saveProjectWorkflow(projectId, workflow) {
+    return request(`/api/projects/${encodeURIComponent(projectId)}/workflow`, {
+      method: 'PUT',
+      body: workflow,
+    });
+  },
+
+  importProjectWorkflow(projectId, workflow) {
+    return request(`/api/projects/${encodeURIComponent(projectId)}/workflow/import`, {
+      method: 'POST',
+      body: { workflow },
+    });
+  },
+
+  runProjectWorkflow(projectId, workflow = null) {
+    return request(`/api/projects/${encodeURIComponent(projectId)}/workflow/run`, {
+      method: 'POST',
+      body: workflow ? { workflow } : {},
+    });
+  },
+
+  workflowExportUrl(projectId, format = 'comfyui') {
+    return `/api/projects/${encodeURIComponent(projectId)}/workflow/export?format=${encodeURIComponent(format)}`;
+  },
+
   uploadFile(file) {
     const filename = (file && file.name) || 'upload.bin';
     const contentType = (file && file.type) || 'application/octet-stream';

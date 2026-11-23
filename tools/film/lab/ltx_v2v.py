@@ -3,15 +3,15 @@
 #       → ltx_pipelines.ic_lora 生成，原片同期声冻结为目标音频（--no-refine-audio，输出带原声，口型跟着原声生成）。
 # 原片由云机直接从 Internet Archive 下载（快，且不走隧道）；本机只收回成片 mp4、控制视频预览和日志。
 # 由 Colab 单元 exec，需事先定义 B、T、W（W 以 v2v_ 开头，即任务单名）。HF 令牌只从派片服务内存取。
-import hashlib, json, os, shutil, subprocess, threading, time, urllib.parse, urllib.request
+import hashlib, json, os, shlex, shutil, subprocess, threading, time, urllib.parse, urllib.request
 from pathlib import Path
 
 B = globals().get("B") or os.environ["FARM_B"]
 T = globals().get("T") or os.environ["FARM_T"]
 W = globals().get("W") or os.environ.get("FARM_W", "v2v_lab")
-MODEL = W if W.startswith("v2v_") else "v2v_lab"
+MODEL = globals().get("LAB_MODEL") or (W if W.startswith("v2v_") else "v2v_lab")
 ROOT = Path("/content/ltx"); REPO = ROOT / "LTX-2"; MODELS = Path(os.environ.get("CINEFORGE_MODEL_CACHE") or (ROOT / "models"))
-WORK = Path("/content/v2v"); SRC = WORK / "src"; OUT = WORK / "out"
+WORK = Path("/content/v2v"); SRC = WORK / "src"; OUT = WORK / "out"; OUT_SHARED = Path("/content/cineforge_outputs")
 IDLE_SHUTDOWN_MIN = int(globals().get("IDLE_SHUTDOWN_MIN") or os.environ.get("CINEFORGE_IDLE_MIN") or 15)
 AUTO_UNASSIGN = bool(globals().get("AUTO_UNASSIGN") or os.environ.get("CINEFORGE_AUTO_UNASSIGN") == "1")
 POLL_STUDIO = bool(globals().get("POLL_STUDIO") or MODEL == "v2v_studio")
@@ -91,11 +91,14 @@ def install():
 
 def download():
     t0 = time.time()
-    token = ""
+    token = os.environ.get("HF_TOKEN") or globals().get("HF_TOKEN") or ""
     while not token:
-        token = get("/lab/secret").decode().strip()
+        try:
+            token = get("/lab/secret").decode().strip()
+        except Exception:
+            token = ""
         if not token:
-            log("等待 HF 令牌（LTX-2.5 为授权仓库）…"); time.sleep(60)
+            log("等待 HF 令牌（LTX-2.5 为授权仓库；可在本机 .env 或 Colab Secrets 中设置 HF_TOKEN）…"); time.sleep(30)
     lf = str(ROOT / "download.log")
     code = "from huggingface_hub import hf_hub_download as d\n"
     for repo, files in FILES.items():
@@ -120,7 +123,7 @@ def fetch_source(job):
         tmp = f.with_suffix(".part")
         if su.startswith("sources/") or su.startswith("studio/data/uploads/"):
             tmp.write_bytes(get("/lab/src", timeout=600, p=su))
-        elif sh(f"curl -s -L --retry 5 -o {tmp} '{su}'"):
+        elif sh(f"curl -s -L --retry 5 -o {shlex.quote(str(tmp))} {shlex.quote(su)}"):
             raise RuntimeError("source download failed")
         md5 = hashlib.md5(tmp.read_bytes()).hexdigest()
         if job.get("source_md5") and md5 != job["source_md5"]:
@@ -227,12 +230,13 @@ def run_job(job, src):
     lf = str(OUT / f"{sid}.log")
     clip, wav, ctrl = d / "clip.mp4", d / "clip.wav", d / f"control_{job['control']}.mp4"
     crop = f"crop={job['crop']}," if job.get("crop") else ""   # 去黑边：w:h:x:y（源像素）
-    if sh(f"ffmpeg -v error -y -ss {job['start']:.3f} -i {src} -t {clip_dur:.4f} -an "
-          f"-vf '{crop}fps={FPS},scale={w}:{h}:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=2' "
-          f"-frames:v {n} -c:v libx264 -crf 12 -pix_fmt yuv420p {clip}", lf):
+    vf_arg = shlex.quote(f"{crop}fps={FPS},scale={w}:{h}:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=2")
+    if sh(f"ffmpeg -v error -y -ss {job['start']:.3f} -i {shlex.quote(str(src))} -t {clip_dur:.4f} -an "
+          f"-vf {vf_arg} "
+          f"-frames:v {n} -c:v libx264 -crf 12 -pix_fmt yuv420p {shlex.quote(str(clip))}", lf):
         raise RuntimeError("clip cut failed\n" + tail(lf))
-    if sh(f"ffmpeg -v error -y -ss {job['start']:.3f} -i {src} -t {clip_dur:.4f} -vn -ac 2 -ar 48000 "
-          f"-af apad=whole_dur={clip_dur:.4f} {wav}", lf):
+    if sh(f"ffmpeg -v error -y -ss {job['start']:.3f} -i {shlex.quote(str(src))} -t {clip_dur:.4f} -vn -ac 2 -ar 48000 "
+          f"-af apad=whole_dur={clip_dur:.4f} {shlex.quote(str(wav))}", lf):
         raise RuntimeError("audio cut failed\n" + tail(lf))
     (WORK / "control.py").write_text(CONTROL_PY)
     hands = ""
@@ -275,8 +279,10 @@ def run_job(job, src):
         log(f"FAIL {sid} rc={rc} {wall:.0f}s\n" + tail(lf, 25))
         post(f"/lab/upload/{MODEL}/{sid}.log", Path(lf).read_bytes())
         return
+    OUT_SHARED.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(mp4, OUT_SHARED / f"{sid}.mp4")
     prev = OUT / f"{sid}_control.mp4"   # 控制视频小预览，供本机检查
-    sh(f"ffmpeg -v error -y -i {ctrl} -vf scale=320:-2 -c:v libx264 -crf 30 {prev}")
+    sh(f"ffmpeg -v error -y -i {shlex.quote(str(ctrl))} -vf scale=320:-2 -c:v libx264 -crf 30 {shlex.quote(str(prev))}")
     post(f"/lab/upload/{MODEL}/{sid}.mp4", mp4.read_bytes(), timeout=600)
     if prev.exists():
         post(f"/lab/upload/{MODEL}/{sid}_control.mp4", prev.read_bytes())

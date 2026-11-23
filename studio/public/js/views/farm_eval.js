@@ -814,6 +814,16 @@ function renderFarmContent(container, ctx, farm, state) {
         </div>
         <div class="fe-header-actions">
           <a
+            href="https://colab.research.google.com/github/junwenxiong/cineforge/blob/main/colab/CineForge_Colab_Worker.ipynb"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="fe-btn fe-btn--gold"
+            id="fe-open-colab"
+          >
+            ${ICONS.zap}
+            <span>一键在 Google Colab 打开</span>
+          </a>
+          <a
             href="${esc(notebookUrl)}"
             download="CineForge_Colab_Worker.ipynb"
             class="fe-btn fe-btn--gold-outline"
@@ -821,13 +831,13 @@ function renderFarmContent(container, ctx, farm, state) {
             data-colab-notebook-download="true"
           >
             ${ICONS.download}
-            <span>一键下载 CineForge_Colab_Worker.ipynb</span>
+            <span>下载 .ipynb 笔记本</span>
           </a>
           <button type="button" class="fe-btn" id="fe-farm-refresh">
             ${ICONS.refresh}
             <span>刷新实时状态</span>
           </button>
-          <button type="button" class="fe-btn fe-btn--gold" data-action="go-create">
+          <button type="button" class="fe-btn" data-action="go-create">
             ${ICONS.spark}
             <span>去创作台拍片</span>
           </button>
@@ -986,14 +996,14 @@ function renderFarmContent(container, ctx, farm, state) {
           <div class="fe-guard-icon fe-guard-icon--cyan" aria-hidden="true">${ICONS.hardDrive}</div>
           <div class="fe-guard-body">
             <div class="fe-guard-head">
-              <h3 class="fe-guard-title">Google Drive 权重永久缓存 · 秒级热启</h3>
-              <span class="fe-tag fe-tag--cyan">${farm.gdriveCacheSupported ? '已支持 · 免重下 30GB' : '按需启用'}</span>
+              <h3 class="fe-guard-title">Colab 云端多模型 · 含视频上传与下载</h3>
+              <span class="fe-tag fe-tag--cyan">${farm.gdriveCacheSupported ? 'H3 开源4步 · LTX-2.5 · V2V · RelayVSR' : '按需启用'}</span>
             </div>
             <p class="fe-guard-desc">
-              Notebook 内置 <code>USE_GDRIVE_CACHE</code> 表单开关，首次拉取 30GB 模型权重永久落盘 Google Drive，下次重启免重复下载、30 秒直连开拍。
+              点开 Colab 笔记本即可直接运行 <strong>MiniMax-H3（开源免 Box）</strong>、<strong>LTX-2.5</strong> 与 <strong>V2V 换角</strong>（推荐 A100 / H100 / G4），默认使用高速本地盘，成片自动回传本机 Web 并支持在 Colab 一键打包下载或备份至 Google Drive。
             </p>
             <div class="fe-guard-foot">
-              <span class="fe-mini-chip fe-mini-chip--gold">重启提速 8x · 省 12 分钟等待</span>
+              <span class="fe-mini-chip fe-mini-chip--gold">所有计算均在 Colab 完成</span>
               <a
                 href="${esc(notebookUrl)}"
                 download="CineForge_Colab_Worker.ipynb"

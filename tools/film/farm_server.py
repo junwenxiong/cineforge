@@ -139,7 +139,11 @@ def claim(worker, selected=None):
                 continue
             refs = [{"name": f"{sid}_{k}{Path(r).suffix}", "url": "/ref/" + urllib.parse.quote(r)} for k, r in enumerate(shot["refs"])]
             log("claim", sid, "->", worker)
-            return {"id": sid, "prompt": shot["prompt"], "seconds": shot["seconds"], "refs": refs}
+            payload = {"id": sid, "prompt": shot["prompt"], "seconds": shot["seconds"], "refs": refs}
+            for opt_k in ("steps", "width", "height", "seed", "lora_strength", "sampler_name"):
+                if opt_k in shot and shot[opt_k] is not None:
+                    payload[opt_k] = shot[opt_k]
+            return payload
     return None
 
 
@@ -198,6 +202,11 @@ class H(BaseHTTPRequestHandler):
             return
         path = urllib.parse.unquote(urllib.parse.urlsplit(self.path).path)
         if path == "/boot.py":
+            # Auto-select open-source ComfyUI H3 worker when licensed Box VM dir is absent.
+            box_ready = VM is not None and (VM / "vm_service.py").is_file()
+            worker_file = (HERE / "farm_worker.py") if box_ready else (HERE / "lab" / "h3_comfy.py")
+            return self._ok(worker_file.read_bytes(), "text/x-python")
+        if path == "/boot/box.py":
             return self._ok((HERE / "farm_worker.py").read_bytes(), "text/x-python")
         if path.startswith("/vm/") and path[4:] in ("vm_service.py", "prompting.py", "h3kf_node.py"):
             if VM is None or not (VM / path[4:]).is_file():
@@ -211,6 +220,8 @@ class H(BaseHTTPRequestHandler):
         if path == "/lab/jobs":      # 模型测试任务单 renders/farm/lab_jobs[_<m>].json，与正片队列无关
             m = q.get("m", [""])[0]
             f = FARM / (f"lab_jobs_{m}.json" if re.fullmatch(r"[A-Za-z0-9_][A-Za-z0-9_-]*", m) else "lab_jobs.json")
+            if not f.is_file():
+                return self._ok(b"[]")
             return self._ok(f.read_bytes())
         if path == "/lab/kf" :       # Legacy lab assets, configured films' LTX staging dirs, and Studio user jobs
             f = (ROOT / q.get("p", [""])[0]).resolve()

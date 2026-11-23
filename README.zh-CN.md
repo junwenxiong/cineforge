@@ -135,22 +135,30 @@
 
    **你应该看到：** `videos/starcore/final_master.mp4`。打开检查台词、字幕和署名。等所有视频上传完，再断开并删除自己的 Colab 电脑，确认计算点数不再消耗。
 
-## 可视化工作台与访客分享（Web UI / Docker）
+## 极速上手：本地 Web 界面 + 一键 Google Colab 云端算力
 
-不想在命令行逐条敲指令，或想把一个零门槛体验链接直接发给朋友/同事，复用你挂好的 Colab 显卡做短片或猫咪换角？可直接启动可视化工作台：
+不想逐条敲命令行，想直接用**本地浏览器管理素材/提示词 + 所有模型全部跑在 Google Colab（零本地 GPU 环境配置）**，两步即可开拍：
 
-```sh
-# 本机站主模式（纯标准库 + ffmpeg，零第三方 Python 依赖）
-bash studio/start.sh --port 8866
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/junwenxiong/cineforge/blob/main/colab/CineForge_Colab_Worker.ipynb)
 
-# 外部零门槛访客分享模式（匿名会话隔离、单条限 30s、每访客默认 3 次免费额度）
-bash studio/start.sh --guest --public --port 8866
+1. **第 1 步：本机一条命令打开 Web 前端 + 自动打通 Colab 派片隧道**
+   ```sh
+   # 本机站主一键模式（打开 http://127.0.0.1:8866 并自动打印 Colab 接入地址与一次性令牌）
+   bash studio/start.sh --with-farm --port 8866
 
-# 或一键以 Docker 容器启动
-bash docker/run.sh --guest --port 8866
-```
+   # 或通过 Docker 跨平台一键启动（支持 macOS / Windows / Linux）
+   bash docker/run.sh --host --with-farm --port 8866
 
-详见 [studio/README.md](studio/README.md) 中的接口说明、`#farm` EasyColab 监控与安全隔离规则。
+   # 可选：对外零门槛访客体验模式（匿名会话隔离、单条限 30s）
+   bash studio/start.sh --guest --public --port 8866
+   ```
+2. **第 2 步：点上方 `Open in Colab` 按钮启动云端算力**（推荐 Colab Pro/Pro+ 的 **A100 80 GB / H100 / G4**）：
+   - 下拉选择想跑的模型：**MiniMax-H3（开源 ComfyUI 4 步，免 Box）**、**LTX-2.5 原创**、**LTX-2.5 V2V 换角**、**RelayVSR 2× 超分**（同时兼容已有 DramaPie Box）。
+   - 填入终端打印的 `FARM_URL` 和 `FARM_TOKEN` 点运行（也可切到「Colab 独立单镜试拍」不启本地服务直接出片）。
+   - 生成好的视频自动回传到本机 Web 界面播片与下载，同时支持在 Colab 内直接上传素材、预览并打包下载成片或备份到 Google Drive。
+   - **内置简版 ComfyUI 节点流（Lite ComfyUI Flow）**：在项目工作台切换到「工作流拓扑」标签，即可直接拖拽节点、开关旁路（如 4 步 Turbo LoRA、RelayVSR 2×、护爪/去字幕）、在线修改步数/种子/分辨率、一键导入/导出标准 ComfyUI JSON，并点击 **Queue Prompt** 直接派发至 Colab 运行。
+
+详见 [studio/README.md](studio/README.md) 中的接口说明、`#farm` 算力面板与安全隔离规则。
 
 ## 开始前知道这些就好
 

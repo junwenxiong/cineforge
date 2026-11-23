@@ -1,21 +1,23 @@
 ARG BASE_IMAGE=python:3.12-slim
 FROM ${BASE_IMAGE}
 
+ARG TARGETARCH=amd64
+ARG INSTALL_CLOUDFLARED=1
+
 LABEL org.opencontainers.image.title="CineForge Studio" \
-      org.opencontainers.image.description="CineForge Studio visual AI film workflow + shared Colab farm coordinator"
+      org.opencontainers.image.description="CineForge Studio local web UI + Google Colab multi-model compute coordinator"
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     STUDIO_HOST=0.0.0.0 \
     STUDIO_PORT=8866 \
     STUDIO_FARM_PORT=8765 \
-    STUDIO_MODE=guest \
+    STUDIO_MODE=host \
     STUDIO_MAX_GUEST_JOBS=3 \
     STUDIO_MAX_GUEST_DURATION=30 \
     START_FARM=0 \
+    START_FARM_TUNNEL=1 \
     START_PUBLIC_TUNNEL=0
-
-ARG INSTALL_CLOUDFLARED=1
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
       ffmpeg \
@@ -23,9 +25,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       curl \
       bash \
       ca-certificates \
+      libgles2 \
+      libegl1 \
     && rm -rf /var/lib/apt/lists/* \
     && if [ "${INSTALL_CLOUDFLARED}" = "1" ]; then \
-         curl -fsSL "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64" -o /usr/local/bin/cloudflared \
+         CF_ARCH="${TARGETARCH:-amd64}"; \
+         case "${CF_ARCH}" in \
+           amd64|x86_64) CF_BIN="cloudflared-linux-amd64" ;; \
+           arm64|aarch64) CF_BIN="cloudflared-linux-arm64" ;; \
+           *) CF_BIN="cloudflared-linux-amd64" ;; \
+         esac; \
+         curl -fsSL "https://github.com/cloudflare/cloudflared/releases/latest/download/${CF_BIN}" -o /usr/local/bin/cloudflared \
          && chmod 755 /usr/local/bin/cloudflared \
          || rm -f /usr/local/bin/cloudflared; \
        fi
@@ -33,6 +43,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+COPY .env.example /app/.env.example
+COPY colab /app/colab
 COPY studio /app/studio
 COPY tools /app/tools
 COPY examples /app/examples

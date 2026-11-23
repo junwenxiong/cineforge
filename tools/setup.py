@@ -39,6 +39,10 @@ HAND_MODEL = Path.home() / '.cache' / 'mp' / 'hand_landmarker.task'
 HF_WHOAMI = 'https://huggingface.co/api/whoami-v2'
 LTX_REPO = 'Lightricks/LTX-2.5'
 LTX_PROBE = f'https://huggingface.co/{LTX_REPO}/resolve/main/.gitattributes'  # tiny, gated
+EXTRA_GATED_REPOS = (
+    ('ltx-v2v-access', 'Lightricks/LTX-2.3-22b-IC-LoRA-Union-Control', 'optional, needed for V2V cat-recast'),
+    ('ltx-upscaler', 'Lightricks/LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler', 'optional, needed for LTX DFR'),
+)
 SKILL = 'skills/cineforge/SKILL.md'
 SKILL_STUBS = {'Claude Code': '.claude/skills/cineforge/SKILL.md',
                'Codex/Gemini': '.agents/skills/cineforge/SKILL.md'}
@@ -409,6 +413,15 @@ def cmd_doctor(args):
                 add('FAIL', 'ltx-access', f'{LTX_REPO} files refused (HTTP {code})',
                     f'log in at https://huggingface.co/{LTX_REPO} and accept the license; fine-grained tokens '
                     'also need "Read access to contents of all public gated repos you can access"')
+            if ok:
+                for chk_name, repo_id, purpose in EXTRA_GATED_REPOS:
+                    probe_url = f'https://huggingface.co/{repo_id}/resolve/main/.gitattributes'
+                    ecode = hf_request(probe_url, token, method='HEAD')[0]
+                    if 200 <= ecode < 400:
+                        add('PASS', chk_name, f'{repo_id} license accepted')
+                    else:
+                        add('WARN', chk_name, f'{repo_id} refused (HTTP {ecode}; {purpose})',
+                            f'log in at https://huggingface.co/{repo_id} and accept the license')
         except (OSError, ValueError) as exc:
             add('WARN', 'hf-login', f'could not reach Hugging Face ({type(exc).__name__})',
                 'check your internet connection, or run doctor --offline')

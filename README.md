@@ -135,22 +135,30 @@ Download this repository and open its `cineforge` folder in your assistant. Open
 
    **You should see:** `videos/starcore/final_master.mp4`. Watch it and check the dialogue, subtitles and credits. Wait for every upload to finish, disconnect and delete your Colab computers, then confirm that compute-unit use has stopped.
 
-## Visual Studio & Guest Sharing (Web UI / Docker)
+## Visual Studio + One-Click Google Colab (Local Web UI + Cloud Models)
 
-Prefer a browser workflow or want friends/colleagues to try creating a short film or cat-recast clip from one link using your running Colab farm?
+Want the fastest setup—**local Web UI for assets/prompts + all models running on Google Colab (zero local GPU setup)**?
 
-```sh
-# Local host mode (zero third-party Python dependencies; requires Python 3.10+ & ffmpeg)
-bash studio/start.sh --port 8866
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/junwenxiong/cineforge/blob/main/colab/CineForge_Colab_Worker.ipynb)
 
-# Shareable guest mode (anonymous session isolation, 30s/clip limit, 3 free cloud jobs/guest)
-bash studio/start.sh --guest --public --port 8866
+1. **Start the local Web UI + Colab farm coordinator (1 command):**
+   ```sh
+   # Local host mode (opens Web UI on http://127.0.0.1:8866 + auto farm tunnel for Colab)
+   bash studio/start.sh --with-farm --port 8866
 
-# Or run via Docker
-bash docker/run.sh --guest --port 8866
-```
+   # Or via Docker (cross-platform macOS / Windows / Linux)
+   bash docker/run.sh --host --with-farm --port 8866
 
-See [studio/README.md](studio/README.md) for API routes, `#farm` EasyColab monitoring, and security details.
+   # Optional: shareable guest mode (anonymous session isolation, 30s/clip limit)
+   bash studio/start.sh --guest --public --port 8866
+   ```
+2. **Open the Colab compute notebook above** (recommended: Colab Pro/Pro+ **A100 80 GB / H100 / G4**):
+   - Choose your model from the dropdown: **MiniMax-H3 (open-source ComfyUI 4-step, no Box needed)**, **LTX-2.5**, **LTX-2.5 V2V (cat recast)**, **RelayVSR X2**, or **MiniMax-H3 (Box)**.
+   - Paste the `FARM_URL` and `FARM_TOKEN` printed in your terminal (or switch `RUN_MODE` to **Standalone** to test a single shot directly inside Colab without starting anything locally).
+   - Generated MP4 clips automatically return to your local Web UI, and can also be previewed, uploaded, zipped/downloaded, or backed up to Google Drive directly inside Colab.
+   - **Built-in Lite ComfyUI Workflow Editor**: open any project's Workflow Graph tab to switch curated node-graph presets (H3 4-step R2V/T2V, LTX-2.5 I2V, LTX-2.5 V2V, Multi-Model Film), drag nodes, toggle bypasses, tweak steps/seed/resolution inline, import/export standard ComfyUI JSON, and click **Queue Prompt** to dispatch straight to Colab.
+
+See [studio/README.md](studio/README.md) for API routes, `#farm` monitoring, and security boundaries.
 
 ## Good to know
 

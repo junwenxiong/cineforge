@@ -8,7 +8,9 @@ from pathlib import Path
 B = globals().get("B") or os.environ["FARM_B"]
 T = globals().get("T") or os.environ["FARM_T"]
 W = globals().get("W") or os.environ.get("FARM_W", "lab")
-ROOT = Path("/content/ltx"); REPO = ROOT / "LTX-2"; MODELS = Path(os.environ.get("CINEFORGE_MODEL_CACHE") or (ROOT / "models")); OUT = ROOT / "out"; IN = ROOT / "in"
+IDLE_SHUTDOWN_MIN = int(globals().get("IDLE_SHUTDOWN_MIN") or os.environ.get("CINEFORGE_IDLE_MIN") or 15)
+AUTO_UNASSIGN = bool(globals().get("AUTO_UNASSIGN") or os.environ.get("CINEFORGE_AUTO_UNASSIGN") == "1")
+ROOT = Path("/content/ltx"); REPO = ROOT / "LTX-2"; MODELS = Path(os.environ.get("CINEFORGE_MODEL_CACHE") or (ROOT / "models")); OUT = ROOT / "out"; IN = ROOT / "in"; OUT_SHARED = Path("/content/cineforge_outputs")
 def worker_config(worker, override=None):
     shard = re.search(r"_(\d+)of(\d+)$", worker)
     index, count = (int(shard[1]), int(shard[2])) if shard else (0, 1)
@@ -96,11 +98,14 @@ def install():
 
 def download():
     t0 = time.time()
-    token = ""
-    while not token:                      # 等用户授权后由本机写入派片服务内存
-        token = get("/lab/secret").decode().strip()
+    token = os.environ.get("HF_TOKEN") or globals().get("HF_TOKEN") or ""
+    while not token:                      # 等用户授权后由本机写入派片服务内存，或在 Colab Secrets 中提供
+        try:
+            token = get("/lab/secret").decode().strip()
+        except Exception:
+            token = ""
         if not token:
-            log("等待 HF 令牌（LTX-2.5 为授权仓库）…"); time.sleep(60)
+            log("等待 HF 令牌（LTX-2.5 为授权仓库；可在本机 .env 或 Colab Secrets 设置 HF_TOKEN）…"); time.sleep(30)
     lf = str(ROOT / "download.log")
     env = dict(ENV, HF_TOKEN=token)
     code = "from huggingface_hub import hf_hub_download as d\n"
@@ -148,6 +153,8 @@ def run_job(job, pipeline):
         log(f"FAIL {sid} {pipeline} rc={rc} {wall:.0f}s\n" + tail(lf, 25))
         post(f"/lab/upload/{MODEL}/{sid}_{pipeline}.log", Path(lf).read_bytes())
         return False
+    OUT_SHARED.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(mp4, OUT_SHARED / f"{sid}_{pipeline}.mp4")
     post(f"/lab/upload/{MODEL}/{sid}_{pipeline}.mp4", mp4.read_bytes(), timeout=600)
     post(f"/lab/upload/{MODEL}/{sid}_{pipeline}.log", Path(lf).read_bytes())
     log(f"done {sid} {pipeline} wall={wall:.0f}s")
@@ -171,20 +178,56 @@ def main():
         log(f"... free={free_gb():.0f}GB models={out(f'du -sh {MODELS} 2>/dev/null | cut -f1')} install_tail={tail(str(ROOT / 'install.log'), 1)[-120:]}")
     if errs:
         return
-    jobs = json.loads(get("/lab/jobs", m=MODEL))
-    jobs = [job for index, job in enumerate(jobs) if index % SHARD_COUNT == SHARD_INDEX]
+    poll_studio = bool(globals().get("POLL_STUDIO") or MODEL == "ltx_studio")
     dfr_ok = (MODELS / "ltx-2.5-22b-ic-lora-pixel-spatial-upscaler-x2-1.0.safetensors").exists()
     pipes = [x for x in os.environ.get("LTX_PIPES", "distilled" if (MODEL == "ltxv2" or MODEL.startswith("ltx_")) else "dfr").split(",") if x != "dfr" or dfr_ok]
     pipes = globals().get("PIPES") or pipes
-    for pipeline in pipes:   # 先快速版跑完 3 镜，再跑正片质量版
-        for job in jobs:
-            try:   # 任务单会被本机裁剪（别的机器已拍完的镜头被删掉）：每镜开拍前重读，已不在单上的跳过
-                if job["id"] not in {j["id"] for j in json.loads(get("/lab/jobs", m=MODEL))}:
-                    continue
+    if poll_studio:
+        done_file = ROOT / "ltx_studio_uploaded.txt"
+        done_ids = set(done_file.read_text().split()) if done_file.exists() else set()
+        empty_since = None
+        idle_limit = max(60, IDLE_SHUTDOWN_MIN * 60)
+        log(f"ltx studio poll loop started (model={MODEL}, pipes={pipes}, idle={IDLE_SHUTDOWN_MIN}m)")
+        while True:
+            try:
+                raw_jobs = get("/lab/jobs", m=MODEL)
+                jobs = json.loads(raw_jobs) if raw_jobs.strip() else []
             except Exception as e:
-                print("jobs refresh failed", e, flush=True)
-            run_job(job, pipeline)
-    log("lab finished")
+                print("jobs poll error", e, flush=True)
+                jobs = []
+            pending = [j for j in jobs if j.get("id") and j["id"] not in done_ids]
+            if pending:
+                empty_since = None
+                job = pending[0]
+                for pipeline in pipes:
+                    run_job(job, pipeline)
+                done_ids.add(job["id"])
+                with done_file.open("a") as df:
+                    df.write(job["id"] + "\n")
+                continue
+            empty_since = empty_since or time.time()
+            if time.time() - empty_since > idle_limit:
+                log("ltx studio idle limit reached; exiting")
+                if AUTO_UNASSIGN:
+                    try:
+                        from google.colab import runtime  # type: ignore
+                        runtime.unassign()
+                    except Exception as exc:
+                        print("[IdleGuard] unassign skipped:", exc, flush=True)
+                return
+            time.sleep(15)
+    else:
+        jobs = json.loads(get("/lab/jobs", m=MODEL))
+        jobs = [job for index, job in enumerate(jobs) if index % SHARD_COUNT == SHARD_INDEX]
+        for pipeline in pipes:   # 先快速版跑完 3 镜，再跑正片质量版
+            for job in jobs:
+                try:   # 任务单会被本机裁剪（别的机器已拍完的镜头被删掉）：每镜开拍前重读，已不在单上的跳过
+                    if job["id"] not in {j["id"] for j in json.loads(get("/lab/jobs", m=MODEL))}:
+                        continue
+                except Exception as e:
+                    print("jobs refresh failed", e, flush=True)
+                run_job(job, pipeline)
+        log("lab finished")
 
 
 main()

@@ -7,10 +7,10 @@ IMAGE_NAME="${CINEFORGE_IMAGE:-cineforge-studio:latest}"
 TAR_PATH="${SCRIPT_DIR}/cineforge-studio-latest.tar"
 CONTAINER_NAME="${CINEFORGE_CONTAINER:-cineforge-studio}"
 
-MODE="guest"
+MODE="host"
 PORT="8866"
 FARM_PORT="8765"
-WITH_FARM="0"
+WITH_FARM="1"
 PUBLIC="0"
 INVITE_CODE=""
 
@@ -21,11 +21,12 @@ while [[ $# -gt 0 ]]; do
     --port) PORT="$2"; shift 2 ;;
     --farm-port) FARM_PORT="$2"; shift 2 ;;
     --with-farm) WITH_FARM="1"; shift ;;
+    --no-farm) WITH_FARM="0"; shift ;;
     --public) PUBLIC="1"; shift ;;
     --invite-code) INVITE_CODE="$2"; shift 2 ;;
     -h|--help)
       cat <<'EOF'
-Usage: bash docker/run.sh [--guest|--host] [--port 8866] [--farm-port 8765] [--with-farm] [--public] [--invite-code CODE]
+Usage: bash docker/run.sh [--host|--guest] [--with-farm|--no-farm] [--port 8866] [--farm-port 8765] [--public] [--invite-code CODE]
 EOF
       exit 0 ;;
     *) echo "Unknown flag: $1" >&2; exit 1 ;;
@@ -47,7 +48,8 @@ mkdir -p "$ROOT_DIR/studio/data" "$ROOT_DIR/films" "$ROOT_DIR/assets" "$ROOT_DIR
 DOCKER_ARGS=(
   docker run --rm -it
   --name "$CONTAINER_NAME"
-  --network host
+  -p "${PORT}:${PORT}"
+  -e "STUDIO_HOST=0.0.0.0"
   -e "STUDIO_MODE=${MODE}"
   -e "STUDIO_PORT=${PORT}"
   -e "STUDIO_FARM_PORT=${FARM_PORT}"
